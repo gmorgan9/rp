@@ -27,7 +27,7 @@
     <h1 class="logo">
         CacheUp Blog
     </h1>
-    <?php include("app/includes/header.php"); ?>
+    <?php include("app/includes/sidebar.php"); ?>
         
 
     
