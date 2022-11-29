@@ -1,4 +1,4 @@
-<div class="container">
+<div class="navcontainer">
   <div class="panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
     <div class="panel panel-default">
       <div class="panel-heading" role="tab" id="headingOne">
