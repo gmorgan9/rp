@@ -51,6 +51,10 @@ require_once "path.php";
   $(document).on('click', 'a', function() {
     $(this).addClass('active').siblings().removeClass('active')
   })
+
+  $(document).on('click', 'ul li a', function() {
+    $(this).removeClass('active')
+  })
   
 </script>
     
