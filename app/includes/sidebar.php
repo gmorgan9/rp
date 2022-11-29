@@ -8,7 +8,7 @@
         
             
             <div class="btn-group">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"  aria-expanded="false">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                     Clickable inside
                 </button>
                 <ul class="dropdown-menu">
