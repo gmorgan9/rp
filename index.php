@@ -40,7 +40,7 @@ require_once "path.php";
         
 <div class="main">
   <div class="page-header mx-auto">
-    <p class="page_title" style="float: left; padding-top: 2px;"><i class="bi bi-house-door-fill"></i> Home &nbsp;&nbsp; | &nbsp;&nbsp; VIEW POST &nbsp;&nbsp; | &nbsp;&nbsp; NEW</p>
+    <p class="page_title" style="float: left; padding-top: 2px;">&nbsp;&nbsp;<i class="bi bi-house-door-fill"></i> Home &nbsp;&nbsp; | &nbsp;&nbsp; VIEW POST &nbsp;&nbsp; | &nbsp;&nbsp; NEW</p>
     <!-- <ul class="breadcrumb">
       <li>Dashboard</li>
     </ul> -->
