@@ -33,15 +33,20 @@ require_once "path.php";
 </head>
 <body>
     
-    <?php include("app/includes/header.php"); ?>
-    <?php include("app/includes/sidebar.php"); ?>
+<div class="main-container">
+<?php include(ROOT_PATH . "/app/includes/header.php"); ?>
 
+<?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
         
-
-    
-    <p>
-        testing again new update
-    </p>
+<div class="main">
+  <div class="page-header mx-auto">
+    <p class="page_title" style="float: left; padding-top: 2px;">Home Page</p>
+    <!-- <ul class="breadcrumb">
+      <li>Dashboard</li>
+    </ul> -->
+  </div>
+</div>
+</div>
 
 
     
