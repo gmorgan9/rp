@@ -23,7 +23,6 @@
 							</ul>
 						
 					</div>
-				</div>
 
                 <!-- END POSTS -->
 
@@ -42,7 +41,6 @@
 							</ul>
 						
 					</div>
-				</div>
 
                 <!-- END PAGES -->
 
