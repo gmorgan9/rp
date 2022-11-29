@@ -1,7 +1,4 @@
-function dodajAktywne(elem) {
-    var a = document.getElementsByTagName('a')
-    for (i = 0; i < a.length; i++) {
-        a[i].classList.remove('active')
-    }
-    elem.classList.add('active');
-}
+document.onclick = function(event) {
+    var target = event.target || event.srcElement;
+    target.style.background = '#cf5c3f';
+   };
