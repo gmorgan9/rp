@@ -35,13 +35,16 @@
                 </div>
 
             
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-heading1">
-                  <button class="accordion-toggle" data-bs-auto-close="false" type="button" data-bs-toggle="dropdown" data-bs-target="#flush-collapse1" aria-expanded="true" aria-controls="flush-collapse1">
-                      POSTS
-                    </button>
-                  </h2>
-                  <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample">
+                <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a class="accordion-toggle" data-toggle="collapse" href="#basicshapes" aria-expanded="false">
+                Basic Shapes
+            </a>
+        </h4>
+      </div>
+      <div id="basicshapes" class="panel-collapse collapse" data-parent="#accordion">
+        <div class="panel-body">
                     <div class="accordion-body">
                         <div class="list-group list-group-flush">
                             <a href="<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
