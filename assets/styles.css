@@ -184,43 +184,27 @@ ul.breadcrumb {
   display: none;
 }
 
-.side a, .dropdown-btn {
-   padding: 6px 8px 6px 16px;
-   text-decoration: none;
-   font-size: 20px;
-   color: #818181;
-   display: block;
-   border: none;
-   background: none;
-   width:100%;
-   text-align: left;
-   cursor: pointer;
-   outline: none;
- }
 
- .dropdown-container {
+
+
+/*hide the inputs/checkmarks and submenu*/
+input, ul.submenu {
    display: none;
-   background-color: #262626;
-   padding-left: 8px;
  }
  
- /* Optional: Style the caret down icon */
- .fa-caret-down {
-   float: right;
-   padding-right: 8px;
+ /*position the label*/
+ label {
+   position: relative;
+   display: block;
+   cursor: pointer;
+ }
+ 
+ /*show the submenu when input is checked*/
+ input:checked~ul.submenu {
+   display: block;
  }
 
- .side {
-   height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
- }
+
  
  
  

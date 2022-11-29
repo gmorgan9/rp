@@ -2,16 +2,17 @@
     <div class="position-sticky">
         <div class="list-group list-group-flush mx-3 mt-4">
         
-<div class="side">
-        <button class="dropdown-btn">Dropdown 
-        <i class="bi bi-chevron-down"></i>
-        </button>
-        <div class="dropdown-container">
-            <a class="text-decoration-none" href="#">Link 1</a>
-            <a class="text-decoration-none" href="#">Link 2</a>
-            <a class="text-decoration-none" href="#">Link 3</a>
-        </div>
-        </div>
+
+
+        <input id="check01" type="checkbox" name="menu" />
+        <label for="check01">Menu</label>
+        <ul class="submenu">
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+        </ul>
+
+
+
         
 
             <a href="<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
