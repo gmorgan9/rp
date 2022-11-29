@@ -37,7 +37,7 @@
             
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-heading1">
-                  <button class="accordion-toggle" data-bs-auto-close="false" type="button" data-bs-toggle="dropdown" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                  <button class="accordion-toggle" data-bs-auto-close="false" type="button" data-bs-toggle="dropdown" data-bs-target="#flush-collapse1" aria-expanded="true" aria-controls="flush-collapse1">
                       POSTS
                     </button>
                   </h2>
