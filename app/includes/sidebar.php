@@ -119,7 +119,7 @@
                 <!-- SETTINGS -->
 
 				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                <span>  Settings &nbsp; <i class="bi bi-chevron-down float-right"></i></span>
+                <span>  Settings &nbsp; <i class="bi bi-chevron-down" style="float: right;"></i></span>
                 </a>
 					<div  id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
 							<ul class="list-group-item" style="background-color: #3b6475; border-bottom:none;border-top:none; margin-bottom: -1px;">
