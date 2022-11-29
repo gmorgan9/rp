@@ -22,7 +22,7 @@
 
             <!-- POSTS -->
             <a href="#" style="background-color: #073C53 ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                <span>  Posts</span>
+                <span>  Posts &nbsp; <i class="bi bi-chevron-down"></i></span>
             </a>
 					<div  id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 							<ul class="list-group-item" style="background-color: #3b6475 ; border-bottom:none;border-top:none; margin-bottom: -1px;">
