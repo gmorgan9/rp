@@ -4,7 +4,7 @@
 
 			<div class="accordion mb-2" id="accordionExample">
 
-                <div class="card">
+                <div class="list-group-item">
 					<div class="card-header" id="headingOne">
 						<h2 class="mb-0">									
 							<a href="#">
