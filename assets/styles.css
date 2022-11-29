@@ -142,7 +142,7 @@ form .error-msg{
 } */
 
 a.active {
-color: red !important;
+background-color: #fff !important;
 border: none !important;
 }
 
