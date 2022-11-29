@@ -46,11 +46,12 @@ require_once "path.php";
 </div>
 </div>
 
-
-<script>
-  function addClass() {
-    document.getElementById('click').style.backgroundColor = 'pink';
-    }
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+  $(document).on('click', 'a', function() {
+    $(this).addClass('active').siblings().removeClass('active')
+  })
+  
 </script>
     
 <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
