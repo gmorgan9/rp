@@ -21,7 +21,7 @@
 
             <!-- POSTS -->
 
-            <a onclick="addClass()" href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53"  tabindex="1" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <a onclick="addClass()" href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53" id="click" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 <span>  Posts</span>
             </a>
 					<div  id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
