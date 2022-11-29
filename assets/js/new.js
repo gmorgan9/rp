@@ -1,4 +1,6 @@
-document.onclick = function(event) {
-    var target = event.target || event.srcElement;
-    target.style.background = '#cf5c3f';
-   };
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
