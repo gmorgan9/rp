@@ -9,16 +9,10 @@
                 <span>  Dashboard</span>
             </a>
 
-
-				<div class="card">
-					<div class="card-header" id="headingOne">
-						<h2 class="mb-0">									
-							<a data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-								<span><i class="fa fa-user"></i> Posts</span>
-								<i class="fa fa-chevron-down toggle"></i>
-							</a>
-						</h2>
-					</div>
+            <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <i class="bi bi-sliders2"></i>
+                <span>  Posts</span>
+            </a>
 					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 						<div class="card-body">
 							<ul class="list-group">
