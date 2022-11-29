@@ -1,4 +1,4 @@
-<div id="sidebarMenu" class="d-lg-block bg-white sidebar mt-3">
+<div id="sidebarMenu" class="d-lg-block bg-white sidebar">
 <div class="position-sticky">
     <a class="navbar-brand" href="/">
         <img src="/assets/images/logo.png" width="230px" class="text-center" alt="">
