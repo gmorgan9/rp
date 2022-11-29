@@ -3,6 +3,18 @@
         <div class="list-group list-group-flush mx-3 mt-4">
 
 			<div class="accordion mb-2" id="accordionExample">
+
+                <div class="card">
+					<div class="card-header" id="headingOne">
+						<h2 class="mb-0">									
+							<a href="#">
+								<span><i class="fa fa-user"></i> Dashboard</span>
+							</a>
+						</h2>
+					</div>
+                </div>
+
+
 				<div class="card">
 					<div class="card-header" id="headingOne">
 						<h2 class="mb-0">									
@@ -22,6 +34,8 @@
 						</div>
 					</div>
 				</div>
+
+
 				<div class="card">
 					<div class="card-header" id="headingTwo">
 						<h2 class="mb-0">									
