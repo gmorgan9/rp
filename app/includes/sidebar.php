@@ -28,26 +28,23 @@
                 <!-- END POSTS -->
 
 
-				<div class="card">
-					<div class="card-header" id="headingTwo">
-						<h2 class="mb-0">									
-							<a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								<span><i class="fa fa-comments"></i> Messages</span>
-								<i class="fa fa-chevron-down toggle rotate"></i>
-							</a>
-						</h2>
-					</div>
-					<div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
-						<div class="card-body">
-							<ul class="list-group">
-								<li class="list-group-item"><a href="#"><i class="fa fa-inbox"></i> Inbox <span class="badge badge-pill badge-primary">20</span></a></li>
-								<li class="list-group-item"><a href="#"><i class="fa fa-paper-plane"></i> Sent</a></li>
-								<li class="list-group-item"><a href="#"><i class="fa fa-file-text"></i> Drafts <span class="badge badge-pill badge-info">15</span></a></li>
-								<li class="list-group-item"><a href="#"><i class="fa fa-trash"></i> Trash</a></li>
+                <!-- PAGES -->
+
+				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <i class="bi bi-sliders2"></i>
+                <span>  Posts</span>
+            </a>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+							<ul class="list-group-item">
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Add new</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> All Posts</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Categories</a></li>
 							</ul>
-						</div>
+						
 					</div>
 				</div>
+
+                <!-- END PAGES -->
 
 
 				<div class="card">
