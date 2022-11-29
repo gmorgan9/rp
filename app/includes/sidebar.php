@@ -8,7 +8,7 @@
         
             <div class="mx-auto">
             <div class="dropdown-center">
-                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="true">
+                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                     POSTS
                 </button>
                 <ul class="dropdown-menu">
@@ -18,7 +18,6 @@
                 </ul>
             </div>
             </div>
-        
 
             
             <?php //if($_SESSION['acc_type'] == 0) { ?>
