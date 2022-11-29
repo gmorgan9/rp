@@ -5,7 +5,8 @@
                 <i class="bi bi-sliders2"></i>
                 <span>  Dashboard</span>
             </a>
-        <button class="dropdown-btn">Dropdown 
+        <button class="dropdown-btn text-center">
+            Dropdown 
         <i class="bi bi-chevron-down"></i>
         </button>
         <div class="dropdown-container">
