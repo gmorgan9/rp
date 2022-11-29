@@ -24,9 +24,10 @@
                       <div class="item"><a href="#"><i class="fas fa-info-circle"></i>About</a></div>
                     </div>
                     <!-- </div> -->
-   <section class="main">
-     <h1>Sidebar Menu With<br>Sub-Menus</h1>
-   </section>
+
+        </div>
+    </div>
+</nav>
 
 
 
