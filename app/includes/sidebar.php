@@ -1,4 +1,40 @@
-<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+
+ <img src="https://lh3.googleusercontent.com/a-/AOh14Gj99VObFyE8W_h8RrcwZO_aYiIHu5AAa_XpnOym=s600-k-no-rp-mo" alt="">
+          <h1>Mystery Code</h1>
+        </header>
+     <div class="menu">
+       <div class="item"><a href="#"><i class="fas fa-desktop"></i>Dashboard</a></div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-table"></i>Tables<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="#" class="sub-item">Sub Item 01</a>
+           <a href="#" class="sub-item">Sub Item 02</a>
+           <a href="#" class="sub-item">Sub Item 03</a>
+         </div>
+       </div>
+       <div class="item"><a href="#"><i class="fas fa-th"></i>Forms</a></div>
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-cogs"></i>Settings<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="#" class="sub-item">Sub Item 01</a>
+           <a href="#" class="sub-item">Sub Item 02</a>
+         </div>
+       </div>
+       <div class="item"><a href="#"><i class="fas fa-info-circle"></i>About</a></div>
+     </div>
+   </div>
+   <section class="main">
+     <h1>Sidebar Menu With<br>Sub-Menus</h1>
+   </section>
+
+
+
+
+
+
+
+
+<!-- <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
     <div class="position-sticky">
         <div class="list-group list-group-flush mx-3 mt-4">
         <a href="<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
@@ -66,7 +102,7 @@
                 </div>
 
 
-            </div> 
+            </div>  -->
 
 
             
