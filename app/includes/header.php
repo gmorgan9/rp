@@ -14,7 +14,7 @@
 
 <!--Main Navigation-->
 <header class="fixed-bottom">
-    <ul class="navbar-nav ms-auto d-flex flex-row">
+    <ul class="navbar-nav">
         <?php //if(isset($_SESSION['fname'])){ ?>
         <?php //if($row['acc_type'] == 1){ ?>
             <!-- <li class="nav-item"><a class="nav-link me-3 me-lg-0">Welcome, <span style="text-transform: capitalize;"><?php //echo $fname; ?></span>!</a></li> -->

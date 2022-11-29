@@ -1,5 +1,5 @@
 <div id="sidebarMenu" class="d-lg-block bg-white sidebar">
-<a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="/">
         <img src="/assets/images/logo.png" width="230px" class="text-center" alt="">
     </a>
 <div class="position-sticky">
