@@ -136,9 +136,9 @@ form .error-msg{
 .a1:focus {
    background-color: #48ceff !important;
 }
-.active {
-   color: blue;
-   background-color: #cf5c3f;
+.addCSS {
+   color: green;
+   font-size: 25px;
 }
 
 /* Sidebar */
