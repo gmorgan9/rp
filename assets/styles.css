@@ -141,6 +141,10 @@ form .error-msg{
    font-size: 25px;
 } */
 
+a[tabindex]:focus {
+color: black;
+}
+
 /* Sidebar */
 .sidebar {
     background-color: #073C53 !important;
