@@ -3,7 +3,6 @@
  <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
     <div class="position-sticky">
         <div class="list-group list-group-flush mx-3 mt-4">
-                    <div class="menu">
                       <div class="item"><a href="#"><i class="fas fa-desktop"></i>Dashboard</a></div>
                       <div class="item">
                         <a class="sub-btn"><i class="fas fa-table"></i>Tables<i class="fas fa-angle-right dropdown"></i></a>
@@ -23,7 +22,6 @@
                       </div>
                       <div class="item"><a href="#"><i class="fas fa-info-circle"></i>About</a></div>
                     </div>
-                    <!-- </div> -->
 
         </div>
     </div>
