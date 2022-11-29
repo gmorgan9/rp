@@ -1,8 +1,9 @@
 <div id="sidebarMenu" class="d-lg-block bg-white sidebar">
-<div class="position-sticky">
-    <a class="navbar-brand" href="/">
+<a class="navbar-brand" href="/">
         <img src="/assets/images/logo.png" width="230px" class="text-center" alt="">
     </a>
+<div class="position-sticky">
+    
         <div class="list-group list-group-flush mx-3 mt-4">
 
 			<div class="accordion mb-2" id="accordionExample">
