@@ -39,11 +39,11 @@
 
                 <!-- PAGES -->
 
-				<button onclick="addClass()" href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 !important;" id="click" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <span>  Pages</span>
-                </button>
-					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="background-color: #3b6475 !important;border-bottom:none;border-top:none; margin-bottom: -1px;">
-							<ul class="list-group-item">
+				<a id="polar" href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 !important;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <span>  Posts</span>
+                </a>
+					<div  id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+							<ul class="list-group-item" style="background-color: #3b6475 !important; border-bottom:none;border-top:none; margin-bottom: -1px;">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Posts</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Categories</a></li>
