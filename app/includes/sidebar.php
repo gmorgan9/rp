@@ -26,7 +26,7 @@
               <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                     
-                <div class="list-group list-group-flush mx-3 mt-4">
+                <div class="list-group list-group-flush mx-3 mt-1">
                     <a href="<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
                         <i class="bi bi-sliders2"></i>
                         <span>  Add New </span>
