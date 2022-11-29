@@ -6,11 +6,11 @@ for (i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "flex") {
+    if (dropdownContent.style.display === "block") {
       dropdownContent.style.display = "none";
     } else {
-      dropdownContent.style.display = "flex";
-      dropdownContent.style.flexDirection = "column";
+      dropdownContent.style.display = "block";
+      // dropdownContent.style.flexDirection = "column";
     }
   });
 }
