@@ -39,15 +39,12 @@ require_once "../path.php";
 <?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
         
 <div class="main">
-  <div class="page-header mx-auto">
-    <p class="page_title" style="float: left; padding-top: 2px;">Posts</p>
-    <!-- <ul class="breadcrumb">
-      <li>Dashboard</li>
-    </ul> -->
+    <div class="page-header mx-auto">
+        <p class="page_title" style="float: left; padding-top: 2px;">Posts</p>
+    </div>
 
     testing
-  </div>
-</div>
+    
 </div>
 
     
