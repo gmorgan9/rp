@@ -142,7 +142,7 @@ form .error-msg{
 } */
 
 .a:active {
-color: black;
+background-color: black !important;
 }
 
 /* Sidebar */
