@@ -192,6 +192,13 @@ ul.breadcrumb {
 	padding-left: 1rem; 
 	padding-right: 1rem;
 }
+.sidebar .nav-link {
+    font-weight: 500;
+    color: var(--bs-dark);
+}
+.sidebar .nav-link:hover {
+    color: var(--bs-primary);
+}
  
  
  
