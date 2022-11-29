@@ -22,11 +22,11 @@
 
             <!-- POSTS -->
 
-            <a id="polar" href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <a id="polar" href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 !important;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 <span>  Posts</span>
             </a>
 					<div  id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-							<ul class="list-group-item" style="background-color: #3b6475; border-bottom:none;border-top:none; margin-bottom: -1px;">
+							<ul class="list-group-item" style="background-color: #3b6475 !important; border-bottom:none;border-top:none; margin-bottom: -1px;">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Posts</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Categories</a></li>
@@ -39,10 +39,10 @@
 
                 <!-- PAGES -->
 
-				<button onclick="addClass()" href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53" id="click" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				<button onclick="addClass()" href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 !important;" id="click" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 <span>  Pages</span>
                 </button>
-					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="background-color: #3b6475;border-bottom:none;border-top:none; margin-bottom: -1px;">
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="background-color: #3b6475 !important;border-bottom:none;border-top:none; margin-bottom: -1px;">
 							<ul class="list-group-item">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Posts</a></li>
@@ -55,10 +55,10 @@
 
                 <!-- MEDIA -->
 
-				<button onclick="addClass()" href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53" id="click" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				<button onclick="addClass()" href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 !important;" id="click" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 <span>  Media</span>
                 </button>
-					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" style="background-color: #3b6475;border-bottom:none;border-top:none; margin-bottom: -1px;">
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" style="background-color: #3b6475 !important;border-bottom:none;border-top:none; margin-bottom: -1px;">
 							<ul class="list-group-item">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Posts</a></li>
@@ -71,10 +71,10 @@
 
                 <!-- COMMENTS -->
 
-				<button onclick="addClass()" href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53" id="click" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+				<button onclick="addClass()" href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 !important;" id="click" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 <span>  Comments</span>
                 </button>
-					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample" style="background-color: #3b6475;border-bottom:none;border-top:none; margin-bottom: -1px;">
+					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample" style="background-color: #3b6475 !important;border-bottom:none;border-top:none; margin-bottom: -1px;">
 							<ul class="list-group-item">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Posts</a></li>
@@ -87,10 +87,10 @@
 
                 <!-- USERS -->
 
-				<button onclick="addClass()" href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53" id="click" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+				<button onclick="addClass()" href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 !important;" id="click" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                 <span>  Users</span>
                 </button>
-					<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample" style="background-color: #3b6475;border-bottom:none;border-top:none; margin-bottom: -1px;">
+					<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample" style="background-color: #3b6475 !important;border-bottom:none;border-top:none; margin-bottom: -1px;">
 							<ul class="list-group-item">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Posts</a></li>
@@ -103,10 +103,10 @@
 
                 <!-- TOOLS -->
 
-				<button href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+				<button href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 !important;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                 <span>  Tools</span>
                 </button>
-					<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample" style="background-color: #3b6475;border-bottom:none;border-top:none; margin-bottom: -1px;">
+					<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample" style="background-color: #3b6475 !important;border-bottom:none;border-top:none; margin-bottom: -1px;">
 							<ul class="list-group-item">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Posts</a></li>
@@ -119,10 +119,10 @@
 
                 <!-- SETTINGS -->
 
-				<button onclick="addClass()" href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53" id="click" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+				<button onclick="addClass()" href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 !important" id="click" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                 <span>  Settings</span>
                 </button>
-					<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample" style="background-color: #3b6475;border-bottom:none;border-top:none; margin-bottom: -1px;">
+					<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample" style="background-color: #3b6475 !important;border-bottom:none;border-top:none; margin-bottom: -1px;">
 							<ul class="list-group-item">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Posts</a></li>
