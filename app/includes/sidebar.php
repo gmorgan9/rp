@@ -17,7 +17,7 @@
             </a>
 					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 							<ul class="list-group-item">
-								<li class="text-decoration-none"><a href="#"> Add new</a></li>
+								<li><a class="text-decoration-none" href="#"> Add new</a></li>
 								<li class="text-decoration-none"><a href="#"> All Posts</a></li>
 								<li class="text-decoration-none"><a href="#"> Categories</a></li>
 							</ul>
