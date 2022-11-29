@@ -50,13 +50,15 @@
   <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
     Manual close
   </button>
-  <ul class="dropdown-menu">
   <div class="list-group list-group-flush mx-3 mt-4">
+  <ul class="dropdown-menu">
+
     <li><a class="list-group-item list-group-item-action py-2 ripple" href="#">Menu item</a></li>
     <li><a class="list-group-item list-group-item-action py-2 ripple" href="#">Menu item</a></li>
     <li><a class="list-group-item list-group-item-action py-2 ripple" href="#">Menu item</a></li>
-</div>
+
   </ul>
+  </div>
 </div>
 
             
