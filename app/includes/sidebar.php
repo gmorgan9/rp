@@ -1,34 +1,83 @@
-<nav class="sidebar">
-         <div class="text">
-            Side Menu
-         </div>
-         <ul>
-            <li class="active"><a href="#">Dashboard</a></li>
-            <li>
-               <a href="#" class="feat-btn">Features
-               <span class="fas fa-caret-down first"></span>
-               </a>
-               <ul class="feat-show">
-                  <li><a href="#">Pages</a></li>
-                  <li><a href="#">Elements</a></li>
-               </ul>
-            </li>
-            <li>
-               <a href="#" class="serv-btn">Services
-               <span class="fas fa-caret-down second"></span>
-               </a>
-               <ul class="serv-show">
-                  <li><a href="#">App Design</a></li>
-                  <li><a href="#">Web Design</a></li>
-               </ul>
-            </li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Overview</a></li>
-            <li><a href="#">Shortcuts</a></li>
-            <li><a href="#">Feedback</a></li>
-         </ul>
-      </nav>
-
+<div class="container">
+  <div class="panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingOne">
+        <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Menu 0
+        </a>
+      </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          <ul class="nav">
+            <li><a href="#">item 1</a></li>
+            <li><a href="#">item 2</a></li>
+            <li><a href="#">item 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingTwo">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Menu 1
+        </a>
+      </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+        <div class="panel-body">
+          <ul class="nav">
+            <li><a href="#">item 1</a></li>
+            <li><a href="#">item 2</a></li>
+            <li><a href="#">item 3</a></li>
+            <li><a href="#">item 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingThree">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Menu 2
+        </a>
+      </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+        <div class="panel-body">
+          <ul class="nav">
+            <li><a href="#">item 1</a></li>
+            <li><a href="#">item 2</a></li>
+            <li><a href="#">item 3</a></li>
+            <li><a href="#">item 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingFour">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Menu 3
+        </a>
+      </h4>
+      </div>
+      <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+        <div class="panel-body">
+          <ul class="nav">
+            <li><a href="#">item 1</a></li>
+            <li><a href="#">item 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
 
 
 
