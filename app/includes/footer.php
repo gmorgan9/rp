@@ -8,7 +8,7 @@
 <?php //}?>
 
 <?php 
-$year = date("Y") +1; 
+$year = date("Y"); 
 ?>
         &copy; <?php echo $year; ?> CacheUp
     </div>
