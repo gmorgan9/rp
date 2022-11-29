@@ -8,7 +8,7 @@
         
             <div class="mx-auto">
             <div class="dropdown-center">
-                <button class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                     POSTS
                 </button>
                 <ul class="dropdown-menu">
