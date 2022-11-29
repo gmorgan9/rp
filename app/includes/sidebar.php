@@ -5,14 +5,18 @@
                 <i class="bi bi-sliders2"></i>
                 <span>  Dashboard</span>
             </a>
-        <button class="dropdown-btn text-center">
-            Dropdown
-        </button>
-        <div class="dropdown-container">
-            <a class="text-decoration-none d-flex flex-column text-center text-dark" href="#">Link 1</a>
-            <a class="text-decoration-none d-flex flex-column text-center text-dark" href="#">Link 2</a>
-            <a class="text-decoration-none d-flex flex-column text-center text-dark" href="#">Link 3</a>
-        </div>
+        
+            
+            <div class="btn-group">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+    Clickable inside
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Menu item</a></li>
+    <li><a class="dropdown-item" href="#">Menu item</a></li>
+    <li><a class="dropdown-item" href="#">Menu item</a></li>
+  </ul>
+</div>
         
 
             
