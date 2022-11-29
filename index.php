@@ -23,7 +23,7 @@ require_once "path.php";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/styles.css?v=1.46">
+    <link rel="stylesheet" href="assets/styles.css?v=1.47">
 
     <title>CacheUp Blog</title>
 
