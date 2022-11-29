@@ -4,7 +4,7 @@
         
 <div class="side">
         <button class="dropdown-btn">Dropdown 
-            <i class="fa fa-caret-down"></i>
+        <i class="bi bi-chevron-down"></i>
         </button>
         <div class="dropdown-container">
             <a class="text-decoration-none" href="#">Link 1</a>
