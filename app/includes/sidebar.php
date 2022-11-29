@@ -51,7 +51,7 @@
     Manual close
   </button>
   <div class="list-group list-group-flush mx-3 mt-4">
-  <ul class="dropdown">
+  <ul class="dropdown-menu">
 
     <li><a class="list-group-item list-group-item-action py-2 ripple" href="#">Menu item</a></li>
     <li><a class="list-group-item list-group-item-action py-2 ripple" href="#">Menu item</a></li>
