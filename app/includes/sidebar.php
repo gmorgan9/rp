@@ -87,14 +87,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-9">
-			<div class="jumbotron">
-				<h1 class="display-4">Hello, world!</h1>
-				<p class="lead">This is a simple example of accordion menu that can easily be integrated into any Bootstrap template. You'll find many such examples at <a href="https://www.tutorialrepublic.com" target="_blank">tutorialrepublic.com</a>.</p>
-				<hr class="my-4">						
-				<a class="btn btn-primary btn-lg" href="https://www.tutorialrepublic.com/snippets/gallery.php" target="_blank">Learn more</a>
-			</div>
-		</div>
+		
 	</div>
 </div>
 
