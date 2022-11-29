@@ -9,20 +9,24 @@
                 <span>  Dashboard</span>
             </a>
 
+            <!-- POSTS -->
+
             <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 <i class="bi bi-sliders2"></i>
                 <span>  Posts</span>
             </a>
 					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-						<div class="card-body">
+						
 							<ul class="list-group">
 								<li class="list-group-item"><a href="#"> Add new</a></li>
 								<li class="list-group-item"><a href="#"> All Posts</a></li>
 								<li class="list-group-item"><a href="#"> Categories</a></li>
 							</ul>
-						</div>
+						
 					</div>
 				</div>
+
+                <!-- END POSTS -->
 
 
 				<div class="card">
