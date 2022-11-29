@@ -6,7 +6,7 @@
                 <span>  Dashboard</span>
             </a>
         
-            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <!-- <div class="accordion accordion-flush" id="accordionFlushExample">
 
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingTwo">
@@ -44,7 +44,18 @@
                 <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
               </div>
             </div>
-            </div>
+            </div> -->
+
+            <div class="btn-group">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+    Manual close
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Menu item</a></li>
+    <li><a class="dropdown-item" href="#">Menu item</a></li>
+    <li><a class="dropdown-item" href="#">Menu item</a></li>
+  </ul>
+</div>
 
             
             <?php //if($_SESSION['acc_type'] == 0) { ?>
