@@ -1,5 +1,8 @@
 <div id="sidebarMenu" class="d-lg-block bg-white sidebar mt-3">
 <div class="position-sticky">
+<a class="navbar-brand" href="/">
+            <h3><i class="bi bi-file-earmark-check"></i> CacheUp Blog</h3>
+        </a>
         <div class="list-group list-group-flush mx-3 mt-4">
 
 			<div class="accordion mb-2" id="accordionExample">
