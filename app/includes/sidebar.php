@@ -12,10 +12,10 @@
 
             <!-- DASHBOARD -->
 
-            <a href="<?php echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+            <button href="<?php echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
                 <i class="bi bi-sliders2"></i>
                 <span>  Dashboard</span>
-            </a>
+</button>
 
             <!-- END DASHBOARD -->
 
@@ -38,10 +38,10 @@
 
                 <!-- PAGES -->
 
-				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				<button href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 <i class="bi bi-sliders2"></i>
                 <span>  Pages</span>
-            </a>
+</button>
 					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 							<ul class="list-group-item">
 								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Add new</a></li>
@@ -55,10 +55,10 @@
 
                 <!-- MEDIA -->
 
-				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				<button href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 <i class="bi bi-sliders2"></i>
                 <span>  Media</span>
-            </a>
+</button>
 					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 							<ul class="list-group-item">
 								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Add new</a></li>
@@ -72,10 +72,10 @@
 
                 <!-- COMMENTS -->
 
-				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+				<button href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 <i class="bi bi-sliders2"></i>
                 <span>  Comments</span>
-            </a>
+</button>
 					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
 							<ul class="list-group-item">
 								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Add new</a></li>
@@ -89,10 +89,10 @@
 
                 <!-- USERS -->
 
-				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+				<button href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                 <i class="bi bi-sliders2"></i>
                 <span>  Users</span>
-            </a>
+</button>
 					<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
 							<ul class="list-group-item">
 								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Add new</a></li>
@@ -106,10 +106,10 @@
 
                 <!-- TOOLS -->
 
-				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+				<button href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                 <i class="bi bi-sliders2"></i>
                 <span>  Tools</span>
-            </a>
+</button>
 					<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
 							<ul class="list-group-item">
 								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Add new</a></li>
@@ -123,10 +123,10 @@
 
                 <!-- SETTINGS -->
 
-				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+				<button href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                 <i class="bi bi-sliders2"></i>
                 <span>  Settings</span>
-            </a>
+</button>
 					<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
 							<ul class="list-group-item">
 								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Add new</a></li>
@@ -140,10 +140,10 @@
 
                 <!-- LOGOUT -->
 
-                <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <button href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
                     <i class="bi bi-sliders2"></i>
                     <span>  Logout</span>
-                </a>
+</button>
 
                 <!-- END LOGOUT -->
                 
