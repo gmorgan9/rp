@@ -6,7 +6,7 @@
                 <span>  Dashboard</span>
             </a>
         
-            
+            <div class="mx-auto">
             <div class="dropdown-center">
                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="true">
                     POSTS
@@ -16,6 +16,7 @@
                     <li><a class="dropdown-item text-center" href="#">Menu item</a></li>
                     <li><a class="dropdown-item text-center" href="#">Menu item</a></li>
                 </ul>
+            </div>
             </div>
         
 
