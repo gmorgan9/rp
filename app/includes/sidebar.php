@@ -21,7 +21,7 @@
 
             <!-- POSTS -->
 
-            <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="backgroud-color: #073C53" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 <i class="bi bi-sliders2"></i>
                 <span>  Posts</span>
             </a>
