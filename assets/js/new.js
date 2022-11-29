@@ -1,4 +1,4 @@
 function addClass() {
-    var v = document.getElementById("p");
+    var v = document.getElementById("a1");
     v.className += "addCSS";
 }
