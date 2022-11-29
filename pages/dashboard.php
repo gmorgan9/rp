@@ -38,11 +38,11 @@ require_once "../path.php";
 
         
 
-    
+    <div class="land-container">
     <p>
         Dashboard
     </p>
-
+</div>
 
     
 
