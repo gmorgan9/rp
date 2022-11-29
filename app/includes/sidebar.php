@@ -3,7 +3,7 @@
 <div class="position-sticky">
     <div class="logo-block logo" style="height: 150px; background-color: #0B4F6C">
         <a  class="navbar-brand"  href="/">
-            <img style="background-color: #0B4F6C; padding-top: 25px;" src="/assets/images/white-logo.png" width="230px" class="text-center " alt="">
+            <img style="background-color: #0B4F6C; padding-top: 30px;" src="/assets/images/white-logo.png" width="230px" class="text-center " alt="">
         </a>
         </div>
         <div class="list-group list-group-flush mx-3 mt-4">
