@@ -6,13 +6,12 @@
                 <span>  Dashboard</span>
             </a>
         <button class="dropdown-btn text-center">
-            Dropdown 
-        <i class="bi bi-chevron-down"></i>
+            Dropdown
         </button>
         <div class="dropdown-container">
-            <a class="text-decoration-none d-flex flex-column text-center" href="#">Link 1</a>
-            <a class="text-decoration-none d-flex flex-column text-center" href="#">Link 2</a>
-            <a class="text-decoration-none d-flex flex-column text-center" href="#">Link 3</a>
+            <a class="text-decoration-none d-flex flex-column text-center text-dark" href="#">Link 1</a>
+            <a class="text-decoration-none d-flex flex-column text-center text-dark" href="#">Link 2</a>
+            <a class="text-decoration-none d-flex flex-column text-center text-dark" href="#">Link 3</a>
         </div>
         
 
