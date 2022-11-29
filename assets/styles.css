@@ -197,16 +197,11 @@ ul.breadcrumb {
 	text-decoration: none;				
 }
 .accordion .card-header {
-	background: linear-gradient(#fff, #f1f1f1);
-	padding: .75rem 1rem;
 	position: relative;
 }
-.accordion .card-header:hover {
-	background: linear-gradient(#f1f1f1, #e8e8e8);
-}
-.accordion .card-header h2 {
+/* .accordion .card-header h2 {
 	font-size: 1rem;
-}
+} */
 .accordion .fa {
 	width: 20px;
 	margin-right: .25rem;
@@ -237,19 +232,18 @@ ul.breadcrumb {
 	border-radius: 0;
 	border-width: 1px 0 1px 0;
 	padding-left: 30px;
-	background: #d6dbe0;
 	font-weight: 500;
 }
-.accordion .list-group-item:hover {
+/* .accordion .list-group-item:hover {
 	background: #007bff;
-}
-.accordion .list-group-item:hover a {
+} */
+/* .accordion .list-group-item:hover a {
 	color: #fff !important;
-}
-.accordion .list-group-item:hover .badge{
+} */
+/* .accordion .list-group-item:hover .badge{
 	background: #fff;
 	color: #007bff;
-}
+} */
 .accordion .list-group-item a {
 	color: #61656b;
 	display: block;
