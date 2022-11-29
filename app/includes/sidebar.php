@@ -16,11 +16,10 @@
                 <span>  Posts</span>
             </a>
 					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-						
-							<ul class="list-group">
-								<li class="list-group-item"><a href="#"> Add new</a></li>
-								<li class="list-group-item"><a href="#"> All Posts</a></li>
-								<li class="list-group-item"><a href="#"> Categories</a></li>
+							<ul class="list-group-item">
+								<li class=""><a href="#"> Add new</a></li>
+								<li class=""><a href="#"> All Posts</a></li>
+								<li class=""><a href="#"> Categories</a></li>
 							</ul>
 						
 					</div>
