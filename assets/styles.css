@@ -143,6 +143,7 @@ form .error-msg{
 
 a.active {
 background-color: #fff !important;
+color: black;
 border: none !important;
 }
 
