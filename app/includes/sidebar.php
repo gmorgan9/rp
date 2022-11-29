@@ -4,10 +4,14 @@
 
 			<div class="accordion mb-2" id="accordionExample">
 
+            <!-- DASHBOARD -->
+
             <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
                 <i class="bi bi-sliders2"></i>
                 <span>  Dashboard</span>
             </a>
+
+            <!-- END DASHBOARD -->
 
             <!-- POSTS -->
 
@@ -128,15 +132,17 @@
 					</div>
 
                 <!-- END SETTINGS -->
+
+                <!-- LOGOUT -->
+
+                <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                    <i class="bi bi-sliders2"></i>
+                    <span>  Logout</span>
+                </a>
+
+                <!-- END LOGOUT -->
                 
-
-
-
-				<div class="card">
-					<div class="card-header" id="headingFive">
-						<h2 class="mb-0"><a href="#"><i class="fa fa-power-off"></i> Logout</a></h2>
-					</div>
-				</div>
+                
 			</div>
 		</div>
 		
