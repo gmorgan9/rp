@@ -26,7 +26,7 @@
                 <span>  Posts</span>
             </a>
 					<div  id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-							<ul class="list-group-item" style="background-color: #3b6475;border-bottom:none;border-top:none; margin-bottom: -1px;">
+							<ul class="list-group-item" style="background-color: #3b6475; border-bottom:none;border-top:none; margin-bottom: -1px;">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Posts</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Categories</a></li>

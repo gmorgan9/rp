@@ -212,11 +212,11 @@ ul.breadcrumb {
 
 
 .accordion .card {
-	color: #424e5d;
+	/* color: #424e5d; */
 	border: 1px solid #dddddd;
 }
 .accordion .card a {
-	color: #424e5d;
+	/* color: #424e5d; */
 	text-decoration: none;				
 }
 .accordion .card-header {
@@ -268,7 +268,7 @@ ul.breadcrumb {
 	color: #007bff;
 } */
 .accordion .list-group-item a {
-	color: #61656b;
+	/* color: #61656b; */
 	display: block;
 }
 .accordion .list-group-item .badge {
