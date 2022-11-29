@@ -184,7 +184,7 @@ ul.breadcrumb {
   display: none;
 }
 
-.dropdown-btn:active {
+.dropdown-container a:active {
    background-color: #0275d8;
    height: 30px;
    width: 30px;
