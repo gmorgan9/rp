@@ -1,7 +1,10 @@
 <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
     <div class="position-sticky">
         <div class="list-group list-group-flush mx-3 mt-4">
-        
+        <a href="<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <i class="bi bi-sliders2"></i>
+                <span>  Dashboard</span>
+            </a>
 <div class="side">
         <button class="dropdown-btn">Dropdown 
         <i class="bi bi-chevron-down"></i>
@@ -14,10 +17,7 @@
         </div>
         
 
-            <a href="<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
-                <i class="bi bi-sliders2"></i>
-                <span>  Dashboard</span>
-            </a>
+            
             <?php //if($_SESSION['acc_type'] == 0) { ?>
             <a href="<?php //echo BASE_URL . '/pages/class-schedule.php' ?>" class="list-group-item list-group-item-action py-2 ripple">
                 <i class="bi bi-calendar-range"></i>
