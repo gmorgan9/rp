@@ -22,12 +22,11 @@
             <!-- POSTS -->
 
             <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="backgroud-color: #073C53" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                <i class="bi bi-sliders2"></i>
                 <span>  Posts</span>
             </a>
 					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 							<ul class="list-group-item" style="backgroud-color: #073C53">
-								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Add new</a></li>
+								<li class="list-unstyled" style="backgroud-color: #073C53"><a class="text-decoration-none" href="#"> Add new</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none" href="#"> All Posts</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Categories</a></li>
 							</ul>
