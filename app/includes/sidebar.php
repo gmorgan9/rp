@@ -38,11 +38,9 @@
 
                 <!-- PAGES -->
 
-                <ol>
 				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 !important;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 <span>  Pages</span>
                 </a>
-                </ol>
 					<div  id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 							<ul class="list-group-item" style="background-color: #3b6475 !important; border-bottom:none;border-top:none; margin-bottom: -1px;">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
@@ -56,11 +54,9 @@
 
                 <!-- MEDIA -->
 
-                <ol>
 				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 !important;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 <span>  Media</span>
                 </a>
-                </ol>
 					<div  id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 							<ul class="list-group-item" style="background-color: #3b6475 !important; border-bottom:none;border-top:none; margin-bottom: -1px;">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
@@ -74,11 +70,9 @@
 
                 <!-- COMMENTS -->
 
-                <ol>
 				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 !important;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 <span>  Comments</span>
                 </a>
-                </ol>
 					<div  id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
 							<ul class="list-group-item" style="background-color: #3b6475 !important; border-bottom:none;border-top:none; margin-bottom: -1px;">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
@@ -92,11 +86,9 @@
 
                 <!-- USERS -->
 
-                <ol>
 				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 !important;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                 <span>  Users</span>
                 </a>
-                </ol>
 					<div  id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
 							<ul class="list-group-item" style="background-color: #3b6475 !important; border-bottom:none;border-top:none; margin-bottom: -1px;">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
@@ -110,11 +102,9 @@
 
                 <!-- TOOLS -->
 
-                <ol>
 				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 !important;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                 <span>  Tools</span>
                 </a>
-                </ol>
 					<div  id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
 							<ul class="list-group-item" style="background-color: #3b6475 !important; border-bottom:none;border-top:none; margin-bottom: -1px;">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
@@ -128,11 +118,9 @@
 
                 <!-- SETTINGS -->
 
-                <ol>
 				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 !important;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                 <span>  Settings</span>
                 </a>
-                </ol>
 					<div  id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
 							<ul class="list-group-item" style="background-color: #3b6475 !important; border-bottom:none;border-top:none; margin-bottom: -1px;">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
