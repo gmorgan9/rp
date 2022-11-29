@@ -1,6 +1,6 @@
-<div id="sidebarMenu" class="sidebar container-lg">
+<div id="sidebarMenu" class="sidebar container-lg mt-3">
 	<div class="row">
-		<div class="col-lg-3">
+		<div class="col-lg">
 			<div class="accordion mb-2" id="accordionExample">
 				<div class="card">
 					<div class="card-header" id="headingOne">
