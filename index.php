@@ -50,6 +50,28 @@ require_once "path.php";
     
 <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
 
+<script>
+  // Get the container element
+var btnContainer = document.getElementById("a1");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("list-unstyled");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+
+    // If there's no active class
+    if (current.length > 0) { 
+      current[0].className = current[0].className.replace(" active", "");
+    }
+
+    // Add the active class to the current/clicked button
+    this.className += " active";
+  });
+}
+</script>
 
     <script src="assets/js/dropdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
