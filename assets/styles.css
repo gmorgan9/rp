@@ -134,7 +134,7 @@ form .error-msg{
     margin-left: 240px;
 }
 .a1:hover {
-   background-color: #48ceff;
+   background-color: #48ceff !important;
 }
 
 /* Sidebar */
