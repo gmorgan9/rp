@@ -4,12 +4,22 @@
         
 
 
-        <input id="check01" type="checkbox" name="menu" />
-        <label for="check01">Menu</label>
-        <ul class="submenu">
-            <li><a href="#">Item 1</a></li>
-            <li><a href="#">Item 2</a></li>
-        </ul>
+        <div class="c">
+  <!-- The dropdown starts here... -->
+  <div class="dd">
+    <div class="dd-a"><span>Dropdown menu</span></div>
+    <input type="checkbox">
+    <div class="dd-c">
+      <ul>
+        <li><a href="#"><span>Link</span></a></li>
+        <li><a href="#"><span>A somewhat longer link to expand the menu further.</span></a></li>
+        <li><a href="#"><span>Link</span></a></li>
+        <li><a href="#"><span>Link</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- ...and ends here. -->
+</div>
 
 
 
