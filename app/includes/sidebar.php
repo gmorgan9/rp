@@ -1,30 +1,19 @@
 
- <!-- <img src="https://lh3.googleusercontent.com/a-/AOh14Gj99VObFyE8W_h8RrcwZO_aYiIHu5AAa_XpnOym=s600-k-no-rp-mo" alt=""> -->
- <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
-    <div class="position-sticky">
-        <div class="list-group list-group-flush mx-3 mt-4">
-                      <div class="list-group-item list-group-item-action py-2 ripple" aria-current="true"><a href="#"><i class="fas fa-desktop"></i>Dashboard</a></div>
-                      <div class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
-                        <a class="menu-btn"><i class="fas fa-table"></i>Tables<i class="fas fa-angle-right dropdown"></i></a>
-                        <div class="sub-menu">
-                          <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">Sub Item 01</a>
-                          <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">Sub Item 02</a>
-                          <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">Sub Item 03</a>
-                        </div>
-                      </div>
-                      <div class="list-group-item list-group-item-action py-2 ripple" aria-current="true"><a href="#"><i class="fas fa-th"></i>Forms</a></div>
-                      <div class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
-                        <a class="menu-btn"><i class="fas fa-cogs"></i>Settings<i class="fas fa-angle-right dropdown"></i></a>
-                        <div class="sub-menu">
-                          <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">Sub Item 01</a>
-                          <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">Sub Item 02</a>
-                        </div>
-                      </div>
-                      <div class="list-group-item list-group-item-action py-2 ripple" aria-current="true"><a href="#"><i class="fas fa-info-circle"></i>About</a></div>
-
-        </div>
-    </div>
-</nav>
+ <div class="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+  <button class="dropdown-btn">Dropdown 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <a href="#contact">Search</a>
+</div>
 
 
 
