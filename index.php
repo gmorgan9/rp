@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/styles.css?v=1.1">
+    <link rel="stylesheet" href="assets/styles.css?v=1.2">
 
     <title>CacheUp Blog</title>
 
