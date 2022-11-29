@@ -9,7 +9,7 @@
             
             <div class="btn-group">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
-                    Clickable inside
+                    POSTS
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Menu item</a></li>
