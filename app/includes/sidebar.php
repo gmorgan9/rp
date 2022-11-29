@@ -31,7 +31,7 @@
 
 				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 <i class="bi bi-sliders2"></i>
-                <span>  Posts</span>
+                <span>  Pages</span>
             </a>
 					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 							<ul class="list-group-item">
@@ -44,46 +44,94 @@
 
                 <!-- END PAGES -->
 
+                <!-- MEDIA -->
 
-				<div class="card">
-					<div class="card-header" id="headingThree">
-						<h2 class="mb-0">									
-							<a data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								<span><i class="fa fa-bar-chart"></i> Reports</span>
-								<i class="fa fa-chevron-down toggle"></i>
-							</a>
-						</h2>
-					</div>
+				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="bi bi-sliders2"></i>
+                <span>  Media</span>
+            </a>
 					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-						<div class="card-body">
-							<ul class="list-group">										
-								<li class="list-group-item"><a href="#"><i class="fa fa-dollar"></i> Sales</a></li>
-								<li class="list-group-item"><a href="#"><i class="fa fa-tags"></i> Orders</a></li>
-								<li class="list-group-item"><a href="#"><i class="fa fa-plane"></i> Shipment</a></li>
-								<li class="list-group-item"><a href="#"><i class="fa fa-users"></i> Customers</a></li>										
+							<ul class="list-group-item">
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Add new</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> All Posts</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Categories</a></li>
 							</ul>
-						</div>
+						
 					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingFour">
-						<h2 class="mb-0">									
-							<a data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-								<span><i class="fa fa-cog"></i> Settings</span>
-								<i class="fa fa-chevron-down toggle"></i>
-							</a>
-						</h2>
-					</div>
+
+                <!-- END MEDIA -->
+
+                <!-- COMMENTS -->
+
+				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <i class="bi bi-sliders2"></i>
+                <span>  Comments</span>
+            </a>
 					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-						<div class="card-body">
-							<ul class="list-group">
-								<li class="list-group-item"><a href="#"><i class="fa fa-font"></i> Typography</a></li>
-								<li class="list-group-item"><a href="#"><i class="fa fa-bell"></i> Notifications</a></li>
-								<li class="list-group-item"><a href="#"><i class="fa fa-map"></i> Maps</a></li>
+							<ul class="list-group-item">
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Add new</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> All Posts</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Categories</a></li>
 							</ul>
-						</div>
+						
 					</div>
-				</div>
+
+                <!-- END COMMENTS -->
+
+                <!-- USERS -->
+
+				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <i class="bi bi-sliders2"></i>
+                <span>  Users</span>
+            </a>
+					<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+							<ul class="list-group-item">
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Add new</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> All Posts</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Categories</a></li>
+							</ul>
+						
+					</div>
+
+                <!-- END USERS -->
+
+                <!-- TOOLS -->
+
+				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <i class="bi bi-sliders2"></i>
+                <span>  Tools</span>
+            </a>
+					<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+							<ul class="list-group-item">
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Add new</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> All Posts</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Categories</a></li>
+							</ul>
+						
+					</div>
+
+                <!-- END TOOLS -->
+
+                <!-- SETTINGS -->
+
+				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                <i class="bi bi-sliders2"></i>
+                <span>  Settings</span>
+            </a>
+					<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+							<ul class="list-group-item">
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Add new</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> All Posts</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none" href="#"> Categories</a></li>
+							</ul>
+						
+					</div>
+
+                <!-- END SETTINGS -->
+                
+
+
+
 				<div class="card">
 					<div class="card-header" id="headingFive">
 						<h2 class="mb-0"><a href="#"><i class="fa fa-power-off"></i> Logout</a></h2>
