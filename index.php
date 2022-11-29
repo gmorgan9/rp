@@ -23,7 +23,7 @@ require_once "path.php";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/styles.css?v=1.54">
+    <link rel="stylesheet" href="assets/styles.css?v=1.60">
 
     <title>CacheUp Blog</title>
 
@@ -48,7 +48,7 @@ require_once "path.php";
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript">
-  $(document).on('click', 'collapse', function() {
+  $(document).on('click', 'ul li', function() {
     $(this).addClass('active').siblings().removeClass('active')
   })
   
