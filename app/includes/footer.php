@@ -1,5 +1,5 @@
 <!-- WORKING -->
-    <footer class="sticky-bottom" style="background-color: white">
+    <footer class="" style="background-color: white; position: relative;">
         <div class="text-center text-muted pt-1" style="font-size: 10px; background-color: white;">
             <?php $year = date("Y"); ?>
         &copy; <?php echo $year; ?> CacheUp
