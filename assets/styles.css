@@ -184,7 +184,9 @@ ul.breadcrumb {
   display: none;
 }
 
-
+.drop {
+   border: none;
+}
  
  
  
