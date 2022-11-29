@@ -1,4 +1,4 @@
-<div class="container-lg mt-5">
+<div id="sidebarMenu" class="container-lg mt-5">
 	<div class="row">
 		<div class="col-lg-3">
 			<div class="accordion mb-2" id="accordionExample">
