@@ -51,7 +51,14 @@ require_once "../path.php";
     
 <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
 
-<script src="../assets/js/new.js"></script>
+<!-- <script src="../assets/js/new.js"></script> -->
+
+<script>
+  function addClass() {
+        var elem = document.getElementById("a1");
+        elem.classList.add("addCSS");
+    }
+</script>
 
 
     <script src="../assets/js/dropdown.js"></script>
