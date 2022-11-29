@@ -184,9 +184,10 @@ ul.breadcrumb {
   display: none;
 }
 
-.drop {
-   border: none;
-}
+.drop:focus {
+   outline: none;
+   box-shadow: none;
+ }
  
  
  
