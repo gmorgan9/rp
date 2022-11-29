@@ -1,7 +1,7 @@
 <div id="sidebarMenu" class="d-lg-block bg-white sidebar mt-3">
 <div class="position-sticky">
     <a class="navbar-brand" href="/">
-        <img src="/assets/images/logo.png" alt="">
+        <img src="/assets/images/logo.png" wdith="50" alt="">
     </a>
         <div class="list-group list-group-flush mx-3 mt-4">
 
