@@ -7,11 +7,11 @@
             </a>
         
             
-            <div class="btn-group">
+            <div class="dropdown-center">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                     POSTS
                 </button>
-                <ul class="dropdown-menu text-center">
+                <ul class="dropdown-menu">
                     <li><a class="dropdown-item text-center" href="#">Menu item</a></li>
                     <li><a class="dropdown-item text-center" href="#">Menu item</a></li>
                     <li><a class="dropdown-item text-center" href="#">Menu item</a></li>
