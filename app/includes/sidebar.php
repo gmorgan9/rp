@@ -1,9 +1,9 @@
 <div id="sidebarMenu" class="d-lg-block bg-white sidebar">
     
 <div class="position-sticky">
-    <div class="logo-block" style="height: 150px; background-color: #0B4F6C">
+    <div class="logo-block logo" style="height: 150px; background-color: #0B4F6C">
         <a  class="navbar-brand"  href="/">
-            <img style="background-color: #0B4F6C;" src="/assets/images/white-logo.png" width="230px" class="text-center logo" alt="">
+            <img style="background-color: #0B4F6C;" src="/assets/images/white-logo.png" width="230px" class="text-center " alt="">
         </a>
         </div>
         <div class="list-group list-group-flush mx-3 mt-4">
