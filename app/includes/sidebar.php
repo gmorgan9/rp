@@ -2,7 +2,7 @@
     <div class="position-sticky">
         <div class="list-group list-group-flush mx-3 mt-4">
         
-
+<div class="side">
         <button class="dropdown-btn">Dropdown 
             <i class="fa fa-caret-down"></i>
         </button>
@@ -10,6 +10,7 @@
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>
             <a href="#">Link 3</a>
+        </div>
         </div>
         
 
