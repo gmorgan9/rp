@@ -1,15 +1,7 @@
 <!-- WORKING -->
-<?php //if(isset($_SESSION['fname'])){ ?>
     <footer class="fixed-bottom" style="background-color: white">
-        <div class="text-center text-muted" style="background-color: white;">
-<?php //} else { ?>
-    <!-- <footer class="fixed-bottom py-3" style="background-color: #17181C;"> -->
-        <!-- <div class="text-center text-muted" style="background-color: rgba(0, 0, 0, 0.05);"> -->
-<?php //}?>
-
-<?php 
-$year = date("Y"); 
-?>
+        <div class="text-center text-muted" style="font-size: 15px; background-color: white;">
+            <?php $year = date("Y"); ?>
         &copy; <?php echo $year; ?> CacheUp
     </div>
 </footer>
