@@ -6,10 +6,10 @@
         <button class="dropdown-btn">Dropdown 
         <i class="bi bi-chevron-down"></i>
         </button>
-        <div class="dropdown-container d-flex flex-column">
-            <a class="text-decoration-none d-flex flex-column" href="#">Link 1</a>
-            <a class="text-decoration-none d-flex flex-column" href="#">Link 2</a>
-            <a class="text-decoration-none d-flex flex-column" href="#">Link 3</a>
+        <div class="dropdown-container">
+            <a class="text-decoration-none" href="#">Link 1</a>
+            <a class="text-decoration-none" href="#">Link 2</a>
+            <a class="text-decoration-none" href="#">Link 3</a>
         </div>
         </div>
         
