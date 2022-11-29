@@ -1,10 +1,11 @@
 <div id="sidebarMenu" class="d-lg-block bg-white sidebar">
     
 <div class="position-sticky">
+    <div class="logo-block" style="height: 150px;">
         <a  class="navbar-brand"  href="/">
-            <img style="background-color: #0B4F6C; height: 150px;" src="/assets/images/white-logo.png" width="230px" class="text-center logo" alt="">
+            <img style="background-color: #0B4F6C;" src="/assets/images/white-logo.png" width="230px" class="text-center logo" alt="">
         </a>
-    
+        </div>
         <div class="list-group list-group-flush mx-3 mt-4">
 
 			<div class="accordion mb-2" id="accordionExample">
