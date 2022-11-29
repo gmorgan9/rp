@@ -1,6 +1,7 @@
 <div id="sidebarMenu" class="d-lg-block bg-white sidebar mt-3">
-	<div class="row">
-		<div class="col-lg">
+<div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+
 			<div class="accordion mb-2" id="accordionExample">
 				<div class="card">
 					<div class="card-header" id="headingOne">
