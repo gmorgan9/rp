@@ -141,9 +141,8 @@ form .error-msg{
    font-size: 25px;
 } */
 
-a[tabindex]:focus {
+a:active {
 color: black;
-outline: none;
 }
 
 /* Sidebar */

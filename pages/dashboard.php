@@ -23,7 +23,7 @@ require_once "../path.php";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="../assets/styles.css?v=1.48">
+    <link rel="stylesheet" href="../assets/styles.css?v=1.49">
 
     <title>Dashboard - CacheUp Blog</title>
 
@@ -53,10 +53,12 @@ require_once "../path.php";
 
 <!-- <script src="../assets/js/new.js"></script> -->
 
-<script>
-  function addClass() {
-    document.getElementById('click').style.backgroundColor = 'pink';
-    }
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+  $(document).on('click', 'a', function() {
+    $(this).addClass('active').siblings().removeClass('active')
+  })
+  
 </script>
 
 
