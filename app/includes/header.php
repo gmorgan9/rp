@@ -24,9 +24,9 @@
     <div class="container-fluid">
 
 <!-- Brand -->
-        <a class="navbar-brand" href="/">
+        <!-- <a class="navbar-brand" href="/">
             <h3><i class="bi bi-file-earmark-check"></i> CacheUp Blog</h3>
-        </a>
+        </a> -->
 
         <ul class="navbar-nav ms-auto d-flex flex-row">
             <?php //if(isset($_SESSION['fname'])){ ?>
