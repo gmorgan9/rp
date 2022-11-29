@@ -141,8 +141,8 @@ form .error-msg{
    font-size: 25px;
 } */
 
-a:active {
-background-color: black !important;
+.tab:active {
+color: red !important;
 outline: none !important;
 }
 
