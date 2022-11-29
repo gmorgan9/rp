@@ -1,5 +1,5 @@
 
- <img src="https://lh3.googleusercontent.com/a-/AOh14Gj99VObFyE8W_h8RrcwZO_aYiIHu5AAa_XpnOym=s600-k-no-rp-mo" alt="">
+ <!-- <img src="https://lh3.googleusercontent.com/a-/AOh14Gj99VObFyE8W_h8RrcwZO_aYiIHu5AAa_XpnOym=s600-k-no-rp-mo" alt=""> -->
           <h1>Mystery Code</h1>
         </header>
      <div class="menu">
@@ -106,7 +106,7 @@
 
 
             
-            <?php //if($_SESSION['acc_type'] == 0) { ?>
+            <!-- <?php //if($_SESSION['acc_type'] == 0) { ?>
             <a href="<?php //echo BASE_URL . '/pages/class-schedule.php' ?>" class="list-group-item list-group-item-action py-2 ripple">
                 <i class="bi bi-calendar-range"></i>
                 <span>  Schedule</span>
@@ -174,4 +174,4 @@
            <?php //} ?>
         </div>
     </div>
-</nav>
+</nav> -->
