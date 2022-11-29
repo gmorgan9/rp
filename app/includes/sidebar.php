@@ -7,9 +7,9 @@
         <i class="bi bi-chevron-down"></i>
         </button>
         <div class="dropdown-container d-flex">
-            <a class="text-decoration-none" href="#">Link 1</a>
-            <a class="text-decoration-none" href="#">Link 2</a>
-            <a class="text-decoration-none" href="#">Link 3</a>
+            <a class="text-decoration-none d-flex" href="#">Link 1</a>
+            <a class="text-decoration-none d-flex" href="#">Link 2</a>
+            <a class="text-decoration-none d-flex" href="#">Link 3</a>
         </div>
         </div>
         
