@@ -141,8 +141,8 @@ form .error-msg{
    font-size: 25px;
 } */
 
-span.active {
-background-color: #fff !important;
+tap.active {
+color: red !important;
 border: none !important;
 }
 

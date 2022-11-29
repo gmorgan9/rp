@@ -55,7 +55,7 @@ require_once "../path.php";
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript">
-  $(document).on('click', 'span', function() {
+  $(document).on('click', 'polar', function() {
     $(this).addClass('active').siblings().removeClass('active')
   })
   
