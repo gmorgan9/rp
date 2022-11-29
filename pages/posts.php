@@ -60,16 +60,6 @@ require_once "../path.php";
   $(document).on('click', 'ul li a', function() {
     $(this).removeClass('active')
   })
-
-  $('.trigger-button').click(function() {
-    $(".trigger-button").removeClass("active")
-    $('.accordion').slideUp('normal');
-    if($(this).next().is(':hidden') == true) {
-        $(this).next().slideDown('normal');
-        $(this).addClass("active");
-     } 
- });
-$('.accordion').hide();
 </script>
 
 
