@@ -4,15 +4,10 @@
 
 			<div class="accordion mb-2" id="accordionExample">
 
-                <!-- <div class="list-group-item"> -->
-					<div class="card-header" id="headingOne">
-						<h2 class="mb-0">									
-							<a href="#">
-								<span><i class="fa fa-user"></i> Dashboard</span>
-							</a>
-						</h2>
-					</div>
-                <!-- </div> -->
+            <a href="<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <i class="bi bi-sliders2"></i>
+                <span>  Dashboard</span>
+            </a>
 
 
 				<div class="card">
