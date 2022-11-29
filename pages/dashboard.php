@@ -55,7 +55,7 @@ require_once "../path.php";
 
 <script>
   var count = 1;
-    function setColor(btn, color) {
+    function setColor(click, color) {
         var property = document.getElementById(click);
         if (count == 0) {
             property.style.backgroundColor = "#FFFFFF"
