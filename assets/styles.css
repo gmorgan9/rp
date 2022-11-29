@@ -184,6 +184,9 @@ ul.breadcrumb {
   display: none;
 }
 
+.dropdown-btn:active {
+   background-color: #0275d8;
+}
 
 .dropdown-btn {
    padding: 6px 8px 6px 16px;
