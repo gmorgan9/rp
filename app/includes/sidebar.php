@@ -2,27 +2,16 @@
     <div class="position-sticky">
         <div class="list-group list-group-flush mx-3 mt-4">
         
-
-
-        <div class="c">
-  <!-- The dropdown starts here... -->
-  <div class="dd">
-    <div class="dd-a"><span>Dropdown menu</span></div>
-    <input type="checkbox">
-    <div class="dd-c">
-      <ul>
-        <li><a href="#"><span>Link</span></a></li>
-        <li><a href="#"><span>A somewhat longer link to expand the menu further.</span></a></li>
-        <li><a href="#"><span>Link</span></a></li>
-        <li><a href="#"><span>Link</span></a></li>
-      </ul>
-    </div>
-  </div>
-  <!-- ...and ends here. -->
-</div>
-
-
-
+<div class="side">
+        <button class="dropdown-btn">Dropdown 
+        <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a class="text-decoration-none" href="#">Link 1</a>
+            <a class="text-decoration-none" href="#">Link 2</a>
+            <a class="text-decoration-none" href="#">Link 3</a>
+        </div>
+        </div>
         
 
             <a href="<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
