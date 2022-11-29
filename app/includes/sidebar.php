@@ -1,6 +1,6 @@
 <div id="sidebarMenu" class="d-lg-block bg-white sidebar">
     <a class="navbar-brand" href="/">
-        <img src="/assets/images/logo.png" width="230px" class="text-center" alt="">
+        <img src="/assets/images/logo.png" width="230px" class="text-center logo" alt="">
     </a>
 <div class="position-sticky">
     

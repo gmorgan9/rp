@@ -25,6 +25,9 @@ body {
     background-color: #eee !important;
     color: #000;
 }
+.logo {
+   margin-top: -25px;
+}
 
 .sidebar {
    /* background-color: #eee; */
