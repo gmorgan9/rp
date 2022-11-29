@@ -136,10 +136,10 @@ form .error-msg{
 .a1:focus {
    background-color: #48ceff !important;
 }
-.addCSS {
+/* .addCSS {
    color: green;
    font-size: 25px;
-}
+} */
 
 /* Sidebar */
 .sidebar {

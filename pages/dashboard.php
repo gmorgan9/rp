@@ -23,7 +23,7 @@ require_once "../path.php";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="../assets/styles.css?v=1.45">
+    <link rel="stylesheet" href="../assets/styles.css?v=1.46">
 
     <title>Dashboard - CacheUp Blog</title>
 
@@ -54,10 +54,7 @@ require_once "../path.php";
 <!-- <script src="../assets/js/new.js"></script> -->
 
 <script>
-  function addClass() {
-        var elem = document.getElementById("a1");
-        elem.classList.add("addCSS");
-    }
+
 </script>
 
 
