@@ -143,6 +143,7 @@ form .error-msg{
 
 a[tabindex]:focus {
 color: black;
+outline: none;
 }
 
 /* Sidebar */
