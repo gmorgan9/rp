@@ -22,7 +22,7 @@
                       </div>
                       <div class="list-group-item list-group-item-action py-2 ripple" aria-current="true"><a href="#"><i class="fas fa-info-circle"></i>About</a></div>
 
-        </div>
+        <!-- </div> -->
     </div>
 </nav>
 
