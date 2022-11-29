@@ -1,8 +1,8 @@
 <div id="sidebarMenu" class="d-lg-block bg-white sidebar">
     
 <div class="position-sticky">
-        <a style="background-color: #0B4F6C; height: 150px;" class="navbar-brand" href="/">
-            <img src="/assets/images/white-logo.png" width="230px" class="text-center logo" alt="">
+        <a  class="navbar-brand" href="/">
+            <img style="background-color: #0B4F6C;" src="/assets/images/white-logo.png" width="230px" class="text-center logo" alt="">
         </a>
     
         <div class="list-group list-group-flush mx-3 mt-4">
