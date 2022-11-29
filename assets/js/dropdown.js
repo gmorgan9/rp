@@ -9,7 +9,8 @@ for (i = 0; i < dropdown.length; i++) {
     if (dropdownContent.style.display === "block") {
       dropdownContent.style.display = "none";
     } else {
-      dropdownContent.style.display = "block";
+      dropdownContent.style.display = "flex";
+      dropdownContent.style.flexDirection = "column";
     }
   });
 }
