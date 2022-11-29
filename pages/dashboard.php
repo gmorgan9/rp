@@ -51,6 +51,12 @@ require_once "../path.php";
     
 <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
 
+<script>
+  $(document).ready(function() {
+	$('li.active').removeClass('active');
+	$('a[href$="' + location.pathname.match(/[^\\/]+$/)[0] + '"]').closest('li').addClass('active'); 
+  });
+</script>
 
     <script src="../assets/js/dropdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

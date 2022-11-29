@@ -7,7 +7,3 @@ $(document).ready(function(){
 	});
 });
 
-$(document).ready(function() {
-	$('li.active').removeClass('active');
-	$('a[href$="' + location.pathname.match(/[^\\/]+$/)[0] + '"]').closest('li').addClass('active'); 
-  });
