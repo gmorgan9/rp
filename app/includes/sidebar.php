@@ -1,37 +1,4 @@
-<nav class="sidebar card py-2 mb-4">
-<ul class="nav flex-column" id="nav_accordion">
-	<li class="nav-item">
-		<a class="nav-link" href="#"> Link name </a>
-	</li>
-	<li class="nav-item has-submenu">
-		<a class="nav-link" href="#"> Submenu links  </a>
-		<ul class="submenu collapse">
-			<li><a class="nav-link" href="#">Submenu item 1 </a></li>
-			<li><a class="nav-link" href="#">Submenu item 2 </a></li>
-			<li><a class="nav-link" href="#">Submenu item 3 </a> </li>
-		</ul>
-	</li>
-	<li class="nav-item has-submenu">
-		<a class="nav-link" href="#"> More menus  </a>
-		<ul class="submenu collapse">
-			<li><a class="nav-link" href="#">Submenu item 4 </a></li>
-			<li><a class="nav-link" href="#">Submenu item 5 </a></li>
-			<li><a class="nav-link" href="#">Submenu item 6 </a></li>
-			<li><a class="nav-link" href="#">Submenu item 7 </a></li>
-		</ul>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" href="#"> Something </a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" href="#"> Other link </a>
-	</li>
-</ul>
-</nav>
-
-
-
-<!-- <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
     <div class="position-sticky">
         <div class="list-group list-group-flush mx-3 mt-4">
         <a href="<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
@@ -39,16 +6,36 @@
                 <span>  Dashboard</span>
             </a>
         
-            <div class="mx-auto">
-            <div class="dropdown-center">
-                <button class="btn btn-link dropdown-toggle text-dark text-decoration-none" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
-                    POSTS
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Accordion Item #1
                 </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item text-center" href="#">Menu item</a></li>
-                    <li><a class="dropdown-item text-center" href="#">Menu item</a></li>
-                    <li><a class="dropdown-item text-center" href="#">Menu item</a></li>
-                </ul>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
             </div>
             </div>
 
@@ -121,4 +108,4 @@
            <?php //} ?>
         </div>
     </div>
-</nav> -->
+</nav>
