@@ -141,7 +141,7 @@ form .error-msg{
    font-size: 25px;
 } */
 
-p a.active {
+p.active a {
 color: red !important;
 border: none !important;
 }
