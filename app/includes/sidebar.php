@@ -11,12 +11,12 @@
 			<div class="accordion mb-2" id="accordionExample">
 
             <!-- DASHBOARD -->
-            <button>
+            <span>
             <a href="<?php echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
                 <i class="bi bi-sliders2"></i>
                 <span>  Dashboard</span>
             </a>
-            </button>
+            </span>
 
             <!-- END DASHBOARD -->
 

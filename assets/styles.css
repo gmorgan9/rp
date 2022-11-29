@@ -141,7 +141,7 @@ form .error-msg{
    font-size: 25px;
 } */
 
-button.active {
+span.active {
 background-color: #fff !important;
 border: none !important;
 }
