@@ -13,7 +13,7 @@
 
 
 <!--Main Navigation-->
-<header>
+<header class="fixed-bottom">
     <ul class="navbar-nav ms-auto d-flex flex-row">
         <?php //if(isset($_SESSION['fname'])){ ?>
         <?php //if($row['acc_type'] == 1){ ?>
