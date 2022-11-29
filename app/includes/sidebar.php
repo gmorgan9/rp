@@ -1,4 +1,37 @@
-<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+<nav class="sidebar card py-2 mb-4">
+<ul class="nav flex-column" id="nav_accordion">
+	<li class="nav-item">
+		<a class="nav-link" href="#"> Link name </a>
+	</li>
+	<li class="nav-item has-submenu">
+		<a class="nav-link" href="#"> Submenu links  </a>
+		<ul class="submenu collapse">
+			<li><a class="nav-link" href="#">Submenu item 1 </a></li>
+			<li><a class="nav-link" href="#">Submenu item 2 </a></li>
+			<li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+		</ul>
+	</li>
+	<li class="nav-item has-submenu">
+		<a class="nav-link" href="#"> More menus  </a>
+		<ul class="submenu collapse">
+			<li><a class="nav-link" href="#">Submenu item 4 </a></li>
+			<li><a class="nav-link" href="#">Submenu item 5 </a></li>
+			<li><a class="nav-link" href="#">Submenu item 6 </a></li>
+			<li><a class="nav-link" href="#">Submenu item 7 </a></li>
+		</ul>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#"> Something </a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#"> Other link </a>
+	</li>
+</ul>
+</nav>
+
+
+
+<!-- <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
     <div class="position-sticky">
         <div class="list-group list-group-flush mx-3 mt-4">
         <a href="<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
@@ -88,4 +121,4 @@
            <?php //} ?>
         </div>
     </div>
-</nav>
+</nav> -->
