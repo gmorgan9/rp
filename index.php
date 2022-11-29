@@ -54,12 +54,12 @@
 
      //jquery for expand and collapse the sidebar
      $('.menu-btn').click(function(){
-       $('.side-bar').addClass('active');
+       $('.sidebarMenu').addClass('active');
        $('.menu-btn').css("visibility", "hidden");
      });
 
      $('.close-btn').click(function(){
-       $('.side-bar').removeClass('active');
+       $('.sidebarMenu').removeClass('active');
        $('.menu-btn').css("visibility", "visible");
      });
    });

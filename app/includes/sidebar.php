@@ -5,7 +5,7 @@
         <div class="list-group list-group-flush mx-3 mt-4">
                       <div class="list-group-item list-group-item-action py-2 ripple" aria-current="true"><a href="#"><i class="fas fa-desktop"></i>Dashboard</a></div>
                       <div class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
-                        <a class="sub-btn"><i class="fas fa-table"></i>Tables<i class="fas fa-angle-right dropdown"></i></a>
+                        <a class="menu-btn"><i class="fas fa-table"></i>Tables<i class="fas fa-angle-right dropdown"></i></a>
                         <div class="sub-menu">
                           <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">Sub Item 01</a>
                           <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">Sub Item 02</a>
@@ -14,7 +14,7 @@
                       </div>
                       <div class="list-group-item list-group-item-action py-2 ripple" aria-current="true"><a href="#"><i class="fas fa-th"></i>Forms</a></div>
                       <div class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
-                        <a class="sub-btn"><i class="fas fa-cogs"></i>Settings<i class="fas fa-angle-right dropdown"></i></a>
+                        <a class="menu-btn"><i class="fas fa-cogs"></i>Settings<i class="fas fa-angle-right dropdown"></i></a>
                         <div class="sub-menu">
                           <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">Sub Item 01</a>
                           <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">Sub Item 02</a>
@@ -22,7 +22,7 @@
                       </div>
                       <div class="list-group-item list-group-item-action py-2 ripple" aria-current="true"><a href="#"><i class="fas fa-info-circle"></i>About</a></div>
 
-        <!-- </div> -->
+        </div>
     </div>
 </nav>
 
