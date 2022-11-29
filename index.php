@@ -34,6 +34,7 @@ require_once "path.php";
 <body>
     
 <div class="main-container">
+<?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
 <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
 
 <?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
@@ -57,7 +58,7 @@ require_once "path.php";
   })
 </script>
     
-<?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
+
 
 <!-- <script src="assets/js/new.js"></script> -->
 
