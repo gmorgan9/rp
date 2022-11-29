@@ -141,7 +141,7 @@ form .error-msg{
    font-size: 25px;
 } */
 
-.tab:active {
+ul li.active a {
 color: red !important;
 outline: none !important;
 }
