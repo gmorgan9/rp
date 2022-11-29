@@ -14,7 +14,7 @@
 					<div class="card-header" id="headingOne">
 						<h2 class="mb-0">									
 							<a data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-								<span><i class="fa fa-user"></i> Account</span>
+								<span><i class="fa fa-user"></i> Posts</span>
 								<i class="fa fa-chevron-down toggle"></i>
 							</a>
 						</h2>
@@ -22,9 +22,9 @@
 					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 						<div class="card-body">
 							<ul class="list-group">
-								<li class="list-group-item"><a href="#"><i class="fa fa-pencil"></i> Edit Info</a></li>
-								<li class="list-group-item"><a href="#"><i class="fa fa-key"></i> Change Password</a></li>
-								<li class="list-group-item"><a href="#" class="text-danger"><i class="fa fa-trash"></i> Delete Account</a></li>
+								<li class="list-group-item"><a href="#"> Add new</a></li>
+								<li class="list-group-item"><a href="#"> All Posts</a></li>
+								<li class="list-group-item"><a href="#"> Categories</a></li>
 							</ul>
 						</div>
 					</div>
@@ -51,6 +51,8 @@
 						</div>
 					</div>
 				</div>
+
+
 				<div class="card">
 					<div class="card-header" id="headingThree">
 						<h2 class="mb-0">									
