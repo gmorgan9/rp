@@ -162,9 +162,9 @@ if(isset($_POST['submit'])){
             </div>
             <button type="submit" class="btn btn-primary">Sign in</button> -->
 
-            <input type="text" name="fname" required placeholder="enter your first name">
-      <input type="text" name="lname" required placeholder="enter your last name">
-      <input type="text" name="uname" required placeholder="enter your user name">
+            <input type="text" name="firstname" required placeholder="enter your first name">
+      <input type="text" name="lastname" required placeholder="enter your last name">
+      <input type="text" name="username" required placeholder="enter your user name">
       <input type="email" name="email" required placeholder="enter your email">
       <input type="password" name="password" required placeholder="enter your password">
       <input type="password" name="cpassword" required placeholder="confirm your password">
