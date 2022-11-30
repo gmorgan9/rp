@@ -35,14 +35,20 @@ if(isset($_POST['add-category'])){
 ?>
 
 <?php 
-// SET TERMINATED
-//   if (isset($_POST['delete'])) {
-//     $terUpdateQuery = "UPDATE categoires SET approval_status = 'terminated' WHERE jobID = '".$_POST['jobID']."'";
-//     $terUpdateResult = mysqli_query($conn, $terUpdateQuery);
-//     header('location: job_request.php');
-//   }
-// END SET TERMINATED
+// DELETE JOB (NOT IN USE)
+if(isset($_GET['cat_id'])) {
+    $id = $_GET['cat_id'];
 
+    $sql = "DELETE FROM categories WHERE cat_id = $id";
+    $delete = mysqli_query($conn, $sql);
+    if($delete) {
+        // echo "Deleted Successfully";
+        header('location: categories.php'); // returns back to same page
+    } else {
+        die(mysqli_error($conn));
+    }
+  }
+// END DELETE JOB (NOT IN USE)
 ?>
 
 
