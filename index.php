@@ -162,16 +162,7 @@ if(isset($_POST['register'])){
             </div>
             <button type="submit" class="btn btn-primary">Sign in</button> -->
 
-            .btr{
-
-border-top-right-radius: 5px !important;
-}
-
-
-.btl{
-
-border-top-left-radius: 5px !important;
-}
+            
 
 
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
