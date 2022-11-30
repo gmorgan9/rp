@@ -135,7 +135,7 @@
 
                 <!-- LOGOUT -->
 
-                <button href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <button href="<?php echo BASE_URL . '/logout.php' ?>" style="background-color: #073C53" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
                     <i class="bi bi-sliders2"></i>
                     <span>  Logout</span>
 </button>
