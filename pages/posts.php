@@ -115,6 +115,9 @@ require_once "../path.php";
   $(document).on('click', 'ul li a', function() {
     $(this).removeClass('active')
   })
+  $(document).on('click', 'td a', function() {
+    $(this).removeClass('active')
+  })
 </script>
 
 
