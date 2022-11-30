@@ -64,7 +64,7 @@ if (isset($_POST['draft'])) {
     <div class="page-content" style="margin-top: 12px; width: 32%; height: unset !important;">
     <form action="" method="post">
     <div class="section-header pt-2">
-      <span class="text-muted pt-4" style="width: 95%;">Job Requests</span>
+      <span class="text-muted pt-4" style="width: 95%;">New Category</span>
     </div>
     <hr style="margin-bottom: -5px; margin-top: 5px;">
     <?php 
@@ -101,7 +101,7 @@ if (isset($_POST['draft'])) {
   <!-- END ADD JOB (LEFT SIDE) -->
 
   <!-- START JOB-REQUEST (RIGHT SIDE) -->
-    <div class="page-content mt-2 float-end" style="width: 65%; margin-right: 10px;">
+    <div class="page-content" style="width: 65%; margin-right: 10px;">
     <table class="table">
     <thead>
       <tr>
