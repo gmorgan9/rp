@@ -34,7 +34,7 @@ body > footer {
 } */
 
 footer{
-   
+   position: static;
 	bottom: 0;
 }
 
