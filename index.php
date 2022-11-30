@@ -53,7 +53,7 @@ require_once "path.php";
         </a>
       </button>
       <a href="" class="text-decoration-none text-white">
-        <i class="bi bi-person-circle"></i>
+      &#xF4D7;
       </a>
     </div>
   </div>
