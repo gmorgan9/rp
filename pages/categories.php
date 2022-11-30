@@ -34,6 +34,17 @@ if(isset($_POST['add-category'])){
 
 ?>
 
+<?php 
+// SET TERMINATED
+//   if (isset($_POST['delete'])) {
+//     $terUpdateQuery = "UPDATE categoires SET approval_status = 'terminated' WHERE jobID = '".$_POST['jobID']."'";
+//     $terUpdateResult = mysqli_query($conn, $terUpdateQuery);
+//     header('location: job_request.php');
+//   }
+// END SET TERMINATED
+
+?>
+
 
 
 <?php
@@ -141,7 +152,7 @@ if (isset($_POST['draft'])) {
           <td>
             <form method="post" action="">
               <input type="hidden" name="cat_id" value="<?php echo $cat_id; ?>" />
-              <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="terminated"><span class="badge text-bg-danger">Delete</span></button>
+              <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="delete"><span class="badge text-bg-danger">Delete</span></button>
             </form>
           </td>
           <?php } ?>
