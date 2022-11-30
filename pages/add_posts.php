@@ -127,6 +127,7 @@ if (mysqli_num_rows($result) > 0) {
             <label>Tags</label>
             <input class="form-control" style="width: 99%;" type="text" name="tags" placeholder="Tags">
         </div>
+        <br>
         <textarea name="content" id="content" style="width: 99%;"></textarea>
         <input type="hidden" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
         <br>
