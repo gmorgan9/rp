@@ -77,12 +77,10 @@ form .error-msg{
 }
 
 .main {
-    /* margin-top: 15px; */
     margin-left: 240px;
 }
 .main-content {
    margin-top: 5%;
-   /* margin-left: px; */
 }
 
 a.active {
@@ -104,9 +102,8 @@ border: none !important;
     z-index: 600;
     }   
 
-/* Breadcrumbs */
 
-/* Style the list */
+
 .page-header {
    width: 84%; 
    right: 0; 
@@ -127,28 +124,7 @@ border: none !important;
   width: 98%;
   background-color: #fff;
 }
-ul.breadcrumb {
-    padding-top: 5px;
-    list-style: none;
-    float: right !important;
-  }
-  ul.breadcrumb li {
-    display: inline;
-    font-size: 12px;
-  }
-  ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
-  }
-  ul.breadcrumb li a {
-    color: #0275d8;
-    text-decoration: none;
-  }
-  ul.breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
-  }
+
 
   .blocked-page {
     display: none;
@@ -172,9 +148,6 @@ ul.breadcrumb {
 .accordion .card-header {
 	position: relative;
 }
-/* .accordion .card-header h2 {
-	font-size: 1rem;
-} */
 .accordion .fa {
 	width: 20px;
 	margin-right: .25rem;
@@ -207,16 +180,6 @@ ul.breadcrumb {
 	padding-left: 30px;
 	font-weight: 500;
 }
-/* .accordion .list-group-item:hover {
-	background: #007bff;
-} */
-/* .accordion .list-group-item:hover a {
-	color: #fff !important;
-} */
-/* .accordion .list-group-item:hover .badge{
-	background: #fff;
-	color: #007bff;
-} */
 .accordion .list-group-item a {
 	/* color: #61656b; */
 	display: block;
@@ -254,3 +217,29 @@ ul.breadcrumb {
       display: block;
      }
   }
+
+
+
+
+  /* ul.breadcrumb {
+    padding-top: 5px;
+    list-style: none;
+    float: right !important;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 12px;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  } */
