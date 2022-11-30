@@ -23,7 +23,7 @@ require_once "path.php";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=3.15">
+    <link rel="stylesheet" href="assets/blog.css?v=3.16">
 
     <title>CacheUp Blog</title>
 
@@ -69,10 +69,10 @@ require_once "path.php";
 <!-- end middle -->
 
 <div class="middle">
-  <h1 class="behind mt-5">
+  <h1 class="behind-2 mt-5">
     Popular Posts
   </h1>
-  <h1 class="front">
+  <h1 class="front-2">
     <strong>Popular Posts</strong>
   </h1>
 </div>

@@ -159,6 +159,19 @@ footer {
    text-transform: uppercase;
 }
 
+.behind {
+   font-family: 'Londrina Outline', cursive;
+   letter-spacing: 20px;
+   text-transform: uppercase;
+   color: #2e2e2e;
+   font-size: 150px;
+}
+.front {
+   margin-top: -165px;
+   font-size: 45px;
+   text-transform: uppercase;
+}
+
     
   }
  
