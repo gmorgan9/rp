@@ -3,7 +3,7 @@
 require_once "../app/database/connection.php";
 // require_once "app/database/functions.php";
 require_once "../path.php";
-// session_start();
+session_start();
 
 // if(isLoggedIn()){
 //   header('location: '. BASE_URL . '/pages/dashboard.php');
@@ -41,7 +41,7 @@ if (isset($_POST['draft'])) {
 
     <link rel="stylesheet" href="../assets/styles.css?v=2.12">
 
-    <title>All Posts - CacheUp Blog</title>
+    <title>Categories - CacheUp Blog</title>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -61,7 +61,7 @@ if (isset($_POST['draft'])) {
     <!-- START MAIN_CONTENT -->
         <div class="main-content">
             <!-- START ADD COMPANY (LEFT SIDE) -->
-    <div class="page-content float-start" style="margin-top: 12px; width: 32%;margin-left: -45px; height: unset !important;">
+    <div class="page-content" style="margin-top: 12px; width: 32%;margin-left: -45px; height: unset !important;">
     <form action="" method="post">
     <div class="section-header pt-2">
       <span class="text-muted pt-4" style="width: 95%;">Job Requests</span>
