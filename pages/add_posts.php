@@ -40,7 +40,7 @@ require_once "../path.php";
         
 <div class="main">
     <div class="page-header mx-auto">
-        <p class="page_title" style="float: left; padding-top: 2px;">Add New Post</p>
+        <p class="page_title" style="float: left; padding-top: 2px; margin-left: 15px;">Add New Post</p>
     </div>
 
     testing
