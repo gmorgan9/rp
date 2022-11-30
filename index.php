@@ -39,7 +39,8 @@ require_once "path.php";
 
 <!-- start header -->
   <div class="page-header">
-    <div class="left">
+    
+  <div class="left">
       <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
     </div>
     <div class="right">
@@ -55,6 +56,7 @@ require_once "path.php";
         <i class="bi bi-person-circle" style="font-size: 32px; margin-top: 15px;"></i>
       </a>
     </div>
+</div>
 <!-- end header -->
 
 
