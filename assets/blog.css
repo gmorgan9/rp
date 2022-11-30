@@ -168,12 +168,13 @@ footer {
    letter-spacing: 20px;
    text-transform: uppercase;
    color: #2e2e2e;
-   font-size: 75px;
+   font-size: 55px;
 }
 .front-2 {
    margin-top: -75px;
    font-size: 45px;
    text-transform: uppercase;
+   margin-left: 15px;
 }
 
     
