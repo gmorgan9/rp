@@ -99,8 +99,8 @@ footer {
 .page-header {
    height: 150px;
    background-color: #1f1f1f !important;
-   margin-top: auto;
-   margin-bottom: auto;
+   top: 50;
+   bottom: 50;
 }
 .page-content {
   height:630px;
