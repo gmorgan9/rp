@@ -90,10 +90,17 @@ if (isset($_POST['published']))
           <td>Draft</td>
         <?php } ?>
         <td>
+          <?php if($published == 0) { ?>
         <form method="post" action="">
           <input type="hidden" name="post_id" value="<?php echo $post_id; ?>" />
           <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="published"><span class="badge text-bg-success">Publish</span></button>
         </form>
+        <?php } else { ?>
+        <form method="post" action="">
+          <input type="hidden" name="post_id" value="<?php echo $post_id; ?>" />
+          <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="published"><span class="badge text-bg-success">Publish</span></button>
+        </form>
+        <?php } ?>
           <a style="text-decoration: none;" class="badge text-bg-success" href="actions/view-employee.php?employeeID=<?php echo $empID; ?>">View</a>
           <a style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#confirmDelete" class="badge text-bg-danger" href="employees.php?employeeID=<?php echo $empID; ?>">Delete</a>
         </td>
