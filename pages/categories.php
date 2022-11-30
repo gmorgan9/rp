@@ -37,7 +37,7 @@ if(isset($_POST['add-category'])){
 <?php 
 // SET TERMINATED
   if (isset($_POST['delete'])) {
-    $delete = "DELETE FROM job WHERE cat_id = '".$_POST['cat_id']."'";
+    $delete = "DELETE FROM categories WHERE cat_id = '".$_POST['cat_id']."'";
     // $terUpdateQuery = "DELETE categoires SET approval_status = 'terminated' WHERE jobID = '".$_POST['jobID']."'";
     $terUpdateResult = mysqli_query($conn, $delete);
     header('location: categories.php');
