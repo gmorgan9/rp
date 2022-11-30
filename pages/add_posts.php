@@ -100,7 +100,6 @@ if (mysqli_num_rows($result) > 0) {
         <h3>
             New Post
         </h3>
-        <br>
         <div>
             <label>Post Title</label>
             <input class="form-control" style="width: 99%;" type="text" name="title" placeholder="Post Title">
