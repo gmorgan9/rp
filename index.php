@@ -143,10 +143,10 @@ if(isset($_POST['submit'])){
           <div class="mt-1"></div>
           </a>
           
-          <form action="" class="dropdown-menu p-4" style="background-color: #8484849a !important;">
-            <div class="mb-3">
+          <form action="" method="post" class="dropdown-menu p-4" style="background-color: #8484849a !important;">
+            <!-- <div class="mb-3">
               <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+              <input type="text" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
             </div>
             <div class="mb-3">
               <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
@@ -160,7 +160,15 @@ if(isset($_POST['submit'])){
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary">Sign in</button> -->
+
+            <input type="text" name="fname" required placeholder="enter your first name">
+      <input type="text" name="lname" required placeholder="enter your last name">
+      <input type="text" name="uname" required placeholder="enter your user name">
+      <input type="email" name="email" required placeholder="enter your email">
+      <input type="password" name="password" required placeholder="enter your password">
+      <input type="password" name="cpassword" required placeholder="confirm your password">
+      <input type="submit" name="submit" value="register now" class="form-btn">
           </form>
 
 
