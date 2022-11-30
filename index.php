@@ -23,7 +23,7 @@ require_once "path.php";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=2.1">
+    <link rel="stylesheet" href="assets/blog.css?v=2.12">
 
     <title>CacheUp Blog</title>
 
@@ -34,9 +34,6 @@ require_once "path.php";
 <body>
     
 <div class="main-container">
-<?php include(ROOT_PATH . "/app/includes/header.php"); ?>
-
-<?php //include(ROOT_PATH . "/app/includes/sidebar.php") ?>
         
 <div class="main">
   <div class="page-header">
@@ -46,16 +43,6 @@ require_once "path.php";
 </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script type="text/javascript">
-  $(document).on('click', 'a', function() {
-    $(this).addClass('active').siblings().removeClass('active')
-  })
-
-  $(document).on('click', 'ul li a', function() {
-    $(this).removeClass('active')
-  })
-</script>
     
 <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
 
