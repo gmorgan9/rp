@@ -108,7 +108,7 @@ if (mysqli_num_rows($result) > 0) {
         <div>
             <label>Category</label>
             <select name="category" class="form-control">
-                <option value=""></option>
+                <option value="" class="text-muted">Select one...</option>
                 <?php
                 $query ="SELECT * FROM categories";
                 $result = $conn->query($query);
