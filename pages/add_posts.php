@@ -102,7 +102,6 @@ if (mysqli_num_rows($result) > 0) {
         </h3>
         <br>
     <input class="form-control" style="width: 99%;" type="text" name="title" placeholder="Post Title">
-    <br>
     <div>
         <label>Topic</label>
         <select name="category" class="form-control">
