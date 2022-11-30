@@ -155,7 +155,8 @@ footer {
 
 .behind {
    font-family: 'Londrina Outline', cursive;
-   letter-spacing: 2px;
+   letter-spacing: 20px;
+   text-transform: uppercase;
 }
 
     
