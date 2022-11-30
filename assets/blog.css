@@ -147,21 +147,6 @@ color: black !important;
 border: none !important;
 }
 
-/* Sidebar */
-.sidebar {
-    background-color: #073C53 !important;
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    padding: 58px 0 0; /* Height of navbar */
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-    width: 16%;
-    z-index: 600;
-    }   
-
-/* Breadcrumbs */
-
 /* Style the list */
 .page-header {
    height: 100px;
@@ -169,12 +154,12 @@ border: none !important;
 }
 .page-content {
   height:630px;
-  overflow: auto;
+  /* overflow: auto;
   overflow-y:auto;
-  position: relative;
+  position: relative; */
   padding: 5px 8px;
   /* height: 40px; */
-  width: 98%;
+  /* width: 98%; */
   background-color: #fff;
 }
 ul.breadcrumb {
