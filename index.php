@@ -15,12 +15,12 @@ require_once "path.php";
 
 if(isset($_POST['login'])){
 // $idno  = rand(1000000, 9999999); // figure how to not allow duplicates
-$user_id = mysqli_real_escape_string($conn, $_POST['user_id']);
+// $user_id = mysqli_real_escape_string($conn, $_POST['user_id']);
 $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
 $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
 $username = mysqli_real_escape_string($conn, $_POST['username']);
 $email = mysqli_real_escape_string($conn, $_POST['email']);
-$pass = md5($_POST['password']);
+$password = md5($_POST['password']);
 $cpass = md5($_POST['cpassword']);
 $isadmin = $_POST['isadmin'];
 $loggedin = $_POST['loggedin'];
@@ -64,7 +64,7 @@ if(isset($_POST['register'])){
   $username = mysqli_real_escape_string($conn, $_POST['username']);
   $email = mysqli_real_escape_string($conn, $_POST['email']);
   $password = md5($_POST['password']);
-  $cpass = md5($_POST['cpassword']);
+  $cpassword = md5($_POST['cpassword']);
   $isadmin = $_POST['isadmin'];
 
   $select = " SELECT * FROM users WHERE username = '$username' && email = '$email' ";
@@ -77,7 +77,7 @@ if(isset($_POST['register'])){
 
   }else{
 
-     if($pass != $cpass){
+     if($password != $cpassword){
         $error[] = 'passwords do not match!';
      }else{
         $insert = "INSERT INTO users (idno, firstname, lastname, username, email, password) VALUES('$idno', '$firstname','$lastname','$username','$email','$password')";
