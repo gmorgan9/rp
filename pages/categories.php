@@ -54,7 +54,7 @@ if (isset($_POST['draft'])) {
 
 <?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
         
-<div class="main">
+<div class="main d-flex">
     <div class="page-header mx-auto">
         <p class="page_title">All Posts</p>
     </div>
