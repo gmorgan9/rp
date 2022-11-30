@@ -200,7 +200,7 @@ if(isset($_POST['register'])){
 
 
             <!--  -->
-          </form> 
+</div> 
 
 
 
