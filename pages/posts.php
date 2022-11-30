@@ -61,7 +61,7 @@ if (isset($_POST['draft'])) {
 
     <div class="main-content">
 
-    <table class="table">
+    <table class="table" style="width: 99%;">
   <thead>
     <tr>
       <th scope="col">ID #</th>
