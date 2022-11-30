@@ -1,7 +1,7 @@
 /* WORKING */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
 @media only screen and (min-width: 1024px) {
 * {
     margin: 0;
@@ -166,6 +166,7 @@ footer {
    margin-top: -165px;
    font-size: 95px;
    text-transform: uppercase;
+   font-weight: 500;
 }
 
     
