@@ -62,6 +62,18 @@ if(isset($_POST['submit'])){
 </head>
 <body>
     
+<?php
+$user_id = $_SESSION['user_id'];
+$select = " SELECT * FROM users WHERE user_id = '$user_id' ";
+$result = mysqli_query($conn, $select);
+if (mysqli_num_rows($result) > 0) {
+   while($row = mysqli_fetch_assoc($result)) {
+    $firstname    = $row['firstname'];
+    $loggedin     = $row['loggedin'];
+    $acct_type    = $row['isadmin'];
+}}
+?>
+    
 <div class="main-container">
 <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
 
@@ -86,7 +98,7 @@ if(isset($_POST['submit'])){
     <input class="form-control" style="width: 99%;" type="text" name="categories" placeholder="Categories">
     <br>
     <textarea name="content" id="content" style="width: 99%;"></textarea>
-    <input class="form-control" style="width: 99%;" type="text" name="author" value="<?php echo $_SESSION['firstname'] ?>">
+    <input class="form-control" style="width: 99%;" type="text" name="author" value="<?php echo $firstname; ?>">
     </form>
    
     </div>
