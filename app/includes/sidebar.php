@@ -1,3 +1,15 @@
+<?php
+$user_id = $_SESSION['user_id'];
+$select = " SELECT * FROM users WHERE user_id = '$user_id' ";
+$result = mysqli_query($conn, $select);
+if (mysqli_num_rows($result) > 0) {
+   while($row = mysqli_fetch_assoc($result)) {
+    $firstname    = $row['firstname'];
+    $loggedin     = $row['loggedin'];
+    $acct_type    = $row['isadmin'];
+}}
+?>
+
 <div id="sidebarMenu" class="d-lg-block bg-white sidebar">
     
 <div class="position-sticky">
@@ -84,6 +96,7 @@
 
                 <!-- END COMMENTS -->
 
+                <?php if($acct_type == 1) { ?>
                 <!-- USERS -->
 
 				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -99,6 +112,7 @@
 					</div>
 
                 <!-- END USERS -->
+                <?php } else {} ?>
 
                 <!-- TOOLS -->
 
