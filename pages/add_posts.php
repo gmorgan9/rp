@@ -100,12 +100,17 @@ if (mysqli_num_rows($result) > 0) {
         <select name="category" class="form-control">
             <option value="">Select option...</option>
             <?php
-            $selection = "SELECT * FROM categories where cat_id = $cat_id";
-            foreach ($selection as $sel) {
-            $selected = ($options == $sel) ? "selected" : "";
-            echo '<option '.$selected.' value="'.$sel.'">'.$sel.'</option>';
+            $query ="SELECT * FROM categories";
+            $result = $conn->query($query);
+            if($result->num_rows> 0){
+              $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
             }
             ?>
+            <?php 
+                foreach ($options as $option) {
+            ?>
+            <option><?php echo $option['category']; ?> </option>
+            <?php } ?>
         </select>
     </div>
     <br>
