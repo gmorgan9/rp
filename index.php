@@ -39,7 +39,7 @@ require_once "path.php";
 <?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
         
 <div class="main">
-  <div class="page-header mx-auto">
+  <div class="page-header">
     <p class="page_title" style="float: left; padding-top: 2px;">&nbsp;&nbsp;<i class="bi bi-house-door-fill"></i> Home &nbsp;&nbsp; | &nbsp;&nbsp; VIEW POST &nbsp;&nbsp; | &nbsp;&nbsp; NEW</p>
     
   </div>

@@ -164,7 +164,10 @@ border: none !important;
 
 /* Style the list */
 .page-header {
-   width: 95%;
+   width: 84%; 
+   right: 0; 
+   position:absolute;
+   top: 0;
    padding: 5px 8px;
    height: 40px;
    background-color: #fff;
