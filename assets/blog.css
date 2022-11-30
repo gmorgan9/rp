@@ -18,8 +18,8 @@ body {
     color: #fff;
 }
 .logo {
-   margin-top: auto;
-   margin-bottom: auto; 
+   top: 50;
+   bottom: 50; 
 }
 
 footer {
