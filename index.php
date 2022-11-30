@@ -176,7 +176,7 @@ if(isset($_POST['register'])){
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                   <form action="" method="post" class="form px-4">
-                    <input type="text" name="username" required placeholder="enter your user name">
+                    <input class="form-control" type="text" name="username" required placeholder="enter your user name">
                     <input type="password" name="password" required placeholder="enter your password">
                     <input type="submit" name="login" value="Login" class="form-btn">
                   </form>
