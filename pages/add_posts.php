@@ -11,6 +11,33 @@ require_once "../path.php";
 
 ?>
 
+<?php
+if(isset($_POST['submit'])){
+  $idno  = rand(10000, 99999); // figure how to not allow duplicates
+  $title = mysqli_real_escape_string($conn, $_POST['title']);
+  $content = mysqli_real_escape_string($conn, $_POST['content']);
+  $author = mysqli_real_escape_string($conn, $_POST['author']);
+  $categories = mysqli_real_escape_string($conn, $_POST['categories']);
+  $published = mysqli_real_escape_string($conn, $_POST['published']);
+
+  $select = " SELECT * FROM posts WHERE title = '$title'";
+
+  $result = mysqli_query($conn, $select);
+
+  if(mysqli_num_rows($result) > 0){
+
+     $error[] = 'title already exist!';
+
+  }else {
+        $insert = "INSERT INTO posts (idno, title, content, author, categories, published) VALUES('$idno', '$title','$content','$author','$categories','$published')";
+        mysqli_query($conn, $insert);
+        // header('location:/');
+     }
+
+};
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,7 +76,11 @@ require_once "../path.php";
     
 
 
-    <textarea id="content" style="width: 99%;"></textarea>
+    <form action="" method="POST">
+    <input type="text" name="title" placeholder="Post Title">
+    <textarea name="content" id="content" style="width: 99%;"></textarea>
+    </form>
+   
     </div>
     
     
