@@ -335,7 +335,7 @@ if ($loggedin == 1) {
     $query ="SELECT * FROM posts WHERE $published == 'published";
     $result = $conn->query($query);
     if($result->num_rows> 0){
-      $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+      $options= mysqli_fetch_all($result, $conn);
     } else {
       echo "no results";
     }
