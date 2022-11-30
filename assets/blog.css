@@ -99,6 +99,8 @@ footer {
 .page-header {
    height: 150px;
    background-color: #1f1f1f !important;
+}
+.page-header img {
    top: 50;
    bottom: 50;
 }
