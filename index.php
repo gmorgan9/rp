@@ -335,7 +335,7 @@ if ($loggedin == 1) {
 
 <!-- Linkedin -->
 <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"
-  ><i class="bi bi-linkedin-in"></i>
+  ><i class="bi bi-linkedin"></i>
 </a>
 <a
   class="btn btn-primary btn-lg btn-floating"
