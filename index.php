@@ -121,7 +121,8 @@ $result = mysqli_query($conn, $select);
 if (mysqli_num_rows($result) > 0) {
    while($row = mysqli_fetch_assoc($result)) {
     $firstname    = $row['firstname'];
-    $loggedin = $row['loggedin'];
+    $loggedin     = $row['loggedin'];
+    $acct_type    = $row['isadmin'];
 }}
 ?>
     
@@ -165,7 +166,15 @@ if ($loggedin == 1) {
 ?>
 
 <ul class="list-group list-group-flush" style="width: 250px;">
-  <li class="list-group-item fw-bold text-capitalize mb-3" style="font-size: 18px; border-bottom: none;"><?php echo $firstname; ?></li>
+  <li class="list-group-item fw-bold text-capitalize mb-3" style="font-size: 18px; border-bottom: none;"><?php echo $firstname; ?>
+
+  <?php if($acct_type == 1) { ?>
+     <i>(admin)</i>
+    <?php } else { ?>
+      <i>(admin)</i>
+    <?php } ?>
+
+</li>
   <li class="list-group-item w-75"><a href="<?php echo BASE_URL . '/pages/dashboard.php' ?>" class="text-decoration-none text-black">Dashboard</a></li>
   <li class="list-group-item"><a href="<?php echo BASE_URL . '/logout.php' ?>" class="text-decoration-none text-black">Logout</a></li>
 </ul>
