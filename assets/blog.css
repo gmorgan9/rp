@@ -101,8 +101,8 @@ footer {
    background-color: #1f1f1f !important;
 }
 .page-header img {
-   top: 50;
-   bottom: 50;
+   margin-top: auto;
+   margin-bottom: auto;
 }
 .page-content {
   height:630px;
