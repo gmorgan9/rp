@@ -63,7 +63,7 @@ require_once "path.php";
     Home
   </h1>
   <h1 class="front text-center">
-    Home
+    <bold>Home</bold>
   </h1>
 </div>
 
