@@ -47,6 +47,7 @@ require_once "path.php";
       <a href="">
         <i class="bi bi-search"></i>
       </a>
+      %nbsp;%nbsp;
       <button>
         <a href="">
           Let's Talk
