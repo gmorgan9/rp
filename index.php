@@ -152,7 +152,7 @@ if (mysqli_num_rows($result) > 0) {
           </svg>
           <br>
           <?php if ($loggedin == 1) { ?>
-            <p class="float-right">Welcome, <?php echo $firstname; ?>!</p>
+            <p style="float: right !important;">Welcome, <?php echo $firstname; ?>!</p>
             <?php } else {} ?>
           <div class="mt-1"></div>
           </a>
