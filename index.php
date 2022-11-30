@@ -169,12 +169,12 @@ if(isset($_POST['register'])){
                 <li class="nav-item text-center" style="display: table-cell;
        background: #0d6efd2e;">
                   <a class="nav-link active" style="border-top-left-radius: 5px !important; border-radius: 0px;
-        border-bottom: 1px solid #0d6efd40;" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
+        border-bottom: 1px solid #0d6efd2e;" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
                 </li>
                 <li class="nav-item text-center" style="display: table-cell;
        background: #0d6efd2e;">
                   <a class="nav-link" style="border-top-right-radius: 5px !important; border-radius: 0px;
-        border-bottom: 1px solid #0d6efd40;" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Signup</a>
+        border-bottom: 1px solid #0d6efd2e;" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Signup</a>
                 </li>
                
               </ul>
