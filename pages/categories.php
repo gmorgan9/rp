@@ -54,12 +54,12 @@ if (isset($_POST['draft'])) {
 
 <?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
         
-<div class="main d-inline">
+<div class="main">
     <div class="page-header mx-auto">
         <p class="page_title">All Posts</p>
     </div>
     <!-- START MAIN_CONTENT -->
-        <div class="main-content">
+        <div class="main-content d-flex">
             <!-- START ADD COMPANY (LEFT SIDE) -->
     <div class="page-content" style="margin-top: 12px; width: 32%; height: unset !important;">
     <form action="" method="post">
