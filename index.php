@@ -165,7 +165,7 @@ if(isset($_POST['register'])){
             
 
 
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills mb-3 mx-auto" id="pills-tab" role="tablist">
                 <li class="nav-item text-center">
                   <a class="btn btn-outline-black active" style="width: 150px;" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
                 </li>
