@@ -70,7 +70,7 @@ require_once "path.php";
 
 
 
-<!-- start blog posts -->
+<!-- start Tags -->
 
 <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
@@ -99,12 +99,11 @@ require_once "path.php";
   </div>
 </div>
 
-<!-- end blog posts -->
+<!-- end Tags -->
 
 
 
-
-
+<!-- start blog posts -->
 
 <div class="sub-title">
   <h1 class="behind-2 mt-5">
@@ -115,7 +114,7 @@ require_once "path.php";
   </h1>
 </div>
 
-<!-- start blog posts -->
+<br>
 
 <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
