@@ -103,7 +103,7 @@ if (mysqli_num_rows($result) > 0) {
             $selection = "SELECT * FROM categories where cat_id = $cat_id";
             foreach ($selection as $sel) {
             $selected = ($options == $sel) ? "selected" : "";
-            echo '<option '.$selected.' value="'.$selection.'">'.$selection.'</option>';
+            echo '<option '.$selected.' value="'.$sel.'">'.$sel.'</option>';
             }
             ?>
         </select>
