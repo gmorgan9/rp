@@ -44,7 +44,27 @@ require_once "../path.php";
     </div>
 
     <div class="main-content">
-    <textarea id="mytextarea"></textarea>
+    
+
+    <textarea>
+     Welcome to TinyMCE!
+  </textarea>
+  <script>
+    tinymce.init({
+      selector: 'textarea',
+      plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect',
+      toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+      mergetags_list: [
+        { value: 'First.Name', title: 'First Name' },
+        { value: 'Email', title: 'Email' },
+      ]
+    });
+  </script>
+    
+
+
     </div>
     
     
@@ -53,49 +73,6 @@ require_once "../path.php";
 
 
 
-<script>
-    tinymce.init({
-  selector: "#mytextarea",
-  height: 400,
-  plugins: [
-    "advlist autolink advcode lists link image charmap print preview anchor",
-    "searchreplace visualblocks code fullscreen",
-    "insertdatetime media table paste emoticons"
-  ],
-  toolbar:
-    "styleselect | bold italic underline | alignleft aligncenter alignright alignjustify | code ",
-    menubar: "file edit view insert format tools table help",
-  setup: function (editor) {
-    editor.on("keyup", function (e) {
-      updateHTML(editor.getContent());
-    });
-    editor.on("change", function (e) {
-      updateHTML(editor.getContent());
-    });
-  }
-});
-
-function updateHTML(content) {
-  cmeditor.getDoc().setValue(content);
-}
-
-function updateEditor() {
-  if (!tinymce.activeEditor.hasFocus()) {
-    tinymce.activeEditor.setContent(cmeditor.getDoc().getValue());
-  }
-}
-
-var HTMLContainer = document.querySelector(".HTMLContainer");
-
-var cmeditor = CodeMirror(HTMLContainer, {
-  lineNumbers: true,
-  mode: "htmlmixed"
-});
-
-cmeditor.on("change", (editor) => {
-  updateEditor();
-});
-</script>
 
 
 
