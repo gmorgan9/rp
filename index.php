@@ -23,7 +23,7 @@ require_once "path.php";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=2.41">
+    <link rel="stylesheet" href="assets/blog.css?v=2.42">
 
     <title>CacheUp Blog</title>
 
@@ -43,7 +43,7 @@ require_once "path.php";
     <div class="left">
       <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
     </div>
-    <div class="right ">
+    <div class="right">
       <a href="" class="text-decoration-none text-white">
         <i class="bi bi-search">&nbsp;&nbsp;</i>
         
