@@ -63,15 +63,12 @@ if(isset($_POST['submit'])){
 <body>
 
 <?php
-$user_id = $_SESSION['user_id'];
-$select = " SELECT * FROM users WHERE user_id = '$user_id' ";
+$select = "SELECT * FROM categories";
 $result = mysqli_query($conn, $select);
 if (mysqli_num_rows($result) > 0) {
    while($row = mysqli_fetch_assoc($result)) {
-    $firstname    = $row['firstname'];
-    $lastname     = $row['lastname'];
-    $loggedin     = $row['loggedin'];
-    $acct_type    = $row['isadmin'];
+    $cat_id    = $row['cat_id'];
+    $category     = $row['category'];
 }}
 ?>
     
@@ -102,13 +99,9 @@ if (mysqli_num_rows($result) > 0) {
         <label>Topic</label>
         <select name="category" class="form-control">
             <option value="">Select option...</option>
-            <?php foreach ($categories as $key => $cat): ?>
-            <?php if (!empty($category) && $category == $cat['cat_id'] ): ?>
-                <option selected value="<?php echo $cat['cat_id'] ?>"><?php echo $cat['category'] ?></option>
-            <?php else: ?>
-                <option value="<?php echo $cat['cat_id'] ?>"><?php echo $cat['category'] ?></option>
-            <?php endif; ?>
-            <?php endforeach; ?>
+            <?php while($cat = mysqli_fetch_array($result)):; ?>
+            <option value=""><?php echo $cat[1]; ?></option>
+            <?php endwhile; ?>
         </select>
     </div>
     <br>
