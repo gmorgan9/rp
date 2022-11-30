@@ -38,7 +38,7 @@ require_once "path.php";
 <div class="main">
 
 
-  <div class="page-header">
+  <div class="page-header mt-auto mb-auto">
     <!-- <p class="page_title" style="float: left; padding-top: 2px;">&nbsp;&nbsp;<i class="bi bi-house-door-fill"></i> Home &nbsp;&nbsp; | &nbsp;&nbsp; VIEW POST &nbsp;&nbsp; | &nbsp;&nbsp; NEW</p> -->
     <img src="/assets/images/white-logo.png" width="230px" class="text-center logo" alt="">
     
