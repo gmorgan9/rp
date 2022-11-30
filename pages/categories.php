@@ -101,7 +101,7 @@ if (isset($_POST['draft'])) {
   <!-- END ADD JOB (LEFT SIDE) -->
 
   <!-- START JOB-REQUEST (RIGHT SIDE) -->
-    <div class="page-content float-end" style="width: 65%; margin-left: 20px;">
+    <div class="page-content float-end" style="width: 65%; margin-left: 25px;">
     <table class="table">
     <thead>
       <tr>
