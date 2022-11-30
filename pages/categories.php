@@ -35,33 +35,15 @@ if(isset($_POST['add-category'])){
 ?>
 
 <?php 
-// SET TERMINATED
+// START DELETE
   if (isset($_POST['delete'])) {
     $delete = "DELETE FROM categories WHERE cat_id = '".$_POST['cat_id']."'";
     // $terUpdateQuery = "DELETE categoires SET approval_status = 'terminated' WHERE jobID = '".$_POST['jobID']."'";
     $terUpdateResult = mysqli_query($conn, $delete);
     header('location: categories.php');
   }
-// END SET TERMINATED
+// END DELETE
 
-?>
-
-
-
-<?php
-if (isset($_POST['published'])) {
-  $appUpdateQuery = "UPDATE posts SET published = 1 WHERE post_id = '".$_POST['post_id']."'";
-  $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
-  header('location: posts.php');
-}
-?>
-
-<?php
-if (isset($_POST['draft'])) {
-  $appUpdateQuery = "UPDATE posts SET published = 0 WHERE post_id = '".$_POST['post_id']."'";
-  $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
-  header('location: posts.php');
-}
 ?>
 
 <!DOCTYPE html>

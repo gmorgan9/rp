@@ -100,13 +100,13 @@ if (mysqli_num_rows($result) > 0) {
     <br>
     <div>
         <label>Topic</label>
-        <select name="topic_id" class="text-input">
+        <select name="category" class="form-control">
             <option value="">Select option...</option>
-            <?php foreach ($topics as $key => $topic): ?>
-            <?php if (!empty($topic_id) && $topic_id == $topic['id'] ): ?>
-                <option selected value="<?php echo $topic['id'] ?>"><?php echo $topic['name'] ?></option>
+            <?php foreach ($categories as $key => $cat): ?>
+            <?php if (!empty($category) && $category == $cat['cat_id'] ): ?>
+                <option selected value="<?php echo $cat['cat_id'] ?>"><?php echo $cat['category'] ?></option>
             <?php else: ?>
-                <option value="<?php echo $topic['id'] ?>"><?php echo $topic['name'] ?></option>
+                <option value="<?php echo $cat['cat_id'] ?>"><?php echo $cat['category'] ?></option>
             <?php endif; ?>
             <?php endforeach; ?>
         </select>
