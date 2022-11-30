@@ -94,6 +94,10 @@ footer {
    margin-left: 15px;
 }
 
+.card {
+   background-color: #848484
+}
+
 .pop-post {
    width: 95%;
 }
