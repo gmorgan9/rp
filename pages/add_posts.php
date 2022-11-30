@@ -77,7 +77,7 @@ if(isset($_POST['submit'])){
 
 
     <form action="" method="POST">
-    <input class="form-control w-25" type="text" name="title" placeholder="Post Title">
+    <input class="form-control w-25" style="margin-left: 1%;" type="text" name="title" placeholder="Post Title">
     <textarea name="content" id="content" style="width: 99%;"></textarea>
     </form>
    
