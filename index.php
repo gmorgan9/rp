@@ -72,6 +72,8 @@ require_once "path.php";
 
 <!-- start Tags -->
 
+<br><br>
+
 <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card" style="height: 350px;">
@@ -101,7 +103,7 @@ require_once "path.php";
 
 <!-- end Tags -->
 
-
+<br><br><br>
 
 <!-- start blog posts -->
 
@@ -114,7 +116,7 @@ require_once "path.php";
   </h1>
 </div>
 
-<br>
+<br><br>
 
 <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
