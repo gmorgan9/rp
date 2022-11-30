@@ -138,9 +138,10 @@ ul.breadcrumb {
 }
 
 footer {
-   background-color: white; 
-   position:absolute;
+   background-color: #121212; 
+   position: absolute;
    bottom: 0;
+   height: 50px;
    width: 100%;
 }
 
