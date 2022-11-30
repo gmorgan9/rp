@@ -195,7 +195,7 @@ if(isset($_POST['register'])){
 
 
 
-
+</div>
 
 
             <!-- <input type="text" name="firstname" required placeholder="enter your first name">
