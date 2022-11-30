@@ -17,9 +17,10 @@ body {
     background-color: #1a1a1a !important;
     color: #fff;
 }
-/* .logo {
-   margin-top: -60px !important; 
-} */
+.logo {
+   margin-top: auto;
+   margin-bottom: auto; 
+}
 
 footer {
     background-color: var(--secondary-color);
@@ -99,10 +100,6 @@ footer {
 .page-header {
    height: 150px;
    background-color: #1f1f1f !important;
-}
-.page-header img {
-   margin-top: auto;
-   margin-bottom: auto;
 }
 .page-content {
   height:630px;
