@@ -178,7 +178,7 @@ if(isset($_POST['register'])){
                   <form action="" method="post" class="form px-4">
                     <input class="form-control" type="text" name="username" required placeholder="enter your user name">
                     <input class="form-control" type="password" name="password" required placeholder="enter your password">
-                    <input class="form-control" type="submit" name="login" value="Login" class="form-btn">
+                    <input type="submit" name="login" value="Login" class="btn btn-dark btn-block">
                   </form>
                 </div>
 
@@ -191,7 +191,7 @@ if(isset($_POST['register'])){
                     <input class="form-control" type="email" name="email" required placeholder="enter your email">
                     <input class="form-control" type="password" name="password" required placeholder="enter your password">
                     <input class="form-control" type="password" name="cpassword" required placeholder="confirm your password">
-                    <input class="form-control" type="submit" name="register" value="register now" class="form-btn">
+                    <input type="submit" name="register" value="register now" class="btn btn-dark btn-block">
                   </form>
                 </div>
               </div>
