@@ -23,7 +23,7 @@ require_once "path.php";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=3.55">
+    <link rel="stylesheet" href="assets/blog.css?v=3.60">
 
     <title>CacheUp Blog</title>
 
@@ -61,7 +61,7 @@ require_once "path.php";
           <div class="mt-1"></div>
           </a>
           
-          <form class="dropdown-menu p-4" style="background-color: #1a1a1a;">
+          <form class="dropdown-menu p-4" style="background-color: #848484;">
             <div class="mb-3">
               <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
               <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
