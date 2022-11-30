@@ -65,7 +65,8 @@ if(isset($_POST['submit'])){
 <body>
 
 <?php
-$select = "SELECT * FROM users";
+$user_id = $_SESSION['user_id'];
+$select = "SELECT * FROM users WHERE user_id = $user_id";
 $result = mysqli_query($conn, $select);
 if (mysqli_num_rows($result) > 0) {
    while($row = mysqli_fetch_assoc($result)) {
