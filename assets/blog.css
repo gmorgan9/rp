@@ -17,10 +17,6 @@ body {
     background-color: #1a1a1a !important;
     color: #fff;
 }
-.logo {
-   top: 50%;
-   bottom: 50%; 
-}
 
 footer {
     background-color: var(--secondary-color);
