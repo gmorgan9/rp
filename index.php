@@ -162,13 +162,24 @@ if(isset($_POST['register'])){
             </div>
             <button type="submit" class="btn btn-primary">Sign in</button> -->
 
+            .btr{
+
+border-top-right-radius: 5px !important;
+}
+
+
+.btl{
+
+border-top-left-radius: 5px !important;
+}
+
 
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item text-center">
-                  <a class="btn btn-outline-secondary active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
+                  <a class="nav-link active" style="border-top-right-radius: 5px !important;" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
                 </li>
                 <li class="nav-item text-center">
-                  <a class="btn btn-outline-secondary" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Signup</a>
+                  <a class="nav-link" style="border-top-left-radius: 5px !important;" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Signup</a>
                 </li>
                
               </ul>
