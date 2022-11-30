@@ -40,7 +40,7 @@ require_once "path.php";
 
   <div class="page-header">
     <!-- <p class="page_title" style="float: left; padding-top: 2px;">&nbsp;&nbsp;<i class="bi bi-house-door-fill"></i> Home &nbsp;&nbsp; | &nbsp;&nbsp; VIEW POST &nbsp;&nbsp; | &nbsp;&nbsp; NEW</p> -->
-    <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 3%; margin-left: 2%;" alt="">
+    <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.75%; margin-left: 2%;" alt="">
     
   </div>
 </div>
