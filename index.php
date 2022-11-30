@@ -59,11 +59,11 @@ if(mysqli_num_rows($result) > 0){
 <?php
 if(isset($_POST['register'])){
   $idno  = rand(10000, 99999); // figure how to not allow duplicates
-  $fname = mysqli_real_escape_string($conn, $_POST['firstname']);
-  $lname = mysqli_real_escape_string($conn, $_POST['lastname']);
-  $uname = mysqli_real_escape_string($conn, $_POST['username']);
+  $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
+  $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
+  $username = mysqli_real_escape_string($conn, $_POST['username']);
   $email = mysqli_real_escape_string($conn, $_POST['email']);
-  $pass = md5($_POST['password']);
+  $password = md5($_POST['password']);
   $cpass = md5($_POST['cpassword']);
   $isadmin = $_POST['isadmin'];
 
