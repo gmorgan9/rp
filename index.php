@@ -338,14 +338,14 @@ if ($loggedin == 1) {
   style="background-color: #ac2bac;"
   href="#!"
   role="button"
-  ><i class="fab fa-instagram"></i>
+  ><i class="bi bi-instagram"></i>
 </a>
 <a
   class="btn btn-primary btn-lg btn-floating"
   style="background-color: #ac2bac;"
   href="#!"
   role="button"
-  ><i class="fab fa-instagram"></i>
+  ><i class="bi bi-instagram"></i>
 </a>
 
 <!-- end social links -->
