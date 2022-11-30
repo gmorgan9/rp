@@ -147,7 +147,7 @@ if (mysqli_num_rows($result) > 0) {
 
                 <li class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
                     <span>  Admin Links</span>
-                </a>
+                </li>
 
 
                 <!-- USERS -->
