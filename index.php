@@ -143,7 +143,7 @@ if(isset($_POST['register'])){
           <div class="mt-1"></div>
           </a>
           
-          <div class="dropdown-menu p-4" style="background-color: #8484849a !important;">
+          <div class="dropdown-menu p-4" >
             <!-- <div class="mb-3">
               <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
               <input type="text" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
