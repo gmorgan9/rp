@@ -332,10 +332,12 @@ if ($loggedin == 1) {
 </div> -->
 <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <?php
-    $query ="SELECT * FROM posts";
+    $query ="SELECT * FROM posts WHERE published == 'published";
     $result = $conn->query($query);
     if($result->num_rows> 0){
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+      echo "no results";
     }
   ?>
   <?php foreach ($options as $option) { ?>
