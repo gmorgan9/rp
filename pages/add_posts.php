@@ -102,24 +102,22 @@ if (mysqli_num_rows($result) > 0) {
         </h3>
         <br>
     <input class="form-control" style="width: 99%;" type="text" name="title" placeholder="Post Title">
-    <div>
-        <label>Topic</label>
-        <select name="category" class="form-control">
-            <option value="">Select option...</option>
-            <?php
-            $query ="SELECT * FROM categories";
-            $result = $conn->query($query);
-            if($result->num_rows> 0){
-              $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
-            }
-            ?>
-            <?php 
-                foreach ($options as $option) {
-            ?>
-            <option value="<?php echo $option['category']; ?>"><?php echo $option['category']; ?></option>
-            <?php } ?>
-        </select>
-    </div>
+    <br>
+    <select name="category" class="form-control">
+        <option value="">Select option...</option>
+        <?php
+        $query ="SELECT * FROM categories";
+        $result = $conn->query($query);
+        if($result->num_rows> 0){
+          $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+        }
+        ?>
+        <?php 
+            foreach ($options as $option) {
+        ?>
+        <option value="<?php echo $option['category']; ?>"><?php echo $option['category']; ?></option>
+        <?php } ?>
+    </select>
     <br>
     <input class="form-control" style="width: 99%;" type="text" name="tags" placeholder="Tags">
     <br>
