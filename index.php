@@ -61,7 +61,7 @@ require_once "path.php";
           <div class="mt-1"></div>
           </a>
           
-          <form class="dropdown-menu p-4" style="background-color: #848484;">
+          <form class="dropdown-menu p-4" style="background-color: #8484849a;">
             <div class="mb-3">
               <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
               <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
