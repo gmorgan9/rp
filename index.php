@@ -343,6 +343,11 @@ if ($loggedin == 1) {
   <a class="btn btn-primary" style="background-color: #3b5998; outline:none;" href="#!" role="button">
     <i class="bi bi-facebook"></i>
   </a>
+  &nbsp;
+  <!-- Facebook -->
+  <a class="btn btn-primary" style="background-color: #333333; outline:none;" href="#!" role="button">
+    <i class="bi bi-envelope"></i>
+  </a>
 </div>
 
 <!-- end social links -->
