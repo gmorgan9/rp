@@ -131,14 +131,14 @@ if (mysqli_num_rows($result) > 0) {
 
 <!-- start header -->
   <div class="page-header">
-    
+  <?php if ($loggedin == 1) { ?>
+            <p style="font-size: 10px; float: right !important;">Welcome, <?php echo $firstname; ?>!</p>
+            <?php } else {} ?>
     <div class="left">
       <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
     </div>
     <div class="right">
-    <?php if ($loggedin == 1) { ?>
-            <p style="font-size: 10px; float: right !important;">Welcome, <?php echo $firstname; ?>!</p>
-            <?php } else {} ?>
+    
       <a href="" class="text-decoration-none text-white">
         <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
       </a>
