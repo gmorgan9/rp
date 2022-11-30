@@ -165,7 +165,7 @@ if ($loggedin == 1) {
 ?>
 
 <ul class="list-group list-group-flush">
-  <li class="list-group-item fw-bold text-capitalize"><?php echo $firstname; ?> <br></li>
+  <li class="list-group-item fw-bold text-capitalize"><?php echo $firstname; ?></li><br>
   <li class="list-group-item"><a href="<?php echo BASE_URL . '/pages/dashboard.php' ?>" class="text-decoration-none text-black">Dashboard</a></li>
   <li class="list-group-item"><a href="<?php echo BASE_URL . '/logout.php' ?>" class="text-decoration-none text-black">Logout</a></li>
 </ul>
