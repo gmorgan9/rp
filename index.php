@@ -52,8 +52,6 @@ require_once "path.php";
           Let's Talk
         </a>
       </button>
-
-      <div class="dropdown">
         <a class="text-decoration-none text-white" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
           &nbsp;&nbsp;&nbsp;
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
@@ -80,7 +78,6 @@ require_once "path.php";
             </div>
             <button type="submit" class="btn btn-primary">Sign in</button>
           </form>
-      </div>
 
 
 
