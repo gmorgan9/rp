@@ -12,6 +12,31 @@ session_start();
 ?>
 
 <?php
+if(isset($_POST['add-category'])){
+  $idno  = rand(10000, 99999); // figure how to not allow duplicates
+  $category = mysqli_real_escape_string($conn, $_POST['category']);
+
+  $select = " SELECT * FROM categories WHERE category = '$category'";
+
+  $result = mysqli_query($conn, $select);
+
+  if(mysqli_num_rows($result) > 0){
+
+     $error[] = 'category already exist!';
+
+  }else {
+        $insert = "INSERT INTO categories (idno, category) VALUES('$idno', '$category')";
+        mysqli_query($conn, $insert);
+        // header('location:/');
+     }
+
+};
+
+?>
+
+
+
+<?php
 if (isset($_POST['published'])) {
   $appUpdateQuery = "UPDATE posts SET published = 1 WHERE post_id = '".$_POST['post_id']."'";
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
@@ -83,7 +108,7 @@ if (isset($_POST['draft'])) {
       <input class="form-control" id="category" type="text" name="category" value="" required>
     </div>
     <div class="form-group pt-3 mx-auto d-grid d-md-flex justify-content-md-end" style="width: 95%; margin-bottom: 10px;">
-      <button type="submit" style="border-color: rgba(0,0,0,0);" name="add-job" class="badge text-bg-secondary">Add Category</button>
+      <button type="submit" style="border-color: rgba(0,0,0,0);" name="add-category" class="badge text-bg-secondary">Add Category</button>
     </div>
     </form>
     </div>
