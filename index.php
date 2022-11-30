@@ -334,16 +334,14 @@ if ($loggedin == 1) {
 <!-- social links -->
 
 <!-- Linkedin -->
-<div class="social-links text-center">
-  <a class="btn btn-primary " style="background-color: #0082ca;" href="#!" role="button"
+<div class="social-links text-center mt-3">
+  <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"
     ><i class="bi bi-linkedin"></i>
   </a>
-  <a
-    class="btn btn-primary btn-lg btn-floating"
-    style="background-color: #ac2bac;"
-    href="#!"
-    role="button"
-    ><i class="bi bi-instagram"></i>
+  &nbsp;
+  <!-- Facebook -->
+  <a class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button">
+    <i class="bi bi-facebook"></i>
   </a>
 </div>
 
