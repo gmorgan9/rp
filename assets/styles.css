@@ -164,10 +164,9 @@ border: none !important;
 
 /* Style the list */
 .page-header {
-   width: 84%;
-    padding: 5px 8px;
-    height: 40px;
-    background-color: #fff;
+   /* padding: 5px 8px; */
+   height: 40px;
+   background-color: #fff;
 }
 .page-content {
   height:630px;
