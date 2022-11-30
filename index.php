@@ -178,7 +178,7 @@ if(isset($_POST['register'])){
                   <form action="" method="post" class="form px-4">
                     <input type="text" name="uname" required placeholder="enter your user name">
                     <input type="password" name="password" required placeholder="enter your password">
-                    <input type="submit" name="submit" value="Login" class="form-btn">
+                    <input type="submit" name="login" value="Login" class="form-btn">
                   </form>
                 </div>
 
