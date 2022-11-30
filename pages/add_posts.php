@@ -86,6 +86,7 @@ if(isset($_POST['submit'])){
     <input class="form-control" style="width: 99%;" type="text" name="categories" placeholder="Categories">
     <br>
     <textarea name="content" id="content" style="width: 99%;"></textarea>
+    <input class="form-control" style="width: 99%;" type="text" name="author" value="<?php echo $_SESSION['firstname'] ?>">
     </form>
    
     </div>
