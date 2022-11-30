@@ -50,7 +50,7 @@ if (mysqli_num_rows($result) > 0) {
 
                 <!-- PAGES -->
 
-				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				<!-- <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 <span>  Pages<i class="bi bi-chevron-down" style="float: right;"></i></span>
                 </a>
 					<div  id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -60,13 +60,13 @@ if (mysqli_num_rows($result) > 0) {
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Categories</a></li>
 							</ul>
 						
-					</div>
+					</div> -->
 
                 <!-- END PAGES -->
 
                 <!-- MEDIA -->
 
-				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				<!-- <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 <span>  Media<i class="bi bi-chevron-down" style="float: right;"></i></span>
                 </a>
 					<div  id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
@@ -76,7 +76,7 @@ if (mysqli_num_rows($result) > 0) {
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Categories</a></li>
 							</ul>
 						
-					</div>
+					</div> -->
 
                 <!-- END MEDIA -->
 
@@ -100,7 +100,7 @@ if (mysqli_num_rows($result) > 0) {
 
                 <!-- TOOLS -->
 
-				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+				<!-- <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                 <span>  Tools<i class="bi bi-chevron-down" style="float: right;"></i></span>
                 </a>
 					<div  id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
@@ -110,7 +110,7 @@ if (mysqli_num_rows($result) > 0) {
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Categories</a></li>
 							</ul>
 						
-					</div>
+					</div> -->
 
                 <!-- END TOOLS -->
 
