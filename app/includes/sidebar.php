@@ -96,23 +96,7 @@ if (mysqli_num_rows($result) > 0) {
 
                 <!-- END COMMENTS -->
 
-                <?php if($acct_type == 1) { ?>
-                <!-- USERS -->
-
-				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                <span>  Users<i class="bi bi-chevron-down" style="float: right;"></i></span>
-                </a>
-					<div  id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-							<ul class="list-group-item" style="background-color: #3b6475 ; border-bottom:none;border-top:none; margin-bottom: -1px;">
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Posts</a></li>
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Categories</a></li>
-							</ul>
-						
-					</div>
-
-                <!-- END USERS -->
-                <?php } else {} ?>
+                
 
                 <!-- TOOLS -->
 
@@ -155,6 +139,26 @@ if (mysqli_num_rows($result) > 0) {
                 </a>
 
                 <!-- END LOGOUT -->
+
+                <br><br>
+
+                <?php if($acct_type == 1) { ?>
+                <!-- USERS -->
+
+				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <span>  Users<i class="bi bi-chevron-down" style="float: right;"></i></span>
+                </a>
+					<div  id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+							<ul class="list-group-item" style="background-color: #3b6475 ; border-bottom:none;border-top:none; margin-bottom: -1px;">
+								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Posts</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Categories</a></li>
+							</ul>
+						
+					</div>
+
+                <!-- END USERS -->
+                <?php } else {} ?>
                 
                 
 			</div>
