@@ -59,7 +59,7 @@ require_once "path.php";
 <!-- start middle -->
 
 <div class="middle">
-  <h1 class="behind">
+  <h1 class="behind text-center">
     Home
   </h1>
   <h1 class="front">
