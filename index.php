@@ -146,12 +146,12 @@ if(isset($_POST['register'])){
           <div class="dropdown-menu p-4" >
 
           <?php
-          $sID = $_SESSION['sID'];
-          $select = " SELECT * FROM student WHERE studentID = '$sID' ";
+          $user_id = $_SESSION['user_id'];
+          $select = " SELECT * FROM users WHERE user_id = '$user_id' ";
           $result = mysqli_query($conn, $select);
           if (mysqli_num_rows($result) > 0) {
              while($row = mysqli_fetch_assoc($result)) {
-              $fname    = $row['fname'];
+              $firstname    = $row['firstname'];
               $loggedin = $row['loggedin'];
           }}
 
