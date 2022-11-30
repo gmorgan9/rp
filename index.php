@@ -23,7 +23,7 @@ require_once "path.php";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=3.50">
+    <link rel="stylesheet" href="assets/blog.css?v=3.51">
 
     <title>CacheUp Blog</title>
 
@@ -51,8 +51,8 @@ require_once "path.php";
           Let's Talk
         </a>
       </button>
-      <a href="" class="text-decoration-none text-white">
-        &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-person" style="font-size: 24px; margin-bottom: -15px;"></i>
+      <a href="" class="text-decoration-none text-white login">
+        &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-person" style="font-size: 24px;"></i>
       </a>
     </div>
 <!-- end header -->
