@@ -19,10 +19,15 @@ body {
     color: #fff;
     min-height: 100vh;
 }
+html, body { height: 100%;}
+
+body > footer {
+  position: sticky;
+  top: 100vh;
+}
 
 footer {
-   position: sticky;
-   top: 100vh;
+  
    background-color: #121212; 
    height: 100px !important;
    padding-top: 40px;
