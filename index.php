@@ -11,6 +11,88 @@ require_once "path.php";
 
 ?>
 
+<?php
+
+if(isset($_POST['submit'])){
+// $idno  = rand(1000000, 9999999); // figure how to not allow duplicates
+$user_id = mysqli_real_escape_string($conn, $_POST['user_id']);
+$firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
+$lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
+$username = mysqli_real_escape_string($conn, $_POST['username']);
+$email = mysqli_real_escape_string($conn, $_POST['email']);
+$pass = md5($_POST['password']);
+$cpass = md5($_POST['cpassword']);
+$isadmin = $_POST['isadmin'];
+$loggedin = $_POST['loggedin'];
+
+$select = " SELECT * FROM users WHERE uname = '$uname' && password = '$pass' ";
+
+$result = mysqli_query($conn, $select);
+
+if(mysqli_num_rows($result) > 0){
+
+   $row = mysqli_fetch_array($result);
+   $sql = "UPDATE users SET loggedin='1' WHERE username='$username'";
+   if (mysqli_query($conn, $sql)) {
+      echo "Record updated successfully";
+    } else {
+      echo "Error updating record: " . mysqli_error($conn);
+    }
+    $_SESSION['firsname']         = $row['firstname'];
+    $_SESSION['user_id']          = $row['user_id'];
+    $_SESSION['loggedin']         = $row['loggedin'];
+    $_SESSION['user_idno']        = $row['idno'];
+    $_SESSION['lastname']         = $row['lastname'];
+    $_SESSION['username']         = $row['username'];
+    $_SESSION['email']            = $row['email'];
+    $_SESSION['pass']             = $row['password'];
+    $_SESSION['cpass']            = $row['cpassword'];
+    header('location:' . BASE_URL . '/pages/dashboard.php');
+  
+}else{
+   $error[] = 'incorrect email or password!';
+}
+
+};
+?>
+
+<?php
+if(isset($_POST['submit'])){
+  $idno  = rand(10000, 99999); // figure how to not allow duplicates
+  $fname = mysqli_real_escape_string($conn, $_POST['firstname']);
+  $lname = mysqli_real_escape_string($conn, $_POST['lastname']);
+  $uname = mysqli_real_escape_string($conn, $_POST['username']);
+  $email = mysqli_real_escape_string($conn, $_POST['email']);
+  $pass = md5($_POST['password']);
+  $cpass = md5($_POST['cpassword']);
+  $isadmin = $_POST['isadmin'];
+
+  $select = " SELECT * FROM users WHERE username = '$username' && email = '$email' ";
+
+  $result = mysqli_query($conn, $select);
+
+  if(mysqli_num_rows($result) > 0){
+
+     $error[] = 'user already exist!';
+
+  }else{
+
+     if($pass != $cpass){
+        $error[] = 'passwords do not match!';
+     }else{
+        $insert = "INSERT INTO users (idno, firstname, lastname, username, email, password) VALUES('$idno', '$firstname','$lastname','$username','$email','$password')";
+        mysqli_query($conn, $insert);
+        // header('location:/');
+     }
+  }
+
+};
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,7 +143,7 @@ require_once "path.php";
           <div class="mt-1"></div>
           </a>
           
-          <form class="dropdown-menu p-4" style="background-color: #8484849a !important;">
+          <form action="" class="dropdown-menu p-4" style="background-color: #8484849a !important;">
             <div class="mb-3">
               <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
               <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
