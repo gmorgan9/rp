@@ -43,7 +43,7 @@ require_once "path.php";
     <div class="left">
       <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
     </div>
-    <div class="right mt-5">
+    <div class="right">
       <a href="" class="text-decoration-none text-white">
         <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
       </a>
@@ -52,8 +52,8 @@ require_once "path.php";
           Let's Talk
         </a>
       </button>
-      <a href="" class="text-decoration-none text-white ">
-        <i class="bi bi-person-circle mt-3" style="font-size: 32px;"></i>
+      <a href="" class="text-decoration-none text-white " style="margin-top: 15px;">
+        <i class="bi bi-person-circle" style="font-size: 32px;"></i>
       </a>
     </div>
   </div>
