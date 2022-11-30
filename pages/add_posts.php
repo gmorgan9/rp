@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
   $title = mysqli_real_escape_string($conn, $_POST['title']);
   $content = mysqli_real_escape_string($conn, $_POST['content']);
   $author = mysqli_real_escape_string($conn, $_POST['author']);
-  $categories = mysqli_real_escape_string($conn, $_POST['categories']);
+  $category = mysqli_real_escape_string($conn, $_POST['category']);
   $published = mysqli_real_escape_string($conn, $_POST['published']);
 
   $select = " SELECT * FROM posts WHERE title = '$title'";
@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
      $error[] = 'title already exist!';
 
   }else {
-        $insert = "INSERT INTO posts (idno, title, content, author, categories) VALUES('$idno', '$title','$content','$author','$categories')";
+        $insert = "INSERT INTO posts (idno, title, content, author, category) VALUES('$idno', '$title','$content','$author','$category')";
         mysqli_query($conn, $insert);
         // header('location:/');
      }
@@ -93,8 +93,6 @@ if (mysqli_num_rows($result) > 0) {
         <br>
     <input class="form-control" style="width: 99%;" type="text" name="title" placeholder="Post Title">
     <br>
-    <input class="form-control" style="width: 99%;" type="text" name="categories" placeholder="Categories">
-    <br>
     <div>
         <label>Topic</label>
         <select name="category" class="form-control">
@@ -113,6 +111,8 @@ if (mysqli_num_rows($result) > 0) {
             <?php } ?>
         </select>
     </div>
+    <br>
+    <input class="form-control" style="width: 99%;" type="text" name="categories" placeholder="Categories">
     <br>
     <textarea name="content" id="content" style="width: 99%;"></textarea>
     <input type="hidden" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
