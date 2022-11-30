@@ -331,23 +331,23 @@ if ($loggedin == 1) {
   </div>
 </div> -->
 <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
-<?php
-                $query ="SELECT * FROM posts";
-                $result = $conn->query($query);
-                if($result->num_rows> 0){
-                  $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
-                }
-                ?>
-                <?php foreach ($options as $option) { ?>
-                  <div class="col">
-                      <div class="card h-100">
-                        <div class="card-body">
-                          <h5 class="card-title"><?php echo $option['title']; ?></h5>
-                          <p class="card-text"></p>
-                        </div>
-                      </div>
-                    </div>
-                <?php } ?>
+  <?php
+    $query ="SELECT * FROM posts WHERE published == 1";
+    $result = $conn->query($query);
+    if($result->num_rows> 0){
+      $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+    }
+  ?>
+  <?php foreach ($options as $option) { ?>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title"><?php echo $option['title']; ?></h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+  <?php } ?>
 </div>
 
 
