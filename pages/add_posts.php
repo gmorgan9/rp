@@ -101,30 +101,36 @@ if (mysqli_num_rows($result) > 0) {
             New Post
         </h3>
         <br>
-    <input class="form-control" style="width: 99%;" type="text" name="title" placeholder="Post Title">
-    <br>
-    <select name="category" class="form-control">
-        <option value="">Select option...</option>
-        <?php
-        $query ="SELECT * FROM categories";
-        $result = $conn->query($query);
-        if($result->num_rows> 0){
-          $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
-        }
-        ?>
-        <?php 
-            foreach ($options as $option) {
-        ?>
-        <option value="<?php echo $option['category']; ?>"><?php echo $option['category']; ?></option>
-        <?php } ?>
-    </select>
-    <br>
-    <input class="form-control" style="width: 99%;" type="text" name="tags" placeholder="Tags">
-    <br>
-    <textarea name="content" id="content" style="width: 99%;"></textarea>
-    <input type="hidden" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
-    <br>
-    <input type="submit" name="submit" value="Submit" class="btn btn-dark btn-block">
+        <div>
+            <label>Post Title</label>
+            <input class="form-control" style="width: 99%;" type="text" name="title" placeholder="Post Title">
+        </div>
+        <div>
+            <label>Category</label>
+            <select name="category" class="form-control">
+                <option value="">Select option...</option>
+                <?php
+                $query ="SELECT * FROM categories";
+                $result = $conn->query($query);
+                if($result->num_rows> 0){
+                  $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                }
+                ?>
+                <?php 
+                    foreach ($options as $option) {
+                ?>
+                <option value="<?php echo $option['category']; ?>"><?php echo $option['category']; ?></option>
+                <?php } ?>
+            </select>
+        </div>
+        <div>
+            <label>Tags</label>
+            <input class="form-control" style="width: 99%;" type="text" name="tags" placeholder="Tags">
+        </div>
+        <textarea name="content" id="content" style="width: 99%;"></textarea>
+        <input type="hidden" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
+        <br>
+        <input type="submit" name="submit" value="Submit" class="btn btn-dark btn-block">
     </form>
    
     </div>
