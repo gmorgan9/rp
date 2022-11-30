@@ -25,6 +25,8 @@ require_once "../path.php";
 
     <link rel="stylesheet" href="../assets/styles.css?v=2.12">
 
+    <script src="https://cdn.tiny.cloud/1/7kainuaawjddfzf3pj7t2fm3qdjgq5smjfjtsw3l4kqfd1h4/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
     <title>Add New Post - CacheUp Blog</title>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
