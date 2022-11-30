@@ -41,7 +41,7 @@ body {
    z-index: 600;
    } 
 
-footer {
+/* footer {
    color: white;
    background-color: #073C53 !important; 
    width: 84%; 
@@ -49,7 +49,7 @@ footer {
    position:absolute;
    bottom: 0;
    height: 25px !important;
-}
+} */
 
 form .error-msg{
     margin:10px 0;

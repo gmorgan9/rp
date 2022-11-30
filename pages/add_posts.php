@@ -23,7 +23,7 @@ require_once "../path.php";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="../assets/styles.css?v=1.97">
+    <link rel="stylesheet" href="../assets/styles.css?v=1.98">
 
     <title>Add New Post - CacheUp Blog</title>
 
@@ -48,7 +48,7 @@ require_once "../path.php";
 </div>
 
     
-<?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
+<?php //include(ROOT_PATH . "/app/includes/footer.php"); ?>
 
 <!-- <script src="../assets/js/new.js"></script> -->
 
