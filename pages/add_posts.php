@@ -23,7 +23,7 @@ require_once "../path.php";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="../assets/styles.css?v=1.98">
+    <link rel="stylesheet" href="../assets/styles.css?v=1.99">
 
     <title>Add New Post - CacheUp Blog</title>
 
@@ -40,7 +40,7 @@ require_once "../path.php";
         
 <div class="main">
     <div class="page-header mx-auto">
-        <p class="page_title" style="float: left; padding-top: 2px; margin-left: 15px;">Add New Post</p>
+        <p class="page_title">Add New Post</p>
     </div>
 
     testing
