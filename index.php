@@ -335,12 +335,12 @@ if ($loggedin == 1) {
 
 <!-- Linkedin -->
 <div class="social-links text-center mt-3">
-  <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"
+  <a class="btn btn-primary" style="background-color: #0082ca; outline:none;" href="#!" role="button"
     ><i class="bi bi-linkedin"></i>
   </a>
   &nbsp;
   <!-- Facebook -->
-  <a class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button">
+  <a class="btn btn-primary" style="background-color: #3b5998; outline:none;" href="#!" role="button">
     <i class="bi bi-facebook"></i>
   </a>
 </div>
