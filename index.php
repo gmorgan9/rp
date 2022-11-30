@@ -168,12 +168,12 @@ if(isset($_POST['register'])){
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="display:table !important; width:100%;">
                 <li class="nav-item text-center" style="display: table-cell;
        background: #0d6efd2e;">
-                  <a class="nav-link active" style="border-top-left-radius: 5px !important; border-radius: 0px;
+                  <a class="btn-dark active" style="border-top-left-radius: 5px !important; border-radius: 0px;
         border-bottom: 1px solid #0d6efd2e;" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
                 </li>
                 <li class="nav-item text-center" style="display: table-cell;
        background: #0d6efd2e;">
-                  <a class="nav-link" style="border-top-right-radius: 5px !important; border-radius: 0px;
+                  <a class="btn-dark" style="border-top-right-radius: 5px !important; border-radius: 0px;
         border-bottom: 1px solid #0d6efd2e;" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Signup</a>
                 </li>
                
@@ -197,7 +197,7 @@ if(isset($_POST['register'])){
                     <input class="form-control" type="email" name="email" required placeholder="enter your email"><br>
                     <input class="form-control" type="password" name="password" required placeholder="enter your password"><br>
                     <input class="form-control" type="password" name="cpassword" required placeholder="confirm your password"><br>
-                    <input type="submit" name="register" value="register now" class="btn btn-dark btn-block">
+                    <input type="submit" name="register" value="Register" class="btn btn-dark btn-block">
                   </form>
                 </div>
               </div>
