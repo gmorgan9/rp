@@ -23,7 +23,7 @@ require_once "path.php";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=2.55">
+    <link rel="stylesheet" href="assets/blog.css?v=2.56">
 
     <title>CacheUp Blog</title>
 
@@ -62,7 +62,7 @@ require_once "path.php";
   <h1 class="behind text-center mt-5">
     Home
   </h1>
-  <h1 class="front">
+  <h1 class="front text-center">
     Home
   </h1>
 </div>
