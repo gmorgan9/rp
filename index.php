@@ -52,7 +52,7 @@ require_once "path.php";
         </a>
       </button>
       <a href="" class="text-decoration-none text-white pt-5">
-        &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-person-circle" style="font-size: 32px;"></i>
+        <i class="bi bi-person-circle" style="font-size: 32px;"></i>
       </a>
     </div>
 <!-- end header -->
