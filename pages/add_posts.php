@@ -99,7 +99,7 @@ if (mysqli_num_rows($result) > 0) {
     <input class="form-control" style="width: 99%;" type="text" name="categories" placeholder="Categories">
     <br>
     <textarea name="content" id="content" style="width: 99%;"></textarea>
-    <input class="form-control" style="width: 99%;" type="text" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
+    <input type="hidden" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
     </form>
    
     </div>
