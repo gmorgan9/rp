@@ -177,21 +177,21 @@ if(isset($_POST['register'])){
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                   <form action="" method="post" class="form px-4">
                     <input class="form-control" type="text" name="username" required placeholder="enter your user name">
-                    <input type="password" name="password" required placeholder="enter your password">
-                    <input type="submit" name="login" value="Login" class="form-btn">
+                    <input class="form-control" type="password" name="password" required placeholder="enter your password">
+                    <input class="form-control" type="submit" name="login" value="Login" class="form-btn">
                   </form>
                 </div>
 
                 <!-- REGISTER -->
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                   <form action="" method="post" class="form px-4">
-                    <input type="text" name="firstname" required placeholder="enter your first name">
-                    <input type="text" name="lastname" required placeholder="enter your last name">
-                    <input type="text" name="username" required placeholder="enter your user name">
-                    <input type="email" name="email" required placeholder="enter your email">
-                    <input type="password" name="password" required placeholder="enter your password">
-                    <input type="password" name="cpassword" required placeholder="confirm your password">
-                    <input type="submit" name="register" value="register now" class="form-btn">
+                    <input class="form-control" type="text" name="firstname" required placeholder="enter your first name">
+                    <input class="form-control" type="text" name="lastname" required placeholder="enter your last name">
+                    <input class="form-control" type="text" name="username" required placeholder="enter your user name">
+                    <input class="form-control" type="email" name="email" required placeholder="enter your email">
+                    <input class="form-control" type="password" name="password" required placeholder="enter your password">
+                    <input class="form-control" type="password" name="cpassword" required placeholder="confirm your password">
+                    <input class="form-control" type="submit" name="register" value="register now" class="form-btn">
                   </form>
                 </div>
               </div>
