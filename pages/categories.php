@@ -69,7 +69,7 @@ if (isset($_POST['draft'])) {
     <hr style="margin-bottom: -5px; margin-top: 5px;">
     <?php 
 
-    $sql = "SELECT * FROM employee";
+    $sql = "SELECT * FROM categories";
     $all = mysqli_query($conn, $sql);
       if($all) {
         while ($row = mysqli_fetch_assoc($all)) {
