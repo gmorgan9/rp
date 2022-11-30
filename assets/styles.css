@@ -42,8 +42,12 @@ body {
    } 
 
 footer {
-    background-color: var(--secondary-color);
-    height: 25px !important;
+   background-color: white; 
+   width: 84%; 
+   right: 0; 
+   position:absolute;
+   bottom: 0;
+   height: 25px !important;
 }
 
 form .error-msg{

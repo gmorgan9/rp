@@ -129,22 +129,13 @@ form .error-msg{
     text-align: left;
 }
 
-.main {
-    /* margin-top: 15px; */
-}
-.a1:focus {
-   background-color: #48ceff !important;
-}
-/* .addCSS {
-   color: green;
-   font-size: 25px;
-} */
 
-a.active {
+
+/* a.active {
 background-color: #fff !important;
 color: black !important;
 border: none !important;
-}
+} */
 
 /* Style the list */
 .page-header {
@@ -189,6 +180,12 @@ ul.breadcrumb {
  }
  .blocked-footer {
   display: none;
+}
+
+footer {
+   background-color: white; 
+   position:absolute;
+   bottom: 0;
 }
 
 
