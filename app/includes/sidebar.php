@@ -145,7 +145,7 @@ if (mysqli_num_rows($result) > 0) {
                 <?php if($acct_type == 1) { ?>
                     <br><br>
 
-                    <span class="text-white">Admin Links</span>
+                    <span class="text-white">  Admin Links</span>
 
 
                 <!-- USERS -->
