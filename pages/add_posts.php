@@ -102,13 +102,13 @@ if (mysqli_num_rows($result) > 0) {
         </h3>
         <div>
             <label>Post Title</label>
-            <input class="form-control" style="width: 99%;" type="text" name="title" placeholder="Post Title">
+            <input class="form-control" style="width: 99%;" type="text" name="title">
         </div>
         <div class="pt-3"></div>
         <div>
             <label>Category</label>
             <select name="category" class="form-control">
-                <option value="">Select option...</option>
+                <option value=""></option>
                 <?php
                 $query ="SELECT * FROM categories";
                 $result = $conn->query($query);
@@ -126,7 +126,7 @@ if (mysqli_num_rows($result) > 0) {
         <div class="pt-3"></div>
         <div>
             <label>Tags</label>
-            <input class="form-control" style="width: 99%;" type="text" name="tags" placeholder="Tags">
+            <input class="form-control" style="width: 99%;" type="text" name="tags">
         </div>
         <br>
         <textarea name="content" id="content" style="width: 99%;"></textarea>
