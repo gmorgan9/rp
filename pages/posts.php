@@ -22,6 +22,17 @@ if (isset($_POST['published']))
     }
 ?>
 
+<?php
+if (isset($_POST['draft']))
+    {
+        $appUpdateQuery = "UPDATE posts SET published = 0 WHERE post_id = '".$_POST['post_id']."'";
+        $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
+        header('location: posts.php');
+        // $appInsertQuery = "INSERT INTO approved(id,status) VALUES ('".$_POST['row_id']."','Approved')";
+        // $appInsertResult = mysqli_query($conn, $appInsertQuery);
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,7 +109,7 @@ if (isset($_POST['published']))
         <?php } else { ?>
         <form method="post" action="">
           <input type="hidden" name="post_id" value="<?php echo $post_id; ?>" />
-          <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="published"><span class="badge text-bg-success">Publish</span></button>
+          <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="draft"><span class="badge text-bg-info">Draft</span></button>
         </form>
         <?php } ?>
           <a style="text-decoration: none;" class="badge text-bg-success" href="actions/view-employee.php?employeeID=<?php echo $empID; ?>">View</a>
