@@ -145,7 +145,7 @@ if (mysqli_num_rows($result) > 0) {
                 <?php if($acct_type == 1) { ?>
                     <br><br>
 
-                <li class="text-white list-group-item list-group-item-action">Admin Links</li>
+                <a class="text-white list-group-item list-group-item-action">Admin Links</a>
 
 
                 <!-- USERS -->
