@@ -17,21 +17,7 @@
 body {
     background-color: #1a1a1a !important;
     color: #fff;
-    min-height: 100vh;
 }
-html, body { height: 100%;}
-
-body > footer {
-  position: sticky;
-  top: 100vh;
-}
-
-/* footer {
-  
-   background-color: #121212; 
-   height: 100px !important;
-   padding-top: 40px;
-} */
 
 footer{
    position: static;
