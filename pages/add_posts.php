@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
      $error[] = 'title already exist!';
 
   }else {
-        $insert = "INSERT INTO posts (idno, title, content, author, categories, published) VALUES('$idno', '$title','$content','$author','$categories','$published')";
+        $insert = "INSERT INTO posts (idno, title, content, author, categories) VALUES('$idno', '$title','$content','$author','$categories')";
         mysqli_query($conn, $insert);
         // header('location:/');
      }
