@@ -285,6 +285,8 @@ if ($loggedin == 1) {
   </div>
 </div>
 
+
+
 <!-- end Tags -->
 
 <br><br><br>
@@ -328,6 +330,21 @@ if ($loggedin == 1) {
     </div>
   </div>
 </div>
+
+<?php foreach ($posts as $post): ?>
+          <div class="post clearfix">
+            <div class="post-preview">
+              <h2><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h2>
+              <i class="far fa-user"> <?php echo $post['username']; ?></i>
+              &nbsp;
+              <i class="far fa-calendar"> <?php echo date('F j, Y', strtotime($post['created_at'])); ?></i>
+              <p class="preview-text">
+                <?php echo html_entity_decode(substr($post['body'], 0, 150) . '...'); ?>
+              </p>
+              <a href="single.php?id=<?php echo $post['id']; ?>" class="btn read-more">Read More</a>
+            </div>
+          </div>    
+        <?php endforeach; ?>
 
 <!-- end blog posts -->
 
