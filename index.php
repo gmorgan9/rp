@@ -168,9 +168,9 @@ if ($loggedin == 1) {
 <ul class="list-group list-group-flush" style="width: 250px;">
   <li class="list-group-item fw-bold text-capitalize mb-3" style="font-size: 18px; border-bottom: none;"><?php echo $firstname; ?>
   <?php if($acct_type == 1) { ?>
-     <i class="fw-normal" style="font-size: 10px;">(admin)</i>
+     <i class="fw-normal text-lowercase" style="font-size: 10px;">(admin)</i>
     <?php } else { ?>
-      <i class="fw-normal" style="font-size: 10px;">(standard)</i>
+      <i class="fw-normal text-lowercase" style="font-size: 10px;">(standard)</i>
     <?php } ?>
 
 </li>
