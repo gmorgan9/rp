@@ -20,8 +20,12 @@ body {
 }
 
 footer {
-    background-color: var(--secondary-color);
-    height: 25px !important;
+   background-color: #121212; 
+   position: absolute;
+   bottom: 0;
+   height: 100px !important;
+   width: 100%;
+   padding-top: 40px;
 }
 
 
@@ -138,14 +142,6 @@ ul.breadcrumb {
   display: none;
 }
 
-footer {
-   background-color: #121212; 
-   position: absolute;
-   bottom: 0;
-   height: 100px !important;
-   width: 100%;
-   padding-top: 40px;
-}
 
 .right {
    float: right !important;
