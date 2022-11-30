@@ -65,12 +65,19 @@ if(isset($_POST['submit'])){
 <body>
 
 <?php
+$select = "SELECT * FROM users";
+$result = mysqli_query($conn, $select);
+if (mysqli_num_rows($result) > 0) {
+   while($row = mysqli_fetch_assoc($result)) {
+    $firstname    = $row['firstname'];
+    $lastname     = $row['lastname'];
+}}
 $select = "SELECT * FROM categories";
 $result = mysqli_query($conn, $select);
 if (mysqli_num_rows($result) > 0) {
    while($row = mysqli_fetch_assoc($result)) {
     $cat_id    = $row['cat_id'];
-    $category     = $row['category'];
+    $category  = $row['category'];
 }}
 ?>
     
@@ -119,15 +126,6 @@ if (mysqli_num_rows($result) > 0) {
     <textarea name="content" id="content" style="width: 99%;"></textarea>
     <input type="hidden" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
     <br>
-    <!-- <div>
-        <label>Published?</label>
-        <select name="published" class="form-control w-25">
-            <option value="">Select option...</option>
-            <option value="1">Yes</option>
-            <option value="0">No</option>            
-        </select>
-    </div>
-    <br> -->
     <input type="submit" name="submit" value="Submit" class="btn btn-dark btn-block">
     </form>
    
