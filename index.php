@@ -175,24 +175,25 @@ if(isset($_POST['register'])){
 
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <div class="form px-4 pt-5">
-                    <input type="text" name="" class="form-control" placeholder="Email or Phone">
-                    <input type="text" name="" class="form-control" placeholder="Password">
-                    <button class="btn btn-dark btn-block">Login</button>
+                  <form action="" method="post" class="form px-4">
+                    <input type="text" name="uname" required placeholder="enter your user name">
+                    <input type="password" name="password" required placeholder="enter your password">
+                    <input type="submit" name="submit" value="Login" class="form-btn">
+                  </form>
                 </div>
-              </div>
 
-              <!-- REGISTER -->
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <form action="" method="post" class="form px-4">
-                  <input type="text" name="firstname" required placeholder="enter your first name">
-                  <input type="text" name="lastname" required placeholder="enter your last name">
-                  <input type="text" name="username" required placeholder="enter your user name">
-                  <input type="email" name="email" required placeholder="enter your email">
-                  <input type="password" name="password" required placeholder="enter your password">
-                  <input type="password" name="cpassword" required placeholder="confirm your password">
-                  <input type="submit" name="register" value="register now" class="form-btn">
-                </form>
+                <!-- REGISTER -->
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  <form action="" method="post" class="form px-4">
+                    <input type="text" name="firstname" required placeholder="enter your first name">
+                    <input type="text" name="lastname" required placeholder="enter your last name">
+                    <input type="text" name="username" required placeholder="enter your user name">
+                    <input type="email" name="email" required placeholder="enter your email">
+                    <input type="password" name="password" required placeholder="enter your password">
+                    <input type="password" name="cpassword" required placeholder="confirm your password">
+                    <input type="submit" name="register" value="register now" class="form-btn">
+                  </form>
+                </div>
               </div>
 
 
