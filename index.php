@@ -131,9 +131,9 @@ if (mysqli_num_rows($result) > 0) {
 
 <!-- start header -->
   <div class="page-header">
-  <?php if ($loggedin == 1) { ?>
+  <!-- <?php //if ($loggedin == 1) { ?>
             <p style="font-size: 12px; float: right !important; margin-right: 20px;">Welcome, <?php echo $firstname; ?>!</p>
-            <?php } else {} ?>
+            <?php //} else {} ?> -->
     <div class="left">
       <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
     </div>
@@ -165,6 +165,7 @@ if ($loggedin == 1) {
 ?>
 
 <ul class="list-group list-group-flush">
+  <li class="list-group-item"><?php echo $firstname; ?></li>
   <li class="list-group-item"><a href="<?php echo BASE_URL . '/pages/dashboard.php' ?>" class="text-decoration-none text-black">Dashboard</a></li>
   <li class="list-group-item"><a href="<?php echo BASE_URL . '/logout.php' ?>" class="text-decoration-none text-black">Logout</a></li>
 </ul>
