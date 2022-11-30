@@ -28,7 +28,7 @@ footer {
 
 
 
-.land-container{
+/* .land-container{
    min-height: 100vh;
    display: flex;
    align-items: center;
@@ -79,16 +79,8 @@ footer {
 
 .land-container .content .btn:hover{
    background: var(--primary-color);
-}
+} */
 
-/* Header */
-.nav {
-    box-shadow: 0px 15px 10px -15px rgb(0 0 0 / 5%);
-}
-
-.page_title {
-    text-align: left;
-}
 
 
 
@@ -101,15 +93,10 @@ footer {
 }
 .page-content {
   height:630px;
-  /* overflow: auto;
-  overflow-y:auto;
-  position: relative; */
   padding: 5px 8px;
-  /* height: 40px; */
-  /* width: 98%; */
   background-color: #fff;
 }
-ul.breadcrumb {
+/* ul.breadcrumb {
     padding-top: 5px;
     list-style: none;
     float: right !important;
@@ -130,7 +117,7 @@ ul.breadcrumb {
   ul.breadcrumb li a:hover {
     color: #01447e;
     text-decoration: underline;
-  }
+  } */
 
   .blocked-page {
     display: none;
