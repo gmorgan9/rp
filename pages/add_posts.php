@@ -100,7 +100,7 @@ if (mysqli_num_rows($result) > 0) {
         <select name="category" class="form-control">
             <option value="">Select option...</option>
             <?php
-            $selection = "SELECT * FROM categories where cat_id = $cat_id";
+            $selection = array('PHP', 'ASP');
             foreach ($selection as $selection) {
             $selected = ($options == $selection) ? "selected" : "";
             echo '<option '.$selected.' value="'.$selection.'">'.$selection.'</option>';
