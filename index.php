@@ -51,8 +51,8 @@ require_once "path.php";
           Let's Talk
         </a>
       </button>
-      <a href="" class="text-decoration-none text-white login">
-        &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-person" style="font-size: 24px;"></i>
+      <a href="" class="text-decoration-none text-white">
+        &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-person login" style="font-size: 24px;"></i>
       </a>
     </div>
 <!-- end header -->
