@@ -23,7 +23,7 @@ require_once "path.php";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=2.39">
+    <link rel="stylesheet" href="assets/blog.css?v=2.40">
 
     <title>CacheUp Blog</title>
 
@@ -38,12 +38,12 @@ require_once "path.php";
 <div class="main">
 
 
-  <div class="page-header d-inline">
+  <div class="page-header">
     <!-- <p class="page_title" style="float: left; padding-top: 2px;">&nbsp;&nbsp;<i class="bi bi-house-door-fill"></i> Home &nbsp;&nbsp; | &nbsp;&nbsp; VIEW POST &nbsp;&nbsp; | &nbsp;&nbsp; NEW</p> -->
-    <div class="left float-left">
+    <div class="left">
       <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
     </div>
-    <div class="right float-right">
+    <div class="right">
       <a href="">
         <i class="bi bi-search"></i>
       </a>

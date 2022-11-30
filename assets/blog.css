@@ -148,6 +148,7 @@ footer {
 
 .right {
    float: right !important;
+   margin-top: -15px;
 }
 
     
