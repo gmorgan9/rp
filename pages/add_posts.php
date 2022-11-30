@@ -47,10 +47,7 @@ require_once "../path.php";
     
 </div>
 
-    
-<?php //include(ROOT_PATH . "/app/includes/footer.php"); ?>
 
-<!-- <script src="../assets/js/new.js"></script> -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript">

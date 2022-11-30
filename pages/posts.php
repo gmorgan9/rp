@@ -43,14 +43,14 @@ require_once "../path.php";
         <p class="page_title">Posts</p>
     </div>
 
-    testing
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; testing
     
 </div>
 
     
-<?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
 
-<!-- <script src="../assets/js/new.js"></script> -->
+
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript">
