@@ -51,6 +51,9 @@ require_once "path.php";
           Let's Talk
         </a>
       </button>
+      <a href="" class="text-decoration-none text-white">
+        &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-person-fill"></i>
+      </a>
     </div>
 <!-- end header -->
 
