@@ -341,7 +341,7 @@ if ($loggedin == 1) {
   &nbsp; &nbsp; &nbsp;
   <!-- Email -->
   <a class="btn btn-primary" style="background-color: #333333; border:none !important;" href="#!" role="button">
-    <i class="bi bi-envelope"></i>
+    <i class="bi bi-envelope-fill"></i>
   </a>
   &nbsp; &nbsp; &nbsp;
   <!-- Facebook -->
