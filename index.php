@@ -163,7 +163,11 @@ if(isset($_POST['register'])){
 if ($loggedin == 1) {
 
 ?>
-<p>logged in</p>
+
+<ul class="list-group list-group-flush">
+  <li class="list-group-item"><a href="">Dashboard</a></li>
+  <li class="list-group-item"><a href="">Logout</a></li>
+</ul>
 
 
 <?php
