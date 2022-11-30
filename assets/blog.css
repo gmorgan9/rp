@@ -21,9 +21,7 @@ body {
 }
 
 footer {
-   clear: both;
-    position: relative;
-    z-index: 10;
+   position: fixed;
    background-color: #121212; 
    height: 100px !important;
    padding-top: 40px;
