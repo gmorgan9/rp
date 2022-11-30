@@ -339,14 +339,14 @@ if ($loggedin == 1) {
     ><i class="bi bi-linkedin"></i>
   </a>
   &nbsp; &nbsp; &nbsp;
-  <!-- Facebook -->
-  <a class="btn btn-primary" style="background-color: #3b5998; border:none !important;" href="#!" role="button">
-    <i class="bi bi-facebook"></i>
+  <!-- Email -->
+  <a class="btn btn-primary" style="background-color: #333333; border:none !important;" href="#!" role="button">
+    <i class="bi bi-envelope"></i>
   </a>
   &nbsp; &nbsp; &nbsp;
   <!-- Facebook -->
-  <a class="btn btn-primary" style="background-color: #333333; border:none !important;" href="#!" role="button">
-    <i class="bi bi-envelope"></i>
+  <a class="btn btn-primary" style="background-color: #3b5998; border:none !important;" href="#!" role="button">
+    <i class="bi bi-facebook"></i>
   </a>
 </div>
 
