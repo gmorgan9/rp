@@ -40,12 +40,12 @@ session_start();
         
 <div class="main">
   <div class="page-header mx-auto">
-    <p class="page_title" style="float: left; padding-top: 2px;">Dashboard</p>
+    <p class="page_title" style="float: left; padding-top: 2px;">Dashboard <?php echo $_SESSION['user_id']; ?></p>
     <!-- <ul class="breadcrumb">
       <li>Dashboard</li>
     </ul> -->
   </div>
-  <?php echo $_SESSION['user_id']; ?>
+  
 </div>
 </div>
 
