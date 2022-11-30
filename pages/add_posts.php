@@ -100,11 +100,11 @@ if (mysqli_num_rows($result) > 0) {
     <br>
     <textarea name="content" id="content" style="width: 99%;"></textarea>
     <input type="hidden" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
-
+    <br>
     <div>
         <label>Published</label>
         <select name="published" class="form-control w-25">
-            <option value=""></option>
+            <option value="">Select option...</option>
             <option value="1">Yes</option>
             <option value="0">No</option>            
         </select>
