@@ -331,6 +331,25 @@ if ($loggedin == 1) {
 
 <!-- end blog posts -->
 
+<!-- social links -->
+
+<a
+  class="btn btn-primary btn-lg btn-floating"
+  style="background-color: #ac2bac;"
+  href="#!"
+  role="button"
+  ><i class="fab fa-instagram"></i>
+</a>
+<a
+  class="btn btn-primary btn-lg btn-floating"
+  style="background-color: #ac2bac;"
+  href="#!"
+  role="button"
+  ><i class="fab fa-instagram"></i>
+</a>
+
+<!-- end social links -->
+
 
     
   </div>
