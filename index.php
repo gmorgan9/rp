@@ -13,7 +13,7 @@ require_once "path.php";
 
 <?php
 
-if(isset($_POST['submit'])){
+if(isset($_POST['login'])){
 // $idno  = rand(1000000, 9999999); // figure how to not allow duplicates
 $user_id = mysqli_real_escape_string($conn, $_POST['user_id']);
 $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
@@ -57,7 +57,7 @@ if(mysqli_num_rows($result) > 0){
 ?>
 
 <?php
-if(isset($_POST['submit'])){
+if(isset($_POST['register'])){
   $idno  = rand(10000, 99999); // figure how to not allow duplicates
   $fname = mysqli_real_escape_string($conn, $_POST['firstname']);
   $lname = mysqli_real_escape_string($conn, $_POST['lastname']);
@@ -168,7 +168,7 @@ if(isset($_POST['submit'])){
       <input type="email" name="email" required placeholder="enter your email">
       <input type="password" name="password" required placeholder="enter your password">
       <input type="password" name="cpassword" required placeholder="confirm your password">
-      <input type="submit" name="submit" value="register now" class="form-btn">
+      <input type="submit" name="register" value="register now" class="form-btn">
           </form>
 
 
