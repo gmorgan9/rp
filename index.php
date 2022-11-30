@@ -170,7 +170,7 @@ if(isset($_POST['register'])){
                   <a class="btn btn-outline-black active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
                 </li>
                 <li class="nav-item text-center">
-                  <a class="btn btn-outline-black" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Signup</a>
+                  <a class="btn btn-outline-black" style="width: 35px;" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Signup</a>
                 </li>
                
               </ul>
