@@ -95,7 +95,7 @@ footer {
 }
 
 .login {
-   margin-top: 15px;
+   margin-top: 15px !important;
 }
 
 .card {
