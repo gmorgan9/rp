@@ -52,7 +52,7 @@ require_once "path.php";
           Let's Talk
         </a>
       </button>
-      <a href="" class="text-decoration-none text-white " style="margin-top: 15px;">
+      <a href="" class="text-decoration-none text-white " style="margin-top: 15px !important;">
         <i class="bi bi-person-circle" style="font-size: 32px;"></i>
       </a>
     </div>
