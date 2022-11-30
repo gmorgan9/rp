@@ -155,9 +155,8 @@ if (mysqli_num_rows($result) > 0) {
                 </a>
 					<div  id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
 							<ul class="list-group-item" style="background-color: #3b6475 ; border-bottom:none;border-top:none; margin-bottom: -1px;">
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Posts</a></li>
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Categories</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Users</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Permissions</a></li>
 							</ul>
 						
 					</div>
