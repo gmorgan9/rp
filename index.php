@@ -192,6 +192,7 @@ if(isset($_POST['register'])){
                   <button class="btn btn-dark btn-block">Signup</button>
                 </div>
               </div>
+</div>
 
 
 
