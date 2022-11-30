@@ -23,7 +23,7 @@ require_once "path.php";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=3.23">
+    <link rel="stylesheet" href="assets/blog.css?v=3.24">
 
     <title>CacheUp Blog</title>
 
@@ -79,7 +79,7 @@ require_once "path.php";
 
 <!-- start blog posts -->
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">
       <div class="card-body">
