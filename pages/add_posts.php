@@ -103,7 +103,7 @@ if (mysqli_num_rows($result) > 0) {
 
     <div>
         <label>Published</label>
-        <select name="published" class="form-control" style="width: 99%;">
+        <select name="published" class="form-control w-25">
             <option value=""></option>
             <option value="1">Yes</option>
             <option value="0">No</option>            
