@@ -42,9 +42,63 @@ require_once "../path.php";
     <div class="page-header mx-auto">
         <p class="page_title">Posts</p>
     </div>
-<br><br><br><br><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; testing
+
+    <div class="main-content">
+
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID #</th>
+      <th scope="col">Title</th>
+      <!-- <th scope="col">Company</th> -->
+      <!-- <th scope="col">Department</th> -->
+      <!-- <th scope="col">Postion</th> -->
+      <th scope="col">Status</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+
+  <?php
+      $sql = "SELECT * FROM posts";
+      $all = mysqli_query($conn, $sql);
+      if($all) {
+          while ($row = mysqli_fetch_assoc($all)) {
+            $post_id     = $row['post_id'];
+            $idno      = $row['idno'];
+            $title     = $row['title'];
+            $published = $row['published'];
+            // $lname     = $row['lname'];
+            // $uname     = $row['uname'];
+            // $email     = $row['email'];
+            // $acc_type  = $row['acc_type'];
+            // $status    = $row['status'];
+            // $compID = $row['company_code'];
+            ?>
+    <tr>
+        <?php //if($_SESSION['empID'] != $row['employeeID']){ ?>
+        <th scope="row"><?php echo $idno; ?></th>
+        <td><?php echo $title; ?></td>
+        <?php if($published == 1){ ?>
+          <td>Published</td>
+        <?php } else { ?>
+          <td>Draft</td>
+        <?php } ?>
+        <td>
+          <!-- <a style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#editEmployee" class="badge text-bg-primary" href="actions/edit-employee.php?employeeID=<?php echo $empID; ?>">Edit</a> -->
+          <a style="text-decoration: none;" class="badge text-bg-success" href="actions/view-employee.php?employeeID=<?php echo $empID; ?>">View</a>
+          <a style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#confirmDelete" class="badge text-bg-danger" href="employees.php?employeeID=<?php echo $empID; ?>">Delete</a>
+        </td>
+        <?php } }?>
+  </tbody>
+</table>
+
+
+        </div>
+
+
+
+
     
 </div>
 

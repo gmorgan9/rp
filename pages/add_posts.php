@@ -98,6 +98,20 @@ if (mysqli_num_rows($result) > 0) {
     <br>
     <input class="form-control" style="width: 99%;" type="text" name="categories" placeholder="Categories">
     <br>
+    <div>
+        <label>Topic</label>
+        <select name="topic_id" class="text-input">
+            <option value="">Select option...</option>
+            <?php foreach ($topics as $key => $topic): ?>
+            <?php if (!empty($topic_id) && $topic_id == $topic['id'] ): ?>
+                <option selected value="<?php echo $topic['id'] ?>"><?php echo $topic['name'] ?></option>
+            <?php else: ?>
+                <option value="<?php echo $topic['id'] ?>"><?php echo $topic['name'] ?></option>
+            <?php endif; ?>
+            <?php endforeach; ?>
+        </select>
+    </div>
+    <br>
     <textarea name="content" id="content" style="width: 99%;"></textarea>
     <input type="hidden" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
     <br>
