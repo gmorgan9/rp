@@ -3,7 +3,7 @@
 require_once "app/database/connection.php";
 // require_once "app/database/functions.php";
 require_once "path.php";
-// session_start();
+session_start();
 
 // if(isLoggedIn()){
 //   header('location: '. BASE_URL . '/pages/dashboard.php');
@@ -15,7 +15,7 @@ require_once "path.php";
 
 if(isset($_POST['login'])){
 // $idno  = rand(1000000, 9999999); // figure how to not allow duplicates
-// $user_id = mysqli_real_escape_string($conn, $_POST['user_id']);
+$user_id = mysqli_real_escape_string($conn, $_POST['user_id']);
 $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
 $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
 $username = mysqli_real_escape_string($conn, $_POST['username']);
