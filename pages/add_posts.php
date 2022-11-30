@@ -18,7 +18,9 @@ if(isset($_POST['submit'])){
   $content = mysqli_real_escape_string($conn, $_POST['content']);
   $author = mysqli_real_escape_string($conn, $_POST['author']);
   $category = mysqli_real_escape_string($conn, $_POST['category']);
+  $tags = mysqli_real_escape_string($conn, $_POST['tags']);
   $published = mysqli_real_escape_string($conn, $_POST['published']);
+
 
   $select = " SELECT * FROM posts WHERE title = '$title'";
 
@@ -29,7 +31,7 @@ if(isset($_POST['submit'])){
      $error[] = 'title already exist!';
 
   }else {
-        $insert = "INSERT INTO posts (idno, title, content, author, category) VALUES('$idno', '$title','$content','$author','$category')";
+        $insert = "INSERT INTO posts (idno, title, content, author, category, tags) VALUES('$idno', '$title','$content','$author','$category', '$tags')";
         mysqli_query($conn, $insert);
         // header('location:/');
      }
