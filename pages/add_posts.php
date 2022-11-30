@@ -77,10 +77,10 @@ if(isset($_POST['submit'])){
 
 
     <form action="" method="POST">
-        <h2>
+        <h3>
             New Post
-        </h2>
-        <br><br>
+        </h3>
+        <br>
     <input class="form-control" style="margin-left: 1%; width: 97%;" type="text" name="title" placeholder="Post Title">
     <br>
     <textarea name="content" id="content" style="width: 99%;"></textarea>
