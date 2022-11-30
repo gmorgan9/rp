@@ -61,7 +61,7 @@ if (isset($_POST['draft'])) {
     <!-- START MAIN_CONTENT -->
         <div class="main-content d-flex">
             <!-- START ADD COMPANY (LEFT SIDE) -->
-    <div class="page-content" style=" width: 32%; height: unset !important;">
+    <div class="page-content" style=" width: 32%; height: 25px !important;">
     <form action="" method="post">
     <div class="section-header pt-2">
       <span class="text-muted pt-4" style="width: 95%;">New Category</span>
