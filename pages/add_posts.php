@@ -104,7 +104,7 @@ if (mysqli_num_rows($result) > 0) {
             <label>Post Title</label>
             <input class="form-control" style="width: 99%;" type="text" name="title" placeholder="Post Title">
         </div>
-        <div class="pt-1"></div>
+        <div class="pt-3"></div>
         <div>
             <label>Category</label>
             <select name="category" class="form-control">
@@ -123,6 +123,7 @@ if (mysqli_num_rows($result) > 0) {
                 <?php } ?>
             </select>
         </div>
+        <div class="pt-3"></div>
         <div>
             <label>Tags</label>
             <input class="form-control" style="width: 99%;" type="text" name="tags" placeholder="Tags">
