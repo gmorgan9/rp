@@ -331,6 +331,33 @@ if ($loggedin == 1) {
   </div>
 </div>
 
+<?php
+                $query ="SELECT * FROM posts";
+                $result = $conn->query($query);
+                if($result->num_rows> 0){
+                  $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                }
+                ?>
+                <?php 
+                    foreach ($options as $option) {
+                ?>
+
+<div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title"><?php echo $option['title']; ?></h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+                <option value="<?php echo $option['category']; ?>"><?php echo $option['category']; ?></option>
+                <?php } ?>
+
+
+
 <?php foreach ($posts as $post): ?>
           <div class="post clearfix">
             <div class="post-preview">
