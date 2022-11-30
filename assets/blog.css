@@ -19,10 +19,8 @@ body {
     color: #fff;
 }
 .main-container {
-   width:100%;
-		height:1500px;
-		margin-bottom:200px;
-		background-color:#123456;
+   height:1500px;
+	margin-bottom:200px;
 }
 
 footer {
