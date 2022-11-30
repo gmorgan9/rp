@@ -36,7 +36,7 @@ require_once "path.php";
 <div class="main-container">
 <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
 
-<?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
+<?php //include(ROOT_PATH . "/app/includes/sidebar.php") ?>
         
 <div class="main">
   <div class="page-header">
