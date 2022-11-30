@@ -167,11 +167,11 @@ if ($loggedin == 1) {
 
 <ul class="list-group list-group-flush" style="width: 250px;">
   <li class="list-group-item fw-bold text-capitalize mb-3" style="font-size: 18px; border-bottom: none;"><?php echo $firstname; ?>
-
+<br>
   <?php if($acct_type == 1) { ?>
-     <i class="fw-normal">(admin)</i>
+     <i class="fw-normal" style="font-size: 14px;">(admin)</i>
     <?php } else { ?>
-      <i class="fw-normal">(standard)</i>
+      <i class="fw-normal" style="font-size: 14px;">(standard)</i>
     <?php } ?>
 
 </li>
