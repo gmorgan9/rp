@@ -145,9 +145,7 @@ if (mysqli_num_rows($result) > 0) {
                 <?php if($acct_type == 1) { ?>
                     <br><br>
 
-                <li class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
-                    <span>  Admin Links</span>
-                </li>
+                    <span class="text-white">Admin Links</span>
 
 
                 <!-- USERS -->
