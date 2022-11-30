@@ -11,6 +11,17 @@ require_once "../path.php";
 
 ?>
 
+<?php
+if (isset($_POST['published']))
+    {
+        $appUpdateQuery = "UPDATE posts SET published = 1 WHERE post_id = '".$_POST['post_id']."'";
+        $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
+        header('location: posts.php');
+        // $appInsertQuery = "INSERT INTO approved(id,status) VALUES ('".$_POST['row_id']."','Approved')";
+        // $appInsertResult = mysqli_query($conn, $appInsertQuery);
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,12 +79,6 @@ require_once "../path.php";
             $idno      = $row['idno'];
             $title     = $row['title'];
             $published = $row['published'];
-            // $lname     = $row['lname'];
-            // $uname     = $row['uname'];
-            // $email     = $row['email'];
-            // $acc_type  = $row['acc_type'];
-            // $status    = $row['status'];
-            // $compID = $row['company_code'];
             ?>
     <tr>
         <?php //if($_SESSION['empID'] != $row['employeeID']){ ?>
@@ -85,7 +90,10 @@ require_once "../path.php";
           <td>Draft</td>
         <?php } ?>
         <td>
-          <!-- <a style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#editEmployee" class="badge text-bg-primary" href="actions/edit-employee.php?employeeID=<?php echo $empID; ?>">Edit</a> -->
+        <form method="post" action="">
+          <input type="text" name="post_id" value="<?php echo $post_id; ?>" />
+          <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="published"><span class="badge text-bg-success">Publish</span></button>
+        </form>
           <a style="text-decoration: none;" class="badge text-bg-success" href="actions/view-employee.php?employeeID=<?php echo $empID; ?>">View</a>
           <a style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#confirmDelete" class="badge text-bg-danger" href="employees.php?employeeID=<?php echo $empID; ?>">Delete</a>
         </td>
