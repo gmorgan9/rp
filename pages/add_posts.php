@@ -44,7 +44,7 @@ require_once "../path.php";
     </div>
 
     <div class="main-content">
-        testing
+        testing new
     </div>
     testing
     
