@@ -83,6 +83,8 @@ if(isset($_POST['submit'])){
         <br>
     <input class="form-control" style="width: 99%;" type="text" name="title" placeholder="Post Title">
     <br>
+    <input class="form-control" style="width: 99%;" type="text" name="categories" placeholder="Categories">
+    <br>
     <textarea name="content" id="content" style="width: 99%;"></textarea>
     </form>
    
