@@ -45,7 +45,7 @@ require_once "path.php";
     </div>
     <div class="right">
       <a href="">
-        <i class="bi bi-search"></i>
+        <i class="bi bi-search text-decoration-none text-white"></i>
       </a>
       &nbsp;&nbsp;
       <button>
