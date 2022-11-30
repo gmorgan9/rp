@@ -102,12 +102,13 @@ if (mysqli_num_rows($result) > 0) {
     <input type="hidden" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
 
     <div>
-                            <label>Published</label>
-                            <select class="form-control">
-                                <option value=""></option>
-                                
-                            </select>
-                        </div>
+        <label>Published</label>
+        <select name="published" class="form-control" style="width: 99%;">
+            <option value=""></option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>            
+        </select>
+    </div>
 
     </form>
    
