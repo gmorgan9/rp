@@ -45,6 +45,7 @@ session_start();
       <li>Dashboard</li>
     </ul> -->
   </div>
+  <?php echo $_SESSION['user_id']; ?>
 </div>
 </div>
 
