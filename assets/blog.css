@@ -1,6 +1,6 @@
 /* WORKING */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 @media only screen and (min-width: 1024px) {
 * {
     margin: 0;
@@ -154,7 +154,7 @@ footer {
 }
 
 .behind {
-   font-family: 'Nunito', sans-serif;
+   font-family: 'Londrina Outline', cursive;
 }
 
     
