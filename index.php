@@ -43,7 +43,7 @@ require_once "path.php";
     <div class="left">
       <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
     </div>
-    <div class="right">
+    <div class="right mt-5">
       <a href="" class="text-decoration-none text-white">
         <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
       </a>
