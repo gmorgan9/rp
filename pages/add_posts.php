@@ -49,7 +49,7 @@ require_once "../path.php";
     
 
 
-    <textarea class="mx-auto" style="width: 95%;">
+    <textarea class="ml-3" style="width: 95%;">
      Welcome to TinyMCE!
   </textarea>
   <script>
