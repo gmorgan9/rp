@@ -140,9 +140,14 @@ if (mysqli_num_rows($result) > 0) {
 
                 <!-- END LOGOUT -->
 
-                <br><br>
+                
 
                 <?php if($acct_type == 1) { ?>
+                    <br><br>
+
+                    Admin
+
+
                 <!-- USERS -->
 
 				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
