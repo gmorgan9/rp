@@ -144,27 +144,34 @@ if(isset($_POST['register'])){
           </a>
           
           <div class="dropdown-menu p-4" >
-            <!-- <div class="mb-3">
-              <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
-              <input type="text" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
-            </div>
-            <div class="mb-3">
-              <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
-            </div>
-            <div class="mb-3">
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                <label class="form-check-label" for="dropdownCheck2">
-                  Remember me
-                </label>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Sign in</button> -->
 
-            
+          <?php
+          $sID = $_SESSION['sID'];
+          $select = " SELECT * FROM student WHERE studentID = '$sID' ";
+          $result = mysqli_query($conn, $select);
+          if (mysqli_num_rows($result) > 0) {
+             while($row = mysqli_fetch_assoc($result)) {
+              $fname    = $row['fname'];
+              $loggedin = $row['loggedin'];
+          }}
+
+          ?>
 
 
+<?php 
+
+if ($loggedin == 1) {
+
+?>
+<p>logged in</p>
+
+
+<?php
+
+} else {
+
+  ?>
+            <!-- TABS -->
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item text-center mx-auto">
                   <a class="btn btn-outline-black active" style="width: 150px;" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
@@ -175,7 +182,7 @@ if(isset($_POST['register'])){
                 </li>
                
               </ul>
-
+              <!-- LOGIN -->
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                   <form action="" method="post" class="form px-4">
@@ -197,6 +204,8 @@ if(isset($_POST['register'])){
                     <input type="submit" name="register" value="Register" class="btn btn-dark btn-block">
                   </form>
                 </div>
+<?php } ?>
+
               </div>
 
 
