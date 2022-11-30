@@ -21,11 +21,11 @@ $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
 $username = mysqli_real_escape_string($conn, $_POST['username']);
 $email = mysqli_real_escape_string($conn, $_POST['email']);
 $password = md5($_POST['password']);
-$cpass = md5($_POST['cpassword']);
+$cpassword = md5($_POST['cpassword']);
 $isadmin = $_POST['isadmin'];
 $loggedin = $_POST['loggedin'];
 
-$select = " SELECT * FROM users WHERE uname = '$uname' && password = '$pass' ";
+$select = " SELECT * FROM users WHERE username = '$username' && password = '$password' ";
 
 $result = mysqli_query($conn, $select);
 
