@@ -121,9 +121,8 @@ if (mysqli_num_rows($result) > 0) {
                 </a>
 					<div  id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
 							<ul class="list-group-item" style="background-color: #3b6475; border-bottom:none;border-top:none; margin-bottom: -1px;">
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Posts</a></li>
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="<?php echo BASE_URL . '/' ?>"> Categories</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Profile</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Preferences</a></li>
 							</ul>
 						
 					</div>
