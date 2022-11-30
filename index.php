@@ -304,7 +304,7 @@ if ($loggedin == 1) {
 
 <br><br>
 
-<div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
+<!-- <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">
       <div class="card-body">
@@ -329,8 +329,8 @@ if ($loggedin == 1) {
       </div>
     </div>
   </div>
-</div>
-
+</div> -->
+<div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
 <?php
                 $query ="SELECT * FROM posts";
                 $result = $conn->query($query);
@@ -338,40 +338,20 @@ if ($loggedin == 1) {
                   $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
                 }
                 ?>
-                <?php 
-                    foreach ($options as $option) {
-                ?>
-
-<div class="col">
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title"><?php echo $option['title']; ?></h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
-    </div>
-  </div>
-
-
-
-                <option value="<?php echo $option['category']; ?>"><?php echo $option['category']; ?></option>
+                <?php foreach ($options as $option) { ?>
+                  <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title"><?php echo $option['title']; ?></h5>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+                    </div>
                 <?php } ?>
+</div>
 
 
 
-<?php foreach ($posts as $post): ?>
-          <div class="post clearfix">
-            <div class="post-preview">
-              <h2><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h2>
-              <i class="far fa-user"> <?php echo $post['username']; ?></i>
-              &nbsp;
-              <i class="far fa-calendar"> <?php echo date('F j, Y', strtotime($post['created_at'])); ?></i>
-              <p class="preview-text">
-                <?php echo html_entity_decode(substr($post['body'], 0, 150) . '...'); ?>
-              </p>
-              <a href="single.php?id=<?php echo $post['id']; ?>" class="btn read-more">Read More</a>
-            </div>
-          </div>    
-        <?php endforeach; ?>
 
 <!-- end blog posts -->
 
