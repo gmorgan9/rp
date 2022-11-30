@@ -159,6 +159,10 @@ footer {
    text-transform: uppercase;
 }
 
+.sub-title {
+   margin-left: 25px;
+}
+
 .behind-2 {
    font-family: 'Londrina Outline', cursive;
    letter-spacing: 20px;
