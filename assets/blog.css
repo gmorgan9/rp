@@ -33,7 +33,7 @@ footer {
     background-color: var(--secondary-color);
     height: 25px !important;
 }
-
+/* 
 form .error-msg{
     margin:10px 0;
     display: block;
@@ -43,6 +43,8 @@ form .error-msg{
     font-size: 20px;
     padding:10px;
  }
+ */
+ /*
  form .success-msg{
     margin:10px 0;
     display: block;
@@ -51,7 +53,7 @@ form .error-msg{
     border-radius: 5px;
     font-size: 20px;
     padding:10px;
- }
+ } */
 
 
 
@@ -127,7 +129,7 @@ border: none !important;
 
 /* Style the list */
 .page-header {
-   height: 100px;
+   height: 150px;
    background-color: #1f1f1f !important;
 }
 .page-content {
