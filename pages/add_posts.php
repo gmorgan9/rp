@@ -100,8 +100,8 @@ if (mysqli_num_rows($result) > 0) {
         <select name="category" class="form-control">
             <option value="">Select option...</option>
             <?php 
-            $result1 = "SELECT * FROM categories";
-            while($cat = mysqli_fetch_array($result1)):; ?>
+            $select1 = "SELECT * FROM categories";
+            while($cat = mysqli_fetch_array($select1)):; ?>
             <option value=""><?php echo $cat[1]; ?></option>
             <?php endwhile; ?>
         </select>
