@@ -74,7 +74,7 @@ require_once "path.php";
 
 <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
-    <div class="card" style="height: 200px;">
+    <div class="card" style="height: 350px;">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -82,7 +82,7 @@ require_once "path.php";
     </div>
   </div>
   <div class="col">
-    <div class="card" style="height: 200px;">
+    <div class="card" style="height: 350px;">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a short card.</p>
@@ -90,7 +90,7 @@ require_once "path.php";
     </div>
   </div>
   <div class="col">
-    <div class="card" style="height: 200px;">
+    <div class="card" style="height: 350px;">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
