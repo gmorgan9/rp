@@ -99,7 +99,9 @@ if (mysqli_num_rows($result) > 0) {
         <label>Topic</label>
         <select name="category" class="form-control">
             <option value="">Select option...</option>
-            <?php while($cat = mysqli_fetch_array($result)):; ?>
+            <?php 
+            $result = "SELECT * FROM categories";
+            while($cat = mysqli_fetch_array($result)):; ?>
             <option value=""><?php echo $cat[1]; ?></option>
             <?php endwhile; ?>
         </select>
