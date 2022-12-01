@@ -273,7 +273,7 @@ if ($loggedin == 1) {
     <div class="card top-card h-100" style="background-color: #1f1f1f;">
       <div class="card-body">
         <div class="text-center">
-          <i class="bi bi-journal text-center fs-3"></i>
+          <i class="bi bi-journal fs-6"></i>
         </div>
         <h5 class="card-title text-center mt-4">IT/Cybersecurity Notes</h5>
         <p class="card-text text-center">Notes from courses taken online or via BYU - Provo.</p>
