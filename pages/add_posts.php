@@ -100,7 +100,7 @@ if (mysqli_num_rows($result) > 0) {
         <h3>
             New Post
         </h3>
-        <div class="modal_help float-end">
+        <div class="modal_help">
 
           <div class="modal" tabindex="-1">
             <div class="modal-dialog">
