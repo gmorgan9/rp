@@ -260,15 +260,15 @@ if ($loggedin == 1) {
 
 <!-- start blog posts -->
 
-<div class="sub-title">
+<!-- <div class="sub-title">
   <h1 class="behind-2 mt-5">
     Popular Posts
   </h1>
   <h1 class="front-2">
     <strong>Popular Posts</strong>
   </h1>
-</div>
-<br><br>
+</div> -->
+<br>
 <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <?php
     $query ="SELECT * FROM posts WHERE status = 'published'";
