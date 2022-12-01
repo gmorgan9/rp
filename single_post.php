@@ -247,7 +247,7 @@ if (mysqli_num_rows($result) > 0) {
 
 <div class="blog_post mt-5 ms-5 p-5" style="width: 65%; background-color: #1f1f1f;">
 
-    <nav class="mb-4" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; breadcrumb-divider-color: white;">
+    <nav class="mb-5" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; breadcrumb-divider-color: white;">
       <ol class="breadcrumb">
         <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase" style="color: #073C53 !important;">Home</a></li>
         <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase" style="color: #073C53 !important;">Library</a></li>
