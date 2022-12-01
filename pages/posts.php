@@ -68,11 +68,11 @@ if (isset($_POST['draft'])) {
 
     <table class="table table-dark" style="width: 99%;">
   <thead>
-    <tr class="table-dark">
-      <th style="background-color: pink;" cope="col">ID #</th>
-      <th scope="col">Title</th>
-      <th scope="col">Status</th>
-      <th scope="col">Actions</th>
+    <tr>
+      <th style="background-color: #1a1a1a;" cope="col">ID #</th>
+      <th style="background-color: #1a1a1a;" scope="col">Title</th>
+      <th style="background-color: #1a1a1a;" scope="col">Status</th>
+      <th style="background-color: #1a1a1a;" scope="col">Actions</th>
     </tr>
   </thead>
   <tbody class="table-group-divider">
@@ -87,16 +87,16 @@ if (isset($_POST['draft'])) {
             $title     = $row['title'];
             $status = $row['status'];
             ?>
-    <tr class="table-dark">
+    <tr>
         <?php //if($_SESSION['empID'] != $row['employeeID']){ ?>
-        <th class="table-dark" scope="row"><?php echo $idno; ?></th>
-        <td class="table-dark"><?php echo $title; ?></td>
+        <th style="background-color: #1a1a1a;" scope="row"><?php echo $idno; ?></th>
+        <td style="background-color: #1a1a1a;"><?php echo $title; ?></td>
         <?php if($status == 'published'){ ?>
           <td>Published</td>
         <?php } else { ?>
           <td>Draft</td>
         <?php } ?>
-        <td class="table-dark">
+        <td style="background-color: #1a1a1a;">
           <?php if($status == 'draft') { ?>
         <form method="post" action="">
           <input type="hidden" name="post_id" value="<?php echo $post_id; ?>" />
