@@ -45,8 +45,10 @@ footer {
 }
 .talk-btn {
    border-color: #073C53;
+   color: #073C53;
 }
 .talk-btn:hover {
+   color: white;
    background-color: #073C53;
 }
 .page-content {
