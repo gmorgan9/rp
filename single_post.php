@@ -236,7 +236,6 @@ if ($loggedin == 1) {
 <!-- start blog posts -->
 
 <?php
-if (isset($_GET['id'])) {
 $post_id = $GET['id'];
 $select = "SELECT * FROM posts WHERE post_id = '$post_id'";
 $result = mysqli_query($conn, $select);
@@ -245,9 +244,6 @@ if (mysqli_num_rows($result) > 0) {
     $title    = $row['title'];
     // $lastname     = $row['lastname'];
 }}
-} else {
-    echo "nope";
-}
 ?>
 
 <div class="blog_post">
