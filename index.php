@@ -137,7 +137,7 @@ if (mysqli_num_rows($result) > 0) {
       </a>
       <button class="btn talk-btn">
         <a href="" class="text-decoration-none">
-          Let's Talk
+          LET'S TALK
         </a>
       </button>
         <a class="text-decoration-none text-white" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
