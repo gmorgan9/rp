@@ -91,31 +91,26 @@ if (isset($_POST['draft'])) {
         <?php //if($_SESSION['empID'] != $row['employeeID']){ ?>
         <th style="background-color: #1a1a1a;" scope="row"><?php echo $idno; ?></th>
         <td style="background-color: #1a1a1a;"><?php echo $title; ?></td>
-        <?php if($status == 'published'){ ?>
-          <td style="background-color: #1a1a1a;">Published</td>
-        <?php } else { ?>
-          <td style="background-color: #1a1a1a;">Draft</td>
-        <?php } ?>
-        <td style="background-color: #1a1a1a;">
-          <?php if($status == 'draft') { ?>
+        <?php if($status == 'draft') { ?>
+          <td style="background-color: #1a1a1a;">
         <form method="post" action="">
           <input type="hidden" name="post_id" value="<?php echo $post_id; ?>" />
           <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="published"><span class="badge text-bg-success">Publish</span></button>
         </form>
-        <a style="text-decoration: none;" class="badge text-bg-success" href="actions/view-employee.php?employeeID=<?php echo $empID; ?>">View</a>
-          <a style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#confirmDelete" class="badge text-bg-danger" href="employees.php?employeeID=<?php echo $empID; ?>">Delete</a>
         </td>
         <?php } else { ?>
+          <td style="background-color: #1a1a1a;">
         <form method="post" action="">
           <input type="hidden" name="post_id" value="<?php echo $post_id; ?>" />
           <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="draft"><span class="badge text-bg-primary">Draft</span></button>
         </form>
-        <a style="text-decoration: none;" class="badge text-bg-success" href="actions/view-employee.php?employeeID=<?php echo $empID; ?>">View</a>
+        <?php } ?>
+        </td>
+        <td style="background-color: #1a1a1a;">
+          <a style="text-decoration: none;" class="badge text-bg-success" href="actions/view-employee.php?employeeID=<?php echo $empID; ?>">View</a>
           <a style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#confirmDelete" class="badge text-bg-danger" href="employees.php?employeeID=<?php echo $empID; ?>">Delete</a>
         </td>
-        <?php } ?>
-         
-        <?php } }?>
+        <?php }}?>
   </tbody>
 </table>
 
