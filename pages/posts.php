@@ -92,9 +92,9 @@ if (isset($_POST['draft'])) {
         <th style="background-color: #1a1a1a;" scope="row"><?php echo $idno; ?></th>
         <td style="background-color: #1a1a1a;"><?php echo $title; ?></td>
         <?php if($status == 'published'){ ?>
-          <td>Published</td>
+          <td style="background-color: #1a1a1a;">Published</td>
         <?php } else { ?>
-          <td>Draft</td>
+          <td style="background-color: #1a1a1a;">Draft</td>
         <?php } ?>
         <td style="background-color: #1a1a1a;">
           <?php if($status == 'draft') { ?>
