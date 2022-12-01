@@ -42,7 +42,7 @@ footer {
    transition: transform .2s; /* Animation */
  }
  .top-card:hover {
-   transform: scale(0.2);
+   transform: scale(1.1);
  }
 
 
