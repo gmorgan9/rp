@@ -262,8 +262,8 @@ if (mysqli_num_rows($result) > 0) {
 
     <nav class="mt-4" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; breadcrumb-divider-color: white;">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase" style="color: #073C53 !important;">Home</a></li>
-        <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase" style="color: #073C53 !important;">Library</a></li>
+        <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase" style="color: #073C53 !important;"><?php echo $row['author']; ?></a></li>
+        <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase" style="color: #073C53 !important;"><?php echo $row['published_at']; ?></a></li>
         <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;">Data</li>
       </ol>
     </nav>
