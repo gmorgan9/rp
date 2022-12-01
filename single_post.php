@@ -245,9 +245,6 @@ if (mysqli_num_rows($result) > 0) {
     $title    = $row['title'];
     // $lastname     = $row['lastname'];
 }}
-} else {
-    echo "nope";
-}
 ?>
 
 <div class="blog_post">
