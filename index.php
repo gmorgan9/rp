@@ -252,17 +252,6 @@ if ($loggedin == 1) {
 
 <br><br>
 
-<div class="sub-title">
-  <h1 class="behind-2 mt-5">
-    Whats Offered
-  </h1>
-  <h1 class="front-2">
-    <strong>Services</strong>
-  </h1>
-</div>
-
-<br><br>
-
 <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card top-card h-100" style="background-color: #1f1f1f;">
@@ -283,6 +272,7 @@ if ($loggedin == 1) {
   <div class="col">
     <div class="card top-card h-100" style="background-color: #1f1f1f;">
       <div class="card-body">
+        <i class="bi bi-journal"></i>
         <h5 class="card-title text-center mt-4">IT/Cybersecurity Notes</h5>
         <p class="card-text text-center">Notes from courses taken online or via BYU - Provo.</p>
       </div>
