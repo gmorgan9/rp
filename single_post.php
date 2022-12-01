@@ -241,16 +241,15 @@ $post_id = $GET['id'];
 $post = "SELECT * FROM posts WHERE post_id = '$post_id'";
 $post_result = mysqli_query($conn, $post);
 if (mysqli_num_rows($post_result) > 0) {
-   while($row = mysqli_fetch_assoc($post_result)) {
-    $title    = $row['title'];
+   while($p = mysqli_fetch_assoc($post_result)) {
+    $title    = $p['title'];
     // $lastname     = $row['lastname'];
-
+}}
 ?>
 
 <div class="blog_post">
 <?php echo $title; ?>
 </div>
-<?php }} ?>
 
 
 
