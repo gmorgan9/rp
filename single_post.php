@@ -246,6 +246,16 @@ if (mysqli_num_rows($result) > 0) {
 ?>
 
 <div class="blog_post mt-5 ms-5" style="width: 65%; background-color: #1f1f1f;">
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data</li>
+      </ol>
+    </nav>
+
+    
     <h1 class="fw-bold">
         <?php echo $row['title']; ?>
     </h1>
