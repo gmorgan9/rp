@@ -39,7 +39,7 @@ footer {
  }
 
  .top-card {
-   transition: transform .2s ease-in-out; /* Animation */
+   transition: transform .2s; /* Animation */
    transition: background-color .2s ease-in-out;
  }
  .top-card:hover {
