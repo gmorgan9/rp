@@ -136,7 +136,7 @@ if (mysqli_num_rows($result) > 0) {
         <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
       </a>
       <button class="btn talk-btn">
-        <a href="" class="text-decoration-none text-white">
+        <a href="" class="text-decoration-none">
           Let's Talk
         </a>
       </button>
