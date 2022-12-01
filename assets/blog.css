@@ -59,6 +59,12 @@ footer {
 .talk-btn:hover {
    background-color: #03c6fc;
 }
+.post-btn {
+   background-color: #03c6fc;
+}
+.post-btn:hover {
+   background-color: #00aede;
+}
 .blog-title:hover {
    color: #03c6fc !important;
 }
