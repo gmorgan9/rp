@@ -100,7 +100,7 @@ if(isset($_POST['register'])){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=3.72">
+    <link rel="stylesheet" href="assets/blog.css?v=3.73">
 
     <title>CacheUp Blog</title>
 
@@ -335,7 +335,7 @@ if ($loggedin == 1) {
     <div class="col">
       <div class="card h-100" style="background-color: #1f1f1f;">
         <div class="card-body mb-4">
-          <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #073C53;"><?php echo $option['category']; ?></p>
+          <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #03e3fc;"><?php echo $option['category']; ?></p>
           <a href="single_post.php?id=<?php echo $option['post_id']; ?>" class="text-decoration-none text-white"><h5 class="card-title blog-title"><?php echo $option['title']; ?></h5></a>
           <!-- <p class="card-text text-muted">
             <?php //echo html_entity_decode(substr($option['content'], 0, 150) . '...'); ?>

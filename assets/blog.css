@@ -44,23 +44,23 @@ footer {
    background-color: #1f1f1f !important;
 }
 .talk-btn {
-   border-color: #073C53;
+   border-color: #03e3fc;
 }
 .breadcrumb li:after
 {
 	color: #fff;
 }
 .talk-btn a {
-   color: #073C53 !important;
+   color: #03e3fc !important;
 }
 .talk-btn:hover a {
    color: #fff !important;
 }
 .talk-btn:hover {
-   background-color: #073C53;
+   background-color: #03e3fc;
 }
 .blog-title:hover {
-   color: #073C53 !important;
+   color: #03e3fc !important;
 }
 .page-content {
   height:630px;
