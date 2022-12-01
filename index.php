@@ -281,7 +281,7 @@ if ($loggedin == 1) {
 
 <div class="text-center">
   <button class="btn mt-5 talk-btn">
-    <a href="">
+    <a href="" class="text-decoration-none">
       View All Posts
     </a>
   </button>
