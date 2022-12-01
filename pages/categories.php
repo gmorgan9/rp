@@ -109,11 +109,11 @@ if(isset($_POST['add-category'])){
   <!-- END ADD JOB (LEFT SIDE) -->
 
   <!-- START JOB-REQUEST (RIGHT SIDE) -->
-    <div class="page-content float-end" style="width: 65%; margin-left: 25px; border-radius: 15px;">
-    <table class="table">
+    <div class="page-content float-end" style="background-color: #1f1f1f; width: 65%; margin-left: 25px; border-radius: 15px;">
+    <table class="table table-dark">
     <thead>
       <tr>
-        <th scope="col" style="font-size: 14px;">ID #</th>
+        <th style="background-color: #1f1f1f;" scope="col" style="font-size: 14px;">ID #</th>
         <th scope="col" style="font-size: 14px;">Category</th>
         <th scope="col" style="font-size: 14px;">Actions</th>
       </tr>
