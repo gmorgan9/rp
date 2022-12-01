@@ -324,7 +324,7 @@ if ($loggedin == 1) {
 </div> -->
 <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <?php
-    $query ="SELECT * FROM posts WHERE status = 'published'";
+    $query ="SELECT * FROM posts WHERE status = 'published' LIMIT 3";
     $result = $conn->query($query);
     if($result->num_rows> 0){
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
