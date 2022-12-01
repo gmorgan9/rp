@@ -256,7 +256,7 @@ if ($loggedin == 1) {
   <div class="col">
     <div class="card" style="height: 350px; background-color: #1f1f1f;">
       <div class="card-body">
-        <h5 class="card-title">Projects</h5>
+        <h5 class="card-title text-center mt-4">Projects</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
@@ -264,7 +264,7 @@ if ($loggedin == 1) {
   <div class="col">
     <div class="card" style="height: 350px; background-color: #1f1f1f;">
       <div class="card-body">
-        <h5 class="card-title">Blog Posts</h5>
+        <h5 class="card-title text-center mt-4">Blog Posts</h5>
         <p class="card-text">This is a short card.</p>
       </div>
     </div>
@@ -272,7 +272,7 @@ if ($loggedin == 1) {
   <div class="col">
     <div class="card" style="height: 350px; background-color: #1f1f1f;">
       <div class="card-body">
-        <h5 class="card-title">IT/Cybersecurity Notes</h5>
+        <h5 class="card-title text-center mt-4">IT/Cybersecurity Notes</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
       </div>
     </div>
