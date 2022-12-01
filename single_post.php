@@ -262,7 +262,7 @@ if (mysqli_num_rows($result) > 0) {
 
     <nav class="mt-4" aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase text-white"><i class="bi bi-person-circle fs-2"></i>&nbsp;<?php echo $row['author']; ?></a></li>
+        <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase text-white"><i class="bi bi-person-circle" style="font-size: 14px;"></i>&nbsp;<?php echo $row['author']; ?></a></li>
         <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase text-white"><?php echo $row['published_at']; ?></a></li>
         <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;"><?php echo $row['category']; ?></li>
       </ol>
