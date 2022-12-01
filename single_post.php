@@ -102,7 +102,7 @@ if(isset($_POST['register'])){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=3.73">
+    <link rel="stylesheet" href="assets/blog.css?v=3.74">
 
     <title>CacheUp Blog</title>
 
@@ -247,7 +247,7 @@ if (mysqli_num_rows($result) > 0) {
 
 <div class="blog_post mt-5 ms-5 p-5" style="width: 65%; background-color: #1f1f1f;">
 
-    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: ''; breadcrumb-divider-color: white;">
+    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; breadcrumb-divider-color: white;">
       <ol class="breadcrumb">
         <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none" style="color: #073C53 !important;">Home</a></li>
         <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none" style="color: #073C53 !important;">Library</a></li>

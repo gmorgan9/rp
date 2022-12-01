@@ -48,12 +48,7 @@ footer {
 }
 .breadcrumb li:after
 {
-	content: '›';
-	display: inline;
-	font-size: 1.2em;
 	color: #fff;
-	
-	padding: 0 .0725em 0 .15em;
 }
 .talk-btn a {
    color: #073C53 !important;
