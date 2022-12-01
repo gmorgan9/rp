@@ -43,6 +43,9 @@ footer {
    height: 135px;
    background-color: #1f1f1f !important;
 }
+.talk-btn:hover {
+   background-color: #073C53;
+}
 .page-content {
   height:630px;
   padding: 5px 8px;
