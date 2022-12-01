@@ -280,7 +280,7 @@ if ($loggedin == 1) {
 </div>
 
 <div class="text-center">
-  <button class="btn mt-5 post-btn">
+  <button class="btn mt-5 post-btn btn-lg">
     <a href="" class="text-decoration-none">
       View All Posts
     </a>
