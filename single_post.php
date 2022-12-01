@@ -244,13 +244,18 @@ if (mysqli_num_rows($result) > 0) {
    while($row = mysqli_fetch_assoc($result)) {
     $title    = $row['title'];
     // $lastname     = $row['lastname'];
-}}
+}
 ?>
 
 <div class="blog_post">
 <?php echo $title; ?>
 </div>
 
+<?php
+} else {
+   echo "none";
+}
+?>
 
 
 <!-- end blog posts -->
