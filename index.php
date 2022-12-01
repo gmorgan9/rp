@@ -337,12 +337,13 @@ if ($loggedin == 1) {
     if($result->num_rows> 0){
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
-    
+
   ?>
   <?php foreach ($options as $option) { ?>
     <div class="col">
       <div class="card h-100">
         <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
           <h5 class="card-title"><?php echo $option['title']; ?></h5>
           <p class="card-text"></p>
         </div>
