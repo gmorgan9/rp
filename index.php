@@ -257,15 +257,15 @@ if ($loggedin == 1) {
     <div class="card top-card h-100" style="background-color: #1f1f1f;">
       <div class="card-body">
         <h5 class="card-title text-center mt-4">Walkthroughs</h5>
-        <p class="card-text">Includes TryHackMe and HackTheBox boxes.</p>
+        <p class="card-text text-center">Includes TryHackMe and HackTheBox boxes</p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card top-card h-100" style="background-color: #1f1f1f;">
       <div class="card-body">
-        <h5 class="card-title text-center mt-4">Blog Posts</h5>
-        <p class="card-text">This is a short card.</p>
+        <h5 class="card-title text-center mt-4">Personal Projects</h5>
+        <p class="card-text text-center">Projects that I have worked on or built upon personally</p>
       </div>
     </div>
   </div>
@@ -273,7 +273,7 @@ if ($loggedin == 1) {
     <div class="card top-card h-100" style="background-color: #1f1f1f;">
       <div class="card-body">
         <h5 class="card-title text-center mt-4">IT/Cybersecurity Notes</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text text-center">Notes from courses taken online or via BYU - Provo.</p>
       </div>
     </div>
   </div>
