@@ -272,6 +272,9 @@ if (mysqli_num_rows($result) > 0) {
     </nav>
 
 
+    <p class="preview-text">
+        <?php echo html_entity_decode($row['content']); ?>
+    </p>
 
 </div>
 
