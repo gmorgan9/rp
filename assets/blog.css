@@ -38,6 +38,13 @@ footer {
    margin-top: 13px;
  }
 
+ .top-card {
+   transition: transform .2s; /* Animation */
+ }
+ .top-card:hover {
+   transform: scale(1.5);
+ }
+
 
 .page-header {
    height: 135px;
