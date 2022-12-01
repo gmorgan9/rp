@@ -18,7 +18,7 @@ $date = date('m/d/Y h:i:s a', time());
 
 
 if (isset($_POST['published'])) {
-  $appUpdateQuery = "UPDATE posts SET status = 'published', published_datetime = date('m/d/Y', time()) WHERE post_id = '".$_POST['post_id']."'";
+  $appUpdateQuery = "UPDATE posts SET status = 'published', published_datetime = date('Y-m-d', time()) WHERE post_id = '".$_POST['post_id']."'";
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
   header('location: posts.php');
 }
