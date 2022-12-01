@@ -107,7 +107,7 @@ if (isset($_POST['draft'])) {
         <?php } ?>
         </td>
         <td style="background-color: #1a1a1a;">
-          <a style="text-decoration: none;" class="badge text-bg-success" href="actions/view-employee.php?employeeID=<?php echo $empID; ?>">View</a>
+          <a style="text-decoration: none;" class="badge text-bg-success" href="actions/edit_post.php?id=<?php echo $post_id; ?>">View</a>
           <a style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#confirmDelete" class="badge text-bg-danger" href="employees.php?employeeID=<?php echo $empID; ?>">Delete</a>
         </td>
         <?php }}?>
