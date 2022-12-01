@@ -103,7 +103,7 @@ if (mysqli_num_rows($result) > 0) {
         <div class="modal_help float-end">
 
           <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="badge text-bg-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Launch demo modal
             </button>
 
@@ -112,7 +112,7 @@ if (mysqli_num_rows($result) > 0) {
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Instructions</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body text-black">
