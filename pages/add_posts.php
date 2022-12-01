@@ -100,10 +100,10 @@ if (mysqli_num_rows($result) > 0) {
         <h3>
             New Post
         </h3>
-        <div class="modal_help float-end">
+        <div class="modal_help float-end" style="margin-top: -150px !important;">
 
           <!-- Button trigger modal -->
-            <button type="button" style="margin-top: -150px !important; background: none; color: inherit; border: none; cursor: pointer; outline: inherit;" class="badge text-bg-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" style="background: none; color: inherit; border: none; cursor: pointer; outline: inherit;" class="badge text-bg-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Instructions
             </button>
 
