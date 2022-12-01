@@ -251,7 +251,7 @@ if (mysqli_num_rows($result) > 0) {
       <ol class="breadcrumb">
         <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase" style="color: #03f8fc !important;">Home</a></li>
         <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase" style="color: #03f8fc !important;">Library</a></li>
-        <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;">Data</li>
+        <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;"><?php echo $row['title']; ?></li>
       </ol>
     </nav>
 
