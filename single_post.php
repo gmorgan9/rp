@@ -236,7 +236,6 @@ if ($loggedin == 1) {
 <!-- start blog posts -->
 
 <?php
-if (isset($_GET['id'])) {
 $post_id = $GET['id'];
 $query ="SELECT * FROM posts WHERE post_id = '$post_id'";
 $result = $conn->query($query);
