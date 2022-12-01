@@ -281,7 +281,7 @@ if ($loggedin == 1) {
 
 <div class="text-center">
   <button class="btn mt-5 post-btn btn-lg">
-    <a href="" class="text-decoration-none text-white p-2" style="font-size: 16px;">
+    <a href="" class="text-decoration-none text-white p-2 text-uppercase" style="font-size: 16px;">
       View All Posts
     </a>
   </button>
