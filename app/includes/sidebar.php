@@ -82,11 +82,11 @@ if (mysqli_num_rows($result) > 0) {
 
                 <!-- COMMENTS -->
 
-				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #1f1f1f ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 <span>  Comments<i class="bi bi-chevron-down" style="float: right;"></i></span>
                 </a>
 					<div  id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-							<ul class="list-group-item" style="background-color: #3b6475 ; border-bottom:none;border-top:none; margin-bottom: -1px;">
+							<ul class="list-group-item" style="background-color: #6e6e6e83 ; border-bottom:none;border-top:none; margin-bottom: -1px;">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Posts</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Categories</a></li>
@@ -116,11 +116,11 @@ if (mysqli_num_rows($result) > 0) {
 
                 <!-- SETTINGS -->
 
-				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #1f1f1f;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                 <span>  Settings<i class="bi bi-chevron-down" style="float: right;"></i></span>
                 </a>
 					<div  id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-							<ul class="list-group-item" style="background-color: #3b6475; border-bottom:none;border-top:none; margin-bottom: -1px;">
+							<ul class="list-group-item" style="background-color: #6e6e6e83; border-bottom:none;border-top:none; margin-bottom: -1px;">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Profile</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Preferences</a></li>
 							</ul>
@@ -132,7 +132,7 @@ if (mysqli_num_rows($result) > 0) {
 
                 <!-- LOGOUT -->
 
-                <a href="<?php echo BASE_URL . '/logout.php' ?>" style="background-color: #073C53" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <a href="<?php echo BASE_URL . '/logout.php' ?>" style="background-color: ##1f1f1f" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
                     <i class="bi bi-sliders2"></i>
                     <span>  Logout</span>
                 </a>
@@ -149,11 +149,11 @@ if (mysqli_num_rows($result) > 0) {
 
                 <!-- USERS -->
 
-				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #1f1f1f ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                 <span>  Users<i class="bi bi-chevron-down" style="float: right;"></i></span>
                 </a>
 					<div  id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-							<ul class="list-group-item" style="background-color: #3b6475 ; border-bottom:none;border-top:none; margin-bottom: -1px;">
+							<ul class="list-group-item" style="background-color: #6e6e6e83 ; border-bottom:none;border-top:none; margin-bottom: -1px;">
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Users</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Permissions</a></li>
 							</ul>
