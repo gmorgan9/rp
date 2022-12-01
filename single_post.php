@@ -236,24 +236,16 @@ if ($loggedin == 1) {
 <!-- start blog posts -->
 
 <?php
-// $post_id = $GET['id'];
-// $select = "SELECT * FROM posts WHERE post_id = '$post_id'";
-// $result = mysqli_query($conn, $select);
-// if (mysqli_num_rows($result) > 0) {
-//    while($row = mysqli_fetch_assoc($result)) {
-//     $title    = $row['title'];
-//     // $lastname     = $row['lastname'];
-// }}
-
 $id = $_GET['id'];
-$select = " SELECT * FROM posts WHERE post_id = '$id' ";
+$select = "SELECT * FROM posts WHERE post_id = '$id' ";
 $result = mysqli_query($conn, $select);
 
 if (mysqli_num_rows($result) > 0) {
    while($row = mysqli_fetch_assoc($result)) {
+
 ?>
 
-<div class="blog_post">
+<div class="blog_post" style="width: 75%; background-color: #1f1f1f;">
 <?php echo $row['title']; ?>
 </div>
 
