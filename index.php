@@ -256,7 +256,8 @@ if ($loggedin == 1) {
   <div class="col">
     <div class="card top-card h-100" style="background-color: #1f1f1f;">
       <div class="card-body">
-        <h5 class="card-title text-center mt-3">TryHackMe/HackTheBox Walkthroughs</h5>
+        <h5 class="card-title text-center mt-4">Walkthroughs</h5>
+        <p class="card-text">Includes TryHackMe and HackTheBox boxes.</p>
       </div>
     </div>
   </div>
