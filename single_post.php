@@ -13,9 +13,9 @@ session_start();
 
 <?php 
 
-if (isset($_GET['id'])) {
-    $post = selectOne('posts', ['id' => $_GET['id']]);
-  }
+// if (isset($_GET['id'])) {
+//     $post = selectOne('posts', ['id' => $_GET['id']]);
+//   }
 
 
 ?>
