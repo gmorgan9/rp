@@ -69,13 +69,10 @@ if (isset($_POST['draft'])) {
     <table class="table table-dark" style="width: 99%;">
   <thead>
     <tr class="table-dark">
-      <th class="table-dark" scope="col">ID #</th>
-      <th class="table-dark" scope="col">Title</th>
-      <!-- <th scope="col">Company</th> -->
-      <!-- <th scope="col">Department</th> -->
-      <!-- <th scope="col">Postion</th> -->
-      <th class="table-dark" scope="col">Status</th>
-      <th class="table-dark" scope="col">Actions</th>
+      <th cope="col">ID #</th>
+      <th scope="col">Title</th>
+      <th scope="col">Status</th>
+      <th scope="col">Actions</th>
     </tr>
   </thead>
   <tbody class="table-group-divider">
