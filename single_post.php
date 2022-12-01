@@ -238,24 +238,22 @@ if ($loggedin == 1) {
 <?php
 if (isset($_GET['id'])) {
 $post_id = $GET['id'];
-$select = "SELECT * FROM posts WHERE post_id = '$post_id'";
-$result = mysqli_query($conn, $select);
-if (mysqli_num_rows($result) > 0) {
-   while($row = mysqli_fetch_assoc($result)) {
-    // $title    = $row['title'];
-    // $lastname     = $row['lastname'];
-}}
+$query ="SELECT * FROM posts WHERE post_id = '$post_id'";
+$result = $conn->query($query);
+if($result->num_rows> 0){
+  $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+}
+
+?>
+<?php foreach ($options as $option) { ?>
 
 ?>
 
 <div class="blog_post">
-test<?php echo $row['title']; ?>
+<?php echo $option['title']; ?>
 </div>
-<?php 
-} else {
-    echo "nope";
-}
-?>
+
+<?php } ?>
 
 
 <!-- end blog posts -->
