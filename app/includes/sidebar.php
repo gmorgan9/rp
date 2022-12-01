@@ -132,7 +132,7 @@ if (mysqli_num_rows($result) > 0) {
 
                 <!-- LOGOUT -->
 
-                <a href="<?php echo BASE_URL . '/logout.php' ?>" style="background-color: ##1f1f1f" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <a href="<?php echo BASE_URL . '/logout.php' ?>" style="background-color: #1f1f1f" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
                     <i class="bi bi-sliders2"></i>
                     <span>  Logout</span>
                 </a>
