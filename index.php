@@ -143,7 +143,7 @@ if (mysqli_num_rows($result) > 0) {
       <a href="" class="text-decoration-none text-white">
         <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
       </a>
-      <button class="btn btn-outline-secondary" style="border-color: #1f1f1f !important;">
+      <button class="btn" style="border-color: #1f1f1f;">
         <a href="" class="text-decoration-none text-white">
           Let's Talk
         </a>
