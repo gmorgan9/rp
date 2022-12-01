@@ -103,8 +103,8 @@ if (mysqli_num_rows($result) > 0) {
         <div class="modal_help float-end">
 
           <!-- Button trigger modal -->
-            <button type="button" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" class="badge text-bg-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Launch demo modal
+            <button type="button" style="background: none; color: inherit; border: none; padding: 0; cursor: pointer; outline: inherit;" class="badge text-bg-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Instructions
             </button>
 
             <!-- Modal -->
