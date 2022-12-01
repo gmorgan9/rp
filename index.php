@@ -336,9 +336,8 @@ if ($loggedin == 1) {
     $result = $conn->query($query);
     if($result->num_rows> 0){
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
-    } else {
-      echo "no results";
     }
+    
   ?>
   <?php foreach ($options as $option) { ?>
     <div class="col">
