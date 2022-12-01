@@ -66,10 +66,10 @@ if (isset($_POST['draft'])) {
 
     <div class="main-content">
 
-    <table class="table" style="width: 99%; background-color: pink !important;">
+    <table class="table table-dark" style="width: 99%;">
   <thead>
     <tr class="table-dark">
-      <th cope="col">ID #</th>
+      <th style="background-color: pink;" cope="col">ID #</th>
       <th scope="col">Title</th>
       <th scope="col">Status</th>
       <th scope="col">Actions</th>
