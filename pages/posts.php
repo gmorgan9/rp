@@ -297,7 +297,7 @@ if ($loggedin == 1) {
 <!-- social links -->
 
 <!-- Linkedin -->
-<div class="social-links text-center" style="margin-top: 90px; padding-bottom: 30px;">
+<div class="social-links text-center fixed-bottom">
   <a class="btn btn-primary" style="background-color: #0082ca; border:none !important;" href="#!" role="button"
     ><i class="bi bi-linkedin"></i>
   </a>
