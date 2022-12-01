@@ -254,26 +254,23 @@ if ($loggedin == 1) {
 
 <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
-    <div class="card top-card" style="height: 350px; background-color: #1f1f1f;">
+    <div class="card top-card h-100" style="background-color: #1f1f1f;">
       <div class="card-body">
         <h5 class="card-title text-center mt-4">Projects</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card top-card" style="height: 350px; background-color: #1f1f1f;">
+    <div class="card top-card h-100" style="background-color: #1f1f1f;">
       <div class="card-body">
         <h5 class="card-title text-center mt-4">Blog Posts</h5>
-        <p class="card-text">This is a short card.</p>
       </div>
     </div>
   </div>
   <div class="col">
-    <div class="card top-card" style="height: 350px; background-color: #1f1f1f;">
+    <div class="card top-card h-100" style="background-color: #1f1f1f;">
       <div class="card-body">
         <h5 class="card-title text-center mt-4">IT/Cybersecurity Notes</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
       </div>
     </div>
   </div>
@@ -306,32 +303,7 @@ if ($loggedin == 1) {
 
 <br><br>
 
-<!-- <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a short card.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
-    </div>
-  </div>
-</div> -->
+
 <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <?php
     $query ="SELECT * FROM posts WHERE status = 'published' LIMIT 3";
