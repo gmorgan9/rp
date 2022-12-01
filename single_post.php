@@ -246,7 +246,7 @@ if (mysqli_num_rows($result) > 0) {
 ?>
 
 <div class="blog_post mt-5 ms-5" style="width: 65%; background-color: #1f1f1f;">
-    <h1>
+    <h1 class="fw-bold">
         <?php echo $row['title']; ?>
     </h1>
 </div>
