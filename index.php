@@ -257,7 +257,7 @@ if ($loggedin == 1) {
     <div class="card top-card h-100" style="background-color: #1f1f1f;">
       <div class="card-body">
         <div class="text-center">
-          <i class="bi bi-binoculars fs-1"></i>
+          <i class="bi bi-list-check fs-1"></i>
         </div>
         <h5 class="card-title text-center mt-4">Walkthroughs</h5>
         <p class="card-text text-center">Includes TryHackMe and HackTheBox boxes</p>
