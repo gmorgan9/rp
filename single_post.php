@@ -249,7 +249,7 @@ if (mysqli_num_rows($result) > 0) {
 ?>
 
 <div class="blog_post">
-<?php echo $row['title']; ?>
+test<?php echo $row['title']; ?>
 </div>
 <?php 
 } else {
