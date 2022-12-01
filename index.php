@@ -105,7 +105,7 @@ if(isset($_POST['register'])){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=3.65">
+    <link rel="stylesheet" href="assets/blog.css?v=3.66">
 
     <title>CacheUp Blog</title>
 
@@ -132,9 +132,6 @@ if (mysqli_num_rows($result) > 0) {
 
 <!-- start header -->
   <div class="page-header">
-  <!-- <?php //if ($loggedin == 1) { ?>
-            <p style="font-size: 12px; float: right !important; margin-right: 20px;">Welcome, <?php echo $firstname; ?>!</p>
-            <?php //} else {} ?> -->
     <div class="left">
       <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
     </div>
@@ -143,7 +140,7 @@ if (mysqli_num_rows($result) > 0) {
       <a href="" class="text-decoration-none text-white">
         <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
       </a>
-      <button class="btn talk-btn" style="border-color: #073C53;">
+      <button class="btn talk-btn">
         <a href="" class="text-decoration-none text-white">
           Let's Talk
         </a>
