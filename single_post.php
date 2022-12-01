@@ -248,7 +248,7 @@ if (mysqli_num_rows($result) > 0) {
 <div class="blog_post mt-5 ms-5 p-5" style="width: 65%; background-color: #1f1f1f;">
 
     <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
+      <ol class="breadcrumb text-decoration-none">
         <li class="breadcrumb-item text-decoration-none" style="text-decoration: none; color: #073C53 !important; font-size: 12px;"><a href="#">Home</a></li>
         <li class="breadcrumb-item text-decoration-none" style="color: #073C53 !important; font-size: 12px;"><a href="#">Library</a></li>
         <li class="breadcrumb-item active" aria-current="page">Data</li>
