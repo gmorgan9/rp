@@ -237,7 +237,7 @@ if ($loggedin == 1) {
 
     <nav class="mt-4" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
       <ol class="breadcrumb text-center">
-        <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase" style="color: #03c6fc;">Home</a></li>
+        <li class="text-center breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase" style="color: #03c6fc;">Home</a></li>
         <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;">Posts</li>
       </ol>
     </nav>
