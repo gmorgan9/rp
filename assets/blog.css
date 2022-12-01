@@ -49,7 +49,7 @@ footer {
 .talk-btn a {
    color: #073C53 !important;
 }
-.talk-btn a:hover {
+.talk-btn:hover a {
    color: #fff !important;
 }
 .talk-btn:hover {
