@@ -254,7 +254,7 @@ if (mysqli_num_rows($result) > 0) {
 ?>
 
 <div class="blog_post">
-<?php echo $post_id; ?>
+<?php echo $row['title']; ?>
 </div>
 
 <?php }} ?>
