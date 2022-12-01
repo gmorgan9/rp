@@ -43,6 +43,7 @@ footer {
  }
  .top-card:hover {
    transform: scale(1.05);
+   background-color: #0082a6;
  }
 
 

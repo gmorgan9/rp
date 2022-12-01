@@ -100,7 +100,7 @@ if(isset($_POST['register'])){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=3.85">
+    <link rel="stylesheet" href="assets/blog.css?v=3.86">
 
     <title>CacheUp Blog</title>
 
@@ -262,7 +262,7 @@ if ($loggedin == 1) {
     </div>
   </div>
   <div class="col">
-    <div class="card" style="height: 350px; background-color: #1f1f1f;">
+    <div class="card top-card" style="height: 350px; background-color: #1f1f1f;">
       <div class="card-body">
         <h5 class="card-title text-center mt-4">Blog Posts</h5>
         <p class="card-text">This is a short card.</p>
@@ -270,7 +270,7 @@ if ($loggedin == 1) {
     </div>
   </div>
   <div class="col">
-    <div class="card" style="height: 350px; background-color: #1f1f1f;">
+    <div class="card top-card" style="height: 350px; background-color: #1f1f1f;">
       <div class="card-body">
         <h5 class="card-title text-center mt-4">IT/Cybersecurity Notes</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
