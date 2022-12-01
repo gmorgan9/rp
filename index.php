@@ -336,7 +336,7 @@ if ($loggedin == 1) {
       <div class="card h-100" style="background-color: #1f1f1f;">
         <div class="card-body mb-4">
           <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #073C53;"><?php echo $option['category']; ?></p>
-          <h5 class="card-title blog-title"><?php echo $option['title']; ?></h5>
+          <a href="" class="text-decoration-none"><h5 class="card-title blog-title"><?php echo $option['title']; ?></h5></a>
           <p class="card-text"></p>
         </div>
       </div>
