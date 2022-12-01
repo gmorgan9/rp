@@ -254,10 +254,10 @@ if ($loggedin == 1) {
 
 <div class="sub-title">
   <h1 class="behind-2 mt-5">
-    Services
+    Whats Offered
   </h1>
   <h1 class="front-2">
-    <strong>Whats Offered</strong>
+    <strong>Services</strong>
   </h1>
 </div>
 
