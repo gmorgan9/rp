@@ -247,7 +247,6 @@ if($result->num_rows> 0){
 ?>
 <?php foreach ($options as $option) { ?>
 
-?>
 
 <div class="blog_post">
 <?php echo $option['title']; ?>
