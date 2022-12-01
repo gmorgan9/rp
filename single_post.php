@@ -236,19 +236,28 @@ if ($loggedin == 1) {
 <!-- start blog posts -->
 
 <?php
-$post_id = $GET['id'];
-$select = "SELECT * FROM posts WHERE post_id = '$post_id'";
+// $post_id = $GET['id'];
+// $select = "SELECT * FROM posts WHERE post_id = '$post_id'";
+// $result = mysqli_query($conn, $select);
+// if (mysqli_num_rows($result) > 0) {
+//    while($row = mysqli_fetch_assoc($result)) {
+//     $title    = $row['title'];
+//     // $lastname     = $row['lastname'];
+// }}
+
+$id = $_GET['id'];
+$select = " SELECT * FROM posts WHERE post_id = '$id' ";
 $result = mysqli_query($conn, $select);
+
 if (mysqli_num_rows($result) > 0) {
    while($row = mysqli_fetch_assoc($result)) {
-    $title    = $row['title'];
-    // $lastname     = $row['lastname'];
-}}
 ?>
 
 <div class="blog_post">
 <?php echo $post_id; ?>
 </div>
+
+<?php }} ?>
 
 
 
