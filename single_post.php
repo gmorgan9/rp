@@ -238,17 +238,20 @@ if ($loggedin == 1) {
 <?php
 if (isset($_GET['id'])) {
 $post_id = $GET['id'];
-$post = "SELECT * FROM posts WHERE post_id = '$post_id'";
-$post_result = mysqli_query($conn, $post);
-if (mysqli_num_rows($post_result) > 0) {
-   while($row = mysqli_fetch_assoc($post_result)) {
+$select = "SELECT * FROM posts WHERE post_id = '$post_id'";
+$result = mysqli_query($conn, $select);
+if (mysqli_num_rows($result) > 0) {
+   while($row = mysqli_fetch_assoc($result)) {
     $title    = $row['title'];
     // $lastname     = $row['lastname'];
 }}
+} else {
+    echo "nope";
+}
 ?>
-<?php echo $title; ?>
-<div class="blog_post">
 
+<div class="blog_post">
+<?php echo $title; ?>
 </div>
 
 
