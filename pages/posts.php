@@ -235,14 +235,15 @@ if ($loggedin == 1) {
 
 <!-- start middle -->
 
-<nav class="mt-4 text-center" aria-label="breadcrumb">
+<div class="text-center">
+    <nav class="mt-4" aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li style="margin-top: -3.75px; font-size: 18px;"><i class="bi bi-person-circle"></i></li>&nbsp;&nbsp;
-        <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase text-white"><?php echo $row['author']; ?></a></li>
-        <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase text-white"><?php echo $row['published_at']; ?></a></li>
-        <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;"><?php echo $row['category']; ?></li>
+        <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase text-white">Home</a></li>
+        <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;">Posts</li>
       </ol>
     </nav>
+</div>
 
 
 
