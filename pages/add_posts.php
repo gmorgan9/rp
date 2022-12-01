@@ -115,12 +115,12 @@ if (mysqli_num_rows($result) > 0) {
                     <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Modal title</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
+                  <div class="modal-body text-black">
                     ...
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary text-black" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary text-black">Save changes</button> -->
                   </div>
                 </div>
               </div>
