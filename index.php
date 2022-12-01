@@ -264,6 +264,9 @@ if ($loggedin == 1) {
   <div class="col">
     <div class="card top-card h-100" style="background-color: #1f1f1f;">
       <div class="card-body">
+        <div class="text-center">
+          <i class="bi bi-folder fs-1"></i>
+        </div>
         <h5 class="card-title text-center mt-4">Personal Projects</h5>
         <p class="card-text text-center">Projects that I have worked on or built upon personally</p>
       </div>
