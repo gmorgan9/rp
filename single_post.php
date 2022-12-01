@@ -11,14 +11,6 @@ session_start();
 
 ?>
 
-<?php 
-
-// if (isset($_GET['id'])) {
-//     $post = selectOne('posts', ['id' => $_GET['id']]);
-//   }
-
-
-?>
 
 
 <?php
@@ -246,10 +238,10 @@ if ($loggedin == 1) {
 <?php
 if (isset($_GET['id'])) {
 $post_id = $GET['id'];
-$select = "SELECT * FROM posts WHERE post_id = $post_id";
-$result = mysqli_query($conn, $select);
-if (mysqli_num_rows($result) > 0) {
-   while($row = mysqli_fetch_assoc($result)) {
+$post = "SELECT * FROM posts WHERE post_id = $post_id";
+$post_result = mysqli_query($conn, $post);
+if (mysqli_num_rows($post_result) > 0) {
+   while($row = mysqli_fetch_assoc($post_result)) {
     $title    = $row['title'];
     // $lastname     = $row['lastname'];
 }}
