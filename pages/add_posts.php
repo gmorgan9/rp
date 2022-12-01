@@ -119,7 +119,7 @@ if (mysqli_num_rows($result) > 0) {
                     ...
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary text-black" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
                     <!-- <button type="button" class="btn btn-primary text-black">Save changes</button> -->
                   </div>
                 </div>
@@ -200,18 +200,6 @@ if (mysqli_num_rows($result) > 0) {
     $(this).removeClass('active')
   })
 </script>
-<script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-      crossorigin="anonymous"
-    ></script>
-
-
     <script src="../assets/js/dropdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
