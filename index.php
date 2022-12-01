@@ -278,7 +278,8 @@ if ($loggedin == 1) {
     </div>
   </div>
 </div>
-  <button class="btn btn-outline-secondary">
+
+  <button class="btn btn-outline-secondary mt-5 text-center">
     test
   </button>
 
