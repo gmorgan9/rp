@@ -11,6 +11,16 @@ session_start();
 
 ?>
 
+<?php 
+
+if (isset($_GET['id'])) {
+    $post = selectOne('posts', ['id' => $_GET['id']]);
+  }
+
+
+?>
+
+
 <?php
 
 if(isset($_POST['login'])){
