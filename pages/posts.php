@@ -18,7 +18,7 @@ $date = date('F d, Y', time());
 
 
 if (isset($_POST['published'])) {
-  $appUpdateQuery = "UPDATE posts SET status = 'published', published_datetime = '$date' WHERE post_id = '".$_POST['post_id']."'";
+  $appUpdateQuery = "UPDATE posts SET status = 'published', published_at = '$date' WHERE post_id = '".$_POST['post_id']."'";
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
   header('location: posts.php');
 }
@@ -26,7 +26,7 @@ if (isset($_POST['published'])) {
 
 <?php
 if (isset($_POST['draft'])) {
-  $appUpdateQuery = "UPDATE posts SET status = 'draft' WHERE post_id = '".$_POST['post_id']."'";
+  $appUpdateQuery = "UPDATE posts SET status = 'draft', published_at = 'null' WHERE post_id = '".$_POST['post_id']."'";
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
   header('location: posts.php');
 }
