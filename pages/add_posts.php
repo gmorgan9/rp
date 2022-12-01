@@ -116,7 +116,7 @@ if (mysqli_num_rows($result) > 0) {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body text-black">
-                    ...
+                    Things you will want to pay attention to while creating a new post for our blog. If you have any questions, please reach out via email, I will try and get back to you all as soon as possible.
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
