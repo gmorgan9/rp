@@ -68,14 +68,14 @@ if (isset($_POST['draft'])) {
 
     <table class="table-light" style="width: 99%;">
   <thead>
-    <tr>
-      <th scope="col">ID #</th>
-      <th scope="col">Title</th>
+    <tr class="table-light">
+      <th class="table-light" scope="col">ID #</th>
+      <th class="table-light" scope="col">Title</th>
       <!-- <th scope="col">Company</th> -->
       <!-- <th scope="col">Department</th> -->
       <!-- <th scope="col">Postion</th> -->
-      <th scope="col">Status</th>
-      <th scope="col">Actions</th>
+      <th class="table-light" scope="col">Status</th>
+      <th class="table-light" scope="col">Actions</th>
     </tr>
   </thead>
   <tbody class="table-group-divider">
@@ -90,16 +90,16 @@ if (isset($_POST['draft'])) {
             $title     = $row['title'];
             $status = $row['status'];
             ?>
-    <tr>
+    <tr class="table-light">
         <?php //if($_SESSION['empID'] != $row['employeeID']){ ?>
-        <th scope="row"><?php echo $idno; ?></th>
-        <td><?php echo $title; ?></td>
+        <th class="table-light" scope="row"><?php echo $idno; ?></th>
+        <td class="table-light"><?php echo $title; ?></td>
         <?php if($status == 'published'){ ?>
           <td>Published</td>
         <?php } else { ?>
           <td>Draft</td>
         <?php } ?>
-        <td>
+        <td class="table-light">
           <?php if($status == 'draft') { ?>
         <form method="post" action="">
           <input type="hidden" name="post_id" value="<?php echo $post_id; ?>" />
