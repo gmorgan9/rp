@@ -66,7 +66,7 @@ if (isset($_POST['draft'])) {
 
     <div class="main-content">
 
-    <table class="table table-dark" style="width: 99%; background-color: pink;">
+    <table class="table" style="width: 99%; background-color: pink !important;">
   <thead>
     <tr class="table-dark">
       <th cope="col">ID #</th>
