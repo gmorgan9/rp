@@ -249,7 +249,7 @@ if (mysqli_num_rows($result) > 0) {
 
     <nav class="mb-5" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; breadcrumb-divider-color: white;">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase" style="color: #03c6fc !important;">Home</a></li>
+        <li class="breadcrumb-item" style="font-size: 12px;"><a href="/" class="text-decoration-none text-uppercase" style="color: #03c6fc !important;">Home</a></li>
         <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase" style="color: #03c6fc !important;"><?php echo $row['category']; ?></a></li>
         <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;"><?php echo $row['title']; ?></li>
       </ol>
