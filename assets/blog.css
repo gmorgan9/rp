@@ -49,8 +49,10 @@ footer {
 .talk-btn a {
    color: #073C53 !important;
 }
+.talk-btn a:hover {
+   color: #fff !important;
+}
 .talk-btn:hover {
-   color: white;
    background-color: #073C53;
 }
 .page-content {
