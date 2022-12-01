@@ -252,6 +252,17 @@ if ($loggedin == 1) {
 
 <br><br>
 
+<div class="sub-title">
+  <h1 class="behind-2 mt-5">
+    Offered Services
+  </h1>
+  <h1 class="front-2">
+    <strong>Offered Services</strong>
+  </h1>
+</div>
+
+<br><br>
+
 <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card top-card h-100" style="background-color: #1f1f1f;">
