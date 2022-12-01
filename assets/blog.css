@@ -40,7 +40,7 @@ footer {
 
  .top-card {
    transition: transform .2s; /* Animation */
-   transition: background-color 0.5s ease;
+   transition: background-color .2s ease;
  }
  .top-card:hover {
    transform: scale(1.05);
