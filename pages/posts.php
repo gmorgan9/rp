@@ -235,7 +235,7 @@ if ($loggedin == 1) {
 
 <!-- start middle -->
 
-<div class="text-center">
+<div class="mx-auto">
     <nav class="mt-4" aria-label="breadcrumb">
       <ol class="breadcrumb text-center">
         <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase text-white">Home</a></li>
