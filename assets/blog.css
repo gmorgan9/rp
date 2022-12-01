@@ -39,10 +39,10 @@ footer {
  }
 
  .top-card {
-   transition: transform .2s; /* Animation */
+   transition: transform .1s; /* Animation */
  }
  .top-card:hover {
-   transform: scale(.5);
+   transform: scale(1.5);
  }
 
 
