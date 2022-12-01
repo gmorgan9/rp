@@ -281,7 +281,7 @@ if ($loggedin == 1) {
 
 <div class="text-center">
   <button class="btn mt-5 post-btn btn-lg">
-    <a href="" class="text-decoration-none text-white p-2 text-uppercase" style="font-size: 16px;">
+    <a href="<?php echo BASE_URL . '/pages/posts.php' ?>" class="text-decoration-none text-white p-2 text-uppercase" style="font-size: 16px;">
       View All Posts
     </a>
   </button>
