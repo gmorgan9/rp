@@ -100,7 +100,7 @@ if(isset($_POST['register'])){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=3.80">
+    <link rel="stylesheet" href="assets/blog.css?v=3.81">
 
     <title>CacheUp Blog</title>
 
