@@ -12,8 +12,13 @@ session_start();
 ?>
 
 <?php
+
+date_default_timezone_set('America/Denver');
+$date = date('m/d/Y h:i:s a', time());
+
+
 if (isset($_POST['published'])) {
-  $appUpdateQuery = "UPDATE posts SET status = 'published' WHERE post_id = '".$_POST['post_id']."'";
+  $appUpdateQuery = "UPDATE posts SET status = 'published', published_datetime = $date WHERE post_id = '".$_POST['post_id']."'";
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
   header('location: posts.php');
 }
