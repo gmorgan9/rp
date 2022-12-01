@@ -280,8 +280,10 @@ if ($loggedin == 1) {
 </div>
 
 <div class="text-center">
-  <button class="btn btn-outline-secondary mt-5">
-    test
+  <button class="btn mt-5 talk-btn">
+    <a href="">
+      View All Posts
+    </a>
   </button>
 </div>
 
