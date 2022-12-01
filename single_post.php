@@ -245,7 +245,7 @@ if (mysqli_num_rows($result) > 0) {
 
 ?>
 
-<div class="blog_post mt-5 ms-5" style="width: 65%; background-color: #1f1f1f;">
+<div class="blog_post mt-5 ms-5 p-5" style="width: 65%; background-color: #1f1f1f;">
 
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -255,7 +255,7 @@ if (mysqli_num_rows($result) > 0) {
       </ol>
     </nav>
 
-    
+
     <h1 class="fw-bold">
         <?php echo $row['title']; ?>
     </h1>
