@@ -22,24 +22,12 @@
     color: #48ceff;
   }
 body {
-    background-color: #eee !important;
-    color: #000;
+    background-color: #1a1a1a !important;
+    color: white;
 }
 .logo {
    margin-top: -60px !important;
 }
-
-.sidebar {
-   /* background-color: #eee; */
-   position:absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   padding: 58px 0 0; /* Height of navbar */
-   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-   width: 240px;
-   z-index: 600;
-   } 
 
 /* footer {
    color: white;
@@ -91,7 +79,7 @@ border: none !important;
 
 /* Sidebar */
 .sidebar {
-    background-color: #073C53 !important;
+    background-color: #1f1f1f !important;
     position:absolute;
     top: 0;
     bottom: 0;
