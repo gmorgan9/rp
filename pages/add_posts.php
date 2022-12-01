@@ -117,6 +117,10 @@ if (mysqli_num_rows($result) > 0) {
                   </div>
                   <div class="modal-body text-black">
                     Things you will want to pay attention to while creating a new post for our blog. If you have any questions, please reach out via email, I will try and get back to you all as soon as possible.
+                    <ul>
+                      <li>For all images wanting to be insertted, please have a link for your image ready. a useful site to help you get a link for images would be: <a href="https://postimages.org">https://postimages.org</a>.</li>
+                        <li>Sizes for images to fit inside of blog block.</li>
+                    </ul>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
