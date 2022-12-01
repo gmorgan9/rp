@@ -238,7 +238,7 @@ if ($loggedin == 1) {
 <?php
 if (isset($_GET['id'])) {
 $post_id = $GET['id'];
-$post = "SELECT * FROM posts WHERE post_id = $post_id";
+$post = "SELECT * FROM posts WHERE post_id = '$post_id'";
 $post_result = mysqli_query($conn, $post);
 if (mysqli_num_rows($post_result) > 0) {
    while($row = mysqli_fetch_assoc($post_result)) {
