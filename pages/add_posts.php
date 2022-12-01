@@ -19,7 +19,7 @@ if(isset($_POST['submit'])){
   $author = mysqli_real_escape_string($conn, $_POST['author']);
   $category = mysqli_real_escape_string($conn, $_POST['category']);
   $tags = mysqli_real_escape_string($conn, $_POST['tags']);
-  $published = mysqli_real_escape_string($conn, $_POST['published']);
+  $status = mysqli_real_escape_string($conn, $_POST['status']);
 
 
   $select = " SELECT * FROM posts WHERE title = '$title'";

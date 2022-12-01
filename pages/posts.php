@@ -13,7 +13,7 @@ session_start();
 
 <?php
 if (isset($_POST['published'])) {
-  $appUpdateQuery = "UPDATE posts SET published = 1 WHERE post_id = '".$_POST['post_id']."'";
+  $appUpdateQuery = "UPDATE posts SET status = 'published' WHERE post_id = '".$_POST['post_id']."'";
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
   header('location: posts.php');
 }
@@ -21,7 +21,7 @@ if (isset($_POST['published'])) {
 
 <?php
 if (isset($_POST['draft'])) {
-  $appUpdateQuery = "UPDATE posts SET published = 0 WHERE post_id = '".$_POST['post_id']."'";
+  $appUpdateQuery = "UPDATE posts SET status = 'draft' WHERE post_id = '".$_POST['post_id']."'";
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
   header('location: posts.php');
 }
@@ -83,19 +83,19 @@ if (isset($_POST['draft'])) {
             $post_id     = $row['post_id'];
             $idno      = $row['idno'];
             $title     = $row['title'];
-            $published = $row['published'];
+            $status = $row['status'];
             ?>
     <tr>
         <?php //if($_SESSION['empID'] != $row['employeeID']){ ?>
         <th scope="row"><?php echo $idno; ?></th>
         <td><?php echo $title; ?></td>
-        <?php if($published == 1){ ?>
+        <?php if($status == 'published'){ ?>
           <td>Published</td>
         <?php } else { ?>
           <td>Draft</td>
         <?php } ?>
         <td>
-          <?php if($published == 0) { ?>
+          <?php if($status == 'draft') { ?>
         <form method="post" action="">
           <input type="hidden" name="post_id" value="<?php echo $post_id; ?>" />
           <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="published"><span class="badge text-bg-success">Publish</span></button>
