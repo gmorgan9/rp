@@ -341,7 +341,7 @@ if ($loggedin == 1) {
   ?>
   <?php foreach ($options as $option) { ?>
     <div class="col">
-      <div class="card h-100">
+      <div class="card h-100" style="background-color: #1f1f1f;">
         <div class="card-body mb-4">
           <h6 class="card-subtitle mb-2 mt-4" style="color: #073C53;"><?php echo $option['category']; ?></h6>
           <h5 class="card-title"><?php echo $option['title']; ?></h5>
