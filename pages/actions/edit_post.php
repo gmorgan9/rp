@@ -94,6 +94,15 @@ if (mysqli_num_rows($result) > 0) {
 
     <div class="main-content">
     
+    <?php
+$id = $_GET['id'];
+$select = "SELECT * FROM posts WHERE post_id = '$id' ";
+$result = mysqli_query($conn, $select);
+
+if (mysqli_num_rows($result) > 0) {
+   while($row = mysqli_fetch_assoc($result)) {
+
+?>
 
 
     <form action="" method="POST">
@@ -171,6 +180,12 @@ if (mysqli_num_rows($result) > 0) {
     </form>
    
     </div>
+
+
+    <?php }} ?>
+
+
+
     
     
 </div>
