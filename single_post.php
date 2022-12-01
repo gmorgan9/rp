@@ -264,7 +264,7 @@ if (mysqli_num_rows($result) > 0) {
       <ol class="breadcrumb">
         <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase text-white"><?php echo $row['author']; ?></a></li>
         <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase text-white"><?php echo $row['published_at']; ?></a></li>
-        <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;">Data</li>
+        <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;"><?php echo $row['category']; ?></li>
       </ol>
     </nav>
 
