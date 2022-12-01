@@ -55,6 +55,9 @@ footer {
 .talk-btn:hover {
    background-color: #073C53;
 }
+.blog-title:hover {
+   color: #073C53 !important;
+}
 .page-content {
   height:630px;
   padding: 5px 8px;
