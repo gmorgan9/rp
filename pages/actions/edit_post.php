@@ -173,7 +173,7 @@ if (mysqli_num_rows($result) > 0) {
             <input class="form-control" style="width: 99%;" type="text" name="tags" value="<?php echo $row['tags']; ?>">
         </div>
         <br>
-        <textarea name="content" id="content" style="width: 99%;">value="<?php echo $row['content']; ?>"</textarea>
+        <textarea name="content" id="content" style="width: 99%;"><?php echo $row['content']; ?></textarea>
         <input type="hidden" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
         <br>
         <input type="submit" name="submit" value="Submit" class="btn btn-dark btn-block">
