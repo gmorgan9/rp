@@ -27,7 +27,7 @@ if(isset($_POST['update'])){
 
   $insert = "UPDATE posts SET title = '$title', content = '$content', category = '$category', tags = '$tags', updated_at = '$date' WHERE post_id = '".$_POST['post_id']."'";
   mysqli_query($conn, $insert);
-  header("location: " . ROOT_PATH . "/pages/all_posts.php");
+  header("location: ../all_posts.php");
 
 };
 
