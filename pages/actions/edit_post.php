@@ -35,7 +35,7 @@ if(isset($_POST['update'])){
      $error[] = 'title already exist!';
 
   }else {
-        $insert = "UPDATE posts SET title = $title, content = $content, category = $category, tags = $tags, updated_at = '$date' WHERE post_id = '".$_GET['id']."'";
+        $insert = "UPDATE posts SET title = $title, content = $content, category = $category, tags = $tags, updated_at = '$date' WHERE post_id = '".$_POST['id']."'";
         mysqli_query($conn, $insert);
         // header('location:/');
      }
@@ -149,6 +149,7 @@ if (mysqli_num_rows($result) > 0) {
         </div>
         <div>
             <label>Post Title</label>
+            <input class="form-control" type="hidden" name="post_id" value="<?php echo $row['post_id']; ?>">
             <input class="form-control" style="width: 99%;" type="text" name="title" value="<?php echo $row['title']; ?>">
         </div>
         <div class="pt-3"></div>
