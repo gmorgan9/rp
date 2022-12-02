@@ -13,13 +13,12 @@ session_start();
 
 <?php
 if(isset($_POST['update'])){
-  $idno  = rand(10000, 99999); // figure how to not allow duplicates
+  $idno  = rand(10000, 99999);
   $title = mysqli_real_escape_string($conn, $_POST['title']);
   $content = mysqli_real_escape_string($conn, $_POST['content']);
   $author = mysqli_real_escape_string($conn, $_POST['author']);
   $category = mysqli_real_escape_string($conn, $_POST['category']);
   $tags = mysqli_real_escape_string($conn, $_POST['tags']);
-  // $status = mysqli_real_escape_string($conn, $_POST['status']);
 
 
   date_default_timezone_set('America/Denver');
@@ -121,7 +120,7 @@ if (mysqli_num_rows($result) > 0) {
                     Things you will want to pay attention to while creating a new post for our blog. If you have any questions, please reach out via email, I will try and get back to you all as soon as possible.
                     <ul>
                       <li>For all images wanting to be insertted, please have a link for your image ready. a useful site to help you get a link for images would be: <a href="https://postimages.org" target="_blank">https://postimages.org</a>.</li>
-                        <li>Sizes for images to fit inside of blog block.</li>
+                        <li>The width for all images need to be <strong>835</strong>.</li>
                     </ul>
                   </div>
                   <div class="modal-footer">
