@@ -177,6 +177,7 @@ if (mysqli_num_rows($result) > 0) {
         <input type="hidden" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
         <br>
         <input type="submit" name="submit" value="Submit" class="btn btn-dark btn-block">
+        <button class="btn btn-dark btn-block" onclick="history.back()">Go Back</button>
     </form>
    
     </div>
