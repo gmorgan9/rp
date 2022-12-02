@@ -12,14 +12,18 @@ session_start();
 ?>
 
 <?php
-if(isset($_POST['submit'])){
+if(isset($_POST['update'])){
   $idno  = rand(10000, 99999); // figure how to not allow duplicates
   $title = mysqli_real_escape_string($conn, $_POST['title']);
   $content = mysqli_real_escape_string($conn, $_POST['content']);
   $author = mysqli_real_escape_string($conn, $_POST['author']);
   $category = mysqli_real_escape_string($conn, $_POST['category']);
   $tags = mysqli_real_escape_string($conn, $_POST['tags']);
-  $status = mysqli_real_escape_string($conn, $_POST['status']);
+  // $status = mysqli_real_escape_string($conn, $_POST['status']);
+
+
+  date_default_timezone_set('America/Denver');
+  $date = date('F d, Y, g:i a', time());
 
 
   $select = " SELECT * FROM posts WHERE title = '$title'";
@@ -31,7 +35,7 @@ if(isset($_POST['submit'])){
      $error[] = 'title already exist!';
 
   }else {
-        $insert = "INSERT INTO posts (idno, title, content, author, category, tags) VALUES('$idno', '$title','$content','$author','$category', '$tags')";
+        $insert = "UPDATE posts SET title = $title, content = $content, category = $category, tags = $tags, updated_at = '$date' WHERE post_id = '".$_GET['id']."'";
         mysqli_query($conn, $insert);
         // header('location:/');
      }
@@ -176,7 +180,7 @@ if (mysqli_num_rows($result) > 0) {
         <textarea name="content" id="content" style="width: 99%;"><?php echo $row['content']; ?></textarea>
         <input type="hidden" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
         <br>
-        <input type="submit" name="submit" value="Submit" class="btn btn-light btn-block"> &nbsp;
+        <input type="submit" name="update" value="Submit" class="btn btn-light btn-block"> &nbsp;
         <button class="btn btn-dark btn-block" onclick="history.back()">Go Back</button>
     </form>
    
