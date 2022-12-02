@@ -150,7 +150,7 @@ if (mysqli_num_rows($result) > 0) {
         <div class="pt-3"></div>
         <div>
             <label>Category</label>
-            <select style="width: 99%;" name="category" class="form-control">
+            <select style="width: 99%;" name="category" class="form-control" value="<?php echo $row['category']; ?>">
                 <option value="">Select one...</option>
                 <option value="none">None</option>
                 <?php
