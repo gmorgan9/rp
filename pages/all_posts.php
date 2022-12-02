@@ -117,12 +117,14 @@ if (isset($_POST['draft'])) {
         </form>
         <?php } ?>
         </td>
-        <td style="background-color: #1a1a1a; display: inline-block;">
-          <a style="text-decoration: none;" class="badge text-bg-success" href="actions/edit_post.php?id=<?php echo $post_id; ?>">View</a>
-          <form method="post" action="">
+        <td style="background-color: #1a1a1a;">
+          <div class="d-flex">
+            <a style="text-decoration: none;" class="badge text-bg-success" href="actions/edit_post.php?id=<?php echo $post_id; ?>">View</a>
+            <form method="post" action="">
               <input type="hidden" name="post_id" value="<?php echo $post_id; ?>" />
               <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="delete"><span class="badge text-bg-danger">Delete</span></button>
             </form>
+          </div>
         </td>
         <?php }}?>
   </tbody>
