@@ -32,6 +32,17 @@ if (isset($_POST['draft'])) {
 }
 ?>
 
+<?php 
+// START DELETE
+  if (isset($_POST['delete'])) {
+    $delete = "DELETE FROM posts WHERE post_id = '".$_POST['post_id']."'";
+    $terUpdateResult = mysqli_query($conn, $delete);
+    header('location: all_posts.php');
+  }
+// END DELETE
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -108,7 +119,10 @@ if (isset($_POST['draft'])) {
         </td>
         <td style="background-color: #1a1a1a;">
           <a style="text-decoration: none;" class="badge text-bg-success" href="actions/edit_post.php?id=<?php echo $post_id; ?>">View</a>
-          <a style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#confirmDelete" class="badge text-bg-danger" href="employees.php?employeeID=<?php echo $empID; ?>">Delete</a>
+          <form method="post" action="">
+              <input type="hidden" name="post_id" value="<?php echo $post_id; ?>" />
+              <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="delete"><span class="badge text-bg-danger">Delete</span></button>
+            </form>
         </td>
         <?php }}?>
   </tbody>
