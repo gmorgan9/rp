@@ -149,7 +149,7 @@ if (mysqli_num_rows($result) > 0) {
         </div>
         <div>
             <label>Post Title</label>
-            <input class="form-control" type="hidden" name="post_id" value="<?php echo $row['post_id']; ?>">
+            <input class="form-control" type="text" name="post_id" value="<?php echo $row['post_id']; ?>">
             <input class="form-control" style="width: 99%;" type="text" name="title" value="<?php echo $row['title']; ?>">
         </div>
         <div class="pt-3"></div>
