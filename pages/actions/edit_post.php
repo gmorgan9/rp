@@ -35,7 +35,7 @@ if(isset($_POST['update'])){
      $error[] = 'title already exist!';
 
   }else {
-        $insert = "UPDATE posts SET title = $title, content = $content, category = $category, tags = $tags, updated_at = '$date' WHERE post_id = '".$_POST['id']."'";
+        $insert = "UPDATE posts SET title = '$title', content = '$content', category = '$category', tags = '$tags', updated_at = '$date' WHERE post_id = '".$_POST['id']."'";
         mysqli_query($conn, $insert);
         // header('location:/');
      }
