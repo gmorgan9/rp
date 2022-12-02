@@ -117,7 +117,7 @@ if (isset($_POST['draft'])) {
         </form>
         <?php } ?>
         </td>
-        <td style="background-color: #1a1a1a;">
+        <td style="background-color: #1a1a1a; display: inline;">
           <a style="text-decoration: none;" class="badge text-bg-success" href="actions/edit_post.php?id=<?php echo $post_id; ?>">View</a>
           <form method="post" action="">
               <input type="hidden" name="post_id" value="<?php echo $post_id; ?>" />
