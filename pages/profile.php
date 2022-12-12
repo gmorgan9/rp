@@ -70,7 +70,10 @@ if(isset($_POST['but_upload'])){
     <p class="page_title" style="float: left; padding-top: 2px;">Profile</p>
   </div>
 
-  <?php
+
+  
+</div>
+<?php
         $id = $_SESSION['user_idno'];
         $sql = "SELECT * FROM users WHERE idno = '$id'";
         $all = mysqli_query($conn, $sql);
@@ -85,9 +88,6 @@ if(isset($_POST['but_upload'])){
         <input type='submit' value='Save name' name='but_upload'>
     </form>
     <?php }} ?>
-
-  
-</div>
 </div>
 
     
