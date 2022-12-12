@@ -116,16 +116,26 @@ if (mysqli_num_rows($result) > 0) {
 
                 <!-- SETTINGS -->
 
-				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #1f1f1f;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+				<!-- <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #1f1f1f;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                 <span>  Settings<i class="bi bi-chevron-down" style="float: right;"></i></span>
                 </a>
 					<div  id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
 							<ul class="list-group-item" style="background-color: #6e6e6e83; border-bottom:none;border-top:none; margin-bottom: -1px;">
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Profile</a></li>
+								<li class="list-unstyled"><a class="text-decoration-none text-white" href=""> Profile</a></li>
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Preferences</a></li>
 							</ul>
 						
-					</div>
+					</div> -->
+
+            <!-- PROFILE -->
+                <span>
+                <a href="<?php echo BASE_URL . '/pages/profile.php' ?>" style="background-color: #1f1f1f" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                    <i class="bi bi-sliders"></i>
+                    <span>  Profile</span>
+                </a>
+                </span>
+
+            <!-- END PROFILE -->
 
 
                 <!-- END SETTINGS -->
