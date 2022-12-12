@@ -13,7 +13,7 @@ if (isset($_POST['upload'])) {
  
     $filename = $_FILES["uploadfile"]["name"];
     $tempname = $_FILES["uploadfile"]["tmp_name"];
-    $folder = "./image/" . $filename;
+    $folder = "./upload/" . $filename;
  
     $db = mysqli_connect("localhost", "garrett", "BIGmorgan1999!", "cacheup");
  
