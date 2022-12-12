@@ -71,8 +71,8 @@ if(isset($_POST['but_upload'])){
   </div>
 
   <?php
-        $_SESSION['user_id'] = $id;
-        $sql = "SELECT * FROM users WHERE user_id = '$id'";
+        $id = $_SESSION['idno'];
+        $sql = "SELECT * FROM users WHERE idno = '$id'";
         $all = mysqli_query($conn, $sql);
         if($all) {
             while ($row = mysqli_fetch_assoc($all)) {
