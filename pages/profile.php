@@ -9,30 +9,27 @@ session_start();
 //   header('location: '. BASE_URL . '/pages/dashboard.php');
 // }
 
-if(isset($_POST['but_upload'])){
+if (isset($_POST['upload'])) {
  
-    $name = $_FILES['file']['name'];
-    $target_dir = "upload/";
-    $target_file = $target_dir . basename($_FILES["file"]["name"]);
-  
-    // Select file type
-    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-  
-    // Valid file extensions
-    $extensions_arr = array("jpg","jpeg","png","gif");
-  
-    // Check extension
-    if( in_array($imageFileType,$extensions_arr) ){
-       // Upload file
-       if(move_uploaded_file($_FILES['file']['tmp_name'],$target_dir.$name)){
-          // Insert record
-          $query = "UPDATE users SET profile_picture = '$name' WHERE idno = '".$_SESSION['user_idno']."'";
-          mysqli_query($con,$query);
-       }
-  
+    $filename = $_FILES["uploadfile"]["name"];
+    $tempname = $_FILES["uploadfile"]["tmp_name"];
+    $folder = "./image/" . $filename;
+ 
+    $db = mysqli_connect("localhost", "garrett", "BIGmorgan1999!", "cacheup");
+ 
+    // Get all the submitted data from the form
+    $sql = "UPDATE users SET filename = '$filename' WHERE idno = '".$_SESSION['user_idno']."'";
+ 
+    // Execute query
+    mysqli_query($db, $sql);
+ 
+    // Now let's move the uploaded image into the folder: image
+    if (move_uploaded_file($tempname, $folder)) {
+        echo "<h3>  Image uploaded successfully!</h3>";
+    } else {
+        echo "<h3>  Failed to upload image!</h3>";
     }
-   
-  }
+}
 
 
 
@@ -87,7 +84,7 @@ if(isset($_POST['but_upload'])){
     <form method="post" action="">
         <input type="hidden" name="user_id" value="<?php echo $user_id; ?>" />
         <input class="form-control" type="file" name="file" />
-        <input class="form-control" type="submit" value="Save" name="but_upload">
+        <input class="form-control" type="submit" value="Save" name="upload">
     </form>
     </div>
     <?php }} ?>
