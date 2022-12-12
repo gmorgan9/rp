@@ -25,7 +25,7 @@ session_start();
 
     <link rel="stylesheet" href="../assets/styles.css?v=2.50">
 
-    <title>Dashboard - CacheUp Blog</title>
+    <title>Profile - CacheUp Blog</title>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -40,11 +40,10 @@ session_start();
         
 <div class="main">
   <div class="page-header mx-auto">
-    <p class="page_title" style="float: left; padding-top: 2px;">Dashboard</p>
-    <!-- <ul class="breadcrumb">
-      <li>Dashboard</li>
-    </ul> -->
+    <p class="page_title" style="float: left; padding-top: 2px;">Profile</p>
   </div>
+
+  
   
 </div>
 </div>
