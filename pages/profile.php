@@ -11,9 +11,9 @@ session_start();
 
 if(isset($_POST['but_upload'])){
  
-    $name = $_FILES['profile_picture']['name'];
+    $name = $_FILES['file']['name'];
     $target_dir = "upload/";
-    $target_file = $target_dir . basename($_FILES["profile_picture"]["name"]);
+    $target_file = $target_dir . basename($_FILES["file"]["name"]);
   
     // Select file type
     $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -24,7 +24,7 @@ if(isset($_POST['but_upload'])){
     // Check extension
     if( in_array($imageFileType,$extensions_arr) ){
        // Upload file
-       if(move_uploaded_file($_FILES['profile_picture']['tmp_name'],$target_dir.$name)){
+       if(move_uploaded_file($_FILES['file']['tmp_name'],$target_dir.$name)){
           // Insert record
           $query = "UPDATE users SET profile_picture = '$name' WHERE user_id = '".$_POST['user_id']."'";
           mysqli_query($con,$query);
@@ -86,7 +86,7 @@ if(isset($_POST['but_upload'])){
     <div class="ms-5 ps-5">
     <form method="post" action="">
         <input type="hidden" name="user_id" value="<?php echo $user_id; ?>" />
-        <input class="form-control" type="file" name="profile_picture" />
+        <input class="form-control" type="file" name="file" />
         <input class="form-control" type="submit" value="Save" name="but_upload">
     </form>
     </div>
