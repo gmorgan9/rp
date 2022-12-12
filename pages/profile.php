@@ -83,12 +83,13 @@ if(isset($_POST['but_upload'])){
               $user_id        = $row['user_id'];
     ?>
     <br><br><br><br><br>
-    <div class="ms-5"></div>
+    <div class="ms-5">
     <form method="post" action="">
         <input type="hidden" name="user_id" value="<?php echo $user_id; ?>" />
         <input class="form-control" type="file" name="profile_picture" />
         <input class="form-control" type="submit" value="Save" name="but_upload">
     </form>
+    </div>
     <?php }} ?>
 </div>
 
