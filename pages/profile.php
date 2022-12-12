@@ -85,8 +85,8 @@ if(isset($_POST['but_upload'])){
     <br><br><br><br><br>
     <form method="post" action="">
         <input type="hidden" name="user_id" value="<?php echo $user_id; ?>" />
-        <input type='file' name='profile_picture' />
-        <input type='submit' value='Save name' name='but_upload'>
+        <input type="file" name="profile_picture" />
+        <input type="submit" value="Save" name="but_upload">
     </form>
     <?php }} ?>
 </div>
