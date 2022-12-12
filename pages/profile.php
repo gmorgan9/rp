@@ -82,6 +82,7 @@ if(isset($_POST['but_upload'])){
               $firstname      = $row['firstname'];
               $user_id        = $row['user_id'];
     ?>
+    <br><br><br><br><br>
     <form method="post" action="">
         <input type="hidden" name="user_id" value="<?php echo $user_id; ?>" />
         <input type='file' name='profile_picture' />
