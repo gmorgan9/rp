@@ -70,14 +70,14 @@ if (isset($_POST['upload'])) {
 
   
 </div>
-<?php
-        $id = $_SESSION['user_idno'];
-        $sql = "SELECT * FROM users WHERE idno = '$id'";
-        $all = mysqli_query($conn, $sql);
-        if($all) {
-            while ($row = mysqli_fetch_assoc($all)) {
-              $firstname      = $row['firstname'];
-              $user_id        = $row['user_id'];
+<!-- <?php
+        // $id = $_SESSION['user_idno'];
+        // $sql = "SELECT * FROM users WHERE idno = '$id'";
+        // $all = mysqli_query($conn, $sql);
+        // if($all) {
+        //     while ($row = mysqli_fetch_assoc($all)) {
+        //       $firstname      = $row['firstname'];
+        //       $user_id        = $row['user_id'];
     ?>
     <br><br><br><br><br>
     <div class="ms-5 ps-5">
@@ -87,7 +87,34 @@ if (isset($_POST['upload'])) {
         <input class="form-control" type="submit" value="Save" name="upload">
     </form>
     </div>
-    <?php }} ?>
+    <?php //}} ?> -->
+
+
+    <div id="content">
+        <form method="POST" action="" enctype="multipart/form-data">
+            <div class="form-group">
+                <input class="form-control" type="file" name="filename" value="" />
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit" name="upload">UPLOAD</button>
+            </div>
+        </form>
+    </div>
+    <div id="display-image">
+        <?php
+        $query = " select * from image ";
+        $result = mysqli_query($db, $query);
+ 
+        while ($data = mysqli_fetch_assoc($result)) {
+        ?>
+            <img src="./image/<?php echo $data['filename']; ?>">
+ 
+        <?php
+        }
+        ?>
+    </div>
+
+
 </div>
 
     
