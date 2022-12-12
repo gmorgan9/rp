@@ -26,7 +26,7 @@ if(isset($_POST['but_upload'])){
        // Upload file
        if(move_uploaded_file($_FILES['file']['tmp_name'],$target_dir.$name)){
           // Insert record
-          $query = "UPDATE users SET profile_picture = '$name' WHERE user_id = '".$_POST['user_id']."'";
+          $query = "UPDATE users SET profile_picture = '$name' WHERE idno = '".$_SESSION['user_idno']."'";
           mysqli_query($con,$query);
        }
   
