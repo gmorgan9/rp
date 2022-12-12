@@ -11,9 +11,9 @@ session_start();
 
 if(isset($_POST['but_upload'])){
  
-    $name = $_FILES['file']['name'];
+    $name = $_FILES['profile_picture']['name'];
     $target_dir = "upload/";
-    $target_file = $target_dir . basename($_FILES["file"]["name"]);
+    $target_file = $target_dir . basename($_FILES["profile_picture"]["name"]);
   
     // Select file type
     $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -24,9 +24,9 @@ if(isset($_POST['but_upload'])){
     // Check extension
     if( in_array($imageFileType,$extensions_arr) ){
        // Upload file
-       if(move_uploaded_file($_FILES['file']['tmp_name'],$target_dir.$name)){
+       if(move_uploaded_file($_FILES['profile_picture']['tmp_name'],$target_dir.$name)){
           // Insert record
-          $query = "insert into images(name) values('".$name."')";
+          $query = "UPDATE users SET profile_picture = '$name' WHERE user_id = '".$_POST['user_id']."'";
           mysqli_query($con,$query);
        }
   
@@ -77,13 +77,13 @@ if(isset($_POST['but_upload'])){
         if($all) {
             while ($row = mysqli_fetch_assoc($all)) {
               $firstname      = $row['firstname'];
+              $user_id        = $row['user_id'];
     ?>
-
-<?php echo $firstname ?>
-    <!-- <form method="post" action="">
-        <input type="hidden" name="" value="<?php //echo $; ?>" />
-        <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="delete"><span class="badge text-bg-danger">Delete</span></button>
-    </form> -->
+    <form method="post" action="">
+        <input type="hidden" name="user_id" value="<?php echo $user_id; ?>" />
+        <input type='file' name='profile_picture' />
+        <input type='submit' value='Save name' name='but_upload'>
+    </form>
     <?php }} ?>
 
   
