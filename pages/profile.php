@@ -11,8 +11,8 @@ session_start();
 
 if (isset($_POST['upload'])) {
  
-    $filename = $_FILES["uploadfile"]["name"];
-    $tempname = $_FILES["uploadfile"]["tmp_name"];
+    $filename = $_FILES["filename"]["name"];
+    $tempname = $_FILES["filename"]["tmp_name"];
     $folder = "./upload/" . $filename;
  
     $db = mysqli_connect("localhost", "garrett", "BIGmorgan1999!", "cacheup");
@@ -83,7 +83,7 @@ if (isset($_POST['upload'])) {
     <div class="ms-5 ps-5">
     <form method="post" action="">
         <input type="hidden" name="user_id" value="<?php echo $user_id; ?>" />
-        <input class="form-control" type="file" name="file" />
+        <input class="form-control" type="file" name="filename" />
         <input class="form-control" type="submit" value="Save" name="upload">
     </form>
     </div>
