@@ -9,6 +9,33 @@ session_start();
 //   header('location: '. BASE_URL . '/pages/dashboard.php');
 // }
 
+if(isset($_POST['but_upload'])){
+ 
+    $name = $_FILES['file']['name'];
+    $target_dir = "upload/";
+    $target_file = $target_dir . basename($_FILES["file"]["name"]);
+  
+    // Select file type
+    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+  
+    // Valid file extensions
+    $extensions_arr = array("jpg","jpeg","png","gif");
+  
+    // Check extension
+    if( in_array($imageFileType,$extensions_arr) ){
+       // Upload file
+       if(move_uploaded_file($_FILES['file']['tmp_name'],$target_dir.$name)){
+          // Insert record
+          $query = "insert into images(name) values('".$name."')";
+          mysqli_query($con,$query);
+       }
+  
+    }
+   
+  }
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +70,22 @@ session_start();
     <p class="page_title" style="float: left; padding-top: 2px;">Profile</p>
   </div>
 
-  
+  <?php
+        $_SESSION['user_id'] = $id;
+        $sql = "SELECT * FROM users WHERE user_id = $id";
+        $all = mysqli_query($conn, $sql);
+        if($all) {
+            while ($row = mysqli_fetch_assoc($all)) {
+              $firstname      = $row['firstname'];
+    ?>
+
+<?php echo $firstname ?>
+    <form method="post" action="">
+        <input type="hidden" name="cat_id" value="<?php echo $cat_id; ?>" />
+        <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="delete"><span class="badge text-bg-danger">Delete</span></button>
+    </form>
+    <?php }} ?>
+
   
 </div>
 </div>
