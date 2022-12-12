@@ -38,7 +38,7 @@ if(mysqli_num_rows($result) > 0){
     } else {
       echo "Error updating record: " . mysqli_error($conn);
     }
-    $_SESSION['firsname']         = $row['firstname'];
+    $_SESSION['firstname']         = $row['firstname'];
     $_SESSION['user_id']          = $row['user_id'];
     $_SESSION['loggedin']         = $row['loggedin'];
     $_SESSION['user_idno']        = $row['idno'];
