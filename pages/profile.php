@@ -157,9 +157,12 @@ if (mysqli_num_rows($result) > 0) {
                 </div>
                 
               </div>
-              <button class="btn btn-primary">
-                    edit
-                </button>
+              <button class="btn btn-outline-success">
+                edit
+              </button>
+              <button class="btn btn-outline-secondary">
+                Reset Password
+              </button>
             </div>
           </div>
         </div>
