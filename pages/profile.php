@@ -113,7 +113,7 @@ if(isset($_POST['update'])){
               </div>
               <img src="images/avatar.jpg" onClick="triggerClick()" id="profileDisplay">
             </span>
-            <input type="file" name="profileImage" onChange="displayImage(this)" id="profileImage" class="form-control" style="display: none;">
+            <input type="file" name="profileImage" id="profileImage" class="form-control" style="display: none;">
             <label>Profile Image</label>
           </div>
           <div class="form-group">
