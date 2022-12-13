@@ -33,15 +33,15 @@ session_start();
 
 
 $target_dir = "upload/";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$target_file = $target_dir . basename($_FILES["filename"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
 // Check if image file is a actual image or fake image
 if(isset($_POST["submit"])) {
-  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+  $check = getimagesize($_FILES["filename"]["tmp_name"]);
   if($check !== false) {
-    echo "File is an image - " . $check["mime"] . ".";
+    echo "File is an image.";
     $uploadOk = 1;
   } else {
     echo "File is not an image.";
@@ -144,7 +144,7 @@ if ($uploadOk == 0) {
 
         <form method="POST" action="" >
             <div class="form-group">
-                <input class="form-control" type="file" name="fileToUpload" value="" />
+                <input class="form-control" type="file" name="filename" value="" />
             </div>
                 <button class="form-control" type="submit" name="submit">UPLOAD</button>
   
