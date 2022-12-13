@@ -83,19 +83,6 @@ if(isset($_POST['update'])){
     <div class="main-content">
 
     <section>
-        <div class="container py-5">
-          <div class="row">
-            <div class="col">
-              <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
-                <ol class="breadcrumb mb-0">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item"><a href="#">User</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">User Profile</li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-
           <div class="row">
             <div class="col-lg-4">
               <div class="card mb-4" style="background-color: #1f1f1f;">
@@ -113,7 +100,7 @@ if(isset($_POST['update'])){
               </div>
             </div>
             <div class="col-lg-8">
-              <div class="card mb-4">
+              <div class="card mb-4" style="background-color: #1f1f1f;">
                 <div class="card-body">
                   <div class="row">
                     <div class="col-sm-3">
