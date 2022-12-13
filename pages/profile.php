@@ -91,7 +91,7 @@ if (isset($_POST['upload'])) {
 
 
     <div id="content">
-        <form method="POST" action="" enctype="multipart/form-data">
+        <form method="POST" action="" >
             <div class="form-group">
                 <input class="form-control" type="file" name="filename" value="" />
             </div>
