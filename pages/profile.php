@@ -9,24 +9,6 @@ session_start();
 //   header('location: '. BASE_URL . '/pages/dashboard.php');
 // }
 
-$target_dir = "upload/";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-$uploadOk = 1;
-$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-// Check if image file is a actual image or fake image
-if(isset($_POST["submit"])) {
-  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-  if($check !== false) {
-    echo "File is an image.";
-    $uploadOk = 1;
-  } else {
-    echo "File is not an image.";
-    $uploadOk = 0;
-  }
-}
-
-
-
 
 
 
@@ -89,7 +71,7 @@ if(isset($_POST["submit"])) {
 
     <br><br><br><br><br><br>
 
-    <form action="" method="post">
+    <form action="upload.php" method="post">
   Select image to upload:
   <input type="file" name="fileToUpload" id="fileToUpload">
   <input type="submit" value="Upload Image" name="submit">
