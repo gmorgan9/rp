@@ -99,7 +99,7 @@ if (mysqli_num_rows($result) > 0) {
                       <p class="mb-0">Full Name</p>
                     </div>
                     <div class="col-sm-9">
-                      <p class="text-muted mb-0">Johnatan Smith</p>
+                      <p class="text-muted mb-0"><?php echo $firstname; ?> <?php echo $lastname; ?></p>
                     </div>
                   </div>
                   <hr>
