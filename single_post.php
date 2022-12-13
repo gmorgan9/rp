@@ -302,47 +302,50 @@ if (mysqli_num_rows($another) > 0) {
 <br><br>
 
 <!-- end blog posts -->
-<div class="ms-5 tags">
-<?php
-$id = $_GET['id'];
-$grab = "SELECT * FROM posts WHERE post_id = '$id' ";
-$comma = mysqli_query($conn, $grab);
 
-while($rows = mysqli_fetch_assoc($comma)) {
-   $mark = explode(',', $rows['tags']);//what will do here
-   foreach($mark as $out) {
-      echo "<div class='btn btn-outline-secondary'>"; 
-      echo "# " . $out;
-      echo "</div> &nbsp;";
-   }
-}
+<!-- TAGS -->
+  <div class="ms-5 tags">
+  <?php
+  $id = $_GET['id'];
+  $grab = "SELECT * FROM posts WHERE post_id = '$id' ";
+  $comma = mysqli_query($conn, $grab);
 
-?>
-</div>
+  while($rows = mysqli_fetch_assoc($comma)) {
+     $mark = explode(',', $rows['tags']);//what will do here
+     foreach($mark as $out) {
+        echo "<div class='btn btn-outline-secondary'>"; 
+        echo "# " . $out;
+        echo "</div> &nbsp;";
+     }
+  }
 
-
+  ?>
+  </div>
+<!-- END TAGS -->
 
 
 <!-- social links -->
 
-<!-- Linkedin -->
-<div class="social-links text-center" style="margin-top: 135px;">
-  <a class="btn btn-primary" style="background-color: #0082ca; border:none !important;" href="#!" role="button"
-    ><i class="bi bi-linkedin"></i>
-  </a>
-  &nbsp; &nbsp; &nbsp;
-  <!-- Email -->
-  <a class="btn btn-primary" style="background-color: #333333; border:none !important;" href="#!" role="button">
-    <i class="bi bi-envelope-fill"></i>
-  </a>
-  &nbsp; &nbsp; &nbsp;
-  <!-- Facebook -->
-  <a class="btn btn-primary" style="background-color: #3b5998; border:none !important;" href="#!" role="button">
-    <i class="bi bi-facebook"></i>
-  </a>
-</div>
+  <!-- Linkedin -->
+  <div class="social-links text-center" style="margin-top: 135px;">
+    <a class="btn btn-primary" style="background-color: #0082ca; border:none !important;" href="#!" role="button"
+      ><i class="bi bi-linkedin"></i>
+    </a>
+    &nbsp; &nbsp; &nbsp;
+    <!-- Email -->
+    <a class="btn btn-primary" style="background-color: #333333; border:none !important;" href="#!" role="button">
+      <i class="bi bi-envelope-fill"></i>
+    </a>
+    &nbsp; &nbsp; &nbsp;
+    <!-- Facebook -->
+    <a class="btn btn-primary" style="background-color: #3b5998; border:none !important;" href="#!" role="button">
+      <i class="bi bi-facebook"></i>
+    </a>
+  </div>
 
 <!-- end social links -->
+
+<hr>
 
 <br><br>
     
