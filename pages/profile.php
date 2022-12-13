@@ -10,7 +10,45 @@ session_start();
 // }
 
 
+$msg = ""; 
 
+// check if the user has clicked the button "UPLOAD" 
+
+if (isset($_POST['submit'])) {
+
+    $filename = $_FILES["choosefile"]["name"];
+
+    $tempname = $_FILES["choosefile"]["tmp_name"];  
+
+        $folder = "upload/".$filename;   
+
+    // connect with the database
+
+    $db = mysqli_connect("localhost", "garrett", "BIGmorgan1999!", "cacheup"); 
+
+        // query to insert the submitted data
+
+        $sql = "UPDATE users SET filename = '$filename'";
+
+        // function to execute above query
+
+        mysqli_query($db, $sql);       
+
+        // Add the image to the "image" folder"
+
+        if (move_uploaded_file($tempname, $folder)) {
+
+            $msg = "Image uploaded successfully";
+
+        }else{
+
+            $msg = "Failed to upload image";
+
+    }
+
+}
+
+$result = mysqli_query($db, "SELECT * FROM users");
 
 
 ?>
@@ -71,7 +109,7 @@ session_start();
 
     <br><br><br><br><br><br>
 
-    <form action="upload.php" method="post">
+    <form action="" method="post">
   Select image to upload:
   <input type="file" name="fileToUpload" id="fileToUpload">
   <input type="submit" value="Upload Image" name="submit">
