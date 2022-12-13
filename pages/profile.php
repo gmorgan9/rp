@@ -151,6 +151,8 @@ if (mysqli_num_rows($result) > 0) {
                 <option value="female">Female</option>
             </select>
         </div>
+        <div class="pt-3"></div>
+        
         <textarea name="profile_picture" id="content" style="width: 99%;"><?php echo $row['profile_picture']; ?></textarea>
         <br>
         <input type="submit" name="update" value="Update" class="btn btn-light btn-block"> &nbsp;
