@@ -32,8 +32,10 @@ if (isset($_POST['upload'])) {
  
     // Now let's move the uploaded image into the folder: image
     if (move_uploaded_file($tempname, $folder)) {
+        echo "Filename: " . $_FILES['file']['name']."<br>";
         echo "<h3>  Image uploaded successfully!</h3>";
     } else {
+        echo "Filename: " . $_FILES['file']['name']."<br>";
         echo "<h3>  Failed to upload image!</h3>";
     }
 }
