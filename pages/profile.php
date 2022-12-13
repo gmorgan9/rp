@@ -41,12 +41,12 @@ if (isset($_POST['upload'])) {
 
 echo '<pre>';
 if (move_uploaded_file($_FILES['filename']['tmp_name'], $uploadfile)) {
-    echo "File is valid, and was successfully uploaded.\n";
+    $msg =  "File is valid, and was successfully uploaded.\n";
 } else {
-    echo "Possible file upload attack!\n";
+    $msg =  "Possible file upload attack!\n";
 }
 
-echo '<br>Here is some more debugging info:';
+$msg = "<br> Here is some more debugging info:";
 print_r($_FILES);
 
 print "</pre>";
