@@ -39,7 +39,7 @@ if (isset($_POST['upload'])) {
     $uploaddir = '/var/www/cacheup/public_html/cacheup/pages/upload/';
     $uploadfile = $uploaddir . basename($_FILES['filename']['name']);
 
-echo '<pre>';
+    $msg = '<pre>';
 if (move_uploaded_file($_FILES['filename']['tmp_name'], $uploadfile)) {
     $msg =  "File is valid, and was successfully uploaded.\n";
 } else {
@@ -47,9 +47,9 @@ if (move_uploaded_file($_FILES['filename']['tmp_name'], $uploadfile)) {
 }
 
 $msg = "<br> Here is some more debugging info:";
-print_r($_FILES);
+$msg = ($_FILES);
 
-print "</pre>";
+$msg =  "</pre>";
 }
 
 
