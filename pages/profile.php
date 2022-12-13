@@ -46,7 +46,7 @@ if (move_uploaded_file($_FILES['filename']['tmp_name'], $uploadfile)) {
     echo "Possible file upload attack!\n";
 }
 
-echo 'Here is some more debugging info:';
+echo '<br>Here is some more debugging info:';
 print_r($_FILES);
 
 print "</pre>";
