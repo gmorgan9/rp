@@ -302,7 +302,7 @@ if (mysqli_num_rows($another) > 0) {
 <br><br>
 
 <!-- end blog posts -->
-<div class="ms-4 tags">
+<div class="ms-5 tags">
 <?php
 $id = $_GET['id'];
 $grab = "SELECT * FROM posts WHERE post_id = '$id' ";
