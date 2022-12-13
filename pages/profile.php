@@ -123,7 +123,7 @@ if (mysqli_num_rows($result) > 0) {
                       <p class="mb-0">Username</p>
                     </div>
                     <div class="col-sm-9">
-                      <p class="text-muted mb-0"><?php $username; ?></p>
+                      <p class="text-muted mb-0"><?php echo $username; ?></p>
                     </div>
                   </div>
                   <hr>
@@ -141,7 +141,7 @@ if (mysqli_num_rows($result) > 0) {
                       <p class="mb-0">About Me</p>
                     </div>
                     <div class="col-sm-9">
-                      <p class="text-muted mb-0"><?php $about_me; ?></p>
+                      <p class="text-muted mb-0"><?php echo $about_me; ?></p>
                     </div>
                   </div>
                 </div>
