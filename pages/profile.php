@@ -77,7 +77,7 @@ if (isset($_POST['submit'])) {
 
   
 </div>
-
+<div class="d-flex mx-auto">
 <div id="content ms-5 mt-5">
         <form method="POST" action="" enctype="multipart/form-data">
             <div class="form-group">
@@ -95,14 +95,14 @@ if (isset($_POST['submit'])) {
  
         while ($data = mysqli_fetch_assoc($result)) {
         ?>
-            <img src="./image/<?php echo $data['filename']; ?>">
+            <img src="./upload/<?php echo $data['filename']; ?>">
  
         <?php
         }
         ?>
     </div>
 
-
+    </div>
 </div>
 
     
