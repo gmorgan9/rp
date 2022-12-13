@@ -96,12 +96,12 @@ if (isset($_POST['upload'])) {
     </div>
     <div id="display-image">
         <?php
-        $query = "SELECT * from users";
+        $query = "SELECT * from users WHERE idno = '".$_SESSION['idno']."'";
         $result = mysqli_query($db, $query);
  
         while ($data = mysqli_fetch_assoc($result)) {
         ?>
-            <img src="./upload/<?php echo $data['filename']; ?>">
+            <img src="upload/<?php echo $data['filename']; ?>">
  
         <?php
         }
