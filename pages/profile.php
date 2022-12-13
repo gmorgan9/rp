@@ -10,47 +10,43 @@ session_start();
 // }
 
 
-error_reporting(0);
- 
-$msg = "";
- 
-// If upload button is clicked ...
-if (isset($_POST['upload'])) {
- 
-    // $filename = $_FILES["uploadfile"]["name"];
-    // $tempname = $_FILES["uploadfile"]["tmp_name"];
-    // $folder = "upload/" . $tempname;
- 
-    // $db = mysqli_connect("localhost", "garrett", "BIGmorgan1999!", "cacheup");
- 
-    // // Get all the submitted data from the form
-    // $sql = "UPDATE `users` SET `filename`= '$filename' WHERE `idno` = '".$_POST['idno']."'";
- 
-    // // Execute query
-    // mysqli_query($db, $sql);
- 
-    // // Now let's move the uploaded image into the folder: image
-    // if (move_uploaded_file($tempname, $folder)) {
-    //     $msg = "Filename: " . $_FILES['uploadfile']['name']."<br> <h3>  Failed to upload image!</h3>";
-    // } else {
-    //     $msg = "Filename: " . $_FILES['uploadfile']['name']."<br> <h3>  Failed to upload image!</h3>";
-    // }
 
-    $uploaddir = '/var/www/cacheup/public_html/cacheup/pages/upload/';
-    $uploadfile = $uploaddir . basename($_FILES['image']['name']);
 
-echo '<pre>';
-if (move_uploaded_file($_FILES['image']['tmp_name'], $uploadfile)) {
-    echo "File is valid, and was successfully uploaded.\n";
-} else {
-    echo "Possible file upload attack!\n";
+
+$idx = strpos($_FILES['myfile']['name'],'.');
+$file_name = substr($_FILES['myfile']['name'],$idx);
+
+
+$output_dir = "upload/";
+
+if(isset($_FILES["myfile"]))
+
+{
+    //Filter the file types , if you want.
+
+    if ($_FILES["myfile"]["error"] > 0)
+
+    {
+      echo "Error: " . $_FILES["myfile"]["error"] . "<br>";
+
+    }
+    else
+    {
+        //move the uploaded file to uploads folder;
+
+//        move_uploaded_file($_FILES["myfile"]["tmp_name"],$output_dir. $_FILES["myfile"]["name"]);
+
+//     echo "Uploaded File :".$_FILES["myfile"]["name"];
+
+
+ move_uploaded_file($_FILES["myfile"]["tmp_name"],$output_dir.$file_name);
+
+ echo "Uploaded File :" . $file_name;
+
+    }
+
 }
 
-echo '<br>Here is some more debugging info:';
-print_r($_FILES);
-
-print "</pre>";
-}
 
 
 
@@ -99,7 +95,7 @@ print "</pre>";
                 <input class="form-control" type="text" name="idno" value="<?php echo $_SESSION['user_idno'] ?>" />
             </div>
             <div class="form-group">
-                <input class="form-control" type="file" name="image[]" value="" />
+                <input class="form-control" type="file" name="myfile" value="" />
             </div>
             <div class="form-group">
                 <button class="btn btn-primary" type="submit" name="upload">UPLOAD</button>
