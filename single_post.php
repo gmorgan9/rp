@@ -304,9 +304,9 @@ if (mysqli_num_rows($another) > 0) {
 <!-- end blog posts -->
 
 <?php
-$result = mysql_query("SELECT * FROM posts", $conn);
+$results = mysql_query("SELECT * FROM posts", $conn);
 
-while($rows = mysql_fetch_array($result)) {
+while($rows = mysql_fetch_array($results)) {
    $mark=explode(',', $rows['tags']);//what will do here
    foreach($mark as $out) {
       echo $out;
