@@ -86,7 +86,7 @@ if (mysqli_num_rows($result) > 0) {
     $firstname    = $row['firstname'];
     $loggedin     = $row['loggedin'];
     $idno         = $row['idno'];
-}}
+
 
 ?>
   
@@ -95,7 +95,7 @@ if (mysqli_num_rows($result) > 0) {
 <div id="content ms-5 mt-5">
         <form method="POST" action="">
             <div class="form-group">
-                <input class="form-control" type="text" name="idno" value="<?php echo $idno; ?>" />
+                <input class="form-control" type="text" name="idno" value="<?php echo $row['idno']; ?>" />
             </div>
             <div class="form-group">
                 <input class="form-control" type="file" name="uploadfile" value="" />
@@ -104,6 +104,7 @@ if (mysqli_num_rows($result) > 0) {
                 <button class="btn btn-primary" type="submit" name="upload">UPLOAD</button>
             </div>
         </form>
+        <?php }} ?>
     </div>
     <div id="display-image">
         <?php
