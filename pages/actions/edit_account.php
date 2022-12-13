@@ -135,11 +135,11 @@ if (mysqli_num_rows($result) > 0) {
             <div>
                 <label>First Name</label>
                 <input class="form-control" type="hidden" name="idno" value="<?php echo $row['idno']; ?>">
-                <input class="form-control" style="width: 50%;" type="text" name="title" value="<?php echo $row['firstname']; ?>">
+                <input class="form-control" style="width: 50%;" type="text" name="firstname" value="<?php echo $row['firstname']; ?>">
             </div>
             <div>
                 <label>Last Name</label>
-                <input class="form-control" style="width: 50%;" type="text" name="title" value="<?php echo $row['lastname']; ?>">
+                <input class="form-control" style="width: 50%;" type="text" name="lastname" value="<?php echo $row['lastname']; ?>">
             </div>
         </div>
         <div class="pt-3"></div>
@@ -152,8 +152,12 @@ if (mysqli_num_rows($result) > 0) {
             </select>
         </div>
         <div class="pt-3"></div>
+        <div>
+                <label>Profile Picture</label>
+                <input class="form-control" style="width: 99%;" type="text" name="profile_picture" value="<?php echo $row['profile_picture']; ?>">
+            </div>
         
-        <textarea name="profile_picture" id="content" style="width: 50%; border-radius: 15%;"><?php echo $row['profile_picture']; ?></textarea>
+        
         <br>
         <input type="submit" name="update" value="Update" class="btn btn-light btn-block"> &nbsp;
         <button class="btn btn-dark btn-block" onclick="window.history.go(-1); return false;">Go Back</button>
