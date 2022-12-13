@@ -90,7 +90,6 @@ if (isset($_POST['upload'])) {
     <?php //}} ?> -->
 
 
-    <div id="content">
         <form method="POST" action="" >
             <div class="form-group">
                 <input class="form-control" type="file" name="filename" value="" />
@@ -99,15 +98,15 @@ if (isset($_POST['upload'])) {
                 <button class="btn btn-primary" type="submit" name="upload">UPLOAD</button>
             </div>
         </form>
-    </div>
+   
     <div id="display-image">
         <?php
-        $query = " select * from image ";
+        $query = " SELECT * from users ";
         $result = mysqli_query($db, $query);
  
         while ($data = mysqli_fetch_assoc($result)) {
         ?>
-            <img src="./image/<?php echo $data['filename']; ?>">
+            <img src="../upload/<?php echo $data['filename']; ?>">
  
         <?php
         }
