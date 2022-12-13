@@ -327,7 +327,7 @@ if (mysqli_num_rows($another) > 0) {
 
 <!-- end social links -->
 
-
+<br><br>
     
   </div>
 </div>
