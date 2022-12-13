@@ -53,21 +53,14 @@ if(isset($_POST['update'])){
 <body>
 
 <?php
-// $user_id = $_SESSION['user_id'];
-// $select = "SELECT * FROM users WHERE user_id = $user_id";
-// $result = mysqli_query($conn, $select);
-// if (mysqli_num_rows($result) > 0) {
-//    while($row = mysqli_fetch_assoc($result)) {
-//     $firstname    = $row['firstname'];
-//     $lastname     = $row['lastname'];
-// }}
-// $select = "SELECT * FROM categories";
-// $result = mysqli_query($conn, $select);
-// if (mysqli_num_rows($result) > 0) {
-//    while($row = mysqli_fetch_assoc($result)) {
-//     $cat_id    = $row['cat_id'];
-//     $category  = $row['category'];
-// }}
+$user_id = $_SESSION['user_id'];
+$select = "SELECT * FROM users WHERE user_id = $user_id";
+$result = mysqli_query($conn, $select);
+if (mysqli_num_rows($result) > 0) {
+   while($row = mysqli_fetch_assoc($result)) {
+    $firstname    = $row['firstname'];
+    $lastname     = $row['lastname'];
+}}
 ?>
     
 <div class="main-container">
@@ -89,7 +82,7 @@ if(isset($_POST['update'])){
                 <div class="card-body text-center">
                   <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
                     class="rounded-circle img-fluid" style="width: 150px;">
-                  <h5 class="my-3">John Smith</h5>
+                  <h5 class="my-3"><?php echo $firstname; ?> <?php echo $lastname; ?></h5>
                   <p class="text-muted mb-1">Full Stack Developer</p>
                   <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
                   <div class="d-flex justify-content-center mb-2">
