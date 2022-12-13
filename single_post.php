@@ -264,7 +264,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
     <?php
-$idno = $$row['author_idno'];
+$idno = $row['author_idno'];
 $select = "SELECT * FROM users WHERE idno = '$idno'";
 $result = mysqli_query($conn, $select);
 if (mysqli_num_rows($result) > 0) {
