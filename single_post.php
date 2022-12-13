@@ -304,15 +304,14 @@ if (mysqli_num_rows($another) > 0) {
 <!-- end blog posts -->
 
 <?php
-$result = mysql_query("SELECT tags FROM posts", $conn);
+$result = mysql_query("SELECT * FROM posts", $conn);
 
 while($rows = mysql_fetch_array($result)) {
-  $marks = $row['marks']; //get value of marks from the database
-  $exp = explode("," , $marks); //explode marks data
-
-  foreach($exp as $mark) {
-    echo $mark;
-  }
+   $mark=explode(',', $rows['tags']);//what will do here
+   foreach($mark as $out) {
+      echo $out;
+   }
+}
 
 ?>
 
