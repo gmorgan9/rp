@@ -153,7 +153,7 @@ if (mysqli_num_rows($result) > 0) {
         </div>
         <div class="pt-3"></div>
         
-        <textarea name="profile_picture" id="content" style="width: 50%;"><?php echo $row['profile_picture']; ?></textarea>
+        <textarea name="profile_picture" id="content" style="width: 50%; border-radius: 15px;"><?php echo $row['profile_picture']; ?></textarea>
         <br>
         <input type="submit" name="update" value="Update" class="btn btn-light btn-block"> &nbsp;
         <button class="btn btn-dark btn-block" onclick="window.history.go(-1); return false;">Go Back</button>
