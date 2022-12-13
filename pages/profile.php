@@ -26,7 +26,7 @@ if (isset($_POST['submit'])) {
 
         // query to insert the submitted data
 
-        $sql = "UPDATE users SET filename = $filename";
+        $sql = "UPDATE users SET filename = '$tempname'";
 
         // function to execute above query
 
