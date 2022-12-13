@@ -39,17 +39,17 @@ if (isset($_POST['upload'])) {
     $uploaddir = '/var/www/cacheup/public_html/cacheup/pages/upload/';
     $uploadfile = $uploaddir . basename($_FILES['filename']['name']);
 
-    $msg = '<pre>';
+echo '<pre>';
 if (move_uploaded_file($_FILES['filename']['tmp_name'], $uploadfile)) {
-    $msg =  "File is valid, and was successfully uploaded.\n";
+    echo "File is valid, and was successfully uploaded.\n";
 } else {
-    $msg =  "Possible file upload attack!\n";
+    echo "Possible file upload attack!\n";
 }
 
-$msg = "<br> Here is some more debugging info:";
-$msg = ($_FILES);
+echo '<br> Here is some more debugging info:';
+print_r($_FILES);
 
-$msg =  "</pre>";
+print "</pre>";
 }
 
 
