@@ -52,7 +52,7 @@ session_start();
 </div>
 <div class="mt-5 d-flex justify-content-center">
 <div id="content ms-5 mt-5">
-    <form action="file.php" method="post" enctype="multipart/form-data" asp-action="Index">
+    <form action="file.php" method="post">
         Select file to upload:
         <input type="file" name="file"><br>
         <input type="submit" value="Upload file" name="submit">
