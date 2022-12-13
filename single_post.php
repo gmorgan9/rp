@@ -344,18 +344,9 @@ if (mysqli_num_rows($another) > 0) {
   </div>
 
 <!-- end social links -->
-<?php
-$idno = $row['author_idno'];
-$profile = "SELECT * FROM users WHERE idno = '$idno'";
-$another = mysqli_query($conn, $profile);
-if (mysqli_num_rows($another) > 0) {
-   while($col = mysqli_fetch_assoc($another)) {
-    $profile_picture  = $new['profile_picture'];
-}}
-?>
 
 <div class="top-hr d-flex">
-  <hr style="width:50px;"> &nbsp; <img src="<?php echo $profile_picture; ?>" alt=""> <hr style="width:50px;">
+  <hr style="width:50px;"> &nbsp; <img src="<?php echo $profile_picture; ?>" width="50px" alt=""> <hr style="width:50px;">
 </div>
 
 <br><br>
