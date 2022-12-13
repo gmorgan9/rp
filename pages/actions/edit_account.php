@@ -149,12 +149,12 @@ if (mysqli_num_rows($result) > 0) {
         <div class="d-flex">
           <div>
             <label>Username</label>
-            <input class="form-control" style="width: 65%;" type="text" name="username" value="<?php echo $row['username']; ?>">
+            <input class="form-control" style="width: 99%;" type="text" name="username" value="<?php echo $row['username']; ?>">
           </div>
           <div class="pt-3"></div>
           <div>
               <label>Gender</label>
-              <select style="width: 65%;" name="gender" class="form-control">
+              <select style="width: 99%;" name="gender" class="form-control">
                   <option value="<?php echo $row['gender']; ?>"><?php echo $row['gender']; ?></option>
                   <option value="Male">Male</option>
                   <option value="Female">Female</option>
