@@ -13,44 +13,6 @@ session_start();
 
 
 
-$idx = strpos($_FILES['myfile']['name'],'.');
-$file_name = substr($_FILES['myfile']['name'],$idx);
-
-
-$output_dir = "upload/";
-
-if(isset($_FILES["myfile"]))
-
-{
-    //Filter the file types , if you want.
-
-    if ($_FILES["myfile"]["error"] > 0)
-
-    {
-      echo "Error: " . $_FILES["myfile"]["error"] . "<br>";
-
-    }
-    else
-    {
-        //move the uploaded file to uploads folder;
-
-//        move_uploaded_file($_FILES["myfile"]["tmp_name"],$output_dir. $_FILES["myfile"]["name"]);
-
-//     echo "Uploaded File :".$_FILES["myfile"]["name"];
-
-
- move_uploaded_file($_FILES["myfile"]["tmp_name"],$output_dir.$file_name);
-
- echo "Uploaded File :" . $file_name;
-
-    }
-
-}
-
-
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -90,33 +52,20 @@ if(isset($_FILES["myfile"]))
 </div>
 <div class="mt-5 d-flex justify-content-center">
 <div id="content ms-5 mt-5">
-        <form method="POST" action="">
-            <div class="form-group">
-                <input class="form-control" type="text" name="idno" value="<?php echo $_SESSION['user_idno'] ?>" />
-            </div>
-            <div class="form-group">
-                <input class="form-control" type="file" name="myfile" value="" />
-            </div>
-            <div class="form-group">
-                <button class="btn btn-primary" type="submit" name="upload">UPLOAD</button>
-            </div>
-        </form>
-    </div>
-    <div class="mt-5 d-flex justify-content-center" id="display-image">
-        <?php
-        $query = "SELECT * from users WHERE idno = '".$_SESSION['idno']."'";
-        $result = mysqli_query($db, $query);
- 
-        while ($data = mysqli_fetch_assoc($result)) {
-        ?>
-            <img src="upload/<?php echo $data['filename']; ?>">
- 
-        <?php
-        }
-        ?>
-    </div>
+    <form action="file.php" method="post" enctype="multipart/form-data">
+        Select file to upload:
+        <input type="file" name="file"><br>
+        <input type="submit" value="Upload file" name="submit">
+    </form>
+</div>
 
-    </div>
+
+
+
+
+
+
+
 </div>
 
     
