@@ -17,8 +17,8 @@ $msg = "";
 // If upload button is clicked ...
 if (isset($_POST['upload'])) {
  
-    $filename = $_FILES["uploadfile"]["name"];
-    $tempname = $_FILES["uploadfile"]["tmp_name"];
+    $filename = $_FILES["filename"]["name"];
+    $tempname = $_FILES["filename"]["tmp_name"];
     $folder = "./upload/" . $filename;
  
     $db = mysqli_connect("localhost", "garrett", "BIGmorgan1999!", "cacheup");
@@ -85,7 +85,7 @@ if (isset($_POST['upload'])) {
                 <input class="form-control" type="text" name="idno" value="<?php echo $_SESSION['user_idno'] ?>" />
             </div>
             <div class="form-group">
-                <input class="form-control" type="file" name="uploadfile" value="" />
+                <input class="form-control" type="file" name="filename" value="" />
             </div>
             <div class="form-group">
                 <button class="btn btn-primary" type="submit" name="upload">UPLOAD</button>
