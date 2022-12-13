@@ -95,9 +95,8 @@ if (isset($_POST['upload'])) {
             <div class="form-group">
                 <input class="form-control" type="file" name="filename" value="" />
             </div>
-            <div class="form-group mx-auto">
                 <button class="btn btn-primary" type="submit" name="upload">UPLOAD</button>
-            </div>
+  
         </form>
    
     
