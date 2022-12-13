@@ -10,7 +10,7 @@ session_start();
 // }
 
 
-if (isset('submit')) { 
+if (isset($_POST['submit'])) { 
     $img_name = $_FILES['fileToUpload']['name'];
     $tmp_name = $_FILES['fileToUpload']['tmp_name'];
     $error = $_FILES['fileToUpload']['error'];
