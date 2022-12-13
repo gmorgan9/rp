@@ -86,8 +86,10 @@ if (mysqli_num_rows($result) > 0) {
             <div class="col-lg-4">
               <div class="card mb-4" style="background-color: #1f1f1f;">
                 <div class="card-body text-center">
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
-                    class="rounded-circle img-fluid" style="width: 150px;">
+                    <p class="rounded-circle img-fluid" style="width: 150px;">
+                        <?php echo html_entity_decode($row['content']); ?>
+                    </p>
+                  
                   <h5 class="my-3"><?php echo $firstname; ?> <?php echo $lastname; ?></h5>
                   <p class="text-muted mb-1"><?php echo $idno; ?></p>
                   <!-- <p class="text-muted mb-4">Bay Area, San Francisco, CA</p> -->
