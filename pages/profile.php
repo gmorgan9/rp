@@ -82,7 +82,7 @@ if(isset($_POST['update'])){
 
     <div class="main-content">
 
-    <section style="background-color: #eee;">
+    <section>
         <div class="container py-5">
           <div class="row">
             <div class="col">
