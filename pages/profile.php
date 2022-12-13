@@ -15,13 +15,13 @@ if (isset($_POST['submit'])) {
     $tempname = $_FILES["filename"]["tmp_name"];
     $folder = "upload/" . $filename;
  
-    $db = mysqli_connect("localhost", "garrett", "BIGmorgan1999!", "cacheup");
+    // $db = mysqli_connect("localhost", "garrett", "BIGmorgan1999!", "cacheup");
  
-    // Get all the submitted data from the form
-    $sql = "UPDATE users SET filename = '$filename' WHERE idno = '".$_SESSION['user_idno']."'";
+    // // Get all the submitted data from the form
+    // $sql = "UPDATE users SET filename = '$filename' WHERE idno = '".$_SESSION['user_idno']."'";
  
-    // Execute query
-    mysqli_query($db, $sql);
+    // // Execute query
+    // mysqli_query($db, $sql);
  
     // Now let's move the uploaded image into the folder: image
     if (move_uploaded_file($filename, $folder)) {
