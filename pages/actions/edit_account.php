@@ -133,23 +133,23 @@ if (mysqli_num_rows($result) > 0) {
             <div>
                 <label>First Name</label>
                 <input class="form-control" type="hidden" name="idno" value="<?php echo $row['idno']; ?>">
-                <input class="form-control" style="width: 50%;" type="text" name="firstname" value="<?php echo $row['firstname']; ?>">
+                <input class="form-control" style="width: 95%;" type="text" name="firstname" value="<?php echo $row['firstname']; ?>">
             </div>
             <div>
                 <label>Last Name</label>
-                <input class="form-control" style="width: 50%;" type="text" name="lastname" value="<?php echo $row['lastname']; ?>">
+                <input class="form-control" style="width: 95%;" type="text" name="lastname" value="<?php echo $row['lastname']; ?>">
             </div>
         </div>
         <div class="pt-3"></div>
         <div>
           <label>Email</label>
-          <input class="form-control" style="width: 50%;" type="text" name="email" value="<?php echo $row['email']; ?>">
+          <input class="form-control" style="width: 99%;" type="text" name="email" value="<?php echo $row['email']; ?>">
         </div>
         <div class="pt-3"></div>
         <div class="d-flex">
           <div>
             <label>Username</label>
-            <input class="form-control" style="width: 98%;" type="text" name="username" value="<?php echo $row['username']; ?>">
+            <input class="form-control" style="width: 95%;" type="text" name="username" value="<?php echo $row['username']; ?>">
           </div>
           <div class="pt-3"></div>
           <div>
