@@ -87,7 +87,7 @@ if (mysqli_num_rows($result) > 0) {
     $loggedin     = $row['loggedin'];
     $idno         = $row['idno'];
 
-
+   }
 ?>
   
 </div>
@@ -104,7 +104,7 @@ if (mysqli_num_rows($result) > 0) {
                 <button class="btn btn-primary" type="submit" name="upload">UPLOAD</button>
             </div>
         </form>
-        <?php }} ?>
+        <?php } ?>
     </div>
     <div id="display-image">
         <?php
