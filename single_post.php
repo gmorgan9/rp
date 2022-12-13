@@ -307,11 +307,12 @@ if (mysqli_num_rows($another) > 0) {
 $result = mysql_query("SELECT tags FROM posts", $conn);
 
 while($rows = mysql_fetch_array($result)) {
-   $mark=explode(',', $rows['marks']);//what will do here
-   foreach($mark as $out) {
-      echo $out;
-   }
-}
+  $marks = $row['marks']; //get value of marks from the database
+  $exp = explode("," , $marks); //explode marks data
+
+  foreach($exp as $mark) {
+    echo $mark;
+  }
 
 ?>
 
