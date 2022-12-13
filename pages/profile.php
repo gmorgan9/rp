@@ -103,7 +103,7 @@ if (mysqli_num_rows($result) > 0) {
                         echo "$rowtotal[0] Published";
                         ?>
                         </div>
-                        &nbsp;&nbsp;
+                        &nbsp;
                         <div class="badge text-bg-primary">
                         <?php
                         $sql="SELECT count('1') FROM posts WHERE author_idno = '".$_SESSION['user_idno']."' AND status = 'draft'";
