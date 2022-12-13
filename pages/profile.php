@@ -11,9 +11,9 @@ session_start();
 
 
 if (isset($_POST['submit'])) { 
-    $img_name = $_FILES['fileToUpload']['name'];
-    $tmp_name = $_FILES['fileToUpload']['tmp_name'];
-    $error = $_FILES['fileToUpload']['error'];
+    $img_name = $_FILES['filename']['name'];
+    $tmp_name = $_FILES['filename']['tmp_name'];
+    $error = $_FILES['filename']['error'];
     
     if($error === 0){
        $img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
@@ -22,9 +22,9 @@ if (isset($_POST['submit'])) {
        $allowed_exs = array('jpg', 'jpeg', 'png');
        if(in_array($img_ex_to_lc, $allowed_exs)){
           $new_img_name = uniqid($uname, true).'.'.$img_ex_to_lc;
-          $img_upload_path = 'upload/'.$new_img_name;
+          $img_upload_path = '/upload/'.$new_img_name;
           // Delete old profile pic
-          $old_pp_des = "upload/$old_pp";
+          $old_pp_des = "/upload/$old_pp";
           if(unlink($old_pp_des)){
                 // just deleted
                 move_uploaded_file($tmp_name, $img_upload_path);
