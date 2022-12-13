@@ -143,7 +143,7 @@ if (mysqli_num_rows($result) > 0) {
         <div class="pt-3"></div>
         <div>
           <label>Email</label>
-          <input class="form-control" style="width: 99%;" type="text" name="email" value="<?php echo $row['email']; ?>">
+          <input class="form-control" style="width: 75%;" type="text" name="email" value="<?php echo $row['email']; ?>">
         </div>
         <div class="pt-3"></div>
         <div class="d-flex">
@@ -164,7 +164,7 @@ if (mysqli_num_rows($result) > 0) {
         <div class="pt-3"></div>
         <div>
           <label>Profile Picture</label>
-          <input class="form-control" style="width: 99%;" type="text" name="profile_picture" value="<?php echo $row['profile_picture']; ?>">
+          <input class="form-control" style="width: 75%;" type="text" name="profile_picture" value="<?php echo $row['profile_picture']; ?>">
         </div>
         
         
