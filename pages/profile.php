@@ -89,13 +89,11 @@ if(isset($_POST["submit"])) {
 
     <br><br><br><br><br><br>
 
-        <form method="POST" action="" >
-            <div class="form-group">
-                <input class="form-control" type="file" name="fileToUpload" value="" />
-            </div>
-                <button class="form-control" type="submit" name="submit">UPLOAD</button>
-  
-        </form>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+  Select image to upload:
+  <input type="file" name="fileToUpload" id="fileToUpload">
+  <input type="submit" value="Upload Image" name="submit">
+</form>
    
     
         <!-- <?php
