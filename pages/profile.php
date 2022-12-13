@@ -9,27 +9,44 @@ session_start();
 //   header('location: '. BASE_URL . '/pages/dashboard.php');
 // }
 
-if (isset($_POST['upload'])) {
+// if (isset($_POST['upload'])) {
  
-    $filename = $_FILES["filename"]["name"];
-    $tempname = $_FILES["filename"]["tmp_name"];
-    $folder = "../upload/" . $filename;
+//     $filename = $_FILES["filename"]["name"];
+//     $tempname = $_FILES["filename"]["tmp_name"];
+//     $folder = "../upload/" . $filename;
  
-    $db = mysqli_connect("localhost", "garrett", "BIGmorgan1999!", "cacheup");
+//     $db = mysqli_connect("localhost", "garrett", "BIGmorgan1999!", "cacheup");
  
-    // Get all the submitted data from the form
-    $sql = "UPDATE users SET filename = '$filename' WHERE idno = '".$_SESSION['user_idno']."'";
+//     // Get all the submitted data from the form
+//     $sql = "UPDATE users SET filename = '$filename' WHERE idno = '".$_SESSION['user_idno']."'";
  
-    // Execute query
-    mysqli_query($db, $sql);
+//     // Execute query
+//     mysqli_query($db, $sql);
  
-    // Now let's move the uploaded image into the folder: image
-    if (move_uploaded_file($filename, $folder)) {
-        echo "<h3>  Image uploaded successfully!</h3>";
-    } else {
-        echo "<h3>  Failed to upload image!</h3>";
-    }
+//     // Now let's move the uploaded image into the folder: image
+//     if (move_uploaded_file($filename, $folder)) {
+//         echo "<h3>  Image uploaded successfully!</h3>";
+//     } else {
+//         echo "<h3>  Failed to upload image!</h3>";
+//     }
+// }
+
+$target_dir = "uploads/";
+$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$uploadOk = 1;
+$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+// Check if image file is a actual image or fake image
+if(isset($_POST["submit"])) {
+  $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+  if($check !== false) {
+    echo "File is an image - " . $check["mime"] . ".";
+    $uploadOk = 1;
+  } else {
+    echo "File is not an image.";
+    $uploadOk = 0;
+  }
 }
+
 
 
 
@@ -93,7 +110,7 @@ if (isset($_POST['upload'])) {
 
         <form method="POST" action="" >
             <div class="form-group">
-                <input class="form-control" type="file" name="filename" value="" />
+                <input class="form-control" type="file" name="fileToUpload" value="" />
             </div>
                 <button class="form-control" type="submit" name="upload">UPLOAD</button>
   
