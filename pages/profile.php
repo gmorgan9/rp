@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
     $tempname = $_FILES["uploadfile"]["tmp_name"];
     $folder = "./upload/" . $filename;
  
-    $db = mysqli_connect("localhost", "root", "", "geeksforgeeks");
+    $db = mysqli_connect("localhost", "garrett", "BIGmorgan1999!", "cacheup");
  
     // Get all the submitted data from the form
     $sql = "UPDATE users SET filename ='$filename'";
