@@ -12,19 +12,19 @@ session_start();
 ?>
 
 <?php
-if(isset($_POST['update'])){
-  //$idno  = rand(10000, 99999);
-  $profile_picture = mysqli_real_escape_string($conn, $_POST['profile_picture']);
+// if(isset($_POST['update'])){
+//   //$idno  = rand(10000, 99999);
+//   $profile_picture = mysqli_real_escape_string($conn, $_POST['profile_picture']);
 
 
-  date_default_timezone_set('America/Denver');
-  $date = date('F d, Y, g:i a', time());
+//   date_default_timezone_set('America/Denver');
+//   $date = date('F d, Y, g:i a', time());
 
-  $insert = "UPDATE users SET profile_picture = '$profile_picture' WHERE idno = '".$_POST['idno']."'";
-  mysqli_query($conn, $insert);
-  header("location: profile.php");
+//   $insert = "UPDATE users SET profile_picture = '$profile_picture' WHERE idno = '".$_POST['idno']."'";
+//   mysqli_query($conn, $insert);
+//   header("location: profile.php");
 
-};
+// };
 
 ?>
 
@@ -53,8 +53,8 @@ if(isset($_POST['update'])){
 <body>
 
 <?php
-$user_id = $_SESSION['user_id'];
-$select = "SELECT * FROM users WHERE user_id = $user_id";
+$idno = $_SESSION['user_idno'];
+$select = "SELECT * FROM users WHERE idno = '$idno'";
 $result = mysqli_query($conn, $select);
 if (mysqli_num_rows($result) > 0) {
    while($row = mysqli_fetch_assoc($result)) {
