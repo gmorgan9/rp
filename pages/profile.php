@@ -94,7 +94,7 @@ if (isset($_POST['upload'])) {
             </div>
         </form>
     </div>
-    <div id="display-image">
+    <div class="mt-5 d-flex justify-content-center" id="display-image">
         <?php
         $query = "SELECT * from users WHERE idno = '".$_SESSION['idno']."'";
         $result = mysqli_query($db, $query);
