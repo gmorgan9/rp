@@ -49,26 +49,53 @@ if(isset($_POST['update'])){
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+    <style>
+        .profile-pic {
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+}
+
+.file-upload {
+    display: none;
+}
+.circle {
+    border-radius: 1000px !important;
+    overflow: hidden;
+    width: 128px;
+    height: 128px;
+    border: 8px solid rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 72px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.p-image {
+  position: absolute;
+  top: 167px;
+  right: 30px;
+  color: #666666;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.p-image:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.upload-button {
+  font-size: 1.2em;
+}
+
+.upload-button:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  color: #999;
+}
+    </style>
 </head>
 <body>
 
-<?php
-// $user_id = $_SESSION['user_id'];
-// $select = "SELECT * FROM users WHERE user_id = $user_id";
-// $result = mysqli_query($conn, $select);
-// if (mysqli_num_rows($result) > 0) {
-//    while($row = mysqli_fetch_assoc($result)) {
-//     $firstname    = $row['firstname'];
-//     $lastname     = $row['lastname'];
-// }}
-// $select = "SELECT * FROM categories";
-// $result = mysqli_query($conn, $select);
-// if (mysqli_num_rows($result) > 0) {
-//    while($row = mysqli_fetch_assoc($result)) {
-//     $cat_id    = $row['cat_id'];
-//     $category  = $row['category'];
-// }}
-?>
+
     
 <div class="main-container">
 <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
@@ -82,87 +109,21 @@ if(isset($_POST['update'])){
 
     <div class="main-content">
     
-    <?php
-$id = $_SESSION['user_idno'];
-$select = "SELECT * FROM users WHERE idno = '$id' ";
-$result = mysqli_query($conn, $select);
+    <div class="row">
+   <div class="small-12 medium-2 large-2 columns">
+     <div class="circle">
+       <!-- User Profile Image -->
+       <img class="profile-pic" src="http://cdn.cutestpaw.com/wp-content/uploads/2012/07/l-Wittle-puppy-yawning.jpg">
 
-if (mysqli_num_rows($result) > 0) {
-   while($row = mysqli_fetch_assoc($result)) {
-
-?>
-
-
-    <form action="" method="POST">
-        <h3>
-            New Post
-        </h3>
-        <div class="modal_help float-end" style="margin-right: 25px; margin-top: -55px !important;">
-
-          <!-- Button trigger modal -->
-            <button type="button" style="background: none; color: inherit; border: none; cursor: pointer; outline: inherit;" class="badge text-bg-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Instructions
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Instructions</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body text-black">
-                    Things you will want to pay attention to while creating a new post for our blog. If you have any questions, please reach out via email, I will try and get back to you all as soon as possible.
-                    <ul>
-                      <li>For all images wanting to be insertted, please have a link for your image ready. a useful site to help you get a link for images would be: <a href="https://postimages.org" target="_blank">https://postimages.org</a>.</li>
-                        <li>The width for all images need to be <strong>835</strong>.</li>
-                    </ul>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
-                    <!-- <button type="button" class="btn btn-primary text-black">Save changes</button> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-
-        </div>
-        <div class="d-flex">
-            <div>
-                <label>First Name</label>
-                <input class="form-control" type="hidden" name="idno" value="<?php echo $row['idno']; ?>">
-                <input class="form-control" style="width: 50%;" type="text" name="title" value="<?php echo $row['firstname']; ?>">
-            </div>
-            <div>
-                <label>Last Name</label>
-                <input class="form-control" style="width: 50%;" type="text" name="title" value="<?php echo $row['lastname']; ?>">
-            </div>
-        </div>
-        <div class="pt-3"></div>
-        <div>
-            <label>Gender</label>
-            <select style="width: 99%;" name="gender" class="form-control">
-                <option value="<?php echo $row['gender']; ?>"><?php echo $row['gender']; ?></option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-            </select>
-        </div>
-        <div class="pt-3"></div>
-        
-        <textarea name="profile_picture" id="content" style="width: 99%;"><?php echo $row['profile_picture']; ?></textarea>
-        <br>
-        <input type="submit" name="update" value="Update" class="btn btn-light btn-block"> &nbsp;
-        <button class="btn btn-dark btn-block" onclick="window.history.go(-1); return false;">Go Back</button>
-    </form>
-   
-    </div>
-
-
-    <?php }} ?>
+       <!-- Default Image -->
+       <!-- <i class="fa fa-user fa-5x"></i> -->
+     </div>
+     <div class="p-image">
+       <i class="fa fa-camera upload-button"></i>
+        <input class="file-upload" type="file" accept="image/*"/>
+     </div>
+  </div>
+</div>
 
 
 
@@ -201,5 +162,32 @@ if (mysqli_num_rows($result) > 0) {
 </script>
     <script src="../assets/js/dropdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+
+    
+var readURL = function(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('.profile-pic').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+
+$(".file-upload").on('change', function(){
+    readURL(this);
+});
+
+$(".upload-button").on('click', function() {
+   $(".file-upload").click();
+});
+});
+    </script>
 </body>
 </html>
