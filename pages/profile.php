@@ -58,6 +58,7 @@ $select = "SELECT * FROM users WHERE user_id = '$user_id'";
 $result = mysqli_query($conn, $select);
 if (mysqli_num_rows($result) > 0) {
    while($row = mysqli_fetch_assoc($result)) {
+    $user_id          = $row['user_id'];
     $firstname        = $row['firstname'];
     $lastname         = $row['lastname'];
     $email            = $row['email'];
@@ -157,7 +158,7 @@ if (mysqli_num_rows($result) > 0) {
                 </div>
                 
               </div>
-              <a href="" class="btn btn-outline-success">
+              <a href="actions/edit_account.php?id=<?php echo $user_id; ?>" class="btn btn-outline-success">
                 Edit Account
               </a>
               <a href="" class="btn btn-outline-secondary">

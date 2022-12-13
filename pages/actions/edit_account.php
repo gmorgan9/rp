@@ -83,8 +83,8 @@ if(isset($_POST['update'])){
     <div class="main-content">
     
     <?php
-$id = $_SESSION['user_idno'];
-$select = "SELECT * FROM users WHERE idno = '$id' ";
+$id = $_GET['id'];
+$select = "SELECT * FROM users WHERE user_id = '$id' ";
 $result = mysqli_query($conn, $select);
 
 if (mysqli_num_rows($result) > 0) {
