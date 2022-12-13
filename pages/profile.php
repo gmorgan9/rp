@@ -135,11 +135,11 @@ if (mysqli_num_rows($result) > 0) {
             <div>
                 <label>First Name</label>
                 <input class="form-control" type="hidden" name="idno" value="<?php echo $row['idno']; ?>">
-                <input class="form-control" style="width: 45%;" type="text" name="title" value="<?php echo $row['firstname']; ?>">
+                <input class="form-control" style="width: 50%;" type="text" name="title" value="<?php echo $row['firstname']; ?>">
             </div>
             <div>
                 <label>Last Name</label>
-                <input class="form-control" style="width: 45%;" type="text" name="title" value="<?php echo $row['lastname']; ?>">
+                <input class="form-control" style="width: 50%;" type="text" name="title" value="<?php echo $row['lastname']; ?>">
             </div>
         </div>
         <div class="pt-3"></div>
