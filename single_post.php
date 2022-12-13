@@ -275,7 +275,7 @@ if (mysqli_num_rows($result) > 0) {
 
     <nav class="mt-4" aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <img src="<?php echo $row['profile_picture']; ?>" width="150px" height="150px" alt="">&nbsp;&nbsp;
+        <li class="breadcrumb-item" style="font-size: 12px;"><img src="<?php echo $profile_picture; ?>" width="150px" height="150px" alt=""></li>&nbsp;&nbsp;
         <?php }} ?>
         <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase text-white"><?php echo $row['author']; ?></a></li>
         <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase text-white"><?php echo $row['published_at']; ?></a></li>
