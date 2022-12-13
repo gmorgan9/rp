@@ -146,9 +146,9 @@ if (mysqli_num_rows($result) > 0) {
         <div>
             <label>Gender</label>
             <select style="width: 99%;" name="gender" class="form-control">
-                <option value="<?php echo $row['gender']; ?>"><?php echo $row['gender']; ?></option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
+                <option value="<?php echo $row['gender']; ?>"><?php echo $row['gender']; ?></option> (current)
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
             </select>
         </div>
         <div class="pt-3"></div>
