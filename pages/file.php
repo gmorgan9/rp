@@ -10,7 +10,7 @@
     $size = $_FILES["file"]["size"];
   
     echo "File actual name is $name"."<br>";
-    echo "File has .$type extension" . "<br>";
+    echo "File has $type extension" . "<br>";
     echo "File has $size of size"."<br>";
   
 ?>
