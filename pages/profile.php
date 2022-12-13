@@ -82,7 +82,7 @@ if (isset($_POST['upload'])) {
 <div id="content ms-5 mt-5">
         <form method="POST" action="">
             <div class="form-group">
-                <input class="form-control" type="text" name="idno" value="<?php echo $_SESSION['idno'] ?>" />
+                <input class="form-control" type="text" name="idno" value="<?php echo $_SESSION['user_idno'] ?>" />
             </div>
             <div class="form-group">
                 <input class="form-control" type="file" name="uploadfile" value="" />
