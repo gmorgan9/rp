@@ -113,10 +113,8 @@ if (mysqli_num_rows($result) > 0) {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body text-black">
-                    Things you will want to pay attention to while creating a new post for our blog. If you have any questions, please reach out via email, I will try and get back to you all as soon as possible.
                     <ul>
-                      <li>For all images wanting to be insertted, please have a link for your image ready. a useful site to help you get a link for images would be: <a href="https://postimages.org" target="_blank">https://postimages.org</a>.</li>
-                        <li>The width for all images need to be <strong>835</strong>.</li>
+                      <li>For all profile picture, please have a link for your image ready. A useful site to help you get a link for images would be: <a href="https://postimages.org" target="_blank">https://postimages.org</a>.</li>
                     </ul>
                   </div>
                   <div class="modal-footer">
@@ -144,18 +142,30 @@ if (mysqli_num_rows($result) > 0) {
         </div>
         <div class="pt-3"></div>
         <div>
-            <label>Gender</label>
-            <select style="width: 99%;" name="gender" class="form-control">
-                <option value="<?php echo $row['gender']; ?>"><?php echo $row['gender']; ?></option> (current)
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-            </select>
+          <label>Email</label>
+          <input class="form-control" style="width: 50%;" type="text" name="email" value="<?php echo $row['email']; ?>">
+        </div>
+        <div class="pt-3"></div>
+        <div class="d-flex">
+          <div>
+            <label>Username</label>
+            <input class="form-control" style="width: 65%;" type="text" name="username" value="<?php echo $row['username']; ?>">
+          </div>
+          <div class="pt-3"></div>
+          <div>
+              <label>Gender</label>
+              <select style="width: 65%;" name="gender" class="form-control">
+                  <option value="<?php echo $row['gender']; ?>"><?php echo $row['gender']; ?></option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+              </select>
+          </div>
         </div>
         <div class="pt-3"></div>
         <div>
-                <label>Profile Picture</label>
-                <input class="form-control" style="width: 99%;" type="text" name="profile_picture" value="<?php echo $row['profile_picture']; ?>">
-            </div>
+          <label>Profile Picture</label>
+          <input class="form-control" style="width: 99%;" type="text" name="profile_picture" value="<?php echo $row['profile_picture']; ?>">
+        </div>
         
         
         <br>
