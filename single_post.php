@@ -344,8 +344,9 @@ if (mysqli_num_rows($another) > 0) {
   </div>
 
 <!-- end social links -->
-
-<hr>
+<div class="top-hr d-flex">
+  <hr style="width:50px;"> <hr style="width:50px;">
+</div>
 
 <br><br>
     
