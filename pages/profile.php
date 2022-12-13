@@ -77,7 +77,7 @@ if (isset($_POST['submit'])) {
 
   
 </div>
-<div class="d-flex justify-content-center">
+<div class="mt-5 d-flex justify-content-center">
 <div id="content ms-5 mt-5">
         <form method="POST" action="" enctype="multipart/form-data">
             <div class="form-group">
