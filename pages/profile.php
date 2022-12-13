@@ -93,8 +93,7 @@ if(isset($_POST['update'])){
                   <p class="text-muted mb-1">Full Stack Developer</p>
                   <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
                   <div class="d-flex justify-content-center mb-2">
-                    <button type="button" class="btn btn-primary">Follow</button>
-                    <button type="button" class="btn btn-outline-primary ms-1">Message</button>
+                    <div class="btn btn-outline-secondary"># of Post</div>
                   </div>
                 </div>
               </div>
