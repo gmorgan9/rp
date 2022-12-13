@@ -37,10 +37,10 @@ if (isset($_POST['upload'])) {
     // }
 
     $uploaddir = '/var/www/cacheup/public_html/cacheup/pages/upload/';
-    $uploadfile = $uploaddir . basename($_FILES['filename']['name']);
+    $uploadfile = $uploaddir . basename($_FILES['image']['name']);
 
 echo '<pre>';
-if (move_uploaded_file($_FILES['filename']['tmp_name'], $uploadfile)) {
+if (move_uploaded_file($_FILES['image']['tmp_name'], $uploadfile)) {
     echo "File is valid, and was successfully uploaded.\n";
 } else {
     echo "Possible file upload attack!\n";
@@ -99,13 +99,12 @@ print "</pre>";
                 <input class="form-control" type="text" name="idno" value="<?php echo $_SESSION['user_idno'] ?>" />
             </div>
             <div class="form-group">
-                <input class="form-control" type="file" name="filename" value="" />
+                <input class="form-control" type="file" name="image" value="" />
             </div>
             <div class="form-group">
                 <button class="btn btn-primary" type="submit" name="upload">UPLOAD</button>
             </div>
         </form>
-        <?php echo $msg; ?>
     </div>
     <div class="mt-5 d-flex justify-content-center" id="display-image">
         <?php
