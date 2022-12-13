@@ -166,6 +166,11 @@ if (mysqli_num_rows($result) > 0) {
           <label>Profile Picture</label>
           <input class="form-control" style="width: 75%;" type="text" name="profile_picture" value="<?php echo $row['profile_picture']; ?>">
         </div>
+        <div class="pt-3"></div>
+        <div>
+          <label>Profile Picture</label>
+          <textarea class="form-control" style="width: 75%;" type="text" name="about_me"><?php echo $row['about_me']; ?></textarea>
+        </div>
         
         
         <br>
