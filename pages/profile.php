@@ -24,7 +24,7 @@ if (isset($_POST['upload'])) {
     mysqli_query($db, $sql);
  
     // Now let's move the uploaded image into the folder: image
-    if (move_uploaded_file($tempname, $folder)) {
+    if (move_uploaded_file($filename, $folder)) {
         echo "<h3>  Image uploaded successfully!</h3>";
     } else {
         echo "<h3>  Failed to upload image!</h3>";
