@@ -304,10 +304,11 @@ if (mysqli_num_rows($another) > 0) {
 <!-- end blog posts -->
 
 <?php
-$results = mysql_query("SELECT * FROM posts", $conn);
+$grab = "SELECT * FROM posts";;
+$comma = mysqli_query($conn, $grab);
 
-while($rows = mysql_fetch_array($results)) {
-   $mark=explode(',', $rows['tags']);//what will do here
+while($rows = mysqli_fetch_assoc($comma)) {
+   $mark = explode(',', $rows['tags']);//what will do here
    foreach($mark as $out) {
       echo $out;
    }
