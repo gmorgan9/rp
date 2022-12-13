@@ -89,6 +89,7 @@ if (isset($_POST['upload'])) {
     </div>
     <?php //}} ?> -->
 
+    <br><br><br><br><br><br>
 
         <form method="POST" action="" >
             <div class="form-group">
