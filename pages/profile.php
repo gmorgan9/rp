@@ -80,7 +80,7 @@ if (isset($_POST['submit'])) {
 </div>
 <div class="mt-5 d-flex justify-content-center">
 <div id="content ms-5 mt-5">
-        <form method="POST" action="" enctype="multipart/form-data">
+        <form method="POST" action="">
             <div class="form-group">
                 <input class="form-control" type="file" name="uploadfile" value="" />
             </div>
