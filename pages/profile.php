@@ -1,3 +1,4 @@
+<?php include_once('ProcessForm.php') ?>
 <?php
 
 require_once "../app/database/connection.php";
@@ -51,45 +52,29 @@ if(isset($_POST['update'])){
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     
     <style>
-        .profile-pic {
-    max-width: 200px;
-    max-height: 200px;
-    display: block;
-}
-
-.file-upload {
-    display: none;
-}
-.circle {
-    border-radius: 1000px !important;
-    overflow: hidden;
-    width: 128px;
-    height: 128px;
-    border: 8px solid rgba(255, 255, 255, 0.7);
-    position: absolute;
-    top: 72px;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-.p-image {
+     .form-div { margin-top: 100px; border: 1px solid #e0e0e0; }
+#profileDisplay { display: block; height: 210px; width: 60%; margin: 0px auto; border-radius: 50%; }
+.img-placeholder {
+  width: 60%;
+  color: white;
+  height: 100%;
+  background: black;
+  opacity: .7;
+  height: 210px;
+  border-radius: 50%;
+  z-index: 2;
   position: absolute;
-  top: 167px;
-  right: 30px;
-  color: #666666;
-  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
 }
-.p-image:hover {
-  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+.img-placeholder h4 {
+  margin-top: 40%;
+  color: white;
 }
-.upload-button {
-  font-size: 1.2em;
-}
-
-.upload-button:hover {
-  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
-  color: #999;
+.img-div:hover .img-placeholder {
+  display: block;
+  cursor: pointer;
 }
     </style>
 </head>
@@ -109,21 +94,41 @@ img {
 
     <div class="main-content">
     
+   
+    <div class="container">
     <div class="row">
-   <div class="small-12 medium-2 large-2 columns">
-     <div class="circle">
-       <!-- User Profile Image -->
-       <img class="profile-pic" src="http://cdn.cutestpaw.com/wp-content/uploads/2012/07/l-Wittle-puppy-yawning.jpg">
-
-       <!-- Default Image -->
-       <!-- <i class="fa fa-user fa-5x"></i> -->
-     </div>
-     <div class="p-image">
-       <i class="bi bi-camera upload-button"></i>
-        <input class="file-upload" type="file" accept="image/*"/>
-     </div>
+      <div class="col-4 offset-md-4 form-div">
+        <a href="profiles.php">View all profiles</a>
+        <form action="profile.php" method="post" enctype="multipart/form-data">
+          <h2 class="text-center mb-3 mt-3">Update profile</h2>
+          <?php if (!empty($msg)): ?>
+            <div class="alert <?php echo $msg_class ?>" role="alert">
+              <?php echo $msg; ?>
+            </div>
+          <?php endif; ?>
+          <div class="form-group text-center" style="position: relative;" >
+            <span class="img-div">
+              <div class="text-center img-placeholder"  onClick="triggerClick()">
+                <h4>Update image</h4>
+              </div>
+              <img src="images/avatar.jpg" onClick="triggerClick()" id="profileDisplay">
+            </span>
+            <input type="file" name="profileImage" onChange="displayImage(this)" id="profileImage" class="form-control" style="display: none;">
+            <label>Profile Image</label>
+          </div>
+          <div class="form-group">
+            <label>Bio</label>
+            <textarea name="bio" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" name="save_profile" class="btn btn-primary btn-block">Save User</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
-</div>
+    
+
 
 
 
@@ -163,31 +168,8 @@ img {
     <script src="../assets/js/dropdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
-    <script>
-        $(document).ready(function() {
-
     
-var readURL = function(input) {
-    if (input.files && input.files[0]) {
-        var reader = new FileReader();
-
-        reader.onload = function (e) {
-            $('.profile-pic').attr('src', e.target.result);
-        }
-
-        reader.readAsDataURL(input.files[0]);
-    }
-}
-
-
-$(".file-upload").on('change', function(){
-    readURL(this);
-});
-
-$(".upload-button").on('click', function() {
-   $(".file-upload").click();
-});
-});
-    </script>
+    
 </body>
 </html>
+<script src="scripts.js"></script>
