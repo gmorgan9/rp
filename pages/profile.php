@@ -158,7 +158,7 @@ if (mysqli_num_rows($result) > 0) {
                 
               </div>
               <button class="btn btn-outline-success">
-                edit
+                Edit Account
               </button>
               <button class="btn btn-outline-secondary">
                 Reset Password
