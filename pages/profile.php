@@ -158,10 +158,10 @@ if (mysqli_num_rows($result) > 0) {
                 
               </div>
               <button class="btn btn-outline-success">
-                Edit Account
+                <a href="">Edit Account</a>
               </button>
               <button class="btn btn-outline-secondary">
-                Reset Password
+                <a href="">Reset Password</a>
               </button>
             </div>
           </div>
