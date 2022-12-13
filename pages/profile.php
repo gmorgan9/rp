@@ -10,40 +10,47 @@ session_start();
 // }
 
 
-// check if the user has clicked the button "UPLOAD" 
+if (isset('submit')) { 
+    $img_name = $_FILES['fileToUpload']['name'];
+    $tmp_name = $_FILES['fileToUpload']['tmp_name'];
+    $error = $_FILES['fileToUpload']['error'];
+    
+    if($error === 0){
+       $img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
+       $img_ex_to_lc = strtolower($img_ex);
 
-if (isset($_POST['submit'])) {
+       $allowed_exs = array('jpg', 'jpeg', 'png');
+       if(in_array($img_ex_to_lc, $allowed_exs)){
+          $new_img_name = uniqid($uname, true).'.'.$img_ex_to_lc;
+          $img_upload_path = 'upload/'.$new_img_name;
+          // Delete old profile pic
+          $old_pp_des = "upload/$old_pp";
+          if(unlink($old_pp_des)){
+                // just deleted
+                move_uploaded_file($tmp_name, $img_upload_path);
+          }else {
+             // error or already deleted
+                move_uploaded_file($tmp_name, $img_upload_path);
+          }
+          
 
-    $filename = $_FILES["fileToUpload"]["name"];
-
-    $tempname = $_FILES["fileToUpload"]["tmp_name"];  
-
-        $folder = "/upload/".$tempname;   
-
-    // connect with the database
-
-    $db = mysqli_connect("localhost", "garrett", "BIGmorgan1999!", "cacheup"); 
-
-        // query to insert the submitted data
-
-        $sql = "UPDATE users SET filename = '$tempname'";
-
-        // function to execute above query
-
-        mysqli_query($db, $sql);       
-
-        // Add the image to the "image" folder"
-
-        if (move_uploaded_file($tempname, $folder)) {
-
-            $msg = "Image uploaded successfully";
-
-        }else{
-
-            $msg = "Failed to upload image";
-
+          // update the Database
+          $idno = $_SESSION['user_idno'];
+          $sql = "UPDATE users 
+                  SET filename=?
+                  WHERE idno='$idno'";
+          $stmt = $conn->prepare($sql);
+          $stmt->execute([$filename]);
+          //$_SESSION['fname'] = $fname;
+          //header("Location: ../edit.php?success=Your account has been updated successfully");
+           exit;
+       }else {
+          $em = "You can't upload files of this type";
+          //header("Location: ../edit.php?error=$em&$data");
+          exit;
+       }
     }
-
+   
 }
 
 
