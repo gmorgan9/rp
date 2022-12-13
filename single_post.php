@@ -113,7 +113,7 @@ if(isset($_POST['register'])){
       pre {
         padding: 10px;
         border-radius: 15px;
-        background-color: pink;
+        background-color: #4f4f4f;
       }
     </style>
 </head>
