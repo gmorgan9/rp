@@ -311,9 +311,10 @@ $comma = mysqli_query($conn, $grab);
 while($rows = mysqli_fetch_assoc($comma)) {
    $mark = explode(',', $rows['tags']);//what will do here
    foreach($mark as $out) {
+      echo "<br><br>"
       echo "<div class='btn btn-outline-secondary'>"; 
       echo "# " . $out;
-      echo "</div>";
+      echo "</div> &nbsp;";
    }
 }
 
