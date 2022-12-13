@@ -1,4 +1,3 @@
-<?php include_once('ProcessForm.php') ?>
 <?php
 
 require_once "../app/database/connection.php";
@@ -50,37 +49,26 @@ if(isset($_POST['update'])){
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    
-    <style>
-     .form-div { margin-top: 100px; border: 1px solid #e0e0e0; }
-#profileDisplay { display: block; height: 210px; width: 60%; margin: 0px auto; border-radius: 50%; }
-.img-placeholder {
-  width: 60%;
-  color: white;
-  height: 100%;
-  background: black;
-  opacity: .7;
-  height: 210px;
-  border-radius: 50%;
-  z-index: 2;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  display: none;
-}
-.img-placeholder h4 {
-  margin-top: 40%;
-  color: white;
-}
-.img-div:hover .img-placeholder {
-  display: block;
-  cursor: pointer;
-}
-    </style>
 </head>
 <body>
 
-
+<?php
+// $user_id = $_SESSION['user_id'];
+// $select = "SELECT * FROM users WHERE user_id = $user_id";
+// $result = mysqli_query($conn, $select);
+// if (mysqli_num_rows($result) > 0) {
+//    while($row = mysqli_fetch_assoc($result)) {
+//     $firstname    = $row['firstname'];
+//     $lastname     = $row['lastname'];
+// }}
+// $select = "SELECT * FROM categories";
+// $result = mysqli_query($conn, $select);
+// if (mysqli_num_rows($result) > 0) {
+//    while($row = mysqli_fetch_assoc($result)) {
+//     $cat_id    = $row['cat_id'];
+//     $category  = $row['category'];
+// }}
+?>
     
 <div class="main-container">
 <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
@@ -94,41 +82,87 @@ if(isset($_POST['update'])){
 
     <div class="main-content">
     
-   
-    <div class="container">
-    <div class="row">
-      <div class="col-4 offset-md-4 form-div">
-        <a href="profiles.php">View all profiles</a>
-        <form action="profile.php" method="post" enctype="multipart/form-data">
-          <h2 class="text-center mb-3 mt-3">Update profile</h2>
-          <?php if (!empty($msg)): ?>
-            <div class="alert <?php echo $msg_class ?>" role="alert">
-              <?php echo $msg; ?>
-            </div>
-          <?php endif; ?>
-          <div class="form-group text-center" style="position: relative;" >
-            <span class="img-div">
-              <div class="text-center img-placeholder"  onClick="triggerClick()">
-                <h4>Update image</h4>
-              </div>
-              <img src="images/avatar.jpg" onClick="triggerClick()" id="profileDisplay">
-            </span>
-            <input type="file" name="profileImage" onChange="displayImage(this)" id="profileImage" class="form-control" style="display: none;">
-            <label>Profile Image</label>
-          </div>
-          <div class="form-group">
-            <label>Bio</label>
-            <textarea name="bio" class="form-control"></textarea>
-          </div>
-          <div class="form-group">
-            <button type="submit" name="save_profile" class="btn btn-primary btn-block">Save User</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-    
+    <?php
+$id = $_SESSION['user_idno'];
+$select = "SELECT * FROM users WHERE idno = '$id' ";
+$result = mysqli_query($conn, $select);
 
+if (mysqli_num_rows($result) > 0) {
+   while($row = mysqli_fetch_assoc($result)) {
+
+?>
+
+
+    <form action="" method="POST">
+        <h3>
+            New Post
+        </h3>
+        <div class="modal_help float-end" style="margin-right: 25px; margin-top: -55px !important;">
+
+          <!-- Button trigger modal -->
+            <button type="button" style="background: none; color: inherit; border: none; cursor: pointer; outline: inherit;" class="badge text-bg-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Instructions
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Instructions</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-black">
+                    Things you will want to pay attention to while creating a new post for our blog. If you have any questions, please reach out via email, I will try and get back to you all as soon as possible.
+                    <ul>
+                      <li>For all images wanting to be insertted, please have a link for your image ready. a useful site to help you get a link for images would be: <a href="https://postimages.org" target="_blank">https://postimages.org</a>.</li>
+                        <li>The width for all images need to be <strong>835</strong>.</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary text-black">Save changes</button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="d-flex">
+            <div>
+                <label>First Name</label>
+                <input class="form-control" type="hidden" name="idno" value="<?php echo $row['idno']; ?>">
+                <input class="form-control" style="width: 50%;" type="text" name="title" value="<?php echo $row['firstname']; ?>">
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input class="form-control" style="width: 50%;" type="text" name="title" value="<?php echo $row['lastname']; ?>">
+            </div>
+        </div>
+        <div class="pt-3"></div>
+        <div>
+            <label>Gender</label>
+            <select style="width: 99%;" name="gender" class="form-control">
+                <option value="<?php echo $row['gender']; ?>"><?php echo $row['gender']; ?></option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="pt-3"></div>
+        
+        <textarea name="profile_picture" id="content" style="width: 50%;"><?php echo $row['profile_picture']; ?></textarea>
+        <br>
+        <input type="submit" name="update" value="Update" class="btn btn-light btn-block"> &nbsp;
+        <button class="btn btn-dark btn-block" onclick="window.history.go(-1); return false;">Go Back</button>
+    </form>
+   
+    </div>
+
+
+    <?php }} ?>
 
 
 
@@ -141,7 +175,7 @@ if(isset($_POST['update'])){
 
 
 
-<script src="scripts.js"></script>
+
 
 <script>
     tinymce.init({
@@ -167,8 +201,5 @@ if(isset($_POST['update'])){
 </script>
     <script src="../assets/js/dropdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
-    
-    
 </body>
 </html>
