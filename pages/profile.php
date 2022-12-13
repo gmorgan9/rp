@@ -10,8 +10,6 @@ session_start();
 // }
 
 
-$msg = ""; 
-
 // check if the user has clicked the button "UPLOAD" 
 
 if (isset($_POST['submit'])) {
@@ -48,7 +46,7 @@ if (isset($_POST['submit'])) {
 
 }
 
-$result = mysqli_query($db, "SELECT * FROM users");
+
 
 
 ?>
