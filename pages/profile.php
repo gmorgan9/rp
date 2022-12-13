@@ -15,7 +15,7 @@ error_reporting(0);
 $msg = "";
  
 // If upload button is clicked ...
-if (isset($_POST['submit'])) {
+if (isset($_POST['upload'])) {
  
     $filename = $_FILES["uploadfile"]["name"];
     $tempname = $_FILES["uploadfile"]["tmp_name"];
@@ -85,7 +85,7 @@ if (isset($_POST['submit'])) {
                 <input class="form-control" type="file" name="uploadfile" value="" />
             </div>
             <div class="form-group">
-                <button class="btn btn-primary" type="submit" name="submit">UPLOAD</button>
+                <button class="btn btn-primary" type="submit" name="upload">UPLOAD</button>
             </div>
         </form>
     </div>
