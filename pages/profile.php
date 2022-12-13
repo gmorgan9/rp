@@ -16,9 +16,9 @@ $msg = "";
 
 if (isset($_POST['submit'])) {
 
-    $filename = $_FILES["choosefile"]["name"];
+    $filename = $_FILES["fileToUpload"]["name"];
 
-    $tempname = $_FILES["choosefile"]["tmp_name"];  
+    $tempname = $_FILES["fileToUpload"]["tmp_name"];  
 
         $folder = "upload/".$filename;   
 
