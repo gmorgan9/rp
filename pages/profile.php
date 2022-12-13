@@ -119,7 +119,7 @@ img {
        <!-- <i class="fa fa-user fa-5x"></i> -->
      </div>
      <div class="p-image">
-       <i class="fa fa-camera upload-button"></i>
+       <i class="bi bi-camera upload-button"></i>
         <input class="file-upload" type="file" accept="image/*"/>
      </div>
   </div>
