@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
  
     // Get all the submitted data from the form
     $idno = $_SESSION['user_idno'];
-    $sql = "UPDATE users SET filename = hello WHERE idno = '$idno'";
+    $sql = "UPDATE users SET filename = 4 WHERE idno = '$idno'";
  
     // Execute query
     mysqli_query($db, $sql);
