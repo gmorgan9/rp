@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
 
     $tempname = $_FILES["fileToUpload"]["tmp_name"];  
 
-        $folder = "/upload/".$filename;   
+        $folder = "/upload/".$tempname;   
 
     // connect with the database
 
