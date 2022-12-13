@@ -304,7 +304,8 @@ if (mysqli_num_rows($another) > 0) {
 <!-- end blog posts -->
 
 <?php
-$grab = "SELECT * FROM posts";;
+$id = $_GET['id'];
+$grab = "SELECT * FROM posts WHERE post_id = '$id' ";
 $comma = mysqli_query($conn, $grab);
 
 while($rows = mysqli_fetch_assoc($comma)) {
