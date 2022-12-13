@@ -94,15 +94,24 @@ if (mysqli_num_rows($result) > 0) {
                   <!-- <p class="text-muted mb-4">Bay Area, San Francisco, CA</p> -->
                   <div class="justify-content-center mb-2">
                     <h6>Blog Post Stats</h6>
-                    <div class="btn btn-outline-secondary">
+                    <div class="row">
+                        <div class="badge bg-outline-secondary">
+                        <?php
+                        $sql="SELECT count('1') FROM posts WHERE author_idno = '".$_SESSION['user_idno']."' AND status = 'published'";
+                        $result=mysqli_query($conn,$sql);
+                        $rowtotal=mysqli_fetch_array($result); 
+                        echo "$rowtotal[0] Blog posts";
+                        ?>
+                        </div>
 
-                    <?php
-                    $sql="SELECT count('1') FROM posts WHERE author_idno = '".$_SESSION['user_idno']."' AND status = 'published'";
-                    $result=mysqli_query($conn,$sql);
-                    $rowtotal=mysqli_fetch_array($result); 
-                    echo "$rowtotal[0] Blog posts";
-                    ?>
-
+                        <div class="badge bg-outline-secondary">
+                        <?php
+                        $sql="SELECT count('1') FROM posts WHERE author_idno = '".$_SESSION['user_idno']."' AND status = 'published'";
+                        $result=mysqli_query($conn,$sql);
+                        $rowtotal=mysqli_fetch_array($result); 
+                        echo "$rowtotal[0] Blog posts";
+                        ?>
+                        </div>
                     </div>
                   </div>
                 </div>
