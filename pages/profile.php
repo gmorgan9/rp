@@ -155,10 +155,11 @@ if (mysqli_num_rows($result) > 0) {
                     </div>
                   </div>
                 </div>
-                <button class="btn">
+                
+              </div>
+              <button class="btn btn-primary">
                     edit
                 </button>
-              </div>
             </div>
           </div>
         </div>
