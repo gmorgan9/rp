@@ -46,7 +46,7 @@ if (move_uploaded_file($_FILES['image']['tmp_name'], $uploadfile)) {
     echo "Possible file upload attack!\n";
 }
 
-echo '<br> Here is some more debugging info:';
+echo '<br>Here is some more debugging info:';
 print_r($_FILES);
 
 print "</pre>";
@@ -99,7 +99,7 @@ print "</pre>";
                 <input class="form-control" type="text" name="idno" value="<?php echo $_SESSION['user_idno'] ?>" />
             </div>
             <div class="form-group">
-                <input class="form-control" type="file" name="image" value="" />
+                <input class="form-control" type="file" name="image[]" value="" />
             </div>
             <div class="form-group">
                 <button class="btn btn-primary" type="submit" name="upload">UPLOAD</button>
