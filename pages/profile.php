@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
 
     $tempname = $_FILES["fileToUpload"]["tmp_name"];  
 
-        $folder = "upload/".$filename;   
+        $folder = "/upload/".$filename;   
 
     // connect with the database
 
@@ -26,7 +26,7 @@ if (isset($_POST['submit'])) {
 
         // query to insert the submitted data
 
-        $sql = "UPDATE users SET filename = '$filename'";
+        $sql = "UPDATE users SET filename = $filename";
 
         // function to execute above query
 
