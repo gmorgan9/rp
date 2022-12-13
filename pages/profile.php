@@ -92,7 +92,19 @@ if (mysqli_num_rows($result) > 0) {
                   <p class="text-muted mb-3"><?php echo $idno; ?></p>
                   <!-- <p class="text-muted mb-4">Bay Area, San Francisco, CA</p> -->
                   <div class="d-flex justify-content-center mb-2">
-                    <div class="btn btn-outline-secondary"># of Post</div>
+
+                    <div class="btn btn-outline-secondary">
+
+                    <?php
+                    $user_id = $_SESSION['user_id'];
+                    $sql="select count('1') from posts where user_id = '$user_id'";
+                    $result=mysqli_query($con,$sql);
+                    $rowtotal=mysqli_fetch_array($result); 
+                    echo "$rowtotal[0]";
+                    ?>
+                        
+
+                    </div>
                   </div>
                 </div>
               </div>
