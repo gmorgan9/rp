@@ -10,47 +10,31 @@ session_start();
 // }
 
 
-if (isset($_POST['submit'])) { 
-    $img_name = $_FILES['filename']['name'];
-    $tmp_name = $_FILES['filename']['tmp_name'];
-    $error = $_FILES['filename']['error'];
-    
-    if($error === 0){
-       $img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
-       $img_ex_to_lc = strtolower($img_ex);
-
-       $allowed_exs = array('jpg', 'jpeg', 'png');
-       if(in_array($img_ex_to_lc, $allowed_exs)){
-          $new_img_name = uniqid($uname, true).'.'.$img_ex_to_lc;
-          $img_upload_path = '/upload/'.$new_img_name;
-          // Delete old profile pic
-          $old_pp_des = "/upload/$old_pp";
-          if(unlink($old_pp_des)){
-                // just deleted
-                move_uploaded_file($tmp_name, $img_upload_path);
-          }else {
-             // error or already deleted
-                move_uploaded_file($tmp_name, $img_upload_path);
-          }
-          
-
-          // update the Database
-          $idno = $_SESSION['user_idno'];
-          $sql = "UPDATE users 
-                  SET filename=?
-                  WHERE idno='$idno'";
-          $stmt = $conn->prepare($sql);
-          $stmt->execute([$filename]);
-          //$_SESSION['fname'] = $fname;
-          //header("Location: ../edit.php?success=Your account has been updated successfully");
-           exit;
-       }else {
-          $em = "You can't upload files of this type";
-          //header("Location: ../edit.php?error=$em&$data");
-          exit;
-       }
+error_reporting(0);
+ 
+$msg = "";
+ 
+// If upload button is clicked ...
+if (isset($_POST['submit'])) {
+ 
+    $filename = $_FILES["uploadfile"]["name"];
+    $tempname = $_FILES["uploadfile"]["tmp_name"];
+    $folder = "./upload/" . $filename;
+ 
+    $db = mysqli_connect("localhost", "root", "", "geeksforgeeks");
+ 
+    // Get all the submitted data from the form
+    $sql = "UPDATE users SET filename ='$filename'";
+ 
+    // Execute query
+    mysqli_query($db, $sql);
+ 
+    // Now let's move the uploaded image into the folder: image
+    if (move_uploaded_file($tempname, $folder)) {
+        echo "<h3>  Image uploaded successfully!</h3>";
+    } else {
+        echo "<h3>  Failed to upload image!</h3>";
     }
-   
 }
 
 
@@ -93,45 +77,30 @@ if (isset($_POST['submit'])) {
 
   
 </div>
-<!-- <?php
-        // $id = $_SESSION['user_idno'];
-        // $sql = "SELECT * FROM users WHERE idno = '$id'";
-        // $all = mysqli_query($conn, $sql);
-        // if($all) {
-        //     while ($row = mysqli_fetch_assoc($all)) {
-        //       $firstname      = $row['firstname'];
-        //       $user_id        = $row['user_id'];
-    ?>
-    <br><br><br><br><br>
-    <div class="ms-5 ps-5">
-    <form method="post" action="">
-        <input type="hidden" name="user_id" value="<?php echo $user_id; ?>" />
-        <input class="form-control" type="file" name="filename" />
-        <input class="form-control" type="submit" value="Save" name="upload">
-    </form>
+
+<div id="content ms-5 mt-5">
+        <form method="POST" action="" enctype="multipart/form-data">
+            <div class="form-group">
+                <input class="form-control" type="file" name="uploadfile" value="" />
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit" name="submit">UPLOAD</button>
+            </div>
+        </form>
     </div>
-    <?php //}} ?> -->
-
-    <br><br><br><br><br><br>
-
-    <form action="" method="post">
-  Select image to upload:
-  <input type="file" name="fileToUpload" id="fileToUpload">
-  <input type="submit" value="Upload Image" name="submit">
-</form>
-   
-    
-        <!-- <?php
-        // $query = " SELECT * from users ";
-        // $result = mysqli_query($db, $query);
+    <div id="display-image">
+        <?php
+        $query = "SELECT * from users";
+        $result = mysqli_query($db, $query);
  
-        // while ($data = mysqli_fetch_assoc($result)) {
-        // ?>
-        //     <img src="../upload/<?php //echo $data['filename']; ?>">
+        while ($data = mysqli_fetch_assoc($result)) {
+        ?>
+            <img src="./image/<?php echo $data['filename']; ?>">
  
-        // <?php
-        // }
-        ?> -->
+        <?php
+        }
+        ?>
+    </div>
 
 
 </div>
