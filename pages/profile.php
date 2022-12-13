@@ -98,7 +98,7 @@ if(isset($_POST['update'])){
 
           <div class="row">
             <div class="col-lg-4">
-              <div class="card mb-4">
+              <div class="card mb-4" style="background-color: #1f1f1f;">
                 <div class="card-body text-center">
                   <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
                     class="rounded-circle img-fluid" style="width: 150px;">
