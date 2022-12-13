@@ -58,8 +58,14 @@ $select = "SELECT * FROM users WHERE user_id = '$user_id'";
 $result = mysqli_query($conn, $select);
 if (mysqli_num_rows($result) > 0) {
    while($row = mysqli_fetch_assoc($result)) {
-    $firstname    = $row['firstname'];
-    $lastname     = $row['lastname'];
+    $firstname        = $row['firstname'];
+    $lastname         = $row['lastname'];
+    $email            = $row['email'];
+    $idno             = $row['idno'];
+    $username         = $row['username'];
+    $gender           = $row['gender'];
+    $about_me         = $row['about_me'];
+    $profile_picture  = $row['profile_picture'];
 }}
 ?>
     
@@ -83,8 +89,8 @@ if (mysqli_num_rows($result) > 0) {
                   <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
                     class="rounded-circle img-fluid" style="width: 150px;">
                   <h5 class="my-3"><?php echo $firstname; ?> <?php echo $lastname; ?></h5>
-                  <p class="text-muted mb-1">Full Stack Developer</p>
-                  <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
+                  <p class="text-muted mb-1"><?php echo $idno; ?></p>
+                  <!-- <p class="text-muted mb-4">Bay Area, San Francisco, CA</p> -->
                   <div class="d-flex justify-content-center mb-2">
                     <div class="btn btn-outline-secondary"># of Post</div>
                   </div>
@@ -108,34 +114,34 @@ if (mysqli_num_rows($result) > 0) {
                       <p class="mb-0">Email</p>
                     </div>
                     <div class="col-sm-9">
-                      <p class="text-muted mb-0">example@example.com</p>
+                      <p class="text-muted mb-0"><?php echo $email; ?></p>
                     </div>
                   </div>
                   <hr>
                   <div class="row">
                     <div class="col-sm-3">
-                      <p class="mb-0">Phone</p>
+                      <p class="mb-0">Username</p>
                     </div>
                     <div class="col-sm-9">
-                      <p class="text-muted mb-0">(097) 234-5678</p>
+                      <p class="text-muted mb-0"><?php $username; ?></p>
                     </div>
                   </div>
                   <hr>
                   <div class="row">
                     <div class="col-sm-3">
-                      <p class="mb-0">Mobile</p>
+                      <p class="mb-0">Gender</p>
                     </div>
                     <div class="col-sm-9">
-                      <p class="text-muted mb-0">(098) 765-4321</p>
+                      <p class="text-muted mb-0"><?php echo $gender; ?></p>
                     </div>
                   </div>
                   <hr>
                   <div class="row">
                     <div class="col-sm-3">
-                      <p class="mb-0">Address</p>
+                      <p class="mb-0">About Me</p>
                     </div>
                     <div class="col-sm-9">
-                      <p class="text-muted mb-0">Bay Area, San Francisco, CA</p>
+                      <p class="text-muted mb-0"><?php $about_me; ?></p>
                     </div>
                   </div>
                 </div>
