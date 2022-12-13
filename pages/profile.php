@@ -99,19 +99,18 @@ if (isset($_POST['upload'])) {
             </div>
         </form>
    
-    <div id="display-image">
-        <?php
-        $query = " SELECT * from users ";
-        $result = mysqli_query($db, $query);
+    
+        <!-- <?php
+        // $query = " SELECT * from users ";
+        // $result = mysqli_query($db, $query);
  
-        while ($data = mysqli_fetch_assoc($result)) {
-        ?>
-            <img src="../upload/<?php echo $data['filename']; ?>">
+        // while ($data = mysqli_fetch_assoc($result)) {
+        // ?>
+        //     <img src="../upload/<?php //echo $data['filename']; ?>">
  
-        <?php
-        }
-        ?>
-    </div>
+        // <?php
+        // }
+        ?> -->
 
 
 </div>
