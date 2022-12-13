@@ -15,12 +15,18 @@ session_start();
 if(isset($_POST['update'])){
   //$idno  = rand(10000, 99999);
   $profile_picture = mysqli_real_escape_string($conn, $_POST['profile_picture']);
+  $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
+  $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
+  $email = mysqli_real_escape_string($conn, $_POST['email']);
+  $username = mysqli_real_escape_string($conn, $_POST['username']);
+  $about_me = mysqli_real_escape_string($conn, $_POST['about_me']);
+  $gender = mysqli_real_escape_string($conn, $_POST['gender']);
 
 
   date_default_timezone_set('America/Denver');
   $date = date('F d, Y, g:i a', time());
 
-  $insert = "UPDATE users SET profile_picture = '$profile_picture' WHERE idno = '".$_POST['idno']."'";
+  $insert = "UPDATE users SET firstname = '$firstname', lastname = '$lastname', email = '$email', username = '$username', about_me = '$about_me', gender = '$gender', profile_picture = '$profile_picture' WHERE idno = '".$_POST['idno']."'";
   mysqli_query($conn, $insert);
   header("location: ../profile.php");
 
@@ -168,8 +174,8 @@ if (mysqli_num_rows($result) > 0) {
         </div>
         <div class="pt-3"></div>
         <div>
-          <label>Profile Picture</label>
-          <textarea id="about_me" class="form-control" style="width: 75%;" type="text" name="about_me"><?php echo $row['about_me']; ?></textarea>
+          <label>About Me</label>
+          <textarea class="form-control" style="width: 75%;" type="text" name="about_me"><?php echo $row['about_me']; ?></textarea>
         </div>
         
         
@@ -193,22 +199,6 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-
-
-
-<script>
-    tinymce.init({
-      selector: 'textarea#about_me',
-      plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect',
-      toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
-      tinycomments_mode: 'embedded',
-      tinycomments_author: 'Author name',
-      mergetags_list: [
-        { value: 'First.Name', title: 'First Name' },
-        { value: 'Email', title: 'Email' },
-      ]
-    });
-  </script>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript">
   $(document).on('click', 'a', function() {
