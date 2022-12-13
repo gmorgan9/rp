@@ -32,7 +32,7 @@ if (isset($_POST['upload'])) {
  
     // Now let's move the uploaded image into the folder: image
     if (move_uploaded_file($tempname, $folder)) {
-        echo "Filename: " . $_FILES['file']['name']."<br>";
+        $msg = "Filename: " . $_FILES['file']['name']."<br>";
         echo "<h3>  Image uploaded successfully!</h3>";
     } else {
         echo "Filename: " . $_FILES['file']['name']."<br>";
@@ -93,6 +93,7 @@ if (isset($_POST['upload'])) {
                 <button class="btn btn-primary" type="submit" name="upload">UPLOAD</button>
             </div>
         </form>
+        <?php echo $msg; ?>
     </div>
     <div class="mt-5 d-flex justify-content-center" id="display-image">
         <?php
