@@ -25,7 +25,7 @@ if (isset($_POST['upload'])) {
  
     // Get all the submitted data from the form
     $idno = $_SESSION['user_idno'];
-    $sql = "UPDATE `users` SET `filename`= `$filename` WHERE `idno` = '".$_POST['idno']."'";
+    $sql = "UPDATE `users` SET `filename`= '$filename' WHERE `idno` = '".$_POST['idno']."'";
  
     // Execute query
     mysqli_query($db, $sql);
