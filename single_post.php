@@ -270,13 +270,12 @@ $result = mysqli_query($conn, $select);
 if (mysqli_num_rows($result) > 0) {
    while($row = mysqli_fetch_assoc($result)) {
     $profile_picture  = $row['profile_picture'];
-
+}}
 ?>
 
     <nav class="mt-4" aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item" style="font-size: 12px;"><?php echo $profile_picture; ?><img src="<?php echo $profile_picture; ?>" width="150px" height="150px" alt=""></li>&nbsp;&nbsp;
-        <?php }} ?>
+        <li style="margin-top: -3.75px; font-size: 18px;"><img src="<?php echo $profile_picture; ?>" alt=""></li>&nbsp;&nbsp;
         <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase text-white"><?php echo $row['author']; ?></a></li>
         <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase text-white"><?php echo $row['published_at']; ?></a></li>
         <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;"><?php echo $row['category']; ?></li>
