@@ -97,7 +97,7 @@ if (mysqli_num_rows($result) > 0) {
 
                     <?php
                     $user_id = $_SESSION['user_id'];
-                    $sql="select count('1') from posts where user_id = '$user_id'";
+                    $sql="SELECT count('1') from posts where user_id = '$user_id'";
                     $result=mysqli_query($con,$sql);
                     $rowtotal=mysqli_fetch_array($result); 
                     echo "$rowtotal[0]";
