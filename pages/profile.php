@@ -48,16 +48,82 @@ session_start();
   </div>
 
 
-  
+  <div class="modal_help float-end" style="margin-right: 25px; margin-top: -55px !important;">
+
+<!-- Button trigger modal -->
+  <button type="button" style="background: none; color: inherit; border: none; cursor: pointer; outline: inherit;" class="badge text-bg-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Instructions
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Instructions</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-black">
+          Things you will want to pay attention to while creating a new post for our blog. If you have any questions, please reach out via email, I will try and get back to you all as soon as possible.
+          <ul>
+            <li>For all images wanting to be insertted, please have a link for your image ready. a useful site to help you get a link for images would be: <a href="https://postimages.org" target="_blank">https://postimages.org</a>.</li>
+              <li>The width for all images need to be <strong>835</strong>.</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary text-black">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
 </div>
-<div class="mt-5 d-flex justify-content-center">
-<div id="content ms-5 mt-5">
-    <form action="file.php" method="post" enctype="multipart/form-data">
-        Select file to upload:
-        <input type="file" name="file"><br>
-        <input type="submit" value="Upload file" name="submit">
-    </form>
+<div>
+  <label>Post Title</label>
+  <input class="form-control" type="hidden" name="post_id" value="<?php echo $row['post_id']; ?>">
+  <input class="form-control" style="width: 99%;" type="text" name="title" value="<?php echo $row['title']; ?>">
 </div>
+<div class="pt-3"></div>
+<div>
+  <label>Category</label>
+  <select style="width: 99%;" name="category" class="form-control">
+      <option value="<?php echo $row['title']; ?>"><?php echo $row['category']; ?></option>
+      <option value="none">None</option>
+      <?php
+      $query ="SELECT * FROM categories";
+      $result = $conn->query($query);
+      if($result->num_rows> 0){
+        $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+      }
+      ?>
+      <?php 
+          foreach ($options as $option) {
+      ?>
+      <option value="<?php echo $option['category']; ?>"><?php echo $option['category']; ?></option>
+      <?php } ?>
+  </select>
+</div>
+<div class="pt-3"></div>
+<div>
+  <label>Tags</label>
+  <input class="form-control" style="width: 99%;" type="text" name="tags" value="<?php echo $row['tags']; ?>">
+</div>
+<br>
+<textarea name="content" id="content" style="width: 50%;"><?php echo $row['content']; ?></textarea>
+<input type="hidden" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
+<br>
+<input type="submit" name="update" value="Update" class="btn btn-light btn-block"> &nbsp;
+<button class="btn btn-dark btn-block" onclick="window.history.go(-1); return false;">Go Back</button>
+</form>
+
+</div>
+
+
+<?php }} ?>
 
 
 
@@ -71,7 +137,19 @@ session_start();
     
 <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
 
-<!-- <script src="../assets/js/new.js"></script> -->
+<script>
+    tinymce.init({
+      selector: 'textarea#content',
+      plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect',
+      toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+      mergetags_list: [
+        { value: 'First.Name', title: 'First Name' },
+        { value: 'Email', title: 'Email' },
+      ]
+    });
+  </script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript">
