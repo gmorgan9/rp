@@ -327,7 +327,7 @@ if (mysqli_num_rows($another) > 0) {
 <!-- social links -->
   <br>
   <!-- Linkedin -->
-  <div class="social-links text-center">
+  <div class="social-links ms-5">
     <a class="btn btn-primary" style="background-color: #0082ca; border:none !important;" href="#!" role="button"
       ><i class="bi bi-linkedin"></i>
     </a>
