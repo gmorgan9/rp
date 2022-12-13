@@ -346,7 +346,7 @@ if (mysqli_num_rows($another) > 0) {
 <!-- end social links -->
 
 <div class="top-hr d-flex">
-  <hr style="width:50px;"> &nbsp; <img style="border: 1px solid #969696; border-radius: 100%;" src="<?php echo $profile_picture; ?>" width="50px" height="50px" alt=""> <hr style="width:50px;">
+  <hr style="width:50px;"> &nbsp; <img style="border: 1px solid #969696; border-radius: 100%; top: -33;" src="<?php echo $profile_picture; ?>" width="60px" height="60px" alt=""> <hr style="width:50px;">
 </div>
 
 <br><br>
