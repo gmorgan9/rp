@@ -75,12 +75,28 @@ if (isset($_POST['upload'])) {
     <p class="page_title" style="float: left; padding-top: 2px;">Profile</p>
   </div>
 
+  <?php 
 
+
+$user_id = $_SESSION['user_id'];
+$select = " SELECT * FROM users WHERE user_id = '$user_id' ";
+$result = mysqli_query($conn, $select);
+if (mysqli_num_rows($result) > 0) {
+   while($row = mysqli_fetch_assoc($result)) {
+    $firstname    = $row['firstname'];
+    $loggedin     = $row['loggedin'];
+    $idno         = $row['idno'];
+}}
+
+?>
   
 </div>
 <div class="mt-5 d-flex justify-content-center">
 <div id="content ms-5 mt-5">
         <form method="POST" action="">
+            <div class="form-group">
+                <input class="form-control" type="text" name="idno" value="<?php echo $idno; ?>" />
+            </div>
             <div class="form-group">
                 <input class="form-control" type="file" name="uploadfile" value="" />
             </div>
