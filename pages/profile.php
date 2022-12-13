@@ -86,7 +86,7 @@ if (mysqli_num_rows($result) > 0) {
             <div class="col-lg-4">
               <div class="card mb-4" style="background-color: #1f1f1f;">
                 <div class="card-body text-center">
-                    <p class="" style="border-radius: 15px; width: 150px;">
+                    <p class="" style="border-radius: 150%; width: 250px;">
                         <?php echo html_entity_decode($profile_picture); ?>
                     </p>
                   
