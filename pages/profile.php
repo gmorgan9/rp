@@ -97,7 +97,7 @@ if (mysqli_num_rows($result) > 0) {
                     <div class="btn btn-outline-secondary">
 
                     <?php
-                    $sql="SELECT count('1') FROM posts WHERE author_idno = '".$_SESSION['user_idno']."'";
+                    $sql="SELECT count('1') FROM posts WHERE author_idno = '".$_SESSION['user_idno']."' AND status = 'published'";
                     $result=mysqli_query($conn,$sql);
                     $rowtotal=mysqli_fetch_array($result); 
                     echo "$rowtotal[0] Blog posts";
