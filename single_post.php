@@ -265,11 +265,11 @@ if (mysqli_num_rows($result) > 0) {
 
     <?php
 $idno = $row['author_idno'];
-$select = "SELECT * FROM users WHERE idno = '$idno'";
-$result = mysqli_query($conn, $select);
-if (mysqli_num_rows($result) > 0) {
-   while($row = mysqli_fetch_assoc($result)) {
-    $profile_picture  = $row['profile_picture'];
+$profile = "SELECT * FROM users WHERE idno = '$idno'";
+$another = mysqli_query($conn, $profile);
+if (mysqli_num_rows($another) > 0) {
+   while($col = mysqli_fetch_assoc($another)) {
+    $profile_picture  = $col['profile_picture'];
 }}
 ?>
 
