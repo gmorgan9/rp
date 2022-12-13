@@ -35,8 +35,7 @@ if (isset($_POST['upload'])) {
         $msg = "Filename: " . $_FILES['file']['name']."<br>";
         echo "<h3>  Image uploaded successfully!</h3>";
     } else {
-        echo "Filename: " . $_FILES['file']['name']."<br>";
-        echo "<h3>  Failed to upload image!</h3>";
+        $msg = "Filename: " . $_FILES['file']['name']."<br> <h3>  Failed to upload image!</h3>";
     }
 }
 
