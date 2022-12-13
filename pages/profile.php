@@ -89,7 +89,7 @@ if (mysqli_num_rows($result) > 0) {
                   <img src="<?php echo $profile_picture; ?>" alt="avatar"
                     class="rounded-circle img-fluid" style="width: 200px; height: 250px;">
                   <h5 class="my-3"><?php echo $firstname; ?> <?php echo $lastname; ?></h5>
-                  <p class="text-muted mb-1"><?php echo $idno; ?></p>
+                  <p class="text-muted mb-3"><?php echo $idno; ?></p>
                   <!-- <p class="text-muted mb-4">Bay Area, San Francisco, CA</p> -->
                   <div class="d-flex justify-content-center mb-2">
                     <div class="btn btn-outline-secondary"># of Post</div>
