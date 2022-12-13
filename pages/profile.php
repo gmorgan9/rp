@@ -89,7 +89,7 @@ if (mysqli_num_rows($result) > 0) {
                   <img src="<?php echo $profile_picture; ?>" alt="avatar"
                     class="rounded-circle img-fluid" style="width: 200px; height: 250px;">
                   <h5 class="my-3"><?php echo $firstname; ?> <?php echo $lastname; ?></h5>
-                  <p class="text-muted mb-3"><?php echo $idno; ?></p>
+                  <p class="text-muted mb-3"><?php echo $username; ?></p>
                   <!-- <p class="text-muted mb-4">Bay Area, San Francisco, CA</p> -->
                   <div class="d-flex justify-content-center mb-2">
 
@@ -121,19 +121,19 @@ if (mysqli_num_rows($result) > 0) {
                   <hr>
                   <div class="row">
                     <div class="col-sm-3">
-                      <p class="mb-0">Email</p>
+                      <p class="mb-0">User ID</p>
                     </div>
                     <div class="col-sm-9">
-                      <p class="text-muted mb-0"><?php echo $email; ?></p>
+                      <p class="text-muted mb-0"><?php echo $idno; ?></p>
                     </div>
                   </div>
                   <hr>
                   <div class="row">
                     <div class="col-sm-3">
-                      <p class="mb-0">Username</p>
+                      <p class="mb-0">Email</p>
                     </div>
                     <div class="col-sm-9">
-                      <p class="text-muted mb-0"><?php echo $username; ?></p>
+                      <p class="text-muted mb-0"><?php echo $email; ?></p>
                     </div>
                   </div>
                   <hr>
