@@ -17,24 +17,39 @@ $msg = "";
 // If upload button is clicked ...
 if (isset($_POST['upload'])) {
  
-    $filename = $_FILES["uploadfile"]["name"];
-    $tempname = $_FILES["uploadfile"]["tmp_name"];
-    $folder = "upload/" . $tempname;
+    // $filename = $_FILES["uploadfile"]["name"];
+    // $tempname = $_FILES["uploadfile"]["tmp_name"];
+    // $folder = "upload/" . $tempname;
  
-    $db = mysqli_connect("localhost", "garrett", "BIGmorgan1999!", "cacheup");
+    // $db = mysqli_connect("localhost", "garrett", "BIGmorgan1999!", "cacheup");
  
-    // Get all the submitted data from the form
-    $sql = "UPDATE `users` SET `filename`= '$filename' WHERE `idno` = '".$_POST['idno']."'";
+    // // Get all the submitted data from the form
+    // $sql = "UPDATE `users` SET `filename`= '$filename' WHERE `idno` = '".$_POST['idno']."'";
  
-    // Execute query
-    mysqli_query($db, $sql);
+    // // Execute query
+    // mysqli_query($db, $sql);
  
-    // Now let's move the uploaded image into the folder: image
-    if (move_uploaded_file($tempname, $folder)) {
-        $msg = "Filename: " . $_FILES['uploadfile']['name']."<br> <h3>  Failed to upload image!</h3>";
-    } else {
-        $msg = "Filename: " . $_FILES['uploadfile']['name']."<br> <h3>  Failed to upload image!</h3>";
-    }
+    // // Now let's move the uploaded image into the folder: image
+    // if (move_uploaded_file($tempname, $folder)) {
+    //     $msg = "Filename: " . $_FILES['uploadfile']['name']."<br> <h3>  Failed to upload image!</h3>";
+    // } else {
+    //     $msg = "Filename: " . $_FILES['uploadfile']['name']."<br> <h3>  Failed to upload image!</h3>";
+    // }
+
+    $uploaddir = '/var/www/cacheup/public_html/cacheup/pages/upload/';
+    $uploadfile = $uploaddir . basename($_FILES['filename']['name']);
+
+echo '<pre>';
+if (move_uploaded_file($_FILES['filename']['tmp_name'], $uploadfile)) {
+    echo "File is valid, and was successfully uploaded.\n";
+} else {
+    echo "Possible file upload attack!\n";
+}
+
+echo 'Here is some more debugging info:';
+print_r($_FILES);
+
+print "</pre>";
 }
 
 
@@ -84,7 +99,7 @@ if (isset($_POST['upload'])) {
                 <input class="form-control" type="text" name="idno" value="<?php echo $_SESSION['user_idno'] ?>" />
             </div>
             <div class="form-group">
-                <input class="form-control" type="file" name="uploadfile" value="" />
+                <input class="form-control" type="file" name="filename" value="" />
             </div>
             <div class="form-group">
                 <button class="btn btn-primary" type="submit" name="upload">UPLOAD</button>
