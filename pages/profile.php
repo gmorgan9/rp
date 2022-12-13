@@ -24,7 +24,6 @@ if (isset($_POST['upload'])) {
     $db = mysqli_connect("localhost", "garrett", "BIGmorgan1999!", "cacheup");
  
     // Get all the submitted data from the form
-    $idno = $_SESSION['user_idno'];
     $sql = "UPDATE `users` SET `filename`= '$filename' WHERE `idno` = '".$_POST['idno']."'";
  
     // Execute query
@@ -32,10 +31,9 @@ if (isset($_POST['upload'])) {
  
     // Now let's move the uploaded image into the folder: image
     if (move_uploaded_file($tempname, $folder)) {
-        $msg = "Filename: " . $_FILES['file']['name']."<br>";
-        echo "<h3>  Image uploaded successfully!</h3>";
-    } else {
         $msg = "Filename: " . $_FILES['file']['name']."<br> <h3>  Failed to upload image!</h3>";
+    } else {
+        $msg = "Filename: " . $filename."<br> <h3>  Failed to upload image!</h3>";
     }
 }
 
