@@ -131,10 +131,16 @@ if (mysqli_num_rows($result) > 0) {
 
 
         </div>
-        <div>
-            <label>First Name</label>
-            <input class="form-control" type="hidden" name="idno" value="<?php echo $row['idno']; ?>">
-            <input class="form-control" style="width: 99%;" type="text" name="title" value="<?php echo $row['firstname']; ?>">
+        <div class="d-flex">
+            <div>
+                <label>First Name</label>
+                <input class="form-control" type="hidden" name="idno" value="<?php echo $row['idno']; ?>">
+                <input class="form-control" style="width: 45%;" type="text" name="title" value="<?php echo $row['firstname']; ?>">
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input class="form-control" style="width: 45%;" type="text" name="title" value="<?php echo $row['lastname']; ?>">
+            </div>
         </div>
         <div class="pt-3"></div>
         <div>
@@ -145,12 +151,6 @@ if (mysqli_num_rows($result) > 0) {
                 <option value="female">Female</option>
             </select>
         </div>
-        <div class="pt-3"></div>
-        <div>
-            <label>Tags</label>
-            <input class="form-control" style="width: 99%;" type="text" name="tags" value="<?php echo $row['tags']; ?>">
-        </div>
-        <br>
         <textarea name="profile_picture" id="content" style="width: 99%;"><?php echo $row['profile_picture']; ?></textarea>
         <br>
         <input type="submit" name="update" value="Update" class="btn btn-light btn-block"> &nbsp;
