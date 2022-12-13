@@ -111,6 +111,7 @@ if(isset($_POST['register'])){
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
       pre {
+        border-radius: 15px;
         background-color: pink;
       }
     </style>
