@@ -348,7 +348,8 @@ if (mysqli_num_rows($another) > 0) {
 
   <br>
 
-  <h4 class="text-center mb-2"><?php echo $author; ?></h4>
+  <h4 class="text-center"><?php echo $author; ?></h4>
+  <div class="pt-2"></div>
   <a
   class="text-center"
   style="background-color: #03c6fc; color: white; padding: 7px 10px; border-radius: 75px;"
@@ -356,8 +357,8 @@ if (mysqli_num_rows($another) > 0) {
   target="_blank"
   ><i class="bi bi-globe"></i
   ></a>
-  <p class="text-center mt-2">
-
+  <div class="pt-2"></div>
+  <p class="text-center">
   <?php
   $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
   $result=mysqli_query($conn,$sql);
