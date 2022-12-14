@@ -347,7 +347,8 @@ if (mysqli_num_rows($another) > 0) {
 
   <br>
 
-  <?php echo $author; ?>
+  <h3 class="text-center"><?php echo $author; ?></h3>
+  
 
   <br>
   <div class="top-hr d-flex">
