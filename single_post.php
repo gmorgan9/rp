@@ -344,7 +344,7 @@ if (mysqli_num_rows($another) > 0) {
   &nbsp;&nbsp;<hr style="width:45%;"> &nbsp;&nbsp; <img style="border: 1px solid #969696; border-radius: 100%; margin-top: -10px;" src="<?php echo $profile_picture; ?>" width="60px" height="60px" alt=""> &nbsp;&nbsp; <hr style="width:45%;">&nbsp;&nbsp;
   </div>
 
-  <hr>
+  <hr style="45%">
 
 
 <!-- END Author Box -->
