@@ -386,9 +386,9 @@ if (mysqli_num_rows($another) > 0) {
 
 <p class="text-muted">Your email address will not be published. Required fields are marked <span style="color: red;">*</span></p>
 <div class="d-flex">
-  <div class="form-group">
+  <div class="form-group w-50">
     <label for="name">Full Name <span style="color: red;">*</span></label>
-    <input type="text" id="name" class="form-control w-50">
+    <input type="text" id="name" class="form-control">
   </div> &nbsp;&nbsp;
     <input type="text" id="formWhite" class="form-control w-50" placeholder="Email *">
 </div>
