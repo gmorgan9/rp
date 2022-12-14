@@ -351,7 +351,7 @@ if (mysqli_num_rows($another) > 0) {
   <h4 class="text-center"><?php echo $author; ?></h4>
   <div class="pt-5"></div>
   <a
-  class="justify-content-center"
+  class="mx-auto"
   style="background-color: #03c6fc; color: white; padding: 7px 10px; border-radius: 75px;"
   href="https://resume.morganserver.com/"
   target="_blank"
