@@ -386,11 +386,10 @@ if (mysqli_num_rows($another) > 0) {
 
 <p class="text-muted">Your email address will not be published. Required fields are marked *</p>
 <div class="d-flex">
-  <input class="form-control" type="text">
-  <br>
-  <input class="form-control" type="text">
-  <br>
+  <input class="form-control w-75" type="text">
+  <input class="form-control w-75" type="text">
 </div>
+<br>
 <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
 
 </form>
