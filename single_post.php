@@ -295,43 +295,26 @@ if (mysqli_num_rows($another) > 0) {
         <?php echo html_entity_decode($row['content']); ?>
     </p>
 
-    <br><br>
-<div class="top-hr d-flex">
-&nbsp;&nbsp;<hr style="width:45%;"> &nbsp;&nbsp; <img style="border: 1px solid #969696; border-radius: 100%; margin-top: -10px;" src="<?php echo $profile_picture; ?>" width="60px" height="60px" alt=""> &nbsp;&nbsp; <hr style="width:45%;">&nbsp;&nbsp;
-</div>
-
-<br><br>
-
-</div>
-
-<?php }} ?>
-
-<br><br>
-
-
-
-<!-- end blog posts -->
 
 <!-- TAGS -->
-  <div class="ms-5 tags">
-  <?php
-  $id = $_GET['id'];
-  $grab = "SELECT * FROM posts WHERE post_id = '$id' ";
-  $comma = mysqli_query($conn, $grab);
+    <div class="ms-5 tags">
+    <?php
+    $id = $_GET['id'];
+    $grab = "SELECT * FROM posts WHERE post_id = '$id' ";
+    $comma = mysqli_query($conn, $grab);
 
-  while($rows = mysqli_fetch_assoc($comma)) {
-     $mark = explode(',', $rows['tags']);//what will do here
-     foreach($mark as $out) {
-        echo "<div class='btn btn-outline-secondary'>"; 
-        echo "# " . $out;
-        echo "</div> &nbsp;";
-     }
-  }
+    while($rows = mysqli_fetch_assoc($comma)) {
+       $mark = explode(',', $rows['tags']);//what will do here
+       foreach($mark as $out) {
+          echo "<div class='btn btn-outline-secondary'>"; 
+          echo "# " . $out;
+          echo "</div> &nbsp;";
+       }
+    }
 
-  ?>
-  </div>
+    ?>
+    </div>
 <!-- END TAGS -->
-
 
 <!-- social links -->
   <br>
@@ -353,6 +336,25 @@ if (mysqli_num_rows($another) > 0) {
   </div>
 
 <!-- end social links -->
+
+
+
+    <br><br>
+<div class="top-hr d-flex">
+&nbsp;&nbsp;<hr style="width:45%;"> &nbsp;&nbsp; <img style="border: 1px solid #969696; border-radius: 100%; margin-top: -10px;" src="<?php echo $profile_picture; ?>" width="60px" height="60px" alt=""> &nbsp;&nbsp; <hr style="width:45%;">&nbsp;&nbsp;
+</div>
+
+<br><br>
+
+</div>
+
+<?php }} ?>
+
+
+
+
+<!-- end blog posts -->
+
 
 
     
