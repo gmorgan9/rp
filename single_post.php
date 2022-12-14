@@ -121,6 +121,9 @@ if(isset($_POST['register'])){
         border-color: #47a0c9 !important;
         background-color: #47a0c9 !important;
       }
+      .post-link:hover {
+        color: #47a0c9 !important;
+      }
       pre {
         color: white;
         padding: 10px;
@@ -371,8 +374,8 @@ if (mysqli_num_rows($another) > 0) {
   ><i class="bi bi-globe"></i
   ></a>
   </div>
-  <p class="text-center text-uppercase" style="color: #58c5f7; font-size: 12px; margin-top: 20px;">
-  <a class="" style="text-decoration: none;" href="!#">
+  <p class="text-center text-uppercase" style="font-size: 12px; margin-top: 20px;">
+  <a class="post-link" style="text-decoration: none; color: #58c5f7;" href="!#">
   <?php
   $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
   $result=mysqli_query($conn,$sql);
