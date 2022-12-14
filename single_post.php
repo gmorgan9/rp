@@ -114,6 +114,7 @@ if(isset($_POST['register'])){
         border-color: #58c5f7;
       }
       .btn:hover {
+        border-color: #47a0c9 !important;
         background-color: #47a0c9 !important;
       }
       pre {
