@@ -460,7 +460,7 @@ if (mysqli_num_rows($another) > 0) {
 </div>
 </div>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-carrot-up"></i></button>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-carot-up"></i></button>
 
 
 <script>
