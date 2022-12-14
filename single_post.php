@@ -388,7 +388,7 @@ if (mysqli_num_rows($another) > 0) {
 <div class="d-flex">
   <div class="form-group w-50">
     <label for="name">Full Name <span style="color: red;">*</span></label>
-    <input style="background-color: none !important;" type="text" id="name" class="form-control">
+    <input style="background-color: black !important;" type="text" id="name" class="form-control">
   </div> &nbsp;&nbsp;
   <div class="form-group w-50">
     <label for="email">Email <span style="color: red;">*</span></label>
