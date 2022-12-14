@@ -278,6 +278,7 @@ $another = mysqli_query($conn, $profile);
 if (mysqli_num_rows($another) > 0) {
    while($col = mysqli_fetch_assoc($another)) {
     $profile_picture  = $col['profile_picture'];
+    $author           = $col['username'];
 }}
 ?>
 
@@ -346,7 +347,7 @@ if (mysqli_num_rows($another) > 0) {
 
   <br>
 
-  <?php echo $username; ?>
+  <?php echo $author; ?>
 
   <br>
   <div class="top-hr d-flex">
