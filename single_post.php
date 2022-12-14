@@ -138,7 +138,7 @@ if(isset($_POST['register'])){
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
+  background-color: #58c5f7 !important; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -147,7 +147,7 @@ if(isset($_POST['register'])){
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #47a0c9 !important; /* Add a dark-grey background on hover */
 }
     </style>
 </head>
@@ -460,7 +460,7 @@ if (mysqli_num_rows($another) > 0) {
 </div>
 </div>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
 
 
 <script>
