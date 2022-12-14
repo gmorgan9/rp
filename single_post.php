@@ -113,7 +113,7 @@ if(isset($_POST['register'])){
       form-control:focus {
         border-color: #58c5f7;
       }
-      .com-btn:hover {
+      btn:hover {
         color: pink;
       }
       pre {
@@ -407,7 +407,7 @@ if (mysqli_num_rows($another) > 0) {
   <textarea style="background-color: #1f1f1f !important; border-color: #6e757c !important;" class="text-muted form-control" name="comment" id="comment" cols="30" rows="10"></textarea>
 </div>
 <br>
-<button style="background-color: #58c5f7; color: white; border-color: #58c5f7;" type="submit" class="com-btn btn btn-outline-secondary">Post Comment</button>
+<button style="background-color: #58c5f7; color: white; border-color: #58c5f7;" type="submit" class="btn btn-outline-secondary">Post Comment</button>
 
 </form>
 
