@@ -98,7 +98,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
     <form action="" method="POST">
-      <input class="form-control" style="width: 99%;" type="hiddent" name="author_idno" value="<?php echo $_SESSION['user_idno'];?>">
+      <input class="form-control" style="width: 99%;" type="hidden" name="author_idno" value="<?php echo $_SESSION['user_idno'];?>">
         <h3>
             New Post
         </h3>
