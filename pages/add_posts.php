@@ -20,6 +20,7 @@ if(isset($_POST['submit'])){
   $category = mysqli_real_escape_string($conn, $_POST['category']);
   $tags = mysqli_real_escape_string($conn, $_POST['tags']);
   $status = mysqli_real_escape_string($conn, $_POST['status']);
+  $author_idno = mysqli_real_escape_string($conn, $_POST['author_idno']);
 
 
   $select = " SELECT * FROM posts WHERE title = '$title'";
@@ -31,9 +32,9 @@ if(isset($_POST['submit'])){
      $error[] = 'title already exist!';
 
   }else {
-        $insert = "INSERT INTO posts (idno, title, content, author, category, tags) VALUES('$idno', '$title','$content','$author','$category', '$tags')";
+        $insert = "INSERT INTO posts (idno, title, content, author, author_idno category, tags) VALUES('$idno', '$title','$content','$author','$author_idno','$category', '$tags')";
         mysqli_query($conn, $insert);
-        // header('location:/');
+        header('location: all_posts.php');
      }
 
 };
@@ -97,6 +98,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
     <form action="" method="POST">
+      <input class="form-control" style="width: 99%;" type="text" name="author_idno" value="<?php echo $_SESSION['user_idno'];?>">
         <h3>
             New Post
         </h3>
