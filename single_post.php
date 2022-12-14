@@ -376,7 +376,7 @@ if (mysqli_num_rows($another) > 0) {
   $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
   $result=mysqli_query($conn,$sql);
   $rowtotal=mysqli_fetch_array($result); 
-  echo "Posts: $rowtotal[0]";
+  echo "<p style='background-color: #58c5f7; font-size: 12px;' class='text-uppercase'>Posts: $rowtotal[0]</p>";
   ?>
 
   </p>
