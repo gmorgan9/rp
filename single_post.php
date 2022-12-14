@@ -396,7 +396,10 @@ if (mysqli_num_rows($another) > 0) {
   </div>
 </div>
 <br>
-<textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+<div class="form-group">
+  <label for="comment">Comment <span style="color: red;">*</span></label>
+  <textarea class="form-control" name="comment" id="comment" cols="30" rows="10"></textarea>
+</div>
 
 </form>
 
