@@ -348,15 +348,15 @@ if (mysqli_num_rows($another) > 0) {
 
   <br>
 
-  <h4 class="text-center"><?php echo $author; ?></h4>
+  <h4 class="text-center mb-2"><?php echo $author; ?></h4>
   <a
-  class=""
+  class="text-center"
   style="background-color: #03c6fc; color: white; padding: 7px 10px; border-radius: 75px;"
   href="https://resume.morganserver.com/"
   target="_blank"
   ><i class="bi bi-globe"></i
   ></a>
-  <p class="text-center">
+  <p class="text-center mt-2">
 
   <?php
   $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
