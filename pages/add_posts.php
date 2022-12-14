@@ -22,9 +22,20 @@ if(isset($_POST['submit'])){
   $status = mysqli_real_escape_string($conn, $_POST['status']);
   $author_idno = mysqli_real_escape_string($conn, $_POST['author_idno']);
 
-  $insert = "INSERT INTO posts (idno, title, content, author, author_idno category, tags) VALUES('$idno', '$title','$content','$author','$author_idno','$category', '$tags')";
-  mysqli_query($conn, $insert);
-  header('location: all_posts.php');
+
+  $select = " SELECT * FROM posts WHERE title = '$title'";
+
+  $result = mysqli_query($conn, $select);
+
+  if(mysqli_num_rows($result) > 0){
+
+     $error[] = 'title already exist!';
+
+  }else {
+        $insert = "INSERT INTO posts (idno, title, content, author, author_idno category, tags) VALUES('$idno', '$title','$content','$author','$author_idno','$category', '$tags')";
+        mysqli_query($conn, $insert);
+        header('location: all_posts.php');
+     }
 
 };
 
