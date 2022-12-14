@@ -351,7 +351,7 @@ if (mysqli_num_rows($another) > 0) {
   <h4 class="text-center"><?php echo $author; ?></h4>
   <a
   class=""
-  style="background-color: #ac2bac; color: white; padding: 5px;"
+  style="background-color: #ac2bac; color: white; padding: 5px; border-radius: 50px;"
   href="#!"
   role="button"
   ><i class="bi bi-instagram"></i
