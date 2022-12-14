@@ -384,7 +384,7 @@ if (mysqli_num_rows($another) > 0) {
 <form action="">
 <h4>Leave a Comment</h4>
 
-<p class="text-muted">Your email address will not be published. Required fields are marked *</p>
+<p class="text-muted">Your email address will not be published. Required fields are marked <span style="color: red;">*</span></p>
 <div class="d-flex">
     <input type="text" id="formWhite" class="form-control w-50" placeholder="Name *"> &nbsp;&nbsp;
     <input type="text" id="formWhite" class="form-control w-50" placeholder="Email *">
