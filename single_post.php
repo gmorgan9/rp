@@ -142,7 +142,7 @@ if(isset($_POST['register'])){
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 7px 10px; /* Some padding */
-  border-radius: 15px; /* Rounded corners */
+  border-radius: 25px; /* Rounded corners */
   font-size: 14px; /* Increase font size */
 }
 
