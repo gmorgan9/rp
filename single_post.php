@@ -349,6 +349,13 @@ if (mysqli_num_rows($another) > 0) {
   <br>
 
   <h4 class="text-center"><?php echo $author; ?></h4>
+  <a
+  class="btn btn-primary btn-lg btn-floating"
+  style="background-color: #ac2bac;"
+  href="#!"
+  role="button"
+  ><i class="bi bi-instagram"></i
+  ></a>
   <p class="text-center">
 
   <?php
