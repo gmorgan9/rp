@@ -349,7 +349,7 @@ if (mysqli_num_rows($another) > 0) {
   <br>
 
   <h4 class="text-center"><?php echo $author; ?></h4>
-  <div class="pt-5"></div>
+  <div class="pt-3"></div>
 
   <div class="text-center">
   <a
@@ -361,7 +361,7 @@ if (mysqli_num_rows($another) > 0) {
   ></a>
   </div>
 
-  <div class="pt-5"></div>
+  <div class="pt-3"></div>
   <p class="text-center">
   <?php
   $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
