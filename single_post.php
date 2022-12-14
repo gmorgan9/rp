@@ -372,13 +372,14 @@ if (mysqli_num_rows($another) > 0) {
   ></a>
   </div>
   <p class="text-center text-uppercase" style="color: #58c5f7; font-size: 12px; margin-top: 20px;">
+  <a class="" style="text-decoration: none;" href="!#">
   <?php
   $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
   $result=mysqli_query($conn,$sql);
   $rowtotal=mysqli_fetch_array($result); 
   echo "Posts: $rowtotal[0]";
   ?>
-
+  </a>
   </p>
   
 
