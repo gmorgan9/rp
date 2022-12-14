@@ -301,6 +301,13 @@ if (mysqli_num_rows($another) > 0) {
 
 <br><br>
 
+<br><br>
+<div class="top-hr d-flex">
+&nbsp;&nbsp;<hr style="width:35%;"> &nbsp;&nbsp; <img style="border: 1px solid #969696; border-radius: 100%; margin-top: -10px;" src="<?php echo $profile_picture; ?>" width="60px" height="60px" alt=""> &nbsp;&nbsp; <hr style="width:35%;">&nbsp;&nbsp;
+</div>
+
+<br><br>
+
 <!-- end blog posts -->
 
 <!-- TAGS -->
@@ -345,12 +352,7 @@ if (mysqli_num_rows($another) > 0) {
 
 <!-- end social links -->
 
-<br><br>
-<div class="top-hr d-flex">
-&nbsp;&nbsp;<hr style="width:35%;"> &nbsp;&nbsp; <img style="border: 1px solid #969696; border-radius: 100%; margin-top: -10px;" src="<?php echo $profile_picture; ?>" width="60px" height="60px" alt=""> &nbsp;&nbsp; <hr style="width:35%;">&nbsp;&nbsp;
-</div>
 
-<br><br>
     
   </div>
 </div>
