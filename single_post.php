@@ -395,13 +395,13 @@ if (mysqli_num_rows($another) > 0) {
   </div> &nbsp;&nbsp;
   <div class="form-group w-50">
     <label for="email">Email <span style="color: red;">*</span></label>
-    <input type="text" id="email" class="form-control">
+    <input style="background-color: #1f1f1f !important; border-color: #6e757c !important;" type="text" id="email" class="text-muted form-control">
   </div>
 </div>
 <br>
 <div class="form-group">
   <label for="comment">Comment <span style="color: red;">*</span></label>
-  <textarea class="form-control" name="comment" id="comment" cols="30" rows="10"></textarea>
+  <textarea style="background-color: #1f1f1f !important; border-color: #6e757c !important;" class="text-muted form-control" name="comment" id="comment" cols="30" rows="10"></textarea>
 </div>
 <br>
 <button type="submit" class="btn btn-outline-secondary">Post Comment</button>
