@@ -360,7 +360,7 @@ if (mysqli_num_rows($another) > 0) {
   ><i class="bi bi-globe"></i
   ></a>
   </div>
-  <p class="text-center" style="margin-top: 10px;">
+  <p class="text-center" style="margin-top: 15px;">
   <?php
   $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
   $result=mysqli_query($conn,$sql);
