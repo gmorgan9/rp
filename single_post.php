@@ -390,7 +390,10 @@ if (mysqli_num_rows($another) > 0) {
     <label for="name">Full Name <span style="color: red;">*</span></label>
     <input type="text" id="name" class="form-control">
   </div> &nbsp;&nbsp;
-    <input type="text" id="formWhite" class="form-control w-50" placeholder="Email *">
+  <div class="form-group w-50">
+    <label for="email">Email <span style="color: red;">*</span></label>
+    <input type="text" id="email" class="form-control">
+  </div>
 </div>
 <br>
 <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
