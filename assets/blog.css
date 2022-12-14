@@ -46,6 +46,14 @@ footer {
    background-color: #0082a6 !important;
  }
 
+ /* form */
+
+ .btn:hover {
+   background-color: pink;
+ }
+
+ /* end form */
+
 
 .page-header {
    height: 135px;
