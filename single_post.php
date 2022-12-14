@@ -400,8 +400,8 @@ if (mysqli_num_rows($another) > 0) {
   <label for="comment">Comment <span style="color: red;">*</span></label>
   <textarea class="form-control" name="comment" id="comment" cols="30" rows="10"></textarea>
 </div>
-
-<button type="submit" class="btn btn-outline">Post Comment</button>
+<br>
+<button type="submit" class="btn btn-outline-secondary">Post Comment</button>
 
 </form>
 
