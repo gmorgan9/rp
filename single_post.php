@@ -113,7 +113,7 @@ if(isset($_POST['register'])){
       form-control:focus {
         border-color: #58c5f7;
       }
-      button:hover {
+      form button:hover {
         color: pink;
       }
       pre {
