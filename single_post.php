@@ -349,8 +349,8 @@ if (mysqli_num_rows($another) > 0) {
   <br>
 
   <h4 class="text-center"><?php echo $author; ?></h4>
-  <br><br>
-  <p>
+  <br>
+  <p class="text-center">
 
   <?php
   $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
