@@ -379,6 +379,23 @@ if (mysqli_num_rows($another) > 0) {
 
 <!-- END Author Box -->
 
+<!-- Comments -->
+
+<form action="">
+<h4>Leave a Comment</h4>
+
+<p>Your email address will not be published. Required fields are marked *</p>
+<input class="form-control" type="text">
+<input class="form-control" type="text">
+<textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+
+</form>
+
+
+
+
+<!-- End Comments -->
+
 </div>
 
 <?php }} ?>
