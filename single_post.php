@@ -111,7 +111,7 @@ if(isset($_POST['register'])){
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
       form-control:focus {
-        border-color: #03c6fc;
+        border-color: #58c5f7;
       }
       pre {
         color: white;
