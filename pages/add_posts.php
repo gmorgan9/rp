@@ -22,20 +22,9 @@ if(isset($_POST['submit'])){
   $status = mysqli_real_escape_string($conn, $_POST['status']);
   $author_idno = mysqli_real_escape_string($conn, $_POST['author_idno']);
 
-
-  $select = " SELECT * FROM posts WHERE title = '$title'";
-
-  $result = mysqli_query($conn, $select);
-
-  if(mysqli_num_rows($result) > 0){
-
-     $error[] = 'title already exist!';
-
-  }else {
-        $insert = "INSERT INTO posts (idno, title, content, author, author_idno category, tags) VALUES('$idno', '$title','$content','$author','$author_idno','$category', '$tags')";
-        mysqli_query($conn, $insert);
-        header('location: all_posts.php');
-     }
+  $insert = "INSERT INTO posts (idno, title, content, author, author_idno category, tags) VALUES('$idno', '$title','$content','$author','$author_idno','$category', '$tags')";
+  mysqli_query($conn, $insert);
+  header('location: all_posts.php');
 
 };
 
@@ -169,7 +158,7 @@ if (mysqli_num_rows($result) > 0) {
         <textarea name="content" id="content" style="width: 99%;"></textarea>
         <input type="hidden" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
         <br>
-        <input type="submit" name="update" value="Submit" class="btn btn-light btn-block"> &nbsp;
+        <input type="submit" name="submit" value="Submit" class="btn btn-light btn-block"> &nbsp;
         <button class="btn btn-dark btn-block" onclick="window.history.go(-1); return false;">Go Back</button>
     </form>
    
