@@ -138,6 +138,7 @@ if(isset($_POST['register'])){
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
+  font-weight: bold;
   background-color: #58c5f7 !important; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
