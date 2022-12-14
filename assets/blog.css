@@ -49,7 +49,7 @@ footer {
  /* form */
 
  .btn:hover {
-   background-color: pink;
+   background-color: pink !important;
  }
 
  /* end form */
