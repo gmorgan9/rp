@@ -349,7 +349,6 @@ if (mysqli_num_rows($another) > 0) {
   <br>
 
   <h4 class="text-center"><?php echo $author; ?></h4>
-  <br>
   <p class="text-center">
 
   <?php
