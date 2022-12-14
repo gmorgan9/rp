@@ -141,9 +141,9 @@ if(isset($_POST['register'])){
   background-color: #58c5f7 !important; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  padding: 7px 10px; /* Some padding */
+  border-radius: 15px; /* Rounded corners */
+  font-size: 14px; /* Increase font size */
 }
 
 #myBtn:hover {
