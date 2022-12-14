@@ -345,7 +345,7 @@ if (mysqli_num_rows($another) > 0) {
   </div>
 
   <div class="top-hr d-flex">
-  &nbsp;&nbsp;<hr style="width:90%;">&nbsp;&nbsp;
+  &nbsp;&nbsp;<hr style="width:98%;">&nbsp;&nbsp;
   </div>
 
 
