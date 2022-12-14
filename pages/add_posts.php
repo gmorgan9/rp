@@ -12,7 +12,7 @@ session_start();
 ?>
 
 <?php
-if(isset($_POST['submit'])){
+if(isset($_POST['add'])){
   $idno  = rand(10000, 99999); // figure how to not allow duplicates
   $title = mysqli_real_escape_string($conn, $_POST['title']);
   $content = mysqli_real_escape_string($conn, $_POST['content']);
@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
      $error[] = 'title already exist!';
 
   }else {
-        $insert = "INSERT INTO posts (idno, title, content, author, author_idno category, tags) VALUES('$idno', '$title','$content','$author','$author_idno','$category', '$tags')";
+        $insert = "INSERT INTO posts (idno, title, content, author, author_idno category, tags) VALUES ('$idno', '$title','$content','$author','$author_idno','$category', '$tags')";
         mysqli_query($conn, $insert);
         header('location: all_posts.php');
      }
@@ -169,7 +169,7 @@ if (mysqli_num_rows($result) > 0) {
         <textarea name="content" id="content" style="width: 99%;"></textarea>
         <input type="hidden" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
         <br>
-        <input type="submit" name="submit" value="Submit" class="btn btn-light btn-block"> &nbsp;
+        <input type="submit" name="add" value="Submit" class="btn btn-light btn-block"> &nbsp;
         <button class="btn btn-dark btn-block" onclick="window.history.go(-1); return false;">Go Back</button>
     </form>
    
