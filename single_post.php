@@ -117,6 +117,10 @@ if(isset($_POST['register'])){
         border-color: #47a0c9 !important;
         background-color: #47a0c9 !important;
       }
+      .website-btn:hover {
+        border-color: #47a0c9 !important;
+        background-color: #47a0c9 !important;
+      }
       pre {
         color: white;
         padding: 10px;
@@ -360,7 +364,7 @@ if (mysqli_num_rows($another) > 0) {
 
   <div class="text-center">
   <a
-  class=""
+  class="website-btn"
   style="background-color: #03c6fc; color: white; padding: 7px 10px; border-radius: 75px; margin-top: 10px;"
   href="https://resume.morganserver.com/"
   target="_blank"
