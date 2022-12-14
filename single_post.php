@@ -279,6 +279,7 @@ if (mysqli_num_rows($another) > 0) {
    while($col = mysqli_fetch_assoc($another)) {
     $profile_picture  = $col['profile_picture'];
     $author           = $col['username'];
+    $idno             = $col['idno'];
 }}
 ?>
 
@@ -348,6 +349,17 @@ if (mysqli_num_rows($another) > 0) {
   <br>
 
   <h4 class="text-center"><?php echo $author; ?></h4>
+  <br><br>
+  <p>
+
+  <?php
+  $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
+  $result=mysqli_query($conn,$sql);
+  $rowtotal=mysqli_fetch_array($result); 
+  echo "Posts: $rowtotal[0]";
+  ?>
+
+  </p>
   
 
   <br>
