@@ -524,7 +524,7 @@ if (mysqli_num_rows($result) > 0) {
           </div>
         </div>
         <div class="row">
-          <div class="col-6">
+          <div class="col">
             <p class="text-muted row-2"><?php echo $option['content']; ?></p>
           </div>
         </div>
