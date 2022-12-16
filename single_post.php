@@ -462,16 +462,19 @@ if (mysqli_num_rows($result) > 0) {
 
   <!-- Display Comments -->
     <hr>
+    <h4># Comments</h4>
+    <hr>
     <?php
-      $select = " SELECT * FROM comments WHERE post_idno = '$post_idno' ";
-      $result = mysqli_query($conn, $select);
-      if (mysqli_num_rows($result) > 0) {
-         while($row = mysqli_fetch_assoc($result)) {
-          $name    = $row['name'];
-      }}
+      $query ="SELECT * FROM comments WHERE post_idno = '$post_idno'";
+      $result = $conn->query($query);
+      if($result->num_rows> 0){
+        $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+      }
     ?>
     
-    <h4><?php echo $name; ?></h4>
+    <?php foreach ($options as $option) { ?>
+      <h5><?php echo $option['name']; ?></h5>
+  <?php } ?>
 
 
   <!-- END Display Comments -->
