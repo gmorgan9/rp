@@ -129,7 +129,7 @@ session_start();
         padding: 0px 5px;
         font-size: 12px;
       }
-      .reply:hover {
+      .reply {
         cursor: pointer;
         height: 20px !important;
         padding: 0px 5px !important;
