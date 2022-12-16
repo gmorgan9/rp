@@ -82,7 +82,7 @@ if (mysqli_num_rows($result) > 0) {
 
                 <!-- COMMENTS -->
 
-				<a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #1f1f1f ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+				<!-- <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #1f1f1f ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 <span>  Comments<i class="bi bi-chevron-down" style="float: right;"></i></span>
                 </a>
 					<div  id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
@@ -92,7 +92,14 @@ if (mysqli_num_rows($result) > 0) {
 								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Categories</a></li>
 							</ul>
 						
-					</div>
+					</div> -->
+
+                    <span>
+                        <a href="<?php echo BASE_URL . '/pages/all_comments.php' ?>" style="background-color: #1f1f1f" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                        <span>  Comments</span>
+                        </a>
+                    </span>
+
 
                 <!-- END COMMENTS -->
 
