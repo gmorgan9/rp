@@ -131,11 +131,10 @@ session_start();
       }
       .reply {
         cursor: pointer;
-        height: 20px;
+        /* height: 20px; */
         padding: 0px 5px;
         font-size: 12px;
         text-decoration: none;
-        margin-top: -55px !important;
       }
       .website-btn:hover {
         border-color: #47a0c9 !important;
