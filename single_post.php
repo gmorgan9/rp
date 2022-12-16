@@ -126,7 +126,7 @@ session_start();
         cursor: pointer;
         border-radius: 5px;
         height: 20px;
-        padding: 5px 0px;
+        padding: 0px 5px;
         font-size: 12px;
       }
       .website-btn:hover {
