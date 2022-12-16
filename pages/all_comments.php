@@ -98,6 +98,7 @@ if (isset($_POST['draft'])) {
             $idno      = $row['idno'];
             $post_idno     = $row['post_idno'];
             $name = $row['name'];
+            $submit_date = $row['submit_date'];
             ?>
     <tr>
         <?php //if($_SESSION['empID'] != $row['employeeID']){ ?>
@@ -119,6 +120,7 @@ if (isset($_POST['draft'])) {
         <?php } ?>
         </td>
         <td style="background-color: #1a1a1a;"><?php echo $post_idno; ?></td>
+        <td style="background-color: #1a1a1a;"><?php echo date('F j, Y / g:i a', strtotime($submit_date));; ?></td>
         <td style="background-color: #1a1a1a;">
           <div class="d-flex">
             <a style="text-decoration: none; background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" href="actions/edit_post.php?id=<?php echo $post_id; ?>"><span class="badge text-bg-success">View</span></a>
