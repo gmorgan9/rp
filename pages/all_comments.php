@@ -107,7 +107,7 @@ if (isset($_POST['draft'])) {
         
         <td style="background-color: #1a1a1a;"><?php echo $post_idno; ?></td>
         <td style="background-color: #1a1a1a;"><?php echo date('F j, Y / g:i a', strtotime($submit_date));; ?></td>
-        <td style="background-color: #1a1a1a;">
+       
         <?php if($status == 'draft') { ?>
           <td style="background-color: #1a1a1a;">
         <form method="post" action="">
@@ -123,15 +123,16 @@ if (isset($_POST['draft'])) {
         </form>
         <?php } ?>
         </td>
-          <div class="d-flex">
+        
+          <!-- <div class="d-flex">
             <a style="text-decoration: none; background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" href="actions/edit_post.php?id=<?php echo $post_id; ?>"><span class="badge text-bg-success">View</span></a>
             &nbsp;
             <form method="post" action="">
-              <input type="hidden" name="post_id" value="<?php echo $post_id; ?>" />
+              <input type="hidden" name="post_id" value="<?php //echo $post_id; ?>" />
               <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="delete"><span class="badge text-bg-danger">Delete</span></button>
             </form>
-          </div>
-        </td>
+          </div> -->
+     
         <?php }}?>
   </tbody>
 </table>
