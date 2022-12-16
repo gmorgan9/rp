@@ -22,7 +22,7 @@ session_start();
 
     $insert = "INSERT INTO comments (idno, post_idno, parent_idno, name, email, content) VALUES ('$idno', '$post_idno', 'NULL', '$name','$email','$content')";
     mysqli_query($conn, $insert);
-    header('Location: ' . $_SERVER['HTTP_REFERER']);
+    //header('Location: ' . $_SERVER['HTTP_REFERER']);
   };
 
   ?>
