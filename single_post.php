@@ -422,28 +422,14 @@ if (mysqli_num_rows($result) > 0) {
   if(isset($_POST['post_com'])){
     $idno  = rand(10000, 99999); // figure how to not allow duplicates
     $post_idno = mysqli_real_escape_string($conn, $_POST['post_idno']);
+    $parent_idno = mysqli_real_escape_string($conn, $_POST['parent_idno']);
+    $name = mysqli_real_escape_string($conn, $_POST['name']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
     $content = mysqli_real_escape_string($conn, $_POST['content']);
-    $author = mysqli_real_escape_string($conn, $_POST['author']);
-    $category = mysqli_real_escape_string($conn, $_POST['category']);
-    $tags = mysqli_real_escape_string($conn, $_POST['tags']);
-    $status = mysqli_real_escape_string($conn, $_POST['status']);
-    $author_idno = mysqli_real_escape_string($conn, $_POST['author_idno']);
 
-
-    $select = " SELECT * FROM posts WHERE title = '$title'";
-
-    $result = mysqli_query($conn, $select);
-
-    if(mysqli_num_rows($result) > 0){
-
-       $error[] = 'title already exist!';
-
-    }else {
-          $insert = "INSERT INTO posts (idno, title, content, author, author_idno, category, tags) VALUES ('$idno', '$title','$content','$author','$author_idno','$category', '$tags')";
-          mysqli_query($conn, $insert);
-          header('location: all_posts.php');
-       }
-
+    $insert = "INSERT INTO comments (idno, post_idno, name, email, content) VALUES ('$idno', '$post_idno','$name','$email','$content')";
+    mysqli_query($conn, $insert);
+    // header('location: all_posts.php');
   };
 
   ?>
@@ -452,7 +438,7 @@ if (mysqli_num_rows($result) > 0) {
 
     <form action="">
     <h4>Leave a Comment</h4>
-    <input type="text" id="post_idno" value="<?php echo $post_idno; ?>" class="text-muted form-control">
+    <input type="hidden" id="post_idno" value="<?php echo $post_idno; ?>" class="text-muted form-control">
     <p class="text-muted" style="font-size: 12px;">Your email address will not be published. Required fields are marked <span style="color: red;">*</span></p>
     <div class="d-flex">
       <div class="form-group w-50">
@@ -467,7 +453,7 @@ if (mysqli_num_rows($result) > 0) {
     <br>
     <div class="form-group">
       <label for="comment">Comment <span style="color: red;">*</span></label>
-      <textarea style="background-color: #1f1f1f !important; border-color: #6e757c !important;" class="text-muted form-control" name="comment" id="comment" cols="30" rows="10"></textarea>
+      <textarea style="background-color: #1f1f1f !important; border-color: #6e757c !important;" class="text-muted form-control" name="content" id="comment" cols="30" rows="10"></textarea>
     </div>
     <br>
     <button style="background-color: #58c5f7; color: white; border-color: #58c5f7;" name="post_com" type="submit" class="com-btn btn btn-outline-secondary">Post Comment</button>
