@@ -113,14 +113,14 @@ if (isset($_POST['unapprove'])) {
           <td style="background-color: #1a1a1a;">
         <form method="post" action="">
           <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
-          <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="approve"><span class="badge text-bg-success">Approved</span></button>
+          <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="approve"><span class="badge text-bg-success">Approve</span></button>
         </form>
         </td>
         <?php } else { ?>
           <td style="background-color: #1a1a1a;">
         <form method="post" action="">
           <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
-          <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="unapprove"><span class="badge text-bg-warning">Unapproved</span></button>
+          <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="unapprove"><span class="badge text-bg-warning">Unapprove</span></button>
         </form>
         <?php } ?>
         </td>
