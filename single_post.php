@@ -460,6 +460,22 @@ if (mysqli_num_rows($result) > 0) {
     </form>
   <!-- End Comments -->
 
+  <!-- Display Comments -->
+    <hr>
+    <?php
+      $select = " SELECT * FROM comments WHERE post_idno = '$post_idno' ";
+      $result = mysqli_query($conn, $select);
+      if (mysqli_num_rows($result) > 0) {
+         while($row = mysqli_fetch_assoc($result)) {
+          $name    = $row['name'];
+      }}
+    ?>
+    
+    <h4><?php echo $name; ?></h4>
+
+
+  <!-- END Display Comments -->
+
   </div>
 
   <?php }} ?>
