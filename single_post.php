@@ -520,7 +520,7 @@ if (mysqli_num_rows($result) > 0) {
             &nbsp;&nbsp;
           </div>
           <div class="col">
-            <a class="reply text-muted margin-top:-5px;" href="#">Reply</a>
+            <a class="reply text-muted margin-top:-10px;" href="#">Reply</a>
           </div>
         </div>
         <div class="row">
