@@ -477,7 +477,9 @@ if (mysqli_num_rows($result) > 0) {
   <!-- End Comments -->
 
   <!-- Display Comments -->
-  <br>
+    <br>
+    <hr>
+    <br>
     <h4>
       <?php
       $sql="SELECT count('1') FROM comments WHERE post_idno = '$post_idno' AND status = '1'";
