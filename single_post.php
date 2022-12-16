@@ -511,7 +511,7 @@ if (mysqli_num_rows($result) > 0) {
       <br>
       <div class="container blog-comment ms-5 d-flex">
         <div class="row">
-          <div class="col">
+          <div class="col-5">
             <h5><?php echo $option['name']; ?></h5>
           </div>
           <div class="col" style="">
@@ -523,7 +523,7 @@ if (mysqli_num_rows($result) > 0) {
           </div>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-6">
             <p class="text-muted row-2"><?php echo $option['content']; ?></p>
           </div>
         </div>
