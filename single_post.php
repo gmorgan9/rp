@@ -124,6 +124,7 @@ session_start();
         background-color: #58c5f7 !important;
         color: white;
         cursor: pointer;
+        border-radius: 5px;
       }
       .website-btn:hover {
         border-color: #47a0c9 !important;
