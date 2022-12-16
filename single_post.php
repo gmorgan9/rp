@@ -474,7 +474,7 @@ if (mysqli_num_rows($result) > 0) {
     <br>
     <hr>
     <?php
-      $query ="SELECT * FROM comments WHERE post_idno = '$post_idno'";
+      $query ="SELECT * FROM comments WHERE post_idno = '$post_idno' AND status = '1'";
       $result = $conn->query($query);
       if($result->num_rows> 0){
         $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
