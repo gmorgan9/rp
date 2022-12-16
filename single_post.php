@@ -11,6 +11,22 @@ session_start();
 
 ?>
 
+<?php
+  if(isset($_POST['post_com'])){
+    $idno  = rand(10000, 99999); // figure how to not allow duplicates
+    $post_idno = mysqli_real_escape_string($conn, $_POST['post_idno']);
+    $parent_idno = mysqli_real_escape_string($conn, $_POST['parent_idno']);
+    $name = mysqli_real_escape_string($conn, $_POST['name']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $content = mysqli_real_escape_string($conn, $_POST['content']);
+
+    $insert = "INSERT INTO comments (idno, post_idno, name, email, content) VALUES ('$idno', '$post_idno','$name','$email','$content')";
+    mysqli_query($conn, $insert);
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
+  };
+
+  ?>
+
 
 <!-- Login Script -->
   <?php
@@ -418,21 +434,7 @@ if (mysqli_num_rows($result) > 0) {
 
   <!-- Comments -->
 
-  <?php
-  if(isset($_POST['post_com'])){
-    $idno  = rand(10000, 99999); // figure how to not allow duplicates
-    $post_idno = mysqli_real_escape_string($conn, $_POST['post_idno']);
-    $parent_idno = mysqli_real_escape_string($conn, $_POST['parent_idno']);
-    $name = mysqli_real_escape_string($conn, $_POST['name']);
-    $email = mysqli_real_escape_string($conn, $_POST['email']);
-    $content = mysqli_real_escape_string($conn, $_POST['content']);
-
-    $insert = "INSERT INTO comments (idno, post_idno, name, email, content) VALUES ('$idno', '$post_idno','$name','$email','$content')";
-    mysqli_query($conn, $insert);
-    header('Location: ' . $_SERVER['HTTP_REFERER']);
-  };
-
-  ?>
+  
 
 
 
