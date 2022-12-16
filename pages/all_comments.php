@@ -99,6 +99,7 @@ if (isset($_POST['unapprove'])) {
             $post_idno     = $row['post_idno'];
             $name = $row['name'];
             $submit_date = $row['submit_date'];
+            $status = $row['status'];
             ?>
     <tr>
         <?php //if($_SESSION['empID'] != $row['employeeID']){ ?>
