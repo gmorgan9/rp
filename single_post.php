@@ -438,7 +438,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-    <form action="">
+    <form action="" method="POST">
     <h4>Leave a Comment</h4>
     <input type="hidden" id="post_idno" value="<?php echo $post_idno; ?>" class="text-muted form-control">
     <p class="text-muted" style="font-size: 12px;">Your email address will not be published. Required fields are marked <span style="color: red;">*</span></p>
