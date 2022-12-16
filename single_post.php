@@ -483,6 +483,9 @@ if (mysqli_num_rows($result) > 0) {
       if($result->num_rows> 0){
         $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
       }
+
+      $date = date('d-m-Y', strtotime($submit_date));
+
     ?>
     
     <?php foreach ($options as $option) { ?>
@@ -491,7 +494,7 @@ if (mysqli_num_rows($result) > 0) {
         <h5><?php echo $option['name']; ?></h5>
         <p class="text-muted"><?php echo $option['content']; ?></p>
         <div class="right-content d-flex justify-content-end" style="margin-top: -70px;">
-          <p style="font-size: 12px;"><?php echo $option['submit_date']; ?></p>
+          <p style="font-size: 12px;"><?php echo $option['$date']; ?></p>
         </div>
       </div>
       <br>
