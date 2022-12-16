@@ -469,7 +469,7 @@ if (mysqli_num_rows($result) > 0) {
       $result=mysqli_query($conn,$sql);
       $rowtotal=mysqli_fetch_array($result);
       if($rowtotal = 1) {
-        echo "$rowtotal[0] Comment";
+        echo "1 Comment";
       } else {
         echo "$rowtotal[0] Comments";
       }
