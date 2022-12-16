@@ -429,7 +429,7 @@ if (mysqli_num_rows($result) > 0) {
 
     $insert = "INSERT INTO comments (idno, post_idno, name, email, content) VALUES ('$idno', '$post_idno','$name','$email','$content')";
     mysqli_query($conn, $insert);
-    // header('location: all_posts.php');
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
   };
 
   ?>
