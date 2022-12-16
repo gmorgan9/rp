@@ -20,9 +20,20 @@ session_start();
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $content = mysqli_real_escape_string($conn, $_POST['content']);
 
+    $select = " SELECT * FROM comments WHERE idno = '$idno'";
+
+  $result = mysqli_query($conn, $select);
+
+  if(mysqli_num_rows($result) > 0){
+
+     $error[] = 'title already exist!';
+
+  }else {
+
     $insert = "INSERT INTO comments (idno, post_idno, parent_idno, name, email, content) VALUES ('$idno', '$post_idno', 'NULL', '$name','$email','$content')";
     mysqli_query($conn, $insert);
     header('Location: ' . $_SERVER['HTTP_REFERER']);
+  }
   };
 
   ?>
