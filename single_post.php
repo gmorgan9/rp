@@ -520,7 +520,6 @@ if (mysqli_num_rows($result) > 0) {
             <a class="reply text-muted" href="#">Reply</a>
           </div>
         </div>
-        <div class="mt-3"></div>
         <div class="row">
           <p class="text-muted row-2"><?php echo $option['content']; ?></p>
         </div>
