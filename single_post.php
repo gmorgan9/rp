@@ -488,13 +488,15 @@ if (mysqli_num_rows($result) > 0) {
 
     ?>
     
-    <?php foreach ($options as $option) { ?>
+    <?php foreach ($options as $option) { 
+      $date = date('d-m-Y', strtotime($submit_date));?>
+      
       <br>
       <div class="blog-comment ms-5">
         <h5><?php echo $option['name']; ?></h5>
         <p class="text-muted"><?php echo $option['content']; ?></p>
         <div class="right-content d-flex justify-content-end" style="margin-top: -70px;">
-          <p style="font-size: 12px;"><?php echo $option['$date']; ?></p>
+          <p style="font-size: 12px;"><?php echo $date; ?></p>
         </div>
       </div>
       <br>
