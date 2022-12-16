@@ -104,6 +104,10 @@ if (isset($_POST['draft'])) {
         <?php //if($_SESSION['empID'] != $row['employeeID']){ ?>
         <th style="background-color: #1a1a1a;" scope="row"><?php echo $idno; ?></th>
         <td style="background-color: #1a1a1a;"><?php echo $name; ?></td>
+        
+        <td style="background-color: #1a1a1a;"><?php echo $post_idno; ?></td>
+        <td style="background-color: #1a1a1a;"><?php echo date('F j, Y / g:i a', strtotime($submit_date));; ?></td>
+        <td style="background-color: #1a1a1a;">
         <?php if($status == 'draft') { ?>
           <td style="background-color: #1a1a1a;">
         <form method="post" action="">
@@ -119,9 +123,6 @@ if (isset($_POST['draft'])) {
         </form>
         <?php } ?>
         </td>
-        <td style="background-color: #1a1a1a;"><?php echo $post_idno; ?></td>
-        <td style="background-color: #1a1a1a;"><?php echo date('F j, Y / g:i a', strtotime($submit_date));; ?></td>
-        <td style="background-color: #1a1a1a;">
           <div class="d-flex">
             <a style="text-decoration: none; background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" href="actions/edit_post.php?id=<?php echo $post_id; ?>"><span class="badge text-bg-success">View</span></a>
             &nbsp;
