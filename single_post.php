@@ -131,9 +131,9 @@ session_start();
       }
       .reply:hover {
         cursor: pointer;
-        height: 20px;
-        padding: 0px 5px;
-        font-size: 12px;
+        height: 20px !important;
+        padding: 0px 5px !important;
+        font-size: 12px !important;
       }
       .website-btn:hover {
         border-color: #47a0c9 !important;
