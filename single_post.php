@@ -432,8 +432,52 @@ if (mysqli_num_rows($result) > 0) {
 
   <!-- END Author Box -->
 
-  <!-- Display Comments -->
+  <!-- Comments -->
+
+    <?php
+    if(isset($_POST['post'])){
+      $idno  = rand(10000, 99999); // figure how to not allow duplicates
+      $post_idno = mysqli_real_escape_string($conn, $_POST['post_idno']);
+      $parent_idno = mysqli_real_escape_string($conn, $_POST['parent_idno']);
+      $name = mysqli_real_escape_string($conn, $_POST['name']);
+      $email = mysqli_real_escape_string($conn, $_POST['email']);
+      $content = mysqli_real_escape_string($conn, $_POST['content']);
+
+      $insert = "INSERT INTO `comments`(`idno`, `post_idno`,`name`, `email`, `content`) VALUES ('$idno','$post_idno','$name','$email','$content');";
+      mysqli_query($conn, $insert);
+      header('Location: ' . $_SERVER['HTTP_REFERER']);
+    };
+
+    ?>
+
+    <form action="" method="POST">
+    <h4>Leave a Comment</h4>
+    <input type="hidden" name="post_idno" value="<?php echo $post_idno; ?>" class="text-muted form-control">
+    <p class="text-muted" style="font-size: 12px;">Your email address will not be published. Required fields are marked <span style="color: red;">*</span></p>
+    <div class="d-flex">
+      <div class="form-group w-50">
+        <label for="name">Full Name <span style="color: red;">*</span></label>
+        <input style="background-color: #1f1f1f !important; border-color: #6e757c !important;" name="name" type="text" id="name" class="text-muted form-control">
+      </div> &nbsp;&nbsp;
+      <div class="form-group w-50">
+        <label for="email">Email <span style="color: red;">*</span></label>
+        <input style="background-color: #1f1f1f !important; border-color: #6e757c !important;" type="text" name="email" id="email" class="text-muted form-control">
+      </div>
+    </div>
     <br>
+    <div class="form-group">
+      <label for="comment">Comment <span style="color: red;">*</span></label>
+      <textarea style="background-color: #1f1f1f !important; border-color: #6e757c !important;" class="text-muted form-control" name="content" id="comment" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <!-- <button style="background-color: #58c5f7; color: white; border-color: #58c5f7;" name="post" type="submit" class="com-btn btn btn-outline-secondary">Post Comment</button> -->
+    <input type="submit" name="post" value="Post Comment" style="background-color: #58c5f7; color: white; border-color: #58c5f7;" class="com-btn btn btn-outline-secondary">
+
+    </form>
+  <!-- End Comments -->
+
+  <!-- Display Comments -->
+  <br>
     <h4>
       <?php
       $sql="SELECT count('1') FROM comments WHERE post_idno = '$post_idno' AND status = '1'";
@@ -481,50 +525,6 @@ if (mysqli_num_rows($result) > 0) {
 
 
   <!-- END Display Comments -->
-
-  <!-- Comments -->
-
-    <?php
-    if(isset($_POST['post'])){
-      $idno  = rand(10000, 99999); // figure how to not allow duplicates
-      $post_idno = mysqli_real_escape_string($conn, $_POST['post_idno']);
-      $parent_idno = mysqli_real_escape_string($conn, $_POST['parent_idno']);
-      $name = mysqli_real_escape_string($conn, $_POST['name']);
-      $email = mysqli_real_escape_string($conn, $_POST['email']);
-      $content = mysqli_real_escape_string($conn, $_POST['content']);
-
-      $insert = "INSERT INTO `comments`(`idno`, `post_idno`,`name`, `email`, `content`) VALUES ('$idno','$post_idno','$name','$email','$content');";
-      mysqli_query($conn, $insert);
-      header('Location: ' . $_SERVER['HTTP_REFERER']);
-    };
-
-    ?>
-
-    <form action="" method="POST">
-    <h4>Leave a Comment</h4>
-    <input type="hidden" name="post_idno" value="<?php echo $post_idno; ?>" class="text-muted form-control">
-    <p class="text-muted" style="font-size: 12px;">Your email address will not be published. Required fields are marked <span style="color: red;">*</span></p>
-    <div class="d-flex">
-      <div class="form-group w-50">
-        <label for="name">Full Name <span style="color: red;">*</span></label>
-        <input style="background-color: #1f1f1f !important; border-color: #6e757c !important;" name="name" type="text" id="name" class="text-muted form-control">
-      </div> &nbsp;&nbsp;
-      <div class="form-group w-50">
-        <label for="email">Email <span style="color: red;">*</span></label>
-        <input style="background-color: #1f1f1f !important; border-color: #6e757c !important;" type="text" name="email" id="email" class="text-muted form-control">
-      </div>
-    </div>
-    <br>
-    <div class="form-group">
-      <label for="comment">Comment <span style="color: red;">*</span></label>
-      <textarea style="background-color: #1f1f1f !important; border-color: #6e757c !important;" class="text-muted form-control" name="content" id="comment" cols="30" rows="10"></textarea>
-    </div>
-    <br>
-    <!-- <button style="background-color: #58c5f7; color: white; border-color: #58c5f7;" name="post" type="submit" class="com-btn btn btn-outline-secondary">Post Comment</button> -->
-    <input type="submit" name="post" value="Post Comment" style="background-color: #58c5f7; color: white; border-color: #58c5f7;" class="com-btn btn btn-outline-secondary">
-
-    </form>
-  <!-- End Comments -->
 
 
   </div>
