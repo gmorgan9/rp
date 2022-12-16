@@ -106,7 +106,7 @@ if (isset($_POST['unapprove'])) {
         <th style="background-color: #1a1a1a;" scope="row"><?php echo $idno; ?></th>
         <td style="background-color: #1a1a1a;"><?php echo $name; ?></td>
         
-        <td style="background-color: #1a1a1a;"><?php echo $post_idno; ?></td>
+        <td style="background-color: #1a1a1a;"><a href="single_post.php?id=<?php echo $post_id; ?>"><?php echo $post_idno; ?></a></td>
         <td style="background-color: #1a1a1a;"><?php echo date('F j, Y / g:i a', strtotime($submit_date));; ?></td>
        
         <?php if($status == 0) { ?>
