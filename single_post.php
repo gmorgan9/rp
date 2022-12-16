@@ -510,7 +510,7 @@ if (mysqli_num_rows($result) > 0) {
       
       <br>
 
-      <div class="container">
+      <div class="container ms-3">
         <div class="row">
           <div class="col-8">
             <h5><?php echo $option['name']; ?></h5>
@@ -519,7 +519,7 @@ if (mysqli_num_rows($result) > 0) {
             <p class="text-muted" style="font-size: 12px;"><?php echo date('F j, Y / g:i a', strtotime($option['submit_date'])); ?></p>
             &nbsp;&nbsp;
           </div>
-          <div class="col-2">
+          <div class="col">
             <a class="reply text-muted" href="#">Reply</a>
           </div>
         </div>
