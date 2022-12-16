@@ -474,7 +474,7 @@ if (mysqli_num_rows($result) > 0) {
         </div>
       </div>
       <br>
-      <hr>
+      <hr style="margin-bottom: -95px;">
 
     <?php } ?>
 
