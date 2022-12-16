@@ -519,7 +519,7 @@ if (mysqli_num_rows($result) > 0) {
             <p class="text-muted" style="font-size: 12px;"><?php echo date('F j, Y / g:i a', strtotime($option['submit_date'])); ?></p>
             &nbsp;&nbsp;
           </div>
-          <div class="col" style="margin-top: -5px;">
+          <div class="col" style="margin-top: -3px;">
             <a class="reply text-muted" href="#">Reply</a>
           </div>
         </div>
