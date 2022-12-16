@@ -17,27 +17,27 @@ date_default_timezone_set('America/Denver');
 $date = date('F d, Y', time());
 
 
-if (isset($_POST['published'])) {
-  $appUpdateQuery = "UPDATE posts SET status = 'published', published_at = '$date' WHERE post_id = '".$_POST['post_id']."'";
+if (isset($_POST['approve'])) {
+  $appUpdateQuery = "UPDATE comments SET status = '1' WHERE comment_id = '".$_POST['comment_id']."'";
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
-  header('location: all_posts.php');
+  header('location: all_comments.php');
 }
 ?>
 
 <?php
-if (isset($_POST['draft'])) {
-  $appUpdateQuery = "UPDATE posts SET status = 'draft', published_at = null WHERE post_id = '".$_POST['post_id']."'";
+if (isset($_POST['unapprove'])) {
+  $appUpdateQuery = "UPDATE comments SET status = '0' WHERE comment_id = '".$_POST['comment_id']."'";
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
-  header('location: all_posts.php');
+  header('location: all_comments.php');
 }
 ?>
 
 <?php 
 // START DELETE
   if (isset($_POST['delete'])) {
-    $delete = "DELETE FROM posts WHERE post_id = '".$_POST['post_id']."'";
+    $delete = "DELETE FROM comments WHERE comment_id = '".$_POST['comment_id']."'";
     $terUpdateResult = mysqli_query($conn, $delete);
-    header('location: all_posts.php');
+    header('location: all_comments.php');
   }
 // END DELETE
 
@@ -111,15 +111,15 @@ if (isset($_POST['draft'])) {
         <?php if($status == 'draft') { ?>
           <td style="background-color: #1a1a1a;">
         <form method="post" action="">
-          <input type="hidden" name="post_id" value="<?php echo $post_id; ?>" />
-          <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="published"><span class="badge text-bg-success">Publish</span></button>
+          <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
+          <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="approve"><span class="badge text-bg-success">Approved</span></button>
         </form>
         </td>
         <?php } else { ?>
           <td style="background-color: #1a1a1a;">
         <form method="post" action="">
-          <input type="hidden" name="post_id" value="<?php echo $post_id; ?>" />
-          <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="draft"><span class="badge text-bg-primary">Draft</span></button>
+          <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
+          <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="unapprove"><span class="badge text-bg-warning">Unapproved</span></button>
         </form>
         <?php } ?>
         </td>
