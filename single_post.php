@@ -121,14 +121,9 @@ session_start();
         background-color: #47a0c9 !important;
       }
       .reply {
-        border: none;
-        outline: none;
         background-color: #58c5f7 !important;
         color: white;
         cursor: pointer;
-        padding: 7px 10px;
-        border-radius: 25px;
-        font-size: 14px;
       }
       .website-btn:hover {
         border-color: #47a0c9 !important;
