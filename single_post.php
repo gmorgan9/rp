@@ -490,7 +490,7 @@ if (mysqli_num_rows($result) > 0) {
       <div class="blog-comment ms-5">
         <h5><?php echo $option['name']; ?></h5>
         <p class="text-muted"><?php echo $option['content']; ?></p>
-        <div class="right-content d-flex justify-content-end">
+        <div class="right-content d-flex justify-content-end" style="margin-top: -25px;">
           <p class=""><?php echo $option['submit_date']; ?></p>
         </div>
       </div>
