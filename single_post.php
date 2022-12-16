@@ -20,7 +20,7 @@ session_start();
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $content = mysqli_real_escape_string($conn, $_POST['content']);
 
-    $insert = "INSERT INTO comments (idno, post_idno, name, email, content) VALUES ('$idno', '$post_idno','$name','$email','$content')";
+    $insert = "INSERT INTO comments (idno, post_idno, parent_idno, name, email, content) VALUES ('$idno', '$post_idno', 'NULL', '$name','$email','$content')";
     mysqli_query($conn, $insert);
     header('Location: ' . $_SERVER['HTTP_REFERER']);
   };
