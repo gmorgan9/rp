@@ -120,7 +120,7 @@ session_start();
         border-color: #47a0c9 !important;
         background-color: #47a0c9 !important;
       }
-      .reply {
+      .reply:hover {
         background-color: #58c5f7 !important;
         color: white;
         cursor: pointer;
