@@ -108,7 +108,7 @@ if (isset($_POST['unapprove'])) {
         <td style="background-color: #1a1a1a;"><?php echo $post_idno; ?></td>
         <td style="background-color: #1a1a1a;"><?php echo date('F j, Y / g:i a', strtotime($submit_date));; ?></td>
        
-        <?php if($status == '0') { ?>
+        <?php if($status == 0) { ?>
           <td style="background-color: #1a1a1a;">
         <form method="post" action="">
           <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
