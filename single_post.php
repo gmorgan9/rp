@@ -474,7 +474,7 @@ if (mysqli_num_rows($result) > 0) {
     
     <?php foreach ($options as $option) { ?>
       <h5><?php echo $option['name']; ?></h5>
-      <p><?php echo $option['content']; ?></p>
+      <p class="text-muted"><?php echo $option['content']; ?></p>
 
   <?php } ?>
 
