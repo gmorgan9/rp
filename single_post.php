@@ -473,7 +473,7 @@ if (mysqli_num_rows($result) > 0) {
     ?>
     
     <?php foreach ($options as $option) { ?>
-      <h6><?php echo $option['name']; ?></h6>
+      <h5><?php echo $option['name']; ?></h5>
       <p><?php echo $option['content']; ?></p>
 
   <?php } ?>
