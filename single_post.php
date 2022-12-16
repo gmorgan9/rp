@@ -12,7 +12,7 @@ session_start();
 ?>
 
 <?php
-  if(isset($_POST['post_com'])){
+  if(isset($_POST['post'])){
     $idno  = rand(10000, 99999); // figure how to not allow duplicates
     $post_idno = mysqli_real_escape_string($conn, $_POST['post_idno']);
     $parent_idno = mysqli_real_escape_string($conn, $_POST['parent_idno']);
@@ -20,20 +20,9 @@ session_start();
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $content = mysqli_real_escape_string($conn, $_POST['content']);
 
-    $select = " SELECT * FROM comments WHERE idno = '$idno'";
-
-  $result = mysqli_query($conn, $select);
-
-  if(mysqli_num_rows($result) > 0){
-
-     $error[] = 'title already exist!';
-
-  }else {
-
     $insert = "INSERT INTO comments (idno, post_idno, parent_idno, name, email, content) VALUES ('$idno', '$post_idno', 'NULL', '$name','$email','$content')";
     mysqli_query($conn, $insert);
     header('Location: ' . $_SERVER['HTTP_REFERER']);
-  }
   };
 
   ?>
@@ -469,7 +458,8 @@ if (mysqli_num_rows($result) > 0) {
       <textarea style="background-color: #1f1f1f !important; border-color: #6e757c !important;" class="text-muted form-control" name="content" id="comment" cols="30" rows="10"></textarea>
     </div>
     <br>
-    <button style="background-color: #58c5f7; color: white; border-color: #58c5f7;" name="post_com" type="submit" class="com-btn btn btn-outline-secondary">Post Comment</button>
+    <!-- <button style="background-color: #58c5f7; color: white; border-color: #58c5f7;" name="post" type="submit" class="com-btn btn btn-outline-secondary">Post Comment</button> -->
+    <input type="submit" name="post" value="Post Comment" style="background-color: #58c5f7; color: white; border-color: #58c5f7;" class="com-btn btn btn-outline-secondary">
 
     </form>
   <!-- End Comments -->
