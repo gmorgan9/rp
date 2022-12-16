@@ -122,7 +122,7 @@ session_start();
       }
       .reply:hover {
         background-color: #58c5f7 !important;
-        color: white;
+        color: white !important;
         cursor: pointer;
         border-radius: 5px;
         height: 20px;
@@ -131,9 +131,10 @@ session_start();
       }
       .reply {
         cursor: pointer;
-        height: 20px !important;
-        padding: 0px 5px !important;
-        font-size: 12px !important;
+        height: 20px;
+        padding: 0px 5px;
+        font-size: 12px;
+        text-decoration: none;
       }
       .website-btn:hover {
         border-color: #47a0c9 !important;
@@ -513,7 +514,7 @@ if (mysqli_num_rows($result) > 0) {
         <div class="right-content d-flex justify-content-end" style="margin-top: -70px;">
           <p class="text-muted" style="font-size: 12px;"><?php echo date('F j, Y / g:i a', strtotime($option['submit_date'])); ?></p>
           &nbsp;&nbsp;
-          <a style="text-decoration: none; font-size: 12px;" class="reply text-muted" href="#">Reply</a>
+          <a class="reply text-muted" href="#">Reply</a>
         </div>
       </div>
       <br>
