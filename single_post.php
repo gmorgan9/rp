@@ -125,7 +125,7 @@ session_start();
         color: white !important;
         cursor: pointer;
         border-radius: 5px;
-        height: 20px;
+        /* height: 20px; */
         padding: 0px 5px;
         font-size: 12px;
       }
