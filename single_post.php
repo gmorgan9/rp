@@ -509,7 +509,7 @@ if (mysqli_num_rows($result) > 0) {
       ?>
       
       <br>
-      <div class="blog-comment ms-5">
+      <div class="blog-comment ms-5 d-flex">
         <h5><?php echo $option['name']; ?></h5>
         <div class="mt-3"></div>
         <p class="text-muted"><?php echo $option['content']; ?></p>
