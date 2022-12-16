@@ -497,7 +497,7 @@ if (mysqli_num_rows($result) > 0) {
         <p class="text-muted"><?php echo $option['content']; ?></p>
         <div class="right-content d-flex justify-content-end" style="margin-top: -70px;">
           <p class="text-muted" style="font-size: 12px;"><?php echo date('F j, Y / g:i a', strtotime($option['submit_date'])); ?></p>
-          <span class="badge" style=""><a style="text-decoration: none;" href="#">Reply</a></span>
+          <span class="badge" style=""><a style="text-decoration: none;" class="text-muted" href="#">Reply</a></span>
         </div>
       </div>
       <br>
