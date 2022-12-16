@@ -466,7 +466,7 @@ if (mysqli_num_rows($result) > 0) {
       <div class="blog-comment ms-5">
         <h5><?php echo $option['name']; ?></h5>
         <p class="text-muted"><?php echo $option['content']; ?></p>
-        <div class="right-content d-flex justify-content-end" style="margin-top: -70px;">
+        <div class="right-content d-flex justify-content-end" style="margin-top: -80px;">
           <p class="text-muted" style="font-size: 12px;"><?php echo date('F j, Y / g:i a', strtotime($option['submit_date'])); ?></p>
           &nbsp;&nbsp;
           <a class="reply text-muted" href="#">Reply</a>
