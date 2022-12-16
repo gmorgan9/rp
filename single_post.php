@@ -462,7 +462,16 @@ if (mysqli_num_rows($result) > 0) {
 
   <!-- Display Comments -->
     <hr>
-    <h4># Comments</h4>
+    <br>
+    <h4>
+      <?php
+      $sql="SELECT count('1') FROM comments WHERE post_idno = '$post_idno' AND status = '1'";
+      $result=mysqli_query($conn,$sql);
+      $rowtotal=mysqli_fetch_array($result); 
+      echo "$rowtotal[0] Comments";
+      ?>
+    </h4>
+    <br>
     <hr>
     <?php
       $query ="SELECT * FROM comments WHERE post_idno = '$post_idno'";
