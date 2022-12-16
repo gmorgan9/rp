@@ -121,8 +121,6 @@ session_start();
         background-color: #47a0c9 !important;
       }
       .reply {
-        display: none;
-        position: fixed;
         bottom: 20px;
         right: 30px;
         z-index: 99;
