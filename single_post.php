@@ -440,16 +440,16 @@ if (mysqli_num_rows($result) > 0) {
 
     <form action="" method="POST">
     <h4>Leave a Comment</h4>
-    <input type="hidden" id="post_idno" value="<?php echo $post_idno; ?>" class="text-muted form-control">
+    <input type="hidden" name="post_idno" value="<?php echo $post_idno; ?>" class="text-muted form-control">
     <p class="text-muted" style="font-size: 12px;">Your email address will not be published. Required fields are marked <span style="color: red;">*</span></p>
     <div class="d-flex">
       <div class="form-group w-50">
         <label for="name">Full Name <span style="color: red;">*</span></label>
-        <input style="background-color: #1f1f1f !important; border-color: #6e757c !important;" type="text" id="name" class="text-muted form-control">
+        <input style="background-color: #1f1f1f !important; border-color: #6e757c !important;" name="name" type="text" id="name" class="text-muted form-control">
       </div> &nbsp;&nbsp;
       <div class="form-group w-50">
         <label for="email">Email <span style="color: red;">*</span></label>
-        <input style="background-color: #1f1f1f !important; border-color: #6e757c !important;" type="text" id="email" class="text-muted form-control">
+        <input style="background-color: #1f1f1f !important; border-color: #6e757c !important;" type="text" name="email" id="email" class="text-muted form-control">
       </div>
     </div>
     <br>
