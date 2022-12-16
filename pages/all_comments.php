@@ -57,7 +57,7 @@ if (isset($_POST['draft'])) {
 
     <link rel="stylesheet" href="../assets/styles.css?v=2.50">
 
-    <title>All Posts - CacheUp Blog</title>
+    <title>Comments - CacheUp Blog</title>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -72,7 +72,7 @@ if (isset($_POST['draft'])) {
         
 <div class="main">
     <div class="page-header mx-auto">
-        <p class="page_title">All Posts</p>
+        <p class="page_title">Comments</p>
     </div>
 
     <div class="main-content">
@@ -81,27 +81,28 @@ if (isset($_POST['draft'])) {
   <thead>
     <tr>
       <th style="background-color: #1a1a1a;" cope="col">ID #</th>
-      <th style="background-color: #1a1a1a;" scope="col">Title</th>
-      <th style="background-color: #1a1a1a;" scope="col">Status</th>
+      <th style="background-color: #1a1a1a;" scope="col">Author</th>
+      <th style="background-color: #1a1a1a;" scope="col">In response to</th>
+      <th style="background-color: #1a1a1a;" scope="col">Submitted</th>
       <th style="background-color: #1a1a1a;" scope="col">Actions</th>
     </tr>
   </thead>
   <tbody class="table-group-divider">
 
   <?php
-      $sql = "SELECT * FROM posts";
+      $sql = "SELECT * FROM comments";
       $all = mysqli_query($conn, $sql);
       if($all) {
           while ($row = mysqli_fetch_assoc($all)) {
-            $post_id     = $row['post_id'];
+            $comment_id     = $row['comment_id'];
             $idno      = $row['idno'];
-            $title     = $row['title'];
-            $status = $row['status'];
+            $post_idno     = $row['post_idno'];
+            $name = $row['name'];
             ?>
     <tr>
         <?php //if($_SESSION['empID'] != $row['employeeID']){ ?>
         <th style="background-color: #1a1a1a;" scope="row"><?php echo $idno; ?></th>
-        <td style="background-color: #1a1a1a;"><?php echo $title; ?></td>
+        <td style="background-color: #1a1a1a;"><?php echo $name; ?></td>
         <?php if($status == 'draft') { ?>
           <td style="background-color: #1a1a1a;">
         <form method="post" action="">
@@ -117,6 +118,7 @@ if (isset($_POST['draft'])) {
         </form>
         <?php } ?>
         </td>
+        <td style="background-color: #1a1a1a;"><?php echo $post_idno; ?></td>
         <td style="background-color: #1a1a1a;">
           <div class="d-flex">
             <a style="text-decoration: none; background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" href="actions/edit_post.php?id=<?php echo $post_id; ?>"><span class="badge text-bg-success">View</span></a>
