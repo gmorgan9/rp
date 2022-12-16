@@ -121,9 +121,6 @@ session_start();
         background-color: #47a0c9 !important;
       }
       .reply {
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
         border: none;
         outline: none;
         background-color: #58c5f7 !important;
