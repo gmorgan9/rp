@@ -129,6 +129,12 @@ session_start();
         padding: 0px 5px;
         font-size: 12px;
       }
+      .reply:hover {
+        cursor: pointer;
+        height: 20px;
+        padding: 0px 5px;
+        font-size: 12px;
+      }
       .website-btn:hover {
         border-color: #47a0c9 !important;
         background-color: #47a0c9 !important;
