@@ -512,7 +512,7 @@ if (mysqli_num_rows($result) > 0) {
 
       <div class="container">
         <div class="row">
-          <div class="col-5">
+          <div class="col-8">
             <h5><?php echo $option['name']; ?></h5>
           </div>
           <div class="col-xl" style="">
