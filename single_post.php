@@ -135,6 +135,7 @@ session_start();
         padding: 0px 5px;
         font-size: 12px;
         text-decoration: none;
+        margin-top: -15px !important;
       }
       .website-btn:hover {
         border-color: #47a0c9 !important;
@@ -520,7 +521,7 @@ if (mysqli_num_rows($result) > 0) {
             &nbsp;&nbsp;
           </div>
           <div class="col">
-            <a class="reply text-muted" style="margin-top:-20px !important;" href="#">Reply</a>
+            <a class="reply text-muted" href="#">Reply</a>
           </div>
         </div>
         <div class="row">
