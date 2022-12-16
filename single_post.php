@@ -433,7 +433,6 @@ if (mysqli_num_rows($result) > 0) {
   <!-- END Author Box -->
 
   <!-- Display Comments -->
-    <hr>
     <br>
     <h4>
       <?php
