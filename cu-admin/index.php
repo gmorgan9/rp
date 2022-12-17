@@ -107,7 +107,7 @@ if(isLoggedIn() == false){
   })
 </script>
 
-<script>
+<!-- <script>
   $(document).ready(function(){
     $('ul.nav li.dropdown').hover(function() {
       $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
@@ -115,7 +115,7 @@ if(isLoggedIn() == false){
       $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
     });  
 });
-</script>
+</script> -->
 
 
     <script src="../assets/js/dropdown.js"></script>
