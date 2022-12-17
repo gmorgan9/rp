@@ -10,6 +10,6 @@
         <a style="text-decoration: none; color: white" href="/"><i class="bi bi-plus"></i>New</a>
     </div>
     <div style="float: right !important;">
-        <a style="text-decoration: none; color: white" href="/"><i class="bi bi-plus"></i>New</a>
+        <a style="text-decoration: none; color: white" href="/"><i class="bi bi-plus"></i>Welcome, <?php echo $_SESSION['username']; ?></a>
     </div>
 </div>
