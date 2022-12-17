@@ -18,6 +18,8 @@
             }
             .login-form {
                 width: 320px;
+                margin-left: auto;
+                margin-right: auto;
             }
             .form {
                 margin-top: 20px;
@@ -29,7 +31,7 @@
 </head>
 <body>
 
-    <div class="login-form d-flex justify-content-center">
+    <div class="login-form">
         <h1 class="logo">
             <img src="assets/images/fav.png" width="84px" height="84px" alt="">
         </h1>
