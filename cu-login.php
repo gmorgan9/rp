@@ -56,7 +56,7 @@
                 <input type="submit" name="login" class="btn btn-primary" value="Log In">
             </div>
         </form>
-        <br><br>
+        <br>
         <div class="bottom-links">
             <p><a class="text-muted" style="text-decoration:none; font-size: 12px;" href="">Forgot password?</a></p>
             <p><a class="text-muted" style="text-decoration:none; font-size: 12px;" href="">← Go to CacheUp</a></p>
