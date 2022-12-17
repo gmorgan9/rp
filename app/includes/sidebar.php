@@ -56,9 +56,9 @@ if (mysqli_num_rows($result) > 0) {
                     <span>  Users</span>
                 </a>
 
-                <div class="dropdown" style="float:right;">
+                <div class="dropdown">
                     <button class="dropbtn">Right</button>
-                    <div class="dropdown-content">
+                    <div class="dropdown-content" style="float:right;">
                         <a href="#">Link 1</a>
                         <a href="#">Link 2</a>
                         <a href="#">Link 3</a>
