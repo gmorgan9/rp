@@ -54,8 +54,9 @@ if(isLoggedIn() == false){
   background-color: #1e2327 !important;
 }
 
+/* DROPDOWN */
+
 .menu-btn {
-   color: white;
    border: none;
 }
 .dropdown-menu {
@@ -69,7 +70,6 @@ if(isLoggedIn() == false){
    z-index: 1;
 }
 .links {
-   color: rgb(255, 255, 255);
    padding: 12px 16px;
    text-decoration: none;
    display: block;

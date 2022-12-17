@@ -13,13 +13,15 @@
 
        
     <div class="dropdown-menu">
-<button class="menu-btn">Open </button>
-<div class="menu-content">
-<a class="links" href="#">Contact Us</a>
-<a class="links" href="#">Visit Us</a>
-<a class="links" href="#">About Us</a>
-</div>
-</div>
+        <button class="menu-btn">
+            Open 
+        </button>
+        <div class="menu-content">
+            <a class="links" href="#">Contact Us</a>
+            <a class="links" href="#">Visit Us</a>
+            <a class="links" href="#">About Us</a>
+        </div>
+    </div>
 
 <!-- 
 
