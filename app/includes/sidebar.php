@@ -68,7 +68,7 @@ if (mysqli_num_rows($result) > 0) {
                 <!-- LOGOUT -->
                 <div class="pt-2"></div>
                 <a href="<?php echo BASE_URL . '/logout.php' ?>" style="text-decoration: none;" class="text-muted ps-2 side">
-                    <i class="bi bi-box-arrow-right"></i>
+                    <i class="bi bi-box-arrow-right"></i>&nbsp;
                     <span>  Logout</span>
                 </a>
 
