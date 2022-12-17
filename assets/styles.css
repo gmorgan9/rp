@@ -79,12 +79,12 @@ border: none !important;
 
 /* Sidebar */
 .sidebar {
-    background-color: #1f1f1f !important;
-    padding: 5px 0 0; /* Height of navbar */
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-    width: 16%;
-    }   
-
+  background-color: #1f1f1f !important;
+  margin-top: 40px;
+  padding: 5px 0 0; /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 16%;
+}   
 
 
 .page-header {  
