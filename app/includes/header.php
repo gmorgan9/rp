@@ -7,7 +7,5 @@
     <a style="text-decoration: none; color: white" href="/"><i class="bi bi-chat-right"></i>&nbsp;0</a>
     <div class="pe-2"></div>
     <a style="text-decoration: none; color: white" href="/"><i class="bi bi-plus"></i>New</a>
-    <div class="float-end">
-        <a style="float:right !important;text-decoration: none; color: white" href="/"><i class="bi bi-plus"></i>New</a>
-    </div>
+    <a style="float:right !important;text-decoration: none; color: white" href="/"><i class="bi bi-plus"></i>New</a>
 </div>
