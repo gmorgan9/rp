@@ -137,11 +137,11 @@ if (mysqli_num_rows($result) > 0) {
       <a href="" class="text-decoration-none text-white">
         <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
       </a>
-      <button class="btn talk-btn">
+      <button class="btn talk-btn me-2">
         <a href="" class="text-decoration-none">
           LET'S TALK
         </a>
-      </button>
+      </button> 
         <!-- <a class="text-decoration-none text-white" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
           &nbsp;&nbsp;&nbsp;
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
