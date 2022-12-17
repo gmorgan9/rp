@@ -6,7 +6,7 @@ require_once "../path.php";
 session_start();
 
 if(isLoggedIn()){
-  header('location: '. BASE_URL . '/cu-login.php');
+  header('location: '. BASE_URL . '/cu-admin/');
 }
 
 ?>
