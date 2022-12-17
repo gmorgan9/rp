@@ -46,6 +46,7 @@
                 <label for="user_login">Username</label>
                 <input type="text" id="user_login" name="username" class="form-control" autocapitalize="off">
             </div>
+            <br>
             <div class="password">
                 <label for="user_pass">Password</label>
                 <input type="password" id="user_pass" name="password" class="form-control" autocapitalize="off">
