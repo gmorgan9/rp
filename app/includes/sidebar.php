@@ -31,6 +31,7 @@ if (mysqli_num_rows($result) > 0) {
             <!-- POSTS -->
             <br>
             <a href="#" s style="text-decoration: none;" class="text-muted ps-2 side" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <i class="bi bi-pin-angle"></i>&nbsp;
                 <span>  Posts</span>
             </a>
 					<div  id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
