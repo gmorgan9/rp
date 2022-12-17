@@ -32,24 +32,22 @@ if(isLoggedIn() == false){
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    
-<div class="main-container">
 
-<?php include(ROOT_PATH . "/app/includes/header.php"); ?>
-
-
-
-        
-<div class="main">
-  <div class="page-header mx-auto">
-    <p class="page_title" style="float: left; padding-top: 2px;">Dashboard</p>
-    <!-- <ul class="breadcrumb">
-      <li>Dashboard</li>
-    </ul> -->
-  </div>
+<!-- main-container -->
+  <div class="main-container">
   
-</div>
-</div>
+  <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
+  
+  
+  
+          
+    <div class="main">
+  
+    </div>
+  
+  
+  </div>
+<!-- END main-container -->
 
 <?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
 <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
