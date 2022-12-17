@@ -56,14 +56,17 @@ if (mysqli_num_rows($result) > 0) {
                     <span>  Users</span>
                 </a>
 
-                <div class="dropdown">
-                    <button class="dropbtn">Right</button>
-                    <div class="dropdown-content" style="float:right; margin-left: 50px">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                </div>
+                <div class="d-flex">
+  <div class="dropdown me-1">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+      Offset
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
 
 
             <!-- END USERS -->
