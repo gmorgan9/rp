@@ -79,8 +79,8 @@ border: none !important;
 
 /* Sidebar */
 .sidebar {
-  position: relative;
-  z-index: 600;
+  position: absolute;
+  height: 100%;
   top: 0;
   bottom: 0;
   background-color: #1f1f1f !important;
@@ -91,7 +91,6 @@ border: none !important;
 
 
 .page-header {
-  position: absolute;
   top: 0;
   padding: 5px 8px;
   height: 40px;
