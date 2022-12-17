@@ -12,7 +12,7 @@ if (mysqli_num_rows($result) > 0) {
 
 <div id="sidebarMenu" class="d-lg-block bg-white sidebar">
     
-<div class="position-sticky">
+<div class="">
     <!-- <div class="logo-block logo" style="height: 150px; background-color: #0B4F6C"> -->
         <a  class="navbar-brand"  href="/">
             <!-- <img src="/assets/images/white-logo.png" width="150px" class="text-center logo" alt=""> -->
