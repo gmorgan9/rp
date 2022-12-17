@@ -4,5 +4,5 @@
     &nbsp;&nbsp;&nbsp;
     <a style="text-decoration: none; color: white" href="/"><i class="bi bi-chat-right"></i>&nbsp;0</a>
     &nbsp;&nbsp;&nbsp;
-    <a style="text-decoration: none; color: white" href="/"><i class="bi bi-plus"></i>&nbsp;New</a>
+    <a style="text-decoration: none; color: white" href="/"> <strong> <i class="bi bi-plus"></i></strong>&nbsp;New</a>
 </div>
