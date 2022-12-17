@@ -20,6 +20,8 @@
                 width: 320px;
                 margin-left: auto;
                 margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
             }
             .form {
                 margin-top: 20px;
