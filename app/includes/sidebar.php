@@ -58,7 +58,7 @@ if (mysqli_num_rows($result) > 0) {
             <!-- PROFILE -->
                 <div class="pt-2"></div>
                 <a href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>" style="text-decoration: none;" class="text-muted ps-2 side">
-                    <i class="bi bi-person-square"></i>&nbsp;
+                    <i class="bi bi-person"></i>&nbsp;
                     <span>  Profile</span>
                 </a>
                 </span>
