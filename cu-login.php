@@ -19,9 +19,9 @@
 <body>
 
     <div class="login-form">
-        <div class="logo">
-            <img src="assets/images/fav.png" alt="">
-        </div>
+        <h1 class="logo">
+            <img src="assets/images/fav.png" width="84px" height="84px" alt="">
+        </h1>
         <form action="" method="POST">
 
 
