@@ -33,7 +33,7 @@
                 border: none !important;
             }
             .link:hover {
-                background-color: #325A73 !important;
+                color: #325A73 !important;
             }
         </style>
     <!-- end custom styles -->
