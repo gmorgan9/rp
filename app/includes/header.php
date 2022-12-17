@@ -10,6 +10,22 @@
         <a style="text-decoration: none; color: white" href="/"><i class="bi bi-plus"></i>New</a>
     </div>
     <div style="float: right !important;">
-        <a style="font-size: 14px; text-decoration: none; color: white" href="/">Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i></a>
+
+        <div class="d-flex">
+            <div class="dropdown me-1">
+                <a href="#" style="font-size: 14px; text-decoration: none; color: whitebackground-color: transparent; border: none;" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="125,-35">
+                    Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i>
+                </a>
+                <ul class="dropdown-menu" style="margin: -25px 0 0 172px;">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+
+<!-- 
+
+        <a style="font-size: 14px; text-decoration: none; color: white" href="/">Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i></a> -->
     </div>
 </div>
