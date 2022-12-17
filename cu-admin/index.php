@@ -81,7 +81,7 @@ if(isLoggedIn() == false){
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  display: none;
 }
 
 .dropdown-content a:hover {
