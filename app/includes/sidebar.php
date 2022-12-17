@@ -61,7 +61,7 @@ if (mysqli_num_rows($result) > 0) {
                         <a style="background-color: transparent; border: none;" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="125,-35">
                             Offset
                         </a>
-                        <ul class="dropdown-menu" style="margin: 0 -50px 0 50px;">
+                        <ul class="dropdown-menu" style="margin: -50px 0 0 50px;">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
