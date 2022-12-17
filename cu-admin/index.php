@@ -71,6 +71,11 @@ if(isLoggedIn() == false){
   display: block;
 }
 
+.side {
+  border-left: 4px solid transparent;
+  color: #1f1f1f !important;
+}
+
 .side:hover {
   border-left: 4px solid red;
   color: #1f1f1f !important;
