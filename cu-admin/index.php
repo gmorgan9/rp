@@ -137,13 +137,8 @@ if(isLoggedIn() == false){
 </script>
 
 <script>
-$(function(){
-    $('.dropdown-toggle').hover(function() {
-        $(this).addClass('open');
-    },
-    function() {
-        $(this).removeClass('open');
-    });
+$('.dropdown').hover(function(){ 
+  $('.dropdown-toggle', this).trigger('click'); 
 });
 </script>
 
