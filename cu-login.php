@@ -33,7 +33,7 @@
 
     <div class="login-form">
         <h1 class="logo text-center">
-            <img src="assets/images/sm-logo.png" width="84px" height="84px" alt="">
+            <img src="assets/images/sm-logo-border.png" width="84px" height="84px" alt="">
         </h1>
         <form class="form" action="" method="POST">
             <div class="username">
