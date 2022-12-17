@@ -16,7 +16,7 @@
         <button class="menu-btn text-white">
             Open 
         </button>
-        <div class="menu-content">
+        <div class="menu-content text-white">
             <a class="links" href="#">Contact Us</a>
             <a class="links" href="#">Visit Us</a>
             <a class="links" href="#">About Us</a>
