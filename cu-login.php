@@ -16,7 +16,9 @@
             body {
                 background-color: #f0f0f0;
             }
-
+            .form {
+                width: 320px;
+            }
         </style>
     <!-- end custom styles -->
 </head>
@@ -26,7 +28,7 @@
         <h1 class="logo">
             <img src="assets/images/fav.png" width="84px" height="84px" alt="">
         </h1>
-        <form action="" method="POST">
+        <form class="form" action="" method="POST">
             <div class="username">
                 <label for="user_login">Username</label>
                 <input type="text" id="user_login" name="username" class="form-control" autocapitalize="off">
