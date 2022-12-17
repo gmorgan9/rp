@@ -79,6 +79,9 @@ if(isLoggedIn() == false){
   border-left: 4px solid #7fade1;
   color: #7fade1 !important;
 }
+.right {
+  float: right;
+}
     </style>
     
 </head>
