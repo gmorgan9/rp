@@ -65,17 +65,11 @@ if(isLoggedIn() == false){
 .menu-content {
    display: none;
    position: absolute;
-   background-color: #017575;
-   min-width: 160px;
    z-index: 1;
 }
 .links {
-   color: rgb(255, 255, 255);
-   padding: 12px 16px;
    text-decoration: none;
    display: block;
-   font-size: 18px;
-   font-weight: bold;
    border-bottom: 1px solid black;
 }
 .links:hover {
