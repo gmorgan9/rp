@@ -79,7 +79,8 @@ if(isLoggedIn() == false){
   z-index: 1;
 }
 .links {
-  padding: 5px;
+  padding-top: 10px;
+  padding: 8px;
   font-size: 12px;
    text-decoration: none;
    display: block;
