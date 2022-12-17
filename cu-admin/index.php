@@ -37,8 +37,8 @@ if(isLoggedIn() == false){
   margin-top: 40px;
   position: absolute;
   top: 0;
-  margin-left: 0;
-  padding-left: 0;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
   background-color: #1e2327 !important;
   width: 12%;
   height: -40% !important;
