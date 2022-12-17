@@ -87,6 +87,7 @@ if(isLoggedIn() == false){
 }
 .dropdown-menu:hover .menu-btn {
   background-color: #2d3337;
+  padding: 5px;
 }
 
 
