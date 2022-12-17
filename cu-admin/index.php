@@ -41,7 +41,7 @@ if(isLoggedIn() == false){
   padding: 5px 0 0; /* Height of navbar */
   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
   width: 16%;
-  height: -40%;
+  height: -40% !important;
 }   
 
 
