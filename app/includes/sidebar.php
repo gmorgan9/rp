@@ -55,6 +55,17 @@ if (mysqli_num_rows($result) > 0) {
                     <i class="bi bi-people"></i>&nbsp;
                     <span>  Users</span>
                 </a>
+
+                <div class="dropdown" style="float:right;">
+                    <button class="dropbtn">Right</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+
+
             <!-- END USERS -->
 
             <!-- PROFILE -->
