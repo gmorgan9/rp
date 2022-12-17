@@ -11,18 +11,14 @@
     </div>
     <div style="float: right !important;">
 
-        <div class="d-flex">
-            <div class="dropdown me-1">
-                <a href="#" style="font-size: 14px; text-decoration: none; color: whitebackground-color: transparent; border: none;" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i>
-                </a>
-                <ul class="dropdown-menu" style="margin: 10px 0 0 -15px;">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </div>
-        </div>
+       <li>
+            <a href="#">Products ▾</a>
+            <ul class="dropdown">
+                <li><a href="#">Laptops</a></li>
+                <li><a href="#">Monitors</a></li>
+                <li><a href="#">Printers</a></li>
+            </ul>
+        </li>
 
 <!-- 
 
