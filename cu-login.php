@@ -17,7 +17,7 @@
                 background-color: #f0f0f0;
             }
             .login-form {
-                padding: 40px 0px;
+                padding: 80px 0px;
                 width: 320px;
                 margin: auto;
             }
