@@ -58,8 +58,8 @@
         </form>
         <br><br>
         <div class="bottom-links">
-            <p class="text-muted"><a style="text-decoration:none; font-size: 12px; color: white;" href="">Forgot password?</a></p>
-            <p class="text-muted"><a style="text-decoration:none; font-size: 12px; color: white;" href="">← Go to CacheUp</a></p>
+            <p class="text-muted"><a style="text-decoration:none; font-size: 12px;" href="">Forgot password?</a></p>
+            <p class="text-muted"><a style="text-decoration:none; font-size: 12px;" href="">← Go to CacheUp</a></p>
         </div>
     </div>
     
