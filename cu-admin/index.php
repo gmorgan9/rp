@@ -76,8 +76,8 @@ if(isLoggedIn() == false){
 }
 
 .side:hover {
-  border-left: 4px solid #03c6fc;
-  color: #03c6fc !important;
+  border-left: 4px solid #7fade1;
+  color: #7fade1 !important;
 }
     </style>
     
