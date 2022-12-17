@@ -37,7 +37,6 @@ if(isLoggedIn() == false){
   margin-top: 40px;
   position: absolute;
   top: 0;
-  bottom: 0;
   background-color: #1f1f1f !important;
   padding: 5px 0 0; /* Height of navbar */
   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
@@ -46,7 +45,6 @@ if(isLoggedIn() == false){
 
 
 .page-header {
-  position: fixed;
   padding: 5px 8px;
   height: 40px;
   color: white;
