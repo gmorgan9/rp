@@ -36,7 +36,8 @@ if(isLoggedIn() == false){
 <!-- main-container -->
   <div class="main-container">
 
-  <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
+    <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
+    <?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
 
 
 
@@ -49,7 +50,7 @@ if(isLoggedIn() == false){
   </div>
 <!-- END main-container -->
 
-<?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
+
 <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
 
 <!-- <script src="../assets/js/new.js"></script> -->
