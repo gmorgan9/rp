@@ -30,8 +30,6 @@
             .btn {
                 background-color: #325A73 !important;
                 border: none !important;
-                float: right !important;
-                margin-bottom: 15px;
             }
         </style>
     <!-- end custom styles -->
@@ -52,7 +50,7 @@
                 <input type="password" id="user_pass" name="password" class="form-control" autocapitalize="off">
             </div>
             <br>
-            <input type="submit" name="login" class="btn btn-primary" value="Log In">
+            <input type="submit" name="login" class="btn btn-primary align-end" value="Log In">
         </form>
     </div>
     
