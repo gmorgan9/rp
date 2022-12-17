@@ -155,31 +155,31 @@ if (mysqli_num_rows($result) > 0) {
 
 <?php 
 
-if ($loggedin == 1) {
+//if ($loggedin == 1) {
 
 ?>
 
-<ul class="list-group list-group-flush" style="width: 250px;">
+<!-- <ul class="list-group list-group-flush" style="width: 250px;">
   <li class="list-group-item fw-bold text-capitalize mb-3" style="font-size: 18px; border-bottom: none;"><?php echo $firstname; ?>
-  <?php if($acct_type == 1) { ?>
+  <?php //if($acct_type == 1) { ?>
      <i class="fw-normal text-lowercase" style="font-size: 10px;">(admin)</i>
-    <?php } else { ?>
+    <?php //} else { ?>
       <i class="fw-normal text-lowercase" style="font-size: 10px;">(standard)</i>
-    <?php } ?>
+    <?php //} ?>
 
 </li>
-  <li class="list-group-item w-75"><a href="<?php echo BASE_URL . '/pages/dashboard.php' ?>" class="text-decoration-none text-black">Dashboard</a></li>
-  <li class="list-group-item"><a href="<?php echo BASE_URL . '/logout.php' ?>" class="text-decoration-none text-black">Logout</a></li>
-</ul>
+  <li class="list-group-item w-75"><a href="<?php //echo BASE_URL . '/pages/dashboard.php' ?>" class="text-decoration-none text-black">Dashboard</a></li>
+  <li class="list-group-item"><a href="<?php //echo BASE_URL . '/logout.php' ?>" class="text-decoration-none text-black">Logout</a></li>
+</ul> -->
 
 
 <?php
 
-} else {
+//} else {
 
   ?>
             <!-- TABS -->
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <!-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item text-center mx-auto">
                   <a class="btn btn-outline-black active" style="width: 150px;" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
                 </li>
@@ -189,7 +189,7 @@ if ($loggedin == 1) {
                 </li>
                
               </ul>
-              <!-- LOGIN -->
+              LOGIN
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                   <form action="" method="post" class="form px-4">
@@ -199,7 +199,7 @@ if ($loggedin == 1) {
                   </form>
                 </div>
 
-                <!-- REGISTER -->
+                REGISTER
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                   <form action="" method="post" class="form px-4">
                     <input class="form-control" type="text" name="firstname" required placeholder="enter your first name"><br>
@@ -210,8 +210,8 @@ if ($loggedin == 1) {
                     <input class="form-control" type="password" name="cpassword" required placeholder="confirm your password"><br>
                     <input type="submit" name="register" value="Register" class="btn btn-dark btn-block">
                   </form>
-                </div>
-<?php } ?>
+                </div> -->
+<?php //} ?>
 
               </div>
 
@@ -221,13 +221,6 @@ if ($loggedin == 1) {
 
             <!--  -->
 </div> 
-
-
-
-
-      <a href="" class="text-decoration-none text-white">
-        
-      </a>
     </div>
   </div>
 <!-- end header -->
