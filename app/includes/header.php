@@ -13,9 +13,9 @@
 
        
     <div class="dropdown-menu">
-        <button class="menu-btn text-white">
-            Open 
-        </button>
+        <a style="font-size: 14px; text-decoration: none; color: white" href="/" class="menu-btn text-white">
+            Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i> 
+        </a>
         <div class="menu-content">
             <a class="links text-white" href="#">Contact Us</a>
             <a class="links text-white" href="#">Visit Us</a>
