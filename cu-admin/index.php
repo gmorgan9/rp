@@ -71,6 +71,7 @@ if(isLoggedIn() == false){
   display: inline-block;
 }
 .menu-content {
+  padding-top: 10px;
   margin-top: 1px;
   background-color: #2d3337;
   display: none;
@@ -79,7 +80,7 @@ if(isLoggedIn() == false){
   z-index: 1;
 }
 .links {
-  padding-top: 10px;
+  
   padding: 8px;
   font-size: 12px;
    text-decoration: none;
