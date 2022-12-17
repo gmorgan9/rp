@@ -84,7 +84,7 @@ if(isLoggedIn() == false){
   display: block;
 }
 
-.dropdown-content a li:hover {
+.dropdown-content a ul li:hover {
   background-color: #f1f1f1;
   display: block
 }
