@@ -20,7 +20,7 @@
 
     <div class="login-form">
         <div class="logo">
-            <img src="assets/images/logo.png" alt="">
+            <img src="assets/images/fav.png" alt="">
         </div>
         <form action="" method="POST">
 
