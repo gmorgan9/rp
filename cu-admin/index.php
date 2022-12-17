@@ -80,6 +80,7 @@ if(isLoggedIn() == false){
 }
 .links {
   padding: 5px;
+  font-size: 12px;
    text-decoration: none;
    display: block;
    font-weight: bold;
