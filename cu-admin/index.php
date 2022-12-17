@@ -58,7 +58,7 @@ if(isLoggedIn() == false){
 
 .menu-btn {
   padding-left: 5px;
-  padding-right: 5px
+  padding-right: 5px;
   background-color: transparent;
   border: none;
 }
