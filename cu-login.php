@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <title>Log In &lsaquo; CacheUp</title>
+
+    <!-- custom styles -->
+        <style>
+            body {
+                background-color: #f0f0f0;
+            }
+        </style>
+    <!-- end custom styles -->
 </head>
 <body>
     
