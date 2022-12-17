@@ -57,7 +57,7 @@ if(isLoggedIn() == false){
 /* DROPDOWN */
 
 .menu-btn {
-  padding: 5px;
+  padding: 0 5px;
   background-color: transparent;
   border: none;
 }
