@@ -23,7 +23,7 @@ if(isLoggedIn() == false){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="../assets/styles.css?v=4.00">
+    <link rel="stylesheet" href="../assets/styles.css?v=3.31">
 
     <title>Dashboard - CacheUp Blog</title>
 
@@ -32,7 +32,27 @@ if(isLoggedIn() == false){
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
     <style>
-      
+      /* Sidebar */
+.sidebar {
+  margin-top: 40px;
+  position: absolute;
+  top: 0;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  background-color: #1e2327 !important;
+  width: 12%;
+  height: -40% !important;
+}   
+
+
+.page-header {
+  display: inline !important;
+  width: 100%;
+  padding: 5px 8px;
+  height: 40px;
+  color: white;
+  background-color: #1e2327 !important;
+}
 .dropdown {
   position: absolute;
   display: inline-block;
@@ -52,7 +72,17 @@ if(isLoggedIn() == false){
   display: block;
 }
 
+.side {
+  border-left: 4px solid transparent;
+}
 
+.side:hover {
+  border-left: 4px solid #7fade1;
+  color: #7fade1 !important;
+}
+.right {
+  margin-right: 25px !important;
+}
     </style>
     
 </head>
