@@ -78,7 +78,6 @@ if(isLoggedIn() == false){
    border-bottom: 1px solid black;
 }
 .links:hover {
-   background-color: rgb(8, 107, 46);
 }
 .dropdown-menu:hover .menu-content {
    display: block;
