@@ -16,7 +16,7 @@ if (mysqli_num_rows($result) > 0) {
     <!-- <div class="logo-block logo" style="height: 150px; background-color: #0B4F6C"> -->
         
         <!-- </div> -->
-        <div class="list-group list-group-flush mx-3 mt-4">
+        <div class="list-group list-group-flush mt-4">
 
 			<div class="accordion mb-2" id="accordionExample">
 
