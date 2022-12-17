@@ -22,7 +22,7 @@
                 margin: auto;
             }
             .form {
-                border: 1px solid #c9c9c9;
+                border: 1px solid #cfd4d9;
                 border-radius: 5px;
                 margin-top: 20px;
                 padding: 26px 24px 34px;
