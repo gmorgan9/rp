@@ -21,7 +21,7 @@ if (mysqli_num_rows($result) > 0) {
 			<div class="accordion mb-2" id="accordionExample">
 
             <!-- DASHBOARD -->
-                <a href="<?php echo BASE_URL . '/cu-admin/' ?>" style="text-decoration: none;" class="ps-2 side">
+                <a href="<?php echo BASE_URL . '/cu-admin/' ?>" style="text-decoration: none;" class="text-muted ps-2 side">
                     <i class="bi bi-speedometer2"></i>&nbsp;
                     <span>  Dashboard</span>
                 </a>
