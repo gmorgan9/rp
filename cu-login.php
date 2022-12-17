@@ -27,6 +27,9 @@
                 padding: 26px 24px 34px;
                 background-color: white;
             }
+            .btn {
+                background-color: #325A73 !important;
+            }
         </style>
     <!-- end custom styles -->
 </head>
