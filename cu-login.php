@@ -22,6 +22,7 @@
                 margin: auto;
             }
             .form {
+                border-color: #b3b3b3;
                 border-radius: 5px;
                 margin-top: 20px;
                 padding: 26px 24px 34px;
