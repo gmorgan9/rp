@@ -42,6 +42,7 @@
                 <label for="user_pass">Password</label>
                 <input type="password" id="user_pass" name="password" class="form-control" autocapitalize="off">
             </div>
+            <input type="submit" name="login" class="button button-primary button-large" value="Log In">
         </form>
     </div>
     
