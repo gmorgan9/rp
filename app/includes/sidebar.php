@@ -14,11 +14,7 @@ if (mysqli_num_rows($result) > 0) {
     
 <div class="position-sticky">
     <!-- <div class="logo-block logo" style="height: 150px; background-color: #0B4F6C"> -->
-        <a  class="navbar-brand"  href="/">
-            <!-- <img src="/assets/images/white-logo.png" width="150px" class="text-center logo" alt=""> -->
-            <i class="bi bi-house"></i>
-            CacheUp
-        </a>
+        
         <!-- </div> -->
         <div class="list-group list-group-flush mx-3 mt-4">
 
