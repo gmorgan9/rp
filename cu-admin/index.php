@@ -61,6 +61,7 @@ if(isLoggedIn() == false){
   border: none;
 }
 .dropdown-menu {
+  padding: 5px;
   border: none;
   background-color: transparent;
   position: relative;
@@ -87,7 +88,7 @@ if(isLoggedIn() == false){
 }
 .dropdown-menu:hover .menu-btn {
   background-color: #2d3337;
-  padding: 5px 2px;
+  padding: 5px;
 }
 
 
