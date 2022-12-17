@@ -22,7 +22,7 @@ if (mysqli_num_rows($result) > 0) {
 
             <!-- DASHBOARD -->
             <span>
-            <a href="<?php echo BASE_URL . '/cu-admin/' ?>" style="background-color: #1f1f1f" class="side" aria-current="true">
+            <a href="<?php echo BASE_URL . '/cu-admin/' ?>" style="background-color: #1f1f1f" class="text-muted side" aria-current="true">
                 <i class="bi bi-sliders2"></i>
                 <span>  Dashboard</span>
             </a>
