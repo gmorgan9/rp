@@ -58,7 +58,7 @@ if (mysqli_num_rows($result) > 0) {
 
                 <div class="dropdown">
                     <button class="dropbtn">Right</button>
-                    <div class="dropdown-content" style="float:right;">
+                    <div class="dropdown-content" style="float:right; margin-left: 50px">
                         <a href="#">Link 1</a>
                         <a href="#">Link 2</a>
                         <a href="#">Link 3</a>
