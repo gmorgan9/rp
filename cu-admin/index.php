@@ -57,6 +57,7 @@ if(isLoggedIn() == false){
 /* DROPDOWN */
 
 .menu-btn {
+  padding-top: -5px;
   padding-left: 5px;
   padding-right: 5px;
   background-color: transparent;
@@ -69,7 +70,6 @@ if(isLoggedIn() == false){
   display: inline-block;
 }
 .menu-content {
-  padding: 5px;
   margin-top: 1px;
   background-color: #2d3337;
   display: none;
