@@ -13,7 +13,6 @@ if (mysqli_num_rows($result) > 0) {
 <div id="sidebarMenu" class=" sidebar">
     
 <div class="position-sticky">
-    <!-- <div class="logo-block logo" style="height: 150px; background-color: #0B4F6C"> -->
         
         <!-- </div> -->
         <div class="list-group list-group-flush mt-4">
@@ -68,23 +67,13 @@ if (mysqli_num_rows($result) > 0) {
 
             <!-- END PROFILE -->
 
-                <!-- LOGOUT -->
+            <!-- LOGOUT -->
                 <div class="pt-2"></div>
                 <a href="<?php echo BASE_URL . '/logout.php' ?>" style="text-decoration: none;" class="text-muted ps-2 side">
                     <i class="bi bi-box-arrow-right"></i>&nbsp;
                     <span>  Logout</span>
                 </a>
-
-                <!-- END LOGOUT -->
-
-            
-                    <br><br>
-
-                    <span class="fw-bold text-white">&nbsp;&nbsp; Admin Links</span>
-
-
-                
-                
+            <!-- END LOGOUT -->
 			</div>
 		</div>
 	</div>
