@@ -5,8 +5,8 @@ require_once "app/database/functions.php";
 require_once "path.php";
 session_start();
 
-if(isLoggedIn() == false){
-    header('location: '. BASE_URL . '/cu-login.php');
+if(isLoggedIn() == true){
+    header('location: '. BASE_URL . '/cu-admin');
 }
 
 ?>
