@@ -7,8 +7,6 @@ session_start();
 
 if(isLoggedIn() == false){
     header('location: '. BASE_URL . '/cu-login.php');
-} else {
-    header('location: '. BASE_URL . '/cu-admin/');
 }
 
 ?>
