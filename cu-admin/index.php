@@ -58,12 +58,13 @@ if(isLoggedIn() == false){
 
 .menu-btn {
   background-color: transparent;
-   border: none;
+  border: none;
 }
 .dropdown-menu {
+  border: none;
   background-color: transparent;
-   position: relative;
-   display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 .menu-content {
    display: none;
