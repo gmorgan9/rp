@@ -55,12 +55,7 @@ if(isLoggedIn() == false){
 }
 
 .menu-btn {
-   background-color: #7e32d4;
    color: white;
-   padding: 16px;
-   font-size: 20px;
-   font-weight: bolder;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    border: none;
 }
 .dropdown-menu {
