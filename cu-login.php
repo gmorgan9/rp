@@ -57,7 +57,7 @@
             </div>
         </form>
         <br>
-        <div class="bottom-links">
+        <div class="bottom-links ms-2">
             <p><a class="text-muted" style="text-decoration:none; font-size: 12px;" href="">Forgot password?</a></p>
             <p><a class="text-muted" style="text-decoration:none; font-size: 12px;" href="">← Go to CacheUp</a></p>
         </div>
