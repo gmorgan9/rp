@@ -16,8 +16,12 @@
             body {
                 background-color: #f0f0f0;
             }
-            .form {
+            .login-form {
                 width: 320px;
+            }
+            .form {
+                margin-top: 20px;
+                padding: 26px 24px 34px;
             }
         </style>
     <!-- end custom styles -->
@@ -34,7 +38,7 @@
                 <input type="text" id="user_login" name="username" class="form-control" autocapitalize="off">
             </div>
             <div class="password">
-                <label for="user_pass">Username</label>
+                <label for="user_pass">Password</label>
                 <input type="password" id="user_pass" name="password" class="form-control" autocapitalize="off">
             </div>
         </form>
