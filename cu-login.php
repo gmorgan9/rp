@@ -57,8 +57,10 @@
             </div>
         </form>
         <br><br>
-        <p><a href="">Forgot password?</a></p>
-        <p><a href="">← Go to CacheUp</a></p>
+        <div class="bottom-links">
+            <p class="text-muted"><a style="text-decoration:none; font-size: 12px; color: white;" href="">Forgot password?</a></p>
+            <p class="text-muted"><a style="text-decoration:none; font-size: 12px; color: white;" href="">← Go to CacheUp</a></p>
+        </div>
     </div>
     
 </body>
