@@ -7,7 +7,7 @@
         &nbsp;
         <a style="text-decoration: none; color: white" href="/"><i class="bi bi-plus"></i>New</a>
     </div>
-    <div class="float-end">
+    <div class="d-flex justify-content-end">
         text
     </div>
 </div>
