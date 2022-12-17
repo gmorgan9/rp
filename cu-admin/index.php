@@ -73,7 +73,7 @@ if(isLoggedIn() == false){
 
 .side:hover {
   border-left: 4px solid red;
-  color: red !important;
+  color: #1f1f1f !important;
 }
     </style>
     
