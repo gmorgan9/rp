@@ -58,7 +58,7 @@ if (mysqli_num_rows($result) > 0) {
 
                 <div class="d-flex">
                     <div class="dropdown me-1">
-                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="125,-35">
+                        <button type="button" class="btn btn-secondary dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="125,-35">
                             Offset
                         </button>
                         <ul class="dropdown-menu">
