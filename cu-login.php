@@ -31,7 +31,6 @@
             .btn {
                 background-color: #325A73 !important;
                 border: none !important;
-                margin-right: auto;
             }
         </style>
     <!-- end custom styles -->
