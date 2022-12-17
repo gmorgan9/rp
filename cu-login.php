@@ -56,7 +56,10 @@
                 <input type="submit" name="login" class="btn btn-primary" value="Log In">
             </div>
         </form>
+        <br><br>
         <p><a href="">Forgot password?</a></p>
+        <br>
+        <p><a href="">← Go to CacheUp</a></p>
     </div>
     
 </body>
