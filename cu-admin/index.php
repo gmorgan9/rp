@@ -65,11 +65,14 @@ if(isLoggedIn() == false){
 .menu-content {
    display: none;
    position: absolute;
+   min-width: 160px;
    z-index: 1;
 }
 .links {
    text-decoration: none;
    display: block;
+   font-size: 18px;
+   font-weight: bold;
    border-bottom: 1px solid black;
 }
 .links:hover {
