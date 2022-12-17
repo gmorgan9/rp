@@ -86,6 +86,7 @@ if(isLoggedIn() == false){
    display: block;
 }
 .dropdown-menu:hover .menu-btn {
+  background-color: #2d3337;
 }
 
 
