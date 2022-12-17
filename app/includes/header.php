@@ -11,14 +11,15 @@
     </div>
     <div style="float: right !important;">
 
-       <li>
-            <a href="#">Products ▾</a>
-            <ul class="dropdown">
-                <li><a href="#">Laptops</a></li>
-                <li><a href="#">Monitors</a></li>
-                <li><a href="#">Printers</a></li>
-            </ul>
-        </li>
+       
+    <div class="dropdown-menu">
+<button class="menu-btn">Open </button>
+<div class="menu-content">
+<a class="links" href="#">Contact Us</a>
+<a class="links" href="#">Visit Us</a>
+<a class="links" href="#">About Us</a>
+</div>
+</div>
 
 <!-- 
 
