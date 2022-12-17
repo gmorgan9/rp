@@ -22,7 +22,7 @@ if (mysqli_num_rows($result) > 0) {
 
             <!-- DASHBOARD -->
             <span class="side">
-            <a href="<?php echo BASE_URL . '/cu-admin/' ?>" style="text-decoration: none;" class="ps-2 text-muted" aria-current="true">
+            <a href="<?php echo BASE_URL . '/cu-admin/' ?>" style="text-decoration: none;" class="ps-2 text-muted">
                 <i class="bi bi-speedometer2"></i>&nbsp;
                 <span>  Dashboard</span>
             </a>
