@@ -53,7 +53,7 @@ if(isLoggedIn() == false){
   background-color: #1e2327 !important;
 }
 .dropdown {
-  position: relative;
+  position: absolute;
   display: inline-block;
 }
 
