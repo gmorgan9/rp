@@ -23,7 +23,7 @@ if(isLoggedIn() == false){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="../assets/styles.css?v=3.08">
+    <link rel="stylesheet" href="../assets/styles.css?v=3.09">
 
     <title>Dashboard - CacheUp Blog</title>
 
@@ -34,9 +34,10 @@ if(isLoggedIn() == false){
 <body>
     
 <div class="main-container">
+<?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
 <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
 
-<?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
+
         
 <div class="main">
   <div class="page-header mx-auto">
