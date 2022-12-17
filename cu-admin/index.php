@@ -68,6 +68,7 @@ if(isLoggedIn() == false){
 }
 .menu-content {
   padding: 5px;
+  margin-top: 1px;
   background-color: #2d3337;
   display: none;
   position: absolute;
