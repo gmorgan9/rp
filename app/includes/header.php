@@ -1,5 +1,5 @@
 <div class="page-header">
-    <div style="float:left !important; display: inline;">
+    <div style="float:left !important; display: block;">
         <div class="pe-2"></div>
         <img src="../assets/images/new-logo.png" height="20px" width="20px" alt="">
         <div class="pe-4"></div>
