@@ -29,7 +29,7 @@
 </head>
 <body>
 
-    <div class="login-form">
+    <div class="login-form d-flex justify-content-center">
         <h1 class="logo">
             <img src="assets/images/fav.png" width="84px" height="84px" alt="">
         </h1>
@@ -42,6 +42,7 @@
                 <label for="user_pass">Password</label>
                 <input type="password" id="user_pass" name="password" class="form-control" autocapitalize="off">
             </div>
+            <br>
             <input type="submit" name="login" class="btn btn-primary btn-large" value="Log In">
         </form>
     </div>
