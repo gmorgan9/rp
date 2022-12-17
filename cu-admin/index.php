@@ -38,6 +38,7 @@ if(isLoggedIn() == false){
   position: absolute;
   top: 0;
   margin-left: 0;
+  padding-left: 0;
   background-color: #1e2327 !important;
   width: 12%;
   height: -40% !important;
