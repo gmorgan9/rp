@@ -72,7 +72,7 @@ if(isLoggedIn() == false){
 }
 
 .side:hover {
-  border-left: 2px solid red;
+  border-left: 4px solid red;
 }
     </style>
     
