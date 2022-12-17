@@ -17,7 +17,7 @@
             Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i> 
         </a>
         <div class="menu-content">
-            <i class="float-start bi bi-person-square"></i>
+            <i class="float-start bi bi-person-square text-muted" style="font-size: 25px;"></i>
             <div class="float-end">
                 <a class="links text-white" href="#">Contact Us</a>
                 <a class="links text-white" href="#">Visit Us</a>
