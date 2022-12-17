@@ -32,7 +32,7 @@
 <body>
 
     <div class="login-form">
-        <h1 class="logo">
+        <h1 class="logo text-center">
             <img src="assets/images/fav.png" width="84px" height="84px" alt="">
         </h1>
         <form class="form" action="" method="POST">
