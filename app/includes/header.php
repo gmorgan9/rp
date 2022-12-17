@@ -16,7 +16,7 @@
                 <a href="#" style="font-size: 14px; text-decoration: none; color: whitebackground-color: transparent; border: none;" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i>
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" style="margin: 5px 0 0 0;">
                     <li><a class="dropdown-item" href="#">Action</a></li>
                     <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
