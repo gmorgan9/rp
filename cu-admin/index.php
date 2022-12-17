@@ -37,7 +37,7 @@ if(isLoggedIn() == false){
   margin-top: 40px;
   position: absolute;
   top: 0;
-  background-color: #1a1a1a !important;
+  background-color: #1e2327 !important;
   padding: 5px 0 0; /* Height of navbar */
   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
   width: 16%;
@@ -50,7 +50,7 @@ if(isLoggedIn() == false){
   padding: 5px 8px;
   height: 40px;
   color: white;
-  background-color: #1a1a1a !important;
+  background-color: #1e2327 !important;
 }
     </style>
     
