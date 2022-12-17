@@ -29,6 +29,7 @@ if (mysqli_num_rows($result) > 0) {
             <!-- END DASHBOARD -->
 
             <!-- POSTS -->
+            <br>
             <a href="#" s style="text-decoration: none;" class="text-muted ps-2 side" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 <span>  Posts<i class="bi bi-chevron-down" style="float: right;"></i></span>
             </a>
