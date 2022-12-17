@@ -31,7 +31,7 @@
                 background-color: #325A73 !important;
                 border: none !important;
                 float: right !important;
-                padding-bottom: 15px;
+                margin-bottom: 15px;
             }
         </style>
     <!-- end custom styles -->
