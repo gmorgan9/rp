@@ -34,8 +34,9 @@ if(isLoggedIn() == false){
 <body>
     
 <div class="main-container">
-<?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
+
 <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
+<?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
 
 
         
