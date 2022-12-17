@@ -91,7 +91,7 @@ border: none !important;
 
 
 .page-header {
-  position: relative;
+  position: absolute;
   top: 0;
   padding: 5px 8px;
   height: 40px;
