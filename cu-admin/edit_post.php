@@ -1,8 +1,8 @@
 <?php
 
-require_once "../../app/database/connection.php";
+require_once "../app/database/connection.php";
 // require_once "app/database/functions.php";
-require_once "../../path.php";
+require_once "../path.php";
 session_start();
 
 // if(isLoggedIn()){
@@ -26,7 +26,7 @@ if(isset($_POST['update'])){
 
   $insert = "UPDATE posts SET title = '$title', content = '$content', category = '$category', tags = '$tags', updated_at = '$date' WHERE post_id = '".$_POST['post_id']."'";
   mysqli_query($conn, $insert);
-  header("location: ../all_posts.php");
+  header("location: all_posts.php");
 
 };
 
@@ -44,7 +44,7 @@ if(isset($_POST['update'])){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="../../assets/styles.css?v=2.50">
+    <link rel="stylesheet" href="../assets/styles.css?v=2.50">
 
     <script src="https://cdn.tiny.cloud/1/7kainuaawjddfzf3pj7t2fm3qdjgq5smjfjtsw3l4kqfd1h4/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
@@ -209,7 +209,7 @@ if (mysqli_num_rows($result) > 0) {
     $(this).removeClass('active')
   })
 </script>
-    <script src="../../assets/js/dropdown.js"></script>
+    <script src="../assets/js/dropdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

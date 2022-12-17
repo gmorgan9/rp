@@ -24,7 +24,7 @@ if (mysqli_num_rows($result) > 0) {
 
             <!-- DASHBOARD -->
             <span>
-            <a href="<?php echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #1f1f1f" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
+            <a href="<?php echo BASE_URL . '/cu-admin/' ?>" style="background-color: #1f1f1f" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
                 <i class="bi bi-sliders2"></i>
                 <span>  Dashboard</span>
             </a>
@@ -47,39 +47,6 @@ if (mysqli_num_rows($result) > 0) {
 
                 <!-- END POSTS -->
 
-
-                <!-- PAGES -->
-
-				<!-- <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <span>  Pages<i class="bi bi-chevron-down" style="float: right;"></i></span>
-                </a>
-					<div  id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-							<ul class="list-group-item" style="background-color: #3b6475 ; border-bottom:none;border-top:none; margin-bottom: -1px;">
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Posts</a></li>
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Categories</a></li>
-							</ul>
-						
-					</div> -->
-
-                <!-- END PAGES -->
-
-                <!-- MEDIA -->
-
-				<!-- <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <span>  Media<i class="bi bi-chevron-down" style="float: right;"></i></span>
-                </a>
-					<div  id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-							<ul class="list-group-item" style="background-color: #3b6475 ; border-bottom:none;border-top:none; margin-bottom: -1px;">
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Posts</a></li>
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Categories</a></li>
-							</ul>
-						
-					</div> -->
-
-                <!-- END MEDIA -->
-
                 <!-- COMMENTS -->
 
 				<!-- <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #1f1f1f ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -95,7 +62,7 @@ if (mysqli_num_rows($result) > 0) {
 					</div> -->
 
                     <span>
-                        <a href="<?php echo BASE_URL . '/pages/all_comments.php' ?>" style="background-color: #1f1f1f" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                        <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" style="background-color: #1f1f1f" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
                         <span>  Comments</span>
                         </a>
                     </span>
@@ -103,49 +70,14 @@ if (mysqli_num_rows($result) > 0) {
 
                 <!-- END COMMENTS -->
 
-                
-
-                <!-- TOOLS -->
-
-				<!-- <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #073C53 ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                <span>  Tools<i class="bi bi-chevron-down" style="float: right;"></i></span>
-                </a>
-					<div  id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-							<ul class="list-group-item" style="background-color: #3b6475 ; border-bottom:none;border-top:none; margin-bottom: -1px;">
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Add new</a></li>
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> All Posts</a></li>
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Categories</a></li>
-							</ul>
-						
-					</div> -->
-
-                <!-- END TOOLS -->
-
-                <!-- SETTINGS -->
-
-				<!-- <a href="#<?php //echo BASE_URL . '/pages/dashboard.php' ?>" style="background-color: #1f1f1f;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                <span>  Settings<i class="bi bi-chevron-down" style="float: right;"></i></span>
-                </a>
-					<div  id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-							<ul class="list-group-item" style="background-color: #6e6e6e83; border-bottom:none;border-top:none; margin-bottom: -1px;">
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href=""> Profile</a></li>
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="#"> Preferences</a></li>
-							</ul>
-						
-					</div> -->
-
             <!-- PROFILE -->
                 <span>
-                <a href="<?php echo BASE_URL . '/pages/profile.php' ?>" style="background-color: #1f1f1f" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
-                    <!-- <i class="bi bi-sliders"></i> -->
+                <a href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>" style="background-color: #1f1f1f" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
                     <span>  Profile</span>
                 </a>
                 </span>
 
             <!-- END PROFILE -->
-
-
-                <!-- END SETTINGS -->
 
                 <!-- LOGOUT -->
 
@@ -156,9 +88,7 @@ if (mysqli_num_rows($result) > 0) {
 
                 <!-- END LOGOUT -->
 
-                
-
-                <?php if($acct_type == 1) { ?>
+            
                     <br><br>
 
                     <span class="fw-bold text-white">&nbsp;&nbsp; Admin Links</span>
@@ -178,8 +108,6 @@ if (mysqli_num_rows($result) > 0) {
 					</div>
 
                 <!-- END USERS -->
-                <?php } else {} ?>
-                
                 
 			</div>
 		</div>
