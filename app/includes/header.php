@@ -16,10 +16,10 @@
         <button class="menu-btn text-white">
             Open 
         </button>
-        <div class="menu-content text-white">
-            <a class="links" href="#">Contact Us</a>
-            <a class="links" href="#">Visit Us</a>
-            <a class="links" href="#">About Us</a>
+        <div class="menu-content">
+            <a class="links text-white" href="#">Contact Us</a>
+            <a class="links text-white" href="#">Visit Us</a>
+            <a class="links text-white" href="#">About Us</a>
         </div>
     </div>
 
