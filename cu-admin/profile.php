@@ -1,30 +1,13 @@
 <?php
 
 require_once "../app/database/connection.php";
-// require_once "app/database/functions.php";
+require_once "../app/database/functions.php";
 require_once "../path.php";
 session_start();
 
-// if(isLoggedIn()){
-//   header('location: '. BASE_URL . '/pages/dashboard.php');
-// }
-
-?>
-
-<?php
-// if(isset($_POST['update'])){
-//   //$idno  = rand(10000, 99999);
-//   $profile_picture = mysqli_real_escape_string($conn, $_POST['profile_picture']);
-
-
-//   date_default_timezone_set('America/Denver');
-//   $date = date('F d, Y, g:i a', time());
-
-//   $insert = "UPDATE users SET profile_picture = '$profile_picture' WHERE idno = '".$_POST['idno']."'";
-//   mysqli_query($conn, $insert);
-//   header("location: profile.php");
-
-// };
+if(isLoggedIn() == false){
+  header('location: '. BASE_URL . '/cu-login.php');
+}
 
 ?>
 
