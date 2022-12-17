@@ -69,7 +69,7 @@ if(isLoggedIn() == false){
 .menu-content {
   padding: 5px;
   margin-top: -5px;
-  background-color: #1e2327;
+  background-color: #2d3337;
   display: none;
   position: absolute;
   min-width: 160px;
