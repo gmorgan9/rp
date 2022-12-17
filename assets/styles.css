@@ -81,7 +81,7 @@ border: none !important;
 .sidebar {
     background-color: #1f1f1f !important;
     position:absolute;
-    top: 40;
+    top: 25;
     left: 0;
     bottom: 0;
     padding: 45px 0 0; /* Height of navbar */
