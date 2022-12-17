@@ -18,9 +18,11 @@
         </a>
         <div class="menu-content">
             <i class="float-start bi bi-person-square"></i>
-            <a class="links text-white" href="#">Contact Us</a>
-            <a class="links text-white" href="#">Visit Us</a>
-            <a class="links text-white" href="#">About Us</a>
+            <div class="float-end">
+                <a class="links text-white" href="#">Contact Us</a>
+                <a class="links text-white" href="#">Visit Us</a>
+                <a class="links text-white" href="#">About Us</a>
+            </div>
         </div>
     </div>
 
