@@ -12,10 +12,21 @@
             body {
                 background-color: #f0f0f0;
             }
+
         </style>
     <!-- end custom styles -->
 </head>
 <body>
+
+    <div class="login-form">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="">
+        </div>
+        <form action="" method="POST">
+
+
+        </form>
+    </div>
     
 </body>
 </html>
