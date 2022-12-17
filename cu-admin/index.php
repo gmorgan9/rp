@@ -128,17 +128,21 @@ if(isLoggedIn() == false){
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript">
-  $(document).on('click', 'a', function() {
-    $(this).addClass('active').siblings().removeClass('active')
-  })
-  $(document).on('click', 'ul li a', function() {
-    $(this).removeClass('active')
-  })
+  // $(document).on('click', 'a', function() {
+  //   $(this).addClass('active').siblings().removeClass('active')
+  // })
+  // $(document).on('click', 'ul li a', function() {
+  //   $(this).removeClass('active')
+  // })
 </script>
 
 <script>
-$('.dropdown').hover(function(){ 
-  $('.dropdown-toggle', this).trigger('click'); 
+$('.dropdown').mouseenter(function(){
+    if(!$('.navbar-toggle').is(':visible')) { // disable for mobile view
+        if(!$(this).hasClass('open')) { // Keeps it open when hover it again
+            $('.dropdown-toggle', this).trigger('click');
+        }
+    }
 });
 </script>
 
