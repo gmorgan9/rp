@@ -10,7 +10,7 @@ if (mysqli_num_rows($result) > 0) {
 }}
 ?>
 
-<div id="sidebarMenu" class="d-lg-block bg-white sidebar">
+<div id="sidebarMenu" class=" sidebar">
     
 <div class="position-sticky">
     <!-- <div class="logo-block logo" style="height: 150px; background-color: #0B4F6C"> -->
