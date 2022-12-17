@@ -23,7 +23,7 @@ if(isLoggedIn() == false){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="../assets/styles.css?v=3.09">
+    <link rel="stylesheet" href="../assets/styles.css?v=3.10">
 
     <title>Dashboard - CacheUp Blog</title>
 
