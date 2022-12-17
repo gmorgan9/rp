@@ -18,10 +18,7 @@
             }
             .login-form {
                 width: 320px;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: auto;
-                margin-bottom: auto;
+                margin: auto;
             }
             .form {
                 margin-top: 20px;
