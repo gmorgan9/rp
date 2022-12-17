@@ -138,7 +138,7 @@ if(isLoggedIn() == false){
 
 <script>
 $(function(){
-    $('.dropdown').hover(function() {
+    $('.dropdown-menu').hover(function() {
         $(this).addClass('open');
     },
     function() {
