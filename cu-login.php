@@ -58,7 +58,6 @@
         </form>
         <br><br>
         <p><a href="">Forgot password?</a></p>
-        <br>
         <p><a href="">← Go to CacheUp</a></p>
     </div>
     
