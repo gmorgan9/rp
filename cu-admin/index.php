@@ -69,6 +69,8 @@ if(isLoggedIn() == false){
    z-index: 1;
 }
 .links {
+   color: rgb(255, 255, 255);
+   padding: 12px 16px;
    text-decoration: none;
    display: block;
    font-size: 18px;
