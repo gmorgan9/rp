@@ -30,6 +30,26 @@ if(isLoggedIn() == false){
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <style>
+      /* Sidebar */
+.sidebar {
+  background-color: #1f1f1f !important;
+  padding: 5px 0 0; /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 16%;
+}   
+
+
+.page-header {
+  position: fixed;
+  padding: 5px 8px;
+  height: 40px;
+  color: white;
+  background-color: #1f1f1f !important;
+}
+    </style>
+    
 </head>
 <body>
 
