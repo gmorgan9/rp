@@ -13,7 +13,7 @@
 
        
     <div class="dropdown-menu">
-        <button class="menu-btn">
+        <button class="menu-btn text-white">
             Open 
         </button>
         <div class="menu-content">

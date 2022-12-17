@@ -77,7 +77,6 @@ if(isLoggedIn() == false){
    display: block;
    font-size: 18px;
    font-weight: bold;
-   border-bottom: 1px solid black;
 }
 .links:hover {
 }
