@@ -67,10 +67,11 @@ if(isLoggedIn() == false){
   display: inline-block;
 }
 .menu-content {
-   display: none;
-   position: absolute;
-   min-width: 160px;
-   z-index: 1;
+  background-color: #1e2327;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
 }
 .links {
    text-decoration: none;
