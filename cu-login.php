@@ -51,7 +51,9 @@
                 <input type="password" id="user_pass" name="password" class="form-control" autocapitalize="off">
             </div>
             <br>
-            <input type="submit" name="login" class="btn btn-primary text-end" value="Log In">
+            <div class="button text-right">
+                <input type="submit" name="login" class="btn btn-primary" value="Log In">
+            </div>
         </form>
     </div>
     
