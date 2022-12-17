@@ -70,6 +70,10 @@ if(isLoggedIn() == false){
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.side:hover {
+  border-left: 2px solid red;
+}
     </style>
     
 </head>
