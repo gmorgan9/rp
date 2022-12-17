@@ -22,6 +22,7 @@
             .form {
                 margin-top: 20px;
                 padding: 26px 24px 34px;
+                background-color: white;
             }
         </style>
     <!-- end custom styles -->
