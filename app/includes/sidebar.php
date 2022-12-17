@@ -29,7 +29,7 @@ if (mysqli_num_rows($result) > 0) {
             <!-- END DASHBOARD -->
 
             <!-- POSTS -->
-            <a href="#" style="background-color: #1f1f1f ;" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <a href="#" s style="text-decoration: none;" class="text-muted ps-2 side" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 <span>  Posts<i class="bi bi-chevron-down" style="float: right;"></i></span>
             </a>
 					<div  id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
