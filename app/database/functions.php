@@ -5,7 +5,7 @@ require('connection.php');
 
 function isLoggedIn()
 {
-	if ($_SESSION['logged_in'] == 1) {
+	if (isset($_SESSION['user_idno'])) {
 		return true;
 	}else{
 		return false;
