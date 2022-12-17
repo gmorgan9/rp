@@ -30,7 +30,7 @@ if (mysqli_num_rows($result) > 0) {
 
             <!-- POSTS -->
             <div class="pt-2"></div>
-            <a href="#" s style="text-decoration: none;" class="text-muted ps-2 side" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <a href="#" style="text-decoration: none;" class="text-muted ps-2 side" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 <i class="bi bi-pin-angle"></i>&nbsp;
                 <span>  Posts</span>
             </a>
@@ -47,7 +47,7 @@ if (mysqli_num_rows($result) > 0) {
 
                 <!-- COMMENTS -->
                 <div class="pt-2"></div>
-                <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" style="background-color: #1f1f1f" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" style="text-decoration: none;" class="text-muted ps-2 side">
                     <i class="bi bi-chat-right"></i>&nbsp;
                     <span>  Comments</span>
                 </a>
@@ -56,8 +56,8 @@ if (mysqli_num_rows($result) > 0) {
                 <!-- END COMMENTS -->
 
             <!-- PROFILE -->
-                <span>
-                <a href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>" style="background-color: #1f1f1f" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <div class="pt-2"></div>
+                <a href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>" style="text-decoration: none;" class="text-muted ps-2 side">
                     <span>  Profile</span>
                 </a>
                 </span>
