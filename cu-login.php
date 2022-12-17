@@ -56,6 +56,7 @@
                 <input type="submit" name="login" class="btn btn-primary" value="Log In">
             </div>
         </form>
+        <p><a href="">Forgot password?</a></p>
     </div>
     
 </body>
