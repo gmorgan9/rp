@@ -80,7 +80,7 @@ if(isLoggedIn() == false){
   color: #7fade1 !important;
 }
 .right {
-  float: right;
+  float: right !important;
 }
     </style>
     
