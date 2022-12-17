@@ -25,35 +25,38 @@ if (mysqli_num_rows($result) > 0) {
                     <i class="bi bi-speedometer2"></i>&nbsp;
                     <span>  Dashboard</span>
                 </a>
-
             <!-- END DASHBOARD -->
 
             <!-- POSTS -->
-            <div class="pt-2"></div>
-            <a href="#" style="text-decoration: none;" class="text-muted ps-2 side" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                <i class="bi bi-pin-angle"></i>&nbsp;
-                <span>  Posts</span>
-            </a>
-					<div  id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-							<ul class="list-group-item" style="background-color: #6e6e6e83 ; border-bottom:none;border-top:none; margin-bottom: -1px;">
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="<?php echo BASE_URL . '/pages/all_posts.php' ?>"> All Posts</a></li>
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="<?php echo BASE_URL . '/pages/add_posts.php' ?>"> Add New</a></li>
-								<li class="list-unstyled"><a class="text-decoration-none text-white" href="<?php echo BASE_URL . '/pages/categories.php' ?>"> Categories</a></li>
-							</ul>
-						
-					</div>
+                <div class="pt-2"></div>
+                <a href="#" style="text-decoration: none;" class="text-muted ps-2 side" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <i class="bi bi-pin-angle"></i>&nbsp;
+                    <span>  Posts</span>
+                </a>
+				<div  id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+					<ul class="list-group-item" style="background-color: #6e6e6e83 ; border-bottom:none;border-top:none; margin-bottom: -1px;">
+						<li class="list-unstyled"><a class="text-decoration-none text-white" href="<?php echo BASE_URL . '/pages/all_posts.php' ?>"> All Posts</a></li>
+						<li class="list-unstyled"><a class="text-decoration-none text-white" href="<?php echo BASE_URL . '/pages/add_posts.php' ?>"> Add New</a></li>
+						<li class="list-unstyled"><a class="text-decoration-none text-white" href="<?php echo BASE_URL . '/pages/categories.php' ?>"> Categories</a></li>
+					</ul>
+				</div>
+            <!-- END POSTS -->
 
-                <!-- END POSTS -->
-
-                <!-- COMMENTS -->
+            <!-- COMMENTS -->
                 <div class="pt-2"></div>
                 <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" style="text-decoration: none;" class="text-muted ps-2 side">
                     <i class="bi bi-chat-right"></i>&nbsp;
                     <span>  Comments</span>
                 </a>
+            <!-- END COMMENTS -->
 
-
-                <!-- END COMMENTS -->
+            <!-- USERS -->
+				<div class="pt-2"></div>
+                <a href="#<?php //echo BASE_URL . '/logout.php' ?>" style="text-decoration: none;" class="text-muted ps-2 side">
+                    <i class="bi bi-people"></i>&nbsp;
+                    <span>  Users</span>
+                </a>
+            <!-- END USERS -->
 
             <!-- PROFILE -->
                 <div class="pt-2"></div>
@@ -80,15 +83,7 @@ if (mysqli_num_rows($result) > 0) {
                     <span class="fw-bold text-white">&nbsp;&nbsp; Admin Links</span>
 
 
-                <!-- USERS -->
-
-				<div class="pt-2"></div>
-                <a href="#<?php //echo BASE_URL . '/logout.php' ?>" style="text-decoration: none;" class="text-muted ps-2 side">
-                    <i class="bi bi-people"></i>&nbsp;
-                    <span>  Users</span>
-                </a>
-
-                <!-- END USERS -->
+                
                 
 			</div>
 		</div>
