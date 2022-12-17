@@ -144,13 +144,6 @@ $('.dropdown').mouseenter(function(){
         }
     }
 });
-$('.dropdown').mouseenter(function(){
-    if(!$('.navbar-toggle').is(':visible')) { // disable for mobile view
-        if(!$(this).hasClass('close')) { // Keeps it open when hover it again
-            $('.dropdown-toggle', this).trigger('click');
-        }
-    }
-});
 </script>
 
 
