@@ -18,7 +18,7 @@
 </head>
 <body>
 
-    <div class="login-form align-middle">
+    <div class="login-form text-center">
         <h1 class="logo">
             <img src="assets/images/fav.png" width="84px" height="84px" alt="">
         </h1>
