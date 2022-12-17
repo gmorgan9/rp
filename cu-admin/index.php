@@ -46,7 +46,7 @@ if(isLoggedIn() == false){
 
 
 .page-header {
-  display: inline-block;
+  display: block;
   width: 100%;
   padding: 5px 8px;
   height: 40px;
