@@ -66,9 +66,9 @@ if (mysqli_num_rows($result) > 0) {
             <!-- END PROFILE -->
 
                 <!-- LOGOUT -->
-
-                <a href="<?php echo BASE_URL . '/logout.php' ?>" style="background-color: #1f1f1f" class="text-white list-group-item list-group-item-action py-2 ripple" aria-current="true">
-                    <i class="bi bi-sliders2"></i>
+                <div class="pt-2"></div>
+                <a href="<?php echo BASE_URL . '/logout.php' ?>" style="text-decoration: none;" class="text-muted ps-2 side">
+                    <i class="bi bi-box-arrow-right"></i>
                     <span>  Logout</span>
                 </a>
 
