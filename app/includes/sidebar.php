@@ -100,7 +100,7 @@ if (mysqli_num_rows($result) > 0) {
                             <h3 class="nav__subtitle">Profile</h3>
     
                             <a href="#" class="nav__link active">
-                                <i class='bx bx-home nav__icon' ></i>
+                                <i class='bi bi-home nav__icon' ></i>
                                 <span class="nav__name">Home</span>
                             </a>
                             
