@@ -11,8 +11,8 @@ if (mysqli_num_rows($result) > 0) {
 ?>
 
 <div id="sidebarMenu" class="position-fixed sidebar">
-    
-<div>
+<!-- close -->
+    <div>
         
         <!-- </div> -->
         <div class="list-group list-group-flush mt-4">
@@ -84,10 +84,10 @@ if (mysqli_num_rows($result) > 0) {
 			</div>
 		</div>
 	</div>
-</div>
 
+<!-- close -->
 
-<div class="nav" id="navbar">
+    <div class="nav" id="navbar">
             <nav class="nav__container">
                 <div>
                     <a href="#" class="nav__link nav__logo">
@@ -165,3 +165,6 @@ if (mysqli_num_rows($result) > 0) {
                 </a>
             </nav>
         </div>
+
+
+</div>
