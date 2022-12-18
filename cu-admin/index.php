@@ -126,8 +126,10 @@ if(isLoggedIn() == false){
       </div>
     </div>
 
-    <div class="row float-bottom">
-      <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
+    <div class="row">
+      <div class="col sticky-bottom">
+        <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
+      </div>
     </div>
 
   </div>
