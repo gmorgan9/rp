@@ -73,7 +73,8 @@ if(isLoggedIn() == false){
         margin-left: -20% !important;
         padding-top: 10px;
         margin-top: 6px;
-        background-color: #2d3337;
+        background-color: #1e2327 !important;
+        /* background-color: #2d3337; */
         display: none;
         position: absolute;
         min-width: 200px;
@@ -90,7 +91,8 @@ if(isLoggedIn() == false){
         display: block;
       }
       .dropdown-menu:hover .menu-btn {
-        background-color: #2d3337;
+        /* background-color: #2d3337; */
+        background-color: #1e2327 !important;
         padding: 5px;
       }
       .side {
