@@ -111,7 +111,7 @@ if(isLoggedIn() == false){
     </style>
     
 </head>
-<body style="margin:0;padding:0;box-sizing: border-box;">
+<body style="margin:0;padding:0;">
 
 <!-- main-container -->
   <div class="container-fluid" style="margin:0;padding:0;">
