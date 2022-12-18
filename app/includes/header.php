@@ -15,7 +15,9 @@
                 Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i> 
             </a>
             <div class="menu-content">
-                <i class="float-start bi bi-person-square text-muted" style="font-size: 25px;"></i>
+                <div class="float-start">
+                    <i class="text-center bi bi-person-square text-muted" style="font-size: 25px;"></i>
+                </div>
                 <div class="float-end">
                     <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>"><?php echo $_SESSION['username']; ?></a>
                     <!-- <a class="links text-white" href="#">Visit Us</a> -->
