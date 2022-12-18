@@ -72,7 +72,7 @@ if(isLoggedIn() == false){
         display: inline-block;
       }
       .menu-content {
-        margin-right: 15%;
+        margin-right: 25%;
         padding-top: 10px;
         margin-top: 1px;
         background-color: #2d3337;
