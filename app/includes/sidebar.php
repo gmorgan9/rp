@@ -28,22 +28,44 @@ if (mysqli_num_rows($result) > 0) {
 
             <!-- POSTS -->
                 <div class="pt-2"></div>
-                <a href="#" style="text-decoration: none;" class="text-muted ps-2 side" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <!-- <a href="#" style="text-decoration: none;" class="text-muted ps-2 side" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     <i class="bi bi-pin-angle"></i>&nbsp;
                     <span>  Posts</span>
                 </a>
 				<div  id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 					<ul class="list-group-item" style="background-color: #6e6e6e83 ; border-bottom:none;border-top:none; margin-bottom: -1px;">
-						<li class="list-unstyled"><a class="text-decoration-none text-white" href="<?php echo BASE_URL . '/pages/all_posts.php' ?>"> All Posts</a></li>
-						<li class="list-unstyled"><a class="text-decoration-none text-white" href="<?php echo BASE_URL . '/pages/add_posts.php' ?>"> Add New</a></li>
-						<li class="list-unstyled"><a class="text-decoration-none text-white" href="<?php echo BASE_URL . '/pages/categories.php' ?>"> Categories</a></li>
+						<li class="list-unstyled"><a class="text-decoration-none text-white" href="<?php //echo BASE_URL . '/pages/all_posts.php' ?>"> All Posts</a></li>
+						<li class="list-unstyled"><a class="text-decoration-none text-white" href="<?php //echo BASE_URL . '/pages/add_posts.php' ?>"> Add New</a></li>
+						<li class="list-unstyled"><a class="text-decoration-none text-white" href=""> Categories</a></li>
 					</ul>
-				</div>
+				</div> -->
+
+
+                <div class="dropdown-menu">
+                    <a style="font-size: 14px; text-decoration: none; color: white" href="/" class="menu-btn text-white">
+                        Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i> 
+                    </a>
+                    <div class="menu-content">
+                        <div class="float-start">
+                            <i class="bi bi-person-square text-muted" style="font-size: 45px;margin-left: 20px;"></i>
+                        </div>
+                        <div class="float-end" style="margin-right: 15px;">
+                            <a class="links text-white" href="<?php echo BASE_URL . '/pages/all_posts.php' ?>">All Posts</a>
+                            <a class="links text-white" href="<?php echo BASE_URL . '/pages/add_posts.php' ?>">Add New</a>
+                            <a class="links text-white" href="<?php echo BASE_URL . '/pages/categories.php' ?>">Add New</a>
+                            <div class="pb-3"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
             <!-- END POSTS -->
 
             <!-- COMMENTS -->
                 <div class="pt-2"></div>
-                <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" style="text-decoration: none;" class="text-muted ps-2 side">
+                <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" style="text-decoration: none;" class="ps-2 side">
                     <i class="bi bi-chat-right"></i>&nbsp;
                     <span>  Comments</span>
                 </a>
@@ -51,7 +73,7 @@ if (mysqli_num_rows($result) > 0) {
 
             <!-- USERS -->
 				<div class="pt-2"></div>
-                <a href="#<?php //echo BASE_URL . '/logout.php' ?>" style="text-decoration: none;" class="text-muted ps-2 side">
+                <a href="#<?php //echo BASE_URL . '/logout.php' ?>" style="text-decoration: none;" class="ps-2 side">
                     <i class="bi bi-people"></i>&nbsp;
                     <span>  Users</span>
                 </a>
@@ -61,7 +83,7 @@ if (mysqli_num_rows($result) > 0) {
 
             <!-- PROFILE -->
                 <div class="pt-2"></div>
-                <a href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>" style="text-decoration: none;" class="text-muted ps-2 side">
+                <a href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>" style="text-decoration: none;" class="ps-2 side">
                     <i class="bi bi-person"></i>&nbsp;
                     <span>  Profile</span>
                 </a>
@@ -71,7 +93,7 @@ if (mysqli_num_rows($result) > 0) {
 
             <!-- LOGOUT -->
                 <div class="pt-2"></div>
-                <a href="<?php echo BASE_URL . '/logout.php' ?>" style="text-decoration: none;" class="text-muted ps-2 side">
+                <a href="<?php echo BASE_URL . '/logout.php' ?>" style="text-decoration: none;" class="ps-2 side">
                     <i class="bi bi-box-arrow-right"></i>&nbsp;
                     <span>  Logout</span>
                 </a>
