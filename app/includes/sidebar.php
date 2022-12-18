@@ -46,7 +46,7 @@ if (mysqli_num_rows($result) > 0) {
                         <i class="bi bi-pin-angle"></i>&nbsp;
                         <span>  Posts</span>
                     </a>
-                    <div class="menu-content" style="margin-left: 150px !important;">
+                    <div class="menu-content" style="margin-left: 175px !important;">
                         <a class="links text-white" href="<?php echo BASE_URL . '/pages/all_posts.php' ?>">All Posts</a>
                         <a class="links text-white" href="<?php echo BASE_URL . '/pages/add_posts.php' ?>">Add New</a>
                         <a class="links text-white" href="<?php echo BASE_URL . '/pages/categories.php' ?>">Add New</a>
