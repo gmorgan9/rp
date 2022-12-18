@@ -29,7 +29,7 @@ if (mysqli_num_rows($result) > 0) {
             <!-- POSTS -->
                 <div class="pt-2"></div>
                 <div class="dropdown-menu">
-                    <a style="text-decoration: none; color: white" href="/" class="ps-2 side menu-btn text-white">
+                    <a style="text-decoration: none; color: white" href="" class="ps-2 side menu-btn text-white">
                         <i class="bi bi-pin-angle"></i>&nbsp;
                         <span>  Posts</span>
                     </a>
