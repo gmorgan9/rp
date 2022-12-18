@@ -77,7 +77,7 @@ if(isLoggedIn() == false){
         background-color: #2d3337;
         display: none;
         position: absolute;
-        min-width: 160px;
+        min-width: 250px;
         z-index: 1;
       }
       .links {
