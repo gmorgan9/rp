@@ -68,9 +68,10 @@ if(isLoggedIn() == false){
         background-color: transparent;
         position: relative;
         display: inline-block;
+        margin-bottom: 10px;
       }
       .menu-content {
-        margin-bottom: 10px;
+        
         margin-left: -25% !important;
         padding-top: 10px;
         margin-top: 6px;
