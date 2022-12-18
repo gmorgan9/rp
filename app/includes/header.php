@@ -1,4 +1,4 @@
-<div class="page-header" style="width:100%;">
+<div class="page-header" style="width:100% !important;">
     <div class="d-flex" style="float:left !important;">
         <div class="pe-2"></div>
         <img src="../assets/images/new-logo.png" height="20px" width="20px" alt="">
