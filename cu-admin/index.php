@@ -127,7 +127,7 @@ if(isLoggedIn() == false){
     </div>
 
     <div class="row">
-      <div class="col sticky-bottom">
+      <div class="col position-absolute top-100 start-100 translate-middle">
         <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
       </div>
     </div>
