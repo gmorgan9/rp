@@ -67,8 +67,9 @@ if (mysqli_num_rows($result) > 0) {
 </div>
 
 
+  <div class="row">
 
-<section>
+    <section>
           <div class="row">
             <div class="col-lg-4">
               <div class="card mb-4" style="background-color: #1f1f1f;">
@@ -162,6 +163,7 @@ if (mysqli_num_rows($result) > 0) {
           </div>
         </div>
     </section>
+  </div>
 
 
 
