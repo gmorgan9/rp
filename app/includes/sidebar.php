@@ -87,7 +87,7 @@ if (mysqli_num_rows($result) > 0) {
 
 <!-- close -->
 
-    <div class="nav position-fixed" id="navbar" style="margin-top: -40px;">
+    <div class="nav position-fixed" id="navbar" style="margin-top: 40px;">
             <nav class="nav__container">
                 <div>
                     <a href="" class="nav__link nav__logo">
