@@ -82,6 +82,9 @@ if (isset($_POST['unapprove'])) {
   <div class="row">
     <div class="col-2"></div>
     <div class="col-10">
+      <h3 class="text-center">
+        Comments
+      </h3>
       <table class="table table-bordered" style="margin-left: -30px;">
         <thead>
           <tr>
