@@ -109,9 +109,9 @@ if(isLoggedIn() == false){
 <body>
 
 <!-- main-container -->
-  <div class="container" style="margin:0;padding:0;">
+  <div class="container" style="margin:0;padding:0; width:100%;">
 
-  <div class="row" style="width: 100% !important;">
+  <div class="row" >
     <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
   </div>
   <div class="row">
