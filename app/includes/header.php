@@ -1,4 +1,4 @@
-<div class="page-header position-sticky" style="width: 115%;">
+<div class="page-header position-fixed" style="width: 115%;">
     <div class="d-flex" style="float:left !important;">
         <div class="pe-2"></div>
         <img src="../assets/images/new-logo.png" height="20px" width="20px" alt="">
