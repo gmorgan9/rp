@@ -135,6 +135,15 @@ if (isset($_POST['unapprove'])) {
               </td>
               <?php }}?>
         </tbody>
+        <thead style="background-color: white;">
+          <tr>
+            <th scope="col">ID #</th>
+            <th scope="col">Author</th>
+            <th scope="col">In response to</th>
+            <th scope="col">Submitted</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
       </table>
     </div>
 
