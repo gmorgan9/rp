@@ -33,96 +33,92 @@ if(isLoggedIn() == false){
 
     <style>
       body {
-    background-color: #f0f0f0 !important;
-    color: white;
-}
+        background-color: #f0f0f0 !important;
+        color: white;
+      }
       /* Sidebar */
-.sidebar {
-  margin-top: 40px;
-  position: absolute;
-  top: 0;
-  margin-left: 0 !important;
-  padding-left: 0 !important;
-  background-color: #1e2327;
-  width: 12%;
-  /* height: -40% !important; */
-}   
+      .sidebar {
+        margin-top: 40px;
+        position: absolute;
+        top: 0;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+        background-color: #1e2327;
+        width: 12%;
+        /* height: -40% !important; */
+      }
+      .page-header {
+        display: inline !important;
+        width: 100%;
+        padding: 5px 8px;
+        height: 40px;
+        color: white;
+        background-color: #1e2327 !important;
+      }
+      /* DROPDOWN */
+      .menu-btn {
 
-
-.page-header {
-  display: inline !important;
-  width: 100%;
-  padding: 5px 8px;
-  height: 40px;
-  color: white;
-  background-color: #1e2327 !important;
-}
-
-/* DROPDOWN */
-
-.menu-btn {
-  
-  padding-left: 5px;
-  padding-right: 5px;
-  background-color: transparent;
-  border: none;
-}
-.dropdown-menu {
-  margin-top: -5px;
-  border: none;
-  background-color: transparent;
-  position: relative;
-  display: inline-block;
-}
-.menu-content {
-  padding-top: 10px;
-  margin-top: 1px;
-  background-color: #2d3337;
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  z-index: 1;
-}
-.links {
-  
-  padding: 8px;
-  font-size: 12px;
-   text-decoration: none;
-   display: block;
-   font-weight: bold;
-}
-.links:hover {
-}
-.dropdown-menu:hover .menu-content {
-   display: block;
-}
-.dropdown-menu:hover .menu-btn {
-  background-color: #2d3337;
-  padding: 5px;
-}
-
-
-.side {
-  border-left: 4px solid transparent;
-}
-
-.side:hover {
-  border-left: 4px solid #7fade1;
-  color: #7fade1 !important;
-}
-.right {
-  margin-right: 25px !important;
-}
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: transparent;
+        border: none;
+      }
+      .dropdown-menu {
+        margin-top: -5px;
+        border: none;
+        background-color: transparent;
+        position: relative;
+        display: inline-block;
+      }
+      .menu-content {
+        padding-top: 10px;
+        margin-top: 1px;
+        background-color: #2d3337;
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+      }
+      .links {
+        padding: 8px;
+        font-size: 12px;
+        text-decoration: none;
+        display: block;
+        font-weight: bold;
+      }
+      .dropdown-menu:hover .menu-content {
+        display: block;
+      }
+      .dropdown-menu:hover .menu-btn {
+        background-color: #2d3337;
+        padding: 5px;
+      }
+      .side {
+        border-left: 4px solid transparent;
+      }
+      .side:hover {
+        border-left: 4px solid #7fade1;
+        color: #7fade1 !important;
+      }
+      .right {
+        margin-right: 25px !important;
+      }
     </style>
     
 </head>
 <body>
 
 <!-- main-container -->
-  <div class="main-container">
+  <div class="container">
 
+  <div class="row">
     <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
-    <?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
+  </div>
+  <div class="row">
+    <div class="col">
+      <?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
+    </div>
+  </div>
 
 
 
