@@ -54,6 +54,12 @@ body {
   min-width: 200px;
   z-index: 1;
 }
+.a-link {
+  width: 100%;
+}
+.a-link:hover {
+  width: 100%;
+}
 .links {
   padding: 8px;
   font-size: 12px;
