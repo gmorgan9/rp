@@ -10,7 +10,7 @@ if (mysqli_num_rows($result) > 0) {
 }}
 ?>
 
-<div id="sidebarMenu" class="position-fixed sidebar">
+<!-- <div id="sidebarMenu" class="position-fixed sidebar"> -->
 <!-- close -->
     <div>
         
@@ -167,4 +167,4 @@ if (mysqli_num_rows($result) > 0) {
         </div>
 
 
-</div>
+<!-- </div> -->
