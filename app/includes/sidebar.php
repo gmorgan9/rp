@@ -10,9 +10,9 @@ if (mysqli_num_rows($result) > 0) {
 }}
 ?>
 
-<div id="sidebarMenu" class=" sidebar">
+<div id="sidebarMenu" class="position-fixed sidebar">
     
-<div class="position-relative">
+<div>
         
         <!-- </div> -->
         <div class="list-group list-group-flush mt-4">
