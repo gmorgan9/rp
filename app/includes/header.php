@@ -16,7 +16,7 @@
             </a>
             <div class="menu-content">
                 <div class="float-start">
-                    <i class="bi bi-person-square text-muted" style="font-size: 55px;margin-left: 20px; margin-top: -10%;"></i>
+                    <i class="bi bi-person-square text-muted" style="font-size: 60px;margin-left: 20px; margin-top: -15%;"></i>
                 </div>
                 <div class="float-end" style="margin-right: 15px;">
                     <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>"><?php echo $_SESSION['username']; ?></a>
