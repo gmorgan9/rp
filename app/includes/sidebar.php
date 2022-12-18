@@ -12,7 +12,7 @@ if (mysqli_num_rows($result) > 0) {
 
 <div id="sidebarMenu" class=" sidebar">
     
-<div class="position-sticky">
+<div class="position-fixed">
         
         <!-- </div> -->
         <div class="list-group list-group-flush mt-4">
