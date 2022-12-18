@@ -70,6 +70,7 @@ if(isLoggedIn() == false){
         display: inline-block;
       }
       .menu-content {
+        margin-bottom: 10px;
         margin-left: -25% !important;
         padding-top: 10px;
         margin-top: 6px;
