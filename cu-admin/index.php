@@ -111,8 +111,10 @@ if(isLoggedIn() == false){
 <!-- main-container -->
   <div class="container" style="margin:0;padding:0;">
 
-  <div class="col">
-    <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
+  <div class="row">
+    <div class="col">
+      <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
+    </div>
   </div>
   <div class="row">
     <div class="col">
