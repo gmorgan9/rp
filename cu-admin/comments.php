@@ -87,7 +87,7 @@ if (isset($_POST['unapprove'])) {
       </h3>
       <div class="mt-5"></div>
       <table class="table table-bordered" style="margin-left: -30px;">
-        <thead class="table-dark">
+        <thead style="background-color: white;">
           <tr>
             <th scope="col">ID #</th>
             <th scope="col">Author</th>
@@ -96,7 +96,7 @@ if (isset($_POST['unapprove'])) {
             <th scope="col">Actions</th>
           </tr>
         </thead>
-        <tbody class="table-group-divider">
+        <tbody class="table-group-divider" style="background-color: #f0f0f0;">
 
         <?php
             $sql = "SELECT * FROM comments";
