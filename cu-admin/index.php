@@ -109,7 +109,7 @@ if(isLoggedIn() == false){
 <body style="margin:0;padding:0;box-sizing: border-box;">
 
 <!-- main-container -->
-  <div class="container" style="margin:0;padding:0;">
+  <div class="container-fluid" style="margin:0;padding:0;">
 
   <div class="row">
     <div class="col">
