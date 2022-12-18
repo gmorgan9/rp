@@ -96,12 +96,12 @@ if (mysqli_num_rows($result) > 0) {
     
                     <div class="nav__list">
                         <div class="nav__items">
-                            <h3 class="nav__subtitle">Profile</h3>
+                            <!-- <h3 class="nav__subtitle">Profile</h3> -->
     
-                            <a href="<?php echo BASE_URL . '/cu-admin/' ?>" class="nav__link active">
-                                <i class='bi bi-house nav__icon' ></i>
+                            <!-- <a href="<?php //echo BASE_URL . '/cu-admin/' ?>" class="nav__link active">
+                                <i class='bi bi-house nav__icon'></i>
                                 <span class="nav__name">Home</span>
-                            </a>
+                            </a> -->
                             
                             <div class="nav__dropdown">
                                 <a href="#" class="nav__link">
