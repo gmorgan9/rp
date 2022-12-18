@@ -82,7 +82,7 @@ if (isset($_POST['unapprove'])) {
   <div class="row">
     <div class="col-2"></div>
     <div class="col-10">
-      <table class="table table-bordered" style="margin-left: -25px;">
+      <table class="table table-bordered" style="margin-left: -30px;">
         <thead>
           <tr>
             <th scope="col">ID #</th>
