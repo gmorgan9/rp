@@ -45,7 +45,7 @@ if(isLoggedIn() == false){
   padding-left: 0 !important;
   background-color: #1e2327;
   width: 12%;
-  height: -40% !important;
+  /* height: -40% !important; */
 }   
 
 
