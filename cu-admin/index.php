@@ -112,9 +112,7 @@ if(isLoggedIn() == false){
   <div class="container-fluid" style="margin:0;padding:0;">
 
   <div class="row">
-    <div class="col">
-      <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
-    </div>
+    <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
   </div>
   <div class="row">
     <div class="col">
