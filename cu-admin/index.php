@@ -49,8 +49,8 @@ if(isLoggedIn() == false){
       }
       .page-header {
         display: inline !important;
-        width: 100%;
-        /* padding: 5px 8px; */
+        width: 100% !important;
+        padding: 5px 8px;
         height: 40px;
         color: white;
         background-color: #1e2327 !important;
