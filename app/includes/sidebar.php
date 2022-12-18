@@ -90,7 +90,7 @@ if (mysqli_num_rows($result) > 0) {
     <div class="nav" id="navbar">
             <nav class="nav__container">
                 <div>
-                    <a href="#" class="nav__link nav__logo">
+                    <a href="" class="nav__link nav__logo">
                         <i class='bi bi-person nav__icon' ></i>
                         <span class="nav__logo-name">Bedimcode</span>
                     </a>
@@ -99,7 +99,7 @@ if (mysqli_num_rows($result) > 0) {
                         <div class="nav__items">
                             <h3 class="nav__subtitle">Profile</h3>
     
-                            <a href="#" class="nav__link active">
+                            <a href="<?php echo BASE_URL . '/cu-admin/' ?>" class="nav__link active">
                                 <i class='bi bi-house nav__icon' ></i>
                                 <span class="nav__name">Home</span>
                             </a>
