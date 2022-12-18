@@ -66,82 +66,75 @@ if (isset($_POST['unapprove'])) {
 <body>
     
 <!-- main-container -->
-<div class="container-fluid">
+  <div class="container-fluid">
 
-<div class="row">
-  <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
-</div>
-
-<div class="row">
-  <div class="col" style="margin:0;padding:0;">
-    <?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
+  <div class="row">
+    <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
   </div>
-</div>
+
+  <div class="row">
+    <div class="col" style="margin:0;padding:0;">
+      <?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
+    </div>
+  </div>
 
 
+  <div class="row">
+    <div class="col"></div>
+    <div class="col">
+      <table class="table table-dark" style="width: 99%;">
+        <thead>
+          <tr>
+            <th style="background-color: #1a1a1a;" cope="col">ID #</th>
+            <th style="background-color: #1a1a1a;" scope="col">Author</th>
+            <th style="background-color: #1a1a1a;" scope="col">In response to</th>
+            <th style="background-color: #1a1a1a;" scope="col">Submitted</th>
+            <th style="background-color: #1a1a1a;" scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
 
-<table class="table table-dark" style="width: 99%;">
-  <thead>
-    <tr>
-      <th style="background-color: #1a1a1a;" cope="col">ID #</th>
-      <th style="background-color: #1a1a1a;" scope="col">Author</th>
-      <th style="background-color: #1a1a1a;" scope="col">In response to</th>
-      <th style="background-color: #1a1a1a;" scope="col">Submitted</th>
-      <th style="background-color: #1a1a1a;" scope="col">Actions</th>
-    </tr>
-  </thead>
-  <tbody class="table-group-divider">
+        <?php
+            $sql = "SELECT * FROM comments";
+            $all = mysqli_query($conn, $sql);
+            if($all) {
+                while ($row = mysqli_fetch_assoc($all)) {
+                  $comment_id     = $row['comment_id'];
+                  $idno      = $row['idno'];
+                  $post_idno     = $row['post_idno'];
+                  $name = $row['name'];
+                  $submit_date = $row['submit_date'];
+                  $status = $row['status'];
+                  $post_id = $row['post_id'];
+                  ?>
+          <tr>
+              <th style="background-color: #1a1a1a;" scope="row"><?php echo $idno; ?></th>
+              <td style="background-color: #1a1a1a;"><?php echo $name; ?></td>
+              
+              <td style="background-color: #1a1a1a;"><a href="../single_post.php?id=<?php echo $post_id; ?>"><?php echo $post_idno; ?></a></td>
+              <td style="background-color: #1a1a1a;"><?php echo date('F j, Y / g:i a', strtotime($submit_date));; ?></td>
+              
+              <?php if($status == 0) { ?>
+                <td style="background-color: #1a1a1a;">
+              <form method="post" action="">
+                <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
+                <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="approve"><span class="badge text-bg-success">Approve</span></button>
+              </form>
+              </td>
+              <?php } else { ?>
+                <td style="background-color: #1a1a1a;">
+              <form method="post" action="">
+                <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
+                <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="unapprove"><span class="badge text-bg-warning">Unapprove</span></button>
+              </form>
+              <?php } ?>
+              </td>
+              <?php }}?>
+        </tbody>
+      </table>
+    </div>
 
-  <?php
-      $sql = "SELECT * FROM comments";
-      $all = mysqli_query($conn, $sql);
-      if($all) {
-          while ($row = mysqli_fetch_assoc($all)) {
-            $comment_id     = $row['comment_id'];
-            $idno      = $row['idno'];
-            $post_idno     = $row['post_idno'];
-            $name = $row['name'];
-            $submit_date = $row['submit_date'];
-            $status = $row['status'];
-            $post_id = $row['post_id'];
-            ?>
-    <tr>
-        <?php //if($_SESSION['empID'] != $row['employeeID']){ ?>
-        <th style="background-color: #1a1a1a;" scope="row"><?php echo $idno; ?></th>
-        <td style="background-color: #1a1a1a;"><?php echo $name; ?></td>
-        
-        <td style="background-color: #1a1a1a;"><a href="../single_post.php?id=<?php echo $post_id; ?>"><?php echo $post_idno; ?></a></td>
-        <td style="background-color: #1a1a1a;"><?php echo date('F j, Y / g:i a', strtotime($submit_date));; ?></td>
-       
-        <?php if($status == 0) { ?>
-          <td style="background-color: #1a1a1a;">
-        <form method="post" action="">
-          <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
-          <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="approve"><span class="badge text-bg-success">Approve</span></button>
-        </form>
-        </td>
-        <?php } else { ?>
-          <td style="background-color: #1a1a1a;">
-        <form method="post" action="">
-          <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
-          <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="unapprove"><span class="badge text-bg-warning">Unapprove</span></button>
-        </form>
-        <?php } ?>
-        </td>
-        
-          <!-- <div class="d-flex">
-            <a style="text-decoration: none; background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" href="actions/edit_post.php?id=<?php echo $post_id; ?>"><span class="badge text-bg-success">View</span></a>
-            &nbsp;
-            <form method="post" action="">
-              <input type="hidden" name="post_id" value="<?php //echo $post_id; ?>" />
-              <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="delete"><span class="badge text-bg-danger">Delete</span></button>
-            </form>
-          </div> -->
-     
-        <?php }}?>
-  </tbody>
-</table>
-
+  </div>
 
 
 
