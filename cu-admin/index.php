@@ -32,6 +32,10 @@ if(isLoggedIn() == false){
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
     <style>
+      body {
+    background-color: #f0f0f0 !important;
+    color: white;
+}
       /* Sidebar */
 .sidebar {
   margin-top: 40px;
