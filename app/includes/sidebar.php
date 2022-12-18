@@ -42,7 +42,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
                 <div class="dropdown-menu">
-                    <a style="font-size: 14px; text-decoration: none; color: white" href="/" class="menu-btn text-white">
+                    <a style="text-decoration: none; color: white" href="/" class="menu-btn text-white">
                         <i class="bi bi-pin-angle"></i>&nbsp;
                         <span>  Posts</span>
                     </a>
