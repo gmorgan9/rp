@@ -17,7 +17,7 @@
             <div class="menu-content">
                 <i class="float-start bi bi-person-square text-muted" style="font-size: 25px;"></i>
                 <div class="float-end">
-                    <a class="links text-white" href="#">Contact Us</a>
+                    <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>"><?php echo $_SESSION['username']; ?></a>
                     <a class="links text-white" href="#">Visit Us</a>
                     <a class="links text-white" href="#">About Us</a>
                 </div>
