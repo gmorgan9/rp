@@ -37,7 +37,7 @@ if (mysqli_num_rows($result) > 0) {
                         <a class="links text-white" href="<?php echo BASE_URL . '/pages/all_posts.php' ?>">All Posts</a>
                         <a class="links text-white" href="<?php echo BASE_URL . '/pages/add_posts.php' ?>">Add New</a>
                         <a class="links text-white" href="<?php echo BASE_URL . '/pages/categories.php' ?>">Add New</a>
-                        <div class="pb-3"></div>
+                        <!-- <div class="pb-3"></div> -->
                     </div>
                 </div>
 
