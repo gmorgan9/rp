@@ -63,7 +63,7 @@ if(isLoggedIn() == false){
         border: none;
       }
       .dropdown-menu {
-        /* margin-top: -5px; */
+        margin-top: -5px;
         border: none;
         background-color: transparent;
         position: relative;
