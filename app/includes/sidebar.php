@@ -43,18 +43,14 @@ if (mysqli_num_rows($result) > 0) {
 
                 <div class="dropdown-menu">
                     <a style="font-size: 14px; text-decoration: none; color: white" href="/" class="menu-btn text-white">
-                        Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i> 
+                        <i class="bi bi-pin-angle"></i>&nbsp;
+                        <span>  Posts</span>
                     </a>
                     <div class="menu-content">
-                        <div class="float-start">
-                            <i class="bi bi-person-square text-muted" style="font-size: 45px;margin-left: 20px;"></i>
-                        </div>
-                        <div class="float-end" style="margin-right: 15px;">
-                            <a class="links text-white" href="<?php echo BASE_URL . '/pages/all_posts.php' ?>">All Posts</a>
-                            <a class="links text-white" href="<?php echo BASE_URL . '/pages/add_posts.php' ?>">Add New</a>
-                            <a class="links text-white" href="<?php echo BASE_URL . '/pages/categories.php' ?>">Add New</a>
-                            <div class="pb-3"></div>
-                        </div>
+                        <a class="links text-white" href="<?php echo BASE_URL . '/pages/all_posts.php' ?>">All Posts</a>
+                        <a class="links text-white" href="<?php echo BASE_URL . '/pages/add_posts.php' ?>">Add New</a>
+                        <a class="links text-white" href="<?php echo BASE_URL . '/pages/categories.php' ?>">Add New</a>
+                        <div class="pb-3"></div>
                     </div>
                 </div>
 
