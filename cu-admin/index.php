@@ -121,7 +121,7 @@ if(isLoggedIn() == false){
     </div>
 
     <div class="row">
-      <div class="col">
+      <div class="col" style="margin:0;padding:0;">
         <?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
       </div>
     </div>
