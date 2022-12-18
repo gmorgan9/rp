@@ -81,15 +81,15 @@ if (isset($_POST['unapprove'])) {
   <div class="mt-5"></div>
   <div class="row">
     <div class="col"></div>
-    <div class="col">
-      <table class="table table-dark" style="width: 99%;">
+    <div class="col-8">
+      <table class="table table-light" style="width: 99%;">
         <thead>
           <tr>
-            <th style="background-color: #1a1a1a;" cope="col">ID #</th>
-            <th style="background-color: #1a1a1a;" scope="col">Author</th>
-            <th style="background-color: #1a1a1a;" scope="col">In response to</th>
-            <th style="background-color: #1a1a1a;" scope="col">Submitted</th>
-            <th style="background-color: #1a1a1a;" scope="col">Actions</th>
+            <th scope="col">ID #</th>
+            <th scope="col">Author</th>
+            <th scope="col">In response to</th>
+            <th scope="col">Submitted</th>
+            <th scope="col">Actions</th>
           </tr>
         </thead>
         <tbody class="table-group-divider">
@@ -108,21 +108,21 @@ if (isset($_POST['unapprove'])) {
                   $post_id = $row['post_id'];
                   ?>
           <tr>
-              <th style="background-color: #1a1a1a;" scope="row"><?php echo $idno; ?></th>
-              <td style="background-color: #1a1a1a;"><?php echo $name; ?></td>
+              <th scope="row"><?php echo $idno; ?></th>
+              <td><?php echo $name; ?></td>
               
-              <td style="background-color: #1a1a1a;"><a href="../single_post.php?id=<?php echo $post_id; ?>"><?php echo $post_idno; ?></a></td>
-              <td style="background-color: #1a1a1a;"><?php echo date('F j, Y / g:i a', strtotime($submit_date));; ?></td>
+              <td><a href="../single_post.php?id=<?php echo $post_id; ?>"><?php echo $post_idno; ?></a></td>
+              <td><?php echo date('F j, Y / g:i a', strtotime($submit_date));; ?></td>
               
               <?php if($status == 0) { ?>
-                <td style="background-color: #1a1a1a;">
+                <td>
               <form method="post" action="">
                 <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
                 <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="approve"><span class="badge text-bg-success">Approve</span></button>
               </form>
               </td>
               <?php } else { ?>
-                <td style="background-color: #1a1a1a;">
+                <td>
               <form method="post" action="">
                 <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
                 <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="unapprove"><span class="badge text-bg-warning">Unapprove</span></button>
