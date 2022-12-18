@@ -80,8 +80,7 @@ if (isset($_POST['unapprove'])) {
 
   <div class="mt-5"></div>
   <div class="row">
-    <div class="col"></div>
-    <div class="col-11">
+    <div class="col-10">
       <table class="table table-bordered" style="width: 99%;">
         <thead>
           <tr>
