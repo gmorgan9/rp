@@ -22,6 +22,7 @@
                     <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>"><?php echo $_SESSION['username']; ?></a>
                     <!-- <a class="links text-white" href="#">Visit Us</a> -->
                     <a class="links text-white" href="<?php echo BASE_URL . '/logout.php' ?>">Logout</a>
+                    <br><br>
                 </div>
             </div>
         </div>
