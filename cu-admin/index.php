@@ -58,7 +58,6 @@ if(isLoggedIn() == false){
       }
       /* DROPDOWN */
       .menu-btn {
-
         padding-left: 5px;
         padding-right: 5px;
         background-color: transparent;
@@ -72,9 +71,9 @@ if(isLoggedIn() == false){
         display: inline-block;
       }
       .menu-content {
-        margin-left: -25% !important;
+        margin-left: -20% !important;
         padding-top: 10px;
-        margin-top: 1px;
+        margin-top: 5px;
         background-color: #2d3337;
         display: none;
         position: absolute;
