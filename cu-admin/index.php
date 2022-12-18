@@ -23,7 +23,7 @@ if(isLoggedIn() == false){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <!-- <link rel="stylesheet" href="../assets/styles.css?v=3.31"> -->
+    <link rel="stylesheet" href="../assets/styles.css?v=4.00">
 
     <title>Dashboard - CacheUp Blog</title>
 
@@ -32,82 +32,7 @@ if(isLoggedIn() == false){
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
     <style>
-      body {
-        background-color: #f0f0f0 !important;
-        color: white;
-      }
-      /* Sidebar */
-      .sidebar {
-        margin-top: 40px;
-        position: absolute;
-        top: 0;
-        margin-left: 0 !important;
-        padding-left: 0 !important;
-        background-color: #1e2327;
-        width: 12%;
-        height: 100% !important;
-        /* height: -40% !important; */
-      }
-      .page-header {
-        display: inline !important;
-        width: 100% !important;
-        padding: 5px 8px;
-        height: 40px;
-        color: white;
-        background-color: #1e2327 !important;
-      }
-      /* DROPDOWN */
-      .menu-btn {
-        padding: 5px;
-        background-color: transparent;
-        border: none;
-      }
-      .dropdown-menu {
-        margin-top: -5px;
-        border: none;
-        background-color: transparent;
-        position: relative;
-        display: inline-block;
-      }
-      .menu-content {
-        margin-left: -25% !important;
-        padding-top: 10px;
-        margin-top: 6px;
-        background-color: #1e2327 !important;
-        /* background-color: #2d3337; */
-        display: none;
-        position: absolute;
-        min-width: 200px;
-        z-index: 1;
-      }
-      .links {
-        padding: 8px;
-        font-size: 12px;
-        text-decoration: none;
-        display: block;
-        font-weight: bold;
-      }
-      .links:hover {
-        color: #7fade1 !important;
-      }
-      .dropdown-menu:hover .menu-content {
-        display: block;
-      }
-      .dropdown-menu:hover .menu-btn {
-        /* background-color: #2d3337; */
-        background-color: #1e2327 !important;
-        padding: 5px;
-      }
-      .side {
-        border-left: 4px solid transparent;
-      }
-      .side:hover {
-        border-left: 4px solid #7fade1;
-        color: #7fade1 !important;
-      }
-      .right {
-        margin-right: 25px !important;
-      }
+      
     </style>
     
 </head>
