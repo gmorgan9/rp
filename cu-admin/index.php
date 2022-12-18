@@ -106,12 +106,12 @@ if(isLoggedIn() == false){
     </style>
     
 </head>
-<body>
+<body style="margin:0;padding:0;box-sizing: border-box;">
 
 <!-- main-container -->
-  <div class="container" style="margin:0;padding:0;box-sizing: border-box;">
+  <div class="container">
 
-  <div class="row" style="margin: 0;">
+  <div class="row">
     <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
   </div>
   <div class="row">
