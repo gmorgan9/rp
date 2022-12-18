@@ -109,7 +109,7 @@ if(isLoggedIn() == false){
 <body>
 
 <!-- main-container -->
-  <div class="container">
+  <div class="container" style="margin:0;padding:0;">
 
   <div class="row">
     <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
