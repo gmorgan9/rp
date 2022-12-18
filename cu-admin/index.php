@@ -50,7 +50,7 @@ if(isLoggedIn() == false){
       .page-header {
         display: inline !important;
         width: 100%;
-        padding: 5px 8px;
+        /* padding: 5px 8px; */
         height: 40px;
         color: white;
         background-color: #1e2327 !important;
@@ -109,7 +109,7 @@ if(isLoggedIn() == false){
 <body>
 
 <!-- main-container -->
-  <div class="container" style="margin:0;padding:0; width:100%;">
+  <div class="container" style="margin:0;padding:0;">
 
   <div class="row" >
     <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
