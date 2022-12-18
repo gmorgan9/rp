@@ -103,14 +103,6 @@ if (mysqli_num_rows($result) > 0) {
                                 <i class='bi bi-house nav__icon' ></i>
                                 <span class="nav__name">Home</span>
                             </a>
-
-                            <div class="nav__dropdown-collapse">
-                                    <div class="nav__dropdown-content">
-                                        <a href="<?php echo BASE_URL . '/pages/all_posts.php' ?>" class="nav__dropdown-item">All Posts</a>
-                                        <a href="<?php echo BASE_URL . '/pages/add_posts.php' ?>" class="nav__dropdown-item">Add Posts</a>
-                                        <a href="<?php echo BASE_URL . '/pages/categories.php' ?>" class="nav__dropdown-item">Categories</a>
-                                    </div>
-                            </div>
                             
                             <div class="nav__dropdown">
                                 <a href="#" class="nav__link">
@@ -118,6 +110,14 @@ if (mysqli_num_rows($result) > 0) {
                                     <span class="nav__name">Profile</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
                                 </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Passwords</a>
+                                        <a href="#" class="nav__dropdown-item">Mail</a>
+                                        <a href="#" class="nav__dropdown-item">Accounts</a>
+                                    </div>
+                                </div>
                             </div>
 
                             <a href="#" class="nav__link">
