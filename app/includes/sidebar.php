@@ -119,9 +119,9 @@ if (mysqli_num_rows($result) > 0) {
                                 </div>
                             </div>
 
-                            <a href="#" class="nav__link">
-                                <i class='bx bx-message-rounded nav__icon' ></i>
-                                <span class="nav__name">Messages</span>
+                            <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" class="nav__link">
+                                <i class='bi bi-chat-right nav__icon' ></i>
+                                <span class="nav__name">Comments</span>
                             </a>
                         </div>
     
