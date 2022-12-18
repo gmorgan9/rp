@@ -107,15 +107,15 @@ if (mysqli_num_rows($result) > 0) {
                             <div class="nav__dropdown">
                                 <a href="#" class="nav__link">
                                     <i class='bx bx-user nav__icon' ></i>
-                                    <span class="nav__name">Profile</span>
+                                    <span class="nav__name"><i class="bi bi-pin-angle"></i>&nbsp; Posts</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
                                 </a>
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="#" class="nav__dropdown-item">Passwords</a>
-                                        <a href="#" class="nav__dropdown-item">Mail</a>
-                                        <a href="#" class="nav__dropdown-item">Accounts</a>
+                                        <a href="<?php echo BASE_URL . '/pages/all_posts.php' ?>" class="nav__dropdown-item">All Posts</a>
+                                        <a href="<?php echo BASE_URL . '/pages/add_posts.php' ?>" class="nav__dropdown-item">Add Posts</a>
+                                        <a href="<?php echo BASE_URL . '/pages/categories.php' ?>" class="nav__dropdown-item">categories</a>
                                     </div>
                                 </div>
                             </div>
