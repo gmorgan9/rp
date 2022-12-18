@@ -85,9 +85,9 @@ if (isset($_POST['unapprove'])) {
       <h3 class="text-black" style="margin-left: -30px;">
         Comments
       </h3>
-      <div class="mt-3"></div>
+      <div class="mt-5"></div>
       <table class="table table-bordered" style="margin-left: -30px;">
-        <thead>
+        <thead class="table-light">
           <tr>
             <th scope="col">ID #</th>
             <th scope="col">Author</th>
