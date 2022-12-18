@@ -78,7 +78,7 @@ if (isset($_POST['unapprove'])) {
     </div>
   </div>
 
-  <div class="mt-3"></div>
+  <div class="mt-5"></div>
   <div class="row">
     <div class="col"></div>
     <div class="col">
