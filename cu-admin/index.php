@@ -72,12 +72,13 @@ if(isLoggedIn() == false){
         display: inline-block;
       }
       .menu-content {
+        margin-right: 15px;
         padding-top: 10px;
         margin-top: 1px;
         background-color: #2d3337;
         display: none;
         position: absolute;
-        min-width: 250px;
+        min-width: 200px;
         z-index: 1;
       }
       .links {
