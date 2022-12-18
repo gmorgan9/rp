@@ -47,7 +47,7 @@ if (mysqli_num_rows($result) > 0) {
             <!-- END POSTS -->
 
             <!-- COMMENTS -->
-                <div class="pt-2"></div>
+                <!-- <div class="pt-2"></div> -->
                 <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" style="text-decoration: none;" class="text-white ps-2 side">
                     <i class="bi bi-chat-right"></i>&nbsp;
                     <span>  Comments</span>
