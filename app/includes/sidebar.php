@@ -113,7 +113,7 @@ if (mysqli_num_rows($result) > 0) {
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="<?php echo BASE_URL . '/pages/all_posts.php' ?>" class="nav__dropdown-item">All Posts</a>
+                                        <a href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>" class="nav__dropdown-item">All Posts</a>
                                         <a href="<?php echo BASE_URL . '/pages/add_posts.php' ?>" class="nav__dropdown-item">Add Posts</a>
                                         <a href="<?php echo BASE_URL . '/pages/categories.php' ?>" class="nav__dropdown-item">categories</a>
                                     </div>
