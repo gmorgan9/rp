@@ -58,8 +58,8 @@ if(isLoggedIn() == false){
       }
       /* DROPDOWN */
       .menu-btn {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding: 5px;
+        padding: 5px;
         background-color: transparent;
         border: none;
       }
@@ -73,7 +73,7 @@ if(isLoggedIn() == false){
       .menu-content {
         margin-left: -20% !important;
         padding-top: 10px;
-        margin-top: 5px;
+        margin-top: 6px;
         background-color: #2d3337;
         display: none;
         position: absolute;
