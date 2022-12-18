@@ -20,7 +20,7 @@ if (mysqli_num_rows($result) > 0) {
 			<div class="accordion mb-2" id="accordionExample"> -->
 
             <!-- DASHBOARD -->
-                <!-- <a href="<?php echo BASE_URL . '/cu-admin/' ?>" style="text-decoration: none;" class="text-white ps-2 side">
+                <!-- <a href="<?php //echo BASE_URL . '/cu-admin/' ?>" style="text-decoration: none;" class="text-white ps-2 side">
                     <i class="bi bi-speedometer2"></i>&nbsp;
                     <span>  Dashboard</span>
                 </a> -->
@@ -89,9 +89,8 @@ if (mysqli_num_rows($result) > 0) {
     <div class="nav position-fixed" id="navbar" style="margin-top: 40px; background-color: #1e2327;">
             <nav class="nav__container">
                 <div>
-                    <a href="" class="nav__link nav__logo">
-                        <i class='bi bi-person nav__icon' ></i>
-                        <span class="nav__logo-name">Bedimcode</span>
+                    <a href="<?php echo BASE_URL . '/cu-admin/' ?>" class="nav__link nav__logo">
+                        <span class="nav__logo-name"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</span>
                     </a>
     
                     <div class="nav__list">
