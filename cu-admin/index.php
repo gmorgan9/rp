@@ -127,6 +127,7 @@ if(isLoggedIn() == false){
     </div>
 
     <div class="row">
+      <div class="col"></div>
       <div class="col position-absolute bottom-0 end-0">
         <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
       </div>
