@@ -90,7 +90,8 @@ if (mysqli_num_rows($result) > 0) {
             <nav class="nav__container">
                 <div>
                     <a href="<?php echo BASE_URL . '/cu-admin/' ?>" class="nav__link nav__logo">
-                        <span class="nav__logo-name"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</span>
+                        <i class="bi bi-speedometer2 nav__icon"></i>
+                        <span class="nav__logo-name">&nbsp;Dashboard</span>
                     </a>
     
                     <div class="nav__list">
