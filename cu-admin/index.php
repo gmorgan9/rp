@@ -87,6 +87,9 @@ if(isLoggedIn() == false){
         display: block;
         font-weight: bold;
       }
+      .links:hover {
+        color: #7fade1 !important;
+      }
       .dropdown-menu:hover .menu-content {
         display: block;
       }
