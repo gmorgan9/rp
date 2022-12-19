@@ -108,10 +108,10 @@ if (mysqli_num_rows($result) > 0) {
   <div class="row">
     <div class="col-2"></div>
     <div class="col-10" style="margin-left: -25px;">
-    <h3 class="text-black" style="margin-left: -25px;">
+    <h3 class="text-black" style="margin-left: -5px;">
         New Post
       </h3>
-      <div class="mt-5"></div>
+      <div class="mt-3"></div>
     <form action="" method="POST">
       <input class="form-control" type="hidden" name="author_idno" value="<?php echo $idno;?>">
         <div class="modal_help float-end" style="margin-right: 25px; margin-top: -55px !important;">
