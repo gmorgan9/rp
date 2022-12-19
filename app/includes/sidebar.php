@@ -50,6 +50,11 @@ if (mysqli_num_rows($result) > 0) {
     
                         <div class="nav__items">
                             <h3 class="nav__subtitle text-white">Settings</h3>
+
+                            <a href="#" class="nav__link side text-white">
+                                &nbsp;&nbsp;<i class='bx bx-compass nav__icon' style="font-size: 18px;"></i>
+                                <span class="nav__name">&nbsp;General</span>
+                            </a>
     
                             <div class="nav__dropdown">
                                 <a href="#" class="nav__link side text-white">
@@ -68,10 +73,6 @@ if (mysqli_num_rows($result) > 0) {
 
                             </div>
 
-                            <a href="#" class="nav__link side text-white">
-                                &nbsp;&nbsp;<i class='bx bx-compass nav__icon' style="font-size: 18px;"></i>
-                                <span class="nav__name">&nbsp;Explore</span>
-                            </a>
                         </div>
                     </div>
                 </div>
