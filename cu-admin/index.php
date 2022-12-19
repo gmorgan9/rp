@@ -66,7 +66,7 @@ if(isLoggedIn() == false){
             <!-- begin health -->
 
             <div class="box">
-              <div class="header">
+              <div class="">
                 Site Health Status
               </div>
               <hr>
