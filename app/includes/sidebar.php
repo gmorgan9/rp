@@ -49,7 +49,7 @@ if (mysqli_num_rows($result) > 0) {
                             </a>
     
                             <div class="nav__dropdown">
-                                <a href="#" class="nav__link side text-white">
+                                <a href="#<?php //echo BASE_URL . '/cu-admin/all_posts.php' ?>" class="nav__link side text-white">
                                     &nbsp;&nbsp;<i class='bi bi-people nav__icon' style="font-size: 18px;"></i>
                                     <span class="nav__name">&nbsp;Users</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
@@ -57,9 +57,9 @@ if (mysqli_num_rows($result) > 0) {
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="#" class="nav__dropdown-item side text-muted">&nbsp;All Users</a>
-                                        <a href="#" class="nav__dropdown-item side text-muted">&nbsp;Add New</a>
-                                        <a href="#" class="nav__dropdown-item side text-muted">&nbsp;Profile</a>
+                                        <a href="#<?php //echo BASE_URL . '/cu-admin/all_users.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All Users</a>
+                                        <a href="#<?php //echo BASE_URL . '/cu-admin/add_users.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Add New</a>
+                                        <a href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Profile</a>
                                     </div>
                                 </div>
 
