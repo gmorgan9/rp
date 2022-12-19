@@ -13,8 +13,9 @@
                 <i class="bi bi-plus"></i>New
             </a>
             <div class="menu-content" style="margin-left: 10px !important; width: 60% !important;">
-                <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>">Post</a>
-                <a class="links text-white" href="<?php echo BASE_URL . '/logout.php' ?>">Comment</a>
+                <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/add_posts.php' ?>">Post</a>
+                <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/categories.php' ?>">Category</a>
+                <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/add_user.php' ?>">User</a>
                 <div class="pb-3"></div>
             </div>
         </div>
