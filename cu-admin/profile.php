@@ -22,8 +22,8 @@ if(isLoggedIn() == false){
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-
-    <link rel="stylesheet" href="../assets/styles.css?v=4.01">
+    <link rel="stylesheet" href="../assets/styles.css?v=4.04">
+    <link rel="stylesheet" href="../assets/sidebar.css?v=1.10">
 
     <script src="https://cdn.tiny.cloud/1/7kainuaawjddfzf3pj7t2fm3qdjgq5smjfjtsw3l4kqfd1h4/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
@@ -33,7 +33,7 @@ if(isLoggedIn() == false){
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="margin:0;padding:0;">
 
 <?php
 $user_id = $_SESSION['user_id'];
@@ -54,26 +54,30 @@ if (mysqli_num_rows($result) > 0) {
 ?>
 
 <!-- main-container -->
-<div class="container-fluid">
+  <div class="container-fluid">
 
-<div class="row">
-  <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
-</div>
+    <div class="row">
+      <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
+    </div>
 
-<div class="row">
-  <div class="col" style="margin:0;padding:0;">
-    <?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
-  </div>
-</div>
+    <div class="row">
+      <div class="col" style="margin:0;padding:0;">
+        <?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
+      </div>
+    </div>
 
-<div class="mt-5"></div>
-  <div class="row">
-    <div class="col-2"></div>
-<div class="col-10" style="margin-left: -30px;">
-  <h3 class="text-black" style="margin-left: -30px;">
-        Profile
-      </h3>
-    <section>
+    <div class="mt-5"></div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-10">
+        <h3 class="text-black" style="margin-left: -30px;">
+          Posts
+        </h3>
+        <div class="mt-3"></div>
+
+
+
+        <section>
           <div class="row">
             <div class="col-lg-4">
               <div class="card mb-4" style="background-color: #1f1f1f;">
@@ -167,24 +171,24 @@ if (mysqli_num_rows($result) > 0) {
           </div>
         </div>
     </section>
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col position-absolute bottom-0 ms-5">
+        <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
+      </div>
+    </div>
+
   </div>
-  </div>
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-2"></div>
-  <div class="col position-absolute bottom-0 ms-5">
-    <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
-  </div>
-</div>
-
-</div>
 <!-- END main-container -->
 
 
@@ -194,10 +198,10 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-
-
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="../assets/js/dropdown.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/bar.js"></script>
+  <script src="../assets/js/dropdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
