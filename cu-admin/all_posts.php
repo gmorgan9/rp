@@ -56,7 +56,7 @@ if (isset($_POST['draft'])) {
 
 
     <link rel="stylesheet" href="../assets/styles.css?v=4.01">
-    <link rel="stylesheet" href="../assets/sidebar.css?v=1.09">
+    <link rel="stylesheet" href="../assets/sidebar.css?v=1.10">
 
     <title>All Posts - CacheUp Blog</title>
 
