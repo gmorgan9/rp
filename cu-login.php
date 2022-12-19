@@ -51,7 +51,8 @@ if(mysqli_num_rows($result) > 0){
 }else{
    $error = '
    <div class="login_error">
-   Error: The username asdf is not registered on this site. If you are unsure of your username, try your email address instead.
+   <strong>Error:</strong> 
+   The username used is not registered on this site. Please try again.
    </div>
    ';
 }
