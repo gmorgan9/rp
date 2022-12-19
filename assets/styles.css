@@ -10,6 +10,13 @@
 body {
   background-color: #f0f0f0 !important;
 }
+
+/* head-links */
+.head-link:hover {
+  background-color: #2d3337;
+  color: #7fade1 !important;
+}
+
 /* Sidebar */
 .sidebar {
   margin-top: 40px;
