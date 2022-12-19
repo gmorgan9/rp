@@ -145,10 +145,8 @@ if(isLoggedIn() == false){
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
   <script>
-    $('ul.nav li.dropdown').hover(function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-}, function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+    $('.dropdown').hover(function(){ 
+  $('.dropdown-toggle', this).trigger('click'); 
 });
   </script>
   
