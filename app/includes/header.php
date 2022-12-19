@@ -5,7 +5,16 @@
         <div class="pe-4"></div>
         <a style="text-decoration: none; color: white" href="/"><i class="bi bi-house-door-fill text-muted"></i>&nbsp;CacheUp</a>
         <div class="pe-4"></div>
-        <a style="text-decoration: none; color: white" href="/"><i class="bi bi-chat-right"></i>&nbsp;0</a>
+        <a style="text-decoration: none; color: white" href="/"><i class="bi bi-chat-right"></i>&nbsp;
+    
+        <?php
+        $sql="SELECT count('1') FROM comments WHERE status = 0";
+        $result=mysqli_query($conn,$sql);
+        $rowtotal=mysqli_fetch_array($result); 
+        echo "$rowtotal[0]";
+        ?>
+
+        </a>
         <div class="pe-2"></div>
         <!-- start dropdown -->
         <div class="dropdown-menu">
