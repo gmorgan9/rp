@@ -29,9 +29,8 @@ if (mysqli_num_rows($result) > 0) {
                             
                             <div class="nav__dropdown">
                                 <a href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>" class="nav__link side text-white">
-                                    &nbsp;&nbsp;<i class="bi bi-pin-angle nav__icon" style="font-size: 18px;"></i>
+                                    &nbsp;&nbsp;<i class="bi bi-pin-angle-fill nav__icon" style="font-size: 18px;"></i>
                                     <span class="nav__name">&nbsp;Posts</span>
-                                    <i class='bi bi-chevron-down nav__icon nav__dropdown-icon'></i>
                                 </a>
 
                                 <div class="nav__dropdown-collapse">
