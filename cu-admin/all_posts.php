@@ -86,16 +86,16 @@ if (isset($_POST['draft'])) {
   <div class="row">
     <div class="col-2"></div>
     <div class="col-10">
-<table class="table table-dark" style="width: 99%;">
+    <table class="table table-bordered" style="margin-left: -30px;">
   <thead>
     <tr>
-      <th style="background-color: #1a1a1a;" cope="col">ID #</th>
-      <th style="background-color: #1a1a1a;" scope="col">Title</th>
-      <th style="background-color: #1a1a1a;" scope="col">Status</th>
-      <th style="background-color: #1a1a1a;" scope="col">Actions</th>
+      <th scope="col">ID #</th>
+      <th scope="col">Title</th>
+      <th scope="col">Status</th>
+      <th scope="col">Actions</th>
     </tr>
   </thead>
-  <tbody class="table-group-divider">
+  <tbody class="table-group-divider" style="background-color: #f0f0f0;">
 
   <?php
       $sql = "SELECT * FROM posts";
@@ -108,25 +108,24 @@ if (isset($_POST['draft'])) {
             $status = $row['status'];
             ?>
     <tr>
-        <?php //if($_SESSION['empID'] != $row['employeeID']){ ?>
-        <th style="background-color: #1a1a1a;" scope="row"><?php echo $idno; ?></th>
-        <td style="background-color: #1a1a1a;"><?php echo $title; ?></td>
+        <th scope="row"><?php echo $idno; ?></th>
+        <td><?php echo $title; ?></td>
         <?php if($status == 'draft') { ?>
-          <td style="background-color: #1a1a1a;">
+          <td>
         <form method="post" action="">
           <input type="hidden" name="post_id" value="<?php echo $post_id; ?>" />
           <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="published"><span class="badge text-bg-success">Publish</span></button>
         </form>
         </td>
         <?php } else { ?>
-          <td style="background-color: #1a1a1a;">
+          <td>
         <form method="post" action="">
           <input type="hidden" name="post_id" value="<?php echo $post_id; ?>" />
           <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="draft"><span class="badge text-bg-primary">Draft</span></button>
         </form>
         <?php } ?>
         </td>
-        <td style="background-color: #1a1a1a;">
+        <td>
           <div class="d-flex">
             <a style="text-decoration: none; background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" href="actions/edit_post.php?id=<?php echo $post_id; ?>"><span class="badge text-bg-success">View</span></a>
             &nbsp;
