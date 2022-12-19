@@ -12,7 +12,7 @@
             <a style="text-decoration: none; color: white" href="#" class="menu-btn text-white">
                 <i class="bi bi-plus"></i>New
             </a>
-            <div class="menu-content" style="margin-left: 10px !important; width: 50% !important;">
+            <div class="menu-content" style="margin-left: 10px !important; width: 60% !important;">
                 <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>">Post</a>
                 <a class="links text-white" href="<?php echo BASE_URL . '/logout.php' ?>">Comment</a>
                 <div class="pb-3"></div>
@@ -26,7 +26,7 @@
             <a style="font-size: 14px; text-decoration: none; color: white" href="/" class="menu-btn text-white">
                 Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i> 
             </a>
-            <div class="menu-content" style="margin-top: 6px; margin-left: 25px;">
+            <div class="menu-content" style="margin-top: 6px; margin-left: 150px;">
                 <div class="float-start">
                     <i class="bi bi-person-square text-muted" style="font-size: 45px;margin-left: 20px;"></i>
                 </div>
