@@ -238,6 +238,7 @@ img {
 
 /* Show dropdown collapse */
 .nav__dropdown:hover {
+  margin-top: 1px;
   max-height: 100rem;
 }
 
