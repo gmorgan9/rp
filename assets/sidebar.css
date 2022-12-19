@@ -152,10 +152,10 @@ img {
   display: none;
 }
 
-.nav__logo {
-  /* font-weight: var(--font-semi-bold); */
-  /* margin-bottom: 2.5rem; */
-}
+/* .nav__logo {
+  font-weight: var(--font-semi-bold); 
+  margin-bottom: 2.5rem; 
+} */
 
 .nav__list, 
 .nav__items {
