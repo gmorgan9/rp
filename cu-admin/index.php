@@ -94,7 +94,7 @@ if(isLoggedIn() == false){
                   <div class="row">
                     <div class="col">
                       <!-- posts -->
-                        <a style="color: #7fade1;" href="">
+                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>">
                           <i class="bi bi-pin-angle-fill text-muted"></i>&nbsp;
                           <?php
                           $sql="SELECT count('1') FROM posts WHERE status = 'published'";
@@ -106,7 +106,7 @@ if(isLoggedIn() == false){
                       <!-- end posts -->
                       <div class="pt-2"></div>
                       <!-- categories -->
-                      <a style="color: #7fade1;" href="">
+                      <a style="color: #7fade1;" href="<?php echo BASE_URL . '/cu-admin/categories.php' ?>">
                         <i class="bi bi-tags-fill text-muted"></i>&nbsp;
                           <?php
                           $sql="SELECT count('1') FROM categories";
@@ -119,7 +119,7 @@ if(isLoggedIn() == false){
                     </div>
                     <div class="col">
                       <!-- comments -->
-                      <a style="color: #7fade1;" href="">
+                      <a style="color: #7fade1;" href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>">
                         <i class="bi bi-chat-right-fill text-muted"></i>&nbsp;
                           <?php
                           $sql="SELECT count('1') FROM comments WHERE status = 1";
