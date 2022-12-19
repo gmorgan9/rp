@@ -109,16 +109,12 @@ if (mysqli_num_rows($result) > 0) {
     <div class="col-2"></div>
     <div class="col-10">
     <h3 class="text-black" style="margin-left: -30px;">
-        Add Post
+        New Post
       </h3>
       <div class="mt-5"></div>
     <form action="" method="POST">
       <input class="form-control" style="width: 99%;" type="hidden" name="author_idno" value="<?php echo $idno;?>">
-        <h3>
-            New Post
-        </h3>
         <div class="modal_help float-end" style="margin-right: 25px; margin-top: -55px !important;">
-
           <!-- Button trigger modal -->
             <button type="button" style="background: none; color: inherit; border: none; cursor: pointer; outline: inherit;" class="badge text-bg-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Instructions
