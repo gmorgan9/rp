@@ -82,6 +82,8 @@ if(isLoggedIn() == false){
               </div>
             <!-- end health -->
 
+            <div class="pt-3"></div>
+
             <!-- begin quicklook -->
               <div class="card">
                 <div class="card-header">
