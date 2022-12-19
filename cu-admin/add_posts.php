@@ -108,7 +108,7 @@ if (mysqli_num_rows($result) > 0) {
   <div class="row">
     <div class="col-2"></div>
     <div class="col-10">
-    <h3 class="text-black" style="margin-left: -30px;">
+    <h3 class="text-black" style="margin-left: -35px;">
         New Post
       </h3>
       <div class="mt-5"></div>
