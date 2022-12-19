@@ -64,7 +64,7 @@ if(isLoggedIn() == false){
           <div class="col" style="width: 50%;">
 
             <!-- begin health -->
-              <div class="card position-relative">
+              <div class="card position-absolute">
                 <div class="card-header">
                   Site Health Status
                 </div>
