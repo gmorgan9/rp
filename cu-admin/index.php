@@ -82,7 +82,7 @@ if(isLoggedIn() == false){
               </div>
             <!-- end health -->
 
-            <div class="pt-3"></div>
+            <div class="pt-4"></div>
 
             <!-- begin quicklook -->
               <div class="card">
