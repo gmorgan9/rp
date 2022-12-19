@@ -112,6 +112,7 @@ if(isset($_POST['add-category'])){
     <?php }} ?>
     <div class="form-group pt-3 mx-auto" style="width: 95%;">
       <label class="text-muted" for="category" style="font-size: 14px;">Category <span class="text-muted" style="font-size: 10px;">e.g. "Cybersecurity"</span></label>
+      <div class="pt-2"></div>
       <input class="form-control" id="category" type="text" name="category" value="" required>
     </div>
     <div class="form-group pt-3 mx-auto d-grid d-md-flex justify-content-md-end" style="width: 95%; margin-bottom: 10px;">
