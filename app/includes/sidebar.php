@@ -90,7 +90,7 @@ if (mysqli_num_rows($result) > 0) {
             <nav class="nav__container">
                 <div>
                     <a href="<?php echo BASE_URL . '/cu-admin/' ?>" class="nav__link nav__logo">
-                        <i class="bi bi-speedometer2 nav__icon"></i>
+                        <i class="bi bi-speedometer2 nav__icon" style="font-size: 18px;"></i>
                         <span class="nav__logo-name">&nbsp;Dashboard</span>
                     </a>
     
@@ -105,7 +105,7 @@ if (mysqli_num_rows($result) > 0) {
                             
                             <div class="nav__dropdown">
                                 <a href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>" class="nav__link side">
-                                    <i class="bi bi-pin-angle nav__icon" style="font-size: 20px;"></i>
+                                    <i class="bi bi-pin-angle nav__icon" style="font-size: 18px;"></i>
                                     <span class="nav__name">&nbsp; Posts</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
                                 </a>
