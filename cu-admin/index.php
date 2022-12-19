@@ -93,10 +93,23 @@ if(isLoggedIn() == false){
                   <div class="pt-2"></div>
                   <div class="row">
                     <div class="col">
-                      test
+                      <!-- posts -->
+                        <a href="">
+                          <i class="bi bi-pin-angle-fill"></i>&nbsp;
+                          <?php
+                          $sql="SELECT count('1') FROM posts WHERE status = 'published'";
+                          $result=mysqli_query($conn,$sql);
+                          $rowtotal=mysqli_fetch_array($result); 
+                          echo "$rowtotal[0] Posts";
+                          ?>
+                        </a>
+                      <!-- end posts -->
+                      <!-- categories -->
+                      <!-- end categories -->
                     </div>
                     <div class="col">
-                      test
+                      <!-- comments -->
+                      <!-- end comments -->
                     </div>
                   </div>
                 </div>
