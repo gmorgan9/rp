@@ -53,7 +53,8 @@ if(isset($_POST['add'])){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="../assets/styles.css?v=2.50">
+    <link rel="stylesheet" href="../assets/styles.css?v=4.01">
+    <link rel="stylesheet" href="../assets/sidebar.css?v=1.10">
 
     <script src="https://cdn.tiny.cloud/1/7kainuaawjddfzf3pj7t2fm3qdjgq5smjfjtsw3l4kqfd1h4/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
@@ -63,7 +64,7 @@ if(isset($_POST['add'])){
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="margin:0;padding:0;">
 
 <?php
 $user_id = $_SESSION['user_id'];
@@ -83,19 +84,25 @@ if (mysqli_num_rows($result) > 0) {
     $category  = $row['category'];
 }}
 ?>
-    
-<div class="main-container">
-<?php include(ROOT_PATH . "/app/includes/header.php"); ?>
 
-<?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
-        
-<div class="main">
-    <div class="page-header mx-auto">
-        <p class="page_title">Add New Post</p>
+
+
+
+
+<!-- main-container -->
+  <div class="container-fluid">
+
+    <div class="row">
+      <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
     </div>
 
-    <div class="main-content">
-    
+    <div class="row">
+      <div class="col" style="margin:0;padding:0;">
+        <?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
+      </div>
+    </div>
+
+
 
 
     <form action="" method="POST">
@@ -173,14 +180,20 @@ if (mysqli_num_rows($result) > 0) {
         <input type="submit" name="add" value="Submit" class="btn btn-light btn-block"> &nbsp;
         <button class="btn btn-dark btn-block" onclick="window.history.go(-1); return false;">Go Back</button>
     </form>
-   
+
+
+
+
+
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col position-absolute bottom-0 ms-5">
+        <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
+      </div>
     </div>
-    
-    
-</div>
 
-
-
+  </div>
+<!-- END main-container -->
 
 
 
@@ -200,14 +213,7 @@ if (mysqli_num_rows($result) > 0) {
     });
   </script>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script type="text/javascript">
-  $(document).on('click', 'a', function() {
-    $(this).addClass('active').siblings().removeClass('active')
-  })
-  $(document).on('click', 'ul li a', function() {
-    $(this).removeClass('active')
-  })
-</script>
+<script src="../assets/js/bar.js"></script>
     <script src="../assets/js/dropdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
