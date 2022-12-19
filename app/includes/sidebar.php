@@ -136,10 +136,10 @@ if (mysqli_num_rows($result) > 0) {
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="#" class="nav__dropdown-item text-muted">Blocked</a>
-                                        <a href="#" class="nav__dropdown-item text-muted">Silenced</a>
-                                        <a href="#" class="nav__dropdown-item text-muted">Publish</a>
-                                        <a href="#" class="nav__dropdown-item text-muted">Program</a>
+                                        <a href="#" class="nav__dropdown-item side text-muted">Blocked</a>
+                                        <a href="#" class="nav__dropdown-item side text-muted">Silenced</a>
+                                        <a href="#" class="nav__dropdown-item side text-muted">Publish</a>
+                                        <a href="#" class="nav__dropdown-item side text-muted">Program</a>
                                     </div>
                                 </div>
 
