@@ -5,7 +5,6 @@
         <div class="pe-4"></div>
         <a style="text-decoration: none; color: white;" href="/"><i class="bi bi-house-door-fill text-muted"></i>&nbsp;CacheUp</a>
         <div class="pe-4"></div>
-        &nbsp;&nbsp;
         <a class="head-link" style="text-decoration: none; color: white; font-size: 14px;" href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>"><i style="font-size: 12px;" class="bi bi-chat-right-fill"></i>&nbsp;
     
         <?php
@@ -22,7 +21,7 @@
             <a class="head-link" style="text-decoration: none; color: white; font-size: 14px;" href="#" class="menu-btn text-white">
                 <i class="bi bi-plus"></i>New
             </a>
-            <div class="menu-content" style="margin-top: 12px !important; margin-left: 0 !important; width: 60% !important;">
+            <div class="menu-content" style="margin-left: 10px !important; width: 60% !important;">
                 <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/add_posts.php' ?>">Post</a>
                 <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/categories.php' ?>">Category</a>
                 <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/add_users.php' ?>">User</a>
