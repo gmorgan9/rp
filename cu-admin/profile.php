@@ -80,7 +80,7 @@ if (mysqli_num_rows($result) > 0) {
         <section>
           <div class="row">
             <div class="col-lg-4">
-              <div class="card mb-4" style="background-color: #1f1f1f;">
+              <div class="card mb-4">
                 <div class="card-body text-center">
                   <img src="<?php echo $profile_picture; ?>" alt="avatar"
                     class="rounded-circle img-fluid" style="width: 200px; height: 250px;">
@@ -112,7 +112,7 @@ if (mysqli_num_rows($result) > 0) {
               </div>
             </div>
             <div class="col-lg-8">
-              <div class="card mb-4" style="background-color: #1f1f1f;">
+              <div class="card mb-4">
                 <div class="card-body">
                   <div class="row">
                     <div class="col-sm-3">
