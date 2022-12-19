@@ -137,6 +137,19 @@ if(isLoggedIn() == false){
               </div>
             <!-- end quicklook -->
 
+            <div class="pt-4"></div>
+
+            <!-- begin recent -->
+              <div class="card">
+                <div class="card-header">
+                  Recent Activity
+                </div>
+                <div class="card-body">
+                  body
+                </div>
+              </div>
+            <!-- end recent -->
+
           </div>
           <div class="col" style="width: 50%;">
             test
