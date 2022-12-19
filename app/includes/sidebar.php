@@ -13,20 +13,12 @@ if (mysqli_num_rows($result) > 0) {
     <div class="nav position-fixed" id="navbar" style="margin-top: 40px; background-color: #1e2327;">
             <nav class="nav__container">
                 <div>
-                    <a href="<?php echo BASE_URL . '/cu-admin/' ?>" class="nav__link nav__logo side text-white">
-                        &nbsp;&nbsp;<i class="bi bi-speedometer2 nav__icon" style="font-size: 18px;"></i>
-                        <span class="nav__logo-name">&nbsp;Dashboard</span>
-                    </a>
-    
                     <div class="nav__list">
                         <div class="nav__items">
-                            <!-- <h3 class="nav__subtitle">Profile</h3> -->
-    
-                            <!-- <a href="<?php //echo BASE_URL . '/cu-admin/' ?>" class="nav__link active">
-                                <i class='bi bi-house nav__icon'></i>
-                                <span class="nav__name">Home</span>
-                            </a> -->
-                            
+                            <a href="<?php echo BASE_URL . '/cu-admin/' ?>" class="nav__link nav__logo side text-white">
+                                &nbsp;&nbsp;<i class="bi bi-speedometer2 nav__icon" style="font-size: 18px;"></i>
+                                <span class="nav__logo-name">&nbsp;Dashboard</span>
+                            </a>
                             <div class="nav__dropdown">
                                 <a href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>" class="nav__link side text-white">
                                     &nbsp;&nbsp;<i class="bi bi-pin-angle-fill nav__icon" style="font-size: 18px;"></i>
