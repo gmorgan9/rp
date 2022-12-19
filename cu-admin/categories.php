@@ -121,13 +121,13 @@ if(isset($_POST['add-category'])){
   <!-- END ADD JOB (LEFT SIDE) -->
 
   <!-- START JOB-REQUEST (RIGHT SIDE) -->
-    <div class="page-content float-end" style="background-color: #1f1f1f; width: 65%; margin-left: 25px; border-radius: 15px;">
-    <table class="table table-dark">
+    <div class="page-content float-end" style="width: 65%; margin-left: 25px; border-radius: 15px;">
+    <table class="table table-light">
     <thead>
       <tr>
-        <th style="background-color: #1f1f1f;" scope="col" style="font-size: 14px;">ID #</th>
-        <th style="background-color: #1f1f1f;" scope="col" style="font-size: 14px;">Category</th>
-        <th style="background-color: #1f1f1f;" scope="col" style="font-size: 14px;">Actions</th>
+        <th scope="col" style="font-size: 14px;">ID #</th>
+        <th scope="col" style="font-size: 14px;">Category</th>
+        <th scope="col" style="font-size: 14px;">Actions</th>
       </tr>
     </thead>
     <tbody class="table-group-divider">
@@ -142,9 +142,9 @@ if(isset($_POST['add-category'])){
               $category    = $row['category'];
     ?>
       <tr>
-          <th style="background-color: #1f1f1f;" scope="row"><?php echo $idno; ?></th>
-          <td style="background-color: #1f1f1f;"><?php echo $category; ?></td>
-          <td style="background-color: #1f1f1f;">
+          <th scope="row"><?php echo $idno; ?></th>
+          <td><?php echo $category; ?></td>
+          <td>
             <form method="post" action="">
               <input type="hidden" name="cat_id" value="<?php echo $cat_id; ?>" />
               <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="delete"><span class="badge text-bg-danger">Delete</span></button>
@@ -160,7 +160,7 @@ if(isset($_POST['add-category'])){
           echo "0 results";
         }
           ?>
-      <!-- </div> -->
+      </div>
 
       </div>
     </div>
