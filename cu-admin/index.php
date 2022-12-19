@@ -64,6 +64,25 @@ if(isLoggedIn() == false){
           <div class="col" style="width: 50%;">
 
             <!-- begin health -->
+
+            <div class="box">
+              <div class="header">
+                Site Health Status
+              </div>
+              <hr>
+              <div class="d-flex">
+                    <p class="card-text float-start w-25 justify-content-center" style="margin-left: auto; margin-right: auto;">
+                      <div style="width: 65px; height: 35px; background-color: green; border-radius: 100px; margin-left: -50px; margin-right: 50px;"></div>
+                    </p>
+                    <p class="card-text float-end" style="font-size: 14px;">
+                    Your site's health is looking <strong>good</strong>, but there are still some things you can do to improve its performance and security.
+                    </p>
+                  </div>
+
+            </div>
+
+
+
               <div class="card position-sticky">
                 <div class="card-header">
                   Site Health Status
