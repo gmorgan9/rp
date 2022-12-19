@@ -49,7 +49,11 @@ if(mysqli_num_rows($result) > 0){
     header('location:' . BASE_URL . '/cu-admin/');
   
 }else{
-   $error = 'incorrect email or password!';
+   $error = '
+   <div class="login_error">
+   Error: The username asdf is not registered on this site. If you are unsure of your username, try your email address instead.
+   
+   ';
 }
 
 };
@@ -70,6 +74,21 @@ if(mysqli_num_rows($result) > 0){
 
     <!-- custom styles -->
         <style>
+            .login_error {
+                border-left: 4px solid #72aee6;
+                padding: 12px;
+                margin-left: 0;
+                margin-bottom: 20px;
+                background-color: #fff;
+                box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+                word-wrap:break-word
+            }
+            /* .login .success {
+                border-left-color:#00a32a
+            } */
+            .login_error {
+                border-left-color:#d63638
+            }
             body {
                 background-color: #f0f0f0;
             }
