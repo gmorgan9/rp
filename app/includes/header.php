@@ -12,7 +12,7 @@
             <a style="text-decoration: none; color: white" href="#" class="menu-btn text-white">
                 <i class="bi bi-plus"></i>New
             </a>
-            <div class="menu-content" style="margin-left: 15px !important; width: 20%;">
+            <div class="menu-content" style="margin-left: 15px !important; width: 20% !important;">
                 <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>">Post</a>
                 <a class="links text-white" href="<?php echo BASE_URL . '/logout.php' ?>">Comment</a>
                 <div class="pb-3"></div>
