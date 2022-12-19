@@ -58,7 +58,7 @@ if (mysqli_num_rows($result) > 0) {
     
                             <div class="nav__dropdown">
                                 <a href="#" class="nav__link side text-white">
-                                    &nbsp;&nbsp;<i class='bx bx-bell nav__icon' style="font-size: 18px;"></i>
+                                    &nbsp;&nbsp;<i class='bi bi-people nav__icon' style="font-size: 18px;"></i>
                                     <span class="nav__name">&nbsp;Users</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
                                 </a>
