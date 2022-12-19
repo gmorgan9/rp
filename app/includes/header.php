@@ -17,7 +17,7 @@
         </a>
         <div class="pe-2"></div>
         <!-- start dropdown -->
-        <div class="dropdown-menu">
+        <div class="dropdown-menu" style="margin-top: -15px !important;">
             <a style="text-decoration: none; color: white; font-size: 14px;" href="#" class="menu-btn text-white">
                 <i class="bi bi-plus"></i>New
             </a>
