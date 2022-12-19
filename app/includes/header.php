@@ -13,8 +13,8 @@
                 <i class="bi bi-plus"></i>New
             </a>
             <div class="menu-content" style="margin-left: 10px !important; width: 5% !important;">
-                <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>">Post</a>
-                <a class="links text-white" href="<?php echo BASE_URL . '/logout.php' ?>">Comment</a>
+                <a class="links text-white" style="width: 5% !important;" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>">Post</a>
+                <a class="links text-white" style="width: 5% !important;" href="<?php echo BASE_URL . '/logout.php' ?>">Comment</a>
                 <div class="pb-3"></div>
             </div>
         </div>
