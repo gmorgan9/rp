@@ -105,20 +105,20 @@ if (mysqli_num_rows($result) > 0) {
                             
                             <div class="nav__dropdown">
                                 <a href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>" class="nav__link side">
-                                    <i class="bi bi-pin-angle nav__icon" style="font-size: 18px;"></i>
+                                    &nbsp;<i class="bi bi-pin-angle nav__icon" style="font-size: 18px;"></i>
                                     <span class="nav__name">&nbsp; Posts</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
                                 </a>
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="<?php echo BASE_URL . '/pages/add_posts.php' ?>" class="nav__dropdown-item">Add Posts</a>
-                                        <a href="<?php echo BASE_URL . '/pages/categories.php' ?>" class="nav__dropdown-item">categories</a>
+                                        <a href="<?php echo BASE_URL . '/pages/add_posts.php' ?>" class="nav__dropdown-item side">Add Posts</a>
+                                        <a href="<?php echo BASE_URL . '/pages/categories.php' ?>" class="nav__dropdown-item side">categories</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" class="nav__link">
+                            <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" class="nav__link side">
                                 <i class='bi bi-chat-right nav__icon' ></i>
                                 <span class="nav__name">Comments</span>
                             </a>
@@ -128,8 +128,8 @@ if (mysqli_num_rows($result) > 0) {
                             <h3 class="nav__subtitle">Menu</h3>
     
                             <div class="nav__dropdown">
-                                <a href="#" class="nav__link">
-                                    <i class='bx bx-bell nav__icon' ></i>
+                                <a href="#" class="nav__link side">
+                                    &nbsp;<i class='bx bx-bell nav__icon' ></i>
                                     <span class="nav__name">Notifications</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
                                 </a>
@@ -145,22 +145,22 @@ if (mysqli_num_rows($result) > 0) {
 
                             </div>
 
-                            <a href="#" class="nav__link">
-                                <i class='bx bx-compass nav__icon' ></i>
+                            <a href="#" class="nav__link side">
+                                &nbsp;<i class='bx bx-compass nav__icon' ></i>
                                 <span class="nav__name">Explore</span>
                             </a>
-                            <a href="#" class="nav__link">
-                                <i class='bx bx-bookmark nav__icon' ></i>
+                            <a href="#" class="nav__link side">
+                                &nbsp;<i class='bx bx-bookmark nav__icon' ></i>
                                 <span class="nav__name">Saved</span>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <a href="#" class="nav__link nav__logout">
+                <!-- <a href="#" class="nav__link nav__logout">
                     <i class='bx bx-log-out nav__icon' ></i>
                     <span class="nav__name">Log Out</span>
-                </a>
+                </a> -->
             </nav>
         </div>
 
