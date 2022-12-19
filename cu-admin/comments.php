@@ -151,12 +151,6 @@ if (isset($_POST['unapprove'])) {
   </div>
 
 
-
-
-
-
-
-
 <div class="row">
   <div class="col-2"></div>
   <div class="col position-absolute bottom-0 ms-5">

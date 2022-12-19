@@ -242,9 +242,9 @@ img {
 }
 
 /* Rotate icon arrow */
-.nav__dropdown:hover .nav__dropdown-icon {
+/* .nav__dropdown:hover .nav__dropdown-icon {
   transform: rotate(180deg);
-}
+} */
 
 /*===== Show menu =====*/
 .show-menu {
@@ -312,7 +312,7 @@ img {
   
   
   /* Navbar expanded */
-  .nav:hover {
+  .nav {
     width: var(--nav-width);
   }
   
