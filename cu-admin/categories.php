@@ -109,7 +109,7 @@ if(isset($_POST['add-category'])){
     $lname = $row['lname']; 
     $employeeID = $row['idno']?>
     <?php }} ?>
-    <div class="form-group pt-3 mx-auto" style="width: 95%;">
+    <div class="form-group pt-3 mx-auto" style="width: 90%;">
       <label class="text-muted" for="category" style="font-size: 14px;">Category <span class="text-muted" style="font-size: 10px;">e.g. "Cybersecurity"</span></label>
       <input class="form-control" id="category" type="text" name="category" value="" required>
     </div>
