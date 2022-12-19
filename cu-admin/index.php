@@ -72,7 +72,7 @@ if(isLoggedIn() == false){
                 <h5 class="card-title">Special title treatment</h5>
                 <div class="d-flex">
                   <p class="card-text float-start w-25 justify-content-center" style="margin-left: auto; margin-right: auto;">
-                    <div style="width: 15px; height: 15px; background-color: green; border-radius: 50px; margin-left: auto; margin-right: auto;"></div>
+                    <div style="width: 25px; height: 25px; background-color: green; border-radius: 50px; margin-left: auto; margin-right: auto;"></div>
                   </p>
                   <p class="card-text float-end">
                     With supporting text below as a natural lead-in to additional content.
