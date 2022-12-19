@@ -39,7 +39,7 @@
             </a>
             <div class="menu-content" style="margin-top: 6px;">
                 <div class="float-start">
-                    <i class="bi bi-person-square text-muted" style="font-size: 45px;margin-left: 20px;"></i>
+                    <i class="bi bi-person-square text-muted" style="font-size: 45px;margin-left: 15px;"></i>
                 </div>
                 <div class="float-end" style="margin-right: 15px;">
                     <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>">Edit Profile</a>
