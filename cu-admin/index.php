@@ -75,7 +75,7 @@ if(isLoggedIn() == false){
                     <div style="width: 65px; height: 35px; background-color: green; border-radius: 100px; margin-left: -50px; margin-right: 50px;"></div>
                   </p>
                   <p class="card-text float-end" style="font-size: 14px;">
-                  Your site's health is looking good, but there are still some things you can do to improve its performance and security.
+                  Your site's health is looking <strong>good</strong>, but there are still some things you can do to improve its performance and security.
                   </p>
                 </div>
               </div>
