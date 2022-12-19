@@ -9,7 +9,7 @@
         <div class="pe-2"></div>
         <!-- start dropdown -->
         <div class="dropdown-menu">
-            <a style="margin-top: -5px; text-decoration: none; color: white" href="#" class="menu-btn text-white">
+            <a style="margin-top: -5px !important; text-decoration: none; color: white" href="#" class="menu-btn text-white">
                 <i class="bi bi-plus"></i>New
             </a>
             <div class="menu-content">
