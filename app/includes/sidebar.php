@@ -52,7 +52,7 @@ if (mysqli_num_rows($result) > 0) {
                             <h3 class="nav__subtitle text-white">Settings</h3>
 
                             <a href="#" class="nav__link side text-white">
-                                &nbsp;&nbsp;<i class='bx bx-compass nav__icon' style="font-size: 18px;"></i>
+                                &nbsp;&nbsp;<i class="bi bi-sliders2-vertical" style="font-size: 18px;"></i>
                                 <span class="nav__name">&nbsp;General</span>
                             </a>
     
