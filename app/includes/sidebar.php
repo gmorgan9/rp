@@ -112,6 +112,7 @@ if (mysqli_num_rows($result) > 0) {
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
+                                        <a href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Add Posts</a>
                                         <a href="<?php echo BASE_URL . '/pages/add_posts.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Add Posts</a>
                                         <a href="<?php echo BASE_URL . '/pages/categories.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Categories</a>
                                     </div>
@@ -125,21 +126,20 @@ if (mysqli_num_rows($result) > 0) {
                         </div>
     
                         <div class="nav__items">
-                            <h3 class="nav__subtitl text-white">Menu</h3>
+                            <h3 class="nav__subtitle text-white">Settings</h3>
     
                             <div class="nav__dropdown">
                                 <a href="#" class="nav__link side text-white">
                                     &nbsp;&nbsp;<i class='bx bx-bell nav__icon' style="font-size: 18px;"></i>
-                                    <span class="nav__name">&nbsp;Notifications</span>
+                                    <span class="nav__name">&nbsp;Users</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
                                 </a>
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="#" class="nav__dropdown-item side text-muted">&nbsp;Blocked</a>
-                                        <a href="#" class="nav__dropdown-item side text-muted">&nbsp;Silenced</a>
-                                        <a href="#" class="nav__dropdown-item side text-muted">&nbsp;Publish</a>
-                                        <a href="#" class="nav__dropdown-item side text-muted">&nbsp;Program</a>
+                                        <a href="#" class="nav__dropdown-item side text-muted">&nbsp;All Users</a>
+                                        <a href="#" class="nav__dropdown-item side text-muted">&nbsp;Add New</a>
+                                        <a href="#" class="nav__dropdown-item side text-muted">&nbsp;Profile</a>
                                     </div>
                                 </div>
 
@@ -148,10 +148,6 @@ if (mysqli_num_rows($result) > 0) {
                             <a href="#" class="nav__link side text-white">
                                 &nbsp;&nbsp;<i class='bx bx-compass nav__icon' style="font-size: 18px;"></i>
                                 <span class="nav__name">&nbsp;Explore</span>
-                            </a>
-                            <a href="#" class="nav__link side text-white">
-                                &nbsp;&nbsp;<i class='bx bx-bookmark nav__icon' style="font-size: 18px;"></i>
-                                <span class="nav__name">&nbsp;Saved</span>
                             </a>
                         </div>
                     </div>
