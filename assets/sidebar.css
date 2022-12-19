@@ -204,6 +204,7 @@ img {
 
 /* Dropdown */
 .nav__dropdown {
+  margin-top: 1px;
   overflow: hidden;
   max-height: 21px;
   transition: .4s ease-in-out;
@@ -238,7 +239,6 @@ img {
 
 /* Show dropdown collapse */
 .nav__dropdown:hover {
-  margin-top: 1px;
   max-height: 100rem;
 }
 
