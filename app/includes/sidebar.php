@@ -119,7 +119,7 @@ if (mysqli_num_rows($result) > 0) {
                             </div>
 
                             <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" class="nav__link side">
-                                <i class='bi bi-chat-right nav__icon' ></i>
+                                &nbsp;<i class='bi bi-chat-right nav__icon' style="font-size: 18px;"></i>
                                 <span class="nav__name">Comments</span>
                             </a>
                         </div>
@@ -129,7 +129,7 @@ if (mysqli_num_rows($result) > 0) {
     
                             <div class="nav__dropdown">
                                 <a href="#" class="nav__link side">
-                                    &nbsp;<i class='bx bx-bell nav__icon' ></i>
+                                    &nbsp;<i class='bx bx-bell nav__icon' style="font-size: 18px;"></i>
                                     <span class="nav__name">Notifications</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
                                 </a>
@@ -146,11 +146,11 @@ if (mysqli_num_rows($result) > 0) {
                             </div>
 
                             <a href="#" class="nav__link side">
-                                &nbsp;<i class='bx bx-compass nav__icon' ></i>
+                                &nbsp;<i class='bx bx-compass nav__icon' style="font-size: 18px;"></i>
                                 <span class="nav__name">Explore</span>
                             </a>
                             <a href="#" class="nav__link side">
-                                &nbsp;<i class='bx bx-bookmark nav__icon' ></i>
+                                &nbsp;<i class='bx bx-bookmark nav__icon' style="font-size: 18px;"></i>
                                 <span class="nav__name">Saved</span>
                             </a>
                         </div>
