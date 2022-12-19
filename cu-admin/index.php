@@ -152,7 +152,17 @@ if(isLoggedIn() == false){
 
           </div>
           <div class="col" style="width: 50%;">
-            test
+
+          <!-- begin quick draft -->
+            <div class="card">
+              <div class="card-header">
+                Quick Draft
+              </div>
+              <div class="card-body">
+                body
+              </div>
+            </div>
+          <!-- end quick draft -->
           </div>
         </div>
 
