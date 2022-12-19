@@ -101,7 +101,7 @@ if(mysqli_num_rows($result) > 0){
         <h1 class="logo text-center">
             <img src="assets/images/sm-logo-border.png" width="84px" height="84px" alt="">
         </h1>
-        <?php echo $error; ?>
+        <?php echo $error[]; ?>
         <form class="form" action="" method="POST">
             <div class="username">
                 <label for="user_login">Username</label>
