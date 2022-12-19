@@ -94,8 +94,8 @@ if(isLoggedIn() == false){
                   <div class="row">
                     <div class="col">
                       <!-- posts -->
-                        <a href="">
-                          <i class="bi bi-pin-angle-fill"></i>&nbsp;
+                        <a style="color: #7fade1;" href="">
+                          <i class="bi bi-pin-angle-fill text-muted"></i>&nbsp;
                           <?php
                           $sql="SELECT count('1') FROM posts WHERE status = 'published'";
                           $result=mysqli_query($conn,$sql);
