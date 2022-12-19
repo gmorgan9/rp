@@ -91,7 +91,7 @@ if (isset($_POST['draft'])) {
       </h3>
       <div class="mt-3"></div>
     <table class="table table-bordered" style="margin-left: -30px;">
-  <thead>
+  <thead style="background-color: white;">
     <tr>
       <th scope="col">ID #</th>
       <th scope="col">Title</th>
@@ -141,6 +141,14 @@ if (isset($_POST['draft'])) {
         </td>
         <?php }}?>
   </tbody>
+  <thead class="table-group-divider" style="background-color: white;">
+    <tr>
+      <th scope="col">ID #</th>
+      <th scope="col">Title</th>
+      <th scope="col">Status</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
 </table>
 </div>
 
