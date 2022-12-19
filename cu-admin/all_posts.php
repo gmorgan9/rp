@@ -86,6 +86,9 @@ if (isset($_POST['draft'])) {
   <div class="row">
     <div class="col-2"></div>
     <div class="col-10">
+    <h3 class="text-black" style="margin-left: -30px;">
+        Posts
+      </h3>
     <table class="table table-bordered" style="margin-left: -30px;">
   <thead>
     <tr>
