@@ -105,10 +105,28 @@ if(isLoggedIn() == false){
                         </a>
                       <!-- end posts -->
                       <!-- categories -->
+                      <a style="color: #7fade1;" href="">
+                        <i class="bi bi-tags-fill text-muted"></i>&nbsp;
+                          <?php
+                          $sql="SELECT count('1') FROM categories";
+                          $result=mysqli_query($conn,$sql);
+                          $rowtotal=mysqli_fetch_array($result); 
+                          echo "$rowtotal[0] Categories";
+                          ?>
+                        </a>
                       <!-- end categories -->
                     </div>
                     <div class="col">
                       <!-- comments -->
+                      <a style="color: #7fade1;" href="">
+                        <i class="bi bi-chat-right-fill text-muted"></i>&nbsp;
+                          <?php
+                          $sql="SELECT count('1') FROM comments WHERE status = 1";
+                          $result=mysqli_query($conn,$sql);
+                          $rowtotal=mysqli_fetch_array($result); 
+                          echo "$rowtotal[0] Comments";
+                          ?>
+                        </a>
                       <!-- end comments -->
                     </div>
                   </div>
