@@ -160,10 +160,7 @@ if(isset($_POST['add-category'])){
           echo "0 results";
         }
           ?>
-      </div>
-
-
-
+      <!-- </div> -->
 
       </div>
     </div>
