@@ -125,7 +125,7 @@ if(isset($_POST['add-category'])){
   <!-- START JOB-REQUEST (RIGHT SIDE) -->
     <div class="page-content float-end" style="width: 65%; margin-left: 25px; border-radius: 15px;">
     <table class="table table-light">
-    <thead>
+    <thead style="background-color: white;">
       <tr>
         <th scope="col" style="font-size: 14px;">ID #</th>
         <th scope="col" style="font-size: 14px;">Category</th>
@@ -156,6 +156,16 @@ if(isset($_POST['add-category'])){
           
           
         </tbody>
+
+        <thead class="table-group-divider" style="background-color: white;">
+      <tr>
+        <th scope="col" style="font-size: 14px;">ID #</th>
+        <th scope="col" style="font-size: 14px;">Category</th>
+        <th scope="col" style="font-size: 14px;">Actions</th>
+      </tr>
+    </thead>
+
+
         </table> 
         <?php 
         } else {
