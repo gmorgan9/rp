@@ -22,7 +22,7 @@
             <a class="head-link" style="padding: 0 8px 14px 10px; text-decoration: none; color: white; font-size: 14px;" href="#" class="menu-btn text-white">
                 <i class="bi bi-plus"></i>New
             </a>
-            <div class="menu-content" style="margin-top: 10px !important; margin-left: 5px !important; width: 60% !important;">
+            <div class="menu-content" style="margin-top: 12px !important; margin-left: 0 !important; width: 60% !important;">
                 <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/add_posts.php' ?>">Post</a>
                 <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/categories.php' ?>">Category</a>
                 <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/add_users.php' ?>">User</a>
