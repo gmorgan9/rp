@@ -146,23 +146,14 @@ if(isLoggedIn() == false){
 
   <script>
     $(document).ready(function () {
-    $('.dropdown-toggle').mouseover(function() {
-        $('.dropdown-menu').show();
-    })
-
-    $('.dropdown-toggle').mouseout(function() {
-        t = setTimeout(function() {
-            $('.dropdown-menu').hide();
-        }, 100);
-
-        $('.dropdown-menu').on('mouseenter', function() {
-            $('.dropdown-menu').show();
-            clearTimeout(t);
-        }).on('mouseleave', function() {
-            $('.dropdown-menu').hide();
-        })
-    })
-})
+    $('.navbar-default .navbar-nav > li.dropdown').hover(function () {
+        $('ul.dropdown-menu', this).stop(true, true).slideDown('fast');
+        $(this).addClass('open');
+    }, function () {
+        $('ul.dropdown-menu', this).stop(true, true).slideUp('fast');
+        $(this).removeClass('open');
+    });
+});
   </script>
   
   <script src="../assets/js/dropdown.js"></script>
