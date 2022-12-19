@@ -3,7 +3,7 @@
         <div class="pe-2"></div>
         <img src="../assets/images/new-logo.png" style="height: 20px !important; width: 20px !important;" alt="">
         <div class="pe-4"></div>
-        <a class="head-link" style="text-decoration: none; color: white;" href="/"><i class="bi bi-house-door-fill text-muted"></i>&nbsp;CacheUp</a>
+        <a class="head-link" style="text-decoration: none; color: white;" href="/"><i class="bi bi-house-door-fill"></i>&nbsp;CacheUp</a>
         <div class="pe-4"></div>
         &nbsp;&nbsp;
         <a class="head-link" style="text-decoration: none; color: white; font-size: 14px;" href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>"><i style="font-size: 12px;" class="bi bi-chat-right-fill"></i>&nbsp;
