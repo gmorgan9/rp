@@ -71,7 +71,7 @@ if (mysqli_num_rows($result) > 0) {
       <div class="col-2"></div>
       <div class="col-10" style="margin-left: -30px;">
         <h3 class="text-black">
-          Posts
+          Profile
         </h3>
         <div class="mt-3"></div>
 
