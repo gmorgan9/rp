@@ -69,7 +69,6 @@ if(isLoggedIn() == false){
                 Site Health Status
               </div>
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
                 <div class="pt-2"></div>
                 <div class="d-flex">
                   <p class="card-text float-start w-25 justify-content-center" style="margin-left: auto; margin-right: auto;">
