@@ -8,13 +8,13 @@
         <a style="text-decoration: none; color: white" href="/"><i class="bi bi-chat-right"></i>&nbsp;0</a>
         <div class="pe-2"></div>
         <!-- start dropdown -->
-        <div class="new dropdown-menu">
-            <a style="text-decoration: none; color: white" href="#" class="menu-btn text-white">
+        <div class="new-dropdown-menu">
+            <a style="text-decoration: none; color: white" href="#" class="new-menu-btn text-white">
                 <i class="bi bi-plus"></i>New
             </a>
-            <div class="menu-content">
-                <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>">Post</a>
-                <a class="links text-white" href="<?php echo BASE_URL . '/logout.php' ?>">Comment</a>
+            <div class="new-menu-content">
+                <a class="new-links text-white" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>">Post</a>
+                <a class="new-links text-white" href="<?php echo BASE_URL . '/logout.php' ?>">Comment</a>
                 <div class="pb-3"></div>
             </div>
         </div>
