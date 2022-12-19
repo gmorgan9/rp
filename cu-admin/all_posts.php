@@ -63,7 +63,7 @@ if (isset($_POST['draft'])) {
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="margin:0;padding:0;">
 
 
 <!-- main-container -->
@@ -81,7 +81,10 @@ if (isset($_POST['draft'])) {
 
 
 
-
+<div class="mt-5"></div>
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-10">
 <table class="table table-dark" style="width: 99%;">
   <thead>
     <tr>
@@ -135,6 +138,9 @@ if (isset($_POST['draft'])) {
         <?php }}?>
   </tbody>
 </table>
+</div>
+
+  </div>
 
 
 
@@ -159,32 +165,6 @@ if (isset($_POST['draft'])) {
 
 
     
-<div class="main-container">
-<?php include(ROOT_PATH . "/app/includes/header.php"); ?>
-
-<?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
-        
-<div class="main">
-    <div class="page-header mx-auto">
-        <p class="page_title">All Posts</p>
-    </div>
-
-    <div class="main-content">
-
-    
-
-
-        </div>
-
-
-
-
-    
-</div>
-
-    
-
-
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
