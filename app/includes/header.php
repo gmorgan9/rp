@@ -3,9 +3,9 @@
         <div class="pe-2"></div>
         <img src="../assets/images/new-logo.png" style="height: 20px !important; width: 20px !important;" alt="">
         <div class="pe-4"></div>
-        <a style="text-decoration: none; color: white" href="/"><i class="bi bi-house-door-fill text-muted"></i>&nbsp;CacheUp</a>
+        <a style="text-decoration: none; color: white;" href="/"><i class="bi bi-house-door-fill text-muted"></i>&nbsp;CacheUp</a>
         <div class="pe-4"></div>
-        <a style="text-decoration: none; color: white" href="/"><i class="bi bi-chat-right"></i>&nbsp;
+        <a style="text-decoration: none; color: white; font-size: 14px;" href="/"><i class="bi bi-chat-right"></i>&nbsp;
     
         <?php
         $sql="SELECT count('1') FROM comments WHERE status = 0";
@@ -18,7 +18,7 @@
         <div class="pe-2"></div>
         <!-- start dropdown -->
         <div class="dropdown-menu">
-            <a style="text-decoration: none; color: white" href="#" class="menu-btn text-white">
+            <a style="text-decoration: none; color: white; font-size: 14px;" href="#" class="menu-btn text-white">
                 <i class="bi bi-plus"></i>New
             </a>
             <div class="menu-content" style="margin-left: 10px !important; width: 60% !important;">
