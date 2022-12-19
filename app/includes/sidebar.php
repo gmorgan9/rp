@@ -105,7 +105,7 @@ if (mysqli_num_rows($result) > 0) {
                             
                             <div class="nav__dropdown">
                                 <a href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>" class="nav__link side">
-                                    <i class="bi bi-pin-angle nav__icon" style="font-size: 16px;"></i>
+                                    <i class="bi bi-pin-angle nav__icon" style="font-size: 18px;"></i>
                                     <span class="nav__name">&nbsp; Posts</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
                                 </a>
