@@ -106,7 +106,7 @@ if (mysqli_num_rows($result) > 0) {
                             <div class="nav__dropdown">
                                 <a href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>" class="nav__link side">
                                     &nbsp;&nbsp;<i class="bi bi-pin-angle nav__icon" style="font-size: 18px;"></i>
-                                    <span class="nav__name">&nbsp; Posts</span>
+                                    <span class="nav__name">&nbsp;Posts</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
                                 </a>
 
@@ -120,7 +120,7 @@ if (mysqli_num_rows($result) > 0) {
 
                             <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" class="nav__link side">
                                 &nbsp;&nbsp;<i class='bi bi-chat-right nav__icon' style="font-size: 18px;"></i>
-                                <span class="nav__name">&nbsp; Comments</span>
+                                <span class="nav__name">&nbsp;Comments</span>
                             </a>
                         </div>
     
@@ -130,7 +130,7 @@ if (mysqli_num_rows($result) > 0) {
                             <div class="nav__dropdown">
                                 <a href="#" class="nav__link side">
                                     &nbsp;&nbsp;<i class='bx bx-bell nav__icon' style="font-size: 18px;"></i>
-                                    <span class="nav__name">&nbsp; Notifications</span>
+                                    <span class="nav__name">&nbsp;Notifications</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
                                 </a>
 
@@ -147,11 +147,11 @@ if (mysqli_num_rows($result) > 0) {
 
                             <a href="#" class="nav__link side">
                                 &nbsp;&nbsp;<i class='bx bx-compass nav__icon' style="font-size: 18px;"></i>
-                                <span class="nav__name">&nbsp; Explore</span>
+                                <span class="nav__name">&nbsp;Explore</span>
                             </a>
                             <a href="#" class="nav__link side">
                                 &nbsp;&nbsp;<i class='bx bx-bookmark nav__icon' style="font-size: 18px;"></i>
-                                <span class="nav__name">&nbsp; Saved</span>
+                                <span class="nav__name">&nbsp;Saved</span>
                             </a>
                         </div>
                     </div>
