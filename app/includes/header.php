@@ -18,7 +18,7 @@
         <div class="pe-2"></div>
         <!-- start dropdown -->
         <div class="dropdown-menu" style="margin-top: -10px !important;">
-            <a style="text-decoration: none; color: white; font-size: 14px;" href="#" class="menu-btn text-white">
+            <a class="head-link" style="padding: 0 8px 14px 10px; text-decoration: none; color: white; font-size: 14px;" href="#" class="menu-btn text-white">
                 <i class="bi bi-plus"></i>New
             </a>
             <div class="menu-content" style="margin-left: 10px !important; width: 60% !important;">
