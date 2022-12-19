@@ -50,7 +50,7 @@ if(mysqli_num_rows($result) > 0){
   
 }else{
    $error = '
-   <div class="pt-2"></div>
+   <div class="pt-4"></div>
    <div class="login_error">
    <strong>Error:</strong> 
    The username <strong>'. $_POST['username'] .'</strong> or password entered is not registered on this site. Please try again.
