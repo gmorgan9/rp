@@ -22,7 +22,7 @@ if(isLoggedIn() == false){
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="../assets/styles.css?v=4.08">
+    <link rel="stylesheet" href="../assets/styles.css?v=4.11">
     <link rel="stylesheet" href="../assets/sidebar.css?v=1.10">
 
     <script src="https://cdn.tiny.cloud/1/7kainuaawjddfzf3pj7t2fm3qdjgq5smjfjtsw3l4kqfd1h4/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
