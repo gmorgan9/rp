@@ -10,6 +10,95 @@ if (mysqli_num_rows($result) > 0) {
 }}
 ?>
 
+    <div class="nav position-fixed" id="navbar" style="margin-top: 40px; background-color: #1e2327;">
+            <nav class="nav__container">
+                <div>
+                    <a href="<?php echo BASE_URL . '/cu-admin/' ?>" class="nav__link nav__logo side text-white">
+                        &nbsp;&nbsp;<i class="bi bi-speedometer2 nav__icon" style="font-size: 18px;"></i>
+                        <span class="nav__logo-name">&nbsp;Dashboard</span>
+                    </a>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">
+                            <!-- <h3 class="nav__subtitle">Profile</h3> -->
+    
+                            <!-- <a href="<?php //echo BASE_URL . '/cu-admin/' ?>" class="nav__link active">
+                                <i class='bi bi-house nav__icon'></i>
+                                <span class="nav__name">Home</span>
+                            </a> -->
+                            
+                            <div class="nav__dropdown">
+                                <a href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>" class="nav__link side text-white">
+                                    &nbsp;&nbsp;<i class="bi bi-pin-angle nav__icon" style="font-size: 18px;"></i>
+                                    <span class="nav__name">&nbsp;Posts</span>
+                                    <i class='bi bi-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All Posts</a>
+                                        <a href="<?php echo BASE_URL . '/pages/add_posts.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Add Posts</a>
+                                        <a href="<?php echo BASE_URL . '/pages/categories.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Categories</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" class="nav__link side text-white">
+                                &nbsp;&nbsp;<i class='bi bi-chat-right nav__icon' style="font-size: 18px;"></i>
+                                <span class="nav__name">&nbsp;Comments</span>
+                            </a>
+                        </div>
+    
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle text-white">Settings</h3>
+    
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link side text-white">
+                                    &nbsp;&nbsp;<i class='bx bx-bell nav__icon' style="font-size: 18px;"></i>
+                                    <span class="nav__name">&nbsp;Users</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item side text-muted">&nbsp;All Users</a>
+                                        <a href="#" class="nav__dropdown-item side text-muted">&nbsp;Add New</a>
+                                        <a href="#" class="nav__dropdown-item side text-muted">&nbsp;Profile</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <a href="#" class="nav__link side text-white">
+                                &nbsp;&nbsp;<i class='bx bx-compass nav__icon' style="font-size: 18px;"></i>
+                                <span class="nav__name">&nbsp;Explore</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <a href="#" class="nav__link nav__logout">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a> -->
+            </nav>
+        </div>
+
+
+<!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- <div id="sidebarMenu" class="position-fixed sidebar"> -->
 <!-- close -->
     <!-- <div> -->
@@ -85,80 +174,3 @@ if (mysqli_num_rows($result) > 0) {
 	</div> -->
 
 <!-- close -->
-
-    <div class="nav position-fixed" id="navbar" style="margin-top: 40px; background-color: #1e2327;">
-            <nav class="nav__container">
-                <div>
-                    <a href="<?php echo BASE_URL . '/cu-admin/' ?>" class="nav__link nav__logo side text-white">
-                        &nbsp;&nbsp;<i class="bi bi-speedometer2 nav__icon" style="font-size: 18px;"></i>
-                        <span class="nav__logo-name">&nbsp;Dashboard</span>
-                    </a>
-    
-                    <div class="nav__list">
-                        <div class="nav__items">
-                            <!-- <h3 class="nav__subtitle">Profile</h3> -->
-    
-                            <!-- <a href="<?php //echo BASE_URL . '/cu-admin/' ?>" class="nav__link active">
-                                <i class='bi bi-house nav__icon'></i>
-                                <span class="nav__name">Home</span>
-                            </a> -->
-                            
-                            <div class="nav__dropdown">
-                                <a href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>" class="nav__link side text-white">
-                                    &nbsp;&nbsp;<i class="bi bi-pin-angle nav__icon" style="font-size: 18px;"></i>
-                                    <span class="nav__name">&nbsp;Posts</span>
-                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
-                                </a>
-
-                                <div class="nav__dropdown-collapse">
-                                    <div class="nav__dropdown-content">
-                                        <a href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Add Posts</a>
-                                        <a href="<?php echo BASE_URL . '/pages/add_posts.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Add Posts</a>
-                                        <a href="<?php echo BASE_URL . '/pages/categories.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Categories</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" class="nav__link side text-white">
-                                &nbsp;&nbsp;<i class='bi bi-chat-right nav__icon' style="font-size: 18px;"></i>
-                                <span class="nav__name">&nbsp;Comments</span>
-                            </a>
-                        </div>
-    
-                        <div class="nav__items">
-                            <h3 class="nav__subtitle text-white">Settings</h3>
-    
-                            <div class="nav__dropdown">
-                                <a href="#" class="nav__link side text-white">
-                                    &nbsp;&nbsp;<i class='bx bx-bell nav__icon' style="font-size: 18px;"></i>
-                                    <span class="nav__name">&nbsp;Users</span>
-                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
-                                </a>
-
-                                <div class="nav__dropdown-collapse">
-                                    <div class="nav__dropdown-content">
-                                        <a href="#" class="nav__dropdown-item side text-muted">&nbsp;All Users</a>
-                                        <a href="#" class="nav__dropdown-item side text-muted">&nbsp;Add New</a>
-                                        <a href="#" class="nav__dropdown-item side text-muted">&nbsp;Profile</a>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <a href="#" class="nav__link side text-white">
-                                &nbsp;&nbsp;<i class='bx bx-compass nav__icon' style="font-size: 18px;"></i>
-                                <span class="nav__name">&nbsp;Explore</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <a href="#" class="nav__link nav__logout">
-                    <i class='bx bx-log-out nav__icon' ></i>
-                    <span class="nav__name">Log Out</span>
-                </a> -->
-            </nav>
-        </div>
-
-
-<!-- </div> -->
