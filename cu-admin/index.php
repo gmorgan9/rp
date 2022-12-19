@@ -36,7 +36,7 @@ if(isLoggedIn() == false){
     </style>
     
 </head>
-<body style="margin:0;padding:0;">
+<body style="margin:0;padding:0;box-sizing:border-box;">
 
 <!-- main-container -->
   <div class="container-fluid">
