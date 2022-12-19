@@ -71,7 +71,7 @@ if(isLoggedIn() == false){
               <div class="card-body">
                 <h5 class="card-title">Special title treatment</h5>
                 <div class="d-flex">
-                  <p class="card-text float-start w-25 text-center">
+                  <p class="card-text float-start w-25" style="margin-left: auto; margin-right: auto;">
                     <div class="badge text-bg-success">.</div>
                   </p>
                   <p class="card-text float-end">
