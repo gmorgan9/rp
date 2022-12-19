@@ -74,11 +74,10 @@ if(isLoggedIn() == false){
                   <p class="card-text float-start w-25 justify-content-center" style="margin-left: auto; margin-right: auto;">
                     <div style="width: 35px; height: 25px; background-color: green; border-radius: 100px; margin-left: -50px; margin-right: 50px;"></div>
                   </p>
-                  <p class="card-text float-end">
-                    With supporting text below as a natural lead-in to additional content.
+                  <p class="card-text float-end" style="font-size: 14px;">
+                  Your site's health is looking good, but there are still some things you can do to improve its performance and security.
                   </p>
                 </div>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
             <!-- end card -->
