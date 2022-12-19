@@ -4,7 +4,7 @@
         <img src="../assets/images/new-logo.png" style="height: 20px !important; width: 20px !important;" alt="">
         <div class="pe-4"></div>
         <a style="text-decoration: none; color: white;" href="/"><i class="bi bi-house-door-fill text-muted"></i>&nbsp;CacheUp</a>
-        <div class="pe-4"></div>
+        <div class="pe-5"></div>
         <a class="head-link" style="padding: 0 8px 14px 10px; text-decoration: none; color: white; font-size: 14px;" href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>"><i style="font-size: 12px;" class="bi bi-chat-right-fill"></i>&nbsp;
     
         <?php
