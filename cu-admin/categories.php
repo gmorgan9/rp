@@ -98,7 +98,7 @@ if(isset($_POST['add-category'])){
     <div class="section-header pt-2">
       <span class="text-muted ps-2 pt-4" style="width: 95%;">New Category</span>
     </div>
-    <hr class="text-muted" style="margin-bottom: -5px; margin-top: 5px;">
+    <hr class="text-muted text-center" style="width: 95%;margin-bottom: -5px; margin-top: 5px;">
     <?php 
 
     $sql = "SELECT * FROM categories";
