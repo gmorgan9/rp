@@ -93,7 +93,7 @@ if(isset($_POST['add-category'])){
 
 <!-- START ADD COMPANY (LEFT SIDE) -->
 <div class="d-flex">
-<div class="page-content" style="width: 32%; height: 175px !important; border-radius: 15px;">
+<div class="page-content" style="background-color: white; width: 32%; height: 175px !important; border-radius: 15px;">
     <form action="" method="post">
     <div class="section-header pt-2">
       <span class="text-muted pt-4" style="width: 95%;">New Category</span>
