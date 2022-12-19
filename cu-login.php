@@ -52,7 +52,7 @@ if(mysqli_num_rows($result) > 0){
    $error = '
    <div class="login_error">
    <strong>Error:</strong> 
-   The username used is not registered on this site. Please try again.
+   The username '. $_POST['username'] .' is not registered on this site. Please try again.
    </div>
    ';
 }
