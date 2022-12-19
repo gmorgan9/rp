@@ -18,11 +18,11 @@
         </a>
         <div class="pe-2"></div>
         <!-- start dropdown -->
-        <div class="dropdown-menu" style="margin-left: 250px; position: relative; z-index: 9999; margin-top: -10px !important;">
+        <div class="dropdown-menu" style="margin-top: -10px !important;">
             <a class="head-link" style="text-decoration: none; color: white; font-size: 14px;" href="#" class="menu-btn text-white">
                 <i class="bi bi-plus"></i>New
             </a>
-            <div class="menu-content" style="margin-left: 10px !important; width: 60% !important;">
+            <div class="menu-content" style="position: relative; z-index: 9999; margin-left: 10px !important; width: 60% !important;">
                 <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/add_posts.php' ?>">Post</a>
                 <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/categories.php' ?>">Category</a>
                 <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/add_users.php' ?>">User</a>
