@@ -204,10 +204,10 @@ img {
 
 /* Dropdown */
 .nav__dropdown {
-  margin-top: 1px;
+  /* margin-top: 1px; */
   overflow: hidden;
   max-height: 21px;
-  transition: .4s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .nav__dropdown-collapse {
@@ -233,8 +233,9 @@ img {
 }
 
 .nav__dropdown-icon {
+  margin-bottom: 1px;
   margin-left: auto;
-  transition: .4s;
+  transition: .3s;
 }
 
 /* Show dropdown collapse */
