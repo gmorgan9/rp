@@ -97,7 +97,7 @@ if(isset($_POST['add-category'])){
     <div class="section-header pt-2">
       <span class="text-muted pt-4" style="width: 95%;">New Category</span>
     </div>
-    <hr style="margin-bottom: -5px; margin-top: 5px;">
+    <!-- <hr style="margin-bottom: -5px; margin-top: 5px;"> -->
     <?php 
 
     $sql = "SELECT * FROM categories";
@@ -110,7 +110,7 @@ if(isset($_POST['add-category'])){
     $employeeID = $row['idno']?>
     <?php }} ?>
     <div class="form-group pt-3 mx-auto" style="width: 95%;">
-      <label class="text-white" for="category" style="font-size: 14px;">Category <span class="text-muted" style="font-size: 10px;">e.g. "Cybersecurity"</span></label>
+      <label class="text-muted" for="category" style="font-size: 14px;">Category <span class="text-muted" style="font-size: 10px;">e.g. "Cybersecurity"</span></label>
       <input class="form-control" id="category" type="text" name="category" value="" required>
     </div>
     <div class="form-group pt-3 mx-auto d-grid d-md-flex justify-content-md-end" style="width: 95%; margin-bottom: 10px;">
