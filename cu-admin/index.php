@@ -60,11 +60,11 @@ if(isLoggedIn() == false){
         </h3>
         <div class="mt-3"></div>
 
-        <div class="row" style="z-index:9998 !important;">
+        <div class="row">
           <div class="col" style="width: 50%;">
 
             <!-- begin health -->
-              <div class="card" style="overflow: visible;">
+              <div class="card" style="z-index:0 !important;">
                 <div class="card-header">
                   Site Health Status
                 </div>
