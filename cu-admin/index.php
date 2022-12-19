@@ -72,7 +72,7 @@ if(isLoggedIn() == false){
                 <h5 class="card-title">Special title treatment</h5>
                 <div class="d-flex">
                   <p class="card-text float-start w-25">
-                    <div class="badge text-bg-success"></div>
+                    <div class="badge text-bg-success">.</div>
                   </p>
                   <p class="card-text float-end">
                     With supporting text below as a natural lead-in to additional content.
