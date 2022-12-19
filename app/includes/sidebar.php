@@ -91,7 +91,7 @@ if (mysqli_num_rows($result) > 0) {
                 <div>
                     <a href="<?php echo BASE_URL . '/cu-admin/' ?>" class="nav__link nav__logo side">
                         &nbsp;&nbsp;<i class="bi bi-speedometer2 nav__icon" style="font-size: 18px;"></i>
-                        <span class="nav__logo-name">&nbsp;Dashboard</span>
+                        <span class="nav__logo-name text-white">&nbsp;Dashboard</span>
                     </a>
     
                     <div class="nav__list">
@@ -106,40 +106,40 @@ if (mysqli_num_rows($result) > 0) {
                             <div class="nav__dropdown">
                                 <a href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>" class="nav__link side">
                                     &nbsp;&nbsp;<i class="bi bi-pin-angle nav__icon" style="font-size: 18px;"></i>
-                                    <span class="nav__name">&nbsp;Posts</span>
+                                    <span class="nav__name text-white">&nbsp;Posts</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
                                 </a>
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="<?php echo BASE_URL . '/pages/add_posts.php' ?>" class="nav__dropdown-item side">&nbsp;Add Posts</a>
-                                        <a href="<?php echo BASE_URL . '/pages/categories.php' ?>" class="nav__dropdown-item side">&nbsp;Categories</a>
+                                        <a href="<?php echo BASE_URL . '/pages/add_posts.php' ?>" class="nav__dropdown-item side text-white">&nbsp;Add Posts</a>
+                                        <a href="<?php echo BASE_URL . '/pages/categories.php' ?>" class="nav__dropdown-item side text-white">&nbsp;Categories</a>
                                     </div>
                                 </div>
                             </div>
 
                             <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" class="nav__link side">
                                 &nbsp;&nbsp;<i class='bi bi-chat-right nav__icon' style="font-size: 18px;"></i>
-                                <span class="nav__name">&nbsp;Comments</span>
+                                <span class="nav__name text-white">&nbsp;Comments</span>
                             </a>
                         </div>
     
                         <div class="nav__items">
-                            <h3 class="nav__subtitle">Menu</h3>
+                            <h3 class="nav__subtitle text-white">Menu</h3>
     
                             <div class="nav__dropdown">
                                 <a href="#" class="nav__link side">
                                     &nbsp;&nbsp;<i class='bx bx-bell nav__icon' style="font-size: 18px;"></i>
-                                    <span class="nav__name">&nbsp;Notifications</span>
+                                    <span class="nav__name text-white">&nbsp;Notifications</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
                                 </a>
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="#" class="nav__dropdown-item">Blocked</a>
-                                        <a href="#" class="nav__dropdown-item">Silenced</a>
-                                        <a href="#" class="nav__dropdown-item">Publish</a>
-                                        <a href="#" class="nav__dropdown-item">Program</a>
+                                        <a href="#" class="nav__dropdown-item text-white">Blocked</a>
+                                        <a href="#" class="nav__dropdown-item text-white">Silenced</a>
+                                        <a href="#" class="nav__dropdown-item text-white">Publish</a>
+                                        <a href="#" class="nav__dropdown-item text-white">Program</a>
                                     </div>
                                 </div>
 
@@ -147,11 +147,11 @@ if (mysqli_num_rows($result) > 0) {
 
                             <a href="#" class="nav__link side">
                                 &nbsp;&nbsp;<i class='bx bx-compass nav__icon' style="font-size: 18px;"></i>
-                                <span class="nav__name">&nbsp;Explore</span>
+                                <span class="nav__name text-white">&nbsp;Explore</span>
                             </a>
                             <a href="#" class="nav__link side">
                                 &nbsp;&nbsp;<i class='bx bx-bookmark nav__icon' style="font-size: 18px;"></i>
-                                <span class="nav__name">&nbsp;Saved</span>
+                                <span class="nav__name text-white">&nbsp;Saved</span>
                             </a>
                         </div>
                     </div>
