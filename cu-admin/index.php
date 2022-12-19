@@ -60,7 +60,7 @@ if(isLoggedIn() == false){
         </h3>
         <div class="mt-3"></div>
 
-        <div class="row">
+        <div class="row" style="overflow: visible;">
           <div class="col" style="width: 50%;">
 
             <!-- begin health -->
