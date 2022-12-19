@@ -112,8 +112,8 @@ if (mysqli_num_rows($result) > 0) {
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="<?php echo BASE_URL . '/pages/add_posts.php' ?>" class="nav__dropdown-item side text-white">&nbsp;Add Posts</a>
-                                        <a href="<?php echo BASE_URL . '/pages/categories.php' ?>" class="nav__dropdown-item side text-white">&nbsp;Categories</a>
+                                        <a href="<?php echo BASE_URL . '/pages/add_posts.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Add Posts</a>
+                                        <a href="<?php echo BASE_URL . '/pages/categories.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Categories</a>
                                     </div>
                                 </div>
                             </div>
