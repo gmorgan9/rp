@@ -104,7 +104,14 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-
+    <div class="mt-5"></div>
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-10">
+    <h3 class="text-black" style="margin-left: -30px;">
+        Add Post
+      </h3>
+      <div class="mt-5"></div>
     <form action="" method="POST">
       <input class="form-control" style="width: 99%;" type="hidden" name="author_idno" value="<?php echo $idno;?>">
         <h3>
@@ -180,6 +187,8 @@ if (mysqli_num_rows($result) > 0) {
         <input type="submit" name="add" value="Submit" class="btn btn-light btn-block"> &nbsp;
         <button class="btn btn-dark btn-block" onclick="window.history.go(-1); return false;">Go Back</button>
     </form>
+  </div>
+</div>
 
 
 
@@ -202,7 +211,7 @@ if (mysqli_num_rows($result) > 0) {
 <script>
     tinymce.init({
       selector: 'textarea#content',
-      plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect',
+      plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
       toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
       tinycomments_mode: 'embedded',
       tinycomments_author: 'Author name',
