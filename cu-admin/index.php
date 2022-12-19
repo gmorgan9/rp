@@ -51,6 +51,28 @@ if(isLoggedIn() == false){
       </div>
     </div>
 
+    <div class="mt-5"></div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-10" style="margin-left: -30px;">
+        <h3 class="text-black">
+          Dashboard
+        </h3>
+        <div class="mt-3"></div>
+
+        <div class="col-5">
+          test
+        </div>
+        <div class="col-5">
+          test
+        </div>
+
+
+
+
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-2"></div>
       <div class="col position-absolute bottom-0 ms-5">
