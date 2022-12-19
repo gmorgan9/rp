@@ -104,7 +104,7 @@ if(isLoggedIn() == false){
                           ?>
                         </a>
                       <!-- end posts -->
-                      <br>
+                      <div class="pt-2"></div>
                       <!-- categories -->
                       <a style="color: #7fade1;" href="">
                         <i class="bi bi-tags-fill text-muted"></i>&nbsp;
