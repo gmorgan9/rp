@@ -20,7 +20,7 @@
         <!-- start dropdown -->
 
 
-        <div class="dropdown">
+        <div class="dropdown" style="z-index: 9999 !important;">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown button
             </button>
