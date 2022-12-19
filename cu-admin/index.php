@@ -145,14 +145,10 @@ if(isLoggedIn() == false){
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
   <script>
-    $(document).ready(function () {
-    $('.navbar-default .navbar-nav > li.dropdown').hover(function () {
-        $('ul.dropdown-menu', this).stop(true, true).slideDown('fast');
-        $(this).addClass('open');
-    }, function () {
-        $('ul.dropdown-menu', this).stop(true, true).slideUp('fast');
-        $(this).removeClass('open');
-    });
+    $('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 });
   </script>
   
