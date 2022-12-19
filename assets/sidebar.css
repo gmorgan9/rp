@@ -317,16 +317,16 @@ img {
   }
   
   /* Visible elements */
-  .nav:hover .nav__logo-name {
+  .nav .nav__logo-name {
     opacity: 1;
   }
-  .nav:hover .nav__subtitle {
+  .nav .nav__subtitle {
     opacity: 1;
   }
-  .nav:hover .nav__name {
+  .nav .nav__name {
     opacity: 1;
   }
-  .nav:hover .nav__dropdown-icon {
+  .nav .nav__dropdown-icon {
     opacity: 1;
   }
 }
