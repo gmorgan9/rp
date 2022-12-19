@@ -136,7 +136,7 @@ if (isset($_POST['unapprove'])) {
               </td>
               <?php }}?>
         </tbody>
-        <thead style="background-color: white;">
+        <thead class="table-group-divider" style="background-color: white;">
           <tr>
             <th scope="col">ID #</th>
             <th scope="col">Author</th>
