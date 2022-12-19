@@ -70,12 +70,14 @@ if(isLoggedIn() == false){
               </div>
               <div class="card-body">
                 <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text float-start">
-                  With supporting text below as a natural lead-in to additional content.
-                </p>
-                <p class="card-text float-end">
-                  With supporting text below as a natural lead-in to additional content.
-                </p>
+                <div class="d-flex">
+                  <p class="card-text float-start">
+                    With supporting text below as a natural lead-in to additional content.
+                  </p>
+                  <p class="card-text float-end">
+                    With supporting text below as a natural lead-in to additional content.
+                  </p>
+                </div>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
