@@ -60,11 +60,13 @@ if(isLoggedIn() == false){
         </h3>
         <div class="mt-3"></div>
 
-        <div class="col-5">
-          test
-        </div>
-        <div class="col-5">
-          test
+        <div class="row">
+          <div class="col-5">
+            test
+          </div>
+          <div class="col-5">
+            test
+          </div>
         </div>
 
 
