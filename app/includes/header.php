@@ -1,7 +1,7 @@
 <div class="page-header position-fixed" style="width: 115%;">
     <div class="d-flex" style="float:left !important;">
         <div class="pe-2"></div>
-        <img src="../assets/images/new-logo.png" height="20px" width="20px" alt="">
+        <img src="../assets/images/new-logo.png" style="height: 20px !important; width: 20px !important;" alt="">
         <div class="pe-4"></div>
         <a style="text-decoration: none; color: white" href="/"><i class="bi bi-house-door-fill text-muted"></i>&nbsp;CacheUp</a>
         <div class="pe-4"></div>
