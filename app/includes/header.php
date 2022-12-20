@@ -63,6 +63,7 @@
 
     <!-- logo -->
         <div class="text-center">
+            <div class="pt-5"></div>
             <img src="<?php echo BASE_URL . '/assets/images/updated-logo.png'; ?>" style="width: 50%;" alt="">
         </div>
     <!-- end logo -->
