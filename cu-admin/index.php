@@ -140,12 +140,47 @@ if(isLoggedIn() == false){
             <div class="pt-4"></div>
 
             <!-- begin recent -->
+              <!-- PHP -->
+              <?php
+                // $select = "SELECT * FROM posts WHERE status = 'published' LIMIT 2";
+                // $result = mysqli_query($conn, $select);
+                // if (mysqli_num_rows($result) > 0) {
+                //    while($row = mysqli_fetch_assoc($result)) {
+                //     $post_id        = $row['post_id'];
+                //     $idno           = $row['idno'];
+                //     $title          = $row['title'];
+                //     $content        = $row['content'];
+                //     $author         = $row['author'];
+                //     $author_idno    = $row['author_idno'];
+                //     $category       = $row['category'];
+                //     $tags           = $row['tags'];
+                //     $created_at     = $row['created_at'];
+                //     $status         = $row['status'];
+                //     $published_at   = $row['published_at'];
+                //     $updated_at     = $row['updated_at'];
+                // }}
+                $query ="SELECT * FROM posts WHERE status = 'published' LIMIT 3";
+                $result = $conn->query($query);
+                if($result->num_rows> 0){
+                  $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+                }
+              ?>
+              <!-- end PHP -->
               <div class="card">
                 <div class="card-header">
-                  Recent Activity
+                  Activity
                 </div>
                 <div class="card-body">
-                  body
+                  <p style="font-size: 16px;">
+                    Recently Published
+                  </p>
+                  <?php foreach ($options as $option) { ?>
+                    <div class="row">
+                      <div class="col">
+                        <?php echo $option['published_at']; ?>
+                      </div>
+                    </div>
+                  <?php } ?>
                 </div>
               </div>
             <!-- end recent -->
