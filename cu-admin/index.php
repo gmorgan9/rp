@@ -333,7 +333,7 @@ if(isLoggedIn() == false){
                             <a href="<?php echo BASE_URL . '/single_post.php?id=' . $draft['post_id']; ?>"><?php echo $draft['title']; ?></a> 
                           </p>
                           &nbsp;&nbsp;
-                          <p class="text-muted"><?php echo $draft['created_date']; ?></p>
+                          <p class="text-muted" style="font-size: 10px;"><?php echo $draft['created_date']; ?></p>
                         </div>  
                         <p style="margin-top: -10px;">
                           <?php echo html_entity_decode(substr($draft['content'], 0, 50) . '...'); ?>
