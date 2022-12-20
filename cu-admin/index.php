@@ -195,7 +195,7 @@ if(isLoggedIn() == false){
                       </div>
                     </div>
                   <?php } ?>
-                  <hr style="width: 120%;">
+                  <hr style="width: 110%; margin-left: -5px;">
 
                 </div>
               </div>
