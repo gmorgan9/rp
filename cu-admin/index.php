@@ -308,6 +308,33 @@ if(isLoggedIn() == false){
                   </div>
                 </form>
                 <hr>
+                  <p style="font-size: 16px;">
+                    Your Recent Drafts
+                  </p>
+                  <!-- PHP -->
+                  <?php
+                      $query ="SELECT * FROM comments WHERE status = 1 LIMIT 1";
+                      $result = $conn->query($query);
+                      if($result->num_rows> 0){
+                        $drafts = mysqli_fetch_all($result, MYSQLI_ASSOC);
+                      }
+                    ?>
+                  <!-- end PHP -->
+                  <?php foreach ($drafts as $draft) { ?>
+                    <div class="row">
+                      <div class="col-2" style="margin-top: -15px !important;">
+                        <i style="font-size: 55px; margin-left: 15px;" class="bi bi-person-square text-muted"></i>
+                      </div>
+                      <div class="col">
+                        <p class="text-muted">
+                          From <?php echo $draft['name']; ?> on <a style="color: #7fade1;" href="<?php echo BASE_URL . '/single_post.php?id=' . $draft['post_id']; ?>"><?php echo $draft['post_title']; ?></a>
+                        </p>
+                        <p style="margin-top: -10px;">
+                          <?php echo substr($draft['content'], 0, 50) . '...'; ?>
+                        </p>
+                      </div>
+                    </div>
+                  <?php } ?>
               </div>
             </div>
           <!-- end quick draft -->
