@@ -159,7 +159,7 @@ if(isLoggedIn() == false){
                 //     $published_at   = $row['published_at'];
                 //     $updated_at     = $row['updated_at'];
                 // }}
-                $query ="SELECT * FROM posts WHERE status = 'published' LIMIT 3";
+                $query ="SELECT * FROM posts WHERE status = 'published' LIMIT 2";
                 $result = $conn->query($query);
                 if($result->num_rows> 0){
                   $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -172,12 +172,12 @@ if(isLoggedIn() == false){
                 </div>
                 <div class="card-body">
                   <p style="font-size: 16px;">
-                    Recently Published
+                    <strong>Recently Published</strong>
                   </p>
                   <?php foreach ($options as $option) { ?>
                     <div class="row">
                       <div class="col">
-                        <?php echo $option['published_at']; ?>
+                        <p class="text-muted"><?php echo $option['published_at']; ?></p>
                       </div>
                     </div>
                   <?php } ?>
