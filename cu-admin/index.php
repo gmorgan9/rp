@@ -179,6 +179,9 @@ if(isLoggedIn() == false){
                       <div class="col">
                         <p class="text-muted"><?php echo $option['published_at']; ?></p>
                       </div>
+                      <div class="col">
+                        <p class="text-muted"><?php echo $option['tilte']; ?></p>
+                      </div>
                     </div>
                   <?php } ?>
                 </div>
