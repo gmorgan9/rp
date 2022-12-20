@@ -699,7 +699,7 @@ if(isLoggedIn() == false){
                     <div class="row">
                       <div class="col ps-4">
                         <div class="d-flex">
-                          <p>
+                          <p style="color: #7fade1;">
                             <?php echo $draft['title']; ?>
                           </p>
                           &nbsp;&nbsp;
