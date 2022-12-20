@@ -253,7 +253,30 @@ if(isLoggedIn() == false){
           <div class="pt-4"></div>
 
           <!-- begin quick draft -->
-          <div class="card">
+            <!-- FUNCTION -->
+            <?php 
+            if(isset($_POST['draft'])){
+              $idno  = rand(10000, 99999); // figure how to not allow duplicates
+              $username = mysqli_real_escape_string($conn, $_POST['username']);
+              $email = mysqli_real_escape_string($conn, $_POST['email']);
+            
+              $select = " SELECT * FROM posts WHERE idno = '$idno'";
+              $result = mysqli_query($conn, $select);
+            
+              if(mysqli_num_rows($result) > 0){
+            
+                $error = '';
+            
+              }else {
+                    $insert = "INSERT INTO posts (idno, title, content) VALUES('$idno', '$title','$content')";
+                    mysqli_query($conn, $insert);
+                    header('location: '. BASE_URL . '/cu-admin/');
+                 }
+             
+            };
+            ?>
+            <!-- end FUNCTION -->
+            <div class="card">
               <div class="card-header">
                 Quick Draft
               </div>
@@ -268,7 +291,7 @@ if(isLoggedIn() == false){
                     <textarea rows="4" type="text" class="form-control" name="content" id="content" placeholder="Whats on your mind?"></textarea>
                   </div>
                   <div class="mt-3">
-                    <button type="submit" class="btn btn-outline-secondary">Submit</button>
+                    <button type="submit" name="draft" class="btn btn-outline-secondary">Submit</button>
                   </div>
                 </form>
               </div>
