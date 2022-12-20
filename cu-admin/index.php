@@ -86,7 +86,7 @@ if(isLoggedIn() == false){
               </div>
             <!-- end health -->
 
-            <div class="pt-4"></div>
+            <div class="pt-4 space-1"></div>
 
             <!-- begin quicklook -->
               <div class="card quicklook">
@@ -141,7 +141,7 @@ if(isLoggedIn() == false){
               </div>
             <!-- end quicklook -->
 
-            <div class="pt-4"></div>
+            <div class="pt-4 space-2"></div>
 
             <!-- begin activity -->
               <!-- PHP -->
@@ -274,7 +274,7 @@ if(isLoggedIn() == false){
             </div>
           <!-- end news&updates -->
 
-          <div class="pt-4"></div>
+          <div class="pt-4 space-3"></div>
 
           <!-- begin quickdraft -->
             <!-- FUNCTION -->

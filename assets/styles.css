@@ -103,6 +103,9 @@ body {
     .health {
       display: none;
     }
+    .space-1 {
+      display: none;
+    }
     /* .main-container {
        display: none;
     }
