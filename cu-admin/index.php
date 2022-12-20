@@ -196,8 +196,8 @@ if(isLoggedIn() == false){
                     </div>
                   <?php } ?>
                 </div>
-                <div class="card-footer text-muted">
-                  2 days ago
+                <div class="card-footer text-muted" style="padding-top: 10px;">
+                  
                 </div>
               </div>
             <!-- end recent -->
