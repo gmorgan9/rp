@@ -62,6 +62,6 @@
 <!-- start mobile -->
 
 <!-- Logo -->
-<img src="<?php echo ROOT_PATH . '/assets/images/old.png'; ?>" alt="">
+<img src="<?php echo BASE_URL . '/assets/images/updated-logo.png'; ?>" alt="">
 
 <!-- end mobile -->
