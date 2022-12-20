@@ -25,7 +25,7 @@ if(isLoggedIn() == false){
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="../assets/styles.css?v=4.19">
+    <link rel="stylesheet" href="../assets/styles.css?v=4.20">
     <link rel="stylesheet" href="../assets/sidebar.css?v=1.10">
 
     <title>Dashboard - CacheUp Blog</title>
@@ -55,17 +55,17 @@ if(isLoggedIn() == false){
     </div>
 
     <div class="mt-5"></div>
-    <div class="row main-row">
+    <div class="row">
       <div class="col-2"></div>
-      <div class="col-10 main-col" style="margin-left: -30px;">
+      <div class="col-10" style="margin-left: -30px;">
         <div class="mt-5"></div>
         <h3 class="text-black">
           Dashboard
         </h3>
         <div class="mt-3"></div>
 
-        <div class="row">
-          <div class="col" style="width: 50%;">
+        <div class="row d-none">
+          <div class="col d-none" style="width: 50%;">
 
             <!-- begin health -->
               <div class="card health" style="z-index: -2;">

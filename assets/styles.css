@@ -100,27 +100,8 @@ body {
 }
  
   @media only screen and (max-width: 1024px) {
-    .health {
+    .d-none {
       display: none;
     }
-    .space-1 {
-      display: none;
-    }
-    .main-row {
-      display: none;
-    }
-    .main-col {
-      display: none;
-    }
-    /* .main-container {
-       display: none;
-    }
-    .blocked-page {
-       color: black;
-       display: block;
-    }
-    .blocked-footer {
-      display: block;
-     } */
   }
 
