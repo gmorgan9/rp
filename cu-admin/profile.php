@@ -113,7 +113,7 @@ if (mysqli_num_rows($result) > 0) {
               </div>
             </div>
             <div class="col-lg-8">
-              <div class="card mb-4">
+              <div class="card mb-4" style="z-index: -2;">
                 <div class="card-body">
                   <div class="row">
                     <div class="col-sm-3">
