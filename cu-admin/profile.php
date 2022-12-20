@@ -91,7 +91,7 @@ if (mysqli_num_rows($result) > 0) {
             <div class="col-lg-4">
               <div class="card mb-4" style="z-index: -2;">
                 <div class="card-body text-center">
-                  <img src="<?php echo $profile_picture; ?>" alt="avatar"
+                  <img src="<?php //echo $profile_picture; ?>https://i.postimg.cc/SxMSmRKW/IMG-0097.png" alt="avatar"
                     class="rounded-circle img-fluid" style="width: 50%;">
                   <h5 class="my-3"><?php echo $firstname; ?> <?php echo $lastname; ?></h5>
                   <p class="text-muted mb-3"><?php echo $username; ?></p>
