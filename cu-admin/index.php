@@ -254,38 +254,38 @@ if(isLoggedIn() == false){
 
           <!-- begin quick draft -->
             <!-- FUNCTION -->
-            <?php 
-            if(isset($_POST['draft'])){
-              $idno  = rand(10000, 99999); // figure how to not allow duplicates
-              $title = mysqli_real_escape_string($conn, $_POST['title']);
-              $content = mysqli_real_escape_string($conn, $_POST['content']);
-              $author_idno = mysqli_real_escape_string($conn, $_POST['author_idno']);
-              $author = mysqli_real_escape_string($conn, $_POST['author']);
-            
-              $select = " SELECT * FROM posts WHERE idno = '$idno'";
+              <?php 
+              if(isset($_POST['draft'])){
+                $idno  = rand(10000, 99999); // figure how to not allow duplicates
+                $title = mysqli_real_escape_string($conn, $_POST['title']);
+                $content = mysqli_real_escape_string($conn, $_POST['content']);
+                $author_idno = mysqli_real_escape_string($conn, $_POST['author_idno']);
+                $author = mysqli_real_escape_string($conn, $_POST['author']);
+                
+                $select = " SELECT * FROM posts WHERE idno = '$idno'";
+                $result = mysqli_query($conn, $select);
+                
+                if(mysqli_num_rows($result) > 0){
+                
+                  $error = '';
+                
+                }else {
+                      $insert = "INSERT INTO posts (idno, title, content, author_idno, author) VALUES('$idno', '$title','$content','$author_idno','$author')";
+                      mysqli_query($conn, $insert);
+                      header('location: '. BASE_URL . '/cu-admin/');
+                   }
+                 
+              };
+              $user_id = $_SESSION['user_id'];
+              $select = "SELECT * FROM users WHERE user_id = $user_id";
               $result = mysqli_query($conn, $select);
-            
-              if(mysqli_num_rows($result) > 0){
-            
-                $error = '';
-            
-              }else {
-                    $insert = "INSERT INTO posts (idno, title, content, author_idno, author) VALUES('$idno', '$title','$content','$author_idno','$author')";
-                    mysqli_query($conn, $insert);
-                    header('location: '. BASE_URL . '/cu-admin/');
-                 }
-             
-            };
-            $user_id = $_SESSION['user_id'];
-            $select = "SELECT * FROM users WHERE user_id = $user_id";
-            $result = mysqli_query($conn, $select);
-            if (mysqli_num_rows($result) > 0) {
-               while($row = mysqli_fetch_assoc($result)) {
-                $firstname    = $row['firstname'];
-                $lastname     = $row['lastname'];
-                $idno         = $row['idno'];
-            }}
-            ?>
+              if (mysqli_num_rows($result) > 0) {
+                 while($row = mysqli_fetch_assoc($result)) {
+                  $firstname    = $row['firstname'];
+                  $lastname     = $row['lastname'];
+                  $idno         = $row['idno'];
+              }}
+              ?>
             <!-- end FUNCTION -->
             <div class="card">
               <div class="card-header">
@@ -307,6 +307,7 @@ if(isLoggedIn() == false){
                     <button type="submit" name="draft" class="btn btn-outline-secondary">Submit</button>
                   </div>
                 </form>
+                <hr>
               </div>
             </div>
           <!-- end quick draft -->
