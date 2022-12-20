@@ -467,12 +467,13 @@ if (mysqli_num_rows($result) > 0) {
   </div>
 <!-- end blog posts -->
 
+<div class="float-end">
+  test
+</div>
 
 
-test
 
-  </div>
-  
+</div>
 </div>
 
 
