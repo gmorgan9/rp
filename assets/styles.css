@@ -100,8 +100,8 @@ body {
 }
  
   @media only screen and (max-width: 1024px) {
-    .d-none {
-      display: block;
+    .main {
+      display: none;
     }
   }
 
