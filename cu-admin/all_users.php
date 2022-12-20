@@ -130,7 +130,11 @@ if (isset($_POST['trash'])) {
               <td><?php echo $username; ?></td>
               <td><?php echo $firstname; ?> <?php echo $lastname; ?></td>
               <td><?php echo $email; ?></td>
-              <td><?php echo $isadmin; ?></td>
+              <?php if($isadmin == 1) { ?>
+                <td>Administrator</td>
+              <?php } else { ?>
+                <td>Standard</td>
+              <?php } ?>
               <td>
                 <?php
                 $sql="SELECT count('1') FROM posts WHERE author_idno = '". $idno ."'";
