@@ -126,7 +126,7 @@ if(isset($_POST['update'])){
                         </div>
                     </div>
                     
-                    <input type="submit" name="create">
+                    <button type="submit" name="create" class="btn btn-outline-secondary">Sign in</button>
                 </form>
             </div>
         </div>
