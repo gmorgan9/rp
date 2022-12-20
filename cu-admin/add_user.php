@@ -88,7 +88,7 @@ if(isset($_POST['update'])){
                 <form action="" method="POST">
                     <div class="form-group">
                         <label for="username">Username</label>
-                        <input class="form-control" type="text" name="username" id="username" required>
+                        <input class="form-control w-50" type="text" name="username" id="username" required>
                     </div>
                 </form>
             </div>
