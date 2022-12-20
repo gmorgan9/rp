@@ -725,11 +725,7 @@ if(isLoggedIn() == false){
   <div class="mb-5"></div>
   </div>
 <!-- END mobile-container -->
-
-
   
-  
-
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
   <script>
