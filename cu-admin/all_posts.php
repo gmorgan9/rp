@@ -14,7 +14,7 @@ session_start();
 <?php
 
 date_default_timezone_set('America/Denver');
-$date = date('F d, Y', time());
+$date = date('F j, Y, g:i a', time());
 
 
 if (isset($_POST['published'])) {
