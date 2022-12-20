@@ -146,11 +146,11 @@ if (isset($_POST['trash'])) {
         <thead class="table-group-divider" style="background-color: white;">
           <tr>
             <th scope="col">ID #</th>
-            <th scope="col">Author</th>
-            <th scope="col">In response to</th>
-            <th scope="col">Submitted</th>
-            <th scope="col">Status</th>
-            <th scope="col">Actions</th>
+            <th scope="col">Username</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Role</th>
+            <th scope="col">Posts</th>
           </tr>
         </thead>
       </table>
