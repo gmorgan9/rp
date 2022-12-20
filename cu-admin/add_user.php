@@ -107,8 +107,8 @@ if(isset($_POST['update'])){
                         <input class="form-control w-50" type="password" name="password" id="password">
                     </div>
                     <div class="form-group">
-                        <label for="role">First Name</label>
-                        <select class="form-control" name="isadmin" id="role">
+                        <label for="role">Role</label>
+                        <select class="form-control w-25" name="isadmin" id="role">
                             <option value="1">Administrator</option>
                             <option value="0">Standard</option>
                         </select>
