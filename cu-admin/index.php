@@ -239,8 +239,21 @@ if(isLoggedIn() == false){
           </div>
           <div class="col" style="width: 50%;">
 
+          <!-- begin news&updates -->
+            <div class="card" style="z-index: -2;">
+              <div class="card-header">
+                New and Updates
+              </div>
+              <div class="card-body">
+                body
+              </div>
+            </div>
+          <!-- end news&updates -->
+
+          <div class="pt-4"></div>
+
           <!-- begin quick draft -->
-            <div class="card">
+          <div class="card">
               <div class="card-header">
                 Quick Draft
               </div>
@@ -261,19 +274,6 @@ if(isLoggedIn() == false){
               </div>
             </div>
           <!-- end quick draft -->
-
-          <div class="pt-4"></div>
-
-          <!-- begin news&updates -->
-            <div class="card">
-              <div class="card-header">
-                New and Updates
-              </div>
-              <div class="card-body">
-                body
-              </div>
-            </div>
-          <!-- end news&updates -->
           </div>
         </div>
 
