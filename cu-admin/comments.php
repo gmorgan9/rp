@@ -20,7 +20,7 @@ $date = date('F d, Y', time());
 if (isset($_POST['approve'])) {
   $appUpdateQuery = "UPDATE comments SET status = '1' WHERE comment_id = '".$_POST['comment_id']."'";
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
-  header('location: all_comments.php');
+  header('location: comments.php');
 }
 ?>
 
@@ -28,14 +28,14 @@ if (isset($_POST['approve'])) {
 if (isset($_POST['unapprove'])) {
   $appUpdateQuery = "UPDATE comments SET status = '0' WHERE comment_id = '".$_POST['comment_id']."'";
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
-  header('location: all_comments.php');
+  header('location: comments.php');
 }
 ?>
 <?php
 if (isset($_POST['trash'])) {
   $appUpdateQuery = "UPDATE comments SET status = '2' WHERE comment_id = '".$_POST['comment_id']."'";
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
-  header('location: all_comments.php');
+  header('location: comments.php');
 }
 ?>
 
@@ -44,7 +44,7 @@ if (isset($_POST['trash'])) {
   if (isset($_POST['delete'])) {
     $delete = "DELETE FROM comments WHERE comment_id = '".$_POST['comment_id']."'";
     $terUpdateResult = mysqli_query($conn, $delete);
-    header('location: all_comments.php');
+    header('location: comments.php');
   }
 // END DELETE
 
