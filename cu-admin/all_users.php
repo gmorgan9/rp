@@ -98,7 +98,7 @@ if (isset($_POST['reset'])) {
             $all = mysqli_query($conn, $sql);
             if($all) {
                 while ($row = mysqli_fetch_assoc($all)) {
-                  $user_id     = $row['comment_id'];
+                  $user_id     = $row['user_id'];
                   $idno      = $row['idno'];
                   $firstname     = $row['firstname'];
                   $lastname = $row['lastname'];
@@ -132,12 +132,12 @@ if (isset($_POST['reset'])) {
               <td>
                 <div class="d-flex">
                   <form method="post" action="">
-                    <input type="text" name="user_id" value="<?php echo $user_id; ?>" />
+                    <input type="hidden" name="user_id" value="<?php echo $user_id; ?>" />
                     <button onclick="return confirm('Password Reset? \r\nAn email is on its way!')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="reset"><span class="badge text-bg-secondary">Reset Password</span></button>
                   </form>
                   &nbsp;
                   <form method="post" action="">
-                    <input type="text" name="user_id" value="<?php echo $user_id; ?>" />
+                    <input type="hidden" name="user_id" value="<?php echo $user_id; ?>" />
                     <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="delete"><span class="badge text-bg-danger">Delete</span></button>
                   </form>
                 </div>
