@@ -174,6 +174,10 @@ if (mysqli_num_rows($result) > 0) {
               <a href="edit_account.php?id=<?php echo $user_id; ?>" class="btn btn-outline-success">
                 Edit Account
               </a>
+              <form method="post" action="">
+                    <input type="hidden" name="user_id" value="<?php echo $user_id; ?>" />
+                    <button onclick="return confirm('Password Reset? \r\nAn email is on its way!')" style="" type="submit" name="reset"><span class="btn btn-outline-secondary">Reset Password</span></button>
+                  </form>
               <a href="" class="btn btn-outline-secondary">
                 Reset Password
               </a>
