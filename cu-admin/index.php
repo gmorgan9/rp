@@ -439,7 +439,7 @@ if(isLoggedIn() == false){
                 <div class="row">
                   <div class="col">
                     <!-- posts -->
-                      <a style="color: #7fade1;" href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>">
+                      <p style="color: #7fade1;">
                         <i class="bi bi-pin-angle-fill text-muted"></i>&nbsp;
                         <?php
                         $sql="SELECT count('1') FROM posts WHERE status = 'published'";
@@ -447,11 +447,11 @@ if(isLoggedIn() == false){
                         $rowtotal=mysqli_fetch_array($result); 
                         echo "$rowtotal[0] Posts";
                         ?>
-                      </a>
+                      </p>
                     <!-- end posts -->
                     <div class="pt-2"></div>
                     <!-- categories -->
-                    <a style="color: #7fade1;" href="<?php echo BASE_URL . '/cu-admin/categories.php' ?>">
+                    <p style="color: #7fade1;">
                       <i class="bi bi-tags-fill text-muted"></i>&nbsp;
                         <?php
                         $sql="SELECT count('1') FROM categories";
@@ -459,12 +459,12 @@ if(isLoggedIn() == false){
                         $rowtotal=mysqli_fetch_array($result); 
                         echo "$rowtotal[0] Categories";
                         ?>
-                      </a>
+                      </p>
                     <!-- end categories -->
                   </div>
                   <div class="col">
                     <!-- comments -->
-                    <a style="color: #7fade1;" href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>">
+                    <p style="color: #7fade1;">
                       <i class="bi bi-chat-right-fill text-muted"></i>&nbsp;
                         <?php
                         $sql="SELECT count('1') FROM comments WHERE status = 1";
@@ -472,7 +472,7 @@ if(isLoggedIn() == false){
                         $rowtotal=mysqli_fetch_array($result); 
                         echo "$rowtotal[0] Comments";
                         ?>
-                      </a>
+                      </p>
                     <!-- end comments -->
                   </div>
                   <div class="pt-3"></div>
