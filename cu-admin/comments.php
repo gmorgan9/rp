@@ -143,17 +143,7 @@ if (isset($_POST['trash'])) {
               <?php } ?>
               </td>
               <?php }}?>
-              <td>
-                <form method="post" action="">
-                  <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
-                  <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="trash"><span class="badge text-bg-danger">Trash</span></button>
-                </form>
-                &nbsp;
-                <form method="post" action="">
-                  <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
-                  <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="delete"><span class="badge text-bg-danger">Delete</span></button>
-                </form>
-              </td>
+              
             </tr>
         </tbody>
         <thead class="table-group-divider" style="background-color: white;">
