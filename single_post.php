@@ -210,7 +210,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-<div class="row">
+<div class="row d-flex">
   <div class="col float-start">
 
   
@@ -474,10 +474,10 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-</div>
-<div class="col float-end">
-  test
-</div>
+  </div>
+  <div class="col float-end">
+    test
+  </div>
 </div>
 
 </div>
