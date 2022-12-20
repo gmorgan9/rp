@@ -146,7 +146,7 @@ if (isset($_POST['trash'])) {
                 <div class="d-flex">
                 <form method="post" action="">
                   <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
-                  <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="trash"><span class="badge text-bg-danger">Trash</span></button>
+                  <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="trash"><span class="badge text-bg-danger"><i class="bi bi-trash-fill"></i></span></button>
                 </form>
                 &nbsp;
                 <form method="post" action="">
