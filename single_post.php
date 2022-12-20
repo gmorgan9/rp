@@ -193,32 +193,7 @@ if (mysqli_num_rows($result) > 0) {
 <div class="main">
 
 <!-- start header -->
-  <div class="page-header">
-    <div class="left">
-      <a href="/">
-        <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
-      </a>
-    </div>
-    <div class="right">
-    
-      <a href="" class="text-decoration-none text-white">
-        <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
-      </a>
-      <button class="btn talk-btn">
-        <a href="" class="text-decoration-none">
-          LET'S TALK
-        </a>
-      </button>
-        <a class="text-decoration-none text-white" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-          &nbsp;&nbsp;&nbsp;
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-          </svg>
-          <div class="mt-1"></div>
-          </a>
-          
-          <div class="dropdown-menu p-4" >
+<?php include(ROOT_PATH . "/app/includes/header.php"); ?>
 
   <?php 
 
