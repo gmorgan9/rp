@@ -131,7 +131,7 @@ if(isLoggedIn() == false){
                       <!-- end comments -->
                     </div>
                     <div class="pt-3"></div>
-                    <p style="margin-bottom: -2px; color: #7fade1;">Ubuntu 22.0.4 running <a href="/">CacheUp</a> blog</p>
+                    <p style="margin-bottom: -2px;">Ubuntu 22.0.4 running <a style="color: #7fade1;" href="/">CacheUp</a> blog</p>
                   </div>
                 </div>
               </div>
