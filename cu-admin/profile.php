@@ -81,7 +81,7 @@ if (mysqli_num_rows($result) > 0) {
         <section>
           <div class="row">
             <div class="col-lg-4">
-              <div class="card mb-4">
+              <div class="card mb-4" style="z-index: -2;">
                 <div class="card-body text-center">
                   <img src="<?php echo $profile_picture; ?>" alt="avatar"
                     class="rounded-circle img-fluid" style="width: 200px; height: 250px;">
