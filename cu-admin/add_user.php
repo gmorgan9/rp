@@ -82,7 +82,8 @@ if(isset($_POST['update'])){
         <div class="mt-3"></div>
 
 
-
+        <div class="row">
+          <div class="col">
 
 
     
@@ -187,7 +188,7 @@ if (mysqli_num_rows($result) > 0) {
 
     <?php }} ?>
 
-
+                      </div>
 
     
     
