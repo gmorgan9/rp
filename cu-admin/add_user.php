@@ -97,7 +97,7 @@ if (mysqli_num_rows($result) > 0) {
 
 ?>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
     <form action="" method="POST">
         <h3>
             New Post
