@@ -350,12 +350,11 @@ if(isLoggedIn() == false){
 
     <div class="mb-5"></div>
 
-    <!-- <div class="row">
+    <div class="row">
       <div class="col-2"></div>
-      <div class="col position-absolute bottom-0">
-        <?php //include(ROOT_PATH . "/app/includes/footer.php"); ?>
+        <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
       </div>
-    </div> -->
+    </div>
 
   </div>
 <!-- END main-container -->
