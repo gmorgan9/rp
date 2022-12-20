@@ -199,14 +199,13 @@ if(isLoggedIn() == false){
                 <div class="card-footer text-muted pt-4">
                   <div class="row">
                     <div class="col-2">
-                      All (
+                      All 
                         <?php
                         $sql="SELECT count('1') FROM comments";
                         $result=mysqli_query($conn,$sql);
                         $rowtotal=mysqli_fetch_array($result); 
-                        echo "$rowtotal[0]";
+                        echo "($rowtotal[0])";
                         ?>
-                      )
                     </div>
                   </div>
                 </div>
