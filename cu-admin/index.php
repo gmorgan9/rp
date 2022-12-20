@@ -240,12 +240,11 @@ if(isLoggedIn() == false){
           <div class="col" style="width: 50%;">
 
           <!-- begin quick draft -->
-            <div class="card" >
-              <div class="card-header" style="z-index: -2;">
+            <div class="card" style="z-index: -1;">
+              <div class="card-header">
                 Quick Draft
               </div>
-              <div class="card-body" style="z-index: 0;">
-                <div style="z-index: 0 !important;">
+              <div class="card-body">
                 <form action="" method="POST">
                   <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
@@ -259,7 +258,6 @@ if(isLoggedIn() == false){
                     <button type="submit" class="btn btn-outline-secondary">Submit</button>
                   </div>
                 </form>
-                </div>
               </div>
             </div>
           <!-- end quick draft -->
