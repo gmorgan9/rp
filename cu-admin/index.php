@@ -583,7 +583,7 @@ if(isLoggedIn() == false){
                       </div>
                       <div class="pt-1"></div>
                       <div class="d-flex">
-                      <p style="color: #7fade1;">&nbsp;Approved </p> 
+                      <p style="color: #7fade1;">Approved </p> 
                       <?php
                       $sql="SELECT count('1') FROM comments WHERE status = 1";
                       $result=mysqli_query($conn,$sql);
