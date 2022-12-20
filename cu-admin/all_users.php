@@ -133,7 +133,7 @@ if (isset($_POST['reset'])) {
                 <div class="d-flex">
                   <form method="post" action="">
                     <input type="hidden" name="user_id" value="<?php echo $user_id; ?>" />
-                    <button onclick="return confirm('Password Reset? \r\nAn email is on its way!')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="reset"><span class="badge text-bg-warning">Reset Password</span></button>
+                    <button onclick="return confirm('Password Reset? \r\nAn email is on its way!')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="reset"><span class="badge btn-outline-secondary">Reset Password</span></button>
                   </form>
                   &nbsp;
                   <form method="post" action="">
