@@ -120,6 +120,7 @@ if(isset($_POST['update'])){
                         <label for="role" class="col-sm-1 col-form-label">Role</label>
                         <div class="col-sm-10">
                             <select class="form-control w-25" name="isadmin" id="role">
+                                <option value="">Select one...</option>
                                 <option value="1">Administrator</option>
                                 <option value="0">Standard</option>
                             </select>
