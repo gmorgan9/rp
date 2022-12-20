@@ -182,11 +182,8 @@ if(isLoggedIn() == false){
                   </p>
                   <?php foreach ($comms as $comm) { ?>
                     <div class="row">
-                      <div class="col-4">
-                        <p class="text-muted">From <?php echo $comm['name']; ?> on <a style="color: #7fade1;" href="<?php echo BASE_URL . '/single_post.php?id=' . $comm['post_id']; ?>"><?php echo $comm['post_title']; ?></a></p>
-                      </div>
                       <div class="col">
-                        <p class="text-muted"><a style="color: #7fade1;" href="<?php echo BASE_URL . '/single_post.php?id=' . $option['post_id']; ?>"><?php echo $option['title']; ?></a></p>
+                        <p class="text-muted">From <?php echo $comm['name']; ?> on <a style="color: #7fade1;" href="<?php echo BASE_URL . '/single_post.php?id=' . $comm['post_id']; ?>"><?php echo $comm['post_title']; ?></a></p>
                       </div>
                     </div>
                   <?php } ?>
