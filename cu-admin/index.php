@@ -196,12 +196,20 @@ if(isLoggedIn() == false){
                     </div>
                   <?php } ?>
                 </div>
-                <div class="card-footer text-muted pt-4">
+                <div class="card-footer text-muted pt-2 pb-2">
                   <div class="row">
                     <div class="col-2">
                       All 
                         <?php
                         $sql="SELECT count('1') FROM comments";
+                        $result=mysqli_query($conn,$sql);
+                        $rowtotal=mysqli_fetch_array($result); 
+                        echo "($rowtotal[0])";
+                        ?>
+                        &nbsp;|&nbsp;
+                        Pending 
+                        <?php
+                        $sql="SELECT count('1') FROM comments WHERE status = 1";
                         $result=mysqli_query($conn,$sql);
                         $rowtotal=mysqli_fetch_array($result); 
                         echo "($rowtotal[0])";
