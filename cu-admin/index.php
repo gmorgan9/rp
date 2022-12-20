@@ -378,7 +378,7 @@ if(isLoggedIn() == false){
 
     <!-- <div class="row">
       <div class="col-2"></div>
-        <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
+        <?php //include(ROOT_PATH . "/app/includes/footer.php"); ?>
       </div>
     </div> -->
 
