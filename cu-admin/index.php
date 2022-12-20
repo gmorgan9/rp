@@ -190,7 +190,7 @@ if(isLoggedIn() == false){
                       <div class="row">
                         <div class="col">
                           <p>
-                            <?php echo substr($comm['content'], 0, 150) . '...'; ?>
+                            <?php echo substr($comm['content'], 0, 50) . '...'; ?>
                           </p>
                         </div>
                       </div>
