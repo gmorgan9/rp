@@ -177,11 +177,9 @@ if(isLoggedIn() == false){
                       }
                     ?>
                   <!-- end PHP -->
-                  
                   <p style="font-size: 16px;">
                     Recent Comments
                   </p>
-                  <div style="margin: 0; padding: 0; background-color: #f0f0f0;">
                   <?php foreach ($comms as $comm) { ?>
                     <div class="row">
                       <div class="col-2" style="margin-top: -15px !important;">
@@ -196,7 +194,6 @@ if(isLoggedIn() == false){
                         </p>
                       </div>
                     </div>
-                  </div>
                   <?php } ?>
                 </div>
                 <div class="card-footer text-muted pt-2 pb-2">
