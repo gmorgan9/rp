@@ -117,12 +117,6 @@ if(isset($_POST['update'])){
                         </div>
                     </div>
                     <div class="mb-4 row">
-                        <label for="send-email" class="col-sm-1 col-form-label">Send Email</label>
-                        <div class="col-sm-10">
-                            <input class="form-control" type="checkbox" value="" id="send-email">
-                        </div>
-                    </div>
-                    <div class="mb-4 row">
                         <label for="role" class="col-sm-1 col-form-label">Role</label>
                         <div class="col-sm-10">
                             <select class="form-control w-25" name="isadmin" id="role">
@@ -132,6 +126,7 @@ if(isset($_POST['update'])){
                         </div>
                     </div>
                     
+                    <input type="submit" name="create">
                 </form>
             </div>
         </div>
