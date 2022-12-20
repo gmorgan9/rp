@@ -199,7 +199,7 @@ if(isLoggedIn() == false){
                 <div class="card-footer text-muted pt-2 pb-2">
                   <div class="row">
                     <div class="col">
-                      All 
+                      <a href="<?php echo BASE_URL . '/cu-admin/comments.php'; ?>">All </a>
                         <?php
                         $sql="SELECT count('1') FROM comments";
                         $result=mysqli_query($conn,$sql);
@@ -207,9 +207,25 @@ if(isLoggedIn() == false){
                         echo "($rowtotal[0])";
                         ?>
                         &nbsp;<span class="text-muted">|</span>&nbsp;
-                        Pending 
+                        <a href="<?php echo BASE_URL . '/cu-admin/comments.php'; ?>">Pending </a> 
+                        <?php
+                        $sql="SELECT count('1') FROM comments WHERE status = 0";
+                        $result=mysqli_query($conn,$sql);
+                        $rowtotal=mysqli_fetch_array($result); 
+                        echo "($rowtotal[0])";
+                        ?>
+                        &nbsp;<span class="text-muted">|</span>&nbsp;
+                        <a href="<?php echo BASE_URL . '/cu-admin/comments.php'; ?>">Approved </a> 
                         <?php
                         $sql="SELECT count('1') FROM comments WHERE status = 1";
+                        $result=mysqli_query($conn,$sql);
+                        $rowtotal=mysqli_fetch_array($result); 
+                        echo "($rowtotal[0])";
+                        ?>
+                        &nbsp;<span class="text-muted">|</span>&nbsp;
+                        <a href="<?php echo BASE_URL . '/cu-admin/comments.php'; ?>">Trash </a> 
+                        <?php
+                        $sql="SELECT count('1') FROM comments WHERE status = 2";
                         $result=mysqli_query($conn,$sql);
                         $rowtotal=mysqli_fetch_array($result); 
                         echo "($rowtotal[0])";
