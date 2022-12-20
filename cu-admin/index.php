@@ -581,7 +581,7 @@ if(isLoggedIn() == false){
                       echo "($rowtotal[0])";
                       ?>
                       </div>
-                      <div class="pt-2"></div>
+                      <div class="pt-1"></div>
                       <div class="d-flex">
                       <p style="color: #7fade1;">&nbsp;Approved </p> 
                       <?php
