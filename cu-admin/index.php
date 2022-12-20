@@ -330,7 +330,7 @@ if(isLoggedIn() == false){
                           <a href="<?php echo BASE_URL . '/single_post.php?id=' . $draft['post_id']; ?>"><?php echo $draft['title']; ?></a> <p><?php echo date("F j, Y, g:i a", $draft['created_at']); ?></p>
                         </p>
                         <p style="margin-top: -10px;">
-                          <?php echo substr($draft['content'], 0, 50) . '...'; ?>
+                          <?php echo html_entity_decode(substr($draft['content'], 0, 50) . '...'); ?>
                         </p>
                       </div>
                     </div>
