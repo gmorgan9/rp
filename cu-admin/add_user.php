@@ -89,13 +89,13 @@ if(isset($_POST['update'])){
                     <div class="mb-4 row">
                         <label for="username" class="col-sm-1 col-form-label">Username</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control w-50" id="username" name="username">
+                            <input type="text" class="form-control w-50" id="username" name="username" required>
                         </div>
                     </div>
                     <div class="mb-4 row">
                         <label for="email" class="col-sm-1 col-form-label">Email</label>
                         <div class="col-sm-10">
-                            <input type="email" class="form-control w-50" id="email" name="email">
+                            <input type="email" class="form-control w-50" id="email" name="email" required>
                         </div>
                     </div>
                     <div class="mb-4 row">
@@ -113,13 +113,13 @@ if(isset($_POST['update'])){
                     <div class="mb-4 row">
                         <label for="password" class="col-sm-1 col-form-label">Password</label>
                         <div class="col-sm-10">
-                            <input type="password" class="form-control w-50" id="password" name="password">
+                            <input type="password" class="form-control w-50" id="password" name="password" required>
                         </div>
                     </div>
                     <div class="mb-4 row">
                         <label for="role" class="col-sm-1 col-form-label">Role</label>
                         <div class="col-sm-10">
-                            <select class="form-control w-25" name="isadmin" id="role">
+                            <select class="form-control w-25" name="isadmin" id="role" required>
                                 <option value="">Select one...</option>
                                 <option value="1">Administrator</option>
                                 <option value="0">Standard</option>
