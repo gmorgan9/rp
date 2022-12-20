@@ -15,7 +15,6 @@ if (isset($_POST['reset'])) {
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
   header('location: all_users.php');
 }
-?>
 
 ?>
 
