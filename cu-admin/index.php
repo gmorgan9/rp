@@ -141,30 +141,13 @@ if(isLoggedIn() == false){
 
             <!-- begin recent -->
               <!-- PHP -->
-              <?php
-                // $select = "SELECT * FROM posts WHERE status = 'published' LIMIT 2";
-                // $result = mysqli_query($conn, $select);
-                // if (mysqli_num_rows($result) > 0) {
-                //    while($row = mysqli_fetch_assoc($result)) {
-                //     $post_id        = $row['post_id'];
-                //     $idno           = $row['idno'];
-                //     $title          = $row['title'];
-                //     $content        = $row['content'];
-                //     $author         = $row['author'];
-                //     $author_idno    = $row['author_idno'];
-                //     $category       = $row['category'];
-                //     $tags           = $row['tags'];
-                //     $created_at     = $row['created_at'];
-                //     $status         = $row['status'];
-                //     $published_at   = $row['published_at'];
-                //     $updated_at     = $row['updated_at'];
-                // }}
-                $query ="SELECT * FROM posts WHERE status = 'published' LIMIT 2";
-                $result = $conn->query($query);
-                if($result->num_rows> 0){
-                  $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
-                }
-              ?>
+                <?php
+                  $query ="SELECT * FROM posts WHERE status = 'published' LIMIT 2";
+                  $result = $conn->query($query);
+                  if($result->num_rows> 0){
+                    $options = mysqli_fetch_all($result, MYSQLI_ASSOC);
+                  }
+                ?>
               <!-- end PHP -->
               <div class="card">
                 <div class="card-header">
@@ -185,9 +168,28 @@ if(isLoggedIn() == false){
                     </div>
                   <?php } ?>
                   <hr>
+                  <!-- PHP -->
+                    <?php
+                      $query ="SELECT * FROM comments WHERE status = 1 LIMIT 1";
+                      $result = $conn->query($query);
+                      if($result->num_rows> 0){
+                        $comms = mysqli_fetch_all($result, MYSQLI_ASSOC);
+                      }
+                    ?>
+                  <!-- end PHP -->
                   <p style="font-size: 16px;">
                     Recent Comments
                   </p>
+                  <?php foreach ($comms as $comm) { ?>
+                    <div class="row">
+                      <div class="col-4">
+                        <p class="text-muted"><?php echo $comm['name']; ?></p>
+                      </div>
+                      <div class="col">
+                        <p class="text-muted"><a style="color: #7fade1;" href="<?php echo BASE_URL . '/single_post.php?id=' . $option['post_id']; ?>"><?php echo $option['title']; ?></a></p>
+                      </div>
+                    </div>
+                  <?php } ?>
                 </div>
               </div>
             <!-- end recent -->
