@@ -81,56 +81,95 @@ if(isset($_POST['update'])){
         </h3>
         <div class="mt-3"></div>
 
+        <!-- FUNCTION -->
+            <?php
+            if(isset($_POST['create'])){
+              $idno  = rand(10000, 99999); // figure how to not allow duplicates
+              $username = mysqli_real_escape_string($conn, $_POST['username']);
+              $email = mysqli_real_escape_string($conn, $_POST['email']);
+              $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
+              $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
+              $password = md5($_POST['password']);
+              $isadmin = mysqli_real_escape_string($conn, $_POST['isadmin']);
+              
+            
+              $select = " SELECT * FROM users WHERE username = '$username' OR email = '$email'";
+            
+              $result = mysqli_query($conn, $select);
+            
+              if(mysqli_num_rows($result) > 0){
+            
+                $error = '
+                <div class="pt-3"></div>
+                <div class="login_error">
+                <strong>Error:</strong> 
+                The email or username entered is already registered on this site. Please try again.
+                </div>
+                ';
+            
+              }else {
+                    $insert = "INSERT INTO users (idno, firstname, lastname, username, email, password, isadmin) VALUES('$idno', '$firstname','$lastname','$username','$email','$password', '$isadmin')";
+                    mysqli_query($conn, $insert);
+                    header('location: all_users.php');
+                 }
+             
+            };
 
-        <div class="row">
-            <div class="col">
-                <p>Create a brand new user and add them to this site.</p>
-                <form action="" method="POST">
-                    <div class="mb-4 row">
-                        <label for="username" class="col-sm-1 col-form-label"><div class="d-flex">Username&nbsp;<span style="color: red;">*</span></div></label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control w-50" id="username" name="username" required>
+            ?>
+        <!-- end FUNCTION -->
+
+        <!-- create new user -->
+            <div class="row">
+                <div class="col">
+                    <p>Create a brand new user and add them to this site.</p>
+                    <?php echo $error; ?>
+                    <form action="" method="POST">
+                        <div class="mb-4 row">
+                            <label for="username" class="col-sm-1 col-form-label"><div class="d-flex">Username&nbsp;<span style="color: red;">*</span></div></label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control w-50" id="username" name="username" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="mb-4 row">
-                        <label for="email" class="col-sm-1 col-form-label"><div class="d-flex">Email&nbsp;<span style="color: red;">*</span></div></label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control w-50" id="email" name="email" required>
+                        <div class="mb-4 row">
+                            <label for="email" class="col-sm-1 col-form-label"><div class="d-flex">Email&nbsp;<span style="color: red;">*</span></div></label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control w-50" id="email" name="email" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="mb-4 row">
-                        <label for="firstname" class="col-sm-1 col-form-label">First Name</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control w-50" id="firstname" name="firstname">
+                        <div class="mb-4 row">
+                            <label for="firstname" class="col-sm-1 col-form-label">First Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control w-50" id="firstname" name="firstname">
+                            </div>
                         </div>
-                    </div>
-                    <div class="mb-4 row">
-                        <label for="lastname" class="col-sm-1 col-form-label">Last Name</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control w-50" id="lastname" name="lastname">
+                        <div class="mb-4 row">
+                            <label for="lastname" class="col-sm-1 col-form-label">Last Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control w-50" id="lastname" name="lastname">
+                            </div>
                         </div>
-                    </div>
-                    <div class="mb-4 row">
-                        <label for="password" class="col-sm-1 col-form-label"><div class="d-flex">Password&nbsp;<span style="color: red;">*</span></div></label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control w-50" id="password" name="password" required>
+                        <div class="mb-4 row">
+                            <label for="password" class="col-sm-1 col-form-label"><div class="d-flex">Password&nbsp;<span style="color: red;">*</span></div></label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control w-50" id="password" name="password" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="mb-4 row">
-                        <label for="role" class="col-sm-1 col-form-label"><div class="d-flex">Role&nbsp;<span style="color: red;">*</span></div></label>
-                        <div class="col-sm-10">
-                            <select class="form-control w-25" name="isadmin" id="role" required>
-                                <option value="">Select one...</option>
-                                <option value="1">Administrator</option>
-                                <option value="0">Standard</option>
-                            </select>
+                        <div class="mb-4 row">
+                            <label for="role" class="col-sm-1 col-form-label"><div class="d-flex">Role&nbsp;<span style="color: red;">*</span></div></label>
+                            <div class="col-sm-10">
+                                <select class="form-control w-25" name="isadmin" id="role" required>
+                                    <option value="">Select one...</option>
+                                    <option value="1">Administrator</option>
+                                    <option value="0">Standard</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <button type="submit" name="create" class="btn btn-outline-secondary">Add New User</button>
-                </form>
+
+                        <button type="submit" name="create" class="btn btn-outline-secondary">Add New User</button>
+                    </form>
+                </div>
             </div>
-        </div>
+        <!-- end create new user -->
 
     
 <div class="row">
