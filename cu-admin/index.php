@@ -345,11 +345,10 @@ if(isLoggedIn() == false){
           </div>
         </div>
 
-
-
-
       </div>
     </div>
+
+    <div class="mb-5"></div>
 
     <!-- <div class="row">
       <div class="col-2"></div>
