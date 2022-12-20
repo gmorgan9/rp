@@ -245,7 +245,7 @@ if(isLoggedIn() == false){
                 New and Updates
               </div>
               <div class="card-body">
-                body
+                There is no current news or updates currently. Please check back regularly to keep up to date.
               </div>
             </div>
           <!-- end news&updates -->
