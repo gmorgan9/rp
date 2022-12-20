@@ -127,7 +127,7 @@ if (isset($_POST['trash'])) {
                   ?>
             <tr>
               <th scope="row"><?php echo $idno; ?></th>
-              <td><i style="font-size: 55px; margin-left: 15px;" class="bi bi-person-square text-muted"></i><?php echo $username; ?></td>
+              <td><i style="font-size: 30px; margin-left: 15px;" class="bi bi-person-square text-muted"></i>&nbsp;&nbsp;<?php echo $username; ?></td>
               <td><?php echo $firstname; ?> <?php echo $lastname; ?></td>
               <td><?php echo $email; ?></td>
               <?php if($isadmin == 1) { ?>
