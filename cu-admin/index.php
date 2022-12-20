@@ -196,8 +196,19 @@ if(isLoggedIn() == false){
                     </div>
                   <?php } ?>
                 </div>
-                <div class="card-footer text-muted pt-5">
-                  
+                <div class="card-footer text-muted pt-4">
+                  <div class="row">
+                    <div class="col-2">
+                      All (
+                        <?php
+                        $sql="SELECT count('1') FROM comments";
+                        $result=mysqli_query($conn,$sql);
+                        $rowtotal=mysqli_fetch_array($result); 
+                        echo "$rowtotal[0]";
+                        ?>
+                      )
+                    </div>
+                  </div>
                 </div>
               </div>
             <!-- end recent -->
