@@ -177,6 +177,7 @@ if(isLoggedIn() == false){
                       }
                     ?>
                   <!-- end PHP -->
+                  <div style="background-color: #f0f0f0;">
                   <p style="font-size: 16px;">
                     Recent Comments
                   </p>
@@ -194,6 +195,7 @@ if(isLoggedIn() == false){
                         </p>
                       </div>
                     </div>
+                  </div>
                   <?php } ?>
                 </div>
                 <div class="card-footer text-muted pt-2 pb-2">
