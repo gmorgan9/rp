@@ -176,7 +176,7 @@ if(isLoggedIn() == false){
                   </p>
                   <?php foreach ($options as $option) { ?>
                     <div class="row">
-                      <div class="col">
+                      <div class="col-3">
                         <p class="text-muted"><?php echo $option['published_at']; ?></p>
                       </div>
                       <div class="col">
