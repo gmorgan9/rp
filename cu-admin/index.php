@@ -313,7 +313,7 @@ if(isLoggedIn() == false){
                   </p>
                   <!-- PHP -->
                   <?php
-                      $query ="SELECT * FROM comments WHERE status = 1 LIMIT 1";
+                      $query ="SELECT * FROM posts WHERE status = 'draft' LIMIT 2";
                       $result = $conn->query($query);
                       if($result->num_rows> 0){
                         $drafts = mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -327,7 +327,7 @@ if(isLoggedIn() == false){
                       </div>
                       <div class="col">
                         <p class="text-muted">
-                          From <?php echo $draft['name']; ?> on <a style="color: #7fade1;" href="<?php echo BASE_URL . '/single_post.php?id=' . $draft['post_id']; ?>"><?php echo $draft['post_title']; ?></a>
+                          <a href="<?php echo BASE_URL . '/single_post.php?id=' . $draft['post_id']; ?>"><?php echo $draft['title']; ?></a> <p><?php echo date("F j, Y, g:i a", $draft['created_at']); ?></p>
                         </p>
                         <p style="margin-top: -10px;">
                           <?php echo substr($draft['content'], 0, 50) . '...'; ?>
