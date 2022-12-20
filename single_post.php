@@ -463,7 +463,7 @@ if (mysqli_num_rows($result) > 0) {
   <!-- END Display Comments -->
 
 
-  </div>
+  
 
   <?php }} ?>
 
@@ -471,7 +471,7 @@ if (mysqli_num_rows($result) > 0) {
 <!-- end blog posts -->
 
 
-
+</div>
   <div class="col float-end w-25">
     test
   </div>
