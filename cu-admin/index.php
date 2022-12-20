@@ -376,11 +376,11 @@ if(isLoggedIn() == false){
 
     <div class="mb-5"></div>
 
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-2"></div>
         <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
       </div>
-    </div>
+    </div> -->
 
   </div>
 <!-- END main-container -->
