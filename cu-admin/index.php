@@ -246,6 +246,12 @@ if(isLoggedIn() == false){
               </div>
               <div class="card-body">
                 <form action="" method="POST">
+                <div class="mb-4 row">
+                            <label for="password" class="col-sm-1 col-form-label"><div class="d-flex">Password&nbsp;<span style="color: red;">*</span></div></label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control w-50" id="password" name="password" required>
+                            </div>
+                        </div>
                   <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
                     <input type="text" class="form-control" id="title" name="title">
