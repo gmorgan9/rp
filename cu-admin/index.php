@@ -172,7 +172,7 @@ if(isLoggedIn() == false){
                 </div>
                 <div class="card-body">
                   <p style="font-size: 16px;">
-                    <strong>Recently Published</strong>
+                    Recently Published
                   </p>
                   <?php foreach ($options as $option) { ?>
                     <div class="row">
