@@ -599,6 +599,8 @@ if(isLoggedIn() == false){
             </div>
           </div>
         <!-- end activity -->
+        
+        <div class="pt-4"></div>
 
         <!-- begin news&updates -->
           <div class="card news&updates" style="z-index: -2;">
@@ -708,7 +710,7 @@ if(isLoggedIn() == false){
             </div>
           </div>
         <!-- end quick draft -->
-        
+
       </div>
     </div>
 
