@@ -168,6 +168,10 @@ session_start();
       #myBtn:hover {
         background-color: #47a0c9 !important; /* Add a dark-grey background on hover */
       }
+
+      img {
+        width: 50%;
+      }
     </style>
 </head>
 <body>
