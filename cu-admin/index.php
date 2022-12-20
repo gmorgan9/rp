@@ -154,7 +154,7 @@ if(isLoggedIn() == false){
           <div class="col" style="width: 50%;">
 
           <!-- begin quick draft -->
-            <div class="card">
+            <div class="card" style="z-index: -2;">
               <div class="card-header">
                 Quick Draft
               </div>
