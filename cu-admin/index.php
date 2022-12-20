@@ -700,7 +700,7 @@ if(isLoggedIn() == false){
                       <div class="col ps-4">
                         <div class="d-flex">
                           <p>
-                            <a style="color: #7fade1;" href="<?php echo BASE_URL . '/single_post.php?id=' . $draft['post_id']; ?>"><?php echo $draft['title']; ?></a> 
+                            <?php echo $draft['title']; ?>
                           </p>
                           &nbsp;&nbsp;
                           <p class="text-muted" style="font-size: 10px; margin-top: 4px;"><?php echo $draft['created_date']; ?></p>
