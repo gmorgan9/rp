@@ -90,27 +90,27 @@ if(isset($_POST['update'])){
                         <label for="username">Username</label>
                         <input class="form-control w-50" type="text" name="username" id="username" required>
                     </div>
-                    <div class="pt-1"></div>
+                    <div class="pt-2"></div>
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input class="form-control w-50" type="email" name="email" id="email" required>
                     </div>
-                    <div class="pt-1"></div>
+                    <div class="pt-2"></div>
                     <div class="form-group">
                         <label for="firstname">First Name</label>
                         <input class="form-control w-50" type="text" name="firstname" id="firstname">
                     </div>
-                    <div class="pt-1"></div>
+                    <div class="pt-2"></div>
                     <div class="form-group">
                         <label for="lastname">Last Name</label>
                         <input class="form-control w-50" type="text" name="lastname" id="lastname">
                     </div>
-                    <div class="pt-1"></div>
+                    <div class="pt-2"></div>
                     <div class="form-group">
                         <label for="password">Password</label>
                         <input class="form-control w-50" type="password" name="password" id="password">
                     </div>
-                    <div class="pt-1"></div>
+                    <div class="pt-2"></div>
                     <div class="form-group">
                         <label for="role">Role</label>
                         <select class="form-control w-25" name="isadmin" id="role">
