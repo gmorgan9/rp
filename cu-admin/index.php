@@ -198,7 +198,7 @@ if(isLoggedIn() == false){
                 </div>
                 <div class="card-footer text-muted pt-2 pb-2">
                   <div class="row">
-                    <div class="col-2">
+                    <div class="col">
                       All 
                         <?php
                         $sql="SELECT count('1') FROM comments";
