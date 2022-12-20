@@ -169,7 +169,7 @@ session_start();
         background-color: #47a0c9 !important; /* Add a dark-grey background on hover */
       }
 
-      .preview-text img {
+      .preview-text>img {
         width: 75%;
       }
     </style>
