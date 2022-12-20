@@ -64,7 +64,7 @@
     <!-- logo -->
         <div class="text-center">
             <div class="pt-5"></div>
-            <img src="<?php echo BASE_URL . '/assets/images/updated-logo.png'; ?>" style="margin-bottom: -25px; width: 50%;" alt="">
+            <img src="<?php echo BASE_URL . '/assets/images/updated-logo.png'; ?>" style="margin-bottom: -25%; width: 50%;" alt="">
         </div>
     <!-- end logo -->
 
