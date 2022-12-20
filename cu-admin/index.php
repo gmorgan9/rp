@@ -416,7 +416,7 @@ if(isLoggedIn() == false){
               <div class="pt-2"></div>
               <div class="d-flex">
                 <p class="card-text float-start w-25">
-                  <div style="width: 110px; height: 25px; background-color: green; border-radius: 100px; margin-right: 50px; margin-top: 15%;"></div>
+                  <div style="width: 110px; height: 25px; background-color: green; border-radius: 100px; margin-right: 50px; margin-top: 10%;"></div>
                 </p>
                 <p class="card-text float-end" style="font-size: 14px;">
                 Your site's health is looking <strong>good</strong>, but there are still some things you can do to improve its performance and security.
