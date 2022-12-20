@@ -11,29 +11,6 @@ if(isLoggedIn() == false){
 
 ?>
 
-<?php
-if(isset($_POST['update'])){
-  //$idno  = rand(10000, 99999);
-  $profile_picture = mysqli_real_escape_string($conn, $_POST['profile_picture']);
-  $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
-  $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
-  $email = mysqli_real_escape_string($conn, $_POST['email']);
-  $username = mysqli_real_escape_string($conn, $_POST['username']);
-  $about_me = mysqli_real_escape_string($conn, $_POST['about_me']);
-  $gender = mysqli_real_escape_string($conn, $_POST['gender']);
-
-
-  date_default_timezone_set('America/Denver');
-  $date = date('F d, Y, g:i a', time());
-
-  $insert = "UPDATE users SET firstname = '$firstname', lastname = '$lastname', email = '$email', username = '$username', about_me = '$about_me', gender = '$gender', profile_picture = '$profile_picture' WHERE idno = '".$_POST['idno']."'";
-  mysqli_query($conn, $insert);
-  header("location: profile.php");
-
-};
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,6 +33,23 @@ if(isset($_POST['update'])){
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        .login_error {
+                border-left: 4px solid #72aee6;
+                padding: 12px;
+                margin-left: 0;
+                margin-bottom: 20px;
+                background-color: #fff;
+                box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+                word-wrap:break-word
+            }
+            /* .login .success {
+                border-left-color:#00a32a
+            } */
+            .login_error {
+                border-left-color:#d63638
+            }
+    </style>
 </head>
 <body style="margin:0;padding:0;box-sizing:border-box;">
 
@@ -100,7 +94,6 @@ if(isset($_POST['update'])){
               if(mysqli_num_rows($result) > 0){
             
                 $error = '
-                <div class="pt-3"></div>
                 <div class="login_error">
                 <strong>Error:</strong> 
                 The email or username entered is already registered on this site. Please try again.
