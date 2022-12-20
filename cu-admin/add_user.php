@@ -58,7 +58,7 @@ if(isset($_POST['add'])){
 
     <script src="https://cdn.tiny.cloud/1/7kainuaawjddfzf3pj7t2fm3qdjgq5smjfjtsw3l4kqfd1h4/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
-    <title>Add New Post - CacheUp Blog</title>
+    <title>Add New User - CacheUp Blog</title>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -109,7 +109,7 @@ if (mysqli_num_rows($result) > 0) {
     <div class="col-2"></div>
     <div class="col-10" style="margin-left: -25px;">
     <h3 class="text-black" style="margin-left: -5px;">
-        New Post
+        New User
       </h3>
       <div class="mt-3"></div>
     <form action="" method="POST">
