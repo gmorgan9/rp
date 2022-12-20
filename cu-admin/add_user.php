@@ -84,6 +84,7 @@ if(isset($_POST['update'])){
 
         <div class="row">
             <div class="col">
+                <p>Create a brand new user and add them to this site.</p>
                 <form action="" method="POST">
                     <input type="text" name="firstname">
                 </form>
