@@ -183,7 +183,7 @@ if(isLoggedIn() == false){
                   <?php foreach ($comms as $comm) { ?>
                     <div class="row">
                       <div class="col-2">
-                        <i style="font-size: 55px; margin-left: 10px; margin-top: -10px;" class="bi bi-person-square"></i>
+                        <i style="font-size: 55px; margin-left: 10px; margin-top: -15px !important;" class="bi bi-person-square"></i>
                       </div>
                       <div class="col">
                         <p class="text-muted">
