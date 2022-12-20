@@ -163,6 +163,17 @@ if(isLoggedIn() == false){
               </div>
             </div>
           <!-- end quick draft -->
+
+          <!-- begin news&updates -->
+          <div class="card">
+              <div class="card-header">
+                New and Updates
+              </div>
+              <div class="card-body">
+                body
+              </div>
+            </div>
+          <!-- end news&updates -->
           </div>
         </div>
 
