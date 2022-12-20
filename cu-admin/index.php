@@ -65,10 +65,10 @@ if(isLoggedIn() == false){
         <div class="mt-3"></div>
 
         <div class="row">
-          <div class="col left" style="width: 50%;">
+          <div class="col" style="width: 50%;">
 
             <!-- begin health -->
-              <div class="card" style="z-index: -2;">
+              <div class="card health" style="z-index: -2;">
                 <div class="card-header">
                   Site Health Status
                 </div>
@@ -89,7 +89,7 @@ if(isLoggedIn() == false){
             <div class="pt-4"></div>
 
             <!-- begin quicklook -->
-              <div class="card">
+              <div class="card quicklook">
                 <div class="card-header">
                   Quick Look
                 </div>
@@ -153,7 +153,7 @@ if(isLoggedIn() == false){
                   }
                 ?>
               <!-- end PHP -->
-              <div class="card">
+              <div class="card activity">
                 <div class="card-header">
                   Activity
                 </div>
@@ -264,7 +264,7 @@ if(isLoggedIn() == false){
           <div class="col" style="width: 50%;">
 
           <!-- begin news&updates -->
-            <div class="card" style="z-index: -2;">
+            <div class="card news&updates" style="z-index: -2;">
               <div class="card-header">
                 New and Updates
               </div>
@@ -276,7 +276,7 @@ if(isLoggedIn() == false){
 
           <div class="pt-4"></div>
 
-          <!-- begin quick draft -->
+          <!-- begin quickdraft -->
             <!-- FUNCTION -->
               <?php 
               if(isset($_POST['draft'])){
@@ -313,7 +313,7 @@ if(isLoggedIn() == false){
               }}
               ?>
             <!-- end FUNCTION -->
-            <div class="card">
+            <div class="card quickdraft">
               <div class="card-header">
                 Quick Draft
               </div>
@@ -394,7 +394,6 @@ if(isLoggedIn() == false){
   </script>
   
   <script src="../assets/js/dropdown.js"></script>
-  <!-- <script src="../assets/js/main.js"></script> -->
   <script src="../assets/js/bar.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
