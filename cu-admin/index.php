@@ -261,6 +261,8 @@ if(isLoggedIn() == false){
                 $content = mysqli_real_escape_string($conn, $_POST['content']);
                 $author_idno = mysqli_real_escape_string($conn, $_POST['author_idno']);
                 $author = mysqli_real_escape_string($conn, $_POST['author']);
+                $created_date = date("F j, Y");
+                $created_time = date("g:i a");
                 
                 $select = " SELECT * FROM posts WHERE idno = '$idno'";
                 $result = mysqli_query($conn, $select);
@@ -270,7 +272,7 @@ if(isLoggedIn() == false){
                   $error = '';
                 
                 }else {
-                      $insert = "INSERT INTO posts (idno, title, content, author_idno, author) VALUES('$idno', '$title','$content','$author_idno','$author')";
+                      $insert = "INSERT INTO posts (idno, title, content, author_idno, author, created_date, created_time) VALUES('$idno', '$title','$content','$author_idno','$author', '$created_date', '$created_time')";
                       mysqli_query($conn, $insert);
                       header('location: '. BASE_URL . '/cu-admin/');
                    }
