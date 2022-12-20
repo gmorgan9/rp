@@ -171,7 +171,7 @@ if (mysqli_num_rows($result) > 0) {
                 </div>
                 
               </div>
-              <a href="actions/edit_account.php?id=<?php echo $user_id; ?>" class="btn btn-outline-success">
+              <a href="edit_account.php?id=<?php echo $user_id; ?>" class="btn btn-outline-success">
                 Edit Account
               </a>
               <a href="" class="btn btn-outline-secondary">
