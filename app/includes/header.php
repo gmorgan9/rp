@@ -56,14 +56,3 @@
         </div>
     </div>
 <!-- end Main -->
-
-<!-- start mobile -->
-
-    <!-- logo -->
-        <div class="text-center">
-            <div class="pt-5"></div>
-            <img src="<?php echo BASE_URL . '/assets/images/updated-logo.png'; ?>" style="margin-bottom: -20%; width: 25%;" alt="">
-        </div>
-    <!-- end logo -->
-
-<!-- end mobile -->
