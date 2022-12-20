@@ -167,7 +167,7 @@ if(isLoggedIn() == false){
                   ?>
 
                   <?php if($amount == 0) { ?>
-                    <p>none</p>
+                    <p>No posts published currently.</p>
                     <?php } else { ?>
                   <?php foreach ($options as $option) { ?>
                     <div class="row">
