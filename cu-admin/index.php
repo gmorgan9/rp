@@ -252,7 +252,7 @@ if(isLoggedIn() == false){
                   </div>
                   <div class="form-group">
                     <label for="title">Title</label>
-                    <textarea type="text" class="form-control" name="title" id="title"></textarea>
+                    <textarea type="text" class="form-control" rows="3" name="title" id="title"></textarea>
                   </div>
                 </form>
               </div>
