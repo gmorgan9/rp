@@ -139,42 +139,7 @@ if (isset($_POST['trash'])) {
                 echo "$rowtotal[0]";
                 ?>
               </td>
-              
-              <td><a href="../single_post.php?id=<?php echo $post_id; ?>"><?php echo $post_idno; ?></a></td>
-              <td><?php echo date('F j, Y / g:i a', strtotime($submit_date));; ?></td>
-              
-              <?php if($status == 0) { ?>
-                <td>
-              <form method="post" action="">
-                <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
-                <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="approve"><span class="badge text-bg-success">Approve</span></button>
-              </form>
-              </td>
-              <?php } else { ?>
-                <td>
-              <form method="post" action="">
-                <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
-                <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="unapprove"><span class="badge text-bg-warning">Unapprove</span></button>
-              </form>
-              <?php } ?>
-              </td>
-              <td>
-              <?php if($status == 0 || $status == 1) { ?>
-                <div class="d-flex">
-                <form method="post" action="">
-                  <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
-                  <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="trash"><span class="badge text-bg-danger">Trash</span></button>
-                </form>
-                &nbsp;
-                <?php } else { ?>
-                <form method="post" action="">
-                  <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
-                  <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="delete"><span class="badge text-bg-danger">Delete</span></button>
-                </form>
-                <?php } ?>
-                </div>
-              </td>
-              <?php }}?>
+            <?php }}?>
               
             </tr>
         </tbody>
