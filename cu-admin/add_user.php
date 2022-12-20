@@ -57,19 +57,34 @@ if(isset($_POST['update'])){
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
-<body>
-    
-<div class="main-container">
-<?php include(ROOT_PATH . "/app/includes/header.php"); ?>
+<body style="margin:0;padding:0;box-sizing:border-box;">
 
-<?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
-        
-<div class="main">
-    <div class="page-header mx-auto">
-        <p class="page_title">Profile</p>
+<!-- main-container -->
+  <div class="container-fluid">
+
+    <div class="row">
+      <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
     </div>
 
-    <div class="main-content">
+    <div class="row">
+      <div class="col" style="margin:0;padding:0;">
+        <?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
+      </div>
+    </div>
+
+    <div class="mt-5"></div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-10" style="margin-left: -30px;">
+        <h3 class="text-black">
+          Dashboard
+        </h3>
+        <div class="mt-3"></div>
+
+
+
+
+
     
     <?php
 $id = $_GET['id'];
@@ -176,21 +191,31 @@ if (mysqli_num_rows($result) > 0) {
 
     
     
-</div>
+<div class="row">
+      <div class="col-2"></div>
+      <div class="col position-absolute bottom-0">
+        <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
+      </div>
+    </div>
+
+  </div>
+<!-- END main-container -->
 
 
+  
+  
 
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
-    <script src="../assets/js/dropdown.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
-</html>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="../assets/js/bar.js"></script>
-    <script src="../assets/js/dropdown.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script>
+    $('.dropdown').hover(function(){ 
+  $('.dropdown-toggle', this).trigger('click'); 
+});
+  </script>
+  
+  <script src="../assets/js/dropdown.js"></script>
+  <!-- <script src="../assets/js/main.js"></script> -->
+  <script src="../assets/js/bar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
