@@ -61,7 +61,10 @@
 
 <!-- start mobile -->
 
-<!-- Logo -->
-<img src="<?php echo BASE_URL . '/assets/images/updated-logo.png'; ?>" alt="">
+    <!-- logo -->
+        <div class="text-center">
+            <img src="<?php echo BASE_URL . '/assets/images/updated-logo.png'; ?>" style="width: 50%;" alt="">
+        </div>
+    <!-- end logo -->
 
 <!-- end mobile -->
