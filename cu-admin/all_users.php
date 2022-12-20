@@ -50,7 +50,7 @@ if (isset($_POST['reset'])) {
     <link rel="stylesheet" href="../assets/styles.css?v=4.01">
     <link rel="stylesheet" href="../assets/sidebar.css?v=1.10">
 
-    <title>Comments - CacheUp Blog</title>
+    <title>All Users - CacheUp Blog</title>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -76,7 +76,7 @@ if (isset($_POST['reset'])) {
     <div class="col-2"></div>
     <div class="col-10">
       <h3 class="text-black" style="margin-left: -30px;">
-        Comments
+        All Users
       </h3>
       <div class="mt-3"></div>
       <table class="table table-bordered" style="margin-left: -30px;">
