@@ -196,7 +196,7 @@ if(isLoggedIn() == false){
                     </div>
                   <?php } ?>
                 </div>
-                <div class="card-footer text-muted pt-6">
+                <div class="card-footer text-muted pt-5">
                   
                 </div>
               </div>
