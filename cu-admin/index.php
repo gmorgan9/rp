@@ -328,9 +328,13 @@ if(isLoggedIn() == false){
                         <i style="font-size: 55px; margin-left: 15px;" class="bi bi-person-square text-muted"></i>
                       </div>
                       <div class="col">
-                        <p class="text-muted">
-                          <a href="<?php echo BASE_URL . '/single_post.php?id=' . $draft['post_id']; ?>"><?php echo $draft['title']; ?></a> <p><?php echo $draft['created_date']; ?></p>
-                        </p>
+                        <div class="d-flex">
+                          <p>
+                            <a href="<?php echo BASE_URL . '/single_post.php?id=' . $draft['post_id']; ?>"><?php echo $draft['title']; ?></a> 
+                          </p>
+                          &nbsp;&nbsp;
+                          <p class=""><?php echo $draft['created_date']; ?></p>
+                        </div>  
                         <p style="margin-top: -10px;">
                           <?php echo html_entity_decode(substr($draft['content'], 0, 50) . '...'); ?>
                         </p>
