@@ -305,7 +305,7 @@ if (mysqli_num_rows($result) > 0) {
     if (mysqli_num_rows($result) > 0) {
        while($row = mysqli_fetch_assoc($result)) {
         $post_idno = $row['idno'];
-
+        $title     = $row['title'];
     ?>
 
     <div class="blog_post mt-5 ms-5 p-5" style="width: 65%; background-color: #1f1f1f;">
