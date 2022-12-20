@@ -76,6 +76,7 @@ if(isset($_POST['update'])){
     <div class="row">
       <div class="col-2"></div>
       <div class="col-10" style="margin-left: -30px;">
+      <div class="mt-5"></div>
         <h3 class="text-black">
           Add New User
         </h3>

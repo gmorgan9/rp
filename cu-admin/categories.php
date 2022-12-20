@@ -85,6 +85,7 @@ if(isset($_POST['add-category'])){
     <div class="row">
       <div class="col-2"></div>
       <div class="col-10" style="margin-left: -25px;">
+      <div class="mt-5"></div>
         <h3 class="text-black" style="margin-left: -5px;">
           New Post
         </h3>
