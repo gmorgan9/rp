@@ -1,5 +1,4 @@
 <!-- start main -->
-    <div class="main">
         <div class="page-header position-fixed" style="width: 115%;">
             <div class="d-flex" style="float:left !important;">
                 <div class="pe-2"></div>
@@ -54,5 +53,4 @@
                 <!-- end dropdown -->
             </div>
         </div>
-    </div>
 <!-- end Main -->
