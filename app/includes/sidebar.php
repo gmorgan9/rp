@@ -73,7 +73,7 @@ if (mysqli_num_rows($result) > 0) {
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
                                         <a href="<?php echo BASE_URL . '/cu-admin/all_users.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All Users</a>
-                                        <a href="#<?php //echo BASE_URL . '/cu-admin/add_users.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Add New</a>
+                                        <a href="#<?php echo BASE_URL . '/cu-admin/add_user.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Add New</a>
                                         <a href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Profile</a>
                                     </div>
                                 </div>
