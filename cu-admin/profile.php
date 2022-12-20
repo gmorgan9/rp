@@ -9,6 +9,14 @@ if(isLoggedIn() == false){
   header('location: '. BASE_URL . '/cu-login.php');
 }
 
+
+if (isset($_POST['reset'])) {
+  $appUpdateQuery = "UPDATE users SET reset = 1 WHERE user_id = '".$_POST['user_id']."'";
+  $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
+  header('location: all_users.php');
+}
+?>
+
 ?>
 
 <!DOCTYPE html>
