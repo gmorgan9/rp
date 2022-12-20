@@ -361,10 +361,7 @@ if(isLoggedIn() == false){
                           </p>
                           &nbsp;&nbsp;
                           <p class="text-muted" style="font-size: 10px; margin-top: 4px;"><?php echo $draft['created_date']; ?></p>
-                        </div>  
-                        <p style="margin-top: -10px;">
-                          <?php echo html_entity_decode(substr($draft['content'], 0, 50) . '...'); ?>
-                        </p>
+                        </div> 
                       </div>
                     </div>
                   <?php }} ?>
