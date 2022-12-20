@@ -246,11 +246,11 @@ if(isLoggedIn() == false){
               </div>
               <div class="card-body">
                 <form action="" method="POST">
-                  <div class="form-group">
+                  <div class="input-group">
                     <label for="title">Title</label>
                     <input type="text" class="form-control" name="title" id="title">
                   </div>
-                  <div class="form-group">
+                  <div class="input-group">
                     <label for="title">Title</label>
                     <textarea type="text" class="form-control" rows="4" name="title" id="title">Whats on your mind?</textarea>
                   </div>
