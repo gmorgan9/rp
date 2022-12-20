@@ -83,115 +83,13 @@ if(isset($_POST['update'])){
 
 
         <div class="row">
-          <div class="col">
-
-
-    
-    <?php
-$id = $_GET['id'];
-$select = "SELECT * FROM users WHERE user_id = '$id' ";
-$result = mysqli_query($conn, $select);
-
-if (mysqli_num_rows($result) > 0) {
-   while($row = mysqli_fetch_assoc($result)) {
-
-?>
-
-
-    <form action="" method="POST">
-        <h3>
-            New Post
-        </h3>
-        <div class="modal_help float-end" style="margin-right: 25px; margin-top: -55px !important;">
-
-          <!-- Button trigger modal -->
-            <button type="button" style="background: none; color: inherit; border: none; cursor: pointer; outline: inherit;" class="badge text-bg-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Instructions
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Instructions</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body text-black">
-                    <ul>
-                      <li>For all profile picture, please have a link for your image ready. A useful site to help you get a link for images would be: <a href="https://postimages.org" target="_blank">https://postimages.org</a>.</li>
-                    </ul>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
-                    <!-- <button type="button" class="btn btn-primary text-black">Save changes</button> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-
-        </div>
-        <div class="d-flex">
-            <div>
-                <label>First Name</label>
-                <input class="form-control" type="hidden" name="idno" value="<?php echo $row['idno']; ?>">
-                <input class="form-control" style="width: 95%;" type="text" name="firstname" value="<?php echo $row['firstname']; ?>">
-            </div>
-            <div>
-                <label>Last Name</label>
-                <input class="form-control" style="width: 95%;" type="text" name="lastname" value="<?php echo $row['lastname']; ?>">
+            <div class="col">
+                <form action="" method="POST">
+                    <input type="text" name="firstname">
+                </form>
             </div>
         </div>
-        <div class="pt-3"></div>
-        <div>
-          <label>Email</label>
-          <input class="form-control" style="width: 75%;" type="text" name="email" value="<?php echo $row['email']; ?>">
-        </div>
-        <div class="pt-3"></div>
-        <div class="d-flex">
-          <div>
-            <label>Username</label>
-            <input class="form-control" style="width: 95%;" type="text" name="username" value="<?php echo $row['username']; ?>">
-          </div>
-          <div class="pt-3"></div>
-          <div>
-              <label>Gender</label>
-              <select style="width: 100%;" name="gender" class="form-control">
-                  <option value="<?php echo $row['gender']; ?>"><?php echo $row['gender']; ?></option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-              </select>
-          </div>
-        </div>
-        <div class="pt-3"></div>
-        <div>
-          <label>Profile Picture</label>
-          <input class="form-control" style="width: 75%;" type="text" name="profile_picture" value="<?php echo $row['profile_picture']; ?>">
-        </div>
-        <div class="pt-3"></div>
-        <div>
-          <label>About Me</label>
-          <textarea class="form-control" style="width: 75%;" type="text" name="about_me"><?php echo $row['about_me']; ?></textarea>
-        </div>
-        
-        
-        <br>
-        <input type="submit" name="update" value="Update" class="btn btn-light btn-block"> &nbsp;
-        <button class="btn btn-dark btn-block" onclick="window.history.go(-1); return false;">Go Back</button>
-    </form>
-   
-    </div>
 
-
-    <?php }} ?>
-
-                      </div>
-                      </div>
-
-    
     
 <div class="row">
       <div class="col-2"></div>
