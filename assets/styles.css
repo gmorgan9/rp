@@ -105,6 +105,8 @@ body {
     }
     .space-1 {
       display: none;
+    }.main-row {
+      display: none;
     }
     /* .main-container {
        display: none;
