@@ -177,10 +177,11 @@ if(isLoggedIn() == false){
                       }
                     ?>
                   <!-- end PHP -->
-                  <div style="background-color: #f0f0f0;">
+                  
                   <p style="font-size: 16px;">
                     Recent Comments
                   </p>
+                  <div style="margin: 0; padding: 0; background-color: #f0f0f0;">
                   <?php foreach ($comms as $comm) { ?>
                     <div class="row">
                       <div class="col-2" style="margin-top: -15px !important;">
