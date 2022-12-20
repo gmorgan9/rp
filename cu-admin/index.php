@@ -259,6 +259,8 @@ if(isLoggedIn() == false){
               $idno  = rand(10000, 99999); // figure how to not allow duplicates
               $title = mysqli_real_escape_string($conn, $_POST['title']);
               $content = mysqli_real_escape_string($conn, $_POST['content']);
+              $author_idno = mysqli_real_escape_string($conn, $_POST['author_idno']);
+              $author = mysqli_real_escape_string($conn, $_POST['author']);
             
               $select = " SELECT * FROM posts WHERE idno = '$idno'";
               $result = mysqli_query($conn, $select);
@@ -268,7 +270,7 @@ if(isLoggedIn() == false){
                 $error = '';
             
               }else {
-                    $insert = "INSERT INTO posts (idno, title, content) VALUES('$idno', '$title','$content')";
+                    $insert = "INSERT INTO posts (idno, title, content, author_idno, author) VALUES('$idno', '$title','$content','$author_idno','$author')";
                     mysqli_query($conn, $insert);
                     header('location: '. BASE_URL . '/cu-admin/');
                  }
@@ -291,8 +293,8 @@ if(isLoggedIn() == false){
               </div>
               <div class="card-body">
                 <form action="" method="POST">
-                <input type="text" class="form-control" name="author_idno" value="<?php echo $idno; ?>">
-                <input type="text" class="form-control" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
+                <input type="hidden" class="form-control" name="author_idno" value="<?php echo $idno; ?>">
+                <input type="hidden" class="form-control" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
                   <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
                     <input type="text" class="form-control" id="title" name="title">
