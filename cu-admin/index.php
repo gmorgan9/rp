@@ -329,7 +329,7 @@ if(isLoggedIn() == false){
                       </div>
                       <div class="col">
                         <p class="text-muted">
-                          <a href="<?php echo BASE_URL . '/single_post.php?id=' . $draft['post_id']; ?>"><?php echo $draft['title']; ?></a> <p><?php echo date("F j, Y, g:i a", $draft['created_at']); ?></p>
+                          <a href="<?php echo BASE_URL . '/single_post.php?id=' . $draft['post_id']; ?>"><?php echo $draft['title']; ?></a> <p><?php echo $draft['created_date']; ?></p>
                         </p>
                         <p style="margin-top: -10px;">
                           <?php echo html_entity_decode(substr($draft['content'], 0, 50) . '...'); ?>
