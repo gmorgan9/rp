@@ -105,7 +105,11 @@ body {
     }
     .space-1 {
       display: none;
-    }.main-row {
+    }
+    .main-row {
+      display: none;
+    }
+    .main-col {
       display: none;
     }
     /* .main-container {

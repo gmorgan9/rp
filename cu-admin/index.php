@@ -57,7 +57,7 @@ if(isLoggedIn() == false){
     <div class="mt-5"></div>
     <div class="row main-row">
       <div class="col-2"></div>
-      <div class="col-10" style="margin-left: -30px;">
+      <div class="col-10 main-col" style="margin-left: -30px;">
         <div class="mt-5"></div>
         <h3 class="text-black">
           Dashboard
