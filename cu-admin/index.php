@@ -579,7 +579,7 @@ if(isLoggedIn() == false){
                       $rowtotal=mysqli_fetch_array($result); 
                       echo "($rowtotal[0])";
                       ?>
-                      &nbsp;<span class="text-muted">|</span>&nbsp;
+                      <br>
                       <a style="color: #7fade1;" href="<?php echo BASE_URL . '/cu-admin/approved_comments.php'; ?>">Approved </a> 
                       <?php
                       $sql="SELECT count('1') FROM comments WHERE status = 1";
