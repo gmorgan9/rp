@@ -98,31 +98,47 @@ if (isset($_POST['trash'])) {
         <thead style="background-color: white;">
           <tr>
             <th scope="col">ID #</th>
-            <th scope="col">Author</th>
-            <th scope="col">In response to</th>
-            <th scope="col">Submitted</th>
-            <th scope="col">Status</th>
-            <th scope="col">Actions</th>
+            <th scope="col">Username</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Role</th>
+            <th scope="col">Posts</th>
           </tr>
         </thead>
         <tbody class="table-group-divider" style="background-color: #f0f0f0;">
 
         <?php
-            $sql = "SELECT * FROM comments";
+            $sql = "SELECT * FROM users";
             $all = mysqli_query($conn, $sql);
             if($all) {
                 while ($row = mysqli_fetch_assoc($all)) {
-                  $comment_id     = $row['comment_id'];
+                  $user_id     = $row['comment_id'];
                   $idno      = $row['idno'];
-                  $post_idno     = $row['post_idno'];
-                  $name = $row['name'];
-                  $submit_date = $row['submit_date'];
-                  $status = $row['status'];
-                  $post_id = $row['post_id'];
+                  $firstname     = $row['firstname'];
+                  $lastname = $row['lastname'];
+                  $email = $row['email'];
+                  $username = $row['username'];
+                  $isadmin = $row['isadmin'];
+                  $loggedin = $row['loggedin'];
+                  $gender = $row['gender'];
+                  $aboutme = $row['aboutme'];
+                  $profile_picture = $row['profile_picture'];
+                  $joined = $row['joined'];
                   ?>
             <tr>
               <th scope="row"><?php echo $idno; ?></th>
-              <td><?php echo $name; ?></td>
+              <td><?php echo $username; ?></td>
+              <td><?php echo $firstname; ?> <?php echo $lastname; ?></td>
+              <td><?php echo $email; ?></td>
+              <td><?php echo $isadmin; ?></td>
+              <td>
+                <?php
+                $sql="SELECT count('1') FROM posts WHERE author_idno = '". $idno ."'";
+                $result=mysqli_query($conn,$sql);
+                $rowtotal=mysqli_fetch_array($result); 
+                echo "$rowtotal[0]";
+                ?>
+              </td>
               
               <td><a href="../single_post.php?id=<?php echo $post_id; ?>"><?php echo $post_idno; ?></a></td>
               <td><?php echo date('F j, Y / g:i a', strtotime($submit_date));; ?></td>
