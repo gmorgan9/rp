@@ -385,7 +385,9 @@ if(isLoggedIn() == false){
 <div class="container-fluid mobile">
 
 <div class="row">
+  <div class="col">
   <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
+  </div>
 </div>
 
 <div class="row">
@@ -599,7 +601,7 @@ if(isLoggedIn() == false){
             </div>
           </div>
         <!-- end activity -->
-        
+
         <div class="pt-4"></div>
 
         <!-- begin news&updates -->
