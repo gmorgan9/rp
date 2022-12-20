@@ -170,7 +170,7 @@ session_start();
       }
 
       p img {
-        width: 75%;
+        width: 90%;
       }
     </style>
 </head>
