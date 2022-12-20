@@ -342,6 +342,15 @@ if(isLoggedIn() == false){
                         $drafts = mysqli_fetch_all($result, MYSQLI_ASSOC);
                       }
                     ?>
+                    <?php
+                        $sql="SELECT count('1') FROM posts WHERE status = 'draft'";
+                        $result=mysqli_query($conn,$sql);
+                        $rowtotal=mysqli_fetch_array($result); 
+                        $drafts_amount = $rowtotal[0];
+                    ?>
+                    <?php if($drafts_amount == 0) { ?>
+                    <p>No drafts written currently.</p>
+                    <?php } else { ?>
                   <!-- end PHP -->
                   <?php foreach ($drafts as $draft) { ?>
                     <div class="row">
@@ -358,7 +367,7 @@ if(isLoggedIn() == false){
                         </p>
                       </div>
                     </div>
-                  <?php } ?>
+                  <?php }} ?>
               </div>
             </div>
           <!-- end quick draft -->
