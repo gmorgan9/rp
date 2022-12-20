@@ -180,7 +180,7 @@ if(isLoggedIn() == false){
                         <p class="text-muted"><?php echo $option['published_at']; ?></p>
                       </div>
                       <div class="col">
-                        <p class="text-muted"><a style="color: #7fade1;" href="single_post.php?id=<?php echo $option['post_id']; ?>"><?php echo $option['title']; ?></a></p>
+                        <p class="text-muted"><a style="color: #7fade1;" href="<?php echo BASE_URL . 'single_post.php?id=' . $option['post_id']; ?>"><?php echo $option['title']; ?></a></p>
                       </div>
                     </div>
                   <?php } ?>
