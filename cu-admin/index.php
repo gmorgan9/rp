@@ -324,9 +324,6 @@ if(isLoggedIn() == false){
                   <!-- end PHP -->
                   <?php foreach ($drafts as $draft) { ?>
                     <div class="row">
-                      <div class="col-2" style="margin-top: -15px !important;">
-                        <i style="font-size: 55px; margin-left: 15px;" class="bi bi-person-square text-muted"></i>
-                      </div>
                       <div class="col">
                         <div class="d-flex">
                           <p>
