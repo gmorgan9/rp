@@ -31,6 +31,13 @@ if (isset($_POST['unapprove'])) {
   header('location: all_comments.php');
 }
 ?>
+<?php
+if (isset($_POST['trash'])) {
+  $appUpdateQuery = "UPDATE comments SET status = '2' WHERE comment_id = '".$_POST['comment_id']."'";
+  $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
+  header('location: all_comments.php');
+}
+?>
 
 <?php 
 // START DELETE
@@ -94,6 +101,7 @@ if (isset($_POST['unapprove'])) {
             <th scope="col">Author</th>
             <th scope="col">In response to</th>
             <th scope="col">Submitted</th>
+            <th scope="col">Status</th>
             <th scope="col">Actions</th>
           </tr>
         </thead>
@@ -135,6 +143,17 @@ if (isset($_POST['unapprove'])) {
               <?php } ?>
               </td>
               <?php }}?>
+              <td>
+              <form method="post" action="">
+                <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
+                <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="trash"><span class="badge text-bg-danger">Trash</span></button>
+              </form>
+              &nbsp;
+              <form method="post" action="">
+              <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
+              <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="delete"><span class="badge text-bg-danger">Delete</span></button>
+            </form>
+              </td>
         </tbody>
         <thead class="table-group-divider" style="background-color: white;">
           <tr>
@@ -142,6 +161,7 @@ if (isset($_POST['unapprove'])) {
             <th scope="col">Author</th>
             <th scope="col">In response to</th>
             <th scope="col">Submitted</th>
+            <th scope="col">Status</th>
             <th scope="col">Actions</th>
           </tr>
         </thead>
