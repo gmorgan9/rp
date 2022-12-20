@@ -211,7 +211,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 <div class="row">
-  <div class="col float-start" style="width: 50px;">
+  <div class="col float-start" style="width: 200px;">
 
   
 <!-- start blog posts -->
