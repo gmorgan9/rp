@@ -180,7 +180,7 @@ if(isLoggedIn() == false){
                         <p class="text-muted"><?php echo $option['published_at']; ?></p>
                       </div>
                       <div class="col">
-                        <p class="text-muted"><?php echo $option['tilte']; ?></p>
+                        <p class="text-muted"><?php echo $option['title']; ?></p>
                       </div>
                     </div>
                   <?php } ?>
