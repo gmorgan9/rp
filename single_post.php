@@ -211,7 +211,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 <div class="row">
-  <div class="col-10">
+  <div class="col-12">
 
   
 <!-- start blog posts -->
@@ -473,7 +473,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
   </div>
-  <div class="col float-end">
+  <div class="col-2 float-end">
     test
   </div>
 </div>
