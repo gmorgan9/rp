@@ -244,8 +244,8 @@ if(isLoggedIn() == false){
               <div class="card-header">
                 Quick Draft
               </div>
-              <div class="card-body">
-                <form action="" method="POST" style="z-index: 0;">
+              <div class="card-body"style="z-index: 0 !important;">
+                <form action="" method="POST" >
                   <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
                     <input type="text" class="form-control" id="title" name="title">
