@@ -36,6 +36,7 @@ if(isLoggedIn() == false){
     <style>
         .login_error {
                 border-left: 4px solid #72aee6;
+                width: 50%;
                 padding: 12px;
                 margin-left: 0;
                 margin-bottom: 20px;
