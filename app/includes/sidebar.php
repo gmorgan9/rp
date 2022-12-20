@@ -43,7 +43,7 @@ if (mysqli_num_rows($result) > 0) {
 
                                     <div class="nav__dropdown-collapse">
                                         <div class="nav__dropdown-content">
-                                            <a style="width: 50%;" href="<?php echo BASE_URL . '/cu-admin/all_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All Comments</a>
+                                            <a style="width: 95%;" href="<?php echo BASE_URL . '/cu-admin/all_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All Comments</a>
                                             <a href="<?php echo BASE_URL . '/cu-admin/pending_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Pending</a>
                                             <a href="<?php echo BASE_URL . '/cu-admin/approved_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Approved</a>
                                             <a href="<?php echo BASE_URL . '/cu-admin/trash_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Trash</a>
