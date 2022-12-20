@@ -206,7 +206,7 @@ if(isLoggedIn() == false){
                         $rowtotal=mysqli_fetch_array($result); 
                         echo "($rowtotal[0])";
                         ?>
-                        &nbsp;|&nbsp;
+                        &nbsp;<span class="text-muted">|</span>&nbsp;
                         Pending 
                         <?php
                         $sql="SELECT count('1') FROM comments WHERE status = 1";
