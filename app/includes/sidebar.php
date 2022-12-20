@@ -36,7 +36,7 @@ if (mysqli_num_rows($result) > 0) {
 
                             <!-- comments -->
                                 <div class="nav__dropdown">
-                                    <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" class="nav__link side text-white">
+                                    <a href="<?php echo BASE_URL . '/cu-admin/all_comments.php' ?>" class="nav__link side text-white">
                                         &nbsp;&nbsp;<i class="bi bi-chat-right-fill nav__icon" style="font-size: 18px;"></i>
                                         <span class="nav__name">&nbsp;Comments</span>
                                     </a>
