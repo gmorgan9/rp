@@ -86,44 +86,46 @@ if(isset($_POST['update'])){
             <div class="col">
                 <p>Create a brand new user and add them to this site.</p>
                 <form action="" method="POST">
-                <div class="mb-3 row">
-                    <label for="username" class="col-sm-1 col-form-label">Username</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control w-50" id="username" name="username" value="username">
+                    <div class="mb-3 row">
+                        <label for="username" class="col-sm-1 col-form-label">Username</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control w-50" id="username" name="username">
+                        </div>
                     </div>
-                </div>
-                    <div class="form-group">
-                        <label for="username">Username</label>
-                        <input class="form-control w-50" type="text" name="username" id="username" required>
+                    <div class="mb-3 row">
+                        <label for="email" class="col-sm-1 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control w-50" id="email" name="email">
+                        </div>
                     </div>
-                    <div class="pt-2"></div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input class="form-control w-50" type="email" name="email" id="email" required>
+                    <div class="mb-3 row">
+                        <label for="firstname" class="col-sm-1 col-form-label">Firstname</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control w-50" id="firstname" name="firstname">
+                        </div>
                     </div>
-                    <div class="pt-2"></div>
-                    <div class="form-group">
-                        <label for="firstname">First Name</label>
-                        <input class="form-control w-50" type="text" name="firstname" id="firstname">
+                    <div class="mb-3 row">
+                        <label for="lastname" class="col-sm-1 col-form-label">lastname</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control w-50" id="lastname" name="lastname">
+                        </div>
                     </div>
-                    <div class="pt-2"></div>
-                    <div class="form-group">
-                        <label for="lastname">Last Name</label>
-                        <input class="form-control w-50" type="text" name="lastname" id="lastname">
+                    <div class="mb-3 row">
+                        <label for="password" class="col-sm-1 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control w-50" id="password" name="password">
+                        </div>
                     </div>
-                    <div class="pt-2"></div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input class="form-control w-50" type="password" name="password" id="password">
+                    <div class="mb-3 row">
+                        <label for="rolw" class="col-sm-1 col-form-label">Role</label>
+                        <div class="col-sm-10">
+                            <select class="form-control w-25" name="isadmin" id="role">
+                                <option value="1">Administrator</option>
+                                <option value="0">Standard</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="pt-2"></div>
-                    <div class="form-group">
-                        <label for="role">Role</label>
-                        <select class="form-control w-25" name="isadmin" id="role">
-                            <option value="1">Administrator</option>
-                            <option value="0">Standard</option>
-                        </select>
-                    </div>
+                    
                 </form>
             </div>
         </div>
