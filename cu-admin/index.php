@@ -564,6 +564,7 @@ if(isLoggedIn() == false){
               <div class="card-footer text-muted pt-2 pb-2">
                 <div class="row">
                   <div class="col">
+                    <div class="d-flex">
                     <p style="color: #7fade1;">All </p>
                       <?php
                       $sql="SELECT count('1') FROM comments";
@@ -595,6 +596,7 @@ if(isLoggedIn() == false){
                       $rowtotal=mysqli_fetch_array($result); 
                       echo "($rowtotal[0])";
                       ?>
+                      </div>
                   </div>
                 </div>
               </div>
