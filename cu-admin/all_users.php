@@ -17,34 +17,19 @@ date_default_timezone_set('America/Denver');
 $date = date('F d, Y', time());
 
 
-if (isset($_POST['approve'])) {
-  $appUpdateQuery = "UPDATE comments SET status = '1' WHERE comment_id = '".$_POST['comment_id']."'";
+if (isset($_POST['reset'])) {
+  $appUpdateQuery = "UPDATE users SET reset = '1' WHERE user_id = '".$_POST['user_id']."'";
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
-  header('location: comments.php');
-}
-?>
-
-<?php
-if (isset($_POST['unapprove'])) {
-  $appUpdateQuery = "UPDATE comments SET status = '0' WHERE comment_id = '".$_POST['comment_id']."'";
-  $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
-  header('location: comments.php');
-}
-?>
-<?php
-if (isset($_POST['trash'])) {
-  $appUpdateQuery = "UPDATE comments SET status = '2' WHERE comment_id = '".$_POST['comment_id']."'";
-  $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
-  header('location: comments.php');
+  header('location: all_users.php');
 }
 ?>
 
 <?php 
 // START DELETE
   if (isset($_POST['delete'])) {
-    $delete = "DELETE FROM comments WHERE comment_id = '".$_POST['comment_id']."'";
+    $delete = "DELETE FROM users WHERE user_id = '".$_POST['user_id']."'";
     $terUpdateResult = mysqli_query($conn, $delete);
-    header('location: comments.php');
+    header('location: all_users.php');
   }
 // END DELETE
 
@@ -103,6 +88,7 @@ if (isset($_POST['trash'])) {
             <th scope="col">Email</th>
             <th scope="col">Role</th>
             <th scope="col">Posts</th>
+            <th scope="col">Actions</th>
           </tr>
         </thead>
         <tbody class="table-group-divider" style="background-color: #f0f0f0;">
@@ -143,6 +129,16 @@ if (isset($_POST['trash'])) {
                 echo "$rowtotal[0]";
                 ?>
               </td>
+              <td>
+                <form method="post" action="">
+                  <input type="hidden" name="user_id" value="<?php echo $user_id; ?>" />
+                  <button onclick="return confirm('Password Reset? \r\nAn email is on its way!')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="reset"><span class="badge text-bg-warning">Reset Password</span></button>
+                </form>
+                <form method="post" action="">
+                  <input type="hidden" name="user_id" value="<?php echo $user_id; ?>" />
+                  <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="delete"><span class="badge text-bg-danger">Delete</span></button>
+                </form>
+              </td>
             <?php }}?>
               
             </tr>
@@ -155,6 +151,7 @@ if (isset($_POST['trash'])) {
             <th scope="col">Email</th>
             <th scope="col">Role</th>
             <th scope="col">Posts</th>
+            <th scope="col">Actions</th>
           </tr>
         </thead>
       </table>
