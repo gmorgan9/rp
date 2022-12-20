@@ -146,12 +146,12 @@ if (isset($_POST['trash'])) {
                 <div class="d-flex">
                 <form method="post" action="">
                   <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
-                  <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="trash"><span class="text-danger"><i class="bi bi-trash-fill"></i></span></button>
+                  <button style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit; font-size: 16px;" type="submit" name="trash"><span class="text-danger"><i class="bi bi-trash-fill"></i></span></button>
                 </form>
                 &nbsp;
                 <form method="post" action="">
                   <input type="hidden" name="comment_id" value="<?php echo $comment_id; ?>" />
-                  <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;" type="submit" name="delete"><span class="text-danger"><i class="bi bi-x-square-fill"></i></span></button>
+                  <button onclick="return confirm('Be Careful, Can\'t be undone! \r\nOK to delete?')" style="background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit; font-size: 16px;" type="submit" name="delete"><span class="text-danger"><i class="bi bi-x-square-fill"></i></span></button>
                 </form>
                 </div>
               </td>
