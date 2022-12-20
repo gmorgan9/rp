@@ -245,7 +245,12 @@ if(isLoggedIn() == false){
                 Quick Draft
               </div>
               <div class="card-body">
-                body
+                <form action="" method="POST">
+                  <div class="input-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" name="title" id="title">
+                  </div>
+                </form>
               </div>
             </div>
           <!-- end quick draft -->
