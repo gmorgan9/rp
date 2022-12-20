@@ -55,7 +55,7 @@ if(isset($_POST['update'])){
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="margin:0;padding:0;">
 
 <?php
 $user_id = $_SESSION['user_id'];
@@ -75,17 +75,30 @@ if (mysqli_num_rows($result) > 0) {
 }}
 ?>
     
-<div class="main-container">
-<?php include(ROOT_PATH . "/app/includes/header.php"); ?>
+<!-- main-container -->
+<div class="container-fluid">
 
-<?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
-        
-<div class="main">
-    <div class="page-header mx-auto">
-        <p class="page_title">Add New Post</p>
-    </div>
+<div class="row">
+  <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
+</div>
 
-    <div class="main-content">
+<div class="row">
+  <div class="col" style="margin:0;padding:0;">
+    <?php include(ROOT_PATH . "/app/includes/sidebar.php") ?>
+  </div>
+</div>
+
+
+
+<div class="mt-5"></div>
+<div class="row">
+<div class="col-2"></div>
+<div class="col-10" style="margin-left: -25px;">
+<div class="mt-5"></div>
+<h3 class="text-black" style="margin-left: -5px;">
+    Edit Post
+  </h3>
+  <div class="mt-3"></div>
     
     <?php
 $id = $_GET['id'];
@@ -99,9 +112,6 @@ if (mysqli_num_rows($result) > 0) {
 
 
     <form action="" method="POST">
-        <h3>
-            New Post
-        </h3>
         <div class="modal_help float-end" style="margin-right: 25px; margin-top: -55px !important;">
 
           <!-- Button trigger modal -->
@@ -179,13 +189,11 @@ if (mysqli_num_rows($result) > 0) {
 
     <?php }} ?>
 
-
-
-    
-    
 </div>
 
 
+  </div>
+<!-- END main-container -->
 
 
 
@@ -195,12 +203,15 @@ if (mysqli_num_rows($result) > 0) {
 <script>
     tinymce.init({
       selector: 'textarea#content',
-      plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect',
+      plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
       toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
       tinycomments_mode: 'embedded',
-      codesample_global_prismjs: true,
+      tinycomments_author: 'Author name',
+      mergetags_list: [
+        { value: 'First.Name', title: 'First Name' },
+        { value: 'Email', title: 'Email' },
+      ]
     });
-  </script>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript">
   $(document).on('click', 'a', function() {
