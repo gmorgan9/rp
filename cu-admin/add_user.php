@@ -86,6 +86,12 @@ if(isset($_POST['update'])){
             <div class="col">
                 <p>Create a brand new user and add them to this site.</p>
                 <form action="" method="POST">
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                    </div>
+                </div>
                     <div class="form-group">
                         <label for="username">Username</label>
                         <input class="form-control w-50" type="text" name="username" id="username" required>
