@@ -257,8 +257,8 @@ if(isLoggedIn() == false){
             <?php 
             if(isset($_POST['draft'])){
               $idno  = rand(10000, 99999); // figure how to not allow duplicates
-              $username = mysqli_real_escape_string($conn, $_POST['username']);
-              $email = mysqli_real_escape_string($conn, $_POST['email']);
+              $title = mysqli_real_escape_string($conn, $_POST['title']);
+              $content = mysqli_real_escape_string($conn, $_POST['content']);
             
               $select = " SELECT * FROM posts WHERE idno = '$idno'";
               $result = mysqli_query($conn, $select);
@@ -322,6 +322,19 @@ if(isLoggedIn() == false){
 
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
+  <script>
+    tinymce.init({
+      selector: 'textarea#content',
+      plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+      toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+      mergetags_list: [
+        { value: 'First.Name', title: 'First Name' },
+        { value: 'Email', title: 'Email' },
+      ]
+    });
+  </script>
   <script>
     $('.dropdown').hover(function(){ 
   $('.dropdown-toggle', this).trigger('click'); 
