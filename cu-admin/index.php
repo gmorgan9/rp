@@ -195,7 +195,9 @@ if(isLoggedIn() == false){
                       </div>
                     </div>
                   <?php } ?>
-                  <hr style="width: 110%; margin-left: -5px;">
+                  <div class="card-footer text-muted">
+    2 days ago
+  </div>
 
                 </div>
               </div>
