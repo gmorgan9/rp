@@ -274,6 +274,15 @@ if(isLoggedIn() == false){
                  }
              
             };
+            $user_id = $_SESSION['user_id'];
+            $select = "SELECT * FROM users WHERE user_id = $user_id";
+            $result = mysqli_query($conn, $select);
+            if (mysqli_num_rows($result) > 0) {
+               while($row = mysqli_fetch_assoc($result)) {
+                $firstname    = $row['firstname'];
+                $lastname     = $row['lastname'];
+                $idno         = $row['idno'];
+            }}
             ?>
             <!-- end FUNCTION -->
             <div class="card">
@@ -282,6 +291,8 @@ if(isLoggedIn() == false){
               </div>
               <div class="card-body">
                 <form action="" method="POST">
+                <input type="text" class="form-control" name="author_idno" value="<?php echo $idno; ?>">
+                <input type="text" class="form-control" name="author" value="<?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>">
                   <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
                     <input type="text" class="form-control" id="title" name="title">
