@@ -164,8 +164,10 @@ if(isLoggedIn() == false){
             </div>
           <!-- end quick draft -->
 
+          <div class="pt-4"></div>
+
           <!-- begin news&updates -->
-          <div class="card">
+            <div class="card">
               <div class="card-header">
                 New and Updates
               </div>
