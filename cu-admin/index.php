@@ -158,6 +158,17 @@ if(isLoggedIn() == false){
                   <p style="font-size: 16px;">
                     Recently Published
                   </p>
+
+                  <?php
+                        $sql="SELECT count('1') FROM posts WHERE status = 'published'";
+                        $result=mysqli_query($conn,$sql);
+                        $rowtotal=mysqli_fetch_array($result); 
+                        $amount = $rowtotal[0];
+                  ?>
+
+                  <?php if($amount == 0) { ?>
+                    <p>none</p>
+                    <?php } else { ?>
                   <?php foreach ($options as $option) { ?>
                     <div class="row">
                       <div class="col-4">
@@ -167,7 +178,7 @@ if(isLoggedIn() == false){
                         <p class="text-muted"><a style="color: #7fade1;" href="<?php echo BASE_URL . '/single_post.php?id=' . $option['post_id']; ?>"><?php echo $option['title']; ?></a></p>
                       </div>
                     </div>
-                  <?php } ?>
+                  <?php }} ?>
                   <hr>
                   <!-- PHP -->
                     <?php
