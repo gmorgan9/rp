@@ -98,7 +98,7 @@ if(isset($_POST['update'])){
                             <input type="email" class="form-control w-50" id="email" name="email">
                         </div>
                     </div>
-                    <div class="mb-3 row">
+                    <div class="mb-4 row">
                         <label for="firstname" class="col-sm-1 col-form-label">Firstname</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control w-50" id="firstname" name="firstname">
