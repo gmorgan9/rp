@@ -193,7 +193,24 @@ if (mysqli_num_rows($result) > 0) {
 <div class="main">
 
 <!-- start header -->
-<?php include(ROOT_PATH . "/app/includes/header.php"); ?>
+<div class="page-header">
+    <div class="left">
+      <a href="/">
+        <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
+      </a>
+    </div>
+    <div class="right">
+    
+      <a href="" class="text-decoration-none text-white">
+        <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
+      </a>
+      <button class="btn talk-btn me-2">
+        <a href="" class="text-decoration-none">
+          LET'S TALK
+        </a>
+      </button> 
+    </div>
+  </div>
 <!-- end header -->
 
 
