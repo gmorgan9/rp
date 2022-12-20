@@ -104,7 +104,7 @@ if(isLoggedIn() == false){
               }else {
                     $insert = "INSERT INTO users (idno, firstname, lastname, username, email, password, isadmin) VALUES('$idno', '$firstname','$lastname','$username','$email','$password', '$isadmin')";
                     mysqli_query($conn, $insert);
-                    header('location: all_users.php');
+                    header('location: '. BASE_URL . '/cu-admin/all_users.php');
                  }
              
             };
