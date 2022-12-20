@@ -176,11 +176,11 @@ if(isLoggedIn() == false){
                   </p>
                   <?php foreach ($options as $option) { ?>
                     <div class="row">
-                      <div class="col-3">
+                      <div class="col-4">
                         <p class="text-muted"><?php echo $option['published_at']; ?></p>
                       </div>
                       <div class="col">
-                        <p class="text-muted"><?php echo $option['title']; ?></p>
+                        <p class="text-muted"><a style="color: #7fade1;" href="single_post.php?id=<?php echo $option['post_id']; ?>"><?php echo $option['title']; ?></a></p>
                       </div>
                     </div>
                   <?php } ?>
