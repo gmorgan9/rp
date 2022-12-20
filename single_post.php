@@ -208,6 +208,9 @@ if (mysqli_num_rows($result) > 0) {
   </div>
 <!-- end header -->
 
+<div class="float-end">
+  test
+</div>
 
 <!-- start blog posts -->
   <!-- start BLOG -->
@@ -467,9 +470,7 @@ if (mysqli_num_rows($result) > 0) {
   </div>
 <!-- end blog posts -->
 
-<div class="float-end">
-  test
-</div>
+
 
 
 
