@@ -439,6 +439,7 @@ if (mysqli_num_rows($result) > 0) {
       $idno  = rand(10000, 99999); // figure how to not allow duplicates
       $post_idno = mysqli_real_escape_string($conn, $_POST['post_idno']);
       $post_id = mysqli_real_escape_string($conn, $_POST['post_id']);
+      $post_title = mysqli_real_escape_string($conn, $_POST['post_title']);
       $parent_idno = mysqli_real_escape_string($conn, $_POST['parent_idno']);
       $name = mysqli_real_escape_string($conn, $_POST['name']);
       $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -454,6 +455,7 @@ if (mysqli_num_rows($result) > 0) {
     <form action="" method="POST">
     <h4>Leave a Comment</h4>
     <input type="hidden" name="post_idno" value="<?php echo $post_idno; ?>" class="text-muted form-control">
+    <input type="text" name="post_title" value="<?php echo $title; ?>">
     <input type="hidden" name="post_id" value="<?php echo $id; ?>" class="text-muted form-control">
     <p class="text-muted" style="font-size: 12px;">Your email address will not be published. Required fields are marked <span style="color: red;">*</span></p>
     <div class="d-flex">
