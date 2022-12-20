@@ -252,7 +252,7 @@ if(isLoggedIn() == false){
                   </div>
                   <div class="mb-1">
                     <label for="title">Title</label>
-                    <textarea rows="4" type="text" class="form-control" name="content" id="content">Whats on your mind?</textarea>
+                    <textarea rows="4" type="text" class="form-control" name="content" id="content" placeholder="Whats on your mind?"></textarea>
                   </div>
                   <div>
                     <button type="submit" class="btn btn-outline-secondary">Submit</button>
