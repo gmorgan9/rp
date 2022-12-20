@@ -250,6 +250,10 @@ if(isLoggedIn() == false){
                     <label for="title">Title</label>
                     <input type="text" class="form-control" name="title" id="title">
                   </div>
+                  <div class="form-group">
+                    <label for="title">Title</label>
+                    <textarea type="text" class="form-control" name="title" id="title"></textarea>
+                  </div>
                 </form>
               </div>
             </div>
