@@ -100,8 +100,8 @@ body {
 }
  
   @media only screen and (max-width: 1024px) {
-    .col {
-      display: block !important;
+    .health {
+      display: none;
     }
     /* .main-container {
        display: none;
