@@ -99,13 +99,13 @@ if(isset($_POST['update'])){
                         </div>
                     </div>
                     <div class="mb-4 row">
-                        <label for="firstname" class="col-sm-1 col-form-label">Firstname</label>
+                        <label for="firstname" class="col-sm-1 col-form-label">First Name</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control w-50" id="firstname" name="firstname">
                         </div>
                     </div>
                     <div class="mb-4 row">
-                        <label for="lastname" class="col-sm-1 col-form-label">lastname</label>
+                        <label for="lastname" class="col-sm-1 col-form-label">Last Name</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control w-50" id="lastname" name="lastname">
                         </div>
