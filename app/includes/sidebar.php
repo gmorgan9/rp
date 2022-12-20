@@ -34,10 +34,25 @@ if (mysqli_num_rows($result) > 0) {
                                 </div>
                             </div>
 
-                            <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" class="nav__link side text-white">
-                                &nbsp;&nbsp;<i class='bi bi-chat-right nav__icon' style="font-size: 18px;"></i>
-                                <span class="nav__name">&nbsp;Comments</span>
-                            </a>
+                            <!-- comments -->
+                                <div class="nav__dropdown">
+                                    <a href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>" class="nav__link side text-white">
+                                        &nbsp;&nbsp;<i class="bi bi-chat-right-fill nav__icon" style="font-size: 18px;"></i>
+                                        <span class="nav__name">&nbsp;Posts</span>
+                                    </a>
+
+                                    <div class="nav__dropdown-collapse">
+                                        <div class="nav__dropdown-content">
+                                            <a href="<?php echo BASE_URL . '/cu-admin/all_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All Comments</a>
+                                            <a href="<?php echo BASE_URL . '/cu-admin/pending_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Pending</a>
+                                            <a href="<?php echo BASE_URL . '/cu-admin/approved_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Approved</a>
+                                            <a href="<?php echo BASE_URL . '/cu-admin/trash_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Trash</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- end comments -->
+                            
+                            
                         </div>
     
                         <div class="nav__items">
