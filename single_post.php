@@ -211,7 +211,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 <div class="row d-flex">
-  <div class="col ">
+  <div class="col-10">
 
   
 <!-- start blog posts -->
@@ -227,7 +227,7 @@ if (mysqli_num_rows($result) > 0) {
         $title     = $row['title'];
     ?>
 
-    <div class="blog_post mt-5 ms-5 p-5 float-start" style="width: 65%; background-color: #1f1f1f;">
+    <div class="blog_post mt-5 ms-5 p-5" style="width: 65%; background-color: #1f1f1f;">
 
       <nav class="mb-5" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; breadcrumb-divider-color: white;">
         <ol class="breadcrumb">
@@ -475,7 +475,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
   </div>
-  <div class="col float-end">
+  <div class="col-2">
     test
   </div>
 </div>
