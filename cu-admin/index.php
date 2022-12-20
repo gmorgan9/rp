@@ -581,7 +581,7 @@ if(isLoggedIn() == false){
                       echo "($rowtotal[0])";
                       ?>
                       &nbsp;<span class="text-muted">|</span>&nbsp;
-                      <p style="color: #7fade1;">Approved </p> 
+                      <p style="color: #7fade1;">&nbsp;Approved </p> 
                       <?php
                       $sql="SELECT count('1') FROM comments WHERE status = 1";
                       $result=mysqli_query($conn,$sql);
@@ -589,7 +589,7 @@ if(isLoggedIn() == false){
                       echo "($rowtotal[0])";
                       ?>
                       </div>
-                      <div class="pt-1"></div>
+                      <div class="pt-0"></div>
                       <div class="d-flex">
                       <p style="color: #7fade1;">&nbsp;Trash </p> 
                       <?php
