@@ -20,7 +20,7 @@ if(isLoggedIn() == false){
     <meta name="apple-mobile-web-app-status-bar-style" content="white">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "viewport" content = "initial-scale = 2.3, user-scalable = no">
 
     <link rel="icon" type="image/x-icon" href="<?php echo ROOT_PATH . '/assets/images/favicon.ico'; ?>">
 
