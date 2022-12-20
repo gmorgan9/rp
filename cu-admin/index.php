@@ -244,7 +244,7 @@ if(isLoggedIn() == false){
               <div class="card-header" style="z-index: -2;">
                 Quick Draft
               </div>
-              <div class="card-body" style="z-index: -1;">
+              <div class="card-body" style="z-index: 0;">
                 <div style="z-index: 0 !important;">
                 <form action="" method="POST">
                   <div class="mb-3">
