@@ -11,6 +11,43 @@ if(isLoggedIn() == false){
 
 ?>
 
+<!-- FUNCTION -->
+<?php
+            if(isset($_POST['create'])){
+              $idno  = rand(10000, 99999); // figure how to not allow duplicates
+              $username = mysqli_real_escape_string($conn, $_POST['username']);
+              $email = mysqli_real_escape_string($conn, $_POST['email']);
+              $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
+              $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
+              $password = md5($_POST['password']);
+              $isadmin = mysqli_real_escape_string($conn, $_POST['isadmin']);
+              
+            
+              $select = " SELECT * FROM users WHERE username = '$username' OR email = '$email'";
+            
+              $result = mysqli_query($conn, $select);
+            
+              if(mysqli_num_rows($result) > 0){
+            
+                $error = '
+                <div class="login_error">
+                <strong>Error:</strong> 
+                The email or username entered is already registered on this site. Please try again.
+                </div>
+                ';
+            
+              }else {
+                    $insert = "INSERT INTO users (idno, firstname, lastname, username, email, password, isadmin) VALUES('$idno', '$firstname','$lastname','$username','$email','$password', '$isadmin')";
+                    mysqli_query($conn, $insert);
+                    header('location: '. BASE_URL . '/cu-admin/all_users.php');
+                 }
+             
+            };
+
+            ?>
+        <!-- end FUNCTION -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -75,42 +112,6 @@ if(isLoggedIn() == false){
           Add New User
         </h3>
         <div class="mt-3"></div>
-
-        <!-- FUNCTION -->
-            <?php
-            if(isset($_POST['create'])){
-              $idno  = rand(10000, 99999); // figure how to not allow duplicates
-              $username = mysqli_real_escape_string($conn, $_POST['username']);
-              $email = mysqli_real_escape_string($conn, $_POST['email']);
-              $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
-              $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
-              $password = md5($_POST['password']);
-              $isadmin = mysqli_real_escape_string($conn, $_POST['isadmin']);
-              
-            
-              $select = " SELECT * FROM users WHERE username = '$username' OR email = '$email'";
-            
-              $result = mysqli_query($conn, $select);
-            
-              if(mysqli_num_rows($result) > 0){
-            
-                $error = '
-                <div class="login_error">
-                <strong>Error:</strong> 
-                The email or username entered is already registered on this site. Please try again.
-                </div>
-                ';
-            
-              }else {
-                    $insert = "INSERT INTO users (idno, firstname, lastname, username, email, password, isadmin) VALUES('$idno', '$firstname','$lastname','$username','$email','$password', '$isadmin')";
-                    mysqli_query($conn, $insert);
-                    header('location: '. BASE_URL . '/cu-admin/all_users.php');
-                 }
-             
-            };
-
-            ?>
-        <!-- end FUNCTION -->
 
         <!-- create new user -->
             <div class="row">
