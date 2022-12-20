@@ -77,7 +77,7 @@ if(isset($_POST['update'])){
       <div class="col-2"></div>
       <div class="col-10" style="margin-left: -30px;">
         <h3 class="text-black">
-          Dashboard
+          Add New User
         </h3>
         <div class="mt-3"></div>
 
@@ -89,6 +89,29 @@ if(isset($_POST['update'])){
                     <div class="form-group">
                         <label for="username">Username</label>
                         <input class="form-control w-50" type="text" name="username" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control w-50" type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input class="form-control w-50" type="text" name="firstname" id="firstname">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input class="form-control w-50" type="text" name="lastname" id="lastname">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input class="form-control w-50" type="password" name="password" id="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="role">First Name</label>
+                        <select class="form-control" name="isadmin" id="role">
+                            <option value="1">Administrator</option>
+                            <option value="0">Standard</option>
+                        </select>
                     </div>
                 </form>
             </div>
