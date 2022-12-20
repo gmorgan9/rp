@@ -93,7 +93,7 @@ if(isset($_POST['update'])){
                         </div>
                     </div>
                     <div class="mb-4 row">
-                        <label for="email" class="col-sm-1 col-form-label">Email</label>
+                        <label for="email" class="col-sm-1 col-form-label"><div class="d-flex">Email&nbsp;<span style="color: red;">*</span></div></label>
                         <div class="col-sm-10">
                             <input type="email" class="form-control w-50" id="email" name="email" required>
                         </div>
@@ -111,13 +111,13 @@ if(isset($_POST['update'])){
                         </div>
                     </div>
                     <div class="mb-4 row">
-                        <label for="password" class="col-sm-1 col-form-label">Password</label>
+                        <label for="password" class="col-sm-1 col-form-label"><div class="d-flex">Password&nbsp;<span style="color: red;">*</span></div></label>
                         <div class="col-sm-10">
                             <input type="password" class="form-control w-50" id="password" name="password" required>
                         </div>
                     </div>
                     <div class="mb-4 row">
-                        <label for="role" class="col-sm-1 col-form-label">Role</label>
+                        <label for="role" class="col-sm-1 col-form-label"><div class="d-flex">Role&nbsp;<span style="color: red;">*</span></div></label>
                         <div class="col-sm-10">
                             <select class="form-control w-25" name="isadmin" id="role" required>
                                 <option value="">Select one...</option>
