@@ -188,10 +188,19 @@ if(isLoggedIn() == false){
                         $comms = mysqli_fetch_all($result, MYSQLI_ASSOC);
                       }
                     ?>
+                    <?php
+                        $sql="SELECT count('1') FROM comments WHERE status = 1";
+                        $result=mysqli_query($conn,$sql);
+                        $rowtotal=mysqli_fetch_array($result); 
+                        $comments = $rowtotal[0];
+                    ?>
                   <!-- end PHP -->
                   <p style="font-size: 16px;">
                     Recent Comments
                   </p>
+                  <?php if($comments == 0) { ?>
+                    <p>No comments approved currently.</p>
+                    <?php } else { ?>
                   <?php foreach ($comms as $comm) { ?>
                     <div class="row">
                       <div class="col-2" style="margin-top: -15px !important;">
@@ -206,7 +215,7 @@ if(isLoggedIn() == false){
                         </p>
                       </div>
                     </div>
-                  <?php } ?>
+                  <?php }} ?>
                 </div>
                 <div class="card-footer text-muted pt-2 pb-2">
                   <div class="row">
