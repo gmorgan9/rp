@@ -210,7 +210,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-<div class="row d-flex">
+<div class="row">
   <div class="col-10">
 
   
