@@ -139,7 +139,7 @@ if(isLoggedIn() == false){
 
             <div class="pt-4"></div>
 
-            <!-- begin recent -->
+            <!-- begin activity -->
               <!-- PHP -->
                 <?php
                   $query ="SELECT * FROM posts WHERE status = 'published' LIMIT 2";
@@ -234,7 +234,7 @@ if(isLoggedIn() == false){
                   </div>
                 </div>
               </div>
-            <!-- end recent -->
+            <!-- end activity -->
 
           </div>
           <div class="col" style="width: 50%;">

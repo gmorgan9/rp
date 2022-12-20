@@ -21,6 +21,9 @@ if(isset($_POST['add'])){
   $tags = mysqli_real_escape_string($conn, $_POST['tags']);
   $status = mysqli_real_escape_string($conn, $_POST['status']);
   $author_idno = mysqli_real_escape_string($conn, $_POST['author_idno']);
+  $created_date = date("F j, Y");
+  $created_time = date("g:i a");
+
 
 
   $select = " SELECT * FROM posts WHERE title = '$title'";
@@ -32,7 +35,7 @@ if(isset($_POST['add'])){
      $error[] = 'title already exist!';
 
   }else {
-        $insert = "INSERT INTO posts (idno, title, content, author, author_idno, category, tags) VALUES ('$idno', '$title','$content','$author','$author_idno','$category', '$tags')";
+        $insert = "INSERT INTO posts (idno, title, content, author, author_idno, category, tags, created_date, created_time) VALUES ('$idno', '$title','$content','$author','$author_idno','$category', '$tags', '$created_date', '$created_time')";
         mysqli_query($conn, $insert);
         header('location: all_posts.php');
      }
