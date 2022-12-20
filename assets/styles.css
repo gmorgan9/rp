@@ -100,7 +100,7 @@ body {
 }
  
   @media only screen and (max-width: 1024px) {
-    .main-container {
+    /* .main-container {
        display: none;
     }
     .blocked-page {
@@ -109,6 +109,6 @@ body {
     }
     .blocked-footer {
       display: block;
-     }
+     } */
   }
 
