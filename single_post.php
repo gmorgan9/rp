@@ -1,13 +1,8 @@
 <?php
 
 require_once "app/database/connection.php";
-// require_once "app/database/functions.php";
 require_once "path.php";
 session_start();
-
-// if(isLoggedIn()){
-//   header('location: '. BASE_URL . '/pages/dashboard.php');
-// }
 
 ?>
 
@@ -193,7 +188,7 @@ if (mysqli_num_rows($result) > 0) {
 <div class="main">
 
 <!-- start header -->
-<div class="page-header">
+  <div class="page-header">
     <div class="left">
       <a href="/">
         <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
@@ -469,14 +464,15 @@ if (mysqli_num_rows($result) > 0) {
 
   <br><br>
 
-
+  </div>
 <!-- end blog posts -->
 
 
 
     
+
   </div>
-</div>
+  test
 </div>
 
 
