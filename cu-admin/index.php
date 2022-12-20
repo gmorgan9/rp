@@ -195,10 +195,9 @@ if(isLoggedIn() == false){
                       </div>
                     </div>
                   <?php } ?>
-                  <div class="card-footer text-muted">
-    2 days ago
-  </div>
-
+                </div>
+                <div class="card-footer text-muted">
+                  2 days ago
                 </div>
               </div>
             <!-- end recent -->
