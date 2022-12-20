@@ -205,7 +205,7 @@ if (mysqli_num_rows($result) > 0) {
         <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
       </a>
       <button class="btn talk-btn me-2">
-        <a href="" class="text-decoration-none">
+        <a href="mailto:garrett.morgan.pro@gmail.com" class="text-decoration-none">
           LET'S TALK
         </a>
       </button> 
