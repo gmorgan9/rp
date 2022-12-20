@@ -237,7 +237,7 @@ if(isLoggedIn() == false){
             <!-- end recent -->
 
           </div>
-          <div class="col" style="width: 50%;>
+          <div class="col" style="width: 50%;">
 
           <!-- begin quick draft -->
             <div class="card" >
