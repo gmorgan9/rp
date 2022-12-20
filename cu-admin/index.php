@@ -184,6 +184,10 @@ if(isLoggedIn() == false){
                       </div>
                     </div>
                   <?php } ?>
+                  <hr>
+                  <p style="font-size: 16px;">
+                    Recent Comments
+                  </p>
                 </div>
               </div>
             <!-- end recent -->
