@@ -92,31 +92,37 @@ if(isset($_POST['update'])){
                             <input type="text" class="form-control w-50" id="username" name="username">
                         </div>
                     </div>
-                    <div class="mb-5 row">
+                    <div class="mb-4 row">
                         <label for="email" class="col-sm-1 col-form-label">Email</label>
                         <div class="col-sm-10">
                             <input type="email" class="form-control w-50" id="email" name="email">
                         </div>
                     </div>
-                    <div class="mb-5 row">
+                    <div class="mb-4 row">
                         <label for="firstname" class="col-sm-1 col-form-label">Firstname</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control w-50" id="firstname" name="firstname">
                         </div>
                     </div>
-                    <div class="mb-5 row">
+                    <div class="mb-4 row">
                         <label for="lastname" class="col-sm-1 col-form-label">lastname</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control w-50" id="lastname" name="lastname">
                         </div>
                     </div>
-                    <div class="mb-5 row">
+                    <div class="mb-4 row">
                         <label for="password" class="col-sm-1 col-form-label">Password</label>
                         <div class="col-sm-10">
                             <input type="password" class="form-control w-50" id="password" name="password">
                         </div>
                     </div>
-                    <div class="mb-5 row">
+                    <div class="mb-4 row">
+                        <label for="send-email" class="col-sm-1 col-form-label">Send Email</label>
+                        <div class="col-sm-10">
+                            <input class="form-check-input" type="checkbox" value="" id="send-email">
+                        </div>
+                    </div>
+                    <div class="mb-4 row">
                         <label for="rolw" class="col-sm-1 col-form-label">Role</label>
                         <div class="col-sm-10">
                             <select class="form-control w-25" name="isadmin" id="role">
