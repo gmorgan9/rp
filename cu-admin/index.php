@@ -324,7 +324,7 @@ if(isLoggedIn() == false){
                   <!-- end PHP -->
                   <?php foreach ($drafts as $draft) { ?>
                     <div class="row">
-                      <div class="col">
+                      <div class="col ps-4">
                         <div class="d-flex">
                           <p>
                             <a href="<?php echo BASE_URL . '/single_post.php?id=' . $draft['post_id']; ?>"><?php echo $draft['title']; ?></a> 
