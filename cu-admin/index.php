@@ -591,7 +591,7 @@ if(isLoggedIn() == false){
                       </div>
                       <div class="pt-0"></div>
                       <div class="d-flex">
-                      <p style="color: #7fade1;">&nbsp;Trash </p> 
+                      <p style="color: #7fade1;">Trash </p> 
                       <?php
                       $sql="SELECT count('1') FROM comments WHERE status = 2";
                       $result=mysqli_query($conn,$sql);
