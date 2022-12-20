@@ -57,8 +57,6 @@
     </div>
 <!-- end Main -->
 
-
-
 <!-- start mobile -->
 
     <!-- logo -->
