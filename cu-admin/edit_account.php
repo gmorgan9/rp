@@ -78,7 +78,7 @@ if(isset($_POST['update'])){
       <div class="col-10" style="margin-left: -30px;">
       <div class="mt-5"></div>
         <h3 class="text-black">
-          Add New User
+          Edit Account
         </h3>
         <div class="mt-3"></div>
     
@@ -94,9 +94,6 @@ if (mysqli_num_rows($result) > 0) {
 
 
     <form action="" method="POST">
-        <h3>
-            New Post
-        </h3>
         <div class="modal_help float-end" style="margin-right: 25px; margin-top: -55px !important;">
 
           <!-- Button trigger modal -->
