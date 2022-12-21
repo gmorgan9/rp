@@ -506,7 +506,7 @@ if (mysqli_num_rows($result) > 0) {
           ?>
           <?php foreach ($cats as $cat) {?>
         <!-- end function -->
-        <p style="line-height: .5 !important;">
+        <p style="line-height: .75 !important;">
           <a class="cat-link text-muted" style="font-size: 14px; text-decoration: none;" href="#<?php //echo BASE_URL . '/single_post.php?id= '. $cat['cat_id']; ?>">
             <?php echo $cat['category']; ?>
           </a>
