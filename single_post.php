@@ -476,7 +476,7 @@ if (mysqli_num_rows($result) > 0) {
           <?php foreach ($posts as $post) {?>
         <!-- end function -->
         <p>
-          <?php echo $posts['title']; ?>
+          <?php echo $post['title']; ?>
         </p>
 
         <?php } ?>
