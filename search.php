@@ -126,9 +126,9 @@ if (mysqli_num_rows($result) > 0) {
 
     <?php
     if(isset($_POST['search'])){
-        $param = mysqli_real_escape_string($conn, $_POST['param']);
+        $username = mysqli_real_escape_string($conn, $_POST['username']);
 
-        $select = " SELECT * FROM users WHERE username = '$param'";
+        $select = " SELECT * FROM users WHERE username = '$username'";
         $results = mysqli_query($conn, $select);
         print_r($results);
     };
@@ -140,7 +140,7 @@ if (mysqli_num_rows($result) > 0) {
     ?>
 
     <form action="" method="post">
-        <input type="text" name="param" class="form-control w-25">
+        <input type="text" name="username" class="form-control w-25">
         <button type="submit" name="search" class="btn btn-primary">Submit</button>
     </form>
 
