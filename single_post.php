@@ -466,7 +466,7 @@ if (mysqli_num_rows($result) > 0) {
   <!-- sidebar -->
     
     <div class="side" id="side" style="float: right; position: sticky; top: 0; right: 0; margin-top: 0; margin-right: 0 !important; padding-right: 0 !important; background-color: #1f1f1f; width: 30%;">  
-      <div class="side-content" style="position: fixed; padding-left: 2%; padding-top: 2%;">
+      <div class="side-content" id="side_content" style="padding-left: 2%; padding-top: 2%;">
       <!-- recent posts -->
         <h4>
           Recent Posts
@@ -565,6 +565,11 @@ if (mysqli_num_rows($result) > 0) {
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <!-- END Other Scripts and Footer -->
 
+<script>
+  $('#side').scroll(function() { 
+    $('#side_content').css('top', $(this).scrollTop());
+});
+</script>
 <script>
   divElem = document.querySelector("#blog_style");
   elemHgt = divElem.offsetHeight + 48;
