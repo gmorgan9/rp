@@ -188,7 +188,7 @@ if (mysqli_num_rows($result) > 0) {
 <div class="main">
 
 <!-- start header -->
-  <div class="page-header" style="z-index: 5;">
+  <div class="page-header">
     <div class="left">
       <a href="/">
         <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
@@ -222,7 +222,7 @@ if (mysqli_num_rows($result) > 0) {
         $title     = $row['title'];
     ?>
 
-    <div class="blog_post mt-5 ms-5 p-5" style="float: left; width: 65%; background-color: #1f1f1f;">
+    <div class="blog_post mb-5 mt-5 ms-5 p-5" style="float: left; width: 65%; background-color: #1f1f1f;">
 
       <nav class="mb-5" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; breadcrumb-divider-color: white;">
         <ol class="breadcrumb">
@@ -456,10 +456,10 @@ if (mysqli_num_rows($result) > 0) {
 
 
   <!-- END Display Comments -->
-  <div class="mb-5"></div>
+  
   </div>
-  <div class="mb-5"></div>
-  <div class="side" style="position: fixed; float: right; margin-top: 0; margin-right: 0 !important; padding-right: 0 !important; background-color: #1f1f1f; width: 30%; height: 100% !important;">  
+  
+  <div class="side" style="position: sticky; float: right; margin-top: 0; margin-right: 0 !important; padding-right: 0 !important; background-color: #1f1f1f; width: 30%; height: 100% !important;">  
     <h4>
       happy
     </h4>
@@ -467,23 +467,19 @@ if (mysqli_num_rows($result) > 0) {
 
   <?php }} ?>
 
-  <div class="mb-5"></div>
+
 
     </div>
-    <br><br>
-    <div class="mb-5"></div>
 <!-- end blog posts -->
 
 
 
 </div>
-<br><br>
-<div class="mb-5"></div>
+
 <!-- end main -->
 </div>
-<br><br>
 <!-- end main-container -->
-<div class="mb-5"></div>
+
 
 
 
