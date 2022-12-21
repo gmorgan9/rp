@@ -148,13 +148,17 @@ if (mysqli_num_rows($result) > 0) {
             $title = $row['title'];
             $content = $row['content'];
     ?>
-    <div class="mt-4"></div>
+    <div class="mt-5"></div>
     <div class="row">
       <div class="col-2"></div>
       <div class="col-5">
         <h5>
           <?php echo $title; ?>
         </h5>
+        <h5>
+          <?php echo html_entity_decode(substr($content, 0, 150) . '...'); ?>
+        </h5>
+        <hr>
       </div>
       <div class="col-2"></div>
     </div>
