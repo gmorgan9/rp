@@ -209,7 +209,7 @@ if (mysqli_num_rows($result) > 0) {
 <!-- end header -->
 
 <div class="row">
-  <div class="col" style="width: 65%;">
+  <div class="col" style="width: 65% !important;">
 <!-- start blog posts -->
   <!-- start BLOG -->
     <?php
