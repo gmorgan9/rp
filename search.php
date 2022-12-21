@@ -131,10 +131,6 @@ if (mysqli_num_rows($result) > 0) {
         $select = " SELECT * FROM posts WHERE title LIKE '%$param%'";
 
     };
-        $results = mysqli_query($conn, $select);
-        if (mysqli_num_rows($results) > 0) {
-            while($row = mysqli_fetch_assoc($results)) {
-                $new = $row['title'];
 
 
             
@@ -151,7 +147,12 @@ if (mysqli_num_rows($result) > 0) {
         <button type="submit" name="search" class="btn btn-primary">Submit</button>
     </form>
 
-
+    <?php 
+    $results = mysqli_query($conn, $select);
+    if (mysqli_num_rows($results) > 0) {
+        while($row = mysqli_fetch_assoc($results)) {
+            $new = $row['title'];
+    ?>
 <p>
     <?php echo $new; ?>
 </p>
