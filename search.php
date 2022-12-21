@@ -68,6 +68,21 @@ if(isset($_POST['register'])){
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
+      .login_error {
+                border-left: 4px solid #72aee6;
+                padding: 12px;
+                margin-left: 0;
+                margin-bottom: 20px;
+                background-color: #fff;
+                box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+                word-wrap:break-word
+            }
+            /* .login .success {
+                border-left-color:#00a32a
+            } */
+            .login_error {
+                border-left-color:#d63638
+            }
       .search-link:hover {
         color: #03c6fc !important;
       }
@@ -173,8 +188,17 @@ if (mysqli_num_rows($result) > 0) {
         </div>
       </div>
     </div>
-    <?php }} ?>
+    <?php }} else {
+      $error = '
+      <div class="pt-3"></div>
+      <div class="login_error">
+      <strong>Error:</strong> 
+      The username <strong>'. $_POST['username'] .'</strong> or password entered is not registered on this site. Please try again.
+      </div>
+      ';
+    } ?>
         </div>
+        <?php echo $error; ?>
 
 <!-- end search -->
 
