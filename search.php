@@ -131,7 +131,7 @@ if (mysqli_num_rows($result) > 0) {
         $select = " SELECT * FROM posts WHERE username = '$username'";
         $results = mysqli_query($conn, $select);
         if($results->num_rows> 0){
-            $search= mysqli_fetch_all($result, MYSQLI_ASSOC);
+            $search= mysqli_fetch_all($results, MYSQLI_ASSOC);
           }
     };
 
