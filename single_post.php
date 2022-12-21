@@ -476,7 +476,9 @@ if (mysqli_num_rows($result) > 0) {
           <?php foreach ($posts as $post) {?>
         <!-- end function -->
         <p>
-          <?php echo $post['title']; ?>
+          <a style="color: #03c6fc;" href="<?php echo BASE_URL . '/single_post.php?id= '. $post['post_id']; ?>">
+            <?php echo $post['title']; ?>
+          </a>
         </p>
 
         <?php } ?>
