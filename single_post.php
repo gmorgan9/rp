@@ -576,7 +576,7 @@ $(document).ready(function () {
             var elpos = el.offset().top; // take current situation
             var windowpos = $(window).scrollTop();
             var finaldestination = windowpos - originalelpos;
-            el.stop().animate({ 'top': finaldestination });
+            el.animate({ 'top': finaldestination });
         });
     });
 </script>
