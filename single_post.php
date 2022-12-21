@@ -488,6 +488,7 @@ if (mysqli_num_rows($result) > 0) {
         <?php } ?>
       <!-- end recent posts -->
       <!-- categories -->
+      <div class="pb-3"></div>
         <h4>
           Categories
         </h4>
