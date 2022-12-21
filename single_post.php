@@ -188,7 +188,7 @@ if (mysqli_num_rows($result) > 0) {
 <div class="main">
 
 <!-- start header -->
-  <div class="page-header" style="z-index: 1;">
+  <div class="page-header" style="z-index: -1;">
     <div class="left">
       <a href="/">
         <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
@@ -459,7 +459,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
   </div>
-  <div class="side" style="margin-left: 72%; position: absolute;" >
+  <div class="side" style="margin-left: 72%; position: absolute; z-index: -2;">
     <div style="position: fixed; top: 0; margin-right: 0 !important; padding-right: 0 !important; background-color: #1f1f1f; width: 100%; height: 100% !important;">
   
     <h4>
