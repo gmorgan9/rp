@@ -199,7 +199,12 @@ if (mysqli_num_rows($result) > 0) {
       </div>
       ';
     } ?>
-    <?php echo $error; ?>
+    <?php 
+    if($error == '') {
+     
+    } else {
+      echo $error;
+    }?>
         </div>
         
 
