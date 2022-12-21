@@ -126,17 +126,17 @@ if (mysqli_num_rows($result) > 0) {
 
     <?php
     if(isset($_POST['search'])){
-    //     $param = mysqli_real_escape_string($conn, $_POST['param']);
+        $param = mysqli_real_escape_string($conn, $_POST['param']);
 
-    //     $select = " SELECT * FROM users WHERE username = '$param'";
-    //     mysqli_query($conn, $select);
-    //     print_r($select);
-    // };
-
-        $username = mysql_real_escape_string($_POST['param']);
-        $result = mysql_query("SELECT * FROM users WHERE username = ' $username '");
-        print_r($result);
+        $select = " SELECT * FROM users WHERE username = '$param'";
+        mysqli_query($conn, $select);
+        print_r($select);
     };
+
+    //     $username = mysql_real_escape_string($_POST['param']);
+    //     $result = mysql_query("SELECT * FROM users WHERE username = ' $username '");
+    //     print_r($result);
+    // };
     ?>
 
     <form action="" method="post">
