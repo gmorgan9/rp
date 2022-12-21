@@ -148,6 +148,7 @@ if (mysqli_num_rows($result) > 0) {
             $title = $row['title'];
             $content = $row['content'];
     ?>
+    <div class="mt-4"></div>
     <div class="row">
       <div class="col-2"></div>
       <div class="col-5">
