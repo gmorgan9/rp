@@ -476,8 +476,10 @@ if (mysqli_num_rows($result) > 0) {
 
 
 </div>
+<br><br>
 <!-- end main -->
 </div>
+<br><br>
 <!-- end main-container -->
 <div class="mb-5"></div>
 
