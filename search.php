@@ -134,6 +134,7 @@ if (mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($results)) {
                 $username = $row['username'];
 
+
             }}
     };
 
@@ -150,7 +151,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 <p>
-    <?php echo $username; ?>
+    <?php echo $results; ?>
 </p>
 
 
