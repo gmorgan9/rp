@@ -194,7 +194,7 @@ if (mysqli_num_rows($result) > 0) {
         <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
       </a>
     </div>
-    <div class="right" style="padding-left: -150px !important;">
+    <div class="right" style="margin-left: -150px !important;">
       <a href="" class="text-decoration-none text-white">
         <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
       </a>
