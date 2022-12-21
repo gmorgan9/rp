@@ -158,7 +158,7 @@ if (mysqli_num_rows($result) > 0) {
     <p class="text-muted">
         This search engine looks through the database to find similar titles to what is inputed.
       </p>
-      <br>
+      <br><br>
       <form action="" method="post" class="">
         <div class="input-group mb-3">
           <input type="text" class="form-control" name="param" aria-label="param" aria-describedby="basic-addon1">
