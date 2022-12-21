@@ -164,11 +164,14 @@ if (mysqli_num_rows($result) > 0) {
     </div>
 
     <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
+      <p class="text-muted">
+        This search engine looks through the database to find similar titles to what is inputed.
+      </p>
 
     <?php
     if(isset($_POST['search'])){
         $param = mysqli_real_escape_string($conn, $_POST['param']);
-        $select = " SELECT * FROM posts WHERE title LIKE '%$param%' OR content LIKE '%$param%'";
+        $select = " SELECT * FROM posts WHERE title LIKE '%$param%'";
     
           $result = $conn->query($select);
             if($result->num_rows> 0){
