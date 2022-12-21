@@ -170,10 +170,6 @@ if (mysqli_num_rows($result) > 0) {
         <h5>
           <a style="text-decoration: none; color: white;" class="search-link" href=""><?php echo $title; ?></a>
         </h5>
-        <p style="color: #777 !important">
-          <?php echo html_entity_decode(substr($content, 0, 150) . '...'); ?>
-        </p>
-        <hr class="mt-3">
       </div>
       <div class="col-2"></div>
     </div>
