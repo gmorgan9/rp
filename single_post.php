@@ -462,7 +462,7 @@ if (mysqli_num_rows($result) > 0) {
 
   <?php }} ?>
 
-  <br><br>
+  <div class="mb-5"></div>
 
   </div>
 <!-- end blog posts -->
