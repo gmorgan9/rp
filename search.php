@@ -129,8 +129,8 @@ if (mysqli_num_rows($result) > 0) {
         $param = mysqli_real_escape_string($conn, $_POST['param']);
 
         $select = " SELECT * FROM users WHERE username = '$param'";
-        mysqli_query($conn, $select);
-        print_r($select);
+        $results = mysqli_query($conn, $select);
+        print_r($results);
     };
 
     //     $username = mysql_real_escape_string($_POST['param']);
