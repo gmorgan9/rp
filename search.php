@@ -133,8 +133,8 @@ if (mysqli_num_rows($result) > 0) {
     //     print_r($select);
     // };
 
-        $username = mysql_real_escape_string($_POST['username']);
-        $result = mysql_query("SELECT * FROM users WHERE username = '" + $username + "'");
+        $username = mysql_real_escape_string($_POST['param']);
+        $result = mysql_query("SELECT * FROM users WHERE username = ' $username '");
         print_r($result);
     ?>
 
