@@ -148,7 +148,7 @@ if (mysqli_num_rows($result) > 0) {
             $content = $row['content'];
     ?>
     <p>
-    <?php echo $new; ?>
+    <?php echo $title; ?>
     </p>
     <?php }} ?>
 
