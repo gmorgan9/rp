@@ -520,8 +520,8 @@ if (mysqli_num_rows($result) > 0) {
   elemHgt = divElem.offsetHeight + 48;
   const side = document.querySelector('#side');
   side.style.height = elemHgt + "px";
-  const side = document.querySelector('#footer');
-  side.style.margin-top = elemHgt + "px";
+  const footer = document.querySelector('#footer');
+  footer.style.margin-top = elemHgt + "px";
 </script>
 </body>
 </html>
