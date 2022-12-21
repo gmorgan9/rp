@@ -571,15 +571,14 @@ $(document).ready(function () {
         var originalelpos = el.offset().top; // take it where it originally is on the page
         topH = document.querySelector(".page-header");
         topEl = topH.offsetHeight;
-        var el = $('#side_content'); // important! (local)
-            var elpos = el.offset().top; // take current situation
+
+        //run on scroll
+        $(window).scroll(function () {
+            var new = $('#side_content'); // important! (local)
+            var elpos = new.offset().top; // take current situation
             var windowpos = $(window).scrollTop();
             var finaldestination = topEl + windowpos ;
             el.stop().animate({ 'top': finaldestination });
-        //run on scroll
-        $(window).scroll(function () {
-            
-           
         });
     });
 </script>
