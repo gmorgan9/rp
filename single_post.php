@@ -188,7 +188,7 @@ if (mysqli_num_rows($result) > 0) {
 <div class="main">
 
 <!-- start header -->
-  <div class="page-header">
+  <div class="page-header" style="z-index: 0;">
     <div class="left">
       <a href="/">
         <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
