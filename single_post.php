@@ -488,10 +488,28 @@ if (mysqli_num_rows($result) > 0) {
         <?php } ?>
       <!-- end recent posts -->
       <!-- categories -->
-      <div class="pb-3"></div>
+      <div class="pb-4"></div>
         <h4>
           Categories
         </h4>
+        <div class="pb-3"></div>
+        <!-- end function -->
+        <?php
+            $query ="SELECT * FROM categories";
+            $result = $conn->query($query);
+            if($result->num_rows> 0){
+              $cats= mysqli_fetch_all($result, MYSQLI_ASSOC);
+            }
+          ?>
+          <?php foreach ($cats as $cat) {?>
+        <!-- end function -->
+        <p>
+          <a class="cat-link text-muted" style="font-size: 14px; text-decoration: none;" href="#<?php //echo BASE_URL . '/single_post.php?id= '. $cat['cat_id']; ?>">
+            <?php echo $cat['category']; ?>
+          </a>
+        </p>
+
+        <?php } ?>
       </div>
     </div>
   <!-- end sidebar -->
