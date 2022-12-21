@@ -467,9 +467,10 @@ if (mysqli_num_rows($result) > 0) {
 
   <?php }} ?>
 
-  <br><br>
+  
 
     </div>
+    <br><br>
 <!-- end blog posts -->
 
 
