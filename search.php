@@ -68,14 +68,8 @@ if(isset($_POST['register'])){
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
-      p img {
-        display: none;
-      }
-      h2 {
-        display: none;
-      }
-      h3 {
-        display: none;
+      .search-link:hover {
+        color: #03c6fc !important;
       }
     </style>
 </head>
@@ -161,18 +155,16 @@ if (mysqli_num_rows($result) > 0) {
     ?>
     <div class="mt-5"></div>
     <div class="row">
-      <div class="col-2">
-      <hr>
-      </div>
+      <div class="col-2"></div>
       <div class="col-5">
+        <div class="mt-2"></div>
         <h5>
-          <?php echo $title; ?>
+          <a class="search-link" href=""><?php echo $title; ?></a>
         </h5>
+        <div class="mt-2"></div>
         <hr>
       </div>
-      <div class="col-2">
-      <hr>
-      </div>
+      <div class="col-2"></div>
     </div>
     
     <?php }} ?>
