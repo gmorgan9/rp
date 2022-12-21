@@ -176,7 +176,7 @@ if (mysqli_num_rows($result) > 0) {
             } else {
               $error = '
                 <div class="pt-3"></div>
-                <div class="login_error">
+                <div class="text-muted login_error">
                 <strong>Error:</strong> 
                 Please try again.
                 </div>
@@ -194,9 +194,8 @@ if (mysqli_num_rows($result) > 0) {
       </div>
     </div>
     <?php } ?>
-    <p>
-      <?php echo $error; ?>
-    </p>
+    
+    <?php echo $error; ?>
     
         </div>
         
