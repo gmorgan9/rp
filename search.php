@@ -158,8 +158,6 @@ if (mysqli_num_rows($result) > 0) {
         $param = mysqli_real_escape_string($conn, $_POST['param']);
         $select = " SELECT * FROM posts WHERE title LIKE '%$param%'";
     };
-    $results = mysqli_query($conn, $select);
-      if(mysqli_num_rows($results) > 0){
     ?>
 <?php echo $error; ?>
     <div class="mt-5"></div>
@@ -174,6 +172,8 @@ if (mysqli_num_rows($result) > 0) {
 
     <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
     <?php 
+    $results = mysqli_query($conn, $select);
+      if(mysqli_num_rows($results) > 0){
         while($row = mysqli_fetch_assoc($results)) {
             $title = $row['title'];
             $content = $row['content'];
