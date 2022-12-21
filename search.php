@@ -131,6 +131,7 @@ if (mysqli_num_rows($result) > 0) {
     };
     ?>
 
+    <div class="mt-5"></div>
     <div class="d-flex justify-content-center">
       <form action="" method="post">
           <input type="text" name="param" class="form-control w-100">
