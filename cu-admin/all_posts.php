@@ -14,11 +14,12 @@ session_start();
 <?php
 
 date_default_timezone_set('America/Denver');
-$date = date('M jS, g:i a', time());
+$date = date('F j, Y', time());
+$time = date('g:i a', time());
 
 
 if (isset($_POST['published'])) {
-  $appUpdateQuery = "UPDATE posts SET status = 'published', published_at = '$date' WHERE post_id = '".$_POST['post_id']."'";
+  $appUpdateQuery = "UPDATE posts SET status = 'published', published_date = '$date', published_time = '$time' WHERE post_id = '".$_POST['post_id']."'";
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
   header('location: all_posts.php');
 }
@@ -26,7 +27,7 @@ if (isset($_POST['published'])) {
 
 <?php
 if (isset($_POST['draft'])) {
-  $appUpdateQuery = "UPDATE posts SET status = 'draft', published_at = null WHERE post_id = '".$_POST['post_id']."'";
+  $appUpdateQuery = "UPDATE posts SET status = 'draft', published_date = null, published_time = null WHERE post_id = '".$_POST['post_id']."'";
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
   header('location: all_posts.php');
 }
