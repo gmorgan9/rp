@@ -178,7 +178,7 @@ if (mysqli_num_rows($result) > 0) {
                 <div class="pt-3"></div>
                 <div class="login_error">
                 <strong>Error:</strong> 
-                The username <strong>'. $_POST['param'] .'</strong> or password entered is not registered on this site. Please try again.
+                Please try again.
                 </div>
                 ';
             }
