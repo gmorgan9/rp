@@ -208,11 +208,6 @@ if (mysqli_num_rows($result) > 0) {
   </div>
 <!-- end header -->
 
-
-
-<div class="row">
-  <div class="col float-start w-75">
-
   
 <!-- start blog posts -->
   <!-- start BLOG -->
@@ -470,13 +465,6 @@ if (mysqli_num_rows($result) > 0) {
   <div class="mb-5"></div>
 <!-- end blog posts -->
 
-
-
-</div>
-  <div class="col float-end w-25" style="margin-top: -500px;">
-    test
-  </div>
-</div>
 
 </div>
 </div>
