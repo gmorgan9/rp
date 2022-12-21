@@ -155,9 +155,9 @@ if (mysqli_num_rows($result) > 0) {
         <h5>
           <?php echo $title; ?>
         </h5>
-        <h5>
-          <?php echo html_entity_decode(substr($content, 0, 150) . '...'); ?>
-        </h5>
+        <p>
+          <?php echo substr($content, 0, 150) . '...'; ?>
+        </p>
         <hr>
       </div>
       <div class="col-2"></div>
