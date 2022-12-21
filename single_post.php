@@ -510,7 +510,9 @@ if (mysqli_num_rows($result) > 0) {
 <!-- Other Scripts and Footer -->
   <script src="assets/js/dropdown.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
+  <div id="footer">
+    <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
+  </div>
 <!-- END Other Scripts and Footer -->
 
 <script>
@@ -518,6 +520,8 @@ if (mysqli_num_rows($result) > 0) {
   elemHgt = divElem.offsetHeight + 48;
   const side = document.querySelector('#side');
   side.style.height = elemHgt + "px";
+  const side = document.querySelector('#footer');
+  side.style.margin-top = elemHgt + "px";
 </script>
 </body>
 </html>
