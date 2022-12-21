@@ -126,9 +126,9 @@ if (mysqli_num_rows($result) > 0) {
 
     <?php
     if(isset($_POST['search'])){
-        $username = mysqli_real_escape_string($conn, $_POST['username']);
+        $param = mysqli_real_escape_string($conn, $_POST['param']);
 
-        $select = " SELECT * FROM posts LIKE title = '%$username%'";
+        $select = " SELECT * FROM posts WHERE title LIKE '%$param%'";
         $results = mysqli_query($conn, $select);
         if (mysqli_num_rows($results) > 0) {
             while($row = mysqli_fetch_assoc($results)) {
@@ -145,7 +145,7 @@ if (mysqli_num_rows($result) > 0) {
     ?>
 
     <form action="" method="post">
-        <input type="text" name="username" class="form-control w-25">
+        <input type="text" name="param" class="form-control w-25">
         <button type="submit" name="search" class="btn btn-primary">Submit</button>
     </form>
 
