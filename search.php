@@ -169,7 +169,6 @@ if (mysqli_num_rows($result) > 0) {
         }
     };
     ?>
-<?php echo $error; ?>
     <div class="mt-5"></div>
     <div class="d-flex justify-content-center">
       <form action="" method="post" class="">
@@ -199,6 +198,7 @@ if (mysqli_num_rows($result) > 0) {
       </div>
     </div>
     <?php }} ?>
+    <?php echo $error; ?>
         </div>
         
 
