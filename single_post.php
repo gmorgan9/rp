@@ -573,7 +573,7 @@ $(document).ready(function () {
         //run on scroll
         $(window).scroll(function () {
             var el = $('#side_content'); // important! (local)
-            var elpos = el.offset().top; // take current situation
+            var elpos = el.offsetHeight().top; // take current situation
             var windowpos = $(window).scrollTop();
             var finaldestination = windowpos - originalelpos;
             el.stop().animate({ 'top': finaldestination }, 1);
