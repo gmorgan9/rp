@@ -129,6 +129,8 @@ if (mysqli_num_rows($result) > 0) {
         $param = mysqli_real_escape_string($conn, $_POST['param']);
 
         $select = " SELECT * FROM posts WHERE title LIKE '%$param%'";
+
+    };
         $results = mysqli_query($conn, $select);
         if (mysqli_num_rows($results) > 0) {
             while($row = mysqli_fetch_assoc($results)) {
@@ -136,7 +138,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
             
-    };
+    
 
     //     $username = mysql_real_escape_string($_POST['param']);
     //     $result = mysql_query("SELECT * FROM users WHERE username = ' $username '");
