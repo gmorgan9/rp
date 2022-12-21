@@ -136,7 +136,7 @@ if (mysqli_num_rows($result) > 0) {
       <form action="" method="post" class="d-flex">
           <input type="text" name="param" class="form-control w-100">
           <br>
-          <a type="submit" name="search" ><i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i></a>
+          <button type="submit" name="search" ><i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i></button>
       </form>
     </div>
 
