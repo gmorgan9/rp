@@ -566,9 +566,15 @@ if (mysqli_num_rows($result) > 0) {
 <!-- END Other Scripts and Footer -->
 
 <script>
-$(window).scroll(function(){
-  $("#side_content").stop().animate({"marginTop": ($(window).scrollTop()) + "px", "marginLeft":($(window).scrollLeft()) + "px"}, "slow" );
-});
+if($(window).scrollTop() > Height_of_Header){
+    //begin to scroll
+    $("#side_content").css("position","fixed");
+    $("#side_content").css("top",0);
+}
+else{
+    //lock it back into place
+    $("#side_content").css("position","relative");
+}
 </script>
 <script>
   divElem = document.querySelector("#blog_style");
