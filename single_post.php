@@ -514,8 +514,8 @@ if (mysqli_num_rows($result) > 0) {
 <!-- END Other Scripts and Footer -->
 
 <script>
-  var height = document.getElementById('side').style.height;
-alert(height);
+  const height = document.querySelector('#side').offsetHeight
+console.log(height)
 </script>
 </body>
 </html>
