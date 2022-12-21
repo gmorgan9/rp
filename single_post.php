@@ -566,8 +566,8 @@ if (mysqli_num_rows($result) > 0) {
 <!-- END Other Scripts and Footer -->
 
 <script>
-$('#side').scroll(function() { 
-    $('#side_content').animate({top:$(this).scrollTop()});
+$(window).scroll(function(){
+  $("#side_content").css({"margin-top": ($(window).scrollTop()) + "px", "margin-left":($(window).scrollLeft()) + "px"});
 });
 </script>
 <script>
