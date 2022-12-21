@@ -520,7 +520,10 @@ if (mysqli_num_rows($result) > 0) {
   function divHeight() {
          divElem = document.querySelector("#blog_style");
          elemHgt = divElem.offsetHeight;
-         document.querySelector("#side").textContent = elemHgt + "px";
+        //  document.querySelector("#side").textContent = elemHgt + "px";
+         const side = document.querySelector('#side');
+         side.style.height = elemHgt + "px";
+        //  side.style.color = 'red';
       }
 </script>
 </body>
