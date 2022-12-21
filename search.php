@@ -128,7 +128,7 @@ if (mysqli_num_rows($result) > 0) {
     if(isset($_POST['search'])){
         $username = mysqli_real_escape_string($conn, $_POST['username']);
 
-        $select = " SELECT * FROM posts LIKE title = %'$username'%";
+        $select = " SELECT * FROM posts LIKE title = '%$username%'";
         $results = mysqli_query($conn, $select);
         if (mysqli_num_rows($results) > 0) {
             while($row = mysqli_fetch_assoc($results)) {
