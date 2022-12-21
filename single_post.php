@@ -456,9 +456,9 @@ if (mysqli_num_rows($result) > 0) {
 
 
   <!-- END Display Comments -->
-<br><br>
-
+  <div class="mb-5"></div>
   </div>
+  <div class="mb-5"></div>
   <div class="side" style="position: sticky; float: right; margin-top: 0; margin-right: 0 !important; padding-right: 0 !important; background-color: #1f1f1f; width: 30%;">  
     <h4>
       happy
@@ -467,16 +467,18 @@ if (mysqli_num_rows($result) > 0) {
 
   <?php }} ?>
 
-  
+  <div class="mb-5"></div>
 
     </div>
     <br><br>
+    <div class="mb-5"></div>
 <!-- end blog posts -->
 
 
 
 </div>
 <br><br>
+<div class="mb-5"></div>
 <!-- end main -->
 </div>
 <br><br>
