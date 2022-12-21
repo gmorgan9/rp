@@ -155,6 +155,9 @@ if (mysqli_num_rows($result) > 0) {
 
 <div class="mt-5"></div>
     <div class="d-flex justify-content-center">
+    <p class="text-muted">
+        This search engine looks through the database to find similar titles to what is inputed.
+      </p>
       <form action="" method="post" class="">
         <div class="input-group mb-3">
           <input type="text" class="form-control" name="param" aria-label="param" aria-describedby="basic-addon1">
@@ -162,9 +165,7 @@ if (mysqli_num_rows($result) > 0) {
         </div>
       </form>
     </div>
-    <p class="text-muted">
-        This search engine looks through the database to find similar titles to what is inputed.
-      </p>
+    
     <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
       
 
