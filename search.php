@@ -135,7 +135,7 @@ if (mysqli_num_rows($result) > 0) {
                 $new = $row['title'];
 
 
-            }}
+            
     };
 
     //     $username = mysql_real_escape_string($_POST['param']);
@@ -153,7 +153,7 @@ if (mysqli_num_rows($result) > 0) {
 <p>
     <?php echo $new; ?>
 </p>
-
+<?php }} ?>
 
 <!-- end search -->
 
