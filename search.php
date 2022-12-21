@@ -138,7 +138,7 @@ if (mysqli_num_rows($result) > 0) {
       <div class="input-group mb-3">
         
         <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-        <span class="input-group-text" id="basic-addon1">@</span>
+        <button type="submit" name="search" class="input-group-text" id="basic-addon1">@</button>
       </div>
 
         <div class="input-group">
