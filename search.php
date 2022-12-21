@@ -161,19 +161,20 @@ if (mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($results)) {
             $title = $row['title'];
             $content = $row['content'];
+            $post_id = $row['post_id'];
+            $category = $row['category'];
     ?>
-    <div class="mt-5"></div>
-    <div class="row">
-      <div class="col-2"></div>
-      <div class="col-5">
-        <div class="mt-2"></div>
-        <h5>
-          <a style="text-decoration: none; color: white;" class="search-link" href=""><?php echo $title; ?></a>
-        </h5>
+    <div class="col">
+      <div class="card h-100" style="background-color: #1f1f1f;">
+        <div class="card-body mb-4">
+          <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #03c6fc;"><?php echo $category; ?></p>
+          <a href="single_post.php?id=<?php echo $post_id; ?>" class="text-decoration-none text-white"><h5 class="card-title blog-title"><?php echo $title; ?></h5></a>
+          <!-- <p class="card-text text-muted">
+            <?php //echo html_entity_decode(substr($option['content'], 0, 150) . '...'); ?>
+          </p> -->
+        </div>
       </div>
-      <div class="col-2"></div>
     </div>
-    
     <?php }} ?>
 
 <!-- end search -->
