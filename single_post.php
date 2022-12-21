@@ -471,7 +471,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-  <div class="col">
+  <div class="col float-end">
     test
   </div>
 </div>
