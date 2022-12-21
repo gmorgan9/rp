@@ -71,6 +71,15 @@ if(isset($_POST['register'])){
       .search-link:hover {
         color: #03c6fc !important;
       }
+      p img {
+        display: none;
+      }
+      p h2 {
+        display: none;
+      }
+      p h3 {
+        display: none;
+      }
     </style>
 </head>
 <body>
@@ -161,9 +170,9 @@ if (mysqli_num_rows($result) > 0) {
         <h5>
           <a style="text-decoration: none; color: white;" class="search-link" href=""><?php echo $title; ?></a>
         </h5>
-        <h5>
+        <p style="color: #777 !important">
           <?php echo $content; ?>
-        </h5>
+        </p>
         <hr class="mt-3">
       </div>
       <div class="col-2"></div>
