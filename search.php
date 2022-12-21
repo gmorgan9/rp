@@ -148,9 +148,16 @@ if (mysqli_num_rows($result) > 0) {
             $title = $row['title'];
             $content = $row['content'];
     ?>
-    <h5>
-      <?php echo $title; ?>
-    </h5>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col">
+        <h5>
+          <?php echo $title; ?>
+        </h5>
+      </div>
+      <div class="col"></div>
+    </div>
+    
     <?php }} ?>
 
 <!-- end search -->
