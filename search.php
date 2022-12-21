@@ -136,8 +136,8 @@ if (mysqli_num_rows($result) > 0) {
       <form action="" method="post" class="">
         <div class="input-group">
         <div class="input-group-prepend">
+          <button type="submit" name="search" class="input-group-text"><i class="bi bi-search"></i></button>
           <input type="text" name="param" class="form-control w-100">
-          <input type="submit" name="search" class="form-control"><i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
   </div>
           </div>
       </form>
