@@ -133,7 +133,8 @@ if (mysqli_num_rows($result) > 0) {
 
     <div class="d-flex justify-content-center">
       <form action="" method="post">
-          <input type="text" name="param" class="form-control w-75">
+          <input type="text" name="param" class="form-control w-100">
+          <br>
           <button type="submit" name="search" class="btn btn-primary">Submit</button>
       </form>
     </div>
