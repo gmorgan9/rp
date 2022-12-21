@@ -574,7 +574,7 @@ if (mysqli_num_rows($result) > 0) {
         $(window).scroll(function () {
             var elpos = el.offset().top; // take current situation
             var windowpos = $(window).scrollTop();
-            var finaldestination = originalelpos - windowpos;
+            var finaldestination = originalelpos + windowpos;
             el.stop().animate({ 'top': finaldestination +45 });
         });
     });
