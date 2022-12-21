@@ -173,7 +173,7 @@ if (mysqli_num_rows($result) > 0) {
           $result = $conn->query($select);
             if($result->num_rows> 0){
               $search= mysqli_fetch_all($result, MYSQLI_ASSOC);
-            }
+            }}
           ?>
           <?php foreach ($search as $s) {?>
     <div class="col">
