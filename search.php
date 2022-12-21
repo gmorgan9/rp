@@ -173,7 +173,16 @@ if (mysqli_num_rows($result) > 0) {
           $result = $conn->query($select);
             if($result->num_rows> 0){
               $search= mysqli_fetch_all($result, MYSQLI_ASSOC);
-            }}
+            } else {
+              $error = '
+                <div class="pt-3"></div>
+                <div class="login_error">
+                <strong>Error:</strong> 
+                The username <strong>'. $_POST['username'] .'</strong> or password entered is not registered on this site. Please try again.
+                </div>
+                ';
+            }
+          }
           ?>
           <?php foreach ($search as $s) {?>
     <div class="col">
