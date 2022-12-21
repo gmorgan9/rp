@@ -459,7 +459,7 @@ if (mysqli_num_rows($result) > 0) {
   <!-- END Display Comments -->
 
 
-  </div>
+
 
   <?php }} ?>
 
