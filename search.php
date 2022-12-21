@@ -161,6 +161,9 @@ if (mysqli_num_rows($result) > 0) {
         <h5>
           <a style="text-decoration: none; color: white;" class="search-link" href=""><?php echo $title; ?></a>
         </h5>
+        <h5>
+          <?php echo $content; ?>
+        </h5>
         <hr class="mt-3">
       </div>
       <div class="col-2"></div>
