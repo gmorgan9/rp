@@ -514,8 +514,8 @@ if (mysqli_num_rows($result) > 0) {
 <!-- END Other Scripts and Footer -->
 
 <script>
-  var clientHeight = document.getElementById('blog_style').clientHeight;
-alert(clientHeight);
+  var height = document.getElementById('blog_style').style.height;
+alert(height);
 </script>
 </body>
 </html>
