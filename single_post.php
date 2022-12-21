@@ -459,6 +459,11 @@ if (mysqli_num_rows($result) > 0) {
 
 
   </div>
+  <div class="side">
+    <h4>
+      happy
+    </h4>
+  </div>
 
   <?php }} ?>
 
