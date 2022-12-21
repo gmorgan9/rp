@@ -462,6 +462,9 @@ if (mysqli_num_rows($result) > 0) {
     <div class="side" id="side" style="float: right; position: sticky; top: 0; right: 0; margin-top: 0; margin-right: 0 !important; padding-right: 0 !important; background-color: #1f1f1f; width: 30%;">  
       <div class="side-content" style="padding-left: 8%; padding-top: 12%;">
       <!-- recent posts -->
+        <h4>
+          Recent Posts
+        </h4>
         <!-- end function -->
           <?php
             $query ="SELECT * FROM posts LIMIT 4";
@@ -472,9 +475,6 @@ if (mysqli_num_rows($result) > 0) {
           ?>
           <?php foreach ($posts as $post) {?>
         <!-- end function -->
-        <h4>
-          Recent Posts
-        </h4>
         <p>
           <?php echo $posts['title']; ?>
         </p>
