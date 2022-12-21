@@ -482,7 +482,7 @@ if (mysqli_num_rows($result) > 0) {
           ?>
           <?php foreach ($posts as $post) {?>
         <!-- end function -->
-        <p>
+        <p style="line-height: 1 !important;">
           <a class="recent-link text-muted" style="font-size: 14px; text-decoration: none;" href="<?php echo BASE_URL . '/single_post.php?id= '. $post['post_id']; ?>">
             <?php echo $post['title']; ?>
           </a>
