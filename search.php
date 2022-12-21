@@ -1,14 +1,7 @@
 <?php
-
 require_once "app/database/connection.php";
-// require_once "app/database/functions.php";
 require_once "path.php";
 session_start();
-
-// if(isLoggedIn()){
-//   header('location: '. BASE_URL . '/pages/dashboard.php');
-// }
-
 ?>
 
 
@@ -62,7 +55,7 @@ if(isset($_POST['register'])){
 
     <link rel="stylesheet" href="assets/blog.css?v=3.92">
 
-    <title>CacheUp Blog</title>
+    <title>Search - CacheUp Blog</title>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
