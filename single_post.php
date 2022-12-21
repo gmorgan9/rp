@@ -577,7 +577,7 @@ $(document).ready(function () {
             // var el = $('#side_content'); // important! (local)
             var elpos = el.offset().top; // take current situation
             var windowpos = $(window).scrollTop();
-            var finaldestination = topEl + windowpos ;
+            var finaldestination = topEl + windowpos - elpos ;
             el.stop().animate({ 'top': finaldestination });
         });
     });
