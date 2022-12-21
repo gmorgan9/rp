@@ -168,7 +168,7 @@ if (mysqli_num_rows($result) > 0) {
     <?php
     if(isset($_POST['search'])){
         $param = mysqli_real_escape_string($conn, $_POST['param']);
-        $select = " SELECT * FROM posts WHERE title LIKE '%$param%' AND conente LIKE '%$param%'";
+        $select = " SELECT * FROM posts WHERE title LIKE '%$param%' AND content LIKE '%$param%'";
     
           $result = $conn->query($select);
             if($result->num_rows> 0){
