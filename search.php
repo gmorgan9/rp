@@ -155,7 +155,7 @@ session_start();
           <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #03c6fc;"><?php echo $s['category']; ?></p>
           <a href="single_post.php?id=<?php echo $s['post_id']; ?>" class="text-decoration-none text-white"><h5 class="card-title blog-title"><?php echo $s['title']; ?></h5></a>
           <div class="pt-4"></div>
-          <p class="text-muted" style="font-size: 14px;">
+          <p class="text-muted" style="font-size: 14px; margin-bottom: -10px;">
             <?php echo $s['author']; ?> / <?php echo $s['published_date']; ?>
           </p>
         </div>
