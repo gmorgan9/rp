@@ -132,7 +132,7 @@ if (mysqli_num_rows($result) > 0) {
         $results = mysqli_query($conn, $select);
         if (mysqli_num_rows($results) > 0) {
             while($row = mysqli_fetch_assoc($results)) {
-                $new = $row['username'];
+                $new = $row['title'];
 
 
             }}
