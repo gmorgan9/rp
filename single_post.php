@@ -518,7 +518,7 @@ if (mysqli_num_rows($result) > 0) {
 
 <script>
          divElem = document.querySelector("#blog_style");
-         elemHgt = divElem.offsetHeight + 45;
+         elemHgt = divElem.offsetHeight + 50;
          const side = document.querySelector('#side');
          side.style.height = elemHgt + "px";
 </script>
