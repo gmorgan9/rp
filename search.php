@@ -74,10 +74,10 @@ if(isset($_POST['register'])){
       p img {
         display: none;
       }
-      p h2 {
+      h2 {
         display: none;
       }
-      p h3 {
+      h3 {
         display: none;
       }
     </style>
