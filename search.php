@@ -155,6 +155,7 @@ if (mysqli_num_rows($result) > 0) {
       </form>
     </div>
 
+    <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
     <?php 
     $results = mysqli_query($conn, $select);
     if (mysqli_num_rows($results) > 0) {
@@ -175,8 +176,8 @@ if (mysqli_num_rows($result) > 0) {
         </div>
       </div>
     </div>
-        </div>
     <?php }} ?>
+        </div>
 
 <!-- end search -->
 
