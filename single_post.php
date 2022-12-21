@@ -459,7 +459,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
   </div>
-  <div class="side" style="margin-left: 71%; position: absolute; position: fixed; margin-top: 15px; top: 0; margin-right: 0 !important; padding-right: 0 !important; background-color: #1e2327; width: 12%;height: 100% !important;">
+  <div class="side" style="margin-left: 71%; position: absolute; position: fixed; margin-top: 135px; top: 0; margin-right: 0 !important; padding-right: 0 !important; background-color: #1e2327; width: 12%;height: 100% !important;">
     <h4>
       happy
     </h4>
