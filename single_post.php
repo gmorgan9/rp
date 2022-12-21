@@ -466,16 +466,17 @@ if (mysqli_num_rows($result) > 0) {
 
     </div>
 <!-- end blog posts -->
-<div class="col">
-  <p>happy</p>
-</div>
-</div>
+
 
 
 </div>
 <!-- end main -->
 </div>
 <!-- end main-container -->
+<div class="col">
+  <p>happy</p>
+</div>
+</div>
 
 
 <!-- TOP button and Script -->
