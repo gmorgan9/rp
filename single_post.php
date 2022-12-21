@@ -456,7 +456,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
   <!-- END Display Comments -->
-
+<br><br>
 
   </div>
   <div class="side" style="position: sticky; float: right; margin-top: 0; margin-right: 0 !important; padding-right: 0 !important; background-color: #1f1f1f; width: 30%;">  
