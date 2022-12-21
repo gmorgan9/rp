@@ -161,17 +161,18 @@ if (mysqli_num_rows($result) > 0) {
     ?>
     <div class="mt-5"></div>
     <div class="row">
-      <div class="col-2"></div>
+      <div class="col-2">
+      <hr>
+      </div>
       <div class="col-5">
         <h5>
           <?php echo $title; ?>
         </h5>
-        <p style="color: #777 !important;">
-          <?php echo substr($content, 0, 150) . '...'; ?>
-        </p>
         <hr>
       </div>
-      <div class="col-2"></div>
+      <div class="col-2">
+      <hr>
+      </div>
     </div>
     
     <?php }} ?>
