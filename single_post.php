@@ -222,7 +222,7 @@ if (mysqli_num_rows($result) > 0) {
         $title     = $row['title'];
     ?>
 
-    <div class="blog_post mt-5 ms-5 p-5" style="width: 65%; background-color: #1f1f1f;">
+    <div class="blog_post mt-5 ms-5 p-5 mb-5" style="width: 65%; background-color: #1f1f1f;">
 
       <nav class="mb-5" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; breadcrumb-divider-color: white;">
         <ol class="breadcrumb">
@@ -265,7 +265,7 @@ if (mysqli_num_rows($result) > 0) {
       </p>
   <!-- END BLOG -->
 
-  <!-- TAGS -->
+  <!-- TAGS closed -->
       <div class="tags">
       <?php
       $id = $_GET['id'];
@@ -285,7 +285,7 @@ if (mysqli_num_rows($result) > 0) {
       </div>
   <!-- END TAGS -->
 
-  <!-- social links -->
+  <!-- social links closed -->
     <br>
     <!-- Linkedin -->
     <div class="social-links">
@@ -306,7 +306,7 @@ if (mysqli_num_rows($result) > 0) {
 
   <!-- end social links -->
 
-  <!-- Author Box -->
+  <!-- Author Box closed -->
     <br><br>
     <div class="top-hr d-flex">
     &nbsp;&nbsp;<hr style="width:45%;"> &nbsp;&nbsp; <img style="border: 1px solid #969696; border-radius: 100%; margin-top: -10px;" src="<?php echo $profile_picture; ?>" width="60px" height="60px" alt=""> &nbsp;&nbsp; <hr style="width:45%;">&nbsp;&nbsp;
@@ -346,7 +346,7 @@ if (mysqli_num_rows($result) > 0) {
 
   <!-- END Author Box -->
 
-  <!-- Comments -->
+  <!-- Comments closed -->
 
     <?php
     if(isset($_POST['post'])){
@@ -394,7 +394,7 @@ if (mysqli_num_rows($result) > 0) {
     </form>
   <!-- End Comments -->
 
-  <!-- Display Comments -->
+  <!-- Display Comments closed -->
     <br>
     <hr>
     <br>
@@ -464,11 +464,7 @@ if (mysqli_num_rows($result) > 0) {
 
   </div>
 <!-- end blog posts -->
-
-
-</div></div>
-    </div>
-</div>
+ 
 <div class="mb-5"></div>
 
 
