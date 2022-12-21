@@ -188,7 +188,9 @@ if (mysqli_num_rows($result) > 0) {
         </div>
       </div>
     </div>
-    <?php }} else {
+    <?php 
+      }
+    } else {
       $error = '
       <div class="pt-3"></div>
       <div class="login_error">
@@ -197,8 +199,9 @@ if (mysqli_num_rows($result) > 0) {
       </div>
       ';
     } ?>
+    <?php echo $error; ?>
         </div>
-        <?php echo $error; ?>
+        
 
 <!-- end search -->
 
