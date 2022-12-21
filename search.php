@@ -128,9 +128,11 @@ if (mysqli_num_rows($result) > 0) {
     if(isset($_POST['search'])){
         $username = mysqli_real_escape_string($conn, $_POST['username']);
 
-        $select = " SELECT * FROM users WHERE username = '$username'";
+        $select = " SELECT * FROM posts WHERE username = '$username'";
         $results = mysqli_query($conn, $select);
-        print_r($results);
+        if($results->num_rows> 0){
+            $search= mysqli_fetch_all($result, MYSQLI_ASSOC);
+          }
     };
 
     //     $username = mysql_real_escape_string($_POST['param']);
@@ -143,6 +145,13 @@ if (mysqli_num_rows($result) > 0) {
         <input type="text" name="username" class="form-control w-25">
         <button type="submit" name="search" class="btn btn-primary">Submit</button>
     </form>
+
+    <?php foreach ($search as $cat) {?>
+
+<p>
+    <?php echo $cat['username']; ?>
+</p>
+        <?php } ?>
 
 <!-- end search -->
 
