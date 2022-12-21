@@ -122,8 +122,26 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
+<!-- start search -->
 
-<!-- end blog posts -->
+    <?php
+    if(isset($_POST['search'])){
+        $param = mysqli_real_escape_string($conn, $_POST['param']);
+
+        $select = " SELECT * FROM users WHERE username = '$param'";
+        mysqli_query($conn, $select);
+        print_r($select);
+    };
+    ?>
+
+    <form action="" method="post">
+        <input type="text" name="param" class="form-control w-25">
+        <button type="submit" name="search" class="btn btn-primary">Submit</button>
+    </form>
+
+<!-- end search -->
+
+
 
 <!-- social links -->   
 
