@@ -130,9 +130,10 @@ if (mysqli_num_rows($result) > 0) {
 
         $select = " SELECT * FROM users WHERE username = '$username'";
         $results = mysqli_query($conn, $select);
-        if (mysqli_num_rows($result) > 0) {
-            while($row = mysqli_fetch_assoc($result)) {
+        if (mysqli_num_rows($results) > 0) {
+            while($row = mysqli_fetch_assoc($results)) {
                 $username = $row['username'];
+
             }}
     };
 
