@@ -169,35 +169,23 @@ if (mysqli_num_rows($result) > 0) {
     if(isset($_POST['search'])){
         $param = mysqli_real_escape_string($conn, $_POST['param']);
         $select = " SELECT * FROM posts WHERE title LIKE '%$param%'";
-        $results = mysqli_query($conn, $select);
-        if(mysqli_num_rows($results) == 0){
-          $error = '
-            <div class="pt-3"></div>
-            <div class="login_error">
-            <strong>Error:</strong> 
-            Please try again.
-            </div>
-            ';
-        }else {
-          if(mysqli_num_rows($results) > 0){
-            while($row = mysqli_fetch_assoc($results)) {
-                $title = $row['title'];
-                $content = $row['content'];
-                $post_id = $row['post_id'];
-                $category = $row['category'];
-        }
     
-    ?>
-    <?php echo $error; ?>
+          $result = $conn->query($select);
+            if($result->num_rows> 0){
+              $search= mysqli_fetch_all($result, MYSQLI_ASSOC);
+            }
+          ?>
+          <?php foreach ($search as $s) {?>
     <div class="col">
       <div class="card h-100" style="background-color: #1f1f1f;">
         <div class="card-body mb-4">
-          <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #03c6fc;"><?php echo $category; ?></p>
-          <a href="single_post.php?id=<?php echo $post_id; ?>" class="text-decoration-none text-white"><h5 class="card-title blog-title"><?php echo $title; ?></h5></a>
+          <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #03c6fc;"><?php echo $s['category']; ?></p>
+          <a href="single_post.php?id=<?php echo $s['post_id']; ?>" class="text-decoration-none text-white"><h5 class="card-title blog-title"><?php echo $s['title']; ?></h5></a>
         </div>
       </div>
     </div>
-    <?php }}} ?>
+    <?php } ?>
+    <?php echo $error; ?>
     
         </div>
         
