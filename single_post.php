@@ -203,6 +203,9 @@ if (mysqli_num_rows($result) > 0) {
           LET'S TALK
         </a>
       </button> 
+      <button onclick="divHeight()">
+      Click
+   </button>
     </div>
   </div>
 <!-- end header -->
@@ -514,8 +517,11 @@ if (mysqli_num_rows($result) > 0) {
 <!-- END Other Scripts and Footer -->
 
 <script>
-  const height = document.querySelector('#side').offsetHeight
-console.log(height)
+  function divHeight() {
+         divElem = document.querySelector("#blog_style");
+         elemHgt = divElem.offsetHeight;
+         document.querySelector("#side").textContent = elemHgt + "px";
+      }
 </script>
 </body>
 </html>
