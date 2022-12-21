@@ -170,7 +170,7 @@ if (mysqli_num_rows($result) > 0) {
         $param = mysqli_real_escape_string($conn, $_POST['param']);
         $select = " SELECT * FROM posts WHERE title LIKE '%$param%'";
         $results = mysqli_query($conn, $select);
-        if(mysqli_num_rows($results) < 0){
+        if(mysqli_num_rows($results) == 0){
           $error = '
             <div class="pt-3"></div>
             <div class="login_error">
