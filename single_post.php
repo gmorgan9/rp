@@ -462,15 +462,16 @@ if (mysqli_num_rows($result) > 0) {
   
 
   <?php }} ?>
-
-  <br><br>
-
-    </div>
+  </div>
     <div class="side" style="margin-left: 71%; margin-top: -75%;">
     <h4>
       happy
     </h4>
   </div>
+
+  <br><br>
+
+    
 <!-- end blog posts -->
 
 
