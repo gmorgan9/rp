@@ -127,36 +127,28 @@ if (mysqli_num_rows($result) > 0) {
     <?php
     if(isset($_POST['search'])){
         $param = mysqli_real_escape_string($conn, $_POST['param']);
-
         $select = " SELECT * FROM posts WHERE title LIKE '%$param%'";
-
     };
-
-
-            
-    
-
-    //     $username = mysql_real_escape_string($_POST['param']);
-    //     $result = mysql_query("SELECT * FROM users WHERE username = ' $username '");
-    //     print_r($result);
-    // };
     ?>
 
-    <form action="" method="post">
-        <input type="text" name="param" class="form-control w-25">
-        <button type="submit" name="search" class="btn btn-primary">Submit</button>
-    </form>
+    <div class="d-flex justify-content-center">
+      <form action="" method="post">
+          <input type="text" name="param" class="form-control w-25">
+          <button type="submit" name="search" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
 
     <?php 
     $results = mysqli_query($conn, $select);
     if (mysqli_num_rows($results) > 0) {
         while($row = mysqli_fetch_assoc($results)) {
-            $new = $row['title'];
+            $title = $row['title'];
+            $content = $row['content'];
     ?>
-<p>
+    <p>
     <?php echo $new; ?>
-</p>
-<?php }} ?>
+    </p>
+    <?php }} ?>
 
 <!-- end search -->
 
