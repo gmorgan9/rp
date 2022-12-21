@@ -162,11 +162,11 @@ if (mysqli_num_rows($result) > 0) {
         </div>
       </form>
     </div>
-
-    <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
-      <p class="text-muted">
+    <p class="text-muted">
         This search engine looks through the database to find similar titles to what is inputed.
       </p>
+    <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
+      
 
     <?php
     if(isset($_POST['search'])){
