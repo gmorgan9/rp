@@ -94,7 +94,7 @@ if (mysqli_num_rows($result) > 0) {
     </div>
     <div class="right">
     
-      <a href="search.php" class="text-decoration-none text-white">
+      <a href="<?php echo BASE_URL . '/search.php' ?>" class="text-decoration-none text-white">
         <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
       </a>
       <button class="btn talk-btn me-2">

@@ -103,7 +103,7 @@ if(isset($_POST['register'])){
 
     <link rel="stylesheet" href="../assets/blog.css?v=3.92">
 
-    <title>CacheUp Blog</title>
+    <title>Posts - CacheUp Blog</title>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -127,7 +127,7 @@ if (mysqli_num_rows($result) > 0) {
 <div class="main">
 
 <!-- start header -->
-<div class="page-header">
+  <div class="page-header">
     <div class="left">
       <a href="/">
         <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
@@ -135,7 +135,7 @@ if (mysqli_num_rows($result) > 0) {
     </div>
     <div class="right">
     
-      <a href="" class="text-decoration-none text-white">
+      <a href="<?php echo BASE_URL . '/search.php' ?>" class="text-decoration-none text-white">
         <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
       </a>
       <button class="btn talk-btn me-2">
