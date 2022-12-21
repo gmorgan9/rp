@@ -208,8 +208,7 @@ if (mysqli_num_rows($result) > 0) {
   </div>
 <!-- end header -->
 
-<div class="row">
-  <div class="col" style="width: 65% !important;">
+
 <!-- start blog posts -->
   <!-- start BLOG -->
     <?php
@@ -467,14 +466,7 @@ if (mysqli_num_rows($result) > 0) {
 
     </div>
 <!-- end blog posts -->
-  </div>
 
-
-
-  <div class="mt-5 col">
-    test
-  </div>
-</div>
 
 
 </div>
