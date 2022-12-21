@@ -132,7 +132,7 @@ session_start();
     <?php
     if(isset($_POST['search'])){
         $param = mysqli_real_escape_string($conn, $_POST['param']);
-        $select = " SELECT * FROM posts WHERE title LIKE '%$param%'";
+        $select = " SELECT * FROM posts WHERE title LIKE '%$param%' AND status = 'published";
     
           $result = $conn->query($select);
             if($result->num_rows> 0){
