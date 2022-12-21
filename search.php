@@ -176,9 +176,9 @@ if (mysqli_num_rows($result) > 0) {
             } else {
               $error = '
                 <div class="pt-3"></div>
-                <div class="text-muted login_error">
+                <div class="text-black login_error">
                 <strong>Error:</strong> 
-                Please try again.
+                The username <strong>'. $_POST['param'] .'</strong> or password entered is not registered on this site. Please try again.
                 </div>
                 ';
             }
@@ -194,7 +194,6 @@ if (mysqli_num_rows($result) > 0) {
       </div>
     </div>
     <?php } ?>
-    
     <?php echo $error; ?>
     
         </div>
