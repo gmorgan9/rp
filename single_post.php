@@ -468,11 +468,15 @@ if (mysqli_num_rows($result) > 0) {
 <!-- end blog posts -->
 
 
-
+<div class="float-end">
+  test
+</div>
 
 
 </div>
+<!-- end main -->
 </div>
+<!-- end main-container -->
 
 
 <!-- TOP button and Script -->
