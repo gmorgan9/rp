@@ -148,9 +148,9 @@ if (mysqli_num_rows($result) > 0) {
             $title = $row['title'];
             $content = $row['content'];
     ?>
-    <p>
-    <?php echo $title; ?>
-    </p>
+    <h5>
+      <?php echo $title; ?>
+    </h5>
     <?php }} ?>
 
 <!-- end search -->
