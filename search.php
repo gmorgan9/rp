@@ -194,7 +194,9 @@ if (mysqli_num_rows($result) > 0) {
       </div>
     </div>
     <?php } ?>
-    <?php echo $error; ?>
+    <p>
+      <?php echo $error; ?>
+    </p>
     
         </div>
         
