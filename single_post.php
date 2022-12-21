@@ -566,15 +566,19 @@ if (mysqli_num_rows($result) > 0) {
 <!-- END Other Scripts and Footer -->
 
 <script>
-if($(window).scrollTop() > 135){
-    //begin to scroll
-    $("#side_content").css("position","fixed");
-    $("#side_content").css("top",0);
-}
-else{
-    //lock it back into place
-    $("#side_content").css("position","relative");
-}
+$(document).ready(function () {
+     var el = $('#side_content');
+        var originalelpos = el.offset().top; // take it where it originally is on the page
+
+        //run on scroll
+        $(window).scroll(function () {
+            var el = $('#side_content'); // important! (local)
+            var elpos = el.offset().top; // take current situation
+            var windowpos = $(window).scrollTop();
+            var finaldestination = windowpos + originalelpos;
+            el.stop().animate({ 'top': finaldestination }, 1000);
+        });
+    });
 </script>
 <script>
   divElem = document.querySelector("#blog_style");
