@@ -153,6 +153,18 @@ if (mysqli_num_rows($result) > 0) {
 
 <!-- start search -->
 
+<div class="mt-5"></div>
+    <div class="d-flex justify-content-center">
+      <form action="" method="post" class="">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="param" aria-label="param" aria-describedby="basic-addon1">
+          <button type="submit" name="search" class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></button>
+        </div>
+      </form>
+    </div>
+
+    <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
+
     <?php
     if(isset($_POST['search'])){
         $param = mysqli_real_escape_string($conn, $_POST['param']);
@@ -166,28 +178,15 @@ if (mysqli_num_rows($result) > 0) {
             The username <strong>'. $_POST['username'] .'</strong> or password entered is not registered on this site. Please try again.
             </div>
             ';
+        }else {
+          if(mysqli_num_rows($results) > 0){
+            while($row = mysqli_fetch_assoc($results)) {
+                $title = $row['title'];
+                $content = $row['content'];
+                $post_id = $row['post_id'];
+                $category = $row['category'];
         }
-    };
-    ?>
-    <div class="mt-5"></div>
-    <div class="d-flex justify-content-center">
-      <form action="" method="post" class="">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" name="param" aria-label="param" aria-describedby="basic-addon1">
-          <button type="submit" name="search" class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></button>
-        </div>
-      </form>
-    </div>
-
-    <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
-    <?php 
     
-      if(mysqli_num_rows($results) > 0){
-        while($row = mysqli_fetch_assoc($results)) {
-            $title = $row['title'];
-            $content = $row['content'];
-            $post_id = $row['post_id'];
-            $category = $row['category'];
     ?>
     <div class="col">
       <div class="card h-100" style="background-color: #1f1f1f;">
@@ -197,7 +196,7 @@ if (mysqli_num_rows($result) > 0) {
         </div>
       </div>
     </div>
-    <?php }} ?>
+    <?php }}} ?>
     <?php echo $error; ?>
         </div>
         
