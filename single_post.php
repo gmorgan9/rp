@@ -567,7 +567,7 @@ if (mysqli_num_rows($result) > 0) {
 
 <script>
 $(window).scroll(function(){
-  $("#side_content").css({"margin-top": ($(window).scrollTop()) + "px", "margin-left":($(window).scrollLeft()) + "px"});
+  $("#side_content").stop().animate({"marginTop": ($(window).scrollTop()) + "px", "marginLeft":($(window).scrollLeft()) + "px"}, "slow" );
 });
 </script>
 <script>
