@@ -135,8 +135,9 @@ if (mysqli_num_rows($result) > 0) {
     <div class="d-flex justify-content-center">
       <form action="" method="post" class="d-flex">
           <input type="text" name="param" class="form-control w-100">
-          <br>
-          <button style="padding-top: 15px;background: none;color: inherit;border: none;padding: 0;font: inherit;cursor: pointer;outline: inherit;" type="submit" name="search" ><i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i></button>
+          &nbsp;
+          <div class="mt-5"></div>
+          <button style="background: none;color: inherit;border: none;padding: 0;font: inherit;cursor: pointer;outline: inherit;" type="submit" name="search" ><i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i></button>
       </form>
     </div>
 
