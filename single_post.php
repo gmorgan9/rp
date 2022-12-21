@@ -467,7 +467,7 @@ if (mysqli_num_rows($result) > 0) {
         </h4>
         <!-- end function -->
           <?php
-            $query ="SELECT * FROM posts LIMIT 4";
+            $query ="SELECT * FROM posts WHERE status = 'published' LIMIT 4";
             $result = $conn->query($query);
             if($result->num_rows> 0){
               $posts= mysqli_fetch_all($result, MYSQLI_ASSOC);
