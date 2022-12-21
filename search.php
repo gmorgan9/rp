@@ -134,11 +134,9 @@ if (mysqli_num_rows($result) > 0) {
     <div class="mt-5"></div>
     <div class="d-flex justify-content-center">
       <form action="" method="post" class="">
-        
+
       <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1">@</span>
-        </div>
+        <span class="input-group-text" id="basic-addon1">@</span>
         <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
       </div>
 
