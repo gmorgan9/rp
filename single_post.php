@@ -517,10 +517,10 @@ if (mysqli_num_rows($result) > 0) {
 <!-- END Other Scripts and Footer -->
 
 <script>
-         divElem = document.querySelector("#blog_style");
-         elemHgt = divElem.offsetHeight + 47.5;
-         const side = document.querySelector('#side');
-         side.style.height = elemHgt + "px";
+  divElem = document.querySelector("#blog_style");
+  elemHgt = divElem.offsetHeight + 48;
+  const side = document.querySelector('#side');
+  side.style.height = elemHgt + "px";
 </script>
 </body>
 </html>
