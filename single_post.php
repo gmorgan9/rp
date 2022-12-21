@@ -566,7 +566,7 @@ if (mysqli_num_rows($result) > 0) {
 <!-- END Other Scripts and Footer -->
 
 <script>
-if($(window).scrollTop() > Height_of_Header){
+if($(window).scrollTop() > ){
     //begin to scroll
     $("#side_content").css("position","fixed");
     $("#side_content").css("top",0);
@@ -577,6 +577,9 @@ else{
 }
 </script>
 <script>
+  el = document.querySelector(".page-header");
+  elhgt = el.offsetHeight
+  alert(elhgt)
   divElem = document.querySelector("#blog_style");
   elemHgt = divElem.offsetHeight + 48;
   const side = document.querySelector('#side');
