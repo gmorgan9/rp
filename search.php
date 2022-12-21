@@ -111,10 +111,10 @@ if (mysqli_num_rows($result) > 0) {
 
   <div class="middle">
     <h1 class="behind text-center mt-5">
-      Home
+      Search
     </h1>
     <h1 class="front text-center">
-      <strong>Home</strong>
+      <strong>Search</strong>
     </h1>
   </div>
 
@@ -122,107 +122,13 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-<!-- start Tags -->
-
-<br><br>
-
-<div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-    <div class="card top-card h-100" style="background-color: #1f1f1f;">
-      <div class="card-body">
-        <div class="text-center">
-          <i class="bi bi-list-check fs-1"></i>
-        </div>
-        <h5 class="card-title text-center mt-4">Walkthroughs</h5>
-        <p class="card-text text-center">Includes TryHackMe and HackTheBox boxes</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card top-card h-100" style="background-color: #1f1f1f;">
-      <div class="card-body">
-        <div class="text-center">
-          <i class="bi bi-folder fs-1"></i>
-        </div>
-        <h5 class="card-title text-center mt-4">Personal Projects</h5>
-        <p class="card-text text-center">Projects that I have worked on or built upon personally</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card top-card h-100" style="background-color: #1f1f1f;">
-      <div class="card-body">
-        <div class="text-center">
-          <i class="bi bi-journal fs-1"></i>
-        </div>
-        <h5 class="card-title text-center mt-4">IT/Cybersecurity Notes</h5>
-        <p class="card-text text-center">Notes from courses taken online or via BYU - Provo.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="text-center">
-  <button class="btn mt-5 post-btn btn-lg">
-    <a href="<?php echo BASE_URL . '/pages/posts.php' ?>" class="text-decoration-none text-white p-2 text-uppercase" style="font-size: 16px;">
-      View All Posts
-    </a>
-  </button>
-</div>
-
-
-
-<!-- end Tags -->
-
-<br><br><br>
-
-<!-- start blog posts -->
-
-<div class="sub-title">
-  <h1 class="behind-2 mt-5">
-    Popular Posts
-  </h1>
-  <h1 class="front-2">
-    <strong>Popular Posts</strong>
-  </h1>
-</div>
-
-<br><br>
-
-
-<div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
-  <?php
-    $query ="SELECT * FROM posts WHERE status = 'published' LIMIT 3";
-    $result = $conn->query($query);
-    if($result->num_rows> 0){
-      $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
-    }
-
-  ?>
-  <?php foreach ($options as $option) { ?>
-    <div class="col">
-      <div class="card h-100" style="background-color: #1f1f1f;">
-        <div class="card-body mb-4">
-          <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #03c6fc;"><?php echo $option['category']; ?></p>
-          <a href="single_post.php?id=<?php echo $option['post_id']; ?>" class="text-decoration-none text-white"><h5 class="card-title blog-title"><?php echo $option['title']; ?></h5></a>
-          <!-- <p class="card-text text-muted">
-            <?php //echo html_entity_decode(substr($option['content'], 0, 150) . '...'); ?>
-          </p> -->
-        </div>
-      </div>
-    </div>
-  <?php } ?>
-</div>
-
-
-
 
 <!-- end blog posts -->
 
-<!-- social links -->
+<!-- social links -->   
 
-<!-- Linkedin -->
-<div class="social-links text-center" style="margin-top: 90px; padding-bottom: 30px;">
+    <!-- Linkedin -->
+ <div class="social-links text-center" style="margin-top: 90px; padding-bottom: 30px;">
   <a class="btn btn-primary" style="background-color: #0082ca; border:none !important;" href="#!" role="button"
     ><i class="bi bi-linkedin"></i>
   </a>
@@ -236,7 +142,7 @@ if (mysqli_num_rows($result) > 0) {
   <a class="btn btn-primary" style="background-color: #3b5998; border:none !important;" href="#!" role="button">
     <i class="bi bi-facebook"></i>
   </a>
-</div>
+    </div>
 
 <!-- end social links -->
 
