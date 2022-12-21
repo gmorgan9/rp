@@ -222,7 +222,7 @@ if (mysqli_num_rows($result) > 0) {
         $title     = $row['title'];
     ?>
 
-    <div class="blog_post mt-5 ms-5 p-5" style="width: 65%; background-color: #1f1f1f;">
+    <div class="blog_post mt-5 ms-5 p-5 mb-5" style="width: 65%; background-color: #1f1f1f;">
 
       <nav class="mb-5" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; breadcrumb-divider-color: white;">
         <ol class="breadcrumb">
@@ -468,7 +468,7 @@ if (mysqli_num_rows($result) > 0) {
     </div>
 <!-- end blog posts -->
 
-<div class="side" style="margin-left: 71%; top: -75 !important;">
+<div class="side" style="margin-left: 71%; margin-top: -75%;">
     <h4>
       happy
     </h4>
