@@ -221,7 +221,7 @@ if (mysqli_num_rows($result) > 0) {
         $title     = $row['title'];
     ?>
 
-    <div class="blog_post mb-5 mt-5 ms-5 p-5" style="float: left; width: 65%; background-color: #1f1f1f;">
+    <div class="blog_post mb-5 mt-5 ms-5 p-5" id="blog_style" style="float: left; width: 65%; background-color: #1f1f1f;">
 
       <nav class="mb-5" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; breadcrumb-divider-color: white;">
         <ol class="breadcrumb">
@@ -513,5 +513,9 @@ if (mysqli_num_rows($result) > 0) {
   <?php //include(ROOT_PATH . "/app/includes/footer.php"); ?>
 <!-- END Other Scripts and Footer -->
 
+<script>
+  var clientHeight = document.getElementById('blog_style').clientHeight;
+alert(clientHeight);
+</script>
 </body>
 </html>
