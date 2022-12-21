@@ -112,6 +112,9 @@ session_start();
       .recent-link:hover {
         color: #03c6fc !important;
       }
+      .cat-link:hover {
+        color: #03c6fc !important;
+      }
       form-control:focus {
         border-color: #58c5f7 !important;
       }
