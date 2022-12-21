@@ -468,6 +468,7 @@ if (mysqli_num_rows($result) > 0) {
         <h4>
           Recent Posts
         </h4>
+        <div class="pb-3"></div>
         <!-- end function -->
           <?php
             $query ="SELECT * FROM posts WHERE status = 'published' LIMIT 4";
