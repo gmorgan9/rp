@@ -194,12 +194,11 @@ if (mysqli_num_rows($result) > 0) {
         <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
       </a>
     </div>
-    <div class="right">
-    
+    <div class="right" style="margin-left: -35px;">
       <a href="" class="text-decoration-none text-white">
         <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
       </a>
-      <button class="btn talk-btn me-2">
+      <button class="btn talk-btn">
         <a href="mailto:garrett.morgan.pro@gmail.com" class="text-decoration-none">
           LET'S TALK
         </a>
