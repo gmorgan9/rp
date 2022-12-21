@@ -188,6 +188,7 @@ if (mysqli_num_rows($result) > 0) {
         }
     
     ?>
+    <?php echo $error; ?>
     <div class="col">
       <div class="card h-100" style="background-color: #1f1f1f;">
         <div class="card-body mb-4">
@@ -197,7 +198,7 @@ if (mysqli_num_rows($result) > 0) {
       </div>
     </div>
     <?php }}} ?>
-    <?php echo $error; ?>
+    
         </div>
         
 
