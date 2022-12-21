@@ -71,7 +71,10 @@ if(isset($_POST['register'])){
       p img {
         display: none;
       }
-      p h1, p h2 {
+      p h1 {
+        display: none;
+      }
+      p h1 {
         display: none;
       }
     </style>
@@ -163,7 +166,7 @@ if (mysqli_num_rows($result) > 0) {
         <h5>
           <?php echo $title; ?>
         </h5>
-        <p class="text-muted">
+        <p style="color: #777 !important;">
           <?php echo substr($content, 0, 150) . '...'; ?>
         </p>
         <hr>
