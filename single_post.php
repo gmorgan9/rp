@@ -109,6 +109,9 @@ session_start();
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
+      .recent-link:hover {
+        color: #03c6fc;
+      }
       form-control:focus {
         border-color: #58c5f7 !important;
       }
@@ -476,7 +479,7 @@ if (mysqli_num_rows($result) > 0) {
           <?php foreach ($posts as $post) {?>
         <!-- end function -->
         <p>
-          <a style="color: #03c6fc;" href="<?php echo BASE_URL . '/single_post.php?id= '. $post['post_id']; ?>">
+          <a class="recent-link" style="text-decoration: none;" href="<?php echo BASE_URL . '/single_post.php?id= '. $post['post_id']; ?>">
             <?php echo $post['title']; ?>
           </a>
         </p>
