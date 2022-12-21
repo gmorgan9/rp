@@ -566,9 +566,9 @@ if (mysqli_num_rows($result) > 0) {
 <!-- END Other Scripts and Footer -->
 
 <script>
-  $('#side').scroll(function() { 
-    $('#side_content').css('top', $(this).scrollTop());
-});
+//   $('#side').scroll(function() { 
+//     $('#side_content').css('top', $(this).scrollTop());
+// });
 </script>
 <script>
   divElem = document.querySelector("#blog_style");
