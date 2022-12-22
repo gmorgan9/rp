@@ -181,6 +181,7 @@ if (mysqli_num_rows($result) > 0) {
           <li class="breadcrumb-item" style="font-size: 12px;"><a href="author.php?id=<?php echo $idno; ?>" class="text-decoration-none text-uppercase text-white"><?php echo $row['author']; ?></a></li>
           <li class="breadcrumb-item text-uppercase" style="font-size: 12px;"><?php echo $row['published_date']; ?></li>
           <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;"><a href="category.php?id=<?php echo $c_idno; ?>" class="text-decoration-none text-uppercase text-white"><?php echo $row['category']; ?></a></li>
+          <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;"><a href="#comments" class="text-decoration-none text-uppercase text-white"><?php echo $row['category']; ?></a></li>
         </ol>
       </nav>
 
@@ -353,7 +354,7 @@ if (mysqli_num_rows($result) > 0) {
       
       <br>
 
-      <div class="container ms-3">
+      <div class="container ms-3" id="comments">
         <div class="row">
           <div class="col-9">
             <h5><?php echo $option['name']; ?></h5>
