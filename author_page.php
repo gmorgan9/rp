@@ -124,7 +124,15 @@ if (mysqli_num_rows($result) > 0) {
           <a href="single_post.php?id=<?php echo $option['post_id']; ?>" class="text-decoration-none text-white"><h5 class="card-title blog-title"><?php echo $option['title']; ?></h5></a>
           <div class="pt-4"></div>
           <p class="text-muted" style="font-size: 12px;">
-            <?php echo $option['published_date']; ?>
+            <?php echo $option['published_date']; ?>&nbsp;&nbsp;&nbsp;
+                <?php
+                $sql="SELECT count('1') FROM comments WHERE post_id = '".$option['post_id']."' AND status = 1";
+                $result=mysqli_query($conn,$sql);
+                $rowtotal=mysqli_fetch_array($result); 
+                if($rowtotal > 0){
+                echo "/&nbsp;&nbsp;&nbsp; Comments: $rowtotal[0]";
+                } else {}
+                ?>
           </p>
         </div>
       </div>
