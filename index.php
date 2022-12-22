@@ -33,7 +33,7 @@ session_start();
 $loggedin = $_SESSION['loggedin'];
 if($loggedin == 1) { ?>
   
-  <div class="row" style="width: 110%; background-color: #1e2327; height: 30px;">
+  <div class="row" style="width: 100%; background-color: #1e2327; height: 30px;">
     <div class="col"></div>
     <div class="col">
       <p class="ms-2"><a href="<?php echo BASE_URL . '/cu-admin/' ?>">CacheUp</a></p>
