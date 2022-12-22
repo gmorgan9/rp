@@ -80,7 +80,7 @@ if (mysqli_num_rows($result) > 0) {
     <h1 class="front text-center">
       <strong>Category</strong>
     </h1>
-    <h5>
+    <h5 class="text-center">
     <?php echo $category ?>
     </h5>
   </div>
