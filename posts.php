@@ -1,91 +1,7 @@
 <?php
-
-require_once "../app/database/connection.php";
-// require_once "app/database/functions.php";
-require_once "../path.php";
+require_once "app/database/connection.php";
+require_once "path.php";
 session_start();
-
-// if(isLoggedIn()){
-//   header('location: '. BASE_URL . '/pages/dashboard.php');
-// }
-
-?>
-
-<?php
-
-if(isset($_POST['login'])){
-// $idno  = rand(1000000, 9999999); // figure how to not allow duplicates
-$user_id = mysqli_real_escape_string($conn, $_POST['user_id']);
-$firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
-$lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
-$username = mysqli_real_escape_string($conn, $_POST['username']);
-$email = mysqli_real_escape_string($conn, $_POST['email']);
-$password = md5($_POST['password']);
-$cpassword = md5($_POST['cpassword']);
-$isadmin = $_POST['isadmin'];
-$loggedin = $_POST['loggedin'];
-
-$select = " SELECT * FROM users WHERE username = '$username' && password = '$password' ";
-
-$result = mysqli_query($conn, $select);
-
-if(mysqli_num_rows($result) > 0){
-
-   $row = mysqli_fetch_array($result);
-   $sql = "UPDATE users SET loggedin='1' WHERE username='$username'";
-   if (mysqli_query($conn, $sql)) {
-      echo "Record updated successfully";
-    } else {
-      echo "Error updating record: " . mysqli_error($conn);
-    }
-    $_SESSION['firsname']         = $row['firstname'];
-    $_SESSION['user_id']          = $row['user_id'];
-    $_SESSION['loggedin']         = $row['loggedin'];
-    $_SESSION['user_idno']        = $row['idno'];
-    $_SESSION['lastname']         = $row['lastname'];
-    $_SESSION['username']         = $row['username'];
-    $_SESSION['email']            = $row['email'];
-    $_SESSION['pass']             = $row['password'];
-    $_SESSION['cpass']            = $row['cpassword'];
-    header('location:' . BASE_URL . '/pages/dashboard.php');
-  
-}else{
-   $error[] = 'incorrect email or password!';
-}
-
-};
-?>
-
-<?php
-if(isset($_POST['register'])){
-  $idno  = rand(10000, 99999); // figure how to not allow duplicates
-  $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
-  $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
-  $username = mysqli_real_escape_string($conn, $_POST['username']);
-  $email = mysqli_real_escape_string($conn, $_POST['email']);
-  $password = md5($_POST['password']);
-  $cpassword = md5($_POST['cpassword']);
-  $isadmin = $_POST['isadmin'];
-
-  $select = " SELECT * FROM users WHERE username = '$username' && email = '$email' ";
-
-  $result = mysqli_query($conn, $select);
-
-  if(mysqli_num_rows($result) > 0){
-
-     $error[] = 'user already exist!';
-
-  }else{
-
-     if($password != $cpassword){
-        $error[] = 'passwords do not match!';
-     }else{
-        $insert = "INSERT INTO users (idno, firstname, lastname, username, email, password) VALUES('$idno', '$firstname','$lastname','$username','$email','$password')";
-        mysqli_query($conn, $insert);
-        // header('location:/');
-     }
-  }
-};
 ?>
 
 <!DOCTYPE html>
@@ -101,7 +17,7 @@ if(isset($_POST['register'])){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="../assets/blog.css?v=3.92">
+    <link rel="stylesheet" href="assets/blog.css?v=3.92">
 
     <title>Posts - CacheUp Blog</title>
 
@@ -159,14 +75,14 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-<div class="middle">
-  <h1 class="behind text-center mt-2">
-    Posts
-  </h1>
-  <h1 class="front text-center">
-    <strong>Posts</strong>
-  </h1>
-</div>
+  <div class="middle">
+    <h1 class="behind text-center mt-2">
+      Posts
+    </h1>
+    <h1 class="front text-center">
+      <strong>Posts</strong>
+    </h1>
+  </div>
 
 <!-- end middle -->
 
@@ -175,16 +91,9 @@ if (mysqli_num_rows($result) > 0) {
 
 <!-- start blog posts -->
 
-<!-- <div class="sub-title">
-  <h1 class="behind-2 mt-5">
-    Popular Posts
-  </h1>
-  <h1 class="front-2">
-    <strong>Popular Posts</strong>
-  </h1>
-</div> -->
-<br>
-<div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
+
+  <br>
+  <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <?php
     $query ="SELECT * FROM posts WHERE status = 'published'";
     $result = $conn->query($query);
@@ -202,7 +111,7 @@ if (mysqli_num_rows($result) > 0) {
       </div>
     </div>
   <?php } ?>
-</div>
+  </div>
 
 
 
@@ -211,8 +120,8 @@ if (mysqli_num_rows($result) > 0) {
 
 <!-- social links -->
 
-<!-- Linkedin -->
-<div class="social-links text-center" style="margin-top: 90px; padding-bottom: 30px;">
+  <!-- Linkedin -->
+  <div class="social-links text-center" style="margin-top: 90px; padding-bottom: 30px;">
   <a class="btn btn-primary" style="background-color: #0082ca; border:none !important;" href="#!" role="button"
     ><i class="bi bi-linkedin"></i>
   </a>
@@ -226,7 +135,7 @@ if (mysqli_num_rows($result) > 0) {
   <a class="btn btn-primary" style="background-color: #3b5998; border:none !important;" href="#!" role="button">
     <i class="bi bi-facebook"></i>
   </a>
-</div>
+  </div>
 
 <!-- end social links -->
 
@@ -239,7 +148,7 @@ if (mysqli_num_rows($result) > 0) {
     
 
 
-    <script src="../assets/js/dropdown.js"></script>
+    <script src="assets/js/dropdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
     <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>

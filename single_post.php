@@ -1,92 +1,9 @@
 <?php
-
 require_once "app/database/connection.php";
 require_once "path.php";
 session_start();
-
 ?>
 
-
-<!-- Login Script -->
-  <?php
-
-  if(isset($_POST['login'])){
-  // $idno  = rand(1000000, 9999999); // figure how to not allow duplicates
-  $user_id = mysqli_real_escape_string($conn, $_POST['user_id']);
-  $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
-  $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
-  $username = mysqli_real_escape_string($conn, $_POST['username']);
-  $email = mysqli_real_escape_string($conn, $_POST['email']);
-  $password = md5($_POST['password']);
-  $cpassword = md5($_POST['cpassword']);
-  $isadmin = $_POST['isadmin'];
-  $loggedin = $_POST['loggedin'];
-
-  $select = " SELECT * FROM users WHERE username = '$username' && password = '$password' ";
-
-  $result = mysqli_query($conn, $select);
-
-  if(mysqli_num_rows($result) > 0){
-
-     $row = mysqli_fetch_array($result);
-     $sql = "UPDATE users SET loggedin='1' WHERE username='$username'";
-     if (mysqli_query($conn, $sql)) {
-        echo "Record updated successfully";
-      } else {
-        echo "Error updating record: " . mysqli_error($conn);
-      }
-      $_SESSION['firsname']         = $row['firstname'];
-      $_SESSION['user_id']          = $row['user_id'];
-      $_SESSION['loggedin']         = $row['loggedin'];
-      $_SESSION['user_idno']        = $row['idno'];
-      $_SESSION['lastname']         = $row['lastname'];
-      $_SESSION['username']         = $row['username'];
-      $_SESSION['email']            = $row['email'];
-      $_SESSION['pass']             = $row['password'];
-      $_SESSION['cpass']            = $row['cpassword'];
-      header('location:' . BASE_URL . '/pages/dashboard.php');
-    
-  }else{
-     $error[] = 'incorrect email or password!';
-  }
-
-  };
-  ?>
-<!-- END Login Script -->
-
-<!-- Register Script -->
-  <?php
-  if(isset($_POST['register'])){
-    $idno  = rand(10000, 99999); // figure how to not allow duplicates
-    $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
-    $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
-    $username = mysqli_real_escape_string($conn, $_POST['username']);
-    $email = mysqli_real_escape_string($conn, $_POST['email']);
-    $password = md5($_POST['password']);
-    $cpassword = md5($_POST['cpassword']);
-    $isadmin = $_POST['isadmin'];
-
-    $select = " SELECT * FROM users WHERE username = '$username' && email = '$email' ";
-
-    $result = mysqli_query($conn, $select);
-
-    if(mysqli_num_rows($result) > 0){
-
-       $error[] = 'user already exist!';
-
-    }else{
-
-       if($password != $cpassword){
-          $error[] = 'passwords do not match!';
-       }else{
-          $insert = "INSERT INTO users (idno, firstname, lastname, username, email, password) VALUES('$idno', '$firstname','$lastname','$username','$email','$password')";
-          mysqli_query($conn, $insert);
-          // header('location:/');
-       }
-    }
-  };
-  ?>
-<!-- END Register Script -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -252,6 +169,7 @@ if (mysqli_num_rows($result) > 0) {
         $profile_picture  = $col['profile_picture'];
         $author           = $col['username'];
         $idno             = $col['idno'];
+        $author_idno      = $col['author_idno'];
       }}
     ?>
 
@@ -332,7 +250,7 @@ if (mysqli_num_rows($result) > 0) {
     ></a>
     </div>
     <p class="text-center text-uppercase" style="font-size: 12px; margin-top: 20px;">
-    <a class="post-link" style="text-decoration: none; color: #58c5f7;" href="!#">
+    <a class="post-link" style="text-decoration: none; color: #58c5f7;" href="author_page.php?id=<?php echo $author_idno; ?>">
     <?php
     $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
     $result=mysqli_query($conn,$sql);
@@ -565,7 +483,8 @@ if (mysqli_num_rows($result) > 0) {
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <!-- END Other Scripts and Footer -->
 
-<script>
+<!-- scroll script -->
+  <script>
   $(document).ready(function () {
      var el = $('#side_content');
         var originalelpos = el.offset().top; // take it where it originally is on the page
@@ -578,12 +497,15 @@ if (mysqli_num_rows($result) > 0) {
             el.stop().animate({ 'top': finaldestination }, 1000);
         });
     });
-</script>
-<script>
+  </script>
+<!-- end scroll script -->
+<!-- adds height -->
+  <script>
   divElem = document.querySelector("#blog_style");
   elemHgt = divElem.offsetHeight + 48;
   const side = document.querySelector('#side');
   side.style.height = elemHgt + "px";
-</script>
+  </script>
+<!-- end adds height -->
 </body>
 </html>
