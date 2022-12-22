@@ -34,9 +34,6 @@ if (mysqli_num_rows($result) > 0) {
    while($row = mysqli_fetch_assoc($result)) {
     $category    = $row['category'];
     $title     = $row['title'];
-    $lastname    = $row['lastname'];
-    $pp          = $row['profile_picture'];
-    $joined      = $row['joined'];
 }}
 ?>
     
@@ -67,37 +64,23 @@ if (mysqli_num_rows($result) > 0) {
 
 
 <!-- start middle -->
-    <!-- <div class="middle" style="background-color: #292929;">
-        <div class="pt-5 bio">
-            <div class="img d-flex justify-content-center">
-                <img src="<?php //echo $pp; ?>" style="width: 150px; border-radius: 100%; border: 1px solid #393939;" class="img-fluid" alt="">
-            </div>
-            <div class="pt-4"></div>
-            <h5 class="text-center">
-                <?php //echo $firstname; ?> <?php //echo $lastname; ?>
-            </h5>
-            <p class="text-center text-muted">
-                <?php echo $title; ?>
-            </p>
-            <p class="text-uppercase text-muted text-center" style="font-size: 12px; letter-spacing: .5px;">
-                <?php 
-                ?>
-                Joined: <?php //echo date('F d, Y', strtotime($joined)); ?>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Posts: 
-                <?php
-                // $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
-                // $result=mysqli_query($conn,$sql);
-                // $rowtotal=mysqli_fetch_array($result); 
-                // echo "$rowtotal[0]";
-                ?>
-            </p>
-            <div class="pt-3"></div>
-            <div class="text-center">
-                <a class="website-btn" style="background-color: #03c6fc; color: white; padding: 7px 10px; border-radius: 75px; margin-top: 10px;" href="https://resume.morganserver.com/" target="_blank"><i class="bi bi-globe"></i></a>
-            </div>
-            <div class="pb-5"></div>
-        </div>
-    </div> -->
+<nav class="mt-5" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+      <ol class="breadcrumb justify-content-center">
+        <li class="text-center breadcrumb-item" style="font-size: 12px;"><a href="/" class="text-decoration-none text-uppercase" style="color: #03c6fc;">Home</a></li>
+        <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;">Posts</li>
+      </ol>
+    </nav>
 
+
+
+  <div class="middle">
+    <h1 class="behind text-center mt-2">
+      Posts
+    </h1>
+    <h1 class="front text-center">
+      <strong>Posts</strong>
+    </h1>
+  </div>
 <!-- end middle -->
 
 
