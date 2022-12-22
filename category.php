@@ -110,7 +110,7 @@ if (mysqli_num_rows($result) > 0) {
     if($result->num_rows> 0){
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
     } else { ?>
-    <p>
+    <p class="text-center">
       There are currently no posts tagged with <strong class="text-muted"><?php echo $name;?></strong>.
     </p>
       
