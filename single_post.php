@@ -187,7 +187,7 @@ if (mysqli_num_rows($result) > 0) {
                 $sql="SELECT count('1') FROM comments WHERE post_id = '$post_id' AND status = 1";
                 $result=mysqli_query($conn,$sql);
                 $rowtotal=mysqli_fetch_array($result); 
-                if($rowtotal[0] > 0){
+                if($rowtotal[0] > 1){
                 echo "/&nbsp;&nbsp;&nbsp; $rowtotal[0] Comments";
                 } elseif($rowtotal[0] == 1) {
                   echo "/&nbsp;&nbsp;&nbsp; $rowtotal[0] Comment";
