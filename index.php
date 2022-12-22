@@ -36,13 +36,7 @@ session_start();
   background-color: transparent;
   border: none;
 }
-.dropdown-menu {
-  margin-top: -5px;
-  border: none;
-  background-color: transparent;
-  /* position: relative; */
-  /* display: inline-block; */
-}
+
 .menu-content {
   /* margin-left: -25% !important; */
   padding-top: 10px;
