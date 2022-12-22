@@ -94,12 +94,12 @@ if($loggedin == 1) { ?>
     <div class="col">
       <p class="text-start" style="margin-top: 5px; font-size: 12px;"><img class="ms-3" src="../assets/images/updated-logo.png" style="height: 20px !important; width: 20px !important;" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
     </div>
-    <div class="col-8">
+    <div class="col">
 
 
       <!-- start dropdown -->
-      <p class="dropdown-menu text-end" style="">
-        <a style="font-size: 12px; text-decoration: none; color: white" href="/" class="menu-btn text-white">
+      <p class="dropdown-menu" style="">
+        <a style="font-size: 12px; text-decoration: none; color: white" href="/" class="menu-btn text-end text-white">
           Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i> 
                     </a>
                     <div class="menu-content" style="">
