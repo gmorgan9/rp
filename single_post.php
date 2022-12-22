@@ -185,18 +185,20 @@ if (mysqli_num_rows($result) > 0) {
           <li class="breadcrumb-item" style="font-size: 12px;"><a href="author.php?id=<?php echo $idno; ?>" class="bc-link text-decoration-none text-uppercase text-white"><?php echo $row['author']; ?></a></li>
           <li class="breadcrumb-item text-uppercase" style="font-size: 12px;"><?php echo $row['published_date']; ?></li>
           <li class="breadcrumb-item text-white text-uppercase" style="font-size: 12px;"><a href="category.php?id=<?php echo $c_idno; ?>" class="bc-link text-decoration-none text-uppercase text-white"><?php echo $row['category']; ?></a></li>
-          <li class="breadcrumb-item text-white text-uppercase" style="font-size: 12px;"><a href="#comments" class="bc-link text-decoration-none text-uppercase text-white">
-            <?php
+          <?php
                 $sql="SELECT count('1') FROM comments WHERE post_id = '$post_id' AND status = 1";
                 $result=mysqli_query($conn,$sql);
                 $rowtotal=mysqli_fetch_array($result); 
-                if($rowtotal[0] > 1){
-                echo "$rowtotal[0] Comments";
-                } elseif($rowtotal[0] == 1) {
-                  echo "$rowtotal[0] Comment";
-                } else {}
-                ?>
-          </a></li>
+                if($rowtotal[0] > 1){ ?>
+                <li class="breadcrumb-item text-white text-uppercase" style="font-size: 12px;"><a href="#comments" class="bc-link text-decoration-none text-uppercase text-white">
+                  <?php echo "$rowtotal[0] Comments"; ?>
+                </a></li>
+                <?php } elseif($rowtotal[0] == 1) { ?>
+                <li class="breadcrumb-item text-white text-uppercase" style="font-size: 12px;"><a href="#comments" class="bc-link text-decoration-none text-uppercase text-white">
+                  <?php echo "$rowtotal[0] Comment"; ?>
+                </a></li>
+                <?php } else {} ?>
+          
         </ol>
       </nav>
 
