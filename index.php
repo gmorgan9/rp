@@ -93,7 +93,7 @@ if($loggedin == 1) { ?>
     <div class="col-1">
       <p class="ms-2 pt-2" style="font-size: 12px;"><a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
     </div>
-      <div class="dropdown-menu col-1" style="">
+      <div class="dropdown-menu col-1 pt-2" style="">
         <a class="head-link" style="text-decoration: none; color: white; font-size: 12px;" href="#" class="menu-btn text-white">
           <i class="bi bi-plus"></i>New
         </a>
