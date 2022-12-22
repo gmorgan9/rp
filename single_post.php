@@ -604,9 +604,10 @@ if (mysqli_num_rows($result) > 0) {
 
         //run on scroll
         $(window).scroll(function () {
+            var login = 50;
             var elpos = el.offset().top; // take current situation
             var windowpos = $(window).scrollTop();
-            var finaldestination = windowpos - (50+elpos);
+            var finaldestination = login + windowpos - elpos;
             el.stop().animate({ 'top': finaldestination }, 1000);
         });
     });
