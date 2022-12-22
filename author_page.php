@@ -129,7 +129,7 @@ if (mysqli_num_rows($result) > 0) {
                 $sql="SELECT count('1') FROM comments WHERE post_id = '".$option['post_id']."' AND status = 1";
                 $result=mysqli_query($conn,$sql);
                 $rowtotal=mysqli_fetch_array($result); 
-                if($rowtotal > 0){
+                if($rowtotal[0] > 0){
                 echo "/&nbsp;&nbsp;&nbsp; Comments: $rowtotal[0]";
                 } else {}
                 ?>
