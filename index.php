@@ -30,6 +30,9 @@ session_start();
       .log-link:hover {
         color: #47a0c9 !important;
       }
+      .head-link:hover {
+        color: #47a0c9 !important;
+      }
       /* DROPDOWN */
 .menu-btn {
   padding: 5px;
