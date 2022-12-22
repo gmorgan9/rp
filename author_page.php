@@ -122,6 +122,10 @@ if (mysqli_num_rows($result) > 0) {
         <div class="card-body mb-4">
           <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #03c6fc;"><?php echo $option['category']; ?></p>
           <a href="single_post.php?id=<?php echo $option['post_id']; ?>" class="text-decoration-none text-white"><h5 class="card-title blog-title"><?php echo $option['title']; ?></h5></a>
+          <div class="pt-3"></div>
+          <p>
+            <?php echo $option['published_date']; ?>
+          </p>
         </div>
       </div>
     </div>
