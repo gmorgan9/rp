@@ -42,7 +42,7 @@ $loggedin = $_SESSION['loggedin'];
 if($loggedin == 1) { ?>
   
   <div class="row" style="width: 100.75% !important; background-color: #1e2327; height: 30px;">
-    <div class="col-1">
+    <div class="col-1 d-flex">
       <img src="../assets/images/updated-logo.png" style="height: 20px !important; width: 20px !important;" alt="">
       <p class="ms-2 pt-2" style="font-size: 12px;"><a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
     </div>
