@@ -177,8 +177,8 @@ if (mysqli_num_rows($result) > 0) {
         <ol class="breadcrumb">
           <li style="margin-top: -4.5px;"><img style="border: 1px solid #969696; border-radius: 100%;" src="<?php echo $profile_picture; ?>" width="20px" height="20px" alt=""></li>&nbsp;&nbsp;
           <li class="breadcrumb-item" style="font-size: 12px;"><a href="author.php?id=<?php echo $idno; ?>" class="text-decoration-none text-uppercase text-white"><?php echo $row['author']; ?></a></li>
-          <li class="breadcrumb-item" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase text-white"><?php echo $row['published_date']; ?></a></li>
-          <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;"><?php echo $row['category']; ?></li>
+          <li class="breadcrumb-item" style="font-size: 12px;"><?php echo $row['published_date']; ?></li>
+          <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;"><a href="#" class="text-decoration-none text-uppercase text-white"><?php echo $row['category']; ?></a></li>
         </ol>
       </nav>
 
