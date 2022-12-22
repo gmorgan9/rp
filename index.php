@@ -35,12 +35,12 @@ session_start();
       }
       /* DROPDOWN */
 .menu-btn {
-  /* padding: 5px; */
+  padding: 5px;
   background-color: transparent;
   border: none;
 }
 .dropdown-menu {
-  /* margin-top: -5px; */
+  margin-top: -2px;
   border: none;
   background-color: transparent;
   position: relative;
