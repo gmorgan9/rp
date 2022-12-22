@@ -250,7 +250,7 @@ if (mysqli_num_rows($result) > 0) {
     ></a>
     </div>
     <p class="text-center text-uppercase" style="font-size: 12px; margin-top: 20px;">
-    <a class="post-link" style="text-decoration: none; color: #58c5f7;" href="author_page.php?id=<?php echo $author_idno; ?>">
+    <a class="post-link" style="text-decoration: none; color: #58c5f7;" href="author_page.php?id=<?php echo $idno; ?>">
     <?php
     $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
     $result=mysqli_query($conn,$sql);
