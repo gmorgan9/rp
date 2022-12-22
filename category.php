@@ -24,8 +24,103 @@ session_start();
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+      .log-link:hover {
+        color: #47a0c9 !important;
+      }
+      .head-link:hover {
+        color: #47a0c9 !important;
+      }
+
+      /* DROPDOWN */
+.menu-btn {
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+}
+.dropdown-menu {
+  margin-top: -5px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  display: block;
+}
+.menu-content {
+  /* margin-left: -25% !important; */
+  padding-top: 10px;
+  /* margin-top: 6px; */
+  background-color: #1e2327 !important;
+  /* background-color: #2d3337; */
+  display: none;
+  position: absolute;
+  /* min-width: 200px; */
+  /* z-index: 9999; */
+}
+.a-link {
+  width: 100%;
+}
+.a-link:hover {
+  width: 100%;
+}
+.links {
+  padding: 8px;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+.links:hover {
+  color: #7fade1 !important;
+}
+.dropdown-menu:hover .menu-content {
+  display: block;
+}
+.dropdown-menu:hover .menu-btn {
+  /* background-color: #2d3337; */
+  background-color: #1e2327 !important;
+  padding: 5px;
+}
+    </style>
 </head>
 <body>
+
+<?php
+$loggedin = $_SESSION['loggedin'];
+if($loggedin == 1) { ?>
+  
+  <div class="row" style="width: 100.75% !important; background-color: #1e2327; height: 30px;">
+    <div class="col">
+      <p class="text-start" style="margin-top: 5px; font-size: 12px;"><img class="ms-3" src="../assets/images/updated-logo.png" style="height: 20px !important; width: 20px !important;" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
+    </div>
+    <div class="col">
+
+
+      <!-- start dropdown -->
+        <div class="dropdown-menu text-end float-end" style="">
+          <a style="font-size: 12px; text-decoration: none; color: white;" href="/" class="log-link menu-btn text-white">
+            Welcome, <?php echo $_SESSION['username']; ?> <i class="text-white bi bi-person-square"></i> 
+          </a>
+          <div class="menu-content" style="">
+              <div class="float-start">
+                  <i class="bi bi-person-square text-muted" style="font-size: 45px;margin-left: 15px;"></i>
+              </div>
+              <div class="float-end" style="margin-right: 15px;">
+                  <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>">Edit Profile</a>
+                  <a class="links text-white" href="<?php echo BASE_URL . '/logout.php' ?>">Log Out</a>
+                  <div class="pb-3"></div>
+              </div>
+          </div>
+        </div>
+      <!-- end dropdown -->
+    
+    </div> 
+  </div>
+
+<?php } else {}
+
+?>
+
+
 <?php
 $idno = $_GET['id'];
 $select = " SELECT * FROM posts WHERE category_idno = '$idno' ";
