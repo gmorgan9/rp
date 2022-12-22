@@ -98,22 +98,22 @@ if($loggedin == 1) { ?>
 
 
       <!-- start dropdown -->
-      <div class="dropdown-menu text-end float-end" style="">
-        <a style="font-size: 12px; text-decoration: none; color: white;" href="/" class="log-link menu-btn text-white">
-          Welcome, <?php echo $_SESSION['username']; ?> <i class="text-white bi bi-person-square"></i> 
-                    </a>
-                    <div class="menu-content" style="">
-                        <div class="float-start">
-                            <i class="bi bi-person-square text-muted" style="font-size: 45px;margin-left: 15px;"></i>
-                        </div>
-                        <div class="float-end" style="margin-right: 15px;">
-                            <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>">Edit Profile</a>
-                            <a class="links text-white" href="<?php echo BASE_URL . '/logout.php' ?>">Log Out</a>
-                            <div class="pb-3"></div>
-                        </div>
-                    </div>
-</div>
-                <!-- end dropdown -->
+        <div class="dropdown-menu text-end float-end" style="">
+          <a style="font-size: 12px; text-decoration: none; color: white;" href="/" class="log-link menu-btn text-white">
+            Welcome, <?php echo $_SESSION['username']; ?> <i class="text-white bi bi-person-square"></i> 
+          </a>
+          <div class="menu-content" style="">
+              <div class="float-start">
+                  <i class="bi bi-person-square text-muted" style="font-size: 45px;margin-left: 15px;"></i>
+              </div>
+              <div class="float-end" style="margin-right: 15px;">
+                  <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>">Edit Profile</a>
+                  <a class="links text-white" href="<?php echo BASE_URL . '/logout.php' ?>">Log Out</a>
+                  <div class="pb-3"></div>
+              </div>
+          </div>
+        </div>
+      <!-- end dropdown -->
     
     </div> 
   </div>
