@@ -64,21 +64,21 @@ if (mysqli_num_rows($result) > 0) {
 
 
 <!-- start middle -->
-<nav class="mt-5" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+<!-- <nav class="mt-5" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
       <ol class="breadcrumb justify-content-center">
         <li class="text-center breadcrumb-item" style="font-size: 12px;"><a href="/" class="text-decoration-none text-uppercase" style="color: #03c6fc;">Home</a></li>
         <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;">Posts</li>
       </ol>
-    </nav>
+    </nav> -->
 
 
 
   <div class="middle">
     <h1 class="behind text-center mt-2">
-      Posts
+      <?php echo $category ?>
     </h1>
     <h1 class="front text-center">
-      <strong>Posts</strong>
+      <strong><?php echo $category ?></strong>
     </h1>
   </div>
 <!-- end middle -->
