@@ -101,9 +101,9 @@ if (mysqli_num_rows($result) > 0) {
     $result = $conn->query($query);
     if($result->num_rows> 0){
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
-    } else {
-      echo "There are currently no posts tagged with <span>$category</span>.";
-    }
+    } else {?>
+      There are currently no posts tagged with <span><?php echo $category;?></span>.
+   <?php }
   ?>
   <?php foreach ($options as $option) { ?>
     <div class="col">
