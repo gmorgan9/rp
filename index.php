@@ -33,54 +33,6 @@ session_start();
       .head-link:hover {
         color: #47a0c9 !important;
       }
-      /* DROPDOWN */
-.menu-btn {
-  padding: 5px;
-  background-color: transparent;
-  border: none;
-}
-.dropdown-menu {
-  margin-top: -4px;
-  border: none;
-  background-color: transparent;
-  position: relative;
-  display: inline-block;
-}
-.menu-content {
-  /* margin-left: -25% !important; */
-  padding-top: 10px;
-  /* margin-top: 6px; */
-  background-color: #1e2327 !important;
-  /* background-color: #2d3337; */
-  display: none;
-  position: absolute;
-  /* min-width: 200px; */
-  /* z-index: 9999; */
-}
-.a-link {
-  width: 100%;
-}
-.a-link:hover {
-  width: 100%;
-}
-.links {
-  padding: 8px;
-  font-size: 12px;
-  text-decoration: none;
-  display: block;
-  font-weight: bold;
-}
-.links:hover {
-  color: #7fade1 !important;
-}
-.dropdown-menu:hover .menu-content {
-  display: block;
-}
-.dropdown-menu:hover .menu-btn {
-  /* background-color: #2d3337; */
-  background-color: #1e2327 !important;
-  padding: 5px;
-}
     </style>
 </head>
 <body>
@@ -93,18 +45,6 @@ if($loggedin == 1) { ?>
     <div class="col-1">
       <p class="ms-2 pt-2" style="font-size: 12px;"><a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
     </div>
-      <div class="dropdown-menu col-1" style="">
-        <a class="head-link" style="text-decoration: none; color: white; font-size: 12px;" href="#" class="menu-btn text-white">
-          <i class="bi bi-plus"></i>New
-        </a>
-        <div class="menu-content" style="z-index: -1; margin-left: 10px !important; width: 60% !important;">
-          <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/add_posts.php' ?>">Post</a>
-          <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/categories.php' ?>">Category</a>
-          <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/add_user.php' ?>">User</a>
-          <div class="pb-3"></div>
-        </div>
-      </div>
-    
     <div class="col">
       <p class="pt-2 text-end" style="font-size: 12px;">Welcome, <?php echo $_SESSION['username']; ?></p>
     </div> 
