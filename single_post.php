@@ -188,9 +188,9 @@ if (mysqli_num_rows($result) > 0) {
                 $result=mysqli_query($conn,$sql);
                 $rowtotal=mysqli_fetch_array($result); 
                 if($rowtotal[0] > 1){
-                echo "/&nbsp;&nbsp;&nbsp; $rowtotal[0] Comments";
+                echo "&nbsp;&nbsp;&nbsp; $rowtotal[0] Comments";
                 } elseif($rowtotal[0] == 1) {
-                  echo "/&nbsp;&nbsp;&nbsp; $rowtotal[0] Comment";
+                  echo "&nbsp;&nbsp;&nbsp; $rowtotal[0] Comment";
                 } else {}
                 ?>
           </a></li>
