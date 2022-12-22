@@ -102,7 +102,10 @@ if (mysqli_num_rows($result) > 0) {
     if($result->num_rows> 0){
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
     } else {?>
-      There are currently no posts tagged with <?php echo $category;?>.
+    <p>
+      There are currently no posts tagged with <strong><?php echo $category;?></strong>.
+    </p>
+      
    <?php }
   ?>
   <?php foreach ($options as $option) { ?>
