@@ -28,12 +28,12 @@ session_start();
 <body>
 <?php
 $idno = $_GET['id'];
-$select = " SELECT * FROM users WHERE idno = '$idno' ";
+$select = " SELECT * FROM posts WHERE category_idno = '$idno' ";
 $result = mysqli_query($conn, $select);
 if (mysqli_num_rows($result) > 0) {
    while($row = mysqli_fetch_assoc($result)) {
-    $username    = $row['username'];
-    $firstname     = $row['firstname'];
+    $category    = $row['category'];
+    $title     = $row['title'];
     $lastname    = $row['lastname'];
     $pp          = $row['profile_picture'];
     $joined      = $row['joined'];
@@ -67,27 +67,27 @@ if (mysqli_num_rows($result) > 0) {
 
 
 <!-- start middle -->
-    <div class="middle" style="background-color: #292929;">
+    <!-- <div class="middle" style="background-color: #292929;">
         <div class="pt-5 bio">
             <div class="img d-flex justify-content-center">
-                <img src="<?php echo $pp; ?>" style="width: 150px; border-radius: 100%; border: 1px solid #393939;" class="img-fluid" alt="">
+                <img src="<?php //echo $pp; ?>" style="width: 150px; border-radius: 100%; border: 1px solid #393939;" class="img-fluid" alt="">
             </div>
             <div class="pt-4"></div>
             <h5 class="text-center">
-                <?php echo $firstname; ?> <?php echo $lastname; ?>
+                <?php //echo $firstname; ?> <?php //echo $lastname; ?>
             </h5>
             <p class="text-center text-muted">
-                <?php echo $username; ?>
+                <?php echo $title; ?>
             </p>
             <p class="text-uppercase text-muted text-center" style="font-size: 12px; letter-spacing: .5px;">
                 <?php 
                 ?>
-                Joined: <?php echo date('F d, Y', strtotime($joined)); ?>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Posts: 
+                Joined: <?php //echo date('F d, Y', strtotime($joined)); ?>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Posts: 
                 <?php
-                $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
-                $result=mysqli_query($conn,$sql);
-                $rowtotal=mysqli_fetch_array($result); 
-                echo "$rowtotal[0]";
+                // $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
+                // $result=mysqli_query($conn,$sql);
+                // $rowtotal=mysqli_fetch_array($result); 
+                // echo "$rowtotal[0]";
                 ?>
             </p>
             <div class="pt-3"></div>
@@ -96,7 +96,7 @@ if (mysqli_num_rows($result) > 0) {
             </div>
             <div class="pb-5"></div>
         </div>
-    </div>
+    </div> -->
 
 <!-- end middle -->
 
