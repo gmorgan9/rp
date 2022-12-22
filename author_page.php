@@ -94,7 +94,7 @@ if (mysqli_num_rows($result) > 0) {
         </p>
         <p class="text-uppercase">
             <?php 
-            $date = date_format($joined, "F d, Y")
+            $date = date_format($joined, "F d, Y");
             ?>
             joined: <?php echo $date; ?> / posts: 
             <?php
