@@ -41,11 +41,11 @@ session_start();
   border: none;
 }
 .dropdown-menu {
-  margin-top: -5px;
+  /* margin-top: -5px; */
   border: none;
   background-color: transparent;
-  position: relative;
-  display: inline-block;
+  /* position: relative; */
+  /* display: inline-block; */
 }
 .menu-content {
   /* margin-left: -25% !important; */
