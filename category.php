@@ -89,39 +89,39 @@ if (mysqli_num_rows($result) > 0) {
 <!-- start blog lists -->
 
 
-  <br>
+  <!-- <br>
   <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <?php
-    $idno = $_GET['id'];
-    $query ="SELECT * FROM posts WHERE author_idno = '$idno' AND status = 'published'";
-    $result = $conn->query($query);
-    if($result->num_rows> 0){
-      $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
-    }
+    // $idno = $_GET['id'];
+    // $query ="SELECT * FROM posts WHERE author_idno = '$idno' AND status = 'published'";
+    // $result = $conn->query($query);
+    // if($result->num_rows> 0){
+    //   $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+    // }
   ?>
-  <?php foreach ($options as $option) { ?>
+  <?php //foreach ($options as $option) { ?>
     <div class="col">
       <div class="card h-100" style="background-color: #1f1f1f;">
         <div class="card-body">
-          <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #03c6fc;"><?php echo $option['category']; ?></p>
-          <a href="single_post.php?id=<?php echo $option['post_id']; ?>" class="text-decoration-none text-white"><h5 class="card-title blog-title"><?php echo $option['title']; ?></h5></a>
+          <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #03c6fc;"><?php //echo $option['category']; ?></p>
+          <a href="single_post.php?id=<?php //echo $option['post_id']; ?>" class="text-decoration-none text-white"><h5 class="card-title blog-title"><?php //echo $option['title']; ?></h5></a>
           <div class="pt-4"></div>
           <p class="text-muted" style="font-size: 12px;">
-            <?php echo $option['published_date']; ?>&nbsp;&nbsp;&nbsp;
+            <?php //echo $option['published_date']; ?>&nbsp;&nbsp;&nbsp;
                 <?php
-                $sql="SELECT count('1') FROM comments WHERE post_id = '".$option['post_id']."' AND status = 1";
-                $result=mysqli_query($conn,$sql);
-                $rowtotal=mysqli_fetch_array($result); 
-                if($rowtotal[0] > 0){
-                echo "/&nbsp;&nbsp;&nbsp; Comments: $rowtotal[0]";
-                } else {}
+                // $sql="SELECT count('1') FROM comments WHERE post_id = '".$option['post_id']."' AND status = 1";
+                // $result=mysqli_query($conn,$sql);
+                // $rowtotal=mysqli_fetch_array($result); 
+                // if($rowtotal[0] > 0){
+                // echo "/&nbsp;&nbsp;&nbsp; Comments: $rowtotal[0]";
+                // } else {}
                 ?>
           </p>
         </div>
       </div>
     </div>
-  <?php } ?>
-  </div>
+  <?php //} ?>
+  </div> -->
 
 
 
