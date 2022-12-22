@@ -75,7 +75,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-  <div class="middle">
+  <div class="middle" style="background-color: #292929;">
     <h1 class="behind text-center mt-2">
       Author
     </h1>
@@ -103,7 +103,6 @@ if (mysqli_num_rows($result) > 0) {
     }
   ?>
   <?php foreach ($options as $option) { ?>
-    <?php echo $option['author']; ?>
     <div class="col">
       <div class="card h-100" style="background-color: #1f1f1f;">
         <div class="card-body mb-4">
