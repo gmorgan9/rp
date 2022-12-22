@@ -36,7 +36,7 @@ session_start();
 
       /* DROPDOWN */
 .menu-btn {
-  /* padding: 5px; */
+  padding: 5px;
   background-color: transparent;
   border: none;
 }
