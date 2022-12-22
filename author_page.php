@@ -27,14 +27,15 @@ session_start();
 </head>
 <body>
 <?php
-$user_id = $_SESSION['user_id'];
-$select = " SELECT * FROM users WHERE user_id = '$user_id' ";
+$idno = $_GET['id'];
+$select = " SELECT * FROM users WHERE idno = '$idno' ";
 $result = mysqli_query($conn, $select);
 if (mysqli_num_rows($result) > 0) {
    while($row = mysqli_fetch_assoc($result)) {
-    $firstname    = $row['firstname'];
-    $loggedin     = $row['loggedin'];
-    $acct_type    = $row['isadmin'];
+    $username    = $row['username'];
+    $firstname     = $row['firstname'];
+    $lastname    = $row['lastname'];
+    $pp          = $row['profile_picture'];
 }}
 ?>
     
@@ -73,16 +74,18 @@ if (mysqli_num_rows($result) > 0) {
       </ol>
     </nav>
 
+    <?php 
+
+    ?>
+
 
 
   
-    <h1 class="behind text-center mt-2">
-      Author
-    </h1>
-    <h1 class="front text-center">
-      <strong>Author</strong>
-    </h1>
-  </div>
+    <img src="<?php echo $pp; ?>" alt="">
+
+
+
+</div>
 
 <!-- end middle -->
 
