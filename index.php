@@ -46,7 +46,6 @@ if($loggedin == 1) { ?>
       <img src="../assets/images/updated-logo.png" style="height: 20px !important; width: 20px !important;" alt="">
     </div>
     <div class="col-1">
-      <img src="../assets/images/updated-logo.png" style="height: 20px !important; width: 20px !important;" alt="">
       <p class="ms-2 pt-2" style="font-size: 12px;"><a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
     </div>
     <div class="col">
