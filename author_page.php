@@ -103,6 +103,7 @@ if (mysqli_num_rows($result) > 0) {
             echo "$rowtotal[0]";
             ?>
         </p>
+        <a class="text-center website-btn" style="background-color: #03c6fc; color: white; padding: 7px 10px; border-radius: 75px; margin-top: 10px;" href="https://resume.morganserver.com/" target="_blank"><i class="bi bi-globe"></i></a>
     </div>
 
 
