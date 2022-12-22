@@ -38,7 +38,7 @@
                     <a class="head-link" style="font-size: 12px; text-decoration: none; color: white" href="/" class="menu-btn text-white">
                         Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i> 
                     </a>
-                    <div class="menu-content" style="margin-top: 6px; width: 110%;">
+                    <div class="menu-content" style="margin-top: 6px;margin-left: -15px;">
                         <div class="float-start">
                             <i class="bi bi-person-square text-muted" style="font-size: 45px;margin-left: 15px;"></i>
                         </div>
