@@ -38,8 +38,8 @@ if($loggedin == 1) { ?>
     <div class="col-9">
       <p class="ms-2"><a href="<?php echo BASE_URL . '/cu-admin/' ?>">CacheUp</a></p>
     </div>
-    <div class="col-2">
-      <p class="pt-2 me-2" style="font-size: 12px;">Welcome, <?php echo $_SESSION['username']; ?></p>
+    <div class="col-3">
+      <p class="pt-2" style="font-size: 12px;">Welcome, <?php echo $_SESSION['username']; ?></p>
     </div> 
   </div>
 
