@@ -34,7 +34,7 @@
             </div>
             <div style="float: right !important;">
             <!-- start dropdown -->
-                <div class="dropdown-menu" style="position: relative; z-index: 1 !important;padding-left: -15px;">
+                <div class="dropdown-menu" style="position: relative; z-index: 1 !important;padding-left: -15px !important;">
                     <a class="head-link" style="font-size: 12px; text-decoration: none; color: white" href="/" class="menu-btn text-white">
                         Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i> 
                     </a>
