@@ -46,7 +46,35 @@ if($loggedin == 1) { ?>
       <p class="text-start" style="margin-top: 5px; font-size: 12px;"><img class="ms-3" src="../assets/images/updated-logo.png" style="height: 20px !important; width: 20px !important;" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
     </div>
     <div class="col">
-      <p class="text-end" style="margin-top: 5px; font-size: 12px;">Welcome, <?php echo $_SESSION['username']; ?>&nbsp;<i class="bi bi-person-square"></i></p>
+
+      <p class="text-end" style="margin-top: 5px; font-size: 12px;">
+
+      <!-- start dropdown -->
+      <div class="dropdown-menu" style="position: relative; z-index: 1 !important;">
+                    <a class="head-link" style="font-size: 14px; text-decoration: none; color: white" href="/" class="menu-btn text-white">
+                        Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i> 
+                    </a>
+                    <div class="menu-content" style="margin-top: 6px;">
+                        <div class="float-start">
+                            <i class="bi bi-person-square text-muted" style="font-size: 45px;margin-left: 15px;"></i>
+                        </div>
+                        <div class="float-end" style="margin-right: 15px;">
+                            <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>">Edit Profile</a>
+                            <!-- <a class="links text-white" href="#">Visit Us</a> -->
+                            <a class="links text-white" href="<?php echo BASE_URL . '/logout.php' ?>">Log Out</a>
+                            <div class="pb-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end dropdown -->
+      
+      
+      
+      Welcome, <?php echo $_SESSION['username']; ?>&nbsp;<i class="bi bi-person-square"></i>
+    
+    
+    
+    </p>
     </div> 
   </div>
 
