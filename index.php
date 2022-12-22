@@ -34,7 +34,7 @@ $loggedin = $_SESSION['loggedin'];
 if($loggedin == 1) { ?>
   
   <div class="" style="width: 100%; background-color: #1e2327; height: 30px;">
-    <p class="pt-1 text-end">Welcome, <?php echo $_SESSION['username']; ?></p> 
+    <p class="pt-1 pe-2 text-end">Welcome, <?php echo $_SESSION['username']; ?></p> 
   </div>
 
 <?php } else {}
