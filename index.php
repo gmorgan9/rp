@@ -99,7 +99,7 @@ if($loggedin == 1) { ?>
       <p class="text-end" style="margin-top: 5px; font-size: 12px;">
 
       <!-- start dropdown -->
-      <div class="dropdown-menu" style="position: relative; z-index: 1 !important;">
+      <div class="dropdown-menu" style="">
         <a class="head-link" style="font-size: 14px; text-decoration: none; color: white" href="/" class="menu-btn text-white">
           Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i> 
                     </a>
