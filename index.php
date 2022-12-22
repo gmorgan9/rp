@@ -96,7 +96,6 @@ if($loggedin == 1) { ?>
     </div>
     <div class="col">
 
-      <p class="text-end">
 
       <!-- start dropdown -->
       <div class="dropdown-menu" style="">
@@ -116,9 +115,6 @@ if($loggedin == 1) { ?>
                 </div>
                 <!-- end dropdown -->
     
-    
-    
-    </p>
     </div> 
   </div>
 
