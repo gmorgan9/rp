@@ -98,7 +98,7 @@ if($loggedin == 1) { ?>
 
 
       <!-- start dropdown -->
-      <div class="dropdown-menu" style="">
+      <p class="dropdown-menu" style="">
         <a style="font-size: 12px; text-decoration: none; color: white" href="/" class="menu-btn text-white">
           Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i> 
                     </a>
@@ -112,7 +112,7 @@ if($loggedin == 1) { ?>
                             <div class="pb-3"></div>
                         </div>
                     </div>
-                </div>
+</p>
                 <!-- end dropdown -->
     
     </div> 
