@@ -96,7 +96,7 @@ if($loggedin == 1) { ?>
     </div>
     <div class="col">
 
-      <p class="text-end" style="margin-top: 5px; font-size: 12px;">
+      <p class="text-end" style="font-size: 12px;">
 
       <!-- start dropdown -->
       <div class="dropdown-menu" style="">
