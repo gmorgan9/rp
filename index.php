@@ -50,7 +50,7 @@ session_start();
   background-color: #1e2327 !important;
   /* background-color: #2d3337; */
   display: none;
-  position: absolute;
+  /* position: absolute; */
   /* min-width: 200px; */
   /* z-index: 9999; */
 }
