@@ -82,7 +82,7 @@ if (mysqli_num_rows($result) > 0) {
 
     <div class="pt-5 bio d-flex justify-content-center">
         <img src="<?php echo $pp; ?>" style="width: 150px; border-radius: 100%; border: 1px solid #393939;" class="img-fluid" alt="">
-        <br>
+        <br><br><br><br><br><br><br><br>
         <h5>
             <?php echo $firstname; ?> <?php echo $lastname; ?>
         </h5>
