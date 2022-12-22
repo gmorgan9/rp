@@ -34,11 +34,11 @@
             </div>
             <div style="float: right !important;">
             <!-- start dropdown -->
-                <div class="dropdown-menu" style="position: relative; z-index: 1 !important;padding-left: -15px !important;">
+                <div class="dropdown-menu" style="position: relative; z-index: 1 !important;">
                     <a class="head-link" style="font-size: 12px; text-decoration: none; color: white" href="/" class="menu-btn text-white">
                         Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i> 
                     </a>
-                    <div class="menu-content" style="margin-top: 6px;">
+                    <div class="menu-content" style="margin-top: 6px; width: 75%;">
                         <div class="float-start">
                             <i class="bi bi-person-square text-muted" style="font-size: 45px;margin-left: 15px;"></i>
                         </div>
