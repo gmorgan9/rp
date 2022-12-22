@@ -101,6 +101,8 @@ if (mysqli_num_rows($result) > 0) {
     $result = $conn->query($query);
     if($result->num_rows> 0){
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+      echo 'none';
     }
   ?>
   <?php foreach ($options as $option) { ?>
@@ -124,9 +126,7 @@ if (mysqli_num_rows($result) > 0) {
         </div>
       </div>
     </div>
-  <?php } else {
-    echo "none";
-  } ?>
+  <?php } ?>
   </div>
 
 
