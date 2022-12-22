@@ -44,7 +44,7 @@ session_start();
   margin-top: -5px;
   border: none;
   background-color: transparent;
-  /* position: relative; */
+  position: relative;
   display: block;
 }
 .menu-content {
