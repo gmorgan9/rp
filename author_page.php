@@ -77,10 +77,10 @@ if (mysqli_num_rows($result) > 0) {
 
   <div class="middle">
     <h1 class="behind text-center mt-2">
-      Posts
+      Author
     </h1>
     <h1 class="front text-center">
-      <strong>Posts</strong>
+      <strong>Author</strong>
     </h1>
   </div>
 
@@ -95,13 +95,15 @@ if (mysqli_num_rows($result) > 0) {
   <br>
   <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <?php
-    $query ="SELECT * FROM posts WHERE status = 'published'";
+    $idno = $_GET['id'];
+    $query ="SELECT * FROM posts WHERE author_idno = '$idno'";
     $result = $conn->query($query);
     if($result->num_rows> 0){
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
   ?>
   <?php foreach ($options as $option) { ?>
+    <?php echo $option['author']; ?>
     <div class="col">
       <div class="card h-100" style="background-color: #1f1f1f;">
         <div class="card-body mb-4">
