@@ -35,7 +35,7 @@ if($loggedin == 1) { ?>
   
   <div class="d-flex" style="width: 100%; background-color: #1e2327; height: 30px;">
     <p class=""><a href="<?php echo BASE_URL . '/cu-admin/' ?>">CacheUp</a></p>
-    <p class="pe-2 text-end" style="font-size: 12px;">Welcome, <?php echo $_SESSION['username']; ?></p> 
+    <p class="pe-2 align-items-end" style="font-size: 12px;">Welcome, <?php echo $_SESSION['username']; ?></p> 
   </div>
 
 <?php } else {}
