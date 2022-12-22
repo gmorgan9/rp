@@ -28,6 +28,12 @@ session_start();
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+<?php
+$loggedin = $_SESSION['loggedin'];
+echo $loggedin;
+
+?>
 <?php
 $user_id = $_SESSION['user_id'];
 $select = " SELECT * FROM users WHERE user_id = '$user_id' ";
