@@ -89,6 +89,7 @@ if($loggedin == 1) { ?>
   <div class="row" style="width: 100.75% !important; background-color: #1e2327; height: 30px;">
     <div class="col">
       <p class="ms-2 pt-2" style="font-size: 12px;"><a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
+    </div>
       <div class="dropdown-menu col" style="margin-top: -8px !important;">
         <a class="head-link" style="text-decoration: none; color: white; font-size: 14px;" href="#" class="menu-btn text-white">
           <i class="bi bi-plus"></i>New
@@ -100,7 +101,7 @@ if($loggedin == 1) { ?>
           <div class="pb-3"></div>
         </div>
       </div>
-    </div>
+    
     <div class="col">
       <p class="pt-2 text-end" style="font-size: 12px;">Welcome, <?php echo $_SESSION['username']; ?></p>
     </div> 
