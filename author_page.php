@@ -36,6 +36,7 @@ if (mysqli_num_rows($result) > 0) {
     $firstname     = $row['firstname'];
     $lastname    = $row['lastname'];
     $pp          = $row['profile_picture'];
+    $joined      = $row['joined'];
 }}
 ?>
     
@@ -84,12 +85,21 @@ if (mysqli_num_rows($result) > 0) {
         <div class="img d-flex justify-content-center">
             <img src="<?php echo $pp; ?>" style="width: 150px; border-radius: 100%; border: 1px solid #393939;" class="img-fluid" alt="">
         </div>
-        <div class="pt-3"></div>
+        <div class="pt-5"></div>
         <h5 class="text-center">
             <?php echo $firstname; ?> <?php echo $lastname; ?>
         </h5>
         <p class="text-center text-muted">
             <?php echo $username; ?>
+        </p>
+        <p class="text-uppercase">
+            joined: <?php echo date_format($joined, 'F d, Y'); ?> / posts: 
+            <?php
+            $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
+            $result=mysqli_query($conn,$sql);
+            $rowtotal=mysqli_fetch_array($result); 
+            echo "$rowtotal[0]";
+            ?>
         </p>
     </div>
 
