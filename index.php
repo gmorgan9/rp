@@ -98,8 +98,8 @@ if($loggedin == 1) { ?>
 
 
       <!-- start dropdown -->
-      <div class="dropdown-menu text-end" style="">
-        <a style="font-size: 12px; text-decoration: none; color: white" href="/" class="menu-btn text-end text-white">
+      <div class="dropdown-menu" style="">
+        <a style="font-size: 12px; text-decoration: none; color: white;" href="/" class="menu-btn text-white">
           Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i> 
                     </a>
                     <div class="menu-content" style="">
