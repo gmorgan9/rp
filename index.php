@@ -46,7 +46,7 @@ if($loggedin == 1) { ?>
       <img class="ms-3" src="../assets/images/updated-logo.png" style="height: 20px !important; width: 20px !important;" alt="">
     </div>
     <div class="col-1">
-      <p class="text-start" style="margin-top: 5px; margin-left: -45px; font-size: 12px;"><a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
+      <p class="text-start" style="margin-top: 5px; margin-left: -60px; font-size: 12px;"><a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
     </div>
     <div class="col">
       <p class="pt-2 text-end" style="font-size: 12px;">Welcome, <?php echo $_SESSION['username']; ?></p>
