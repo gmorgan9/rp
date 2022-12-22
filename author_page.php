@@ -81,7 +81,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
   
-    <img src="<?php echo $pp; ?>" alt="">
+    <img src="<?php echo $pp; ?>" style="width: 50%;" class="rounded-circle img-fluid" alt="">
 
 
 
