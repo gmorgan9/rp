@@ -26,6 +26,11 @@ session_start();
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+      .log-link:hover {
+        color: #03c6fc !important;
+      }
+    </style>
 </head>
 <body>
 
@@ -35,7 +40,7 @@ if($loggedin == 1) { ?>
   
   <div class="row" style="width: 100.75% !important; background-color: #1e2327; height: 30px;">
     <div class="col">
-      <p class="ms-2 pt-2" style="font-size: 12px;"><a class="text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
+      <p class="ms-2 pt-2" style="font-size: 12px;"><a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
     </div>
     <div class="col">
       <p class="pt-2 text-end" style="font-size: 12px;">Welcome, <?php echo $_SESSION['username']; ?></p>
