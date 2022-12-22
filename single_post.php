@@ -182,7 +182,7 @@ if (mysqli_num_rows($result) > 0) {
       <nav class="mt-4" aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li style="margin-top: -4.5px;"><img style="border: 1px solid #969696; border-radius: 100%;" src="<?php echo $profile_picture; ?>" width="20px" height="20px" alt=""></li>&nbsp;&nbsp;
-          <li class="breadcrumb-item" style="font-size: 12px;"><a href="author.php?id=<?php echo $idno; ?>" class="text-decoration-none text-uppercase text-white"><?php echo $row['author']; ?></a></li>
+          <li class="breadcrumb-item" style="font-size: 12px;"><a href="author.php?id=<?php echo $idno; ?>" class="bc-link text-decoration-none text-uppercase text-white"><?php echo $row['author']; ?></a></li>
           <li class="breadcrumb-item text-uppercase" style="font-size: 12px;"><?php echo $row['published_date']; ?></li>
           <li class="breadcrumb-item text-white text-uppercase" style="font-size: 12px;"><a href="category.php?id=<?php echo $c_idno; ?>" class="bc-link text-decoration-none text-uppercase text-white"><?php echo $row['category']; ?></a></li>
           <li class="breadcrumb-item text-white text-uppercase" style="font-size: 12px;"><a href="#comments" class="bc-link text-decoration-none text-uppercase text-white">
