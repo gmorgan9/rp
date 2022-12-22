@@ -94,9 +94,8 @@ if (mysqli_num_rows($result) > 0) {
         </p>
         <p class="text-uppercase">
             <?php 
-            $date = date_format($joined, "F d, Y");
             ?>
-            joined: <?php echo $date; ?> / posts: 
+            joined: <?php echo date('F d, Y', strtotime($joined)); ?> / posts: 
             <?php
             $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
             $result=mysqli_query($conn,$sql);
