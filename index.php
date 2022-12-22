@@ -34,11 +34,11 @@ $loggedin = $_SESSION['loggedin'];
 if($loggedin == 1) { ?>
   
   <div class="row" style="width: 110%; background-color: #1e2327; height: 30px;">
-    <div class="col-1"></div>
-    <div class="col-7">
+    <div class="col"></div>
+    <div class="col">
       <p class="ms-2"><a href="<?php echo BASE_URL . '/cu-admin/' ?>">CacheUp</a></p>
     </div>
-    <div class="col-2">
+    <div class="col">
       <p class="pt-2 text-end" style="font-size: 12px;">Welcome, <?php echo $_SESSION['username']; ?></p>
     </div> 
   </div>
