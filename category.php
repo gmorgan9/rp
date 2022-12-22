@@ -103,7 +103,7 @@ if (mysqli_num_rows($result) > 0) {
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
     } else {?>
     <p>
-      There are currently no posts tagged with <strong><?php echo $category;?></strong>.
+      There are currently no posts tagged with <strong class="text-muted"><?php echo $category;?></strong>.
     </p>
       
    <?php }
