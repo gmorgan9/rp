@@ -101,7 +101,15 @@ if (mysqli_num_rows($result) > 0) {
     $result = $conn->query($query);
     if($result->num_rows> 0){
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
-    } else {?>
+    } else {
+      $select = " SELECT * FROM categories WHERE idno = '$idno'";
+      $result = mysqli_query($conn, $select);
+      if (mysqli_num_rows($result) > 0) {
+         while($row = mysqli_fetch_assoc($result)) {
+          $category    = $row['category'];
+      }}
+
+      ?>
     <p>
       There are currently no posts tagged with <strong class="text-muted"><?php echo $category;?></strong>.
     </p>
