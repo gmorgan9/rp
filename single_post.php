@@ -143,6 +143,7 @@ if (mysqli_num_rows($result) > 0) {
         $post_idno = $row['idno'];
         $title     = $row['title'];
         $c_idno    = $row['category_idno'];
+        $post_id   = $row['post_id'];
     ?>
 
     <div class="blog_post mb-5 mt-5 ms-5 p-5" id="blog_style" style="float: left; width: 65%; background-color: #1f1f1f;">
@@ -180,8 +181,17 @@ if (mysqli_num_rows($result) > 0) {
           <li style="margin-top: -4.5px;"><img style="border: 1px solid #969696; border-radius: 100%;" src="<?php echo $profile_picture; ?>" width="20px" height="20px" alt=""></li>&nbsp;&nbsp;
           <li class="breadcrumb-item" style="font-size: 12px;"><a href="author.php?id=<?php echo $idno; ?>" class="text-decoration-none text-uppercase text-white"><?php echo $row['author']; ?></a></li>
           <li class="breadcrumb-item text-uppercase" style="font-size: 12px;"><?php echo $row['published_date']; ?></li>
-          <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;"><a href="category.php?id=<?php echo $c_idno; ?>" class="text-decoration-none text-uppercase text-white"><?php echo $row['category']; ?></a></li>
-          <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;"><a href="#comments" class="text-decoration-none text-uppercase text-white"><?php echo $row['category']; ?></a></li>
+          <li class="breadcrumb-item text-white text-uppercase" style="font-size: 12px;"><a href="category.php?id=<?php echo $c_idno; ?>" class="text-decoration-none text-uppercase text-white"><?php echo $row['category']; ?></a></li>
+          <li class="breadcrumb-item text-white text-uppercase" style="font-size: 12px;"><a href="#comments" class="text-decoration-none text-uppercase text-white">
+            <?php
+                $sql="SELECT count('1') FROM comments WHERE post_id = '$post_id' AND status = 1";
+                $result=mysqli_query($conn,$sql);
+                $rowtotal=mysqli_fetch_array($result); 
+                if($rowtotal[0] > 0){
+                echo "/&nbsp;&nbsp;&nbsp; Comments: $rowtotal[0]";
+                } else {}
+                ?>
+          </a></li>
         </ol>
       </nav>
 
