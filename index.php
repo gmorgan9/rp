@@ -67,10 +67,6 @@ if($loggedin == 1) { ?>
                     </div>
                 </div>
                 <!-- end dropdown -->
-      
-      
-      
-      Welcome, <?php echo $_SESSION['username']; ?>&nbsp;<i class="bi bi-person-square"></i>
     
     
     
