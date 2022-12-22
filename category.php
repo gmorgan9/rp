@@ -82,6 +82,7 @@ if (mysqli_num_rows($result) > 0) {
     </h1>
     <div class="mt-5"></div>
     <h3 class="text-center">
+        Category:&nbsp;&nbsp;&nbsp;
     <?php echo $category ?>
     </h3>
   </div>
