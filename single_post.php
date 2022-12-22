@@ -446,7 +446,7 @@ if (mysqli_num_rows($result) > 0) {
         <!-- end function -->
         <p style="line-height: 1 !important;">
           <a class="cat-link text-muted" style="font-size: 14px; text-decoration: none;" href="category.php?id=<?php echo $cat['category_idno']; ?>">
-            <?php echo $cat['category']; ?>
+            <?php echo $cat['category_idno']; ?>
           </a>
         </p>
 
