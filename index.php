@@ -87,7 +87,7 @@ $loggedin = $_SESSION['loggedin'];
 if($loggedin == 1) { ?>
   
   <div class="row" style="width: 100.75% !important; background-color: #1e2327; height: 30px;">
-    <div class="col">
+    <div class="col-1">
       <p class="ms-2 pt-2" style="font-size: 12px;"><a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
     </div>
       <div class="dropdown-menu col" style="">
