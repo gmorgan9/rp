@@ -17,13 +17,13 @@
                 ?>
 
                 </a>
-                <div class="pe-1"></div>
+                <div class="pe-2"></div>
                 <!-- start dropdown -->
                 <div class="dropdown-menu" style="margin-top: -8px !important;">
                     <a class="head-link" style="text-decoration: none; color: white; font-size: 12px;" href="#" class="menu-btn text-white">
                         <i class="bi bi-plus"></i>New
                     </a>
-                    <div class="menu-content" style="z-index: -1; margin-left: 10px !important; width: 70% !important;">
+                    <div class="menu-content" style="z-index: -1; margin-left: 10px !important; width: 60% !important;">
                         <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/add_posts.php' ?>">Post</a>
                         <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/categories.php' ?>">Category</a>
                         <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/add_user.php' ?>">User</a>
@@ -32,7 +32,7 @@
                 </div>
                 <!-- end dropdown -->
             </div>
-            <div style="float: right !important;">
+            <div style="float: right !important; margin-left: -15px;">
             <!-- start dropdown -->
                 <div class="dropdown-menu" style="position: relative; z-index: 1 !important;">
                     <a class="head-link" style="font-size: 12px; text-decoration: none; color: white" href="/" class="menu-btn text-white">
