@@ -45,7 +45,7 @@ session_start();
   border: none;
   background-color: transparent;
   /* position: relative; */
-  /* display: inline-block; */
+  display: block;
 }
 .menu-content {
   /* margin-left: -25% !important; */
