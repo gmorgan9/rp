@@ -604,7 +604,7 @@ if (mysqli_num_rows($result) > 0) {
 
         //run on scroll
         $(window).scroll(function () {
-            var login = 50;
+            var login = 60;
             var elpos = el.offset().top; // take current situation
             var windowpos = $(window).scrollTop();
             var finaldestination = login + windowpos - elpos;
