@@ -49,7 +49,7 @@ if($loggedin == 1) { ?>
       <p class="text-start" style="margin-top: 5px; margin-left: -60px; font-size: 12px;"><a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
     </div>
     <div class="col">
-      <p class="pt-2 text-end" style="font-size: 12px;">Welcome, <?php echo $_SESSION['username']; ?></p>
+      <p class="text-end" style="margin-top: 5px; font-size: 12px;">Welcome, <?php echo $_SESSION['username']; ?></p>
     </div> 
   </div>
 
