@@ -34,9 +34,8 @@ $loggedin = $_SESSION['loggedin'];
 if($loggedin == 1) { ?>
   
   <div class="row" style="width: 100.75% !important; background-color: #1e2327; height: 30px;">
-    
     <div class="col">
-      <p class="ms-2"><a href="<?php echo BASE_URL . '/cu-admin/' ?>">CacheUp</a></p>
+      <p class="ms-2 pt-1"><a class="text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>">CacheUp</a></p>
     </div>
     <div class="col">
       <p class="pt-2 text-end" style="font-size: 12px;">Welcome, <?php echo $_SESSION['username']; ?></p>
