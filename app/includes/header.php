@@ -7,7 +7,7 @@
                 <a class="head-link" style="text-decoration: none; color: white; font-size: 12px;" href="/"><i class="bi bi-house-door-fill"></i>&nbsp;CacheUp</a>
                 <div class="pe-5"></div>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="head-link" style="text-decoration: none; color: white; font-size: 12px;" href="<?php echo BASE_URL . '/cu-admin/pending_comments.php' ?>"><i style="font-size: 12px;" class="bi bi-chat-right-fill"></i>&nbsp;
+                <a class="head-link" style="text-decoration: none; margin-top: -5px; color: white; font-size: 12px;" href="<?php echo BASE_URL . '/cu-admin/pending_comments.php' ?>"><i style="font-size: 12px;" class="bi bi-chat-right-fill"></i>&nbsp;
 
                 <?php
                 $sql="SELECT count('1') FROM comments WHERE status = 0";
