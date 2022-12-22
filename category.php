@@ -106,12 +106,12 @@ if (mysqli_num_rows($result) > 0) {
       $result = mysqli_query($conn, $select);
       if (mysqli_num_rows($result) > 0) {
          while($row = mysqli_fetch_assoc($result)) {
-          $category    = $row['category'];
+          $name    = $row['category'];
       }}
 
       ?>
     <p>
-      There are currently no posts tagged with <strong class="text-muted"><?php echo $category;?></strong>.
+      There are currently no posts tagged with <strong class="text-muted"><?php echo $name;?></strong>.
     </p>
       
    <?php }
