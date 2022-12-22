@@ -80,8 +80,11 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-  
-    <img src="<?php echo $pp; ?>" style="width: 200px;" class="rounded-circle img-fluid" alt="">
+    <div class="bio d-flex justify-content-center">
+        <div class="img">
+            <img src="<?php echo $pp; ?>" style="width: 150px;" class="rounded-circle img-fluid" alt="">
+        </div>
+    </div>
 
 
 
