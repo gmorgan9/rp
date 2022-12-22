@@ -103,7 +103,7 @@ if (mysqli_num_rows($result) > 0) {
 
 <br><br><br>
 
-<!-- start blog posts -->
+<!-- start blog lists -->
 
 
   <br>
@@ -143,7 +143,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-<!-- end blog posts -->
+<!-- end blog lists -->
 
 <!-- social links -->
 
