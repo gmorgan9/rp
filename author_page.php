@@ -84,6 +84,11 @@ if (mysqli_num_rows($result) > 0) {
         <div class="img">
             <img src="<?php echo $pp; ?>" style="width: 150px; border-radius: 100%; border: 1px solid #393939;" class="img-fluid" alt="">
         </div>
+        <div class="author-bio">
+            <h5>
+                <?php echo $firstname; ?> <?php echo $lastname; ?>
+            </h5>
+        </div>
     </div>
 
 
