@@ -42,7 +42,7 @@ $loggedin = $_SESSION['loggedin'];
 if($loggedin == 1) { ?>
   
   <div class="row" style="width: 100.75% !important; background-color: #1e2327; height: 30px;">
-    <div class="col-1">
+    <div class="col-2">
       <img class="ps-3" src="../assets/images/updated-logo.png" style="height: 20px !important; width: 20px !important;" alt="">
     </div>
     <div class="col-1">
