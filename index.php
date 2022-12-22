@@ -33,6 +33,55 @@ session_start();
       .head-link:hover {
         color: #47a0c9 !important;
       }
+
+      /* DROPDOWN */
+.menu-btn {
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+}
+.dropdown-menu {
+  margin-top: -5px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+}
+.menu-content {
+  /* margin-left: -25% !important; */
+  padding-top: 10px;
+  /* margin-top: 6px; */
+  background-color: #1e2327 !important;
+  /* background-color: #2d3337; */
+  display: none;
+  position: absolute;
+  /* min-width: 200px; */
+  /* z-index: 9999; */
+}
+.a-link {
+  width: 100%;
+}
+.a-link:hover {
+  width: 100%;
+}
+.links {
+  padding: 8px;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+.links:hover {
+  color: #7fade1 !important;
+}
+.dropdown-menu:hover .menu-content {
+  display: block;
+}
+.dropdown-menu:hover .menu-btn {
+  /* background-color: #2d3337; */
+  background-color: #1e2327 !important;
+  padding: 5px;
+}
     </style>
 </head>
 <body>
@@ -51,8 +100,8 @@ if($loggedin == 1) { ?>
 
       <!-- start dropdown -->
       <div class="dropdown-menu" style="position: relative; z-index: 1 !important;">
-                    <a class="head-link" style="font-size: 14px; text-decoration: none; color: white" href="/" class="menu-btn text-white">
-                        Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i> 
+        <a class="head-link" style="font-size: 14px; text-decoration: none; color: white" href="/" class="menu-btn text-white">
+          Welcome, <?php echo $_SESSION['username']; ?> <i class="bi bi-person-square"></i> 
                     </a>
                     <div class="menu-content" style="margin-top: 6px;">
                         <div class="float-start">
