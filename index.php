@@ -36,7 +36,13 @@ session_start();
   background-color: transparent;
   border: none;
 }
-
+.dropdown-menu {
+  margin-top: -5px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+}
 .menu-content {
   /* margin-left: -25% !important; */
   padding-top: 10px;
@@ -44,7 +50,7 @@ session_start();
   background-color: #1e2327 !important;
   /* background-color: #2d3337; */
   display: none;
-  /* position: absolute; */
+  position: absolute;
   /* min-width: 200px; */
   /* z-index: 9999; */
 }
@@ -83,7 +89,7 @@ if($loggedin == 1) { ?>
   <div class="row" style="width: 100.75% !important; background-color: #1e2327; height: 30px;">
     <div class="col">
       <p class="ms-2 pt-2" style="font-size: 12px;"><a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
-      <div class="dropdown-menu col">
+      <div class="dropdown-menu" style="margin-top: -8px !important;">
         <a class="head-link" style="text-decoration: none; color: white; font-size: 14px;" href="#" class="menu-btn text-white">
           <i class="bi bi-plus"></i>New
         </a>
