@@ -33,7 +33,7 @@ session_start();
 $loggedin = $_SESSION['loggedin'];
 if($loggedin == 1) { ?>
   
-  <div style="width: 100%;">
+  <div style="width: 100%; background-color: #1e2327;">
     Welcome, <?php echo $_SESSION['username']; ?>
   </div>
 
