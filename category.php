@@ -75,11 +75,14 @@ if (mysqli_num_rows($result) > 0) {
 
   <div class="middle">
     <h1 class="behind text-center mt-2">
-      <?php echo $category ?>
+      Category
     </h1>
     <h1 class="front text-center">
-      <strong><?php echo $category ?></strong>
+      <strong>Category</strong>
     </h1>
+    <h5>
+    <?php echo $category ?>
+    </h5>
   </div>
 <!-- end middle -->
 
