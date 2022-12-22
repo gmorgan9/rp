@@ -40,7 +40,7 @@ session_start();
   border: none;
 }
 .dropdown-menu {
-  margin-top: -3px;
+  margin-top: -4px;
   border: none;
   background-color: transparent;
   position: relative;
