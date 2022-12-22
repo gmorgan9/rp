@@ -496,8 +496,8 @@ if (mysqli_num_rows($result) > 0) {
   </div>
   <!-- sidebar -->
     
-    <div class="side" id="side" style="float: right; position: sticky; top: 0; right: 0; margin-top: 0; margin-right: 0 !important; padding-right: 0 !important; background-color: #1f1f1f; width: 30%;">  
-      <div class="side-content" id="side_content" style="margin-top: 75px; position: sticky; padding-left: 4%; padding-top: 2%;">
+    <div class="side" id="side" style="float: right; top: 0; right: 0; margin-top: 0; margin-right: 0 !important; padding-right: 0 !important; background-color: #1f1f1f; width: 30%;">  
+      <div class="side-content" id="side_content" style="position: sticky; margin-top: 75px; position: sticky; padding-left: 4%; padding-top: 2%;">
       <!-- recent posts -->
         <h4>
           Recent Posts
