@@ -71,7 +71,15 @@ if (mysqli_num_rows($result) > 0) {
       </ol>
     </nav> -->
 
-
+<?php
+$id = $_GET['id'];
+$select = " SELECT * FROM categories WHERE idno = '$id'";
+$result = mysqli_query($conn, $select);
+if (mysqli_num_rows($result) > 0) {
+   while($row = mysqli_fetch_assoc($result)) {
+    $name    = $row['category'];
+}}
+?>
 
   <div class="middle">
     <h1 class="behind text-center mt-2">
@@ -83,7 +91,7 @@ if (mysqli_num_rows($result) > 0) {
     <div class="mt-5"></div>
     <h3 class="text-center">
         Category:&nbsp;&nbsp;&nbsp;
-    <span class="text-muted"><?php echo $category ?></span>
+    <span class="text-muted"><?php echo $name ?></span>
     </h3>
   </div>
 <!-- end middle -->
@@ -101,15 +109,7 @@ if (mysqli_num_rows($result) > 0) {
     $result = $conn->query($query);
     if($result->num_rows> 0){
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
-    } else {
-      $select = " SELECT * FROM categories WHERE idno = '$idno'";
-      $result = mysqli_query($conn, $select);
-      if (mysqli_num_rows($result) > 0) {
-         while($row = mysqli_fetch_assoc($result)) {
-          $name    = $row['category'];
-      }}
-
-      ?>
+    } else { ?>
     <p>
       There are currently no posts tagged with <strong class="text-muted"><?php echo $name;?></strong>.
     </p>
