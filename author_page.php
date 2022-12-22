@@ -92,7 +92,7 @@ if (mysqli_num_rows($result) > 0) {
         <p class="text-center text-muted">
             <?php echo $username; ?>
         </p>
-        <p class="text-uppercase text-muted text-center" style="font-size: 12px;">
+        <p class="text-uppercase text-muted text-center" style="font-size: 12px; letter-spacing: .5px;">
             <?php 
             ?>
             Joined: <?php echo date('F d, Y', strtotime($joined)); ?>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Posts: 
