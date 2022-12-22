@@ -35,7 +35,7 @@ if($loggedin == 1) { ?>
   
   <div class="row" style="width: 110%; background-color: #1e2327; height: 30px;">
     <div class="col-1"></div>
-    <div class="col-8 me-2">
+    <div class="col-8 me-5">
       <p class="ms-2"><a href="<?php echo BASE_URL . '/cu-admin/' ?>">CacheUp</a></p>
     </div>
     <div class="col-2">
