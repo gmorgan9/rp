@@ -85,7 +85,6 @@ if (mysqli_num_rows($result) > 0) {
 
 
 <br><br><br>
-<?php echo $title; ?>
 
 <!-- start blog lists -->
 
