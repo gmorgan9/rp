@@ -28,7 +28,7 @@ session_start();
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
       .log-link:hover {
-        color: #03c6fc !important;
+        color: #47a0c9 !important;
       }
     </style>
 </head>
