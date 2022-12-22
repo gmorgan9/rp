@@ -24,12 +24,6 @@ session_start();
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <style>
-        .mx-auto {
- margin-right: auto !important;
- margin-left: auto !important;
-}
-    </style>
 </head>
 <body>
 <?php
@@ -86,7 +80,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-    <div class="pt-5 bio mx-auto">
+    <div class="pt-5 bio w-50 mx-auto">
         <img src="<?php echo $pp; ?>" style="width: 150px; border-radius: 100%; border: 1px solid #393939;" class="img-fluid" alt="">
         <h5>
             <?php echo $firstname; ?> <?php echo $lastname; ?>
