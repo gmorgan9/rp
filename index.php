@@ -253,12 +253,25 @@ if (mysqli_num_rows($result) > 0) {
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
 
+    
+
   ?>
-  <?php foreach ($options as $option) { ?>
+  <?php foreach ($options as $option) { 
+
+      $category = $option['category'];
+      $select = " SELECT * FROM category WHERE idno = '$category' ";
+      $result = mysqli_query($conn, $select);
+      if (mysqli_num_rows($result) > 0) {
+        while($row = mysqli_fetch_assoc($result)) {
+          $name    = $row['category'];
+      }}
+    
+    ?>
+    
     <div class="col">
       <div class="card h-100" style="background-color: #1f1f1f;">
         <div class="card-body mb-4">
-          <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #03c6fc;"><?php echo $option['category']; ?></p>
+          <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #03c6fc;"><?php echo $name; ?></p>
           <a href="single_post.php?id=<?php echo $option['post_id']; ?>" class="text-decoration-none text-white"><h5 class="card-title blog-title"><?php echo $option['title']; ?></h5></a>
           <!-- <p class="card-text text-muted">
             <?php //echo html_entity_decode(substr($option['content'], 0, 150) . '...'); ?>
