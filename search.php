@@ -154,6 +154,15 @@ if($loggedin == 1) { ?>
 ?>
 
   <?php
+
+$cat = $_GET['id'];
+$grab = " SELECT * FROM categories WHERE idno = '$cat' ";
+$new = mysqli_query($conn, $grab);
+if (mysqli_num_rows($new) > 0) {
+  while($cap = mysqli_fetch_assoc($new)) {
+    $name    = $cap['category'];
+}}
+
   $user_id = $_SESSION['user_id'];
   $select = " SELECT * FROM users WHERE user_id = '$user_id' ";
   $result = mysqli_query($conn, $select);
@@ -246,13 +255,7 @@ if($loggedin == 1) { ?>
           ?>
           <?php foreach ($search as $s) {
 
-            $category = $s['category'];
-            $grab = " SELECT * FROM categories WHERE idno = '$category' ";
-            $new = mysqli_query($conn, $grab);
-            if (mysqli_num_rows($new) > 0) {
-              while($cap = mysqli_fetch_assoc($new)) {
-                $name    = $cap['category'];
-            }}
+            
             
             ?>
             
