@@ -175,7 +175,7 @@ if (mysqli_num_rows($result) > 0) {
                 <?php 
                     foreach ($options as $option) {
                 ?>
-                <option value="<?php echo $option['category']; ?>"><?php echo $option['category']; ?></option>
+                <option value="<?php echo $option['idno']; ?>"><?php echo $option['category']; ?></option>
                 <?php } ?>
             </select>
         </div>
