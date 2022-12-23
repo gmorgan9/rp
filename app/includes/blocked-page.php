@@ -5,7 +5,7 @@
     <span class="text-black">This site is only a <span class="text-info text-decoration-underline text-capitalize">desktop only</span> site!</span><br>
     <span class="text-black">Please visit this site with your laptop or computer!</span><br>
     <span class="text-black">Web developers are working hard to allow for this site to be used via mobile!</span><br>
-    <span class="text-info fs-3">Countdown to Production</span> <br>
+    <span class="text-info fs-3">Countdown to Mobile Publication</span> <br>
     <p id="demo"></p>
 </div>  
 
