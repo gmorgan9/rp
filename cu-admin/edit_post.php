@@ -158,7 +158,18 @@ if (mysqli_num_rows($result) > 0) {
         <div>
             <label>Category</label>
             <select style="width: 99%;" name="category" class="form-control">
-                <option value="<?php echo $row['idno']; ?>"><?php echo $row['category']; ?></option>
+            <?php 
+
+            $category = $row['category'];
+            $grab = " SELECT * FROM categories WHERE idno = '$category' ";
+            $new = mysqli_query($conn, $grab);
+            if (mysqli_num_rows($new) > 0) {
+              while($cap = mysqli_fetch_assoc($new)) {
+                $name    = $cap['category'];
+            }}
+
+            ?>
+                <option value="<?php echo $row['idno']; ?>"><?php echo $name; ?></option>
                 <option value="none">None</option>
                 <?php
                 $query ="SELECT * FROM categories";
