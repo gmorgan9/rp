@@ -246,11 +246,11 @@ if (mysqli_num_rows($result) > 0) {
         $post_id   = $row['post_id'];
 
 
-        $select = " SELECT * FROM categories WHERE idno = '$cat' ";
-        $result = mysqli_query($conn, $select);
-        if (mysqli_num_rows($result) > 0) {
-          while($row = mysqli_fetch_assoc($result)) {
-            $name    = $row['category'];
+        $grab = " SELECT * FROM categories WHERE idno = '$cat' ";
+        $result2 = mysqli_query($conn, $grab);
+        if (mysqli_num_rows($result2) > 0) {
+          while($new = mysqli_fetch_assoc($result2)) {
+            $name    = $new['category'];
         }}
 
 
