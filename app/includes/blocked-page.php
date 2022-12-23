@@ -3,14 +3,15 @@
     <span class="text-danger fs-3"><i class="bi bi-exclamation-octagon"></i>&nbsp; Blocked Page</span> <br>
     <span class="text-black fs-4">&nbsp; cacheup.morgancloud.us</span> <br>
     <span class="text-black">This site is only a <span class="text-info text-decoration-underline text-capitalize">desktop only</span> site!</span><br>
-    <span class="text-black">Please visit this site with your laptop or computer!</span>
-    <span class="text-black">Web developers are working hard to allow for this site to be used via mobile!</span>
+    <span class="text-black">Please visit this site with your laptop or computer!</span><br>
+    <span class="text-black">Web developers are working hard to allow for this site to be used via mobile!</span><br>
+    <span class="text-info fs-3">Countdown to Production</span> <br>
     <p id="demo"></p>
 </div>  
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+var countDownDate = new Date("Jan 10, 2023 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
