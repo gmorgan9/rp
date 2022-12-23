@@ -26,7 +26,7 @@ if(isset($_POST['update'])){
   date_default_timezone_set('America/Denver');
   $date = date('F d, Y, g:i a', time());
 
-  $insert = "UPDATE posts SET title = '$title', content = '$content', category = '$category', tags = '$tags', updated_at = '$date' WHERE post_id = '".$_POST['post_id']."'";
+  $insert = "UPDATE posts SET title = '$title', content = '$content', category = '$category',category_idno = '$category_idno', tags = '$tags', updated_at = '$date' WHERE post_id = '".$_POST['post_id']."'";
   mysqli_query($conn, $insert);
   header("location: all_posts.php");
 
