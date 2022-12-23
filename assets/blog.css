@@ -138,7 +138,7 @@ footer {
     
   }
  
-  @media only screen and (max-width: 1024px) {
+  /* @media only screen and (max-width: 1024px) {
     .main-container {
        display: none;
     }
@@ -149,7 +149,7 @@ footer {
     .blocked-footer {
       display: block;
      }
-  }
+  } */
 
 
 
