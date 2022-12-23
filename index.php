@@ -19,7 +19,7 @@ session_start();
     <link rel="icon" type="image/x-icon" href="<?php echo BASE_URL . '/assets/images/favicon.ico'; ?>">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=4.01">
+    <link rel="stylesheet" href="assets/blog.css?v=4.02">
 
     <title>CacheUp Blog</title>
 
@@ -85,6 +85,9 @@ session_start();
     </style>
 </head>
 <body>
+<div class="blocked-page">
+  <?php include(ROOT_PATH . '/app/includes/blocked-page.php'); ?>
+</div>
 
 <?php
 $loggedin = $_SESSION['loggedin'];
