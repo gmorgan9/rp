@@ -19,6 +19,7 @@ if(isset($_POST['update'])){
   $content = mysqli_real_escape_string($conn, $_POST['content']);
   $author = mysqli_real_escape_string($conn, $_POST['author']);
   $category = mysqli_real_escape_string($conn, $_POST['category']);
+  $category_idno = mysqli_real_escape_string($conn, $_POST['category_idno']);
   $tags = mysqli_real_escape_string($conn, $_POST['tags']);
 
 
@@ -74,6 +75,7 @@ if (mysqli_num_rows($result) > 0) {
    while($row = mysqli_fetch_assoc($result)) {
     $cat_id    = $row['cat_id'];
     $category  = $row['category'];
+    $category_idno = $row['idno'];
 }}
 ?>
     
@@ -151,6 +153,7 @@ if (mysqli_num_rows($result) > 0) {
         <div>
             <label>Post Title</label>
             <input class="form-control" type="hidden" name="post_id" value="<?php echo $row['post_id']; ?>">
+            <input class="form-control" type="hidden" name="category_idno" value="<?php echo $category_idno; ?>">
             <input class="form-control" style="width: 99%;" type="text" name="title" value="<?php echo $row['title']; ?>">
         </div>
         <div class="pt-3"></div>
