@@ -19,14 +19,13 @@ if(isset($_POST['update'])){
   $content = mysqli_real_escape_string($conn, $_POST['content']);
   $author = mysqli_real_escape_string($conn, $_POST['author']);
   $category = mysqli_real_escape_string($conn, $_POST['category']);
-  $category_idno = mysqli_real_escape_string($conn, $_POST['category_idno']);
   $tags = mysqli_real_escape_string($conn, $_POST['tags']);
 
 
   date_default_timezone_set('America/Denver');
   $date = date('F d, Y, g:i a', time());
 
-  $insert = "UPDATE posts SET title = '$title', content = '$content', category = '$category',category_idno = '$category_idno', tags = '$tags', updated_at = '$date' WHERE post_id = '".$_POST['post_id']."'";
+  $insert = "UPDATE posts SET title = '$title', content = '$content', category = '$category', tags = '$tags', updated_at = '$date' WHERE post_id = '".$_POST['post_id']."'";
   mysqli_query($conn, $insert);
   header("location: all_posts.php");
 
@@ -153,14 +152,13 @@ if (mysqli_num_rows($result) > 0) {
         <div>
             <label>Post Title</label>
             <input class="form-control" type="hidden" name="post_id" value="<?php echo $row['post_id']; ?>">
-            <input class="form-control" type="hidden" name="category_idno" value="<?php echo $category_idno; ?>">
             <input class="form-control" style="width: 99%;" type="text" name="title" value="<?php echo $row['title']; ?>">
         </div>
         <div class="pt-3"></div>
         <div>
             <label>Category</label>
             <select style="width: 99%;" name="category" class="form-control">
-                <option value="<?php echo $row['category']; ?>"><?php echo $row['category']; ?></option>
+                <option value="<?php echo $row['idno']; ?>"><?php echo $row['category']; ?></option>
                 <option value="none">None</option>
                 <?php
                 $query ="SELECT * FROM categories";
@@ -172,7 +170,7 @@ if (mysqli_num_rows($result) > 0) {
                 <?php 
                     foreach ($options as $option) {
                 ?>
-                <option value="<?php echo $option['category']; ?>"><?php echo $option['category']; ?></option>
+                <option value="<?php echo $option['idno']; ?>"><?php echo $option['category']; ?></option>
                 <?php } ?>
             </select>
         </div>

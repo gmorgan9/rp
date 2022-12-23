@@ -18,7 +18,6 @@ if(isset($_POST['add'])){
   $content = mysqli_real_escape_string($conn, $_POST['content']);
   $author = mysqli_real_escape_string($conn, $_POST['author']);
   $category = mysqli_real_escape_string($conn, $_POST['category']);
-  $category_idno = mysqli_real_escape_string($conn, $_POST['category_idno']);
   $tags = mysqli_real_escape_string($conn, $_POST['tags']);
   $status = mysqli_real_escape_string($conn, $_POST['status']);
   $author_idno = mysqli_real_escape_string($conn, $_POST['author_idno']);
@@ -36,7 +35,7 @@ if(isset($_POST['add'])){
      $error[] = 'title already exist!';
 
   }else {
-        $insert = "INSERT INTO posts (idno, title, content, author, author_idno, category, category_idno, tags, created_date, created_time) VALUES ('$idno', '$title','$content','$author','$author_idno','$category','$category_idno', '$tags', '$created_date', '$created_time')";
+        $insert = "INSERT INTO posts (idno, title, content, author, author_idno, category, tags, created_date, created_time) VALUES ('$idno', '$title','$content','$author','$author_idno','$category', '$tags', '$created_date', '$created_time')";
         mysqli_query($conn, $insert);
         header('location: all_posts.php');
      }
@@ -120,7 +119,6 @@ if (mysqli_num_rows($result) > 0) {
       </h3>
       <div class="mt-3"></div>
     <form action="" method="POST">
-      <input class="form-control" type="hidden" name="category_idno" value="<?php echo $category_idno;?>">
       <input class="form-control" type="hidden" name="author_idno" value="<?php echo $idno;?>">
         <div class="modal_help float-end" style="margin-right: 25px; margin-top: -55px !important;">
           <!-- Button trigger modal -->
