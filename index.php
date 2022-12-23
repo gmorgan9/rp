@@ -253,20 +253,18 @@ if (mysqli_num_rows($result) > 0) {
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
 
-    $category = $options['category'];
-      $select = " SELECT * FROM category WHERE idno = '$category' ";
-      $result = mysqli_query($conn, $select);
-      if (mysqli_num_rows($result) > 0) {
-        while($row = mysqli_fetch_assoc($result)) {
-          $name    = $row['category'];
-      }}
-
     
 
   ?>
   <?php foreach ($options as $option) { 
 
-      
+      $category = $option['category'];
+      $select = " SELECT * FROM categories WHERE idno = '$category' ";
+      $result = mysqli_query($conn, $select);
+      if (mysqli_num_rows($result) > 0) {
+        while($row = mysqli_fetch_assoc($result)) {
+          $name    = $row['category'];
+      }}
     
     ?>
     
