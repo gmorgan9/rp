@@ -201,7 +201,7 @@ if (mysqli_num_rows($result) > 0) {
 <!-- start blog lists -->
 
 <br>
-  
+<div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <?php
     $idno = $_GET['id'];
     $query ="SELECT * FROM posts WHERE category = '$idno' AND status = 'published'";
@@ -227,7 +227,7 @@ if (mysqli_num_rows($new) > 0) {
     
     ?>
 
-    <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
+    
     <div class="col">
       <div class="card h-100" style="background-color: #1f1f1f;">
         <div class="card-body">
