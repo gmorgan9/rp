@@ -242,8 +242,20 @@ if (mysqli_num_rows($result) > 0) {
        while($row = mysqli_fetch_assoc($result)) {
         $post_idno = $row['idno'];
         $title     = $row['title'];
-        $c_idno    = $row['category_idno'];
+        $cat       = $row['category'];
         $post_id   = $row['post_id'];
+
+
+        $select = " SELECT * FROM categories WHERE idno = '$cat' ";
+        $result = mysqli_query($conn, $select);
+        if (mysqli_num_rows($result) > 0) {
+          while($row = mysqli_fetch_assoc($result)) {
+            $name    = $row['category'];
+        }}
+
+
+
+
     ?>
 
     <div class="blog_post mb-5 mt-5 ms-5 p-5" id="blog_style" style="float: left; width: 65%; background-color: #1f1f1f;">
@@ -251,7 +263,7 @@ if (mysqli_num_rows($result) > 0) {
       <nav class="mb-5" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; breadcrumb-divider-color: white;">
         <ol class="breadcrumb">
           <li class="breadcrumb-item" style="font-size: 12px;"><a href="/" class="text-decoration-none text-uppercase" style="color: #03c6fc !important;">Home</a></li>
-          <li class="breadcrumb-item" style="font-size: 12px;"><a href="category.php?id=<?php echo $c_idno; ?>" class="text-decoration-none text-uppercase" style="color: #03c6fc !important;"><?php echo $row['category']; ?></a></li>
+          <li class="breadcrumb-item" style="font-size: 12px;"><a href="category.php?id=<?php echo $cat; ?>" class="text-decoration-none text-uppercase" style="color: #03c6fc !important;"><?php echo $name; ?></a></li>
           <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;"><?php echo $row['title']; ?></li>
         </ol>
       </nav>
