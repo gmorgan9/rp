@@ -127,7 +127,7 @@ if($loggedin == 1) { ?>
 
 <?php
 $idno = $_GET['id'];
-$select = " SELECT * FROM posts WHERE category_idno = '$idno' ";
+$select = " SELECT * FROM posts WHERE category = '$idno' ";
 $result = mysqli_query($conn, $select);
 if (mysqli_num_rows($result) > 0) {
    while($row = mysqli_fetch_assoc($result)) {
@@ -204,7 +204,7 @@ if (mysqli_num_rows($result) > 0) {
   
   <?php
     $idno = $_GET['id'];
-    $query ="SELECT * FROM posts WHERE category_idno = '$idno' AND status = 'published'";
+    $query ="SELECT * FROM posts WHERE category = '$idno' AND status = 'published'";
     $result = $conn->query($query);
     if($result->num_rows> 0){
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -215,12 +215,23 @@ if (mysqli_num_rows($result) > 0) {
       
    <?php }
   ?>
-  <?php foreach ($options as $option) { ?>
+  <?php foreach ($options as $option) { 
+
+$category = $option['category'];
+$grab = " SELECT * FROM categories WHERE idno = '$category' ";
+$new = mysqli_query($conn, $grab);
+if (mysqli_num_rows($new) > 0) {
+  while($cap = mysqli_fetch_assoc($new)) {
+    $name    = $cap['category'];
+}}
+    
+    ?>
+
     <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
       <div class="card h-100" style="background-color: #1f1f1f;">
         <div class="card-body">
-          <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #03c6fc;"><?php echo $option['category']; ?></p>
+          <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #03c6fc;"><?php echo $name; ?></p>
           <a href="single_post.php?id=<?php echo $option['post_id']; ?>" class="text-decoration-none text-white"><h5 class="card-title blog-title"><?php echo $option['title']; ?></h5></a>
           <div class="pt-4"></div>
           <p class="text-muted" style="font-size: 12px;">
