@@ -81,8 +81,14 @@ if (mysqli_num_rows($result) > 0) {
     $lastname     = $row['lastname'];
     $idno         = $row['idno'];
 }}
-
-
+$select = "SELECT * FROM categories";
+$result = mysqli_query($conn, $select);
+if (mysqli_num_rows($result) > 0) {
+   while($row = mysqli_fetch_assoc($result)) {
+    $cat_id    = $row['cat_id'];
+    $category  = $row['category'];
+    $category_idno = $row['idno'];
+}}
 ?>
 
 
@@ -169,7 +175,7 @@ if (mysqli_num_rows($result) > 0) {
                 <?php 
                     foreach ($options as $option) {
                 ?>
-                <option value="<?php echo $option['idno']; ?>"><?php echo $option['category']; ?></option>
+                <option value="<?php echo $option['category']; ?>"><?php echo $option['category']; ?></option>
                 <?php } ?>
             </select>
         </div>
