@@ -167,7 +167,6 @@ if (mysqli_num_rows($result) > 0) {
               while($cap = mysqli_fetch_assoc($new)) {
                 $name    = $cap['category'];
             }}
-
             ?>
                 <option value="<?php echo $cap['idno']; ?>"><?php echo $name; ?></option>
                 <option value="none">None</option>
