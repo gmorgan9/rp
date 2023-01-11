@@ -169,7 +169,7 @@ if (mysqli_num_rows($result) > 0) {
             }}
 
             ?>
-                <option value="<?php echo $row['idno']; ?>"><?php echo $name; ?></option>
+                <option value="<?php echo $cap['idno']; ?>"><?php echo $name; ?></option>
                 <option value="none">None</option>
                 <?php
                 $query ="SELECT * FROM categories";
