@@ -21,7 +21,7 @@ if (mysqli_num_rows($result) > 0) {
                             </a>
                             <div class="nav__dropdown">
                                 <a href="<?php echo BASE_URL . '/rp-admin/all_recipes.php' ?>" class="nav__link side text-white">
-                                    &nbsp;&nbsp;<i class="bi bi-pin-angle-fill nav__icon" style="font-size: 18px;"></i>
+                                    &nbsp;&nbsp;<i class="bi bi-journal-text nav__icon" style="font-size: 18px;"></i>
                                     <span class="nav__name">&nbsp;recipes</span>
                                 </a>
 
@@ -35,21 +35,21 @@ if (mysqli_num_rows($result) > 0) {
                             </div>
 
                             <!-- comments -->
-                                <div class="nav__dropdown">
-                                    <a href="<?php echo BASE_URL . '/rp-admin/all_comments.php' ?>" class="nav__link side text-white">
+                                <!-- <div class="nav__dropdown">
+                                    <a href="<?php //echo BASE_URL . '/rp-admin/all_comments.php' ?>" class="nav__link side text-white">
                                         &nbsp;&nbsp;<i class="bi bi-chat-right-fill nav__icon" style="font-size: 18px;"></i>
                                         <span class="nav__name">&nbsp;Comments</span>
                                     </a>
 
                                     <div class="nav__dropdown-collapse">
                                         <div class="nav__dropdown-content">
-                                            <a style="width: 110%;" href="<?php echo BASE_URL . '/rp-admin/all_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All Comments</a>
-                                            <a href="<?php echo BASE_URL . '/rp-admin/pending_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Pending</a>
-                                            <a href="<?php echo BASE_URL . '/rp-admin/approved_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Approved</a>
-                                            <a href="<?php echo BASE_URL . '/rp-admin/trash_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Trash</a>
+                                            <a style="width: 110%;" href="<?php //echo BASE_URL . '/rp-admin/all_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All Comments</a>
+                                            <a href="<?php //echo BASE_URL . '/rp-admin/pending_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Pending</a>
+                                            <a href="<?php //echo BASE_URL . '/rp-admin/approved_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Approved</a>
+                                            <a href="<?php// echo BASE_URL . '/rp-admin/trash_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Trash</a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             <!-- end comments -->
                             
                             
