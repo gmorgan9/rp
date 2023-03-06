@@ -164,7 +164,9 @@ if (mysqli_num_rows($result) > 0) {
                       <p class="mb-0">Joined</p>
                     </div>
                     <div class="col-sm-9">
-                      <p class="text-muted mb-0"><?php echo $joined; ?></p>
+                      <p class="text-muted mb-0">
+                        <?php echo date('F j, Y g:i A', strtotime($joined)); ?>
+                      </p>
                     </div>
                   </div>
                   <hr>
