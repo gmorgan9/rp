@@ -15,14 +15,14 @@
 }
 
 body {
-    background-color: #1a1a1a !important;
+    background-color: #d2d2d2 !important;
     color: #fff;
 }
 .main-container {
    width:100%;
 		min-height:1400px;
 		margin-bottom:50px;
-		background-color:#1a1a1a;
+		background-color:#d2d2d2;
 }
 
 footer {

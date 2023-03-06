@@ -19,7 +19,7 @@ session_start();
     <link rel="icon" type="image/x-icon" href="<?php echo BASE_URL . '/assets/images/favicon.ico'; ?>">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=4.02">
+    <link rel="stylesheet" href="assets/blog.css?v=5.00">
 
     <title>CacheUp Blog</title>
 
