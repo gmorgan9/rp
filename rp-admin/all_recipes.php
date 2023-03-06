@@ -59,7 +59,7 @@ if (isset($_POST['draft'])) {
     <link rel="stylesheet" href="../assets/styles.css?v=4.11">
     <link rel="stylesheet" href="../assets/sidebar.css?v=1.10">
 
-    <title>All recipes - CacheUp Blog</title>
+    <title>All Recipes - CacheUp Blog</title>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -89,7 +89,7 @@ if (isset($_POST['draft'])) {
     <div class="col-10">
     <div class="mt-5"></div>
     <h3 class="text-black" style="margin-left: -30px;">
-        recipes
+        Recipes
       </h3>
       <div class="mt-3"></div>
     <table class="table table-bordered" style="margin-left: -30px;">
