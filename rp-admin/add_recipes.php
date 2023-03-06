@@ -156,11 +156,11 @@ if (mysqli_num_rows($result) > 0) {
         </div>
         <div class="row">
         <div class="col w-50">
-            <label>Recipe Title <span class="text-muted" style="font-size: 10px;">e.g "Meatball Subs</span></label>
+            <label>Recipe Title <span class="text-muted" style="font-size: 10px;">e.g "Meatball Subs"</span></label>
             <input class="form-control" type="text" name="title">
         </div>
         <div class="col w-50">
-            <label>Short Title <span class="text-muted" style="font-size: 10px;">e.g "meatball-subs</span></label>
+            <label>Short Title <span class="text-muted" style="font-size: 10px;">e.g "meatball-subs"</span></label>
             <input class="form-control" type="text" name="short_title">
         </div>
         </div>
