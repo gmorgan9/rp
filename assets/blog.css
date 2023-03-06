@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 :root {
-    --primary-color: #48ceff;
+    --primary-color: #9b9883;
     --secondary-color: #17181C; 
     --font-color: #FFFFFF;
     --dark-font: #000;
@@ -43,7 +43,7 @@ footer {
  }
  .top-card:hover {
    transform: scale(1.05);
-   background-color: #0082a6 !important;
+   background-color: #73705d !important;
  }
 
 
@@ -52,29 +52,29 @@ footer {
    background-color: #1f1f1f !important;
 }
 .talk-btn {
-   border-color: #03c6fc;
+   border-color: #9b9883;
 }
 .breadcrumb li:after
 {
 	color: #fff;
 }
 .talk-btn a {
-   color: #03c6fc !important;
+   color: #9b9883 !important;
 }
 .talk-btn:hover a {
    color: #fff !important;
 }
 .talk-btn:hover {
-   background-color: #03c6fc;
+   background-color: #9b9883;
 }
 .post-btn {
-   background-color: #03c6fc;
+   background-color: #9b9883;
 }
 .post-btn:hover {
-   background-color: #0082a6;
+   background-color: #73705d;
 }
 .blog-title:hover {
-   color: #03c6fc !important;
+   color: #9b9883 !important;
 }
 .page-content {
   height:630px;
