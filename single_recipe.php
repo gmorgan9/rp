@@ -234,8 +234,8 @@ if (mysqli_num_rows($result) > 0) {
 <!-- start blog recipes -->
   <!-- start BLOG -->
     <?php
-    $id = $_GET['id'];
-    $select = "SELECT * FROM recipes WHERE post_id = '$id' ";
+    $title = $_GET['title'];
+    $select = "SELECT * FROM recipes WHERE short_title = '$title' ";
     $result = mysqli_query($conn, $select);
 
     if (mysqli_num_rows($result) > 0) {
