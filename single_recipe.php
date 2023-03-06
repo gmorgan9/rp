@@ -18,7 +18,7 @@ session_start();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=5.12">
+    <link rel="stylesheet" href="assets/blog.css?v=5.13">
 
     <title>Recipe Pro</title>
 
@@ -258,7 +258,7 @@ if (mysqli_num_rows($result) > 0) {
 
     ?>
 
-    <div class="blog_post mb-5 mt-5 ms-5 p-5" id="blog_style">
+    <div class="recipe_content mb-5 mt-5 ms-5 p-5" id="blog_style">
 
       <nav class="mb-5" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; breadcrumb-divider-color: white;">
         <ol class="breadcrumb">
