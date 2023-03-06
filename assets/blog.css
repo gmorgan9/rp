@@ -136,6 +136,10 @@ footer {
 }
 
 .recipe_content {
+   margin-bottom: 3rem !important;
+   margin-top: 3rem !important;
+   margin-left: 3rem !important;
+   padding: 3rem !important;
    float: left; 
    width: 65%; 
    background-color: #1f1f1f;
@@ -162,6 +166,10 @@ footer {
       background-color: #1f1f1f;
       width: 100%;
       float: none;
+      margin-bottom: 0 !important;
+      margin-top: 0 !important;
+      margin-left: 0 !important;
+      padding: 0 !important;
     }
 
   }
