@@ -120,19 +120,19 @@ if(isLoggedIn() == false){
                         </a>
                       <!-- end categories -->
                     </div>
-                    <div class="col">
+                    <!-- <div class="col"> -->
                       <!-- comments -->
-                      <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/comments.php' ?>">
+                      <!-- <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/comments.php' ?>">
                         <i class="bi bi-chat-right-fill text-muted"></i>&nbsp;
                           <?php
-                          $sql="SELECT count('1') FROM comments WHERE status = 1";
-                          $result=mysqli_query($conn,$sql);
-                          $rowtotal=mysqli_fetch_array($result); 
-                          echo "$rowtotal[0] Comments";
+                          // $sql="SELECT count('1') FROM comments WHERE status = 1";
+                          // $result=mysqli_query($conn,$sql);
+                          // $rowtotal=mysqli_fetch_array($result); 
+                          // echo "$rowtotal[0] Comments";
                           ?>
-                        </a>
+                        </a> -->
                       <!-- end comments -->
-                    </div>
+                    <!-- </div> -->
                     <div class="pt-3"></div>
                     <p style="margin-bottom: -2px;">Ubuntu 22.0.4 running <a style="color: #7fade1; text-decoration: underline;" href="/">CacheUp</a> blog</p>
                   </div>
