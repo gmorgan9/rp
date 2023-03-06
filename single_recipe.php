@@ -18,7 +18,7 @@ session_start();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=5.08">
+    <link rel="stylesheet" href="assets/blog.css?v=5.10">
 
     <title>Recipe Pro</title>
 
@@ -212,16 +212,16 @@ if (mysqli_num_rows($result) > 0) {
 
 <!-- start header -->
   <div class="page-header">
-    <div class="left">
+    <div class="left mobile">
       <a href="/">
         <img src="/assets/images/new-white.png" width="230px" class="text-center" style="margin-top: 3.5%; margin-left: 2%;" alt="">
       </a>
     </div>
-    <div class="right">
+    <div class="right mobile">
       <a href="<?php echo BASE_URL . '/search.php' ?>" class="text-decoration-none text-white">
         <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
       </a>
-      <button class="btn talk-btn">
+      <button class="btn talk-btn mobile">
         <a href="mailto:garrett.morgan.pro@gmail.com" class="text-decoration-none">
           LET'S TALK
         </a>
