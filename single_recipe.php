@@ -18,7 +18,7 @@ session_start();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=5.10">
+    <link rel="stylesheet" href="assets/blog.css?v=5.11">
 
     <title>Recipe Pro</title>
 
@@ -168,6 +168,7 @@ if($loggedin == 1) { ?>
     <div class="col">
 
 
+    <div class="mobile">
       <!-- start dropdown -->
         <div class="dropdown-menu text-end float-end" style="">
           <a style="font-size: 12px; text-decoration: none; color: white;" href="/" class="log-link menu-btn text-white">
@@ -185,6 +186,7 @@ if($loggedin == 1) { ?>
           </div>
         </div>
       <!-- end dropdown -->
+      </div>
     
     </div> 
   </div>
@@ -212,16 +214,16 @@ if (mysqli_num_rows($result) > 0) {
 
 <!-- start header -->
   <div class="page-header">
-    <div class="left">
+    <div class="left mobile-center">
       <a href="/">
         <img src="/assets/images/new-white.png" width="230px" class="text-center" style="margin-top: 3.5%; margin-left: 2%;" alt="">
       </a>
     </div>
-    <div class="right">
+    <div class="right mobile">
       <a href="<?php echo BASE_URL . '/search.php' ?>" class="text-decoration-none text-white">
         <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
       </a>
-      <button class="btn talk-btn">
+      <button class="btn talk-btn mobile">
         <a href="mailto:garrett.morgan.pro@gmail.com" class="text-decoration-none">
           LET'S TALK
         </a>
@@ -231,7 +233,7 @@ if (mysqli_num_rows($result) > 0) {
 <!-- end header -->
 
 
-<!-- start blog recipes -->
+<!-- start recipes -->
   <!-- start BLOG -->
     <?php
     $id = $_GET['id'];
@@ -398,116 +400,6 @@ if (mysqli_num_rows($result) > 0) {
 
   <!-- END Author Box -->
 
-  <!-- Comments -->
-
-    <?php
-    // if(isset($_POST['post'])){
-    //   $idno  = rand(10000, 99999); // figure how to not allow duplicates
-    //   $post_idno = mysqli_real_escape_string($conn, $_POST['post_idno']);
-    //   $post_id = mysqli_real_escape_string($conn, $_POST['post_id']);
-    //   $post_title = mysqli_real_escape_string($conn, $_POST['post_title']);
-    //   $parent_idno = mysqli_real_escape_string($conn, $_POST['parent_idno']);
-    //   $name = mysqli_real_escape_string($conn, $_POST['name']);
-    //   $email = mysqli_real_escape_string($conn, $_POST['email']);
-    //   $content = mysqli_real_escape_string($conn, $_POST['content']);
-
-    //   $insert = "INSERT INTO `comments`(`idno`, `post_idno`, `post_id`, `post_title`, `name`, `email`, `content`) VALUES ('$idno','$post_idno','$post_id', '$post_title', '$name','$email','$content');";
-    //   mysqli_query($conn, $insert);
-    //   header('Location: ' . $_SERVER['HTTP_REFERER']);
-    // };
-
-    ?>
-
-    <!-- <form action="" method="POST">
-    <h4>Leave a Comment</h4>
-    <input type="hidden" name="post_idno" value="<?php //echo $post_idno; ?>" class="text-muted form-control">
-    <input type="hidden" name="post_title" value="<?php //echo $title; ?>">
-    <input type="hidden" name="post_id" value="<?php //echo $id; ?>" class="text-muted form-control">
-    <p class="text-muted" style="font-size: 12px;">Your email address will not be published. Required fields are marked <span style="color: red;">*</span></p>
-    <div class="d-flex">
-      <div class="form-group w-50">
-        <label for="name">Full Name <span style="color: red;">*</span></label>
-        <input style="background-color: #1f1f1f !important; border-color: #6e757c !important;" name="name" type="text" id="name" class="text-muted form-control">
-      </div> &nbsp;&nbsp;
-      <div class="form-group w-50">
-        <label for="email">Email <span style="color: red;">*</span></label>
-        <input style="background-color: #1f1f1f !important; border-color: #6e757c !important;" type="text" name="email" id="email" class="text-muted form-control">
-      </div>
-    </div>
-    <br>
-    <div class="form-group">
-      <label for="comment">Comment <span style="color: red;">*</span></label>
-      <textarea style="background-color: #1f1f1f !important; border-color: #6e757c !important;" class="text-muted form-control" name="content" id="comment" cols="30" rows="10"></textarea>
-    </div>
-    <br> -->
-    <!-- <button style="background-color: #58c5f7; color: white; border-color: #58c5f7;" name="post" type="submit" class="com-btn btn btn-outline-secondary">Post Comment</button> -->
-    <!-- <input type="submit" name="post" value="Post Comment" style="background-color: #58c5f7; color: white; border-color: #58c5f7;" class="com-btn btn btn-outline-secondary">
-
-    </form> -->
-  <!-- End Comments -->
-
-  <!-- Display Comments -->
-    <!-- <br>
-    <hr>
-    <br>
-    <h4> -->
-      <?php
-      // $sql="SELECT count('1') FROM comments WHERE post_idno = '$post_idno' AND status = '1'";
-      // $result=mysqli_query($conn,$sql);
-      // $rowtotal=mysqli_fetch_array($result);
-      // if($rowtotal[0] == 1) {
-      //   echo "$rowtotal[0] Comment";
-      // } else {
-      //   echo "$rowtotal[0] Comments";
-      // }
-      ?>
-    <!-- </h4>
-    <br>
-    <hr> -->
-    <?php
-      // $query ="SELECT * FROM comments WHERE post_idno = '$post_idno' AND status = '1'";
-      // $result = $conn->query($query);
-      // if($result->num_rows> 0){
-      //   $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
-      // }
-
-      // $date = date('d-m-Y', strtotime($submit_date));
-
-    ?>
-    
-    <?php //foreach ($options as $option) { 
-      ?>
-      
-      <!-- <br>
-
-      <div class="container ms-3" id="comments">
-        <div class="row">
-          <div class="col-9">
-            <h5><?php //echo $option['name']; ?></h5>
-          </div>
-          <div class="col" style="">
-            <p class="text-muted" style="font-size: 12px;"><?php //echo date('F j, Y / g:i a', strtotime($option['submit_date'])); ?></p>
-            &nbsp;&nbsp;
-          </div> -->
-          <!-- <div class="col" style="margin-top: -3px;">
-            <a class="reply text-muted" href="#">Reply</a>
-          </div> -->
-        <!-- </div>
-        <div class="row">
-          <div class="col">
-            <p class="text-muted row-2"><?php //echo $option['content']; ?></p>
-          </div>
-        </div>
-      </div>
-
-      <br>
-      <hr style=""> -->
-
-
-    <?php //} ?>
-
-
-  <!-- END Display Comments -->
   
   </div>
   <!-- sidebar -->
