@@ -163,7 +163,7 @@ if($loggedin == 1) { ?>
   
   <div class="position-fixed row" style="z-index: 1; width: 100.75% !important; background-color: #1e2327; height: 30px;">
     <div class="col">
-      <p class="text-start" style="margin-top: 5px; font-size: 12px;"><img class="ms-3" src="../assets/images/updated-logo.png" style="height: 20px !important; width: 20px !important;" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/rp-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
+      <p class="text-start" style="margin-top: 5px; font-size: 12px;"><img class="ms-3" src="../assets/images/new-logo.png" style="height: 20px !important; width: 20px !important;" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/rp-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
     </div>
     <div class="col">
 
@@ -214,7 +214,7 @@ if (mysqli_num_rows($result) > 0) {
   <div class="page-header">
     <div class="left">
       <a href="/">
-        <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
+        <img src="/assets/images/new-white.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
       </a>
     </div>
     <div class="right">
