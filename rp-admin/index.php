@@ -177,7 +177,7 @@ if(isLoggedIn() == false){
                         <p class="text-muted"><?php echo $option['published_date']; ?></p>
                       </div>
                       <div class="col">
-                        <p class="text-muted"><a style="color: #7fade1;" href="<?php echo BASE_URL . '/single_post.php?id=' . $option['post_id']; ?>"><?php echo $option['title']; ?></a></p>
+                        <p class="text-muted"><a style="color: #7fade1;" href="<?php echo BASE_URL . '/single_recipe.php?id=' . $option['post_id']; ?>"><?php echo $option['title']; ?></a></p>
                       </div>
                     </div>
                   <?php }} ?>
@@ -351,7 +351,7 @@ if(isLoggedIn() == false){
                       <div class="col ps-4">
                         <div class="d-flex">
                           <p>
-                            <a style="color: #7fade1;" href="<?php echo BASE_URL . '/single_post.php?id=' . $draft['post_id']; ?>"><?php echo $draft['title']; ?></a> 
+                            <a style="color: #7fade1;" href="<?php echo BASE_URL . '/single_recipe.php?id=' . $draft['post_id']; ?>"><?php echo $draft['title']; ?></a> 
                           </p>
                           &nbsp;&nbsp;
                           <p class="text-muted" style="font-size: 10px; margin-top: 4px;"><?php echo $draft['created_date']; ?></p>

@@ -215,7 +215,7 @@ if (mysqli_num_rows($new) > 0) {
       <div class="card h-100" style="background-color: #1f1f1f;">
         <div class="card-body mb-4">
           <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #03c6fc;"><?php echo $name; ?></p>
-          <a href="single_post.php?id=<?php echo $option['post_id']; ?>" class="text-decoration-none text-white"><h5 class="card-title blog-title"><?php echo $option['title']; ?></h5></a>
+          <a href="single_recipe.php?id=<?php echo $option['post_id']; ?>" class="text-decoration-none text-white"><h5 class="card-title blog-title"><?php echo $option['title']; ?></h5></a>
         </div>
       </div>
     </div>
