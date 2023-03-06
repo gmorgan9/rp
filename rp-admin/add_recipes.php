@@ -154,6 +154,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
         </div>
+        <div class="row">
         <div>
             <label>Recipe Title</label>
             <input class="form-control" style="width: 99%;" type="text" name="title">
@@ -164,6 +165,8 @@ if (mysqli_num_rows($result) > 0) {
             <input class="form-control" style="width: 99%;" type="text" name="short_title">
         </div>
         <div class="pt-3"></div>
+        </div>
+       
         <div>
             <label>Category</label>
             <select style="width: 99%;" name="category" class="form-control">
