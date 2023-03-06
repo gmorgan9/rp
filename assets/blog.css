@@ -135,7 +135,12 @@ footer {
    width: 95%;
 }
 
-    
+.blog_post {
+   float: left; 
+   width: 65%; 
+   background-color: #1f1f1f;
+}
+
 }
 
   @media only screen and (max-width: 1024px) {
@@ -152,6 +157,11 @@ footer {
     .mobile-center {
       display: flex !important;
       justify-content: center !important;
+    }
+    .recipe_content {
+      background-color: #1f1f1f;
+      width: 100%;
+      float: none;
     }
 
   }
