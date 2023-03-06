@@ -17,7 +17,7 @@ session_start();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=5.06">
+    <link rel="stylesheet" href="assets/blog.css?v=5.07">
 
     <title>Author Page - CacheUp Blog</title>
 

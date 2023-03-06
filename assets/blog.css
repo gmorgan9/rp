@@ -15,14 +15,14 @@
 }
 
 body {
-    background-color: #ffffff !important;
+    background-color: #1a1a1a !important;
     color: #fff;
 }
 .main-container {
    width:100%;
 		min-height:1400px;
 		margin-bottom:50px;
-		background-color:#ffffff;
+		background-color:#1a1a1a;
 }
 
 footer {
@@ -49,7 +49,7 @@ footer {
 
 .page-header {
    height: 135px;
-   background-color: #9b9883 !important;
+   background-color: #1f1f1f !important;
 }
 .talk-btn {
    border-color: #03c6fc;
@@ -104,7 +104,6 @@ footer {
    font-size: 200px;
 }
 .front {
-   color: #9b9883;
    margin-top: -165px;
    font-size: 95px;
    text-transform: uppercase;
@@ -122,7 +121,6 @@ footer {
    font-size: 85px;
 }
 .front-2 {
-   color: #9b9883;
    margin-top: -75px;
    font-size: 45px;
    text-transform: uppercase;
