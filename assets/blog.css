@@ -142,6 +142,9 @@ footer {
     .main-container {
        display: block;
     }
+    .blocked-page {
+      display: none;
+    }
 
     .mobile {
       display: none !important;
