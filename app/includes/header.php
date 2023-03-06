@@ -4,16 +4,16 @@
                 <div class="pe-2"></div>
                 <img src="../assets/images/updated-logo.png" style="height: 20px !important; width: 20px !important;" alt="">
                 <div class="pe-4"></div>
-                <a class="head-link" style="text-decoration: none; color: white; font-size: 12px;" href="/"><i class="bi bi-house-door-fill"></i>&nbsp;CacheUp</a>
+                <a class="head-link" style="text-decoration: none; color: white; font-size: 12px;" href="/"><i class="bi bi-house-door-fill"></i>&nbsp;RecipePro</a>
                 <div class="pe-5"></div>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="head-link" style="text-decoration: none; margin-top: 3.5px; color: white; font-size: 12px;" href="<?php echo BASE_URL . '/rp-admin/pending_comments.php' ?>"><i style="font-size: 12px;" class="bi bi-chat-right-fill"></i>&nbsp;
+                <!-- <a class="head-link" style="text-decoration: none; margin-top: 3.5px; color: white; font-size: 12px;" href="<?php echo BASE_URL . '/rp-admin/pending_comments.php' ?>"><i style="font-size: 12px;" class="bi bi-chat-right-fill"></i>&nbsp; -->
 
                 <?php
-                $sql="SELECT count('1') FROM comments WHERE status = 0";
-                $result=mysqli_query($conn,$sql);
-                $rowtotal=mysqli_fetch_array($result); 
-                echo "$rowtotal[0]";
+                // $sql="SELECT count('1') FROM comments WHERE status = 0";
+                // $result=mysqli_query($conn,$sql);
+                // $rowtotal=mysqli_fetch_array($result); 
+                // echo "$rowtotal[0]";
                 ?>
 
                 </a>
