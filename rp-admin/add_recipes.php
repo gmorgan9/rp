@@ -62,7 +62,7 @@ if(isset($_POST['add'])){
 
     <script src="https://cdn.tiny.cloud/1/7kainuaawjddfzf3pj7t2fm3qdjgq5smjfjtsw3l4kqfd1h4/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
-    <title>Add New Post - CacheUp Blog</title>
+    <title>Add New Recipe - RecipePro</title>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -115,7 +115,7 @@ if (mysqli_num_rows($result) > 0) {
     <div class="col-10" style="margin-left: -25px;">
     <div class="mt-5"></div>
     <h3 class="text-black" style="margin-left: -5px;">
-        New Post
+        New Recipe
       </h3>
       <div class="mt-3"></div>
     <form action="" method="POST">
@@ -135,7 +135,7 @@ if (mysqli_num_rows($result) > 0) {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body text-black">
-                    Things you will want to pay attention to while creating a new post for our blog. If you have any questions, please reach out via email, I will try and get back to you all as soon as possible.
+                    Things you will want to pay attention to while creating a new recipe for our blog. If you have any questions, please reach out via email, I will try and get back to you all as soon as possible.
                     <ul>
                       <li>For all images wanting to be insertted, please have a link for your image ready. a useful site to help you get a link for images would be: <a href="https://postimages.org" target="_blank">https://postimages.org</a>.</li>
                         <li>Sizes for images to fit inside of blog block.</li>
@@ -154,7 +154,7 @@ if (mysqli_num_rows($result) > 0) {
 
         </div>
         <div>
-            <label>Post Title</label>
+            <label>Recipe Title</label>
             <input class="form-control" style="width: 99%;" type="text" name="title">
         </div>
         <div class="pt-3"></div>
