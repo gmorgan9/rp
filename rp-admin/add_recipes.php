@@ -155,14 +155,14 @@ if (mysqli_num_rows($result) > 0) {
 
         </div>
         <div class="row">
-        <div class="col w-50">
+        <div class="col">
             <label>Recipe Title</label>
-            <input class="form-control" style="width: 99%;" type="text" name="title">
+            <input class="form-control" type="text" name="title">
         </div>
         <div class="pt-3"></div>
-        <div class="col w-50">
+        <div class="col">
             <label>Short Title</label>
-            <input class="form-control" style="width: 99%;" type="text" name="short_title">
+            <input class="form-control" type="text" name="short_title">
         </div>
         <div class="pt-3"></div>
         </div>
