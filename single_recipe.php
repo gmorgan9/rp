@@ -71,7 +71,7 @@ session_start();
   font-weight: bold;
 }
 .links:hover {
-  color: #7fade1 !important;
+  color: #9b9883 !important;
 }
 .dropdown-menu:hover .menu-content {
   display: block;
@@ -82,23 +82,23 @@ session_start();
   padding: 5px;
 }
       .bc-link:hover {
-        color: #03c6fc !important;
+        color: #9b9883 !important;
       }
       .recent-link:hover {
-        color: #03c6fc !important;
+        color: #9b9883 !important;
       }
       .cat-link:hover {
-        color: #03c6fc !important;
+        color: #9b9883 !important;
       }
       form-control:focus {
         border-color: #58c5f7 !important;
       }
       .btn:hover {
-        border-color: #47a0c9 !important;
-        background-color: #47a0c9 !important;
+        border-color: #9b9883 !important;
+        background-color: #9b9883 !important;
       }
       .reply:hover {
-        background-color: #58c5f7 !important;
+        background-color: #9b9883 !important;
         color: white !important;
         cursor: pointer;
         border-radius: 5px;
@@ -114,11 +114,11 @@ session_start();
         text-decoration: none;
       }
       .website-btn:hover {
-        border-color: #47a0c9 !important;
-        background-color: #47a0c9 !important;
+        border-color: #9b9883 !important;
+        background-color: #9b9883 !important;
       }
       .post-link:hover {
-        color: #47a0c9 !important;
+        color: #9b9883 !important;
       }
       pre {
         color: white;
@@ -134,7 +134,7 @@ session_start();
         z-index: 99; /* Make sure it does not overlap */
         border: none; /* Remove borders */
         outline: none; /* Remove outline */
-        background-color: #58c5f7 !important; /* Set a background color */
+        background-color: #9b9883 !important; /* Set a background color */
         color: white; /* Text color */
         cursor: pointer; /* Add a mouse pointer on hover */
         padding: 7px 10px; /* Some padding */
@@ -143,7 +143,7 @@ session_start();
       }
 
       #myBtn:hover {
-        background-color: #47a0c9 !important; /* Add a dark-grey background on hover */
+        background-color: #9b9883 !important; /* Add a dark-grey background on hover */
       }
 
       p img {
