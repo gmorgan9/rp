@@ -103,7 +103,7 @@ if(isLoggedIn() == false){
                           $sql="SELECT count('1') FROM recipes WHERE status = 'published'";
                           $result=mysqli_query($conn,$sql);
                           $rowtotal=mysqli_fetch_array($result); 
-                          echo "$rowtotal[0] recipes";
+                          echo "$rowtotal[0] Recipes";
                           ?>
                         </a>
                       <!-- end recipes -->
@@ -184,71 +184,63 @@ if(isLoggedIn() == false){
                   <hr>
                   <!-- PHP -->
                     <?php
-                      $query ="SELECT * FROM comments WHERE status = 1 LIMIT 1";
-                      $result = $conn->query($query);
-                      if($result->num_rows> 0){
-                        $comms = mysqli_fetch_all($result, MYSQLI_ASSOC);
-                      }
+                      // $query ="SELECT * FROM comments WHERE status = 1 LIMIT 1";
+                      // $result = $conn->query($query);
+                      // if($result->num_rows> 0){
+                      //   $comms = mysqli_fetch_all($result, MYSQLI_ASSOC);
+                      // }
                     ?>
                     <?php
-                        $sql="SELECT count('1') FROM comments WHERE status = 1";
-                        $result=mysqli_query($conn,$sql);
-                        $rowtotal=mysqli_fetch_array($result); 
-                        $comments = $rowtotal[0];
+                        // $sql="SELECT count('1') FROM comments WHERE status = 1";
+                        // $result=mysqli_query($conn,$sql);
+                        // $rowtotal=mysqli_fetch_array($result); 
+                        // $comments = $rowtotal[0];
                     ?>
                   <!-- end PHP -->
-                  <p style="font-size: 16px;">
+                  <!-- <p style="font-size: 16px;">
                     Recent Comments
                   </p>
-                  <?php if($comments == 0) { ?>
+                  <?php //if($comments == 0) { ?>
                     <p>No comments approved currently.</p>
-                    <?php } else { ?>
-                  <?php foreach ($comms as $comm) { ?>
+                    <?php// } else { ?>
+                  <?php //foreach ($comms as $comm) { ?>
                     <div class="row">
                       <div class="col-2" style="margin-top: -15px !important;">
                         <i style="font-size: 55px; margin-left: 15px;" class="bi bi-person-square text-muted"></i>
                       </div>
                       <div class="col">
                         <p class="text-muted">
-                          From <?php echo $comm['name']; ?> on <a style="color: #7fade1;" href="<?php echo BASE_URL . '/single_post.php?id=' . $comm['post_id']; ?>"><?php echo $comm['post_title']; ?></a>
+                          From <?php //echo $comm['name']; ?> on <a style="color: #7fade1;" href="<?php //echo BASE_URL . '/single_post.php?id=' . $comm['post_id']; ?>"><?php //echo $comm['post_title']; ?></a>
                         </p>
                         <p style="margin-top: -10px;">
-                          <?php echo substr($comm['content'], 0, 50) . '...'; ?>
+                          <?php //echo substr($comm['content'], 0, 50) . '...'; ?>
                         </p>
                       </div>
-                    </div>
-                  <?php }} ?>
+                    </div> -->
+                  <?php //}} ?>
                 </div>
                 <div class="card-footer text-muted pt-2 pb-2">
                   <div class="row">
                     <div class="col">
-                      <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/all_comments.php'; ?>">All </a>
+                      <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/all_recipes.php'; ?>">All </a>
                         <?php
-                        $sql="SELECT count('1') FROM comments";
+                        $sql="SELECT count('1') FROM recipes";
                         $result=mysqli_query($conn,$sql);
                         $rowtotal=mysqli_fetch_array($result); 
                         echo "($rowtotal[0])";
                         ?>
                         &nbsp;<span class="text-muted">|</span>&nbsp;
-                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/pending_comments.php'; ?>">Pending </a> 
+                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/all_recipes.php'; ?>">Drafts </a> 
                         <?php
-                        $sql="SELECT count('1') FROM comments WHERE status = 0";
+                        $sql="SELECT count('1') FROM recipes WHERE status = 'draft'";
                         $result=mysqli_query($conn,$sql);
                         $rowtotal=mysqli_fetch_array($result); 
                         echo "($rowtotal[0])";
                         ?>
                         &nbsp;<span class="text-muted">|</span>&nbsp;
-                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/approved_comments.php'; ?>">Approved </a> 
+                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/all_recipes.php'; ?>">Approved </a> 
                         <?php
-                        $sql="SELECT count('1') FROM comments WHERE status = 1";
-                        $result=mysqli_query($conn,$sql);
-                        $rowtotal=mysqli_fetch_array($result); 
-                        echo "($rowtotal[0])";
-                        ?>
-                        &nbsp;<span class="text-muted">|</span>&nbsp;
-                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/trash_comments.php'; ?>">Trash </a> 
-                        <?php
-                        $sql="SELECT count('1') FROM comments WHERE status = 2";
+                        $sql="SELECT count('1') FROM recipes WHERE status = 'published'";
                         $result=mysqli_query($conn,$sql);
                         $rowtotal=mysqli_fetch_array($result); 
                         echo "($rowtotal[0])";
