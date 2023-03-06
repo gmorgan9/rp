@@ -180,9 +180,9 @@ if (mysqli_num_rows($result) > 0) {
             <p class="text-uppercase text-muted text-center" style="font-size: 12px; letter-spacing: .5px;">
                 <?php 
                 ?>
-                Joined: <?php echo date('F d, Y', strtotime($joined)); ?>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Posts: 
+                Joined: <?php echo date('F d, Y', strtotime($joined)); ?>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;recipes: 
                 <?php
-                $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
+                $sql="SELECT count('1') FROM recipes WHERE author_idno = '$idno' AND status = 'published'";
                 $result=mysqli_query($conn,$sql);
                 $rowtotal=mysqli_fetch_array($result); 
                 echo "$rowtotal[0]";
@@ -208,7 +208,7 @@ if (mysqli_num_rows($result) > 0) {
   <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <?php
     $idno = $_GET['id'];
-    $query ="SELECT * FROM posts WHERE author_idno = '$idno' AND status = 'published'";
+    $query ="SELECT * FROM recipes WHERE author_idno = '$idno' AND status = 'published'";
     $result = $conn->query($query);
     if($result->num_rows> 0){
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);

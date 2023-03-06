@@ -231,11 +231,11 @@ if (mysqli_num_rows($result) > 0) {
 <!-- end header -->
 
 
-<!-- start blog posts -->
+<!-- start blog recipes -->
   <!-- start BLOG -->
     <?php
     $id = $_GET['id'];
-    $select = "SELECT * FROM posts WHERE post_id = '$id' ";
+    $select = "SELECT * FROM recipes WHERE post_id = '$id' ";
     $result = mysqli_query($conn, $select);
 
     if (mysqli_num_rows($result) > 0) {
@@ -321,7 +321,7 @@ if (mysqli_num_rows($result) > 0) {
       <div class="tags">
       <?php
       $id = $_GET['id'];
-      $grab = "SELECT * FROM posts WHERE post_id = '$id' ";
+      $grab = "SELECT * FROM recipes WHERE post_id = '$id' ";
       $comma = mysqli_query($conn, $grab);
 
       while($rows = mysqli_fetch_assoc($comma)) {
@@ -381,10 +381,10 @@ if (mysqli_num_rows($result) > 0) {
     <p class="text-center text-uppercase" style="font-size: 12px; margin-top: 20px;">
     <a class="post-link" style="text-decoration: none; color: #58c5f7;" href="author.php?id=<?php echo $idno; ?>">
     <?php
-    $sql="SELECT count('1') FROM posts WHERE author_idno = '$idno' AND status = 'published'";
+    $sql="SELECT count('1') FROM recipes WHERE author_idno = '$idno' AND status = 'published'";
     $result=mysqli_query($conn,$sql);
     $rowtotal=mysqli_fetch_array($result); 
-    echo "Posts: $rowtotal[0]";
+    echo "recipes: $rowtotal[0]";
     ?>
     </a>
     </p>
@@ -514,20 +514,20 @@ if (mysqli_num_rows($result) > 0) {
     
     <div class="side" id="side" style="float: right; top: 0; right: 0; margin-top: 0; margin-right: 0 !important; padding-right: 0 !important; background-color: #1f1f1f; width: 30%;">  
       <div class="side-content" id="side_content" style="position: -webkit-sticky; position: sticky; top: 35px; margin-top: 45px; padding-left: 4%; padding-top: 2%;">
-      <!-- recent posts -->
+      <!-- recent recipes -->
         <h4>
-          Recent Posts
+          Recent recipes
         </h4>
         <div class="pb-3"></div>
         <!-- end function -->
           <?php
-            $query ="SELECT * FROM posts WHERE status = 'published' LIMIT 4";
+            $query ="SELECT * FROM recipes WHERE status = 'published' LIMIT 4";
             $result = $conn->query($query);
             if($result->num_rows> 0){
-              $posts= mysqli_fetch_all($result, MYSQLI_ASSOC);
+              $recipes= mysqli_fetch_all($result, MYSQLI_ASSOC);
             }
           ?>
-          <?php foreach ($posts as $post) {?>
+          <?php foreach ($recipes as $post) {?>
         <!-- end function -->
         <p style="line-height: 1 !important;">
           <a class="recent-link text-muted" style="font-size: 14px; text-decoration: none;" href="<?php echo BASE_URL . '/single_post.php?id= '. $post['post_id']; ?>">
@@ -536,7 +536,7 @@ if (mysqli_num_rows($result) > 0) {
         </p>
 
         <?php } ?>
-      <!-- end recent posts -->
+      <!-- end recent recipes -->
       <!-- categories -->
       <div class="pb-4"></div>
         <h4>
@@ -569,7 +569,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
     </div>
-<!-- end blog posts -->
+<!-- end blog recipes -->
 
 
 

@@ -167,7 +167,7 @@ if (mysqli_num_rows($result) > 0) {
     <nav class="mt-5" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
       <ol class="breadcrumb justify-content-center">
         <li class="text-center breadcrumb-item" style="font-size: 12px;"><a href="/" class="text-decoration-none text-uppercase" style="color: #03c6fc;">Home</a></li>
-        <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;">Posts</li>
+        <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;">recipes</li>
       </ol>
     </nav>
 
@@ -175,10 +175,10 @@ if (mysqli_num_rows($result) > 0) {
 
   <div class="middle">
     <h1 class="behind text-center mt-2">
-      Posts
+      recipes
     </h1>
     <h1 class="front text-center">
-      <strong>Posts</strong>
+      <strong>recipes</strong>
     </h1>
   </div>
 
@@ -187,13 +187,13 @@ if (mysqli_num_rows($result) > 0) {
 
 <br><br><br>
 
-<!-- start blog posts -->
+<!-- start blog recipes -->
 
 
   <br>
   <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <?php
-    $query ="SELECT * FROM posts WHERE status = 'published'";
+    $query ="SELECT * FROM recipes WHERE status = 'published'";
     $result = $conn->query($query);
     if($result->num_rows> 0){
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -225,7 +225,7 @@ if (mysqli_num_rows($new) > 0) {
 
 
 
-<!-- end blog posts -->
+<!-- end blog recipes -->
 
 <!-- social links -->
 

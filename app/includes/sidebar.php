@@ -20,15 +20,15 @@ if (mysqli_num_rows($result) > 0) {
                                 <span class="nav__logo-name">&nbsp;Dashboard</span>
                             </a>
                             <div class="nav__dropdown">
-                                <a href="<?php echo BASE_URL . '/rp-admin/all_posts.php' ?>" class="nav__link side text-white">
+                                <a href="<?php echo BASE_URL . '/rp-admin/all_recipes.php' ?>" class="nav__link side text-white">
                                     &nbsp;&nbsp;<i class="bi bi-pin-angle-fill nav__icon" style="font-size: 18px;"></i>
-                                    <span class="nav__name">&nbsp;Posts</span>
+                                    <span class="nav__name">&nbsp;recipes</span>
                                 </a>
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="<?php echo BASE_URL . '/rp-admin/all_posts.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All Posts</a>
-                                        <a href="<?php echo BASE_URL . '/rp-admin/add_posts.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Add Posts</a>
+                                        <a href="<?php echo BASE_URL . '/rp-admin/all_recipes.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All recipes</a>
+                                        <a href="<?php echo BASE_URL . '/rp-admin/add_recipes.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Add recipes</a>
                                         <a href="<?php echo BASE_URL . '/rp-admin/categories.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Categories</a>
                                     </div>
                                 </div>
@@ -122,16 +122,16 @@ if (mysqli_num_rows($result) > 0) {
                 </a> -->
             <!-- END DASHBOARD -->
 
-            <!-- POSTS -->
+            <!-- recipes -->
                 <!-- <div class="pt-2"></div>
                 <div class="dropdown-menu">
                     <a style="text-decoration: none;" href="#" class="a-link ps-2 side menu-btn text-white">
                         <i class="bi bi-pin-angle"></i>&nbsp;
-                        <span>  Posts</span>
+                        <span>  recipes</span>
                     </a>
                     <div class="menu-content" style="margin-left: 170px !important; margin-top: -30px;">
-                        <a class="links text-white" href="<?php //echo BASE_URL . '/pages/all_posts.php' ?>">All Posts</a>
-                        <a class="links text-white" href="<?php //echo BASE_URL . '/pages/add_posts.php' ?>">Add New</a>
+                        <a class="links text-white" href="<?php //echo BASE_URL . '/pages/all_recipes.php' ?>">All recipes</a>
+                        <a class="links text-white" href="<?php //echo BASE_URL . '/pages/add_recipes.php' ?>">Add New</a>
                         <a class="links text-white" href="<?php //echo BASE_URL . '/pages/categories.php' ?>">Add New</a>
                     </div>
                 </div> -->
@@ -139,7 +139,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-            <!-- END POSTS -->
+            <!-- END recipes -->
 
             <!-- COMMENTS -->
                 <!-- <div class="pt-2"></div> -->

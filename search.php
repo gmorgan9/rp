@@ -228,7 +228,7 @@ if($loggedin == 1) { ?>
     <?php
     if(isset($_POST['search'])){
         $param = mysqli_real_escape_string($conn, $_POST['param']);
-        $select = " SELECT * FROM posts WHERE title LIKE '%$param%' AND status = 'published'";
+        $select = " SELECT * FROM recipes WHERE title LIKE '%$param%' AND status = 'published'";
     
           $result = $conn->query($select);
             if($result->num_rows> 0){

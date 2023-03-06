@@ -101,7 +101,7 @@ if (mysqli_num_rows($result) > 0) {
                     <div class="d-flex justify-content-center">
                         <div class="badge text-bg-success me-2">
                         <?php
-                        $sql="SELECT count('1') FROM posts WHERE author_idno = '".$_SESSION['user_idno']."' AND status = 'published'";
+                        $sql="SELECT count('1') FROM recipes WHERE author_idno = '".$_SESSION['user_idno']."' AND status = 'published'";
                         $result=mysqli_query($conn,$sql);
                         $rowtotal=mysqli_fetch_array($result); 
                         echo "$rowtotal[0] Published";
@@ -109,7 +109,7 @@ if (mysqli_num_rows($result) > 0) {
                         </div>
                         <div class="badge text-bg-primary">
                         <?php
-                        $sql="SELECT count('1') FROM posts WHERE author_idno = '".$_SESSION['user_idno']."' AND status = 'draft'";
+                        $sql="SELECT count('1') FROM recipes WHERE author_idno = '".$_SESSION['user_idno']."' AND status = 'draft'";
                         $result=mysqli_query($conn,$sql);
                         $rowtotal=mysqli_fetch_array($result); 
                         echo "$rowtotal[0] Drafts";

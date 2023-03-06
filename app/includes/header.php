@@ -24,7 +24,7 @@
                         <i class="bi bi-plus"></i>New
                     </a>
                     <div class="menu-content" style="z-index: -1; margin-left: 10px !important; width: 60% !important;">
-                        <a class="links text-white" href="<?php echo BASE_URL . '/rp-admin/add_posts.php' ?>">Post</a>
+                        <a class="links text-white" href="<?php echo BASE_URL . '/rp-admin/add_recipes.php' ?>">Post</a>
                         <a class="links text-white" href="<?php echo BASE_URL . '/rp-admin/categories.php' ?>">Category</a>
                         <a class="links text-white" href="<?php echo BASE_URL . '/rp-admin/add_user.php' ?>">User</a>
                         <div class="pb-3"></div>

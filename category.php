@@ -127,7 +127,7 @@ if($loggedin == 1) { ?>
 
 <?php
 $idno = $_GET['id'];
-$select = " SELECT * FROM posts WHERE category = '$idno' ";
+$select = " SELECT * FROM recipes WHERE category = '$idno' ";
 $result = mysqli_query($conn, $select);
 if (mysqli_num_rows($result) > 0) {
    while($row = mysqli_fetch_assoc($result)) {
@@ -166,7 +166,7 @@ if (mysqli_num_rows($result) > 0) {
 <!-- <nav class="mt-5" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
       <ol class="breadcrumb justify-content-center">
         <li class="text-center breadcrumb-item" style="font-size: 12px;"><a href="/" class="text-decoration-none text-uppercase" style="color: #03c6fc;">Home</a></li>
-        <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;">Posts</li>
+        <li class="breadcrumb-item active text-white text-uppercase" aria-current="page" style="font-size: 12px;">recipes</li>
       </ol>
     </nav> -->
 
@@ -204,13 +204,13 @@ if (mysqli_num_rows($result) > 0) {
 <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <?php
     $idno = $_GET['id'];
-    $query ="SELECT * FROM posts WHERE category = '$idno' AND status = 'published'";
+    $query ="SELECT * FROM recipes WHERE category = '$idno' AND status = 'published'";
     $result = $conn->query($query);
     if($result->num_rows> 0){
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
     } else { ?>
     <p class="text-center">
-      There are currently no posts tagged with <strong class="text-muted"><?php echo $name;?></strong>.
+      There are currently no recipes tagged with <strong class="text-muted"><?php echo $name;?></strong>.
     </p>
       
    <?php }

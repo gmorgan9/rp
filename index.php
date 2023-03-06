@@ -219,8 +219,8 @@ if (mysqli_num_rows($result) > 0) {
 
 <div class="text-center">
   <button class="btn mt-5 post-btn btn-lg">
-    <a href="<?php echo BASE_URL . '/posts.php' ?>" class="text-decoration-none text-white p-2 text-uppercase" style="font-size: 16px;">
-      View All Posts
+    <a href="<?php echo BASE_URL . '/recipes.php' ?>" class="text-decoration-none text-white p-2 text-uppercase" style="font-size: 16px;">
+      View All recipes
     </a>
   </button>
 </div>
@@ -231,14 +231,14 @@ if (mysqli_num_rows($result) > 0) {
 
 <br><br><br>
 
-<!-- start blog posts -->
+<!-- start blog recipes -->
 
 <div class="sub-title">
   <h1 class="behind-2 mt-5">
-    Popular Posts
+    Popular recipes
   </h1>
   <h1 class="front-2">
-    <strong>Popular Posts</strong>
+    <strong>Popular recipes</strong>
   </h1>
 </div>
 
@@ -247,7 +247,7 @@ if (mysqli_num_rows($result) > 0) {
 
 <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <?php
-    $query ="SELECT * FROM posts WHERE status = 'published' LIMIT 3";
+    $query ="SELECT * FROM recipes WHERE status = 'published' LIMIT 3";
     $result = $conn->query($query);
     if($result->num_rows> 0){
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -285,7 +285,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-<!-- end blog posts -->
+<!-- end blog recipes -->
 
 <!-- social links -->
 

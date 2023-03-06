@@ -25,9 +25,9 @@ if(isset($_POST['update'])){
   date_default_timezone_set('America/Denver');
   $date = date('F d, Y, g:i a', time());
 
-  $insert = "UPDATE posts SET title = '$title', content = '$content', category = '$category', tags = '$tags', updated_at = '$date' WHERE post_id = '".$_POST['post_id']."'";
+  $insert = "UPDATE recipes SET title = '$title', content = '$content', category = '$category', tags = '$tags', updated_at = '$date' WHERE post_id = '".$_POST['post_id']."'";
   mysqli_query($conn, $insert);
-  header("location: all_posts.php");
+  header("location: all_recipes.php");
 
 };
 
@@ -105,7 +105,7 @@ if (mysqli_num_rows($result) > 0) {
     
     <?php
 $id = $_GET['id'];
-$select = "SELECT * FROM posts WHERE post_id = '$id' ";
+$select = "SELECT * FROM recipes WHERE post_id = '$id' ";
 $result = mysqli_query($conn, $select);
 
 if (mysqli_num_rows($result) > 0) {

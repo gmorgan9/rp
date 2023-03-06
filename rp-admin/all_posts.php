@@ -19,26 +19,26 @@ $time = date('g:i a', time());
 
 
 if (isset($_POST['published'])) {
-  $appUpdateQuery = "UPDATE posts SET status = 'published', published_date = '$date', published_time = '$time' WHERE post_id = '".$_POST['post_id']."'";
+  $appUpdateQuery = "UPDATE recipes SET status = 'published', published_date = '$date', published_time = '$time' WHERE post_id = '".$_POST['post_id']."'";
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
-  header('location: all_posts.php');
+  header('location: all_recipes.php');
 }
 ?>
 
 <?php
 if (isset($_POST['draft'])) {
-  $appUpdateQuery = "UPDATE posts SET status = 'draft', published_date = null, published_time = null WHERE post_id = '".$_POST['post_id']."'";
+  $appUpdateQuery = "UPDATE recipes SET status = 'draft', published_date = null, published_time = null WHERE post_id = '".$_POST['post_id']."'";
   $appUpdateResult = mysqli_query($conn, $appUpdateQuery);
-  header('location: all_posts.php');
+  header('location: all_recipes.php');
 }
 ?>
 
 <?php 
 // START DELETE
   if (isset($_POST['delete'])) {
-    $delete = "DELETE FROM posts WHERE post_id = '".$_POST['post_id']."'";
+    $delete = "DELETE FROM recipes WHERE post_id = '".$_POST['post_id']."'";
     $terUpdateResult = mysqli_query($conn, $delete);
-    header('location: all_posts.php');
+    header('location: all_recipes.php');
   }
 // END DELETE
 
@@ -59,7 +59,7 @@ if (isset($_POST['draft'])) {
     <link rel="stylesheet" href="../assets/styles.css?v=4.11">
     <link rel="stylesheet" href="../assets/sidebar.css?v=1.10">
 
-    <title>All Posts - CacheUp Blog</title>
+    <title>All recipes - CacheUp Blog</title>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -89,7 +89,7 @@ if (isset($_POST['draft'])) {
     <div class="col-10">
     <div class="mt-5"></div>
     <h3 class="text-black" style="margin-left: -30px;">
-        Posts
+        recipes
       </h3>
       <div class="mt-3"></div>
     <table class="table table-bordered" style="margin-left: -30px;">
@@ -104,7 +104,7 @@ if (isset($_POST['draft'])) {
   <tbody class="table-group-divider" style="background-color: #f0f0f0;">
 
   <?php
-      $sql = "SELECT * FROM posts";
+      $sql = "SELECT * FROM recipes";
       $all = mysqli_query($conn, $sql);
       if($all) {
           while ($row = mysqli_fetch_assoc($all)) {

@@ -89,7 +89,7 @@ if (isset($_POST['reset'])) {
             <th scope="col">Name</th>
             <th scope="col">Email</th>
             <th scope="col">Role</th>
-            <th scope="col">Posts</th>
+            <th scope="col">recipes</th>
             <th scope="col">Actions</th>
           </tr>
         </thead>
@@ -125,7 +125,7 @@ if (isset($_POST['reset'])) {
               <?php } ?>
               <td>
                 <?php
-                $sql="SELECT count('1') FROM posts WHERE author_idno = '". $idno ."'";
+                $sql="SELECT count('1') FROM recipes WHERE author_idno = '". $idno ."'";
                 $result=mysqli_query($conn,$sql);
                 $rowtotal=mysqli_fetch_array($result); 
                 echo "$rowtotal[0]";
@@ -155,7 +155,7 @@ if (isset($_POST['reset'])) {
             <th scope="col">Name</th>
             <th scope="col">Email</th>
             <th scope="col">Role</th>
-            <th scope="col">Posts</th>
+            <th scope="col">recipes</th>
             <th scope="col">Actions</th>
           </tr>
         </thead>

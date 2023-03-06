@@ -96,17 +96,17 @@ if(isLoggedIn() == false){
                   <div class="pt-2"></div>
                   <div class="row">
                     <div class="col">
-                      <!-- posts -->
-                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/all_posts.php' ?>">
+                      <!-- recipes -->
+                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/all_recipes.php' ?>">
                           <i class="bi bi-pin-angle-fill text-muted"></i>&nbsp;
                           <?php
-                          $sql="SELECT count('1') FROM posts WHERE status = 'published'";
+                          $sql="SELECT count('1') FROM recipes WHERE status = 'published'";
                           $result=mysqli_query($conn,$sql);
                           $rowtotal=mysqli_fetch_array($result); 
-                          echo "$rowtotal[0] Posts";
+                          echo "$rowtotal[0] recipes";
                           ?>
                         </a>
-                      <!-- end posts -->
+                      <!-- end recipes -->
                       <div class="pt-2"></div>
                       <!-- categories -->
                       <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/categories.php' ?>">
@@ -145,7 +145,7 @@ if(isLoggedIn() == false){
             <!-- begin activity -->
               <!-- PHP -->
                 <?php
-                  $query ="SELECT * FROM posts WHERE status = 'published' LIMIT 2";
+                  $query ="SELECT * FROM recipes WHERE status = 'published' LIMIT 2";
                   $result = $conn->query($query);
                   if($result->num_rows> 0){
                     $options = mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -162,14 +162,14 @@ if(isLoggedIn() == false){
                   </p>
 
                   <?php
-                        $sql="SELECT count('1') FROM posts WHERE status = 'published'";
+                        $sql="SELECT count('1') FROM recipes WHERE status = 'published'";
                         $result=mysqli_query($conn,$sql);
                         $rowtotal=mysqli_fetch_array($result); 
                         $amount = $rowtotal[0];
                   ?>
 
                   <?php if($amount == 0) { ?>
-                    <p>No posts published currently.</p>
+                    <p>No recipes published currently.</p>
                     <?php } else { ?>
                   <?php foreach ($options as $option) { ?>
                     <div class="row">
@@ -287,7 +287,7 @@ if(isLoggedIn() == false){
                 $created_date = date("F j, Y");
                 $created_time = date("g:i a");
                 
-                $select = " SELECT * FROM posts WHERE idno = '$idno'";
+                $select = " SELECT * FROM recipes WHERE idno = '$idno'";
                 $result = mysqli_query($conn, $select);
                 
                 if(mysqli_num_rows($result) > 0){
@@ -295,7 +295,7 @@ if(isLoggedIn() == false){
                   $error = '';
                 
                 }else {
-                      $insert = "INSERT INTO posts (idno, title, content, author_idno, author, created_date, created_time) VALUES('$idno', '$title','$content','$author_idno','$author', '$created_date', '$created_time')";
+                      $insert = "INSERT INTO recipes (idno, title, content, author_idno, author, created_date, created_time) VALUES('$idno', '$title','$content','$author_idno','$author', '$created_date', '$created_time')";
                       mysqli_query($conn, $insert);
                       header('location: '. BASE_URL . 'rp-admin/');
                    }
@@ -338,14 +338,14 @@ if(isLoggedIn() == false){
                   </p>
                   <!-- PHP -->
                   <?php
-                      $query ="SELECT * FROM posts WHERE status = 'draft' LIMIT 2";
+                      $query ="SELECT * FROM recipes WHERE status = 'draft' LIMIT 2";
                       $result = $conn->query($query);
                       if($result->num_rows> 0){
                         $drafts = mysqli_fetch_all($result, MYSQLI_ASSOC);
                       }
                     ?>
                     <?php
-                        $sql="SELECT count('1') FROM posts WHERE status = 'draft'";
+                        $sql="SELECT count('1') FROM recipes WHERE status = 'draft'";
                         $result=mysqli_query($conn,$sql);
                         $rowtotal=mysqli_fetch_array($result); 
                         $drafts_amount = $rowtotal[0];
