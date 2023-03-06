@@ -15,38 +15,38 @@ if (mysqli_num_rows($result) > 0) {
                 <div>
                     <div class="nav__list">
                         <div class="nav__items">
-                            <a href="<?php echo BASE_URL . '/cu-admin/' ?>" class="nav__link nav__logo side text-white">
+                            <a href="<?php echo BASE_URL . '/rp-admin/' ?>" class="nav__link nav__logo side text-white">
                                 &nbsp;&nbsp;<i class="bi bi-speedometer2 nav__icon" style="font-size: 18px;"></i>
                                 <span class="nav__logo-name">&nbsp;Dashboard</span>
                             </a>
                             <div class="nav__dropdown">
-                                <a href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>" class="nav__link side text-white">
+                                <a href="<?php echo BASE_URL . '/rp-admin/all_posts.php' ?>" class="nav__link side text-white">
                                     &nbsp;&nbsp;<i class="bi bi-pin-angle-fill nav__icon" style="font-size: 18px;"></i>
                                     <span class="nav__name">&nbsp;Posts</span>
                                 </a>
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All Posts</a>
-                                        <a href="<?php echo BASE_URL . '/cu-admin/add_posts.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Add Posts</a>
-                                        <a href="<?php echo BASE_URL . '/cu-admin/categories.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Categories</a>
+                                        <a href="<?php echo BASE_URL . '/rp-admin/all_posts.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All Posts</a>
+                                        <a href="<?php echo BASE_URL . '/rp-admin/add_posts.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Add Posts</a>
+                                        <a href="<?php echo BASE_URL . '/rp-admin/categories.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Categories</a>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- comments -->
                                 <div class="nav__dropdown">
-                                    <a href="<?php echo BASE_URL . '/cu-admin/all_comments.php' ?>" class="nav__link side text-white">
+                                    <a href="<?php echo BASE_URL . '/rp-admin/all_comments.php' ?>" class="nav__link side text-white">
                                         &nbsp;&nbsp;<i class="bi bi-chat-right-fill nav__icon" style="font-size: 18px;"></i>
                                         <span class="nav__name">&nbsp;Comments</span>
                                     </a>
 
                                     <div class="nav__dropdown-collapse">
                                         <div class="nav__dropdown-content">
-                                            <a style="width: 110%;" href="<?php echo BASE_URL . '/cu-admin/all_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All Comments</a>
-                                            <a href="<?php echo BASE_URL . '/cu-admin/pending_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Pending</a>
-                                            <a href="<?php echo BASE_URL . '/cu-admin/approved_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Approved</a>
-                                            <a href="<?php echo BASE_URL . '/cu-admin/trash_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Trash</a>
+                                            <a style="width: 110%;" href="<?php echo BASE_URL . '/rp-admin/all_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All Comments</a>
+                                            <a href="<?php echo BASE_URL . '/rp-admin/pending_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Pending</a>
+                                            <a href="<?php echo BASE_URL . '/rp-admin/approved_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Approved</a>
+                                            <a href="<?php echo BASE_URL . '/rp-admin/trash_comments.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Trash</a>
                                         </div>
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@ if (mysqli_num_rows($result) > 0) {
                             </a>
     
                             <div class="nav__dropdown">
-                                <a href="<?php echo BASE_URL . '/cu-admin/all_users.php' ?>" class="nav__link side text-white">
+                                <a href="<?php echo BASE_URL . '/rp-admin/all_users.php' ?>" class="nav__link side text-white">
                                     &nbsp;&nbsp;<i class='bi bi-people nav__icon' style="font-size: 18px;"></i>
                                     <span class="nav__name">&nbsp;Users</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
@@ -72,9 +72,9 @@ if (mysqli_num_rows($result) > 0) {
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="<?php echo BASE_URL . '/cu-admin/all_users.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All Users</a>
-                                        <a href="<?php echo BASE_URL . '/cu-admin/add_user.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Add New</a>
-                                        <a href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Profile</a>
+                                        <a href="<?php echo BASE_URL . '/rp-admin/all_users.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All Users</a>
+                                        <a href="<?php echo BASE_URL . '/rp-admin/add_user.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Add New</a>
+                                        <a href="<?php echo BASE_URL . '/rp-admin/profile.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Profile</a>
                                     </div>
                                 </div>
 
@@ -116,7 +116,7 @@ if (mysqli_num_rows($result) > 0) {
 			<div class="accordion mb-2" id="accordionExample"> -->
 
             <!-- DASHBOARD -->
-                <!-- <a href="<?php //echo BASE_URL . '/cu-admin/' ?>" style="text-decoration: none;" class="text-white ps-2 side">
+                <!-- <a href="<?php //echo BASE_URL . '/rp-admin/' ?>" style="text-decoration: none;" class="text-white ps-2 side">
                     <i class="bi bi-speedometer2"></i>&nbsp;
                     <span>  Dashboard</span>
                 </a> -->
@@ -143,7 +143,7 @@ if (mysqli_num_rows($result) > 0) {
 
             <!-- COMMENTS -->
                 <!-- <div class="pt-2"></div> -->
-                <!-- <a href="<?php //echo BASE_URL . '/cu-admin/comments.php' ?>" style="text-decoration: none;" class="text-white ps-2 side">
+                <!-- <a href="<?php //echo BASE_URL . '/rp-admin/comments.php' ?>" style="text-decoration: none;" class="text-white ps-2 side">
                     <i class="bi bi-chat-right"></i>&nbsp;
                     <span>  Comments</span>
                 </a> -->
@@ -161,7 +161,7 @@ if (mysqli_num_rows($result) > 0) {
 
             <!-- PROFILE -->
                 <!-- <div class="pt-2"></div>
-                <a href="<?php //echo BASE_URL . '/cu-admin/profile.php' ?>" style="text-decoration: none;" class="text-white ps-2 side">
+                <a href="<?php //echo BASE_URL . '/rp-admin/profile.php' ?>" style="text-decoration: none;" class="text-white ps-2 side">
                     <i class="bi bi-person"></i>&nbsp;
                     <span>  Profile</span>
                 </a>
