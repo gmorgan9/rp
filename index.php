@@ -144,7 +144,7 @@ if (mysqli_num_rows($result) > 0) {
   <div class="page-header">
     <div class="left">
       <a href="/">
-        <img src="/assets/images/new-white.png" width="230px" class="text-center" style="margin-top: 5%; margin-left: 2%;" alt="">
+        <img src="/assets/images/new-white.png" width="230px" class="text-center" style="margin-top: 3%; margin-left: 2%;" alt="">
       </a>
     </div>
     <div class="right">
