@@ -181,7 +181,7 @@ if(isLoggedIn() == false){
                       </div>
                     </div>
                   <?php }} ?>
-                  <hr>
+                  <!-- <hr> -->
                   <!-- PHP -->
                     <?php
                       // $query ="SELECT * FROM comments WHERE status = 1 LIMIT 1";
@@ -238,7 +238,7 @@ if(isLoggedIn() == false){
                         echo "($rowtotal[0])";
                         ?>
                         &nbsp;<span class="text-muted">|</span>&nbsp;
-                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/all_recipes.php'; ?>">Approved </a> 
+                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/all_recipes.php'; ?>">Published </a> 
                         <?php
                         $sql="SELECT count('1') FROM recipes WHERE status = 'published'";
                         $result=mysqli_query($conn,$sql);
