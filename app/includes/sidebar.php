@@ -27,8 +27,8 @@ if (mysqli_num_rows($result) > 0) {
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="<?php echo BASE_URL . '/rp-admin/all_recipes.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All recipes</a>
-                                        <a href="<?php echo BASE_URL . '/rp-admin/add_recipes.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Add recipes</a>
+                                        <a href="<?php echo BASE_URL . '/rp-admin/all_recipes.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;All Recipes</a>
+                                        <a href="<?php echo BASE_URL . '/rp-admin/add_recipes.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Add Recipes</a>
                                         <a href="<?php echo BASE_URL . '/rp-admin/categories.php' ?>" class="nav__dropdown-item side text-muted">&nbsp;Categories</a>
                                     </div>
                                 </div>
