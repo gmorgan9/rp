@@ -95,23 +95,23 @@ if($loggedin == 1) { ?>
   
   <div class="position-fixed row" style="width: 100.75% !important; background-color: #1e2327; height: 30px;">
     <div class="col">
-      <p class="text-start" style="margin-top: 5px; font-size: 12px;"><img class="ms-3" src="../assets/images/new-logo.png" style="height: 20px !important; width: 20px !important;" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="log-link text-black" style="text-decoration: none;" href="<?php echo BASE_URL . '/rp-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
+      <p class="text-start" style="margin-top: 5px; font-size: 12px;"><img class="ms-3" src="../assets/images/new-logo.png" style="height: 20px !important; width: 20px !important;" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/rp-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
     </div>
     <div class="col">
 
 
       <!-- start dropdown -->
         <div class="dropdown-menu text-end float-end" style="">
-          <a style="font-size: 12px; text-decoration: none; color: white;" href="/" class="log-link menu-btn text-black">
-            Welcome, <?php echo $_SESSION['username']; ?> <i class="text-black bi bi-person-square"></i> 
+          <a style="font-size: 12px; text-decoration: none; color: white;" href="/" class="log-link menu-btn text-white">
+            Welcome, <?php echo $_SESSION['username']; ?> <i class="text-white bi bi-person-square"></i> 
           </a>
           <div class="menu-content" style="">
               <div class="float-start">
                   <i class="bi bi-person-square text-muted" style="font-size: 45px;margin-left: 15px;"></i>
               </div>
               <div class="float-end" style="margin-right: 15px;">
-                  <a class="links text-black" href="<?php echo BASE_URL . '/rp-admin/profile.php' ?>">Edit Profile</a>
-                  <a class="links text-black" href="<?php echo BASE_URL . '/logout.php' ?>">Log Out</a>
+                  <a class="links text-white" href="<?php echo BASE_URL . '/rp-admin/profile.php' ?>">Edit Profile</a>
+                  <a class="links text-white" href="<?php echo BASE_URL . '/logout.php' ?>">Log Out</a>
                   <div class="pb-3"></div>
               </div>
           </div>
@@ -149,7 +149,7 @@ if (mysqli_num_rows($result) > 0) {
     </div>
     <div class="right">
     
-      <a href="<?php echo BASE_URL . '/search.php' ?>" class="text-decoration-none text-black">
+      <a href="<?php echo BASE_URL . '/search.php' ?>" class="text-decoration-none text-white">
         <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
       </a>
       <button class="btn talk-btn me-2">
@@ -219,7 +219,7 @@ if (mysqli_num_rows($result) > 0) {
 
 <div class="text-center">
   <button class="btn mt-5 post-btn btn-lg">
-    <a href="<?php echo BASE_URL . '/recipes.php' ?>" class="text-decoration-none text-black p-2 text-uppercase" style="font-size: 16px;">
+    <a href="<?php echo BASE_URL . '/recipes.php' ?>" class="text-decoration-none text-white p-2 text-uppercase" style="font-size: 16px;">
       View All recipes
     </a>
   </button>
@@ -272,7 +272,7 @@ if (mysqli_num_rows($result) > 0) {
       <div class="card h-100" style="background-color: #c2c2c2;">
         <div class="card-body mb-4">
           <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #03c6fc;"><?php echo $name; ?></p>
-          <a href="single_post.php?id=<?php echo $option['post_id']; ?>" class="text-decoration-none text-black"><h5 class="card-title blog-title"><?php echo $option['title']; ?></h5></a>
+          <a href="single_post.php?id=<?php echo $option['post_id']; ?>" class="text-decoration-none text-white"><h5 class="card-title blog-title"><?php echo $option['title']; ?></h5></a>
           <!-- <p class="card-text text-muted">
             <?php //echo html_entity_decode(substr($option['content'], 0, 150) . '...'); ?>
           </p> -->
