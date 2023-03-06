@@ -260,7 +260,7 @@ if (mysqli_num_rows($result) > 0) {
 
     <div class="recipe_content" id="blog_style">
 
-      <nav class="mb-5" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; breadcrumb-divider-color: white;">
+      <nav class="mb-5 mobile" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; breadcrumb-divider-color: white;">
         <ol class="breadcrumb">
           <li class="breadcrumb-item" style="font-size: 12px;"><a href="/" class="text-decoration-none text-uppercase" style="color: #03c6fc !important;">Home</a></li>
           <li class="breadcrumb-item" style="font-size: 12px;"><a href="category.php?id=<?php echo $cat; ?>" class="text-decoration-none text-uppercase" style="color: #03c6fc !important;"><?php echo $name; ?></a></li>
