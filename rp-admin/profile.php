@@ -97,7 +97,7 @@ if (mysqli_num_rows($result) > 0) {
                   <p class="text-muted mb-3"><?php echo $username; ?></p>
                   <!-- <p class="text-muted mb-4">Bay Area, San Francisco, CA</p> -->
                   <div class="justify-content-center mb-2">
-                    <h6>Blog Post Stats</h6>
+                    <h6>Recipe Stats</h6>
                     <div class="d-flex justify-content-center">
                         <div class="badge text-bg-success me-2">
                         <?php
