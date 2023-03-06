@@ -340,7 +340,7 @@ if (mysqli_num_rows($result) > 0) {
   <!-- social links -->
     <br>
     <!-- Linkedin -->
-    <div class="social-links">
+    <div class="social-links mobile">
       <a class="btn btn-primary" style="background-color: #0082ca; border:none !important;" href="#!" role="button"
         ><i class="bi bi-linkedin"></i>
       </a>
@@ -379,7 +379,7 @@ if (mysqli_num_rows($result) > 0) {
     ></a>
     </div>
     <p class="text-center text-uppercase" style="font-size: 12px; margin-top: 20px;">
-    <a class="post-link" style="text-decoration: none; color: #58c5f7;" href="author.php?id=<?php echo $idno; ?>">
+    <a class="mobile post-link" style="text-decoration: none; color: #58c5f7;" href="author.php?id=<?php echo $idno; ?>">
     <?php
     $sql="SELECT count('1') FROM recipes WHERE author_idno = '$idno' AND status = 'published'";
     $result=mysqli_query($conn,$sql);
