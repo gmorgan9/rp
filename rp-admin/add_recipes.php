@@ -164,6 +164,7 @@ if (mysqli_num_rows($result) > 0) {
             <input class="form-control" type="text" name="short_title">
         </div>
         </div>
+        <div class="pt-3"></div>
        
         <div>
             <label>Category</label>
