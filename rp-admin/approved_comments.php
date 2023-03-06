@@ -121,12 +121,13 @@ if (isset($_POST['trash'])) {
                   $submit_date = $row['submit_date'];
                   $status = $row['status'];
                   $post_id = $row['post_id'];
+                  $st = $row['short_title'];
                   ?>
             <tr>
               <th scope="row"><?php echo $idno; ?></th>
               <td><?php echo $name; ?></td>
               
-              <td><a href="../single_post.php?id=<?php echo $post_id; ?>"><?php echo $post_idno; ?></a></td>
+              <td><a href="../single_post.php?title=<?php echo $st; ?>"><?php echo $post_idno; ?></a></td>
               <td><?php echo date('F j, Y / g:i a', strtotime($submit_date));; ?></td>
               
               <?php if($status == 0) { ?>
