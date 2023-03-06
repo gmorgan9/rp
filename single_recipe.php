@@ -320,8 +320,8 @@ if (mysqli_num_rows($result) > 0) {
   <!-- TAGS -->
       <div class="tags">
       <?php
-      $id = $_GET['id'];
-      $grab = "SELECT * FROM recipes WHERE post_id = '$id' ";
+      $title = $_GET['title'];
+      $grab = "SELECT * FROM recipes WHERE short_title = '$title' ";
       $comma = mysqli_query($conn, $grab);
 
       while($rows = mysqli_fetch_assoc($comma)) {
