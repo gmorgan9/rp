@@ -183,7 +183,7 @@ if (mysqli_num_rows($result) > 0) {
 
 <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
-    <div class="card top-card h-100" style="background-color: #1f1f1f;">
+    <div class="card top-card h-100" style="background-color: #c2c2c2;">
       <div class="card-body">
         <div class="text-center">
           <i class="bi bi-list-check fs-1"></i>
@@ -194,7 +194,7 @@ if (mysqli_num_rows($result) > 0) {
     </div>
   </div>
   <div class="col">
-    <div class="card top-card h-100" style="background-color: #1f1f1f;">
+    <div class="card top-card h-100" style="background-color: #c2c2c2;">
       <div class="card-body">
         <div class="text-center">
           <i class="bi bi-folder fs-1"></i>
@@ -205,7 +205,7 @@ if (mysqli_num_rows($result) > 0) {
     </div>
   </div>
   <div class="col">
-    <div class="card top-card h-100" style="background-color: #1f1f1f;">
+    <div class="card top-card h-100" style="background-color: #c2c2c2;">
       <div class="card-body">
         <div class="text-center">
           <i class="bi bi-journal fs-1"></i>
@@ -269,7 +269,7 @@ if (mysqli_num_rows($result) > 0) {
     ?>
     
     <div class="col">
-      <div class="card h-100" style="background-color: #1f1f1f;">
+      <div class="card h-100" style="background-color: #c2c2c2;">
         <div class="card-body mb-4">
           <p class="card-subtitle mb-3 mt-4 text-uppercase fw-bold" style="font-size: 12px;color: #03c6fc;"><?php echo $name; ?></p>
           <a href="single_post.php?id=<?php echo $option['post_id']; ?>" class="text-decoration-none text-white"><h5 class="card-title blog-title"><?php echo $option['title']; ?></h5></a>
