@@ -6,7 +6,7 @@ require_once "../path.php";
 session_start();
 
 if(isLoggedIn() == false){
-  header('location: '. BASE_URL . '/cu-login.php');
+  header('location: '. BASE_URL . '/rp-login.php');
 }
 
 ?>
@@ -97,7 +97,7 @@ if(isLoggedIn() == false){
                   <div class="row">
                     <div class="col">
                       <!-- posts -->
-                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/cu-admin/all_posts.php' ?>">
+                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/all_posts.php' ?>">
                           <i class="bi bi-pin-angle-fill text-muted"></i>&nbsp;
                           <?php
                           $sql="SELECT count('1') FROM posts WHERE status = 'published'";
@@ -109,7 +109,7 @@ if(isLoggedIn() == false){
                       <!-- end posts -->
                       <div class="pt-2"></div>
                       <!-- categories -->
-                      <a style="color: #7fade1;" href="<?php echo BASE_URL . '/cu-admin/categories.php' ?>">
+                      <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/categories.php' ?>">
                         <i class="bi bi-tags-fill text-muted"></i>&nbsp;
                           <?php
                           $sql="SELECT count('1') FROM categories";
@@ -122,7 +122,7 @@ if(isLoggedIn() == false){
                     </div>
                     <div class="col">
                       <!-- comments -->
-                      <a style="color: #7fade1;" href="<?php echo BASE_URL . '/cu-admin/comments.php' ?>">
+                      <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/comments.php' ?>">
                         <i class="bi bi-chat-right-fill text-muted"></i>&nbsp;
                           <?php
                           $sql="SELECT count('1') FROM comments WHERE status = 1";
@@ -222,7 +222,7 @@ if(isLoggedIn() == false){
                 <div class="card-footer text-muted pt-2 pb-2">
                   <div class="row">
                     <div class="col">
-                      <a style="color: #7fade1;" href="<?php echo BASE_URL . '/cu-admin/all_comments.php'; ?>">All </a>
+                      <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/all_comments.php'; ?>">All </a>
                         <?php
                         $sql="SELECT count('1') FROM comments";
                         $result=mysqli_query($conn,$sql);
@@ -230,7 +230,7 @@ if(isLoggedIn() == false){
                         echo "($rowtotal[0])";
                         ?>
                         &nbsp;<span class="text-muted">|</span>&nbsp;
-                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/cu-admin/pending_comments.php'; ?>">Pending </a> 
+                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/pending_comments.php'; ?>">Pending </a> 
                         <?php
                         $sql="SELECT count('1') FROM comments WHERE status = 0";
                         $result=mysqli_query($conn,$sql);
@@ -238,7 +238,7 @@ if(isLoggedIn() == false){
                         echo "($rowtotal[0])";
                         ?>
                         &nbsp;<span class="text-muted">|</span>&nbsp;
-                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/cu-admin/approved_comments.php'; ?>">Approved </a> 
+                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/approved_comments.php'; ?>">Approved </a> 
                         <?php
                         $sql="SELECT count('1') FROM comments WHERE status = 1";
                         $result=mysqli_query($conn,$sql);
@@ -246,7 +246,7 @@ if(isLoggedIn() == false){
                         echo "($rowtotal[0])";
                         ?>
                         &nbsp;<span class="text-muted">|</span>&nbsp;
-                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/cu-admin/trash_comments.php'; ?>">Trash </a> 
+                        <a style="color: #7fade1;" href="<?php echo BASE_URL . '/rp-admin/trash_comments.php'; ?>">Trash </a> 
                         <?php
                         $sql="SELECT count('1') FROM comments WHERE status = 2";
                         $result=mysqli_query($conn,$sql);
@@ -297,7 +297,7 @@ if(isLoggedIn() == false){
                 }else {
                       $insert = "INSERT INTO posts (idno, title, content, author_idno, author, created_date, created_time) VALUES('$idno', '$title','$content','$author_idno','$author', '$created_date', '$created_time')";
                       mysqli_query($conn, $insert);
-                      header('location: '. BASE_URL . '/cu-admin/');
+                      header('location: '. BASE_URL . 'rp-admin/');
                    }
                  
               };

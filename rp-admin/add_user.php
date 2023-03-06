@@ -6,7 +6,7 @@ require_once "../path.php";
 session_start();
 
 if(isLoggedIn() == false){
-  header('location: '. BASE_URL . '/cu-login.php');
+  header('location: '. BASE_URL . '/rp-login.php');
 }
 
 ?>
@@ -39,7 +39,7 @@ if(isLoggedIn() == false){
               }else {
                     $insert = "INSERT INTO users (idno, firstname, lastname, username, email, password, isadmin) VALUES('$idno', '$firstname','$lastname','$username','$email','$password', '$isadmin')";
                     mysqli_query($conn, $insert);
-                    header('location: '. BASE_URL . '/cu-admin/all_users.php');
+                    header('location: '. BASE_URL . '/rp-admin/all_users.php');
                  }
              
             };

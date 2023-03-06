@@ -6,7 +6,7 @@ require_once "../path.php";
 session_start();
 
 if(isLoggedIn() == false){
-  header('location: '. BASE_URL . '/cu-login.php');
+  header('location: '. BASE_URL . '/rp-login.php');
 }
 
 ?>
@@ -53,7 +53,6 @@ if (isset($_POST['trash'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,7 +65,7 @@ if (isset($_POST['trash'])) {
     <link rel="stylesheet" href="../assets/styles.css?v=4.01">
     <link rel="stylesheet" href="../assets/sidebar.css?v=1.10">
 
-    <title>Approved Comments - CacheUp Blog</title>
+    <title>Pending Comments - CacheUp Blog</title>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -93,7 +92,7 @@ if (isset($_POST['trash'])) {
     <div class="col-10">
     <div class="mt-5"></div>
       <h3 class="text-black" style="margin-left: -30px;">
-        Approved Comments
+        Pending Comments
       </h3>
       <div class="mt-3"></div>
       <table class="table table-bordered" style="margin-left: -30px;">
@@ -110,7 +109,7 @@ if (isset($_POST['trash'])) {
         <tbody class="table-group-divider" style="background-color: #f0f0f0;">
 
         <?php
-            $sql = "SELECT * FROM comments WHERE status = 1";
+            $sql = "SELECT * FROM comments WHERE status = 0";
             $all = mysqli_query($conn, $sql);
             if($all) {
                 while ($row = mysqli_fetch_assoc($all)) {

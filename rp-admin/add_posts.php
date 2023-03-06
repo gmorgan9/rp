@@ -6,7 +6,7 @@ require_once "../path.php";
 session_start();
 
 if(isLoggedIn() == false){
-  header('location: '. BASE_URL . '/cu-login.php');
+  header('location: '. BASE_URL . '/rp-login.php');
 }
 
 ?>
@@ -26,7 +26,7 @@ if(isset($_POST['add'])){
 
 
 
-  $select = " SELECT * FROM posts WHERE title = '$title'";
+  $select = " SELECT * FROM recipes WHERE title = '$title'";
 
   $result = mysqli_query($conn, $select);
 
@@ -35,9 +35,9 @@ if(isset($_POST['add'])){
      $error[] = 'title already exist!';
 
   }else {
-        $insert = "INSERT INTO posts (idno, title, content, author, author_idno, category, tags, created_date, created_time) VALUES ('$idno', '$title','$content','$author','$author_idno','$category', '$tags', '$created_date', '$created_time')";
+        $insert = "INSERT INTO recipes (idno, title, content, author, author_idno, category, tags, created_date, created_time) VALUES ('$idno', '$title','$content','$author','$author_idno','$category', '$tags', '$created_date', '$created_time')";
         mysqli_query($conn, $insert);
-        header('location: all_posts.php');
+        header('location: all_recipes.php');
      }
 
 };

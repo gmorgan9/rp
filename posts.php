@@ -94,7 +94,7 @@ if($loggedin == 1) { ?>
   
   <div class="position-fixed row" style="width: 100.75% !important; background-color: #1e2327; height: 30px;">
     <div class="col">
-      <p class="text-start" style="margin-top: 5px; font-size: 12px;"><img class="ms-3" src="../assets/images/updated-logo.png" style="height: 20px !important; width: 20px !important;" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
+      <p class="text-start" style="margin-top: 5px; font-size: 12px;"><img class="ms-3" src="../assets/images/updated-logo.png" style="height: 20px !important; width: 20px !important;" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/rp-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
     </div>
     <div class="col">
 
@@ -109,7 +109,7 @@ if($loggedin == 1) { ?>
                   <i class="bi bi-person-square text-muted" style="font-size: 45px;margin-left: 15px;"></i>
               </div>
               <div class="float-end" style="margin-right: 15px;">
-                  <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>">Edit Profile</a>
+                  <a class="links text-white" href="<?php echo BASE_URL . '/rp-admin/profile.php' ?>">Edit Profile</a>
                   <a class="links text-white" href="<?php echo BASE_URL . '/logout.php' ?>">Log Out</a>
                   <div class="pb-3"></div>
               </div>

@@ -6,7 +6,7 @@ require_once "path.php";
 session_start();
 
 if(isLoggedIn() == true){
-    header('location: '. BASE_URL . '/cu-admin');
+    header('location: '. BASE_URL . '/rp-admin');
 }
 
 ?>
@@ -46,7 +46,7 @@ if(mysqli_num_rows($result) > 0){
     $_SESSION['email']            = $row['email'];
     $_SESSION['pass']             = $row['password'];
     $_SESSION['cpass']            = $row['cpassword'];
-    header('location:' . BASE_URL . '/cu-admin/');
+    header('location:' . BASE_URL . '/rp-admin/');
   
 }else{
    $error = '
