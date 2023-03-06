@@ -18,7 +18,7 @@ session_start();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=5.11">
+    <link rel="stylesheet" href="assets/blog.css?v=5.08">
 
     <title>Recipe Pro</title>
 
@@ -168,7 +168,6 @@ if($loggedin == 1) { ?>
     <div class="col">
 
 
-    <div class="mobile">
       <!-- start dropdown -->
         <div class="dropdown-menu text-end float-end" style="">
           <a style="font-size: 12px; text-decoration: none; color: white;" href="/" class="log-link menu-btn text-white">
@@ -186,7 +185,6 @@ if($loggedin == 1) { ?>
           </div>
         </div>
       <!-- end dropdown -->
-      </div>
     
     </div> 
   </div>
@@ -214,16 +212,16 @@ if (mysqli_num_rows($result) > 0) {
 
 <!-- start header -->
   <div class="page-header">
-    <div class="left mobile-center">
+    <div class="left">
       <a href="/">
         <img src="/assets/images/new-white.png" width="230px" class="text-center" style="margin-top: 3.5%; margin-left: 2%;" alt="">
       </a>
     </div>
-    <div class="right mobile">
+    <div class="right">
       <a href="<?php echo BASE_URL . '/search.php' ?>" class="text-decoration-none text-white">
         <i class="bi bi-search">&nbsp;&nbsp;&nbsp;&nbsp;</i>
       </a>
-      <button class="btn talk-btn mobile">
+      <button class="btn talk-btn">
         <a href="mailto:garrett.morgan.pro@gmail.com" class="text-decoration-none">
           LET'S TALK
         </a>
@@ -233,7 +231,7 @@ if (mysqli_num_rows($result) > 0) {
 <!-- end header -->
 
 
-<!-- start recipes -->
+<!-- start blog recipes -->
   <!-- start BLOG -->
     <?php
     $id = $_GET['id'];
@@ -399,7 +397,6 @@ if (mysqli_num_rows($result) > 0) {
 
 
   <!-- END Author Box -->
-
   
   </div>
   <!-- sidebar -->
@@ -422,7 +419,7 @@ if (mysqli_num_rows($result) > 0) {
           <?php foreach ($recipes as $post) {?>
         <!-- end function -->
         <p style="line-height: 1 !important;">
-          <a class="recent-link text-muted" style="font-size: 14px; text-decoration: none;" href="<?php echo BASE_URL . '/single_recipe.php?id= '. $post['post_id']; ?>">
+          <a class="recent-link text-muted" style="font-size: 14px; text-decoration: none;" href="<?php echo BASE_URL . '/single_post.php?id= '. $post['post_id']; ?>">
             <?php echo $post['title']; ?>
           </a>
         </p>
