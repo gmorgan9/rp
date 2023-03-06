@@ -19,7 +19,7 @@ session_start();
     <link rel="icon" type="image/x-icon" href="<?php echo BASE_URL . '/assets/images/favicon.ico'; ?>">
 
 
-    <link rel="stylesheet" href="assets/blog.css?v=4.02">
+    <link rel="stylesheet" href="assets/blog.css?v=5.07">
 
     <title>CacheUp Blog</title>
 
@@ -95,7 +95,7 @@ if($loggedin == 1) { ?>
   
   <div class="position-fixed row" style="width: 100.75% !important; background-color: #1e2327; height: 30px;">
     <div class="col">
-      <p class="text-start" style="margin-top: 5px; font-size: 12px;"><img class="ms-3" src="../assets/images/updated-logo.png" style="height: 20px !important; width: 20px !important;" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/cu-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
+      <p class="text-start" style="margin-top: 5px; font-size: 12px;"><img class="ms-3" src="../assets/images/new-logo.png" style="height: 20px !important; width: 20px !important;" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="log-link text-white" style="text-decoration: none;" href="<?php echo BASE_URL . '/rp-admin/' ?>"><i class="bi bi-speedometer2"></i>&nbsp;Dashboard</a></p>
     </div>
     <div class="col">
 
@@ -110,7 +110,7 @@ if($loggedin == 1) { ?>
                   <i class="bi bi-person-square text-muted" style="font-size: 45px;margin-left: 15px;"></i>
               </div>
               <div class="float-end" style="margin-right: 15px;">
-                  <a class="links text-white" href="<?php echo BASE_URL . '/cu-admin/profile.php' ?>">Edit Profile</a>
+                  <a class="links text-white" href="<?php echo BASE_URL . '/rp-admin/profile.php' ?>">Edit Profile</a>
                   <a class="links text-white" href="<?php echo BASE_URL . '/logout.php' ?>">Log Out</a>
                   <div class="pb-3"></div>
               </div>
@@ -144,7 +144,7 @@ if (mysqli_num_rows($result) > 0) {
   <div class="page-header">
     <div class="left">
       <a href="/">
-        <img src="/assets/images/white-logo.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
+        <img src="/assets/images/new-white.png" width="230px" class="text-center" style="margin-top: 2.5%; margin-left: 2%;" alt="">
       </a>
     </div>
     <div class="right">
@@ -219,8 +219,8 @@ if (mysqli_num_rows($result) > 0) {
 
 <div class="text-center">
   <button class="btn mt-5 post-btn btn-lg">
-    <a href="<?php echo BASE_URL . '/posts.php' ?>" class="text-decoration-none text-white p-2 text-uppercase" style="font-size: 16px;">
-      View All Posts
+    <a href="<?php echo BASE_URL . '/recipes.php' ?>" class="text-decoration-none text-white p-2 text-uppercase" style="font-size: 16px;">
+      View All recipes
     </a>
   </button>
 </div>
@@ -231,14 +231,14 @@ if (mysqli_num_rows($result) > 0) {
 
 <br><br><br>
 
-<!-- start blog posts -->
+<!-- start blog recipes -->
 
 <div class="sub-title">
   <h1 class="behind-2 mt-5">
-    Popular Posts
+    Popular recipes
   </h1>
   <h1 class="front-2">
-    <strong>Popular Posts</strong>
+    <strong>Popular recipes</strong>
   </h1>
 </div>
 
@@ -247,7 +247,7 @@ if (mysqli_num_rows($result) > 0) {
 
 <div class="mx-auto pop-post row row-cols-1 row-cols-md-3 g-4">
   <?php
-    $query ="SELECT * FROM posts WHERE status = 'published' LIMIT 3";
+    $query ="SELECT * FROM recipes WHERE status = 'published' LIMIT 3";
     $result = $conn->query($query);
     if($result->num_rows> 0){
       $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -285,7 +285,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-<!-- end blog posts -->
+<!-- end blog recipes -->
 
 <!-- social links -->
 
