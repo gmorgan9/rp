@@ -14,6 +14,7 @@ if(isLoggedIn() == false){
 <?php
 if(isset($_POST['add'])){
   $idno  = rand(10000, 99999); // figure how to not allow duplicates
+  $short_title = mysqli_real_escape_string($conn, $_POST['short_title']);
   $title = mysqli_real_escape_string($conn, $_POST['title']);
   $content = mysqli_real_escape_string($conn, $_POST['content']);
   $author = mysqli_real_escape_string($conn, $_POST['author']);
@@ -35,7 +36,7 @@ if(isset($_POST['add'])){
      $error[] = 'title already exist!';
 
   }else {
-        $insert = "INSERT INTO recipes (idno, title, content, author, author_idno, category, tags, created_date, created_time) VALUES ('$idno', '$title','$content','$author','$author_idno','$category', '$tags', '$created_date', '$created_time')";
+        $insert = "INSERT INTO recipes (idno, short_title, title, content, author, author_idno, category, tags, created_date, created_time) VALUES ('$idno', '$short_title', '$title','$content','$author','$author_idno','$category', '$tags', '$created_date', '$created_time')";
         mysqli_query($conn, $insert);
         header('location: all_recipes.php');
      }
@@ -156,6 +157,11 @@ if (mysqli_num_rows($result) > 0) {
         <div>
             <label>Recipe Title</label>
             <input class="form-control" style="width: 99%;" type="text" name="title">
+        </div>
+        <div class="pt-3"></div>
+        <div>
+            <label>Short Title</label>
+            <input class="form-control" style="width: 99%;" type="text" name="short_title">
         </div>
         <div class="pt-3"></div>
         <div>
