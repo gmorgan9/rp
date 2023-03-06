@@ -159,12 +159,10 @@ if (mysqli_num_rows($result) > 0) {
             <label>Recipe Title</label>
             <input class="form-control" type="text" name="title">
         </div>
-        <div class="pt-3"></div>
         <div class="col w-50">
             <label>Short Title</label>
             <input class="form-control" type="text" name="short_title">
         </div>
-        <div class="pt-3"></div>
         </div>
        
         <div>
