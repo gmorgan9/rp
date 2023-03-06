@@ -401,28 +401,28 @@ if (mysqli_num_rows($result) > 0) {
   <!-- Comments -->
 
     <?php
-    if(isset($_POST['post'])){
-      $idno  = rand(10000, 99999); // figure how to not allow duplicates
-      $post_idno = mysqli_real_escape_string($conn, $_POST['post_idno']);
-      $post_id = mysqli_real_escape_string($conn, $_POST['post_id']);
-      $post_title = mysqli_real_escape_string($conn, $_POST['post_title']);
-      $parent_idno = mysqli_real_escape_string($conn, $_POST['parent_idno']);
-      $name = mysqli_real_escape_string($conn, $_POST['name']);
-      $email = mysqli_real_escape_string($conn, $_POST['email']);
-      $content = mysqli_real_escape_string($conn, $_POST['content']);
+    // if(isset($_POST['post'])){
+    //   $idno  = rand(10000, 99999); // figure how to not allow duplicates
+    //   $post_idno = mysqli_real_escape_string($conn, $_POST['post_idno']);
+    //   $post_id = mysqli_real_escape_string($conn, $_POST['post_id']);
+    //   $post_title = mysqli_real_escape_string($conn, $_POST['post_title']);
+    //   $parent_idno = mysqli_real_escape_string($conn, $_POST['parent_idno']);
+    //   $name = mysqli_real_escape_string($conn, $_POST['name']);
+    //   $email = mysqli_real_escape_string($conn, $_POST['email']);
+    //   $content = mysqli_real_escape_string($conn, $_POST['content']);
 
-      $insert = "INSERT INTO `comments`(`idno`, `post_idno`, `post_id`, `post_title`, `name`, `email`, `content`) VALUES ('$idno','$post_idno','$post_id', '$post_title', '$name','$email','$content');";
-      mysqli_query($conn, $insert);
-      header('Location: ' . $_SERVER['HTTP_REFERER']);
-    };
+    //   $insert = "INSERT INTO `comments`(`idno`, `post_idno`, `post_id`, `post_title`, `name`, `email`, `content`) VALUES ('$idno','$post_idno','$post_id', '$post_title', '$name','$email','$content');";
+    //   mysqli_query($conn, $insert);
+    //   header('Location: ' . $_SERVER['HTTP_REFERER']);
+    // };
 
     ?>
 
-    <form action="" method="POST">
+    <!-- <form action="" method="POST">
     <h4>Leave a Comment</h4>
-    <input type="hidden" name="post_idno" value="<?php echo $post_idno; ?>" class="text-muted form-control">
-    <input type="hidden" name="post_title" value="<?php echo $title; ?>">
-    <input type="hidden" name="post_id" value="<?php echo $id; ?>" class="text-muted form-control">
+    <input type="hidden" name="post_idno" value="<?php //echo $post_idno; ?>" class="text-muted form-control">
+    <input type="hidden" name="post_title" value="<?php //echo $title; ?>">
+    <input type="hidden" name="post_id" value="<?php //echo $id; ?>" class="text-muted form-control">
     <p class="text-muted" style="font-size: 12px;">Your email address will not be published. Required fields are marked <span style="color: red;">*</span></p>
     <div class="d-flex">
       <div class="form-group w-50">
@@ -439,72 +439,72 @@ if (mysqli_num_rows($result) > 0) {
       <label for="comment">Comment <span style="color: red;">*</span></label>
       <textarea style="background-color: #1f1f1f !important; border-color: #6e757c !important;" class="text-muted form-control" name="content" id="comment" cols="30" rows="10"></textarea>
     </div>
-    <br>
+    <br> -->
     <!-- <button style="background-color: #58c5f7; color: white; border-color: #58c5f7;" name="post" type="submit" class="com-btn btn btn-outline-secondary">Post Comment</button> -->
-    <input type="submit" name="post" value="Post Comment" style="background-color: #58c5f7; color: white; border-color: #58c5f7;" class="com-btn btn btn-outline-secondary">
+    <!-- <input type="submit" name="post" value="Post Comment" style="background-color: #58c5f7; color: white; border-color: #58c5f7;" class="com-btn btn btn-outline-secondary">
 
-    </form>
+    </form> -->
   <!-- End Comments -->
 
   <!-- Display Comments -->
-    <br>
+    <!-- <br>
     <hr>
     <br>
-    <h4>
+    <h4> -->
       <?php
-      $sql="SELECT count('1') FROM comments WHERE post_idno = '$post_idno' AND status = '1'";
-      $result=mysqli_query($conn,$sql);
-      $rowtotal=mysqli_fetch_array($result);
-      if($rowtotal[0] == 1) {
-        echo "$rowtotal[0] Comment";
-      } else {
-        echo "$rowtotal[0] Comments";
-      }
+      // $sql="SELECT count('1') FROM comments WHERE post_idno = '$post_idno' AND status = '1'";
+      // $result=mysqli_query($conn,$sql);
+      // $rowtotal=mysqli_fetch_array($result);
+      // if($rowtotal[0] == 1) {
+      //   echo "$rowtotal[0] Comment";
+      // } else {
+      //   echo "$rowtotal[0] Comments";
+      // }
       ?>
-    </h4>
+    <!-- </h4>
     <br>
-    <hr>
+    <hr> -->
     <?php
-      $query ="SELECT * FROM comments WHERE post_idno = '$post_idno' AND status = '1'";
-      $result = $conn->query($query);
-      if($result->num_rows> 0){
-        $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
-      }
+      // $query ="SELECT * FROM comments WHERE post_idno = '$post_idno' AND status = '1'";
+      // $result = $conn->query($query);
+      // if($result->num_rows> 0){
+      //   $options= mysqli_fetch_all($result, MYSQLI_ASSOC);
+      // }
 
-      $date = date('d-m-Y', strtotime($submit_date));
+      // $date = date('d-m-Y', strtotime($submit_date));
 
     ?>
     
-    <?php foreach ($options as $option) { 
+    <?php //foreach ($options as $option) { 
       ?>
       
-      <br>
+      <!-- <br>
 
       <div class="container ms-3" id="comments">
         <div class="row">
           <div class="col-9">
-            <h5><?php echo $option['name']; ?></h5>
+            <h5><?php //echo $option['name']; ?></h5>
           </div>
           <div class="col" style="">
-            <p class="text-muted" style="font-size: 12px;"><?php echo date('F j, Y / g:i a', strtotime($option['submit_date'])); ?></p>
+            <p class="text-muted" style="font-size: 12px;"><?php //echo date('F j, Y / g:i a', strtotime($option['submit_date'])); ?></p>
             &nbsp;&nbsp;
-          </div>
+          </div> -->
           <!-- <div class="col" style="margin-top: -3px;">
             <a class="reply text-muted" href="#">Reply</a>
           </div> -->
-        </div>
+        <!-- </div>
         <div class="row">
           <div class="col">
-            <p class="text-muted row-2"><?php echo $option['content']; ?></p>
+            <p class="text-muted row-2"><?php //echo $option['content']; ?></p>
           </div>
         </div>
       </div>
 
       <br>
-      <hr style="">
+      <hr style=""> -->
 
 
-    <?php } ?>
+    <?php //} ?>
 
 
   <!-- END Display Comments -->
