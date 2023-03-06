@@ -19,7 +19,7 @@ session_start();
 
     <link rel="stylesheet" href="assets/blog.css?v=4.02">
 
-    <title>Posts - CacheUp Blog</title>
+    <title>Recipes - RecipePro</title>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
