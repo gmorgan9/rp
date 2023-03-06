@@ -372,7 +372,7 @@ if (mysqli_num_rows($result) > 0) {
     <div class="text-center">
     <a
     class="website-btn"
-    style="background-color: #03c6fc; color: white; padding: 7px 10px; border-radius: 75px; margin-top: 10px;"
+    style="background-color: #9b9883; color: white; padding: 7px 10px; border-radius: 75px; margin-top: 10px;"
     href="https://resume.morganserver.com/"
     target="_blank"
     ><i class="bi bi-globe"></i
